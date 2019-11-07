@@ -41,7 +41,7 @@ MATLAB scripts.
 
 ## Installation of Python parts using pip
 
-You can install the Python parts of AutoPACMEN's latest release [from PyPI]() using pip as follows:
+You can install the Python parts of AutoPACMEN's latest release [from PyPI](https://pypi.org/project/autopacmen-Paulocracy/) using pip as follows:
 <pre>
 pip install autopacmen-Paulocracy
 </pre>
