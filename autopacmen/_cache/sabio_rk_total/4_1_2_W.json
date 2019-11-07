@@ -1,0 +1,235 @@
+{
+    "fdp": {
+        "Homo sapiens": [
+            0.61,
+            0.00441666667,
+            0.000283333333,
+            16.7,
+            0.6,
+            0.19,
+            2.1,
+            0.0597333333,
+            12.6166667,
+            0.0200833333,
+            5.2
+        ],
+        "Escherichia coli": [
+            0.0683333333,
+            0.216666667,
+            2.33333333,
+            3.16666667,
+            1.83333333,
+            8.16666667,
+            10.5,
+            10.3333333,
+            14.1666667,
+            30.3333333
+        ],
+        "Oryctolagus cuniculus": [
+            0.55,
+            16.8333333,
+            17.0,
+            7.66666667,
+            1.63333333,
+            5.46666667,
+            4.01666667,
+            42.2,
+            27.7
+        ],
+        "Rattus norvegicus": [
+            7.66666667,
+            0.033
+        ],
+        "Trypanosoma brucei": [
+            5.03333333,
+            10.2833333,
+            5.28333333,
+            10.9166667,
+            10.2833333
+        ],
+        "Staphylococcus aureus": [
+            7.86666667,
+            13.9333333,
+            7.5
+        ],
+        "Saccharomyces cerevisiae": [
+            4.14,
+            4.14,
+            4.139
+        ],
+        "Leishmania mexicana": [
+            8.2
+        ],
+        "Lampetra japonica": [
+            46.05,
+            15.7833333,
+            49.3,
+            17.9166667
+        ],
+        "Magnaporthe grisea": [
+            45.7
+        ],
+        "Giardia lamblia": [
+            3.55,
+            3.55,
+            3.55
+        ],
+        "Edwardsiella ictaluri": [
+            13.0
+        ],
+        "Mycobacterium tuberculosis": [
+            21.0
+        ],
+        "Ceratitis capitata": [
+            34.0
+        ],
+        "Vigna radiata": [
+            40.0
+        ],
+        "Entamoeba histolytica": [
+            62.0,
+            80.0,
+            7.2,
+            39.0
+        ],
+        "Bacillus methanolicus": [
+            1.6,
+            5.1
+        ]
+    },
+    "f1p": {
+        "Homo sapiens": [
+            0.67,
+            0.000116666667,
+            0.000183333333,
+            0.7,
+            0.12,
+            2.0,
+            1.28333333,
+            10.8333333,
+            1.48333333,
+            2.8
+        ],
+        "Oryctolagus cuniculus": [
+            0.45,
+            0.65,
+            0.9,
+            0.183333333,
+            0.266666667,
+            0.166666667
+        ],
+        "Trypanosoma brucei": [
+            1.13333333,
+            1.7,
+            1.26666667
+        ],
+        "Staphylococcus aureus": [
+            0.45,
+            1.05,
+            0.583333333
+        ],
+        "Rattus norvegicus": [
+            2.66666667
+        ],
+        "Lampetra japonica": [
+            1.38333333,
+            3.6,
+            1.55,
+            3.65
+        ],
+        "Ceratitis capitata": [
+            0.7
+        ],
+        "Escherichia coli": [
+            0.116666667
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            0.015,
+            1.8,
+            2.83333333,
+            2.76666667,
+            0.55,
+            229.36,
+            4.66666667,
+            0.107,
+            1.2,
+            1.1
+        ],
+        "Homo sapiens": [
+            1.7,
+            0.55,
+            0.55,
+            1.7
+        ],
+        "Trypanosoma brucei": [
+            12.2666667,
+            12.2666667
+        ],
+        "Oryctolagus cuniculus": [
+            10.2833333,
+            10.2833333
+        ],
+        "Staphylococcus aureus": [
+            36.8833333,
+            36.8833333
+        ],
+        "Ceratitis capitata": [
+            72.0
+        ],
+        "Entamoeba histolytica": [
+            75.0,
+            87.0,
+            75.0,
+            87.0
+        ],
+        "Bacillus methanolicus": [
+            8.0,
+            0.4,
+            12.6,
+            0.56
+        ],
+        "Azoarcus evansii": [
+            20.0
+        ],
+        "Pneumocystis carinii": [
+            1.8
+        ],
+        "Sulfolobus solfataricus": [
+            28.2,
+            6.8
+        ]
+    },
+    "s17bp": {
+        "Vigna radiata": [
+            33.3
+        ]
+    },
+    "athr__L": {
+        "Escherichia coli": [
+            0.5
+        ]
+    },
+    "4h2opntn": {
+        "Escherichia coli": [
+            353.46,
+            350.0
+        ]
+    },
+    "oaa": {
+        "Escherichia coli": [
+            866.79
+        ]
+    },
+    "2dr5p": {
+        "Escherichia coli": [
+            68.0
+        ]
+    },
+    "fc1p": {
+        "Escherichia coli": [
+            19.3
+        ]
+    }
+}

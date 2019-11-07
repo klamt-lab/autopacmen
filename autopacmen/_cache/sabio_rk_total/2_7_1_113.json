@@ -1,0 +1,33 @@
+{
+    "atp;dgsn": {
+        "Staphylococcus aureus": [
+            0.57
+        ],
+        "Dictyostelium discoideum": [
+            3.0
+        ],
+        "Bacillus subtilis": [
+            1.53
+        ]
+    },
+    "atp;dad_2": {
+        "Dictyostelium discoideum": [
+            0.0047
+        ]
+    },
+    "dgsn;utp": {
+        "Bacillus subtilis": [
+            1.41
+        ]
+    },
+    "ctp;dgsn": {
+        "Bacillus subtilis": [
+            2.25
+        ]
+    },
+    "dgsn;gtp": {
+        "Bacillus subtilis": [
+            1.69
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "REST": {
+        "Hordeum vulgare": [
+            0.5,
+            3.06,
+            3.0,
+            9.6,
+            12.9,
+            13.1,
+            2.3
+        ]
+    },
+    "cellb;h2o": {
+        "Hordeum vulgare": [
+            16.1
+        ]
+    },
+    "h2o;lmn2": {
+        "Hordeum vulgare": [
+            11.3
+        ]
+    }
+}

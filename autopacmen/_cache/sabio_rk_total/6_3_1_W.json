@@ -1,0 +1,68 @@
+{
+    "atp;gtspmd;gthrd": {
+        "Crithidia fasciculata": [
+            8.7
+        ],
+        "Trypanosoma brucei": [
+            2.1,
+            2.1,
+            1.67,
+            1.25,
+            0.65,
+            2.1,
+            2.1
+        ]
+    },
+    "atp;gthrd;spmd": {
+        "Trypanosoma brucei": [
+            2.8,
+            1.8,
+            5.2,
+            2.8,
+            5.2,
+            1.8,
+            1.4,
+            0.7,
+            2.0,
+            0.13,
+            0.15,
+            0.14,
+            0.28,
+            1.01,
+            2.8,
+            2.8
+        ],
+        "Crithidia fasciculata": [
+            4.2
+        ]
+    },
+    "REST": {
+        "Mycobacterium smegmatis": [
+            3.15,
+            9.4
+        ],
+        "Streptomyces niveus": [
+            0.47,
+            0.36,
+            0.515
+        ]
+    },
+    "atp;glu__L;nh3": {
+        "Anabaena azollae": [
+            42.0
+        ],
+        "Escherichia coli": [
+            50.0,
+            2.0
+        ],
+        "Arabidopsis thaliana": [
+            7.1,
+            7.02,
+            2.96,
+            5.33,
+            2.16,
+            2.81,
+            4.18
+        ]
+    }
+}

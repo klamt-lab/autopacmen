@@ -1,0 +1,21 @@
+{
+    "cbasp": {
+        "Escherichia coli": [
+            160.0,
+            25.0,
+            8.2
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            100.0,
+            4.4,
+            15.0,
+            1.9,
+            0.42
+        ],
+        "Aquifex aeolicus": [
+            13.8
+        ]
+    }
+}

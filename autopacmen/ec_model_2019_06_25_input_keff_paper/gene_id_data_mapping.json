@@ -1,0 +1,4254 @@
+{
+    "b0002": {
+        "names": "thra, eck0002, hs, jw0001, thra1, thra2, thrd",
+        "description": "fused aspartokinase i and homoserine dehydrogenase i (ec:2,7,2,4",
+        "kcats": [
+            2.74578531181283,
+            4.01045606393556,
+            4.9844726818082,
+            4.27219410977427,
+            5.14762899504232
+        ],
+        "direction": {
+            "ASPK": "forward",
+            "HSDy": "reverse"
+        }
+    },
+    "b0003": {
+        "names": "thrb, eck0003, jw0002",
+        "description": "homoserine kinase (ec:2,7,1,39)",
+        "kcats": [
+            19.8027541180525,
+            28.6833351323097,
+            34.9822142347035,
+            28.0780314052634,
+            32.6178939466665
+        ],
+        "direction": {
+            "HSK": "forward"
+        }
+    },
+    "b0004": {
+        "names": "thrc, eck0004, jw0003",
+        "description": "threonine synthase (ec:4,2,3,1)",
+        "kcats": [
+            0.940978940619162,
+            1.41819260909546,
+            2.1596689361079,
+            2.16225257500011,
+            2.28471090237455
+        ],
+        "direction": {
+            "4HTHRS": "forward",
+            "THRS": "forward"
+        }
+    },
+    "b0008": {
+        "names": "talb, eck0008, jw0007, yaak",
+        "description": "transaldolase b (ec:2,2,1,2)",
+        "kcats": [
+            0.125609236515931,
+            0.495867876749533,
+            1.4443741560104,
+            2.60201565131031,
+            3.76842899783435
+        ],
+        "direction": {
+            "TALA": "forward"
+        }
+    },
+    "b0023": {
+        "names": "rpst, eck0024, jw0022, sup",
+        "description": "30s ribosomal subunit protein s20",
+        "kcats": [
+            2.5273910449531,
+            4.37044115705212,
+            6.12082828068527,
+            6.58782315096401,
+            7.00645934369887
+        ]
+    },
+    "b0026": {
+        "names": "iles, eck0027, ilvs, jw0024",
+        "description": "isoleucyl-trna synthetase (ec:6,1,1,5)",
+        "kcats": [
+            0.934247847465594,
+            1.60838233967633,
+            2.44417574411756,
+            3.3348836705742,
+            4.34354888240465
+        ],
+        "direction": {
+            "ILETRS": "forward"
+        }
+    },
+    "b0031": {
+        "names": "dapb, eck0032, jw0029",
+        "description": "dihydrodipicolinate reductase (ec:1,3,1,26)",
+        "kcats": [
+            2.85405531224217,
+            4.84465602077369,
+            7.35448586970759,
+            9.81366639417624,
+            6.95159605689534
+        ],
+        "direction": {
+            "DHDPRy": "forward"
+        }
+    },
+    "b0032": {
+        "names": "cara, arg, cap, eck0033, jw0030, pyra",
+        "description": "carbamoyl phosphate synthetase small subunit, glutamine",
+        "kcats": [
+            3.52286123974153,
+            7.16415517146587,
+            7.97950448443171,
+            5.84077068183189,
+            9.19027706001008
+        ],
+        "direction": {
+            "CBPS": "forward"
+        }
+    },
+    "b0033": {
+        "names": "carb, cap, eck0034, jw0031, pyra",
+        "description": "carbamoyl-phosphate synthase large subunit (ec:6,3,5,5)",
+        "kcats": [
+            3.90475821624139,
+            6.67598990195531,
+            8.14016564854777,
+            7.99041079539116,
+            10.0188441216258
+        ],
+        "direction": {
+            "CBPS": "forward"
+        }
+    },
+    "b0071": {
+        "names": "leud, eck0073, jw0070",
+        "description": "3-isopropylmalate isomerase subunit (ec:4,2,1,33)",
+        "kcats": [
+            0.337195306976724,
+            0.466064736695859,
+            0.863449385120154,
+            1.28735209755215,
+            1.59880705251726
+        ],
+        "direction": {
+            "IPPMIa": "reverse",
+            "IPPMIb": "reverse"
+        }
+    },
+    "b0072": {
+        "names": "leuc, eck0074, jw0071",
+        "description": "3-isopropylmalate isomerase subunit, dehydratase component",
+        "kcats": [
+            0.560600725858597,
+            0.872248235423783,
+            1.45452718987136,
+            2.35278292024932,
+            3.13432106769907
+        ],
+        "direction": {
+            "IPPMIa": "reverse",
+            "IPPMIb": "reverse"
+        }
+    },
+    "b0073": {
+        "names": "leub, eck0075, jw5807",
+        "description": "3-isopropylmalate dehydrogenase (ec:1,1,1,85)",
+        "kcats": [
+            0.635483463148441,
+            0.859245028438988,
+            1.45440389350874,
+            2.56333517451949,
+            3.29501888767125
+        ],
+        "direction": {
+            "IPMD": "forward"
+        }
+    },
+    "b0074": {
+        "names": "leua, eck0076, jw0073",
+        "description": "2-isopropylmalate synthase (ec:2,3,3,13)",
+        "kcats": [
+            0.50164258059256,
+            0.792072523940526,
+            1.55836537072866,
+            2.72000715988424,
+            4.1574862007949
+        ],
+        "direction": {
+            "IPPS": "forward"
+        }
+    },
+    "b0077": {
+        "names": "ilvi, eck0079, jw0076",
+        "description": "acetolactate synthase iii, large subunit (ec:2,2,1,6)",
+        "kcats": [
+            7.46618022741534,
+            11.9120811783811,
+            21.0085160841495,
+            29.6522029420886,
+            33.833966322388
+        ]
+    },
+    "b0078": {
+        "names": "ilvh, brnp, eck0080, jw0077",
+        "description": "acetolactate synthase iii, thiamin-dependent, small subunit",
+        "kcats": [
+            5.73669789169231,
+            11.7949583443542,
+            17.3245582874029,
+            24.7101691184071,
+            25.1621932869258
+        ]
+    },
+    "b0114": {
+        "names": "acee, eck0113, jw0110",
+        "description": "pyruvate dehydrogenase, decarboxylase component e1, thiamin-binding",
+        "kcats": [
+            14.5908998322342,
+            22.895498189493,
+            33.7797805786421,
+            40.4417081183144,
+            47.9485731748784
+        ],
+        "direction": {
+            "PDH": "forward"
+        }
+    },
+    "b0115": {
+        "names": "acef, eck0114, jw0111",
+        "description": "pyruvate dehydrogenase, dihydrolipoyltransacetylase component e2",
+        "kcats": [
+            24.2810612036025,
+            44.005183891132,
+            60.1246596391892,
+            75.5026838894124,
+            74.8613567599136
+        ],
+        "direction": {
+            "PDH": "forward"
+        }
+    },
+    "b0116": {
+        "names": "lpd, dhl, eck0115, jw0112, lpda",
+        "description": "lipoamide dehydrogenase, e3 component is part of three enzyme",
+        "kcats": [
+            11.335596792038,
+            13.6918066723347,
+            16.8875954672709,
+            22.1190484430212,
+            30.0149699257733
+        ],
+        "direction": {
+            "AKGDH": "forward",
+            "GLYCL": "forward",
+            "PDH": "forward"
+        }
+    },
+    "b0118": {
+        "names": "acnb, eck0117, jw0114, yaci, yacj",
+        "description": "bifunctional aconitate hydratase 2/2-methylisocitrate dehydratase",
+        "kcats": [
+            7.7549280191222,
+            10.4030872194706,
+            16.2691392690562,
+            25.4661363071569,
+            34.723028581576
+        ],
+        "direction": {
+            "ACONTa": "forward",
+            "ACONTb": "forward",
+            "MICITDr": "forward"
+        }
+    },
+    "b0166": {
+        "names": "dapd, eck0164, jw0161, ssa",
+        "description": "2,3,4,5-tetrahydropyridine-2-carboxylate n-succinyltransferase",
+        "kcats": [
+            0.71747200696073,
+            0.983090278542918,
+            1.37768572350372,
+            1.61250961981683,
+            1.67725357987332
+        ],
+        "direction": {
+            "THDPS": "forward"
+        }
+    },
+    "b0169": {
+        "names": "rpsb, eck0168, jw0164",
+        "description": "30s ribosomal subunit protein s2",
+        "kcats": [
+            2.35902585800695,
+            4.38176817682898,
+            5.07641741208311,
+            6.62925600097009,
+            6.78773569441586
+        ]
+    },
+    "b0171": {
+        "names": "pyrh, eck0170, jw0166, smba, umk",
+        "description": "uridylate kinase (ec:2,7,4,-)",
+        "kcats": [
+            1.82203430729252,
+            1.89802169822121,
+            3.03950531945908,
+            5.38256548553681,
+            4.70214290114038
+        ],
+        "direction": {
+            "UMPK": "forward"
+        }
+    },
+    "b0180": {
+        "names": "fabz, eck0179, jw0175, saba, sefa, sfhc, yaea",
+        "description": "(3r)-hydroxymyristol acyl carrier protein dehydratase (ec:4,2,1,-)",
+        "kcats": [
+            5.4449478766981,
+            7.74384089226162,
+            9.9209297205021,
+            11.6412116444853,
+            11.9398946569781
+        ],
+        "direction": {
+            "3HAD100": "forward",
+            "3HAD120": "forward",
+            "3HAD121": "forward",
+            "3HAD140": "forward",
+            "3HAD141": "forward",
+            "3HAD160": "reverse",
+            "3HAD161": "forward",
+            "3HAD180": "forward",
+            "3HAD181": "forward",
+            "3HAD40": "forward",
+            "3HAD60": "forward",
+            "3HAD80": "forward",
+            "OGMEACPD": "forward",
+            "OPMEACPD": "forward"
+        }
+    },
+    "b0185": {
+        "names": "acca, eck0184, jw0180",
+        "description": "acetyl-coa carboxylase, carboxytransferase, alpha subunit",
+        "kcats": [
+            0.73418961294773,
+            1.40972526958007,
+            2.48206848999977,
+            3.45368954938142,
+            3.75033941976365
+        ],
+        "direction": {
+            "ACCOAC": "forward"
+        }
+    },
+    "b0194": {
+        "names": "pros, drpa, eck0194, jw0190",
+        "description": "prolyl-trna synthetase (ec:6,1,1,15)",
+        "kcats": [
+            0.524159009307321,
+            0.884049393683145,
+            1.21858063865771,
+            1.54203672698519,
+            1.71981042758696
+        ],
+        "direction": {
+            "PROTRS": "forward"
+        }
+    },
+    "b0242": {
+        "names": "prob, eck0243, jw0232, pro",
+        "description": "gamma-glutamate kinase (ec:2,7,2,11)",
+        "kcats": [
+            3.22618903145613,
+            5.51914501952784,
+            8.81671233297354,
+            12.8953019805558,
+            15.7306573349395
+        ],
+        "direction": {
+            "GLU5K": "forward"
+        }
+    },
+    "b0243": {
+        "names": "proa, eck0244, jw0233, pro",
+        "description": "gamma-glutamylphosphate reductase (ec:1,2,1,41)",
+        "kcats": [
+            1.61458398434831,
+            2.7577413402153,
+            5.22160253307785,
+            8.29227696895345,
+            11.9031156256156
+        ],
+        "direction": {
+            "G5SD": "forward"
+        }
+    },
+    "b0386": {
+        "names": "proc, eck0381, jw0377, pro, pro2",
+        "description": "pyrroline-5-carboxylate reductase, nad(p)-binding (ec:1,5,1,2)",
+        "kcats": [
+            0.969824988934675,
+            2.35729790113696,
+            4.69317277415573,
+            6.7464106805602,
+            8.43450495277958
+        ],
+        "direction": {
+            "P5CR": "forward"
+        }
+    },
+    "b0388": {
+        "names": "arol, eck0383, jw0379",
+        "description": "shikimate kinase ii (ec:2,7,1,71)",
+        "kcats": [
+            9.17214023260516,
+            14.2629855391729,
+            19.2679515302743,
+            29.0359821305188,
+            39.4407203452688
+        ],
+        "direction": {
+            "SHKK": "forward"
+        }
+    },
+    "b0431": {
+        "names": "cyob, eck0425, jw0421",
+        "description": "cytochrome o ubiquinol oxidase subunit i (ec:1,10,3,-)",
+        "kcats": [
+            560.861467166905,
+            658.48769937735,
+            810.094741014671,
+            766.209874015762,
+            694.746144685263
+        ],
+        "direction": {
+            "CYTBO3_4pp": "forward"
+        }
+    },
+    "b0432": {
+        "names": "cyoa, eck0426, jw0422",
+        "description": "cytochrome o ubiquinol oxidase subunit ii (ec:1,10,3,-)",
+        "kcats": [
+            490.865242727157,
+            607.614951769206,
+            670.198862044265,
+            818.669759314814,
+            714.035463314475
+        ],
+        "direction": {
+            "CYTBO3_4pp": "forward"
+        }
+    },
+    "b0474": {
+        "names": "adk, dnaw, eck0468, jw0463, plsa",
+        "description": "adenylate kinase (ec:2,7,4,3)",
+        "kcats": [
+            0.151672250036132,
+            0.248842467444654,
+            0.498599304388915,
+            0.758521630041495,
+            0.83556034259182
+        ],
+        "direction": {
+            "ADK1": "forward",
+            "ADK3": "forward",
+            "ADK4": "forward",
+            "ADNK1": "forward",
+            "DADK": "forward",
+            "NDPK1": "forward",
+            "NDPK2": "forward",
+            "NDPK3": "forward",
+            "NDPK4": "forward",
+            "NDPK5": "forward",
+            "NDPK6": "forward",
+            "NDPK7": "forward",
+            "NDPK8": "forward"
+        }
+    },
+    "b0523": {
+        "names": "pure, ade, ade3, eck0516, jw0512, pur2",
+        "description": "n5-carboxyaminoimidazole ribonucleotide mutase (ec:4,1,1,21)",
+        "kcats": [
+            0.939418201978672,
+            1.27409597452079,
+            1.88053969520941,
+            2.33150490394718,
+            2.30156542305735
+        ],
+        "direction": {
+            "AIRC3": "reverse"
+        }
+    },
+    "b0526": {
+        "names": "cyss, eck0519, jw0515",
+        "description": "cysteinyl-trna synthetase (ec:6,1,1,16)",
+        "kcats": [
+            0.677121840146874,
+            1.29812014790434,
+            1.62974350098819,
+            2.16533257492954,
+            2.06267291931171
+        ],
+        "direction": {
+            "CYSTRS": "forward"
+        }
+    },
+    "b0642": {
+        "names": "leus, eck0635, jw0637",
+        "description": "leucyl-trna synthetase (ec:6,1,1,4)",
+        "kcats": [
+            1.45382899298169,
+            2.38315796633584,
+            3.64744956031517,
+            4.82685675601038,
+            6.00242242958163
+        ],
+        "direction": {
+            "LEUTRS": "forward"
+        }
+    },
+    "b0680": {
+        "names": "glns, eck0668, jw0666",
+        "description": "glutamyl-trna synthetase (ec:6,1,1,18)",
+        "kcats": [
+            0.843170060204478,
+            1.48374664887021,
+            1.98340162742493,
+            2.51705594452061,
+            2.9795557351229
+        ],
+        "direction": {
+            "GLNTRS": "forward"
+        }
+    },
+    "b0720": {
+        "names": "glta, eck0709, glut, icdb, jw0710",
+        "description": "citrate synthase (ec:2,3,3,1)",
+        "kcats": [
+            8.42617550887262,
+            11.5531449176529,
+            17.2311707763727,
+            21.8238307608694,
+            34.6898727200493
+        ],
+        "direction": {
+            "CS": "forward"
+        }
+    },
+    "b0722": {
+        "names": "sdhd, eck0711, jw0712",
+        "description": "succinate dehydrogenase, membrane subunit, binds cytochrome b556",
+        "kcats": [
+            430.47510002486,
+            363.923512914351,
+            453.974451139082,
+            637.058331992698,
+            1360.78698213705
+        ],
+        "direction": {
+            "SUCDi": "forward"
+        }
+    },
+    "b0723": {
+        "names": "sdha, eck0712, jw0713",
+        "description": "succinate dehydrogenase, flavoprotein subunit (ec:1,3,99,1)",
+        "kcats": [
+            45.084903868583,
+            53.9525576692893,
+            58.398879970498,
+            71.0688189459191,
+            117.976038814366
+        ],
+        "direction": {
+            "SUCDi": "forward"
+        }
+    },
+    "b0724": {
+        "names": "sdhb, eck0713, jw0714",
+        "description": "succinate dehydrogenase, fes subunit (ec:1,3,99,1)",
+        "kcats": [
+            43.436200837723,
+            55.8620662718476,
+            63.7215962444736,
+            63.9603300078596,
+            126.398586109455
+        ],
+        "direction": {
+            "SUCDi": "forward"
+        }
+    },
+    "b0726": {
+        "names": "suca, eck0714, jw0715, lys",
+        "description": "2-oxoglutarate decarboxylase, thiamin-requiring (ec:1,2,4,2)",
+        "kcats": [
+            32.0154207663471,
+            39.2856673427472,
+            43.4168014065156,
+            44.5106412838563,
+            66.0431010375185
+        ],
+        "direction": {
+            "AKGDH": "forward"
+        }
+    },
+    "b0727": {
+        "names": "sucb, eck0715, jw0716",
+        "description": "dihydrolipoyltranssuccinase (ec:2,3,1,61)",
+        "kcats": [
+            18.4302975191602,
+            24.5396044115883,
+            25.9786869949698,
+            28.5074715744916,
+            34.4046270549798
+        ],
+        "direction": {
+            "AKGDH": "forward"
+        }
+    },
+    "b0728": {
+        "names": "succ, eck0716, jw0717",
+        "description": "succinyl-coa synthetase, beta subunit (ec:6,2,1,5)",
+        "kcats": [
+            8.68279281661351,
+            10.8761934537654,
+            13.0555542382042,
+            14.4079969970645,
+            24.0117257552582
+        ],
+        "direction": {
+            "SUCOAS": "reverse"
+        }
+    },
+    "b0729": {
+        "names": "sucd, eck0717, jw0718",
+        "description": "succinyl-coa synthetase, nad(p)-binding, alpha subunit (ec:6,2,1,5)",
+        "kcats": [
+            10.1865687306972,
+            11.3360772960606,
+            14.1447005502693,
+            16.0522234921787,
+            25.2329854038436
+        ],
+        "direction": {
+            "SUCOAS": "reverse"
+        }
+    },
+    "b0733": {
+        "names": "cyda, eck0721, jw0722",
+        "description": "cytochrome d terminal oxidase, subunit i (ec:1,9,3,-)",
+        "kcats": [
+            346.331169574179,
+            601.350880101482,
+            901.07730372042,
+            1443.81044287324,
+            1920.85596469105
+        ]
+    },
+    "b0734": {
+        "names": "cydb, eck0722, jw0723",
+        "description": "cytochrome d terminal oxidase, subunit ii (ec:1,9,3,-)",
+        "kcats": [
+            635.951055974008,
+            1104.05745179515,
+            1833.84084229694,
+            2929.97598070565,
+            4140.35466906268
+        ]
+    },
+    "b0754": {
+        "names": "arog, eck0743, jw0737",
+        "description": "3-deoxy-d-arabino-heptulosonate-7-phosphate synthase, phenylalanine",
+        "kcats": [
+            1.74299238065082,
+            2.30626637519374,
+            2.93207958069392,
+            2.5363522312608,
+            2.53300562536148
+        ],
+        "direction": {
+            "DDPA": "forward"
+        }
+    },
+    "b0755": {
+        "names": "gpma, eck0744, gpm, jw0738",
+        "description": "phosphoglyceromutase 1 (ec:5,4,2,1)",
+        "kcats": [
+            11.5751838223829,
+            25.1984242739528,
+            48.3069143090778,
+            61.9529953175112,
+            82.8734710573104
+        ],
+        "direction": {
+            "PGM": "reverse"
+        }
+    },
+    "b0767": {
+        "names": "pgl, blu, eck0756, jw0750, ybhe",
+        "description": "6-phosphogluconolactonase (ec:3,1,1,31)",
+        "kcats": [
+            3.57628532404383,
+            13.3400856564555,
+            31.166057391647,
+            55.446829896312,
+            88.3949876504401
+        ],
+        "direction": {
+            "PGL": "forward"
+        }
+    },
+    "b0893": {
+        "names": "sers, eck0884, jw0876",
+        "description": "seryl-trna synthetase, also charges selenocysteinyl-trna with serine",
+        "kcats": [
+            0.804221164981912,
+            1.38409569355804,
+            1.89832451050444,
+            2.59885082114345,
+            2.91338056981185
+        ],
+        "direction": {
+            "SERTRS": "forward",
+            "SERTRS2": "forward"
+        }
+    },
+    "b0907": {
+        "names": "serc, eck0898, jw0890, pdxc, pdxf",
+        "description": "3-phosphoserine/phosphohydroxythreonine aminotransferase",
+        "kcats": [
+            1.86786197054497,
+            2.64993778015547,
+            3.65738128527792,
+            4.72156044587648,
+            4.20647473412833
+        ],
+        "direction": {
+            "OHPBAT": "forward",
+            "PSERT": "forward"
+        }
+    },
+    "b0908": {
+        "names": "aroa, eck0899, jw0891",
+        "description": "5-enolpyruvylshikimate-3-phosphate synthetase (ec:2,5,1,19)",
+        "kcats": [
+            5.78793676747154,
+            10.9244196719704,
+            14.054684937074,
+            15.0858394771992,
+            13.4131732482222
+        ],
+        "direction": {
+            "PSCVT": "forward"
+        }
+    },
+    "b0911": {
+        "names": "rpsa, eck0902, jw0894, ssyf",
+        "description": "30s ribosomal subunit protein s1",
+        "kcats": [
+            2.90072684086735,
+            5.37109728642289,
+            6.53909328297951,
+            7.78543287784864,
+            8.68501958482334
+        ]
+    },
+    "b0928": {
+        "names": "aspc, eck0919, jw0911",
+        "description": "aspartate aminotransferase, plp-dependent (ec:2,6,1,1)",
+        "kcats": [
+            1.51249994716716,
+            1.94334835039358,
+            2.60634886027563,
+            4.24006514224472,
+            5.50676521320971
+        ],
+        "direction": {
+            "ASPTA": "reverse",
+            "PHETA1": "reverse",
+            "TYRTA": "reverse"
+        }
+    },
+    "b0929": {
+        "names": "ompf, cmlb, coa, cry, eck0920, jw0912, tolf",
+        "description": "outer membrane porin 1a (ia;b;f)",
+        "kcats": [
+            29.3494107750065,
+            37.452745329666,
+            73.2160945276188,
+            111.740908361496,
+            467.91937022135
+        ],
+        "direction": {
+            "12PPDRtex": "forward",
+            "12PPDStex": "forward",
+            "23CAMPtex": "forward",
+            "23CCMPtex": "forward",
+            "23CGMPtex": "forward",
+            "23CUMPtex": "forward",
+            "23DAPPAtex": "forward",
+            "26DAHtex": "forward",
+            "34dhpactex": "forward",
+            "3AMPtex": "forward",
+            "3CMPtex": "forward",
+            "3GMPtex": "forward",
+            "3HPPtex": "forward",
+            "3PEPTtex": "forward",
+            "3UMPtex": "forward",
+            "4HOXPACDtex": "forward",
+            "4PEPTtex": "forward",
+            "5DGLCNtex": "forward",
+            "5MTRtex": "forward",
+            "ABUTtex": "forward",
+            "ACACtex": "forward",
+            "ACALDtex": "forward",
+            "ACGAL1Ptex": "forward",
+            "ACGALtex": "forward",
+            "ACGAM1Ptex": "forward",
+            "ACGAtex": "forward",
+            "ACMANAtex": "forward",
+            "ACMUMtex": "forward",
+            "ACNAMtex": "forward",
+            "ACSERtex": "forward",
+            "ACtex": "reverse",
+            "ADEtex": "forward",
+            "AGMtex": "forward",
+            "AKGtex": "forward",
+            "ALAALAtex": "forward",
+            "ALAtex": "forward",
+            "ALLTNtex": "forward",
+            "ALLtex": "forward",
+            "AMPtex": "forward",
+            "ANHGMtex": "forward",
+            "ARBTtex": "forward",
+            "ARBtex": "forward",
+            "ARGtex": "forward",
+            "ASCBtex": "forward",
+            "ASNtex": "forward",
+            "ASO3tex": "forward",
+            "ASPtex": "forward",
+            "BALAtex": "forward",
+            "BTNtex": "forward",
+            "BUTSO3tex": "forward",
+            "BUTtex": "forward",
+            "CA2tex": "forward",
+            "CD2tex": "forward",
+            "CGLYtex": "forward",
+            "CHLtex": "forward",
+            "CHTBStex": "forward",
+            "CITtex": "forward",
+            "CLtex": "forward",
+            "CMPtex": "forward",
+            "CMtex": "forward",
+            "CO2tex": "reverse",
+            "COBALT2tex": "forward",
+            "CRNDtex": "forward",
+            "CRNtex": "forward",
+            "CSNtex": "forward",
+            "CU2tex": "forward",
+            "CUtex": "forward",
+            "CYANtex": "forward",
+            "CYNTtex": "forward",
+            "CYSDtex": "forward",
+            "CYStex": "forward",
+            "CYTDtex": "forward",
+            "D_LACtex": "forward",
+            "DALAtex": "forward",
+            "DAMPtex": "forward",
+            "DAPtex": "forward",
+            "DCAtex": "forward",
+            "DCMPtex": "forward",
+            "DDGLCNtex": "forward",
+            "DGMPtex": "forward",
+            "DGSNtex": "forward",
+            "DHAtex": "forward",
+            "DIMPtex": "forward",
+            "DINStex": "forward",
+            "DMSOtex": "forward",
+            "DMStex": "forward",
+            "DOPAtex": "forward",
+            "DOXRBCNtex": "forward",
+            "DSERtex": "forward",
+            "DTMPtex": "forward",
+            "DUMPtex": "forward",
+            "ETHAtex": "forward",
+            "ETHSO3tex": "forward",
+            "ETOHtex": "forward",
+            "F6Ptex": "forward",
+            "FALDtex": "forward",
+            "FE2tex": "forward",
+            "FE3tex": "forward",
+            "FORtex": "forward",
+            "FRULYStex": "forward",
+            "FRUURtex": "forward",
+            "FRUtex": "forward",
+            "FUCtex": "forward",
+            "FUMtex": "forward",
+            "FUSAtex": "forward",
+            "G1Ptex": "forward",
+            "G3PCtex": "forward",
+            "G3PEtex": "forward",
+            "G3PGtex": "forward",
+            "G3PItex": "forward",
+            "G3PStex": "forward",
+            "G6Ptex": "forward",
+            "GAL1Ptex": "forward",
+            "GALBDtex": "forward",
+            "GALCTNLtex": "forward",
+            "GALCTNtex": "forward",
+            "GALCTtex": "forward",
+            "GALTtex": "forward",
+            "GALURtex": "forward",
+            "GALtex": "forward",
+            "GAMAN6Ptex": "forward",
+            "GAMtex": "forward",
+            "GBBTNtex": "forward",
+            "GDPtex": "forward",
+            "GLCNtex": "forward",
+            "GLCRtex": "forward",
+            "GLCUR1Ptex": "forward",
+            "GLCURtex": "forward",
+            "GLCtex_copy1": "forward",
+            "GLNtex": "forward",
+            "GLUtex": "forward",
+            "GLYALDtex": "forward",
+            "GLYBtex": "forward",
+            "GLYC2Ptex": "forward",
+            "GLYC3Ptex": "forward",
+            "GLYCAtex": "forward",
+            "GLYCLTtex": "forward",
+            "GLYCtex": "forward",
+            "GLYtex": "forward",
+            "GMPtex": "forward",
+            "GSNtex": "forward",
+            "GTHOXtex": "forward",
+            "GTHRDtex": "forward",
+            "GTPtex": "forward",
+            "H2O2tex": "forward",
+            "H2Otex": "reverse",
+            "H2Stex": "forward",
+            "H2tex": "forward",
+            "HCINNMtex": "forward",
+            "HG2tex": "forward",
+            "HIStex": "forward",
+            "HOMtex": "forward",
+            "HPPPNtex": "forward",
+            "HXAtex": "forward",
+            "HYXNtex": "forward",
+            "Htex": "reverse",
+            "IDONtex": "forward",
+            "ILEtex": "forward",
+            "IMPtex": "forward",
+            "INDOLEtex": "forward",
+            "INSTtex": "forward",
+            "ISETACtex": "forward",
+            "Ktex": "forward",
+            "L_LACtex": "forward",
+            "LALADGLUtex": "forward",
+            "LALALGLUtex": "forward",
+            "LCTStex": "forward",
+            "LEUtex": "forward",
+            "LIPOtex": "forward",
+            "LYStex": "forward",
+            "LYXtex": "forward",
+            "MALDtex": "forward",
+            "MALtex": "forward",
+            "MAN6Ptex": "forward",
+            "MANGLYCtex": "forward",
+            "MANtex": "forward",
+            "MELIBtex": "forward",
+            "MEOHtex": "reverse",
+            "METDtex": "forward",
+            "METSOX1tex": "forward",
+            "METSOX2tex": "forward",
+            "METtex": "forward",
+            "MG2tex": "forward",
+            "MINCYCtex": "forward",
+            "MMETtex": "forward",
+            "MNLtex": "forward",
+            "MNtex": "forward",
+            "MOBDtex": "forward",
+            "MSO3tex": "forward",
+            "N2Otex": "forward",
+            "NACtex": "forward",
+            "NAtex": "forward",
+            "NH4tex": "forward",
+            "NI2tex": "forward",
+            "NMNtex": "forward",
+            "NO2tex": "forward",
+            "NO3tex": "forward",
+            "NOtex": "forward",
+            "O2Stex": "forward",
+            "O2tex": "forward",
+            "OCTAtex": "forward",
+            "ORNtex": "forward",
+            "OROTtex": "forward",
+            "PACALDtex": "forward",
+            "PEAMNtex": "forward",
+            "PHEtex": "forward",
+            "PItex": "forward",
+            "PNTOtex": "forward",
+            "PPALtex": "forward",
+            "PPAtex": "forward",
+            "PPPNtex": "forward",
+            "PPTtex": "forward",
+            "PROGLYtex": "forward",
+            "PROtex": "forward",
+            "PSCLYStex": "forward",
+            "PSERtex": "forward",
+            "PTRCtex": "forward",
+            "PYDAMtex": "forward",
+            "PYDXNtex": "forward",
+            "PYDXtex": "forward",
+            "PYRtex": "forward",
+            "QUIN2tex": "forward",
+            "R5Ptex": "forward",
+            "RIBtex": "forward",
+            "RMNtex": "forward",
+            "SBTtex": "forward",
+            "SELtex": "forward",
+            "SERtex": "forward",
+            "SKMtex": "forward",
+            "SLNTtex": "forward",
+            "SO2tex": "forward",
+            "SO3tex": "forward",
+            "SO4tex": "forward",
+            "SPMDtex": "forward",
+            "SUCCtex": "forward",
+            "SUCRtex": "forward",
+            "SULFACtex": "forward",
+            "TARTRDtex": "forward",
+            "TARTRtex": "forward",
+            "TAURtex": "forward",
+            "TCYNTtex": "forward",
+            "THMDtex": "forward",
+            "THMtex": "forward",
+            "THRPtex": "forward",
+            "THRtex": "forward",
+            "THYMtex": "forward",
+            "TMAOtex": "forward",
+            "TMAtex": "forward",
+            "TREtex": "forward",
+            "TRPtex": "forward",
+            "TSULtex": "forward",
+            "TTRCYCtex": "forward",
+            "TUNGStex": "forward",
+            "TYMtex": "forward",
+            "TYRPtex": "forward",
+            "TYRtex": "forward",
+            "UACGAMtex": "forward",
+            "UDPACGALtex": "forward",
+            "UDPGALtex": "forward",
+            "UDPGLCURtex": "forward",
+            "UDPGtex": "forward",
+            "UMPtex": "forward",
+            "URAtex": "forward",
+            "UREAtex": "forward",
+            "VALtex": "forward",
+            "XANtex": "forward",
+            "XMPtex": "forward",
+            "XTSNtex": "forward",
+            "XYLUtex": "forward",
+            "XYLtex": "forward",
+            "Zn2tex": "forward"
+        }
+    },
+    "b0930": {
+        "names": "asns, eck0921, jw0913, lcs, tss",
+        "description": "asparaginyl trna synthetase (ec:6,1,1,22)",
+        "kcats": [
+            0.559625786903435,
+            0.861496873234379,
+            1.20277560611407,
+            1.65422112076706,
+            1.82609749057258
+        ],
+        "direction": {
+            "ASNTRS": "forward"
+        }
+    },
+    "b0945": {
+        "names": "pyrd, eck0936, jw0928",
+        "description": "dihydro-orotate oxidase, fmn-linked (ec:1,3,3,1)",
+        "kcats": [
+            28.6085165759503,
+            35.4543371487022,
+            36.6048696788873,
+            44.407050177526,
+            41.8756214560183
+        ],
+        "direction": {
+            "DHORD2": "forward",
+            "DHORD5": "forward"
+        }
+    },
+    "b0954": {
+        "names": "faba, eck0945, jw0937",
+        "description": "beta-hydroxydecanoyl thioester dehydrase (ec:4,2,1,60)",
+        "kcats": [
+            1.88213176724466,
+            4.12858264016832,
+            6.26092436681141,
+            7.76983195806344,
+            11.4344405066373
+        ],
+        "direction": {
+            "3HAD100": "forward",
+            "3HAD120": "forward",
+            "3HAD121": "forward",
+            "3HAD140": "forward",
+            "3HAD141": "forward",
+            "3HAD160": "reverse",
+            "3HAD161": "forward",
+            "3HAD180": "forward",
+            "3HAD181": "forward",
+            "3HAD40": "forward",
+            "3HAD60": "forward",
+            "3HAD80": "forward",
+            "T2DECAI": "forward"
+        }
+    },
+    "b1062": {
+        "names": "pyrc, eck1047, jw1049",
+        "description": "dihydro-orotase (ec:3,5,2,3)",
+        "kcats": [
+            3.71143523466587,
+            7.42094530863372,
+            10.2572977298211,
+            11.131806349888,
+            15.6069537002403
+        ],
+        "direction": {
+            "DHORTS": "reverse"
+        }
+    },
+    "b1089": {
+        "names": "rpmf, eck1075, jw1075",
+        "description": "50s ribosomal subunit protein l32",
+        "kcats": [
+            5.86359112166064,
+            11.2711377208187,
+            15.1280786003566,
+            16.7232852579082,
+            16.3969642849958
+        ]
+    },
+    "b1091": {
+        "names": "fabh, eck1077, jw1077",
+        "description": "3-oxoacyl-",
+        "kcats": [
+            0.881027535537275,
+            1.75581166964065,
+            2.79687058666554,
+            4.00161454348884,
+            4.35963626957169
+        ],
+        "direction": {
+            "ACOATA": "forward",
+            "KAS15": "forward",
+            "OGMEACPS": "forward"
+        }
+    },
+    "b1092": {
+        "names": "fabd, eck1078, jw1078, tfpa",
+        "description": "malonyl-coa-",
+        "kcats": [
+            0.452997963616332,
+            0.895343790811584,
+            1.2892036069683,
+            1.83660185782784,
+            2.00462703294898
+        ],
+        "direction": {
+            "MCOATA": "forward"
+        }
+    },
+    "b1093": {
+        "names": "fabg, eck1079, jw1079",
+        "description": "3-oxoacyl-",
+        "kcats": [
+            2.9777542186072,
+            5.99515243197293,
+            8.86952052151806,
+            11.3585207351971,
+            12.7678639510541
+        ],
+        "direction": {
+            "3OAR100": "forward",
+            "3OAR120": "forward",
+            "3OAR121": "forward",
+            "3OAR140": "forward",
+            "3OAR141": "forward",
+            "3OAR160": "reverse",
+            "3OAR161": "forward",
+            "3OAR180": "forward",
+            "3OAR181": "forward",
+            "3OAR40": "forward",
+            "3OAR60": "forward",
+            "3OAR80": "forward",
+            "OGMEACPR": "forward",
+            "OPMEACPR": "forward"
+        }
+    },
+    "b1098": {
+        "names": "tmk, eck1084, jw1084, ycfg",
+        "description": "thymidylate kinase (ec:2,7,4,9)",
+        "kcats": [
+            2.53529128401213,
+            4.83628473642469,
+            7.32157055622803,
+            9.24941364328833,
+            9.78959395596118
+        ],
+        "direction": {
+            "DTMPK": "forward"
+        }
+    },
+    "b1101": {
+        "names": "ptsg, car, cat, cr, eck1087, glca, jw1087, tgl, umg, umgc",
+        "description": "fused glucose-specific pts enzymes: iib component/iic component",
+        "kcats": [
+            46.3451801952785,
+            55.6456952081894,
+            68.3979654673728,
+            89.1898451516688,
+            229.952856752472
+        ],
+        "direction": {
+            "ACGAptspp": "forward",
+            "GLCptspp": "forward"
+        }
+    },
+    "b1109": {
+        "names": "ndh, eck1095, jw1095",
+        "description": "respiratory nadh dehydrogenase 2/cupric reductase",
+        "kcats": [
+            1015.77316221368,
+            2080.75143127337,
+            2801.09142780789,
+            3234.95423978961,
+            2810.01975306439
+        ],
+        "direction": {
+            "NADH10": "forward",
+            "NADH5": "forward",
+            "NADH9": "forward"
+        }
+    },
+    "b1131": {
+        "names": "purb, ade, eck1117, jw1117",
+        "description": "adenylosuccinate lyase (ec:4,3,2,2)",
+        "kcats": [
+            0.800453790291669,
+            1.70013279309825,
+            2.40140523982982,
+            3.12369521904615,
+            3.27132269340597
+        ],
+        "direction": {
+            "ADSL1r": "forward",
+            "ADSL2r": "forward"
+        }
+    },
+    "b1136": {
+        "names": "icd, eck1122, icda, icde, jw1122",
+        "description": "e14 prophage; isocitrate dehydrogenase, specific for nadp+",
+        "kcats": [
+            5.91681289651243,
+            7.16676345102862,
+            8.41200608811626,
+            10.8637911406974,
+            11.7053637753035
+        ],
+        "direction": {
+            "ICDHyr": "forward"
+        }
+    },
+    "b1260": {
+        "names": "trpa",
+        "description": null,
+        "kcats": [
+            0.175008942032294,
+            0.277560689220895,
+            0.337087557335437,
+            0.450369508942994,
+            0.410362826323403
+        ],
+        "direction": {
+            "TRPS1": "forward",
+            "TRPS2": "forward",
+            "TRPS3": "forward"
+        }
+    },
+    "b1261": {
+        "names": "trpb, eck1255, jw1253",
+        "description": "tryptophan synthase, beta subunit (ec:4,2,1,20)",
+        "kcats": [
+            0.234737984104087,
+            0.373084822524189,
+            0.518772902394356,
+            0.563887082561885,
+            0.656654041883285
+        ],
+        "direction": {
+            "TRPS1": "forward",
+            "TRPS2": "forward",
+            "TRPS3": "forward"
+        }
+    },
+    "b1262": {
+        "names": "trpc, eck1256, jw1254, trpf",
+        "description": "fused indole-3-glycerolphosphate",
+        "kcats": [
+            0.623374790639526,
+            1.15681334232333,
+            1.67691436557001,
+            1.80792662553347,
+            1.74257875298504
+        ],
+        "direction": {
+            "IGPS": "forward",
+            "PRAIi": "forward"
+        }
+    },
+    "b1263": {
+        "names": "trpd, eck1257, jw1255, trpgd",
+        "description": "fused glutamine amidotransferase (component ii) of anthranilate",
+        "kcats": [
+            1.36905729336655,
+            3.02395066677501,
+            4.3373354687528,
+            3.37970009441268,
+            4.09522232079538
+        ],
+        "direction": {
+            "ANPRT": "forward",
+            "ANS": "forward"
+        }
+    },
+    "b1264": {
+        "names": "trpe, anth, eck1258, jw1256, tryd, tryp-4",
+        "description": "component i of anthranilate synthase (ec:4,1,3,27)",
+        "kcats": [
+            3.25279777972805,
+            5.35850325407801,
+            11.549983214544,
+            8.01177636594272,
+            10.2763289077902
+        ],
+        "direction": {
+            "ANS": "forward"
+        }
+    },
+    "b1276": {
+        "names": "acna, acn, eck1271, jw1268",
+        "description": "aconitate hydratase 1 (ec:4,2,1,3)",
+        "kcats": [
+            34.977014054675,
+            65.1910656191326,
+            89.3431224647762,
+            150.308889563664,
+            202.130270978952
+        ],
+        "direction": {
+            "ACONTa": "forward",
+            "ACONTb": "forward"
+        }
+    },
+    "b1281": {
+        "names": "pyrf, eck1276, jw1273",
+        "description": "orotidine-5'-phosphate decarboxylase (ec:4,1,1,23)",
+        "kcats": [
+            5.08251675192123,
+            8.14625371207351,
+            10.2520331355236,
+            13.9862880692036,
+            12.981576715944
+        ],
+        "direction": {
+            "OMPDC": "forward"
+        }
+    },
+    "b1288": {
+        "names": "fabi, eck1283, envm, gts, jw1281, qmea",
+        "description": "enoyl-",
+        "kcats": [
+            1.49553463229259,
+            3.08540204325644,
+            4.68203540123454,
+            5.77775438355921,
+            5.4295291688232
+        ],
+        "direction": {
+            "EAR100x": "forward",
+            "EAR100y": "forward",
+            "EAR120x": "forward",
+            "EAR120y": "forward",
+            "EAR121x": "forward",
+            "EAR121y": "forward",
+            "EAR140x": "forward",
+            "EAR140y": "forward",
+            "EAR141x": "forward",
+            "EAR141y": "forward",
+            "EAR160x": "reverse",
+            "EAR160y": "forward",
+            "EAR161x": "forward",
+            "EAR161y": "forward",
+            "EAR180x": "forward",
+            "EAR180y": "forward",
+            "EAR181x": "forward",
+            "EAR181y": "forward",
+            "EAR40x": "forward",
+            "EAR40y": "forward",
+            "EAR60x": "forward",
+            "EAR60y": "forward",
+            "EAR80x": "forward",
+            "EAR80y": "forward",
+            "EGMEACPR": "forward",
+            "EPMEACPR": "forward"
+        }
+    },
+    "b1380": {
+        "names": "ldha, eck1377, hslf, hsli, htph, jw1375",
+        "description": "fermentative d-lactate dehydrogenase, nad-dependent (ec:1,1,1,28)",
+        "kcats": [
+            0.147128286933651,
+            0.408304270955104,
+            0.991165105555176,
+            1.7821479544515,
+            2.44361279267909
+        ],
+        "direction": {
+            "LDH_D": "forward"
+        }
+    },
+    "b1612": {
+        "names": "fuma, eck1607, jw1604",
+        "description": "fumarate hydratase (fumarase a), aerobic class i (ec:4,2,1,2)",
+        "kcats": [
+            55.3553341571982,
+            57.6568199234205,
+            56.6309267257182,
+            75.8784088957374,
+            114.130733980461
+        ],
+        "direction": {
+            "FUM": "forward"
+        }
+    },
+    "b1637": {
+        "names": "tyrs, eck1633, jw1629",
+        "description": "tyrosyl-trna synthetase (ec:6,1,1,1)",
+        "kcats": [
+            1.12328969391016,
+            1.89508116915279,
+            2.69632347535123,
+            3.23055386131562,
+            3.60958937632915
+        ],
+        "direction": {
+            "TYRTRS": "forward"
+        }
+    },
+    "b1676": {
+        "names": "pykf, eck1672, jw1666",
+        "description": "pyruvate kinase i (ec:2,7,1,40)",
+        "kcats": [
+            3.54142157534819,
+            6.75233988274417,
+            6.36142467268865,
+            5.64799282133572,
+            5.13251081806963
+        ],
+        "direction": {
+            "PYK": "forward"
+        }
+    },
+    "b1693": {
+        "names": "arod, eck1691, jw1683",
+        "description": "3-dehydroquinate dehydratase (ec:4,2,1,10)",
+        "kcats": [
+            11.303041498766,
+            17.8448665229923,
+            30.9996478249171,
+            49.3425964989841,
+            53.9715120514205
+        ],
+        "direction": {
+            "DHQTi": "forward"
+        }
+    },
+    "b1713": {
+        "names": "phet, eck1711, jw1703",
+        "description": "phenylalanine trna synthetase, beta subunit (ec:6,1,1,20)",
+        "kcats": [
+            1.80061904806624,
+            2.57594226738231,
+            3.04609931172384,
+            3.36891879324129,
+            3.36988490162117
+        ],
+        "direction": {
+            "PHETRS": "forward"
+        }
+    },
+    "b1716": {
+        "names": "rplt, eck1714, jw1706, pdza",
+        "description": "50s ribosomal subunit protein l20",
+        "kcats": [
+            3.785772456738,
+            5.9870916695452,
+            8.63580010392941,
+            9.91203646836699,
+            12.8011935044709
+        ]
+    },
+    "b1719": {
+        "names": "thrs, eck1717, jw1709",
+        "description": "threonyl-trna synthetase (ec:6,1,1,3)",
+        "kcats": [
+            1.64578097530428,
+            2.90639932332125,
+            4.08693629418852,
+            6.89133694446594,
+            8.54131342170914
+        ],
+        "direction": {
+            "THRTRS": "forward"
+        }
+    },
+    "b1723": {
+        "names": "pfkb, eck1721, jw5280",
+        "description": "6-phosphofructokinase ii (ec:2,7,1,11)",
+        "kcats": [
+            54.8460970717164,
+            107.605311595168,
+            171.007139787681,
+            252.178376045949,
+            322.010252598513
+        ],
+        "direction": {
+            "PFK": "forward"
+        }
+    },
+    "b1761": {
+        "names": "gdha, eck1759, jw1750",
+        "description": "glutamate dehydrogenase, nadp-specific (ec:1,4,1,4)",
+        "kcats": [
+            1.03215135395077,
+            0.834818325115203,
+            1.23592430966,
+            1.27355791879717,
+            1.93340592007774
+        ],
+        "direction": {
+            "GLUDy": "reverse"
+        }
+    },
+    "b1779": {
+        "names": "gapa, eck1777, jw1768",
+        "description": "glyceraldehyde-3-phosphate dehydrogenase a (ec:1,2,1,12)",
+        "kcats": [
+            7.86025283218128,
+            10.942862218465,
+            14.8263593906015,
+            15.7415095389946,
+            29.2027061320499
+        ],
+        "direction": {
+            "E4PD": "forward",
+            "GAPD": "forward"
+        }
+    },
+    "b1817": {
+        "names": "manx, eck1815, gptb, jw1806, mpt, ptsl, ptsx",
+        "description": "fused mannose-specific pts enzymes: iia component/iib component",
+        "kcats": [
+            10.7500748768919,
+            14.9467975651953,
+            16.7460695975516,
+            28.4011248070246,
+            66.4141801261211
+        ],
+        "direction": {
+            "ACMANAptspp": "forward",
+            "FRUpts2pp": "forward",
+            "GAMptspp": "forward",
+            "GLCptspp": "forward",
+            "MANptspp": "forward"
+        }
+    },
+    "b1818": {
+        "names": "many, eck1816, jw1807, pel, ptsp, ptsx",
+        "description": "mannose-specific enzyme iic component of pts",
+        "kcats": [
+            64.9956042253783,
+            91.5703663333628,
+            109.933653043927,
+            191.771558944729,
+            649.565945799903
+        ],
+        "direction": {
+            "ACMANAptspp": "forward",
+            "FRUpts2pp": "forward",
+            "GAMptspp": "forward",
+            "GLCptspp": "forward",
+            "MANptspp": "forward"
+        }
+    },
+    "b1819": {
+        "names": "manz, eck1817, gptb, jw1808, mpt, ptsm, ptsx",
+        "description": "mannose-specific enzyme iid component of pts",
+        "kcats": [
+            49.6724163834525,
+            74.7860068430252,
+            110.714331019061,
+            130.259926830382,
+            427.744474798304
+        ],
+        "direction": {
+            "ACMANAptspp": "forward",
+            "FRUpts2pp": "forward",
+            "GAMptspp": "forward",
+            "GLCptspp": "forward",
+            "MANptspp": "forward"
+        }
+    },
+    "b1849": {
+        "names": "purt, eck1850, jw1838",
+        "description": "phosphoribosylglycinamide formyltransferase 2 (ec:2,7,2,1)",
+        "kcats": [
+            3.23577380681542,
+            7.5465684644693,
+            11.7214221779072,
+            10.1751479450041,
+            12.8024576657565
+        ],
+        "direction": {
+            "ACKr": "forward",
+            "GART": "forward"
+        }
+    },
+    "b1852": {
+        "names": "zwf, eck1853, jw1841",
+        "description": "glucose-6-phosphate dehydrogenase (ec:1,1,1,49)",
+        "kcats": [
+            7.21973945874228,
+            18.9058535072977,
+            44.377987821211,
+            79.420553154548,
+            112.469651045089
+        ],
+        "direction": {
+            "G6PDH2r": "forward"
+        }
+    },
+    "b1854": {
+        "names": "pyka, eck1855, jw1843",
+        "description": "pyruvate kinase ii (ec:2,7,1,40)",
+        "kcats": [
+            11.8870723590416,
+            18.3345489447745,
+            15.5094287571396,
+            16.4207532762496,
+            19.6299828563698
+        ],
+        "direction": {
+            "PYK": "forward"
+        }
+    },
+    "b1866": {
+        "names": "asps, eck1867, jw1855, tls",
+        "description": "aspartyl-trna synthetase (ec:6,1,1,12)",
+        "kcats": [
+            0.771430951716946,
+            1.50869963958598,
+            1.96135493575298,
+            2.65577203013717,
+            3.25497837655867
+        ],
+        "direction": {
+            "ASPTRS": "forward"
+        }
+    },
+    "b1876": {
+        "names": "args, eck1877, jw1865, lov",
+        "description": "arginyl-trna synthetase (ec:6,1,1,19)",
+        "kcats": [
+            2.92644317243377,
+            5.33083550975508,
+            8.69112395810896,
+            11.5780147280628,
+            12.4320933899355
+        ],
+        "direction": {
+            "ARGTRS": "forward"
+        }
+    },
+    "b2019": {
+        "names": "hisg, eck2014, jw2001",
+        "description": "atp phosphoribosyltransferase (ec:2,4,2,17)",
+        "kcats": [
+            0.573403379956625,
+            0.714589162121273,
+            0.849922142636737,
+            1.09203564866207,
+            0.949589362661913
+        ],
+        "direction": {
+            "ATPPRT": "forward"
+        }
+    },
+    "b2020": {
+        "names": "hisd, eck2015, jw2002",
+        "description": "bifunctional histidinal dehydrogenase/histidinol dehydrogenase",
+        "kcats": [
+            1.0397614814096,
+            1.75253990039799,
+            2.18049683110937,
+            2.43699378974391,
+            2.78377457973439
+        ],
+        "direction": {
+            "HISTD": "forward"
+        }
+    },
+    "b2021": {
+        "names": "hisc, eck2016, jw2003",
+        "description": "histidinol-phosphate aminotransferase (ec:2,6,1,9)",
+        "kcats": [
+            0.814373512024286,
+            1.33396729484581,
+            1.54809791781193,
+            1.87091401572251,
+            1.79049078622396
+        ],
+        "direction": {
+            "HSTPT": "forward"
+        }
+    },
+    "b2022": {
+        "names": "hisb, eck2017, jw2004",
+        "description": "fused histidinol-phosphatase/imidazoleglycerol-phosphate dehydratase",
+        "kcats": [
+            0.720124136310807,
+            1.20501142959503,
+            1.48343840638525,
+            1.4947329065532,
+            1.73579475142467
+        ],
+        "direction": {
+            "HISTP": "forward",
+            "IGPDH": "forward"
+        }
+    },
+    "b2023": {
+        "names": "hish, eck2018, jw2005",
+        "description": "imidazole glycerol phosphate synthase, glutamine amidotransferase",
+        "kcats": [
+            1.45871299406548,
+            2.50963713736992,
+            2.94089301902808,
+            3.45328484579997,
+            3.36868275211101
+        ],
+        "direction": {
+            "IG3PS": "forward"
+        }
+    },
+    "b2026": {
+        "names": "hisi, eck2021, hise, hisie, jw2008",
+        "description": "fused phosphoribosyl-amp cyclohydrolase/phosphoribosyl-atp",
+        "kcats": [
+            3.721763059625,
+            4.92729804457445,
+            6.13581666428449,
+            5.67150429082244,
+            5.96277641461624
+        ],
+        "direction": {
+            "PRAMPC": "forward",
+            "PRATPP": "forward"
+        }
+    },
+    "b2029": {
+        "names": "gnd, eck2024, jw2011",
+        "description": "gluconate-6-phosphate dehydrogenase, decarboxylating (ec:1,1,1,44)",
+        "kcats": [
+            2.12662780109484,
+            4.49996750807365,
+            7.54808629414163,
+            11.2606759344621,
+            11.7141160861108
+        ],
+        "direction": {
+            "GND": "forward"
+        }
+    },
+    "b2097": {
+        "names": "fbab, dhna, eck2090, jw5344",
+        "description": "fructose-bisphosphate aldolase class i (ec:4,1,2,13)",
+        "kcats": [
+            5.76495558045226,
+            6.51511520335811,
+            15.0781533165057,
+            25.9131196630436,
+            36.0664287559597
+        ],
+        "direction": {
+            "FBA": "forward"
+        }
+    },
+    "b2114": {
+        "names": "metg, eck2107, jw2101",
+        "description": "methionyl-trna synthetase (ec:6,1,1,10)",
+        "kcats": [
+            0.494805956936858,
+            0.922225925824081,
+            1.49347841349911,
+            2.0238346068826,
+            2.33777887304572
+        ],
+        "direction": {
+            "METTRS": "forward"
+        }
+    },
+    "b2149": {
+        "names": "mgla, eck2142, jw2136, mglp",
+        "description": "fused methyl-galactoside transporter subunits of abc superfamily:",
+        "kcats": [
+            144.922631043073,
+            291.699266509898,
+            442.001285434345,
+            983.721629708779,
+            3084.07360820962
+        ],
+        "direction": {
+            "GALabcpp": "forward",
+            "GLCabcpp": "forward"
+        }
+    },
+    "b2185": {
+        "names": "rply, eck2179, jw2173",
+        "description": "50s ribosomal subunit protein l25",
+        "kcats": [
+            2.7883234262202,
+            5.28972595855744,
+            6.7405986871711,
+            8.13575340753318,
+            8.31240855415378
+        ]
+    },
+    "b2215": {
+        "names": "ompc, eck2207, jw2203, meoa, par",
+        "description": "outer membrane porin protein c",
+        "kcats": [
+            60.8642150805189,
+            125.72508610178,
+            319.162218514626,
+            446.053055613003,
+            834.101725856693
+        ],
+        "direction": {
+            "12PPDRtex": "forward",
+            "12PPDStex": "forward",
+            "23CAMPtex": "forward",
+            "23CCMPtex": "forward",
+            "23CGMPtex": "forward",
+            "23CUMPtex": "forward",
+            "23DAPPAtex": "forward",
+            "26DAHtex": "forward",
+            "34dhpactex": "forward",
+            "3AMPtex": "forward",
+            "3CMPtex": "forward",
+            "3GMPtex": "forward",
+            "3HPPtex": "forward",
+            "3PEPTtex": "forward",
+            "3UMPtex": "forward",
+            "4HOXPACDtex": "forward",
+            "4PEPTtex": "forward",
+            "5DGLCNtex": "forward",
+            "5MTRtex": "forward",
+            "ABUTtex": "forward",
+            "ACACtex": "forward",
+            "ACALDtex": "forward",
+            "ACGAL1Ptex": "forward",
+            "ACGALtex": "forward",
+            "ACGAM1Ptex": "forward",
+            "ACGAtex": "forward",
+            "ACMANAtex": "forward",
+            "ACMUMtex": "forward",
+            "ACNAMtex": "forward",
+            "ACSERtex": "forward",
+            "ACtex": "reverse",
+            "ADEtex": "forward",
+            "AGMtex": "forward",
+            "AKGtex": "forward",
+            "ALAALAtex": "forward",
+            "ALAtex": "forward",
+            "ALLTNtex": "forward",
+            "ALLtex": "forward",
+            "AMPtex": "forward",
+            "ANHGMtex": "forward",
+            "ARBTtex": "forward",
+            "ARBtex": "forward",
+            "ARGtex": "forward",
+            "ASCBtex": "forward",
+            "ASNtex": "forward",
+            "ASO3tex": "forward",
+            "ASPtex": "forward",
+            "BALAtex": "forward",
+            "BTNtex": "forward",
+            "BUTSO3tex": "forward",
+            "BUTtex": "forward",
+            "CA2tex": "forward",
+            "CD2tex": "forward",
+            "CGLYtex": "forward",
+            "CHLtex": "forward",
+            "CHTBStex": "forward",
+            "CITtex": "forward",
+            "CLtex": "forward",
+            "CMPtex": "forward",
+            "CMtex": "forward",
+            "CO2tex": "reverse",
+            "COBALT2tex": "forward",
+            "CRNDtex": "forward",
+            "CRNtex": "forward",
+            "CSNtex": "forward",
+            "CU2tex": "forward",
+            "CUtex": "forward",
+            "CYANtex": "forward",
+            "CYNTtex": "forward",
+            "CYSDtex": "forward",
+            "CYStex": "forward",
+            "CYTDtex": "forward",
+            "D_LACtex": "forward",
+            "DALAtex": "forward",
+            "DAMPtex": "forward",
+            "DAPtex": "forward",
+            "DCAtex": "forward",
+            "DCMPtex": "forward",
+            "DDGLCNtex": "forward",
+            "DGMPtex": "forward",
+            "DGSNtex": "forward",
+            "DHAtex": "forward",
+            "DIMPtex": "forward",
+            "DINStex": "forward",
+            "DMSOtex": "forward",
+            "DMStex": "forward",
+            "DOPAtex": "forward",
+            "DOXRBCNtex": "forward",
+            "DSERtex": "forward",
+            "DTMPtex": "forward",
+            "DUMPtex": "forward",
+            "ETHAtex": "forward",
+            "ETHSO3tex": "forward",
+            "ETOHtex": "forward",
+            "F6Ptex": "forward",
+            "FALDtex": "forward",
+            "FE2tex": "forward",
+            "FE3tex": "forward",
+            "FORtex": "forward",
+            "FRULYStex": "forward",
+            "FRUURtex": "forward",
+            "FRUtex": "forward",
+            "FUCtex": "forward",
+            "FUMtex": "forward",
+            "FUSAtex": "forward",
+            "G1Ptex": "forward",
+            "G3PCtex": "forward",
+            "G3PEtex": "forward",
+            "G3PGtex": "forward",
+            "G3PItex": "forward",
+            "G3PStex": "forward",
+            "G6Ptex": "forward",
+            "GAL1Ptex": "forward",
+            "GALBDtex": "forward",
+            "GALCTNLtex": "forward",
+            "GALCTNtex": "forward",
+            "GALCTtex": "forward",
+            "GALTtex": "forward",
+            "GALURtex": "forward",
+            "GALtex": "forward",
+            "GAMAN6Ptex": "forward",
+            "GAMtex": "forward",
+            "GBBTNtex": "forward",
+            "GDPtex": "forward",
+            "GLCNtex": "forward",
+            "GLCRtex": "forward",
+            "GLCUR1Ptex": "forward",
+            "GLCURtex": "forward",
+            "GLCtex_copy1": "forward",
+            "GLNtex": "forward",
+            "GLUtex": "forward",
+            "GLYALDtex": "forward",
+            "GLYBtex": "forward",
+            "GLYC2Ptex": "forward",
+            "GLYC3Ptex": "forward",
+            "GLYCAtex": "forward",
+            "GLYCLTtex": "forward",
+            "GLYCtex": "forward",
+            "GLYtex": "forward",
+            "GMPtex": "forward",
+            "GSNtex": "forward",
+            "GTHOXtex": "forward",
+            "GTHRDtex": "forward",
+            "GTPtex": "forward",
+            "H2O2tex": "forward",
+            "H2Otex": "reverse",
+            "H2Stex": "forward",
+            "H2tex": "forward",
+            "HCINNMtex": "forward",
+            "HG2tex": "forward",
+            "HIStex": "forward",
+            "HOMtex": "forward",
+            "HPPPNtex": "forward",
+            "HXAtex": "forward",
+            "HYXNtex": "forward",
+            "Htex": "reverse",
+            "IDONtex": "forward",
+            "ILEtex": "forward",
+            "IMPtex": "forward",
+            "INDOLEtex": "forward",
+            "INSTtex": "forward",
+            "ISETACtex": "forward",
+            "Ktex": "forward",
+            "L_LACtex": "forward",
+            "LALADGLUtex": "forward",
+            "LALALGLUtex": "forward",
+            "LCTStex": "forward",
+            "LEUtex": "forward",
+            "LIPOtex": "forward",
+            "LYStex": "forward",
+            "LYXtex": "forward",
+            "MALDtex": "forward",
+            "MALtex": "forward",
+            "MAN6Ptex": "forward",
+            "MANGLYCtex": "forward",
+            "MANtex": "forward",
+            "MELIBtex": "forward",
+            "MEOHtex": "reverse",
+            "METDtex": "forward",
+            "METSOX1tex": "forward",
+            "METSOX2tex": "forward",
+            "METtex": "forward",
+            "MG2tex": "forward",
+            "MINCYCtex": "forward",
+            "MMETtex": "forward",
+            "MNLtex": "forward",
+            "MNtex": "forward",
+            "MOBDtex": "forward",
+            "MSO3tex": "forward",
+            "N2Otex": "forward",
+            "NACtex": "forward",
+            "NAtex": "forward",
+            "NH4tex": "forward",
+            "NI2tex": "forward",
+            "NMNtex": "forward",
+            "NO2tex": "forward",
+            "NO3tex": "forward",
+            "NOtex": "forward",
+            "O2Stex": "forward",
+            "O2tex": "forward",
+            "OCTAtex": "forward",
+            "ORNtex": "forward",
+            "OROTtex": "forward",
+            "PACALDtex": "forward",
+            "PEAMNtex": "forward",
+            "PHEtex": "forward",
+            "PItex": "forward",
+            "PNTOtex": "forward",
+            "PPALtex": "forward",
+            "PPAtex": "forward",
+            "PPPNtex": "forward",
+            "PPTtex": "forward",
+            "PROGLYtex": "forward",
+            "PROtex": "forward",
+            "PSCLYStex": "forward",
+            "PSERtex": "forward",
+            "PTRCtex": "forward",
+            "PYDAMtex": "forward",
+            "PYDXNtex": "forward",
+            "PYDXtex": "forward",
+            "PYRtex": "forward",
+            "QUIN2tex": "forward",
+            "R5Ptex": "forward",
+            "RIBtex": "forward",
+            "RMNtex": "forward",
+            "SBTtex": "forward",
+            "SELtex": "forward",
+            "SERtex": "forward",
+            "SKMtex": "forward",
+            "SLNTtex": "forward",
+            "SO2tex": "forward",
+            "SO3tex": "forward",
+            "SO4tex": "forward",
+            "SPMDtex": "forward",
+            "SUCCtex": "forward",
+            "SUCRtex": "forward",
+            "SULFACtex": "forward",
+            "TARTRDtex": "forward",
+            "TARTRtex": "forward",
+            "TAURtex": "forward",
+            "TCYNTtex": "forward",
+            "THMDtex": "forward",
+            "THMtex": "forward",
+            "THRPtex": "forward",
+            "THRtex": "forward",
+            "THYMtex": "forward",
+            "TMAOtex": "forward",
+            "TMAtex": "forward",
+            "TREtex": "forward",
+            "TRPtex": "forward",
+            "TSULtex": "forward",
+            "TTRCYCtex": "forward",
+            "TUNGStex": "forward",
+            "TYMtex": "forward",
+            "TYRPtex": "forward",
+            "TYRtex": "forward",
+            "UACGAMtex": "forward",
+            "UDPACGALtex": "forward",
+            "UDPGALtex": "forward",
+            "UDPGLCURtex": "forward",
+            "UDPGtex": "forward",
+            "UMPtex": "forward",
+            "URAtex": "forward",
+            "UREAtex": "forward",
+            "VALtex": "forward",
+            "XANtex": "forward",
+            "XMPtex": "forward",
+            "XTSNtex": "forward",
+            "XYLUtex": "forward",
+            "XYLtex": "forward",
+            "Zn2tex": "forward"
+        }
+    },
+    "b2234": {
+        "names": "nrda, dnaf, eck2226, jw2228",
+        "description": "ribonucleoside diphosphate reductase 1, alpha subunit (ec:1,17,4,1)",
+        "kcats": [
+            0.666515845048115,
+            1.11088674920196,
+            1.40799433773616,
+            1.87000301425408,
+            2.55087446644525
+        ],
+        "direction": {
+            "RNDR1": "forward",
+            "RNDR2": "forward",
+            "RNDR3": "forward",
+            "RNDR4": "forward"
+        }
+    },
+    "b2235": {
+        "names": "nrdb, eck2227, ftsb, jw2229",
+        "description": "ribonucleoside diphosphate reductase 1, beta subunit, ferritin-like",
+        "kcats": [
+            0.883298837649212,
+            1.68292509281562,
+            2.10809340489401,
+            2.72016259774696,
+            3.63289124503109
+        ]
+    },
+    "b2281": {
+        "names": "nuoi, eck2275, jw2276",
+        "description": "nadh:ubiquinone oxidoreductase, chain i (ec:1,6,5,3)",
+        "kcats": [
+            380.172411588744,
+            655.626487465903,
+            841.971904718767,
+            1003.38411166356,
+            1618.27030422011
+        ],
+        "direction": {
+            "NADH16pp": "forward",
+            "NADH17pp": "forward",
+            "NADH18pp": "forward"
+        }
+    },
+    "b2283": {
+        "names": "nuog, eck2277, jw2278",
+        "description": "nadh:ubiquinone oxidoreductase, chain g (ec:1,6,5,3)",
+        "kcats": [
+            326.680815988316,
+            547.566166124568,
+            657.268016057582,
+            790.805003849184,
+            992.141833689562
+        ],
+        "direction": {
+            "NADH16pp": "forward",
+            "NADH17pp": "forward",
+            "NADH18pp": "forward"
+        }
+    },
+    "b2284": {
+        "names": "nuof, eck2278, jw2279, nuob",
+        "description": "nadh:ubiquinone oxidoreductase, chain f (ec:1,6,5,3)",
+        "kcats": [
+            650.094823816752,
+            1222.70960394414,
+            1541.00158779116,
+            1782.04884371312,
+            2668.95450441657
+        ],
+        "direction": {
+            "NADH16pp": "forward",
+            "NADH17pp": "forward",
+            "NADH18pp": "forward"
+        }
+    },
+    "b2286": {
+        "names": "nuoc, eck2280, jw5375, nuocd, nuod",
+        "description": "nadh:ubiquinone oxidoreductase, chain c,d (ec:1,6,5,3)",
+        "kcats": [
+            257.59081676741,
+            407.990476720268,
+            448.268017619599,
+            575.872204164882,
+            863.264349339328
+        ],
+        "direction": {
+            "NADH16pp": "forward",
+            "NADH17pp": "forward",
+            "NADH18pp": "forward"
+        }
+    },
+    "b2287": {
+        "names": "nuob, eck2281, jw5875",
+        "description": "nadh:ubiquinone oxidoreductase, chain b (ec:1,6,5,3)",
+        "kcats": [
+            444.129683222375,
+            873.364002817245,
+            1140.63532161,
+            1224.14521480872,
+            2214.00223742274
+        ],
+        "direction": {
+            "NADH16pp": "forward",
+            "NADH17pp": "forward",
+            "NADH18pp": "forward"
+        }
+    },
+    "b2288": {
+        "names": "nuoa, eck2282, jw2283",
+        "description": "nadh:ubiquinone oxidoreductase, membrane subunit a",
+        "kcats": [
+            1054.92060659919,
+            1082.14262392867,
+            2088.58079277326,
+            1774.57022146732,
+            4551.84706575154
+        ],
+        "direction": {
+            "NADH16pp": "forward",
+            "NADH17pp": "forward",
+            "NADH18pp": "forward"
+        }
+    },
+    "b2290": {
+        "names": "yfbq, eck2284, jw2287",
+        "description": "predicted aminotransferase",
+        "kcats": [
+            30.8904960626607,
+            44.8951187364924,
+            59.0167775678092,
+            104.13621276713,
+            130.932158704111
+        ],
+        "direction": {
+            "ALATA_L": "reverse"
+        }
+    },
+    "b2297": {
+        "names": "pta, eck2291, jw2294",
+        "description": "phosphate acetyltransferase (ec:2,3,1,8)",
+        "kcats": [
+            1.30056191366468,
+            2.91240187621393,
+            7.80814714593264,
+            35.8156345778515,
+            125.368258383897
+        ],
+        "direction": {
+            "PTA2": "forward",
+            "PTAr": "reverse"
+        }
+    },
+    "b2312": {
+        "names": "purf, ade, eck2306, jw2309, purc",
+        "description": "amidophosphoribosyltransferase (ec:2,4,2,14)",
+        "kcats": [
+            6.28120797793582,
+            17.4057950067599,
+            20.2059662648443,
+            17.3695886943167,
+            23.2331934955127
+        ],
+        "direction": {
+            "GLUPRT": "forward"
+        }
+    },
+    "b2316": {
+        "names": "accd, dedb, eck2310, jw2313, usg",
+        "description": "acetyl-coa carboxylase, beta (carboxyltranferase) subunit",
+        "kcats": [
+            1.52647335625149,
+            3.04946256438442,
+            4.75132524362906,
+            6.69538433373986,
+            7.70163473609869
+        ],
+        "direction": {
+            "ACCOAC": "forward"
+        }
+    },
+    "b2323": {
+        "names": "fabb, eck2317, fabc, jw2320",
+        "description": "3-oxoacyl-",
+        "kcats": [
+            2.02284963582903,
+            4.75061965770561,
+            10.4599765033249,
+            15.435054246153,
+            21.5147234296153
+        ],
+        "direction": {
+            "3OAS100": "forward",
+            "3OAS120": "forward",
+            "3OAS121": "forward",
+            "3OAS140": "forward",
+            "3OAS141": "forward",
+            "3OAS160": "reverse",
+            "3OAS161": "forward",
+            "3OAS180": "forward",
+            "3OAS60": "forward",
+            "3OAS80": "forward",
+            "KAS14": "forward",
+            "MACPD": "forward",
+            "OPMEACPS": "forward"
+        }
+    },
+    "b2329": {
+        "names": "aroc, eck2323, jw2326",
+        "description": "chorismate synthase (ec:4,2,3,5)",
+        "kcats": [
+            5.64202239518234,
+            10.6156541092363,
+            13.2550218285853,
+            28.9995961879994,
+            22.5936180513764
+        ],
+        "direction": {
+            "CHORS": "forward"
+        }
+    },
+    "b2379": {
+        "names": "yfdz, eck2375, jw2376",
+        "description": "prediected aminotransferase, plp-dependent",
+        "kcats": [
+            67.7874774708387,
+            160.874175472431,
+            193.555024735104,
+            294.758432747639,
+            382.405034945338
+        ],
+        "direction": {
+            "ALATA_L": "reverse"
+        }
+    },
+    "b2400": {
+        "names": "gltx, eck2394, jw2395",
+        "description": "glutamyl-trna synthetase (ec:6,1,1,17)",
+        "kcats": [
+            0.639987714248289,
+            1.12019536656836,
+            1.49749416682649,
+            1.8994577029534,
+            2.0420303633571
+        ],
+        "direction": {
+            "GLUTRS": "forward"
+        }
+    },
+    "b2414": {
+        "names": "cysk, cysz, eck2409, jw2407",
+        "description": "cysteine synthase a, o-acetylserine sulfhydrolase a subunit",
+        "kcats": [
+            0.0122469004868824,
+            0.0202703488130144,
+            0.0302507203343734,
+            0.038626978741304,
+            0.0463067891087076
+        ],
+        "direction": {
+            "CYSS": "forward"
+        }
+    },
+    "b2421": {
+        "names": "cysm, eck2416, jw2414",
+        "description": "cysteine synthase b (o-acetylserine sulfhydrolase b) (ec:2,5,1,47)",
+        "kcats": [
+            0.567940951720825,
+            0.936481686741802,
+            1.12989948908717,
+            1.14924105699488,
+            1.17436363350225
+        ],
+        "direction": {
+            "CYSS": "forward"
+        }
+    },
+    "b2464": {
+        "names": "tala, eck2459, jw2448",
+        "description": "transaldolase a (ec:2,2,1,2)",
+        "kcats": [
+            0.217234580486732,
+            1.5891267042664,
+            6.43359642495432,
+            13.8161754580813,
+            24.1419375737907
+        ],
+        "direction": {
+            "TALA": "forward"
+        }
+    },
+    "b2465": {
+        "names": "tktb, eck2460, jw2449",
+        "description": "transketolase 2, thiamin-binding (ec:2,2,1,1)",
+        "kcats": [
+            0.267768437964807,
+            1.57032973979996,
+            5.14635387063244,
+            10.9274601255897,
+            20.764648338869
+        ],
+        "direction": {
+            "TKT1": "forward",
+            "TKT2": "forward"
+        }
+    },
+    "b2472": {
+        "names": "dape, eck2467, jw2456, msgb",
+        "description": "n-succinyl-diaminopimelate deacylase (ec:3,5,1,18)",
+        "kcats": [
+            25.0749145289847,
+            43.5306592454812,
+            76.0906422673592,
+            92.8333189711722,
+            103.881512043767
+        ],
+        "direction": {
+            "SDPDS": "forward"
+        }
+    },
+    "b2476": {
+        "names": "purc, ade, eck2472, jw2461",
+        "description": "phosphoribosylaminoimidazole-succinocarboxamide synthetase",
+        "kcats": [
+            0.372057615417801,
+            0.706025050977501,
+            1.3212656463195,
+            1.78356845606001,
+            2.09375798281537
+        ],
+        "direction": {
+            "PRASCSi": "forward"
+        }
+    },
+    "b2478": {
+        "names": "dapa, eck2474, jw2463",
+        "description": "dihydrodipicolinate synthase (ec:4,2,1,52)",
+        "kcats": [
+            2.00435695256158,
+            3.10770060755141,
+            3.93441836052637,
+            5.1415376660957,
+            8.00578464476512
+        ],
+        "direction": {
+            "DHDPS": "forward"
+        }
+    },
+    "b2499": {
+        "names": "purm, eck2495, jw2484, purg, puri",
+        "description": "phosphoribosylaminoimidazole synthetase (ec:6,3,3,1)",
+        "kcats": [
+            1.4213184816802,
+            2.49534783665175,
+            3.55373375603506,
+            4.574400826817,
+            4.48914439972372
+        ],
+        "direction": {
+            "PRAIS": "forward"
+        }
+    },
+    "b2507": {
+        "names": "guaa, eck2503, jw2491",
+        "description": "gmp synthetase (glutamine aminotransferase) (ec:6,3,5,2 6,3,4,1)",
+        "kcats": [
+            0.422582029602172,
+            0.753187868649187,
+            0.996929632675035,
+            1.32914946864359,
+            1.2202881310307
+        ],
+        "direction": {
+            "GMPS2": "forward"
+        }
+    },
+    "b2508": {
+        "names": "guab, eck2504, guar, jw5401",
+        "description": "imp dehydrogenase (ec:1,1,1,205)",
+        "kcats": [
+            0.211239291174451,
+            0.387740213059175,
+            0.574082640286852,
+            0.677104385934282,
+            0.713519623381926
+        ],
+        "direction": {
+            "IMPD": "forward"
+        }
+    },
+    "b2514": {
+        "names": "hiss, eck2510, jw2498",
+        "description": "histidyl trna synthetase (ec:6,1,1,21)",
+        "kcats": [
+            0.555797135212667,
+            1.00278521738276,
+            1.39439850203822,
+            1.94705208175365,
+            2.15497998698903
+        ],
+        "direction": {
+            "HISTRS": "forward"
+        }
+    },
+    "b2518": {
+        "names": "ndk, eck2514, jw2502",
+        "description": "multifunctional nucleoside diphosphate kinase and apyrimidinic",
+        "kcats": [
+            0.144996724153909,
+            0.185029581412667,
+            0.240038548286626,
+            0.392497985772249,
+            0.761628205529474
+        ],
+        "direction": {
+            "NDPK1": "forward",
+            "NDPK2": "forward",
+            "NDPK3": "forward",
+            "NDPK4": "forward",
+            "NDPK5": "forward",
+            "NDPK6": "forward",
+            "NDPK7": "forward",
+            "NDPK8": "forward"
+        }
+    },
+    "b2530": {
+        "names": "iscs, eck2527, jw2514, nuvc, yfho, yzzo",
+        "description": "cysteine desulfurase (trna sulfurtransferase), plp-dependent",
+        "kcats": [
+            0.798674255915625,
+            1.34419642961762,
+            1.95711164685023,
+            2.84255435307465,
+            3.52885853252618
+        ],
+        "direction": {
+            "I2FE2SR": "forward",
+            "I2FE2SS": "forward",
+            "I2FE2SS2": "forward",
+            "ICYSDS": "forward",
+            "MOADSUx": "forward",
+            "THZPSN3": "forward"
+        }
+    },
+    "b2551": {
+        "names": "glya, eck2548, jw2535",
+        "description": "serine hydroxymethyltransferase (ec:2,1,2,1)",
+        "kcats": [
+            0.461080278464575,
+            0.710837531911131,
+            1.09049750132474,
+            1.10933275195658,
+            1.30037482842091
+        ],
+        "direction": {
+            "ALATA_D2": "forward",
+            "ALATA_L2": "forward",
+            "GHMT2r": "forward",
+            "THFAT": "forward",
+            "THRA2": "forward",
+            "THRA": "forward"
+        }
+    },
+    "b2557": {
+        "names": "purl, eck2555, jw2541, purg, puri",
+        "description": "phosphoribosylformyl-glycineamide synthetase (ec:6,3,5,3)",
+        "kcats": [
+            0.901627194311893,
+            1.41772010781917,
+            1.81569807339279,
+            2.10022299343508,
+            1.97730161464605
+        ],
+        "direction": {
+            "PRFGS": "forward"
+        }
+    },
+    "b2599": {
+        "names": "phea, eck2596, jw2580",
+        "description": "fused chorismate mutase p/prephenate dehydratase (ec:5,4,99,5",
+        "kcats": [
+            4.05600724054044,
+            7.31402334591841,
+            10.2539863810393,
+            15.6868429119639,
+            17.5358206310835
+        ],
+        "direction": {
+            "CHORM": "forward",
+            "PPNDH": "forward"
+        }
+    },
+    "b2600": {
+        "names": "tyra, eck2597, jw2581",
+        "description": "fused chorismate mutase t/prephenate dehydrogenase (ec:5,4,99,5",
+        "kcats": [
+            16.806788623159,
+            35.6939576829456,
+            51.230493496039,
+            29.1327082650759,
+            36.6189195531449
+        ],
+        "direction": {
+            "CHORM": "forward",
+            "PPND": "forward"
+        }
+    },
+    "b2606": {
+        "names": "rpls, eck2603, jw2587",
+        "description": "50s ribosomal subunit protein l19",
+        "kcats": [
+            3.08119493912027,
+            5.66638604768622,
+            7.61726458871307,
+            7.88802555100381,
+            8.88589888904098
+        ]
+    },
+    "b2609": {
+        "names": "rpsp, eck2606, jw2590",
+        "description": "30s ribosomal subunit protein s16",
+        "kcats": [
+            1.5346447101884,
+            2.69147402633708,
+            3.36898822133418,
+            3.95543474889625,
+            4.6204884597201
+        ]
+    },
+    "b2697": {
+        "names": "alas, act, ala-act, eck2692, jw2667, lovb",
+        "description": "alanyl-trna synthetase (ec:6,1,1,7)",
+        "kcats": [
+            2.41141224204565,
+            4.47390522750677,
+            6.67236135516862,
+            8.69537376605538,
+            8.96595355472881
+        ],
+        "direction": {
+            "ALATRS": "forward"
+        }
+    },
+    "b2751": {
+        "names": "cysn, eck2746, jw2721",
+        "description": "sulfate adenylyltransferase, subunit 1 (ec:2,7,7,4)",
+        "kcats": [
+            0.362196305059696,
+            0.424750298277045,
+            0.496630984724806,
+            0.540001996657632,
+            0.5784459490567
+        ],
+        "direction": {
+            "SADT2": "forward"
+        }
+    },
+    "b2752": {
+        "names": "cysd, eck2747, jw2722",
+        "description": "sulfate adenylyltransferase, subunit 2 (ec:2,7,7,4)",
+        "kcats": [
+            0.280854486732463,
+            0.365030544021723,
+            0.418721109613966,
+            0.423258873062841,
+            0.377793922009552
+        ],
+        "direction": {
+            "SADT2": "forward"
+        }
+    },
+    "b2762": {
+        "names": "cysh, eck2757, jw2732",
+        "description": "3'-phosphoadenosine 5'-phosphosulfate reductase (ec:1,8,4,8)",
+        "kcats": [
+            0.554809369022078,
+            0.890212828701197,
+            1.05069143622726,
+            1.42289942963782,
+            1.29369074331071
+        ]
+    },
+    "b2763": {
+        "names": "cysi, eck2758, jw2733",
+        "description": "sulfite reductase, beta subunit, nad(p)-binding, heme-binding",
+        "kcats": [
+            0.259937768018467,
+            0.41268684500486,
+            0.44586931275446,
+            0.549345370792003,
+            0.616831393304917
+        ],
+        "direction": {
+            "FADRx2": "forward",
+            "SULR": "forward"
+        }
+    },
+    "b2764": {
+        "names": "cysj, eck2759, jw2734",
+        "description": "sulfite reductase, alpha subunit, flavoprotein (ec:1,8,1,2 1,5,1,29)",
+        "kcats": [
+            0.300178329447441,
+            0.442918083896565,
+            0.478865102966491,
+            0.399153248059565,
+            0.42964182836899
+        ],
+        "direction": {
+            "FADRx2": "forward",
+            "SULR": "forward"
+        }
+    },
+    "b2779": {
+        "names": "eno, eck2773, jw2750",
+        "description": "enolase (ec:4,2,1,11)",
+        "kcats": [
+            6.49119992221731,
+            14.7552294092685,
+            21.9998373965858,
+            26.5439149763136,
+            26.8518698210433
+        ],
+        "direction": {
+            "ENO": "forward"
+        }
+    },
+    "b2780": {
+        "names": "pyrg, eck2774, jw2751",
+        "description": "ctp synthetase (ec:6,3,4,2)",
+        "kcats": [
+            2.03136187334069,
+            3.55048809720278,
+            4.55366379761906,
+            5.76773989642844,
+            6.62673316206155
+        ],
+        "direction": {
+            "CTPS2": "forward"
+        }
+    },
+    "b2818": {
+        "names": "arga, arg1, arg2, argb, eck2814, jw2786",
+        "description": "fused acetylglutamate kinase homolog (inactive)/amino acid",
+        "kcats": [
+            7.72984644856646,
+            12.2380580438396,
+            17.3270661768014,
+            14.7851651492509,
+            20.5311421818298
+        ],
+        "direction": {
+            "ACGS": "forward"
+        }
+    },
+    "b2827": {
+        "names": "thya, eck2823, jw2795",
+        "description": "thymidylate synthetase (ec:2,1,1,45)",
+        "kcats": [
+            0.728320041588942,
+            1.30817537952471,
+            1.85899252404227,
+            2.60500419900099,
+            2.74055927703893
+        ],
+        "direction": {
+            "TMDS": "forward"
+        }
+    },
+    "b2838": {
+        "names": "lysa, eck2836, jw2806",
+        "description": "diaminopimelate decarboxylase, plp-binding (ec:4,1,1,20)",
+        "kcats": [
+            14.4549507284736,
+            21.4498900629907,
+            27.2250921874037,
+            33.0593474034031,
+            33.1139010113807
+        ],
+        "direction": {
+            "DAPDC": "forward"
+        }
+    },
+    "b2890": {
+        "names": "lyss, asud, eck2885, herc, jw2858",
+        "description": "lysine trna synthetase, constitutive (ec:6,1,1,6)",
+        "kcats": [
+            0.730916604354701,
+            1.15268100805791,
+            1.63118595488636,
+            2.04346827751996,
+            2.41652893601484
+        ],
+        "direction": {
+            "LYSTRS": "forward"
+        }
+    },
+    "b2913": {
+        "names": "sera, eck2909, jw2880",
+        "description": "d-3-phosphoglycerate dehydrogenase (ec:1,1,1,95)",
+        "kcats": [
+            2.08309724668556,
+            3.23147809964392,
+            3.89119131248256,
+            3.52838412790417,
+            3.65591308053167
+        ],
+        "direction": {
+            "PGCD": "forward"
+        }
+    },
+    "b2914": {
+        "names": "rpia, eck2910, jw5475, ygfc",
+        "description": "ribose 5-phosphate isomerase, constitutive (ec:5,3,1,6)",
+        "kcats": [
+            0.244638557926794,
+            1.10920767347402,
+            3.62085383916599,
+            6.99092670910211,
+            10.3051731405746
+        ],
+        "direction": {
+            "RPI": "reverse"
+        }
+    },
+    "b2925": {
+        "names": "fbaa, ald, eck2921, fba, fda, jw2892",
+        "description": "fructose-bisphosphate aldolase, class ii (ec:4,1,2,13)",
+        "kcats": [
+            2.89517273456461,
+            6.29397748338013,
+            9.32602387004038,
+            10.9349295822922,
+            10.84733677621
+        ],
+        "direction": {
+            "FBA": "forward",
+            "FBA3": "forward"
+        }
+    },
+    "b2926": {
+        "names": "pgk, eck2922, jw2893",
+        "description": "phosphoglycerate kinase (ec:2,7,2,3)",
+        "kcats": [
+            8.92036148253984,
+            19.4100945160273,
+            28.6554760000414,
+            38.6067538904047,
+            48.4501728409079
+        ],
+        "direction": {
+            "PGK": "reverse"
+        }
+    },
+    "b2935": {
+        "names": "tkta, eck2930, jw5478, tkt",
+        "description": "transketolase 1, thiamin-binding (ec:2,2,1,1)",
+        "kcats": [
+            0.416214818269777,
+            1.25539757370139,
+            3.62292704491415,
+            7.12391107960782,
+            10.3051731405746
+        ],
+        "direction": {
+            "TKT1": "forward",
+            "TKT2": "forward"
+        }
+    },
+    "b3008": {
+        "names": "metc, eck3000, jw2975",
+        "description": "cystathionine beta-lyase, plp-dependent (ec:4,4,1,8)",
+        "kcats": [
+            0.343171873359435,
+            0.665902357689635,
+            1.28982226620378,
+            1.97797732727045,
+            2.5213387162812
+        ],
+        "direction": {
+            "CYSDS": "forward",
+            "CYSTL": "forward"
+        }
+    },
+    "b3065": {
+        "names": "rpsu, eck3055, jw3037",
+        "description": "30s ribosomal subunit protein s21",
+        "kcats": [
+            1.96419641500864,
+            3.41816151218386,
+            4.17786158570467,
+            4.89349487546796,
+            5.35745413135751
+        ]
+    },
+    "b3165": {
+        "names": "rpso, eck3154, jw3134, secc",
+        "description": "30s ribosomal subunit protein s15",
+        "kcats": [
+            2.60122968149182,
+            5.02519828508107,
+            6.16320065645165,
+            7.57008249665812,
+            7.85402150394904
+        ]
+    },
+    "b3172": {
+        "names": "argg, arg6, arge, eck3161, jw3140",
+        "description": "argininosuccinate synthetase (ec:6,3,4,5)",
+        "kcats": [
+            0.917207639150686,
+            1.37740338247482,
+            1.35738021529282,
+            1.26581919541651,
+            1.13931171037661
+        ],
+        "direction": {
+            "ARGSS": "forward"
+        }
+    },
+    "b3176": {
+        "names": "glmm, eck3165, jw3143, mrsa, yhbf",
+        "description": "phosphoglucosamine mutase (ec:5,4,2,10)",
+        "kcats": [
+            0.282569558670501,
+            0.525380577675006,
+            0.781864535005946,
+            1.09928939058661,
+            1.36957634881808
+        ],
+        "direction": {
+            "PGAMT": "reverse"
+        }
+    },
+    "b3185": {
+        "names": "rpma, eck3174, jw3152, rpz",
+        "description": "50s ribosomal subunit protein l27",
+        "kcats": [
+            6.56802059979789,
+            11.0135117157714,
+            13.8230444673069,
+            15.1496261181363,
+            16.5177028234003
+        ]
+    },
+    "b3186": {
+        "names": "rplu, eck3175, jw3153",
+        "description": "50s ribosomal subunit protein l21",
+        "kcats": [
+            3.78259113534579,
+            6.75415107324078,
+            8.26384827121624,
+            10.1206564740501,
+            11.3061138946048
+        ]
+    },
+    "b3189": {
+        "names": "mura, eck3178, jw3156, mrba, murz",
+        "description": "udp-n-acetylglucosamine 1-carboxyvinyltransferase (ec:2,5,1,7)",
+        "kcats": [
+            0.369615799122369,
+            0.628293771841094,
+            0.891606390817273,
+            1.21565768172402,
+            1.33093344658765
+        ],
+        "direction": {
+            "UAGCVT": "forward"
+        }
+    },
+    "b3230": {
+        "names": "rpsi, eck3219, jw3199",
+        "description": "30s ribosomal subunit protein s9",
+        "kcats": [
+            3.33072030416454,
+            6.03659656182658,
+            7.73823248011415,
+            9.34527048977099,
+            9.11641745542032
+        ]
+    },
+    "b3231": {
+        "names": "rplm, eck3220, jw3200",
+        "description": "50s ribosomal subunit protein l13",
+        "kcats": [
+            2.32704641619584,
+            3.74565560918063,
+            4.97631045010946,
+            5.90613050625437,
+            6.7838582916334
+        ]
+    },
+    "b3236": {
+        "names": "mdh, eck3225, jw3205",
+        "description": "malate dehydrogenase, nad(p)-binding (ec:1,1,1,37)",
+        "kcats": [
+            2.40809596445145,
+            3.52716926287826,
+            4.45483888357846,
+            4.99271320192007,
+            7.55712369653839
+        ],
+        "direction": {
+            "MDH": "forward"
+        }
+    },
+    "b3255": {
+        "names": "accb, eck3242, fabe, jw3223",
+        "description": "acetyl coa carboxylase, bccp subunit",
+        "kcats": [
+            0.615120929154667,
+            1.06513197989519,
+            1.94458784061982,
+            0.747883824229217,
+            2.83564504586815
+        ],
+        "direction": {
+            "ACCOAC": "forward"
+        }
+    },
+    "b3256": {
+        "names": "accc, eck3243, fabg, jw3224",
+        "description": "acetyl-coa carboxylase, biotin carboxylase subunit (ec:6,3,4,14)",
+        "kcats": [
+            1.18402642342047,
+            2.13790540085779,
+            3.0592772092131,
+            4.05880863997043,
+            4.65245424276567
+        ],
+        "direction": {
+            "ACCOAC": "forward"
+        }
+    },
+    "b3281": {
+        "names": "aroe, eck3268, jw3242",
+        "description": "dehydroshikimate reductase, nad(p)-binding (ec:1,1,1,25)",
+        "kcats": [
+            21.2468564881867,
+            42.6347621792574,
+            57.8038545908231,
+            69.2864603533637,
+            69.4087785988792
+        ],
+        "direction": {
+            "SHK3Dr": "forward"
+        }
+    },
+    "b3294": {
+        "names": "rplq, eck3281, jw3256",
+        "description": "50s ribosomal subunit protein l17",
+        "kcats": [
+            3.40862861249923,
+            6.06280135344445,
+            7.51837030475872,
+            8.92989963615231,
+            9.32484805242421
+        ]
+    },
+    "b3296": {
+        "names": "rpsd, eck3283, jw3258, rama, sud",
+        "description": "30s ribosomal subunit protein s4",
+        "kcats": [
+            2.57707067808863,
+            4.77141295801355,
+            5.31326403850997,
+            7.41854571838762,
+            7.1992163020722
+        ]
+    },
+    "b3297": {
+        "names": "rpsk, eck3284, jw3259",
+        "description": "30s ribosomal subunit protein s11",
+        "kcats": [
+            4.31984976109548,
+            8.31118822880548,
+            10.5570467054297,
+            11.7079149366778,
+            13.0409936540928
+        ]
+    },
+    "b3298": {
+        "names": "rpsm, eck3285, jw3260",
+        "description": "30s ribosomal subunit protein s13",
+        "kcats": [
+            2.11991371321576,
+            3.97919842732678,
+            4.7077593746699,
+            5.40318469496991,
+            5.83692675954119
+        ]
+    },
+    "b3301": {
+        "names": "rplo, eck3288, jw3263",
+        "description": "50s ribosomal subunit protein l15",
+        "kcats": [
+            3.52427586424997,
+            6.20090261328097,
+            7.5685465337024,
+            8.88544242224035,
+            10.0802687616842
+        ]
+    },
+    "b3302": {
+        "names": "rpmd, eck3289, jw3264",
+        "description": "50s ribosomal subunit protein l30",
+        "kcats": [
+            2.12436030726552,
+            3.5991868352194,
+            4.92778682184233,
+            5.22782975752176,
+            6.3224233608609
+        ]
+    },
+    "b3303": {
+        "names": "rpse, eck3290, eps, jw3265, spc, spca",
+        "description": "30s ribosomal subunit protein s5",
+        "kcats": [
+            2.18733065490813,
+            4.41995264472778,
+            5.49200143820849,
+            6.34679997265462,
+            6.59106520491047
+        ]
+    },
+    "b3304": {
+        "names": "rplr, eck3291, jw3266",
+        "description": "50s ribosomal subunit protein l18",
+        "kcats": [
+            4.17903353203563,
+            7.32392669957437,
+            9.45429842660234,
+            10.7811395770298,
+            11.8152761022421
+        ]
+    },
+    "b3305": {
+        "names": "rplf, eck3292, jw3267",
+        "description": "50s ribosomal subunit protein l6",
+        "kcats": [
+            2.40253534927965,
+            4.58568772367356,
+            5.76556277478864,
+            6.58558619913009,
+            6.86505790121773
+        ]
+    },
+    "b3306": {
+        "names": "rpsh, eck3293, jw3268",
+        "description": "30s ribosomal subunit protein s8",
+        "kcats": [
+            4.35748639986591,
+            8.30474211590827,
+            10.0222525982583,
+            12.2620978017522,
+            12.3027192418654
+        ]
+    },
+    "b3307": {
+        "names": "rpsn, eck3294, jw3269",
+        "description": "30s ribosomal subunit protein s14",
+        "kcats": [
+            4.58482922810699,
+            8.00666562919571,
+            9.50571380995312,
+            11.7828380051264,
+            12.8423156234859
+        ]
+    },
+    "b3308": {
+        "names": "rple, eck3295, jw3270",
+        "description": "50s ribosomal subunit protein l5",
+        "kcats": [
+            2.41140184878293,
+            4.47475053459322,
+            5.21109985757748,
+            6.61493600005844,
+            6.62056872693023
+        ]
+    },
+    "b3309": {
+        "names": "rplx, eck3296, jw3271",
+        "description": "50s ribosomal subunit protein l24",
+        "kcats": [
+            2.46420626882928,
+            4.60057418785505,
+            5.93252442450226,
+            6.84062900551567,
+            8.32268876673237
+        ]
+    },
+    "b3310": {
+        "names": "rpln, eck3297, jw3272",
+        "description": "50s ribosomal subunit protein l14",
+        "kcats": [
+            4.0621228376169,
+            7.39644082531273,
+            9.15096166632519,
+            10.0817254763852,
+            11.0318091177296
+        ]
+    },
+    "b3311": {
+        "names": "rpsq, eck3298, jw3273, neaa",
+        "description": "30s ribosomal subunit protein s17",
+        "kcats": [
+            4.50578924030179,
+            8.4988294834641,
+            10.4608258877116,
+            10.5043607274443,
+            13.3096629699054
+        ]
+    },
+    "b3312": {
+        "names": "rpmc, eck3299, jw3274",
+        "description": "50s ribosomal subunit protein l29",
+        "kcats": [
+            1.98372103905363,
+            3.6239556074383,
+            5.06656265006091,
+            4.87708751628786,
+            5.21208800317574
+        ]
+    },
+    "b3313": {
+        "names": "rplp, eck3300, jw3275",
+        "description": "50s ribosomal subunit protein l16",
+        "kcats": [
+            2.26031083298295,
+            4.43174189528623,
+            5.23760231726663,
+            6.10006647683149,
+            6.68302899000333
+        ]
+    },
+    "b3314": {
+        "names": "rpsc, eck3301, jw3276",
+        "description": "30s ribosomal subunit protein s3",
+        "kcats": [
+            2.3996890806512,
+            4.15094019266881,
+            4.85483186965883,
+            6.26546929588584,
+            7.27287088003927
+        ]
+    },
+    "b3315": {
+        "names": "rplv, eck3302, eryb, jw3277",
+        "description": "50s ribosomal subunit protein l22",
+        "kcats": [
+            1.98304131673373,
+            3.46349293821879,
+            4.4761540713488,
+            5.07126643563384,
+            6.23514076280955
+        ]
+    },
+    "b3316": {
+        "names": "rpss, eck3303, jw3278",
+        "description": "30s ribosomal subunit protein s19",
+        "kcats": [
+            2.86787137615414,
+            5.25625763679498,
+            6.29370447584863,
+            7.12598335202866,
+            7.98542926821496
+        ]
+    },
+    "b3317": {
+        "names": "rplb, eck3304, jw3279",
+        "description": "50s ribosomal subunit protein l2",
+        "kcats": [
+            3.26548049811006,
+            5.08888564783228,
+            5.98395118857031,
+            7.28278852317056,
+            8.16334247539569
+        ]
+    },
+    "b3318": {
+        "names": "rplw, eck3305, jw3280",
+        "description": "50s ribosomal subunit protein l23",
+        "kcats": [
+            4.91824099302578,
+            8.7935238172278,
+            11.0237240000515,
+            12.9891624032938,
+            13.4596235047175
+        ]
+    },
+    "b3319": {
+        "names": "rpld, eck3306, erya, jw3281",
+        "description": "50s ribosomal subunit protein l4",
+        "kcats": [
+            2.70871563650397,
+            5.07655415440128,
+            6.67307701631785,
+            7.85649815945803,
+            8.09298575960114
+        ]
+    },
+    "b3320": {
+        "names": "rplc, eck3307, jw3282",
+        "description": "50s ribosomal subunit protein l3",
+        "kcats": [
+            3.17887249368749,
+            5.3448822802551,
+            6.07884059386415,
+            8.08960208961045,
+            8.49534485299546
+        ]
+    },
+    "b3321": {
+        "names": "rpsj, eck3308, jw3283, nuse",
+        "description": "30s ribosomal subunit protein s10",
+        "kcats": [
+            2.16917707536696,
+            3.7741140249471,
+            4.72785304215819,
+            5.94098738659065,
+            5.96418383335334
+        ]
+    },
+    "b3341": {
+        "names": "rpsg, eck3328, jw3303",
+        "description": "30s ribosomal subunit protein s7",
+        "kcats": [
+            2.11935919746552,
+            3.79432347086383,
+            4.8893428257985,
+            5.50731240244151,
+            9.05589623697537
+        ]
+    },
+    "b3359": {
+        "names": "argd, arg1, argg, dapc, dtu, eck3347, jw3322",
+        "description": "bifunctional acetylornithine",
+        "kcats": [
+            1.06088758640997,
+            2.10623920490323,
+            2.80762646383356,
+            2.46598424979516,
+            3.11207764352808
+        ],
+        "direction": {
+            "ACOTA": "reverse",
+            "SDPTA": "reverse"
+        }
+    },
+    "b3384": {
+        "names": "trps, eck3371, jw3347",
+        "description": "tryptophanyl-trna synthetase (ec:6,1,1,2)",
+        "kcats": [
+            0.234610685848064,
+            0.432534976176101,
+            0.622433246197044,
+            0.79914933878011,
+            0.88800096356435
+        ],
+        "direction": {
+            "TRPTRS": "forward"
+        }
+    },
+    "b3386": {
+        "names": "rpe, dod, eck3373, jw3349, yhfd",
+        "description": "d-ribulose-5-phosphate 3-epimerase (ec:5,1,3,1)",
+        "kcats": [
+            0.462853776465864,
+            1.68225926190819,
+            5.60322522377028,
+            9.42493435832116,
+            15.8334253766454
+        ],
+        "direction": {
+            "RPE": "forward"
+        }
+    },
+    "b3389": {
+        "names": "arob, eck3376, jw3352",
+        "description": "3-dehydroquinate synthase (ec:4,2,3,4)",
+        "kcats": [
+            4.93676959578455,
+            8.83250952201859,
+            13.8023566617226,
+            22.1663580057696,
+            27.357332700763
+        ],
+        "direction": {
+            "DHQS": "forward"
+        }
+    },
+    "b3390": {
+        "names": "arok, eck3377, jw5947",
+        "description": "shikimate kinase i (ec:2,7,1,71)",
+        "kcats": [
+            4.51817405805315,
+            7.95906256625894,
+            10.6333508445083,
+            12.899485929779,
+            12.2501813480873
+        ],
+        "direction": {
+            "SHKK": "forward"
+        }
+    },
+    "b3433": {
+        "names": "asd, dap, eck3419, hom, jw3396",
+        "description": "aspartate-semialdehyde dehydrogenase, nad(p)-binding (ec:1,2,1,11)",
+        "kcats": [
+            0.958679504563355,
+            1.35601374354216,
+            1.82482383041685,
+            2.03496885900247,
+            2.02747763122873
+        ],
+        "direction": {
+            "ASAD": "reverse"
+        }
+    },
+    "b3559": {
+        "names": "glys, eck3547, gly-act, jw3530",
+        "description": "glycine trna synthetase, beta subunit (ec:6,1,1,14)",
+        "kcats": [
+            1.4562633567924,
+            2.74020660687593,
+            3.83382133598265,
+            5.11189652552018,
+            5.90772280213743
+        ],
+        "direction": {
+            "GLYTRS": "forward"
+        }
+    },
+    "b3560": {
+        "names": "glyq, cfca, eck3548, glys, jw3531",
+        "description": "glycine trna synthetase, alpha subunit (ec:6,1,1,14)",
+        "kcats": [
+            1.91273522006177,
+            3.64770468846867,
+            5.53564228854557,
+            6.34538334119163,
+            7.1207231338796
+        ],
+        "direction": {
+            "GLYTRS": "forward"
+        }
+    },
+    "b3612": {
+        "names": "gpmm, eck3602, gpmc, gpmi, jw3587, pgmi, yibo",
+        "description": "phosphoglycero mutase iii, cofactor-independent (ec:5,4,2,1)",
+        "kcats": [
+            181.914536663132,
+            206.79787386713,
+            181.966637519086,
+            265.911067478913,
+            180.286750599582
+        ],
+        "direction": {
+            "PGM": "reverse"
+        }
+    },
+    "b3636": {
+        "names": "rpmg, eck3626, jw3611",
+        "description": "50s ribosomal subunit protein l33",
+        "kcats": [
+            4.25139585051457,
+            7.47446114271306,
+            9.61897419563237,
+            11.5151310301841,
+            11.0884617322464
+        ]
+    },
+    "b3637": {
+        "names": "rpmb, eck3627, jw3612",
+        "description": "50s ribosomal subunit protein l28",
+        "kcats": [
+            3.12107481198408,
+            5.61586407418412,
+            6.63127012261634,
+            7.87734614136012,
+            8.80663145364175
+        ]
+    },
+    "b3640": {
+        "names": "dut, dnas, eck3630, jw3615, sof",
+        "description": "deoxyuridinetriphosphatase (ec:3,6,1,23)",
+        "kcats": [
+            0.248188366092885,
+            0.501878604723317,
+            0.430291217138176,
+            0.586910584594199,
+            1.25229738182037
+        ],
+        "direction": {
+            "DUTPDP": "forward"
+        }
+    },
+    "b3648": {
+        "names": "gmk, eck3638, jw3623, spor",
+        "description": "guanylate kinase (ec:2,7,4,8)",
+        "kcats": [
+            3.71945045020532,
+            9.1088657864761,
+            14.567946665775,
+            19.3142929266395,
+            18.5673882524003
+        ],
+        "direction": {
+            "DGK1": "forward",
+            "GK1": "forward"
+        }
+    },
+    "b3671": {
+        "names": "ilvb, eck3662, jw3646",
+        "description": "acetolactate synthase i, large subunit (ec:2,2,1,6)",
+        "kcats": [
+            4.02509294695787,
+            5.00945295440641,
+            9.28644336837462,
+            8.36957341107339,
+            14.4009768370504
+        ]
+    },
+    "b3703": {
+        "names": "rpmh, eck3695, jw3680, rima, ssaf",
+        "description": "50s ribosomal subunit protein l34",
+        "kcats": [
+            1.90320168465438,
+            3.51606200791738,
+            5.83245643460756,
+            4.80872541813896,
+            6.22917688241316
+        ]
+    },
+    "b3729": {
+        "names": "glms, eck3722, jw3707",
+        "description": "l-glutamine:d-fructose-6-phosphate aminotransferase (ec:2,6,1,16)",
+        "kcats": [
+            0.2456438540527,
+            0.422792859871621,
+            0.57136254481204,
+            0.806165887713766,
+            0.687340756556958
+        ],
+        "direction": {
+            "GF6PTA": "forward"
+        }
+    },
+    "b3730": {
+        "names": "glmu, eck3723, jw3708, tms, yiea",
+        "description": "fused n-acetyl glucosamine-1-phosphate",
+        "kcats": [
+            1.46203582763959,
+            2.46408963643929,
+            3.09285102126122,
+            3.78803371488971,
+            3.81267400864582
+        ],
+        "direction": {
+            "G1PACT": "forward",
+            "UAGDP": "forward"
+        }
+    },
+    "b3731": {
+        "names": "atpc, eck3724, jw3709, papg, uncc",
+        "description": "f1 sector of membrane-bound atp synthase, epsilon subunit",
+        "kcats": [
+            132.433493134381,
+            221.324387093683,
+            285.592761328511,
+            373.025025040722,
+            473.176675994321
+        ],
+        "direction": {
+            "ATPS4rpp": "forward"
+        }
+    },
+    "b3732": {
+        "names": "atpd, eck3725, jw3710, papb, uncd",
+        "description": "f1 sector of membrane-bound atp synthase, beta subunit (ec:3,6,3,14)",
+        "kcats": [
+            53.0585432071904,
+            83.6535573574861,
+            105.506858272609,
+            145.510588280347,
+            190.361932660452
+        ],
+        "direction": {
+            "ATPS4rpp": "forward"
+        }
+    },
+    "b3733": {
+        "names": "atpg, eck3726, jw3711, papc, uncg",
+        "description": "f1 sector of membrane-bound atp synthase, gamma subunit",
+        "kcats": [
+            206.457588323925,
+            346.033024280789,
+            441.095669246533,
+            622.786646097198,
+            869.372451603532
+        ],
+        "direction": {
+            "ATPS4rpp": "forward"
+        }
+    },
+    "b3734": {
+        "names": "atpa, eck3727, jw3712, papa, unca",
+        "description": "f1 sector of membrane-bound atp synthase, alpha subunit",
+        "kcats": [
+            71.5540630053294,
+            123.759844629579,
+            160.165443853228,
+            214.657732583311,
+            304.239230153081
+        ]
+    },
+    "b3735": {
+        "names": "atph, eck3728, jw3713, pape, unch",
+        "description": "f1 sector of membrane-bound atp synthase, delta subunit",
+        "kcats": [
+            189.916345364241,
+            273.665209482987,
+            415.416097001803,
+            556.494919086035,
+            724.505431601805
+        ],
+        "direction": {
+            "ATPS4rpp": "forward"
+        }
+    },
+    "b3736": {
+        "names": "atpf, eck3729, jw3714, papf, uncf",
+        "description": "f0 sector of membrane-bound atp synthase, subunit b (ec:3,6,3,14)",
+        "kcats": [
+            277.829616207726,
+            390.557644990786,
+            494.553185176127,
+            670.28148918038,
+            1020.66677419145
+        ],
+        "direction": {
+            "ATPS4rpp": "forward"
+        }
+    },
+    "b3770": {
+        "names": "ilve, eck3762, jw5606",
+        "description": "branched-chain amino-acid aminotransferase (ec:2,6,1,42)",
+        "kcats": [
+            7.70033462522855,
+            8.57589696273695,
+            10.4714322356933,
+            9.66410970255883,
+            12.758988202501
+        ],
+        "direction": {
+            "ILETA": "reverse",
+            "LEUTAi": "forward",
+            "PHETA1": "reverse",
+            "VALTA": "reverse"
+        }
+    },
+    "b3771": {
+        "names": "ilvd, eck3763, jw5605",
+        "description": "dihydroxyacid dehydratase (ec:4,2,1,9)",
+        "kcats": [
+            232.258741669055,
+            328.927144796588,
+            264.541445954356,
+            456.95372444338,
+            318.878772820401
+        ],
+        "direction": {
+            "DHAD1": "forward",
+            "DHAD2": "forward"
+        }
+    },
+    "b3774": {
+        "names": "ilvc, eck3766, jw3747",
+        "description": "ketol-acid reductoisomerase, nad(p)-binding (ec:1,1,1,86)",
+        "kcats": [
+            0.686771632842249,
+            1.0746987235133,
+            1.38465219645531,
+            1.70017490144142,
+            1.7206619922555
+        ],
+        "direction": {
+            "DPR": "forward",
+            "KARA1": "reverse",
+            "KARA2": "forward"
+        }
+    },
+    "b3809": {
+        "names": "dapf, eck3804, jw5592",
+        "description": "diaminopimelate epimerase (ec:5,1,1,7)",
+        "kcats": [
+            6.64146384821757,
+            12.0573720109684,
+            18.8116326366213,
+            27.5990948292673,
+            35.2912534066496
+        ],
+        "direction": {
+            "DAPE": "forward"
+        }
+    },
+    "b3829": {
+        "names": "mete, eck3823, jw3805, metb12",
+        "description": "5-methyltetrahydropteroyltriglutamate-homocysteine",
+        "kcats": [
+            0.0769372839024109,
+            0.0923908308175849,
+            0.085909489677016,
+            0.078105374991234,
+            0.12044027486388
+        ],
+        "direction": {
+            "METS": "forward"
+        }
+    },
+    "b3870": {
+        "names": "glna, eck3863, jw3841",
+        "description": "glutamine synthetase (ec:6,3,1,2)",
+        "kcats": [
+            0.657431525941382,
+            0.796503795294868,
+            0.909398178345459,
+            0.931569842817631,
+            1.78633527957788
+        ],
+        "direction": {
+            "GLNS": "forward"
+        }
+    },
+    "b3916": {
+        "names": "pfka, eck3908, jw3887",
+        "description": "6-phosphofructokinase i (ec:2,7,1,11)",
+        "kcats": [
+            18.1952848727441,
+            35.2775811592686,
+            45.5188314651306,
+            57.8325267829045,
+            67.9609524684967
+        ],
+        "direction": {
+            "PFK": "forward",
+            "PFK_2": "forward",
+            "PFK_3": "forward"
+        }
+    },
+    "b3936": {
+        "names": "rpme, eck3928, jw3907",
+        "description": "50s ribosomal subunit protein l31",
+        "kcats": [
+            6.72502507628707,
+            11.8257734093753,
+            16.2506842283257,
+            17.5813301714251,
+            16.1626469265079
+        ]
+    },
+    "b3939": {
+        "names": "metb, eck3931, jw3910, met-1",
+        "description": "cystathionine gamma-synthase, plp-dependent (ec:2,5,1,48)",
+        "kcats": [
+            0.96712073401295,
+            1.31168392471526,
+            1.73603718752252,
+            2.21335529184083,
+            3.82215678009507
+        ],
+        "direction": {
+            "SHSL1": "forward"
+        }
+    },
+    "b3940": {
+        "names": "metl, eck3932, jw3911, metm",
+        "description": "fused aspartokinase ii/homoserine dehydrogenase ii (ec:2,7,2,4",
+        "kcats": [
+            59.513300246734,
+            66.6520361060597,
+            71.4732574023024,
+            106.297982256757,
+            93.4633563441491
+        ],
+        "direction": {
+            "ASPK": "forward",
+            "HSDy": "reverse"
+        }
+    },
+    "b3956": {
+        "names": "ppc, asp, eck3947, glu, jw3928",
+        "description": "phosphoenolpyruvate carboxylase (ec:4,1,1,31)",
+        "kcats": [
+            6.82802478018406,
+            13.3902089430876,
+            21.459431735629,
+            28.0176401384097,
+            29.3193495783998
+        ],
+        "direction": {
+            "PPC": "forward"
+        }
+    },
+    "b3957": {
+        "names": "arge, arg4, arga, eck3948, jw3929",
+        "description": "acetylornithine deacetylase (ec:3,5,1,16)",
+        "kcats": [
+            4.02451610428056,
+            7.55077954515448,
+            10.2981619730046,
+            11.2257735392461,
+            11.8692473707892
+        ],
+        "direction": {
+            "ACODA": "forward",
+            "NACODA": "forward"
+        }
+    },
+    "b3958": {
+        "names": "argc, arg2, argh, eck3949, jw3930",
+        "description": "n-acetyl-gamma-glutamylphosphate reductase, nad(p)-binding",
+        "kcats": [
+            8.72239482523063,
+            18.8245128938226,
+            21.5732246865313,
+            10.2806599584131,
+            21.4543050497178
+        ],
+        "direction": {
+            "AGPR": "reverse"
+        }
+    },
+    "b3959": {
+        "names": "argb, eck3950, jw5553",
+        "description": "acetylglutamate kinase (ec:2,7,2,8)",
+        "kcats": [
+            2.52723277348847,
+            4.38629426652178,
+            6.01766906912064,
+            7.45754375717929,
+            7.39528431967956
+        ],
+        "direction": {
+            "ACGK": "forward"
+        }
+    },
+    "b3960": {
+        "names": "argh, eck3951, jw3932",
+        "description": "argininosuccinate lyase (ec:4,3,2,1)",
+        "kcats": [
+            6.61255300909813,
+            7.88002865322808,
+            8.77496116670807,
+            9.58405962243934,
+            7.17293662516123
+        ],
+        "direction": {
+            "ARGSL": "forward"
+        }
+    },
+    "b3972": {
+        "names": "murb, eck3964, jw3940, yijb",
+        "description": "udp-n-acetylenolpyruvoylglucosamine reductase, fad-binding",
+        "kcats": [
+            3.79566993714125,
+            6.75864585994776,
+            10.9688321102869,
+            14.2422640162765,
+            19.8857114960743
+        ],
+        "direction": {
+            "UAPGR": "forward"
+        }
+    },
+    "b3983": {
+        "names": "rplk, eck3974, jw3946, relc",
+        "description": "50s ribosomal subunit protein l11",
+        "kcats": [
+            3.32607151556267,
+            5.95306569761549,
+            7.55084899702328,
+            8.7583775995475,
+            9.12032990418373
+        ]
+    },
+    "b3984": {
+        "names": "rpla, eck3975, jw3947, rpy",
+        "description": "50s ribosomal subunit protein l1",
+        "kcats": [
+            2.58826674287973,
+            4.81023397788755,
+            5.63494193880367,
+            7.07039008279226,
+            6.9432067530698
+        ]
+    },
+    "b3985": {
+        "names": "rplj, eck3976, jw3948",
+        "description": "50s ribosomal subunit protein l10",
+        "kcats": [
+            2.87458674941839,
+            5.27842622079201,
+            6.5247610237291,
+            7.68953745001904,
+            7.25888081830149
+        ]
+    },
+    "b3986": {
+        "names": "rpll, eck3977, jw3949",
+        "description": "50s ribosomal subunit protein l7/l12",
+        "kcats": [
+            1.45155867496339,
+            2.92672358590214,
+            3.36363514517302,
+            3.99563612117418,
+            4.1227638456781
+        ]
+    },
+    "b4005": {
+        "names": "purd, adth, eck3997, jw3969",
+        "description": "phosphoribosylglycinamide synthetase phosphoribosylamine-glycine",
+        "kcats": [
+            2.34167841282695,
+            4.24031155370967,
+            5.69484190719078,
+            5.88074907988105,
+            6.42801221711624
+        ],
+        "direction": {
+            "PRAGSr": "forward"
+        }
+    },
+    "b4006": {
+        "names": "purh, eck3998, jw3970",
+        "description": "fused imp cyclohydrolase/phosphoribosylaminoimidazolecarboxamide",
+        "kcats": [
+            2.26229948357858,
+            3.77989243579373,
+            4.41428330648792,
+            4.85386916104433,
+            5.07656313883777
+        ],
+        "direction": {
+            "AICART": "forward",
+            "IMPC": "reverse"
+        }
+    },
+    "b4013": {
+        "names": "meta, eck4005, jw3973",
+        "description": "homoserine o-transsuccinylase (ec:2,3,1,46)",
+        "kcats": [
+            0.884294273165494,
+            1.47154209471688,
+            2.32152824605719,
+            3.34890278939397,
+            3.79796591439826
+        ],
+        "direction": {
+            "HSST": "forward"
+        }
+    },
+    "b4019": {
+        "names": "meth, eck4011, jw3979",
+        "description": "homocysteine-n5-methyltetrahydrofolate transmethylase, b12-dependent",
+        "kcats": [
+            1.84770961287738,
+            3.54716080808214,
+            4.79255952618611,
+            7.2907627541929,
+            8.20620327487078
+        ],
+        "direction": {
+            "METS": "forward"
+        }
+    },
+    "b4024": {
+        "names": "lysc, apk, eck4016, jw3984",
+        "description": "aspartokinase iii (ec:2,7,2,4)",
+        "kcats": [
+            10.9789644131299,
+            18.5174585548884,
+            26.7407910348272,
+            24.4908101771683,
+            24.8852578678532
+        ],
+        "direction": {
+            "ASPK": "forward"
+        }
+    },
+    "b4025": {
+        "names": "pgi, eck4017, jw3985",
+        "description": "glucosephosphate isomerase (ec:5,3,1,9)",
+        "kcats": [
+            14.8644386633455,
+            30.3476306334545,
+            39.6165089445289,
+            46.5383924575454,
+            56.3247173531296
+        ],
+        "direction": {
+            "PGI": "forward"
+        }
+    },
+    "b4036": {
+        "names": "lamb, eck4028, jw3996, malb, mall",
+        "description": "maltose outer membrane porin (maltoporin)",
+        "kcats": [
+            260.297929543383,
+            388.932355346531,
+            636.744426046507,
+            1529.57914080467,
+            8404.68914603691
+        ],
+        "direction": {
+            "14GLUCANtexi": "forward",
+            "GLCtex_copy2": "forward",
+            "MALTHXtexi": "forward",
+            "MALTPTtexi": "forward",
+            "MALTTRtexi": "forward",
+            "MALTTTRtexi": "forward",
+            "MALTtexi": "forward"
+        }
+    },
+    "b4054": {
+        "names": "tyrb, eck4046, jw4014",
+        "description": "tyrosine aminotransferase, tyrosine-repressible, plp-dependent",
+        "kcats": [
+            4.14876763355724,
+            6.84405313162517,
+            8.28644128349447,
+            12.0010376453332,
+            13.2472503086624
+        ],
+        "direction": {
+            "LEUTAi": "forward",
+            "PHETA1": "reverse",
+            "TYRTA": "reverse"
+        }
+    },
+    "b4129": {
+        "names": "lysu, eck4123, jw4090",
+        "description": "lysine trna synthetase, inducible (ec:6,1,1,6)",
+        "kcats": [
+            17.9368001740183,
+            33.637327598781,
+            51.8346733349696,
+            78.5512698986841,
+            106.018991715449
+        ],
+        "direction": {
+            "AP4AS": "forward",
+            "LYSTRS": "forward"
+        }
+    },
+    "b4153": {
+        "names": "frdb, eck4149, jw4114",
+        "description": "fumarate reductase (anaerobic), fe-s subunit (ec:1,3,99,1)",
+        "kcats": [
+            86.0712158103894,
+            216.734076038933,
+            495.710610111081,
+            517.647306686886,
+            1047.2397870873
+        ],
+        "direction": {
+            "FRD2": "forward",
+            "FRD3": "forward"
+        }
+    },
+    "b4154": {
+        "names": "frda, eck4150, jw4115",
+        "description": "fumarate reductase (anaerobic) catalytic and nad/flavoprotein",
+        "kcats": [
+            204.690370372607,
+            403.616100095147,
+            688.756425007569,
+            1117.58726212912,
+            1879.66115631053
+        ],
+        "direction": {
+            "FRD2": "forward",
+            "FRD3": "forward"
+        }
+    },
+    "b4177": {
+        "names": "pura, eck4173, jw4135",
+        "description": "adenylosuccinate synthetase (ec:6,3,4,4)",
+        "kcats": [
+            0.0778252954730852,
+            0.163840805707327,
+            0.322452236899836,
+            0.489371969232481,
+            0.565496805879993
+        ],
+        "direction": {
+            "ADSS": "forward"
+        }
+    },
+    "b4200": {
+        "names": "rpsf, eck4196, jw4158, sdgh",
+        "description": "30s ribosomal subunit protein s6",
+        "kcats": [
+            2.05319299881169,
+            3.70989480724514,
+            5.17444383196336,
+            6.3252727664334,
+            7.11347812829042
+        ]
+    },
+    "b4202": {
+        "names": "rpsr, eck4198, jw4160",
+        "description": "30s ribosomal subunit protein s18",
+        "kcats": [
+            2.93753542597008,
+            5.39726841293752,
+            6.50537856021069,
+            7.63765477412894,
+            9.38575652064208
+        ]
+    },
+    "b4203": {
+        "names": "rpli, eck4199, jw4161",
+        "description": "50s ribosomal subunit protein l9",
+        "kcats": [
+            2.76491612473064,
+            4.85580104368638,
+            5.70359902684981,
+            6.98500012837211,
+            6.7966476824337
+        ]
+    },
+    "b4232": {
+        "names": "fbp, eck4227, fdp, jw4191",
+        "description": "fructose-1,6-bisphosphatase i (ec:3,1,3,11)",
+        "kcats": [
+            1157.28174738047,
+            1682.87194004839,
+            2041.40903058419,
+            2491.89011655009,
+            2828.59543175582
+        ],
+        "direction": {
+            "FBP": "forward"
+        }
+    },
+    "b4244": {
+        "names": "pyri, eck4239, jw4203",
+        "description": "aspartate carbamoyltransferase, regulatory subunit",
+        "kcats": [
+            0.0982011647345941,
+            0.147402565241687,
+            0.353366019393439,
+            0.335943797514316,
+            0.665083408177957
+        ]
+    },
+    "b4245": {
+        "names": "pyrb, eck4240, jw4204",
+        "description": "aspartate carbamoyltransferase, catalytic subunit (ec:2,1,3,2)",
+        "kcats": [
+            0.718422386958677,
+            1.08758066734522,
+            1.85595151228316,
+            1.93888418852806,
+            3.37392122597861
+        ],
+        "direction": {
+            "ASPCT": "forward"
+        }
+    },
+    "b4254": {
+        "names": "argi, eck4247, jw4211",
+        "description": "ornithine carbamoyltransferase 1 (ec:2,1,3,3)",
+        "kcats": [
+            2.29677814557815,
+            3.44876572100567,
+            3.81413406407575,
+            3.42481226621066,
+            4.95579294044167
+        ],
+        "direction": {
+            "OCBT": "forward"
+        }
+    },
+    "b4258": {
+        "names": "vals, eck4251, jw4215, val-act",
+        "description": "valyl-trna synthetase (ec:6,1,1,9)",
+        "kcats": [
+            3.04809228279992,
+            5.26415369192955,
+            7.23108882577163,
+            8.85025319700291,
+            9.65621815467027
+        ],
+        "direction": {
+            "VALTRS": "forward"
+        }
+    },
+    "b4388": {
+        "names": "serb, eck4380, jw4351",
+        "description": "3-phosphoserine phosphatase (ec:3,1,3,3)",
+        "kcats": [
+            73.9432325887994,
+            145.675723957211,
+            223.267192817464,
+            298.488466732955,
+            311.924507271007
+        ],
+        "direction": {
+            "PSP_L": "forward"
+        }
+    },
+    "b4395": {
+        "names": "ytjc, eck4387, gpmb, jw4358",
+        "description": "phosphoglyceromutase 2, co-factor independent",
+        "kcats": [
+            453.848637860596,
+            746.525658144463,
+            981.973807203585,
+            1382.98039204787,
+            1949.19890446454
+        ],
+        "direction": {
+            "PGM": "reverse"
+        }
+    }
+}

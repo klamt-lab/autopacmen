@@ -1,0 +1,39 @@
+{
+    "h;nadh;oaa": {
+        "Escherichia coli": [
+            900.0,
+            900.0
+        ]
+    },
+    "mal__L;nad": {
+        "Escherichia coli": [
+            21.0,
+            21.0
+        ]
+    },
+    "h;nadph;oaa": {
+        "Sorghum bicolor": [
+            600.0,
+            1520.0,
+            2125.0,
+            2125.0
+        ],
+        "Zea mays": [
+            955.0,
+            955.0
+        ]
+    },
+    "mal__L;nadp": {
+        "Sorghum bicolor": [
+            233.0
+        ],
+        "Zea mays": [
+            2.9,
+            2.9
+        ],
+        "Spinacia oleracea": [
+            6.7,
+            6.0
+        ]
+    }
+}

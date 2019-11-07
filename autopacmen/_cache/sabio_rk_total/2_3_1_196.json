@@ -1,0 +1,18 @@
+{
+    "benzcoa;bzalc": {
+        "Vitis labrusca": [
+            0.045,
+            0.045
+        ],
+        "Clarkia breweri": [
+            4.0,
+            2.5
+        ]
+    },
+    "REST": {
+        "Clarkia breweri": [
+            4.6,
+            0.4
+        ]
+    }
+}

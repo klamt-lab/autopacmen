@@ -1,0 +1,3275 @@
+{
+    "h2o;oaa;ppcoa": {
+        "Arthrobacter sp.": [
+            8.0,
+            8.0
+        ]
+    },
+    "gtp;h2o": {
+        "Escherichia coli": [
+            2.1,
+            0.33
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            0.6,
+            1.18,
+            0.213333333,
+            3.56666667,
+            4.75,
+            0.133333333,
+            6.16666667,
+            6.66666667,
+            6.5,
+            3.3,
+            0.5,
+            0.226666667,
+            12.3,
+            12.0,
+            14.8,
+            0.0010666666666666667,
+            2.5,
+            18.0,
+            8.333333333333333e-05,
+            27.0,
+            0.0002777777777777778,
+            1.5,
+            6.9e-05,
+            0.121833333,
+            0.045,
+            34.0,
+            36.0,
+            38.0,
+            0.0188,
+            0.416666667,
+            2.28333333,
+            45.0,
+            0.00092,
+            1.01666667,
+            1.075,
+            0.313333333,
+            63.3333333,
+            0.0466666667,
+            63.8333333,
+            0.00086,
+            0.216666667,
+            0.196666667,
+            0.155,
+            0.108333333,
+            0.00297,
+            0.099,
+            73.0,
+            330.0,
+            88.0,
+            0.366666667,
+            94.1666667,
+            350.0,
+            0.085,
+            353.0,
+            0.0483333333,
+            0.0603333333,
+            0.016,
+            0.06,
+            0.263333333,
+            0.195,
+            1.6666666666666667e-05,
+            116.666667,
+            1.45833333,
+            0.00017,
+            3450.0,
+            0.33
+        ],
+        "Penicillium chrysogenum": [
+            73.3,
+            46.6
+        ],
+        "Spinacia oleracea": [
+            7.1,
+            200.0,
+            202.0,
+            462.0,
+            0.0186,
+            0.0148,
+            218.0
+        ],
+        "Rattus norvegicus": [
+            0.14,
+            0.07,
+            2.8,
+            3.6,
+            4.2,
+            2.2,
+            1.8,
+            2.0,
+            5.0,
+            9.0,
+            6666.66667,
+            9.33333333,
+            7.2,
+            25.0,
+            0.07816666666666668,
+            1.1666666666666667,
+            0.1,
+            0.17,
+            0.017,
+            0.08,
+            3833.33333,
+            0.0025,
+            766.666667
+        ],
+        "Arabidopsis thaliana": [
+            0.419,
+            0.583,
+            0.443,
+            3.8,
+            1.2,
+            0.7,
+            6.0,
+            1.0,
+            7.6,
+            9.9,
+            8.7,
+            4.3,
+            3.5,
+            1.08,
+            10.7,
+            3.17,
+            4.52,
+            1.43,
+            23.0,
+            4.0,
+            25.0,
+            30.0,
+            0.08833333333333333,
+            165.0,
+            2.1666666666666665,
+            54.0,
+            1.37,
+            70.0,
+            2.8,
+            0.023,
+            3.3,
+            1.22,
+            1780.0,
+            2170.0
+        ],
+        "Homo sapiens": [
+            0.71,
+            0.72,
+            2.66666667,
+            3.3,
+            0.55,
+            2.5,
+            2.99,
+            7.2,
+            8.8,
+            3.591666666666667,
+            10.3,
+            4.828333333333333,
+            4.133333333333333,
+            13.5,
+            14.0,
+            14.9,
+            9.754999999999999,
+            2.0,
+            18.6,
+            15.0,
+            20.0,
+            5.43,
+            5.0,
+            28.0,
+            29.0,
+            0.5,
+            6.5,
+            0.115,
+            0.25,
+            35.0,
+            36.0,
+            1.4849999999999999,
+            39.0,
+            2.5083333333333333,
+            45.0,
+            46.0,
+            0.018333333333333333,
+            48.0,
+            50.0,
+            53.9,
+            53.8,
+            54.2,
+            0.0183333333,
+            56.4,
+            56.7,
+            59.7,
+            63.0,
+            0.204,
+            0.21,
+            0.00833333333,
+            76.0,
+            0.47,
+            0.527222222,
+            83.1,
+            84.5,
+            85.0,
+            89.3,
+            0.0111111111,
+            93.0,
+            0.075,
+            0.085,
+            96.0,
+            99.6,
+            0.0004,
+            1.4,
+            1.9,
+            0.0266666667,
+            0.0065,
+            0.02666666666666667,
+            0.0152777778,
+            0.36333333333333334,
+            0.39333333333333337,
+            0.0166666667,
+            0.42,
+            132.0,
+            139.0,
+            150.0,
+            0.00666666667,
+            160.5,
+            0.0933333333,
+            8.65,
+            2.6199999999999997,
+            0.00944444444,
+            1.5650000000000002,
+            186.0,
+            0.17,
+            0.16,
+            194.0,
+            0.035,
+            0.00144444444,
+            0.006833333333333333,
+            0.004833333333333333,
+            0.025,
+            0.0122222222,
+            4.8,
+            1.3,
+            4.838333333333334,
+            0.021,
+            0.019,
+            0.015,
+            0.73,
+            230.0,
+            1.85194444,
+            2.48,
+            0.005,
+            0.001,
+            0.9183333333333333,
+            0.68,
+            0.715277778,
+            0.92,
+            0.63,
+            0.14,
+            0.89,
+            0.4,
+            0.9,
+            0.57,
+            0.0595,
+            0.03333333333333333,
+            4.27,
+            0.605833333,
+            0.0105555556,
+            0.0616666667,
+            9.8,
+            1.2,
+            0.1,
+            844.5,
+            0.041666666666666664,
+            0.578055556,
+            5.2,
+            6.38,
+            7.668333333333334,
+            0.00123,
+            6000.0,
+            3.481666666666667,
+            0.0075,
+            0.620277778,
+            0.49,
+            0.865,
+            0.24,
+            0.83,
+            0.591666667,
+            0.0015,
+            0.34,
+            0.3,
+            0.021666666666666667,
+            0.0102777778,
+            0.00821,
+            0.011666666666666665,
+            0.0036,
+            1.7016666666666664,
+            0.571388889,
+            0.05,
+            0.00166666667,
+            0.0057,
+            0.036,
+            0.0078,
+            0.03,
+            0.243333333,
+            0.0038,
+            2.6550000000000002,
+            0.02,
+            0.00861111111,
+            3.64,
+            0.0113888889,
+            0.004,
+            0.710833333,
+            0.002
+        ],
+        "Saccharomyces cerevisiae": [
+            0.12,
+            1.7,
+            0.99,
+            1.1,
+            8.1,
+            9.4,
+            12.1,
+            13.1,
+            145.0,
+            281.0,
+            153.0,
+            27.0,
+            27.5,
+            160.0,
+            0.05,
+            46.3,
+            0.012333333333333333,
+            0.22,
+            195.0,
+            70.9,
+            0.006333333333333333,
+            335.0,
+            0.025,
+            79.0,
+            2e-05,
+            83.0,
+            598.0,
+            215.0,
+            345.0,
+            606.7,
+            0.011,
+            0.01
+        ],
+        "Glycine max": [
+            0.74,
+            0.76,
+            0.001,
+            0.0001
+        ],
+        "Scutellaria baicalensis": [
+            0.012,
+            0.00883333333,
+            0.00383333333
+        ],
+        "Sorbus aucuparia": [
+            0.037000000000000005,
+            0.029333333333333333,
+            0.017,
+            0.0016666666666666668,
+            0.0045000000000000005,
+            0.007166666666666667,
+            0.014833333333333334
+        ],
+        "Medicago sativa": [
+            0.03683333333333333,
+            0.06183333333333333,
+            0.06816666666666667
+        ],
+        "Staphylococcus aureus": [
+            0.15,
+            1.48,
+            66.7,
+            0.425,
+            0.44,
+            0.56,
+            0.19,
+            76.8
+        ],
+        "Bos taurus": [
+            0.19,
+            0.28,
+            0.247,
+            4.0,
+            4.203,
+            10.0,
+            14.0,
+            0.058,
+            146.0,
+            19.0,
+            21.1,
+            22.78,
+            41.0,
+            44.0,
+            180.0,
+            56.0,
+            57.0,
+            187.0,
+            101.0
+        ],
+        "Cavia porcellus": [
+            0.85,
+            1.6,
+            2.11666667,
+            1.18333333,
+            0.9,
+            1.1,
+            1.7
+        ],
+        "Oryctolagus cuniculus": [
+            0.4,
+            0.666666667,
+            0.0833333333,
+            0.25,
+            0.233333333,
+            0.2,
+            0.45,
+            0.366666667,
+            3.66666667,
+            0.166666667,
+            1.0,
+            104.0,
+            0.0333333333,
+            0.1,
+            0.116666667
+        ],
+        "Human herpesvirus 1": [
+            0.06,
+            0.47,
+            0.35,
+            0.3,
+            0.455,
+            0.015,
+            0.102,
+            0.212,
+            0.46,
+            0.1,
+            0.056
+        ],
+        "Epstein-Barr virus": [
+            0.0281,
+            0.01047,
+            0.01867,
+            0.02127
+        ],
+        "Dictyostelium discoideum": [
+            0.07,
+            0.09,
+            0.2,
+            0.45,
+            0.21,
+            0.35,
+            3.3,
+            7.5,
+            0.0081,
+            10.0,
+            0.01
+        ],
+        "Streptomyces galilaeus": [
+            0.035,
+            1.09,
+            0.09000000000000001,
+            0.0036666666666666666,
+            0.0028333333333333335,
+            8.333333333333333e-05,
+            0.0013666666666666666
+        ],
+        "Clarkia breweri": [
+            0.4,
+            4.6
+        ],
+        "Thermococcus kodakaraensis": [
+            73.0,
+            59.0,
+            77.0,
+            49.0
+        ],
+        "Campylobacter jejuni": [
+            0.196666667,
+            0.0133333333,
+            0.0583333333
+        ],
+        "Mycobacterium tuberculosis": [
+            0.5833333333333334,
+            1.6,
+            2.23333333,
+            3.5,
+            2.1,
+            5.0,
+            0.12,
+            7.0,
+            7.6,
+            0.85,
+            10.7,
+            2.18,
+            3.4,
+            1.67,
+            3600.0,
+            149.33333333333334,
+            0.93,
+            4000.0,
+            0.77,
+            0.0883333333,
+            1.1,
+            1.69,
+            0.0233333333,
+            0.09,
+            1.79,
+            199.0,
+            2.05,
+            3.2,
+            208.0,
+            7000.0,
+            0.075,
+            0.56,
+            0.08,
+            2.9,
+            0.01,
+            0.0266666667,
+            0.83
+        ],
+        "Mycobacterium leprae": [
+            0.17666666666666667
+        ],
+        "Mus musculus": [
+            0.0163,
+            20.0,
+            6.9
+        ],
+        "Aeropyrum pernix": [
+            202.0,
+            30.0
+        ],
+        "Salmonella typhimurium": [
+            0.016,
+            0.56,
+            2.0,
+            0.82,
+            34.0,
+            35.0,
+            3.5,
+            7.0,
+            8.0,
+            0.04,
+            22.0
+        ],
+        "Caenorhabditis elegans": [
+            0.2,
+            1.8,
+            2.5,
+            2.3,
+            2.8,
+            69.0,
+            1.0,
+            13.0
+        ],
+        "Treponema denticola": [
+            0.0001,
+            0.00045
+        ],
+        "Bacillus subtilis": [
+            0.866666667,
+            0.333333333,
+            0.13,
+            0.266666667,
+            1.4,
+            5.33333333,
+            0.064,
+            0.116666667,
+            8.61666667,
+            9.18333333,
+            10.25,
+            0.25,
+            12.25,
+            13.9166667,
+            12.0,
+            15.0,
+            0.0333333333,
+            17.0,
+            0.0283333333,
+            164.6,
+            1.53333333,
+            0.916666667,
+            1.63333333,
+            0.87,
+            0.09,
+            0.233333333,
+            0.0833333333,
+            0.8,
+            87.0,
+            0.833333333,
+            0.208333333,
+            0.366666667,
+            0.073,
+            2.08333333
+        ],
+        "Streptococcus salivarius": [
+            28.883333333333333,
+            63.483333333333334
+        ],
+        "Gluconacetobacter diazotrophicus": [
+            60.0
+        ],
+        "Salvia splendens": [
+            0.55,
+            0.76,
+            8.7
+        ],
+        "Erwinia carotovora": [
+            0.53,
+            1.52,
+            0.07,
+            1.7,
+            1.5
+        ],
+        "Silene cucubalus": [
+            0.2
+        ],
+        "Streptococcus pyogenes": [
+            219722.222
+        ],
+        "Streptococcus equisimilis": [
+            1.55555556
+        ],
+        "Vitis labrusca": [
+            0.0058,
+            0.0035,
+            0.01,
+            0.022
+        ],
+        "Thermoanaerobacterium thermosulfurigenes": [
+            1115.0,
+            588.0,
+            1132.0,
+            1200.0,
+            1586.0,
+            1019.0,
+            509.0
+        ],
+        "Haemophilus influenzae": [
+            12.0,
+            13.0,
+            23.5
+        ],
+        "Methanothermobacter thermautotrophicus": [
+            10.0
+        ],
+        "Borrelia burgdorferi": [
+            80.0
+        ],
+        "Entamoeba histolytica": [
+            152.0,
+            186.0,
+            325.0,
+            279.0
+        ],
+        "Acetobacter aceti": [
+            0.46,
+            65.0
+        ],
+        "Ocimum basilicum": [
+            0.013,
+            0.00087,
+            0.0013,
+            0.0008,
+            0.0031
+        ],
+        "Xanthomonas campestris": [
+            114.0,
+            43.0,
+            173.0,
+            127.0
+        ],
+        "Neurospora crassa": [
+            306.0,
+            146.0
+        ],
+        "Lactobacillus reuteri": [
+            0.029,
+            362.0,
+            43.6,
+            0.038,
+            55.2,
+            504.0
+        ],
+        "Lactobacillus johnsonii": [
+            176.0
+        ],
+        "Thermus thermophilus": [
+            0.29,
+            0.53
+        ],
+        "Papaver somniferum": [
+            0.08,
+            0.03,
+            0.02
+        ],
+        "Neisseria polysaccharea": [
+            0.55,
+            1.28333333
+        ],
+        "Deinococcus radiodurans": [
+            0.82,
+            2.01
+        ],
+        "Drosophila melanogaster": [
+            0.39,
+            0.41,
+            1.81,
+            3.63,
+            4.08,
+            4.49,
+            6.5,
+            6.06,
+            14.2,
+            15.0,
+            16.5,
+            18.4,
+            26.6,
+            27.0,
+            0.11,
+            33.5,
+            34.7,
+            0.05,
+            42.7,
+            0.04,
+            59.2,
+            60.2,
+            0.22,
+            0.03,
+            83.7,
+            86.8,
+            0.02,
+            360.0,
+            111.0
+        ],
+        "Senecio vernalis": [
+            0.0022
+        ],
+        "Pseudomonas sp.": [
+            519.0,
+            362.0,
+            500.0,
+            537.0,
+            411.0,
+            540.0
+        ],
+        "Hippoglossus hippoglossus": [
+            600.0
+        ],
+        "Hippoglossus stenolepis": [
+            570.0
+        ],
+        "Zymomonas mobilis": [
+            450.0
+        ],
+        "Thermoanaerobacterium sp.": [
+            1500.0
+        ],
+        "Zea mays": [
+            0.249,
+            98.0,
+            4.8,
+            5.9,
+            5.1,
+            39.17,
+            169.0,
+            11.6,
+            12.5,
+            205.0,
+            85.0,
+            22.7,
+            22.6
+        ],
+        "Solanum tuberosum": [
+            2.3,
+            4.8,
+            5.1,
+            69.8,
+            4.0,
+            169.0,
+            205.0,
+            142.8,
+            21.7,
+            0.001
+        ],
+        "Streptomyces niveus": [
+            3.65,
+            4.83333333
+        ],
+        "Flaveria chloraefolia": [
+            0.53,
+            1.43,
+            0.6,
+            0.21,
+            0.7
+        ],
+        "Thermoplasma acidophilum": [
+            6.1
+        ],
+        "Methanothermobacter marburgensis": [
+            0.34
+        ],
+        "Pseudomonas syringae phaseolicola": [
+            49.0
+        ],
+        "Moritella abyssi": [
+            546.0,
+            235.0,
+            750.0,
+            690.0,
+            694.0,
+            382.0
+        ],
+        "Stenella sp.": [
+            48.7,
+            66.6,
+            165.7,
+            6.45
+        ],
+        "Enterococcus faecalis": [
+            1.79,
+            2.08,
+            3.62,
+            3.97,
+            1.89,
+            2.02,
+            3.51,
+            2.46,
+            1.76,
+            1.63,
+            1.6,
+            1070.0,
+            3580.0,
+            2290.0,
+            220.0,
+            700.0,
+            3390.0
+        ],
+        "Trypanosoma brucei": [
+            18.2,
+            196.0,
+            76.8
+        ],
+        "Aedes aegypti": [
+            2.31666667,
+            2.86666667,
+            3.43333333,
+            2.71666667,
+            2.8,
+            4.71666667,
+            3.83333333,
+            9.35,
+            5.75,
+            5.28333333,
+            12.6333333,
+            25.6666667
+        ],
+        "Dianthus caryophyllus": [
+            0.06,
+            0.39,
+            0.07,
+            0.12,
+            0.013,
+            0.012,
+            0.023,
+            0.0021,
+            0.0195
+        ],
+        "Pyrococcus furiosus": [
+            0.06,
+            2.5,
+            2.09,
+            3.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            0.012166666666666666,
+            0.008333333333333333
+        ],
+        "Astragalus bisulcatus": [
+            0.0062
+        ],
+        "Limulus polyphemus": [
+            180.0
+        ],
+        "Torpedo californica": [
+            140.0
+        ],
+        "Bacteriophage RB69": [
+            1.8
+        ],
+        "Abax parallelepipedus": [
+            0.004
+        ],
+        "Lysinibacillus sphaericus": [
+            0.5,
+            0.3
+        ],
+        "Thermoanaerobacterium thermosaccharolyticum": [
+            24.2,
+            66.2,
+            59.3
+        ],
+        "Rhizobium loti": [
+            24.0,
+            9.0
+        ],
+        "Leishmania major": [
+            24.0,
+            23.6
+        ],
+        "Lachnoclostridium phytofermentans": [
+            1.6,
+            2.5
+        ],
+        "Vigna radiata": [
+            0.39,
+            0.85
+        ],
+        "Delphinium grandiflorum": [
+            0.1,
+            0.17,
+            0.0082,
+            0.036,
+            0.0191,
+            0.019
+        ],
+        "Toxoplasma gondii": [
+            3.32,
+            3.47
+        ],
+        "Leishmania mexicana": [
+            1899.46667
+        ],
+        "Bacteroides thetaiotaomicron": [
+            240.0,
+            25.0,
+            37.0,
+            22.0
+        ],
+        "Vitis vinifera": [
+            0.09,
+            0.118,
+            0.112,
+            0.1,
+            0.084,
+            0.128,
+            2.3825,
+            0.8976
+        ],
+        "unknown prokaryotic organism": [
+            0.05,
+            1.71,
+            4.15,
+            4.46,
+            6.16,
+            0.04,
+            0.02
+        ],
+        "Bellis perennis": [
+            34.0,
+            35.0
+        ],
+        "Pyrobaculum aerophilum": [
+            115.0
+        ],
+        "Human immunodeficiency virus": [
+            0.082,
+            0.0605,
+            0.0221666667,
+            0.0388333333
+        ],
+        "Lactobacillus casei": [
+            0.011,
+            0.013,
+            0.0153333333
+        ],
+        "Streptomyces collinus": [
+            0.0508333333,
+            0.0225
+        ],
+        "Sorghum bicolor": [
+            0.1,
+            0.06,
+            0.09,
+            0.03,
+            0.39,
+            0.07,
+            0.91,
+            8.9,
+            10.6
+        ],
+        "Lactobacillus viridescens": [
+            0.4,
+            10.3333333,
+            10.8333333,
+            4.33333333
+        ],
+        "Gallus gallus": [
+            0.35,
+            1.44,
+            0.18,
+            0.04183333333333333,
+            0.0023333333333333335,
+            26.53
+        ],
+        "Pseudomonas aeruginosa": [
+            11.25,
+            12.2333333,
+            12.0
+        ],
+        "Petunia hybrida": [
+            89.6,
+            59.9,
+            50.9,
+            61.1,
+            82.3,
+            57.4,
+            59.8,
+            61.2
+        ],
+        "Anaeromyxobacter sp.": [
+            0.021666666666666667,
+            0.0026666666666666666,
+            0.016666666666666666,
+            0.0033333333333333335,
+            0.018333333333333333,
+            0.011666666666666665,
+            0.02,
+            0.006666666666666667
+        ],
+        "Zoogloea ramigera": [
+            256.0,
+            353.0,
+            266.0,
+            174.0,
+            177.0,
+            434.0,
+            469.0
+        ],
+        "Streptococcus pneumoniae": [
+            2.1,
+            3.0,
+            2.8,
+            2.0,
+            6.5,
+            7.6,
+            12.8
+        ],
+        "Anopheles dirus": [
+            35.4,
+            85.1
+        ],
+        "Serratia marcescens": [
+            610.0,
+            420.0,
+            5.0,
+            440.0,
+            6.1,
+            1070.0,
+            50.0,
+            658.0,
+            600.0,
+            60.0,
+            415.0
+        ],
+        "Plasmodium falciparum": [
+            0.105,
+            15.0
+        ],
+        "Ochrobactrum anthropi": [
+            16.51,
+            2.35
+        ]
+    },
+    "atp;so4": {
+        "Penicillium chrysogenum": [
+            10.8,
+            1.8
+        ],
+        "Homo sapiens": [
+            0.017,
+            0.23,
+            0.44,
+            0.019,
+            0.33,
+            0.5
+        ],
+        "Spinacia oleracea": [
+            13.0,
+            12.0
+        ]
+    },
+    "atp;mobd": {
+        "Penicillium chrysogenum": [
+            13.7,
+            24.4
+        ],
+        "Spinacia oleracea": [
+            187.0,
+            98.0
+        ]
+    },
+    "gdpgal;pi": {
+        "Arabidopsis thaliana": [
+            64.0,
+            27.0,
+            13.0,
+            2.04,
+            2.04,
+            2.68,
+            2.68
+        ]
+    },
+    "gdpmann;pi": {
+        "Arabidopsis thaliana": [
+            0.093,
+            0.024
+        ]
+    },
+    "g1p;gdp": {
+        "Arabidopsis thaliana": [
+            12.0,
+            5.8
+        ]
+    },
+    "man1p;gdp": {
+        "Arabidopsis thaliana": [
+            0.0013
+        ]
+    },
+    "prpp;hxan": {
+        "Trypanosoma cruzi": [
+            23.0,
+            23.0,
+            23.05
+        ],
+        "Thermoanaerobacter tengcongensis": [
+            4.12,
+            7.97,
+            15.9,
+            4.12,
+            7.97,
+            15.9
+        ],
+        "Homo sapiens": [
+            5.7,
+            5.7
+        ]
+    },
+    "ppi;imp": {
+        "Trypanosoma cruzi": [
+            0.48,
+            0.47,
+            0.468
+        ]
+    },
+    "prpp;gua": {
+        "Thermoanaerobacter tengcongensis": [
+            2.04,
+            3.98,
+            8.16,
+            2.04,
+            3.98,
+            8.16
+        ],
+        "Trypanosoma cruzi": [
+            32.55
+        ]
+    },
+    "ppi;gmp": {
+        "Homo sapiens": [
+            10.48,
+            10.48
+        ],
+        "Trypanosoma cruzi": [
+            0.091
+        ]
+    },
+    "cyart;amet": {
+        "Glycine max": [
+            0.02,
+            0.01,
+            0.001
+        ]
+    },
+    "gal1p;udpg": {
+        "Escherichia coli": [
+            62.0
+        ]
+    },
+    "pyr": {
+        "Escherichia coli": [
+            23.3
+        ],
+        "Nicotiana tabacum": [
+            0.527,
+            0.634
+        ]
+    },
+    "tyr__L;pyr": {
+        "Trypanosoma cruzi": [
+            44.6,
+            47.4
+        ]
+    },
+    "4mop;ala__L": {
+        "Trypanosoma cruzi": [
+            21.2,
+            20.4
+        ]
+    },
+    "pnto__R;atp": {
+        "Staphylococcus aureus": [
+            329.0,
+            283.0,
+            1.73333333,
+            1.56666667
+        ],
+        "Thermotoga maritima": [
+            0.29
+        ],
+        "Bacillus subtilis": [
+            2.12
+        ],
+        "Helicobacter pylori": [
+            2.09
+        ],
+        "Escherichia coli": [
+            1.07
+        ]
+    },
+    "benzcoa;bzalc": {
+        "Vitis labrusca": [
+            0.045,
+            0.045
+        ],
+        "Clarkia breweri": [
+            4.0,
+            2.5
+        ]
+    },
+    "ac;atp": {
+        "Methanosarcina thermophila": [
+            1221.0,
+            1050.0,
+            949.0,
+            1033.0,
+            1278.0,
+            1056.0
+        ]
+    },
+    "dmpp;ipdp": {
+        "Thermococcus kodakaraensis": [
+            57.0,
+            75.0,
+            75.0,
+            110.0
+        ],
+        "Artemisia tridentata subsp. spiciformis": [
+            1.88333333,
+            2.2,
+            4.41666667,
+            6.61666667
+        ]
+    },
+    "grdp;ipdp": {
+        "Thermococcus kodakaraensis": [
+            231.0,
+            104.0,
+            120.0,
+            279.0
+        ],
+        "Artemisia tridentata subsp. spiciformis": [
+            2.65,
+            3.3
+        ],
+        "Saccharomyces cerevisiae": [
+            0.013
+        ]
+    },
+    "mppp9;amet": {
+        "Synechocystis sp.": [
+            0.057
+        ]
+    },
+    "accoa;h2o;oaa": {
+        "Bacillus subtilis": [
+            100.0
+        ],
+        "Acinetobacter calcoaceticus (subsp. anitratus)": [
+            941.6666666666666
+        ],
+        "Azotobacter vinelandii": [
+            2083.3333333333335
+        ],
+        "Arthrobacter sp.": [
+            18.0,
+            18.0
+        ],
+        "Escherichia coli": [
+            81.0
+        ],
+        "Sus scrofa": [
+            96.0
+        ],
+        "Thermus thermophilus": [
+            0.966666667
+        ],
+        "Saccharomyces cerevisiae": [
+            0.3
+        ]
+    },
+    "3oxoadp;succoa": {
+        "Pseudomonas sp.": [
+            23.8333333
+        ]
+    },
+    "h2o;acmana;pep": {
+        "Campylobacter jejuni": [
+            0.331666667,
+            0.316666667
+        ]
+    },
+    "atp;minohp": {
+        "Homo sapiens": [
+            0.00011,
+            0.00106,
+            0.0005
+        ],
+        "Mus musculus": [
+            0.0053
+        ]
+    },
+    "h2s;acser": {
+        "Aeropyrum pernix": [
+            153.0
+        ],
+        "Escherichia coli": [
+            2030.0,
+            810.0
+        ],
+        "Salmonella typhimurium": [
+            130.0,
+            130.0,
+            130.0,
+            130.0,
+            115.0,
+            130.0,
+            130.0,
+            130.0
+        ],
+        "Caenorhabditis elegans": [
+            51.1,
+            12.8,
+            42.2,
+            51.1,
+            12.8,
+            42.2
+        ]
+    },
+    "h2s;pser__L": {
+        "Aeropyrum pernix": [
+            3050.0,
+            14000.0
+        ]
+    },
+    "acser;tsul": {
+        "Aeropyrum pernix": [
+            24.0
+        ]
+    },
+    "hcys__L;amet": {
+        "Escherichia coli": [
+            0.38
+        ]
+    },
+    "anth;amet": {
+        "Zea mays": [
+            0.45,
+            0.37
+        ]
+    },
+    "bz;amet": {
+        "Zea mays": [
+            0.04
+        ]
+    },
+    "dpcoa;ppi": {
+        "Homo sapiens": [
+            26.4,
+            26.5
+        ],
+        "Arabidopsis thaliana": [
+            3.4
+        ]
+    },
+    "cbp;asp__L": {
+        "Mesocricetus auratus": [
+            35.8833333,
+            79.6666667,
+            57.4333333,
+            156.3
+        ]
+    },
+    "akg;ichor": {
+        "Bacillus subtilis": [
+            0.316666667,
+            0.233333333
+        ]
+    },
+    "ethadmp;amet": {
+        "Caenorhabditis elegans": [
+            8.233333333333333,
+            9.783333333333333,
+            8.233333333333333,
+            8.233333333333333,
+            9.783333333333333,
+            9.783333333333333
+        ]
+    },
+    "C01241;amet": {
+        "Caenorhabditis elegans": [
+            9.416666666666666
+        ]
+    },
+    "actp;coa": {
+        "Methanosarcina thermophila": [
+            5252.0,
+            3226.0,
+            2434.0,
+            4110.0
+        ]
+    },
+    "h2o;ppcoa": {
+        "Erwinia carotovora": [
+            0.19
+        ],
+        "Mycobacterium tuberculosis": [
+            0.04
+        ]
+    },
+    "accoa;h2o": {
+        "Erwinia carotovora": [
+            0.043
+        ],
+        "Mycobacterium tuberculosis": [
+            0.06,
+            0.03
+        ]
+    },
+    "atp;dcdp": {
+        "Pisum sativum": [
+            106.0
+        ]
+    },
+    "atp;dtdp": {
+        "Pisum sativum": [
+            147.0
+        ]
+    },
+    "atp;ump": {
+        "Homo sapiens": [
+            130.0,
+            92.0
+        ],
+        "Dictyostelium discoideum": [
+            217.0
+        ],
+        "Streptococcus pneumoniae": [
+            120.0,
+            175.0
+        ]
+    },
+    "atp;dcmp": {
+        "Homo sapiens": [
+            73.0,
+            30.0
+        ],
+        "Dictyostelium discoideum": [
+            22.0
+        ]
+    },
+    "atp;cmp": {
+        "Homo sapiens": [
+            130.0,
+            72.0
+        ],
+        "Dictyostelium discoideum": [
+            410.0
+        ]
+    },
+    "glx;ser__L": {
+        "Arabidopsis thaliana": [
+            6.4
+        ]
+    },
+    "glx;ala__L": {
+        "Arabidopsis thaliana": [
+            2.86
+        ],
+        "Homo sapiens": [
+            2.893333333333333
+        ]
+    },
+    "atp;gtp": {
+        "Mycobacterium tuberculosis": [
+            1.21,
+            1.21,
+            1.34,
+            1.34,
+            1.28,
+            1.28,
+            1.16,
+            1.16,
+            24.68,
+            24.68,
+            1.46,
+            1.46
+        ]
+    },
+    "akg;lys__L": {
+        "Arabidopsis thaliana": [
+            5.33,
+            4.42,
+            2.83,
+            3.75
+        ]
+    },
+    "atp;nicrnt": {
+        "Homo sapiens": [
+            2.5,
+            3.8,
+            6.9,
+            8.8,
+            42.9,
+            53.9
+        ]
+    },
+    "ara5p;h2o;pep": {
+        "Escherichia coli": [
+            4.5,
+            6.8,
+            6.1,
+            6.1
+        ],
+        "Helicobacter pylori": [
+            0.3,
+            1.0,
+            0.1,
+            0.1
+        ],
+        "Aquifex pyrophilus": [
+            6.0,
+            6.0,
+            9.0,
+            9.0,
+            9.0,
+            8.5
+        ],
+        "Pyrococcus furiosus": [
+            1.1
+        ]
+    },
+    "e4p;h2o;pep": {
+        "Escherichia coli": [
+            0.28,
+            1.8,
+            2.3,
+            1.7,
+            36.0,
+            5.6,
+            71.0,
+            75.0,
+            24.0
+        ],
+        "Pyrococcus furiosus": [
+            1.4
+        ]
+    },
+    "2dr5p;h2o;pep": {
+        "Escherichia coli": [
+            0.12
+        ],
+        "Pyrococcus furiosus": [
+            1.7
+        ]
+    },
+    "atp;dpcoa": {
+        "Homo sapiens": [
+            12.2,
+            14.2
+        ],
+        "Escherichia coli": [
+            4.01
+        ]
+    },
+    "starch": {
+        "Thermoanaerobacterium thermosulfurigenes": [
+            375.0,
+            294.0,
+            61.0
+        ]
+    },
+    "atp;glc__D": {
+        "Escherichia coli": [
+            9.1,
+            10.0,
+            9.2,
+            12.0,
+            22.0,
+            410.0
+        ],
+        "Aeropyrum pernix": [
+            23.0
+        ],
+        "Homo sapiens": [
+            66.4,
+            66.7,
+            38.0,
+            18.0,
+            62.3
+        ],
+        "Mus musculus": [
+            53.2
+        ],
+        "Mycobacterium tuberculosis": [
+            108.0,
+            59.833333333333336,
+            116.0
+        ],
+        "Saccharomyces cerevisiae": [
+            0.0721,
+            10.2,
+            63.1
+        ],
+        "Trypanosoma cruzi": [
+            1136.0,
+            315.216667,
+            276.416667
+        ],
+        "Entamoeba histolytica": [
+            200.0,
+            237.0,
+            284.0,
+            189.0
+        ],
+        "Solanum chacoense": [
+            3.5,
+            5.01
+        ],
+        "Trypanosoma brucei": [
+            483.333333
+        ]
+    },
+    "atp;acmana": {
+        "Escherichia coli": [
+            83.0,
+            83.0,
+            56.0,
+            56.0
+        ],
+        "Aeropyrum pernix": [
+            0.8
+        ]
+    },
+    "atp;man": {
+        "Escherichia coli": [
+            0.5,
+            25.0
+        ],
+        "Aeropyrum pernix": [
+            13.0
+        ],
+        "Homo sapiens": [
+            56.4,
+            56.0
+        ],
+        "Entamoeba histolytica": [
+            180.0
+        ],
+        "Solanum chacoense": [
+            3.69
+        ]
+    },
+    "atp;protein": {
+        "Mus musculus": [
+            0.049,
+            0.099,
+            0.33,
+            6.99,
+            4.7,
+            3.8,
+            31.6
+        ],
+        "Homo sapiens": [
+            0.45,
+            1.2,
+            5.3,
+            6.1
+        ]
+    },
+    "atp;h2o": {
+        "Mus musculus": [
+            0.562,
+            0.062
+        ]
+    },
+    "f6p;ppi": {
+        "Propionibacterium freudenreichii subsp. shermanii": [
+            284.0
+        ],
+        "Entamoeba histolytica": [
+            626.0,
+            235.0,
+            626.0,
+            235.0
+        ]
+    },
+    "fdp;pi": {
+        "Entamoeba histolytica": [
+            823.0,
+            710.0,
+            823.0,
+            710.0
+        ]
+    },
+    "accoa;gln__L": {
+        "Mycobacterium tuberculosis": [
+            3.3333333333333335,
+            3.3333333333333335,
+            3.3333333333333335
+        ]
+    },
+    "acac;succoa": {
+        "Acetobacter aceti": [
+            36.5,
+            37.0
+        ]
+    },
+    "ac;succoa": {
+        "Acetobacter aceti": [
+            201.0,
+            280.0,
+            147.0,
+            49.0,
+            290.0,
+            280.0
+        ]
+    },
+    "accoa;succ": {
+        "Acetobacter aceti": [
+            70.9,
+            75.2,
+            71.0
+        ]
+    },
+    "accoa;for": {
+        "Acetobacter aceti": [
+            1.9
+        ]
+    },
+    "accoa;fum": {
+        "Acetobacter aceti": [
+            0.89
+        ]
+    },
+    "accoa;mal__D": {
+        "Acetobacter aceti": [
+            12.0
+        ]
+    },
+    "accoa;mal__L": {
+        "Acetobacter aceti": [
+            0.74,
+            0.8
+        ]
+    },
+    "accoa;oaa": {
+        "Acetobacter aceti": [
+            0.083
+        ]
+    },
+    "accoa;glutar": {
+        "Acetobacter aceti": [
+            0.27
+        ]
+    },
+    "pi;starch": {
+        "Corynebacterium callunae": [
+            74.0,
+            74.0
+        ]
+    },
+    "amylose;g1p": {
+        "Corynebacterium callunae": [
+            52.0
+        ]
+    },
+    "M02446;pi": {
+        "Escherichia coli": [
+            28.0
+        ]
+    },
+    "akg;4abut": {
+        "Escherichia coli": [
+            47.4,
+            47.4,
+            47.4,
+            47.4,
+            47.4
+        ]
+    },
+    "akg;asp__L": {
+        "Escherichia coli": [
+            0.016,
+            0.016
+        ],
+        "Petunia hybrida": [
+            34.6
+        ],
+        "Arabidopsis thaliana": [
+            16.8,
+            217.0,
+            205.0,
+            176.0
+        ]
+    },
+    "akg;glu__L": {
+        "Escherichia coli": [
+            6e-05
+        ]
+    },
+    "akg;glu__D": {
+        "Escherichia coli": [
+            0.00015
+        ]
+    },
+    "atp;dha": {
+        "Klebsiella pneumoniae": [
+            9.16666667,
+            9.16666667,
+            9.16666667
+        ]
+    },
+    "ins;pi": {
+        "Homo sapiens": [
+            56.0,
+            56.0
+        ]
+    },
+    "r1p;hxan": {
+        "Homo sapiens": [
+            110.0
+        ]
+    },
+    "ametam;spmd": {
+        "Thermus thermophilus": [
+            0.65,
+            0.73
+        ]
+    },
+    "ppi;ump": {
+        "Bacillus subtilis": [
+            0.0015
+        ],
+        "Escherichia coli": [
+            0.024
+        ]
+    },
+    "prpp;ura": {
+        "Escherichia coli": [
+            2.7
+        ],
+        "Salmonella typhimurium": [
+            0.9
+        ]
+    },
+    "atp;gal": {
+        "Homo sapiens": [
+            8.7,
+            8.7,
+            8.7,
+            8.7
+        ]
+    },
+    "prpp;ncam": {
+        "Mus musculus": [
+            0.02
+        ]
+    },
+    "amp;atp": {
+        "Gallus gallus": [
+            650.0,
+            500.0,
+            650.0
+        ],
+        "Homo sapiens": [
+            751.0,
+            1100.0,
+            151.666667
+        ],
+        "Oryctolagus cuniculus": [
+            17.0
+        ],
+        "Bacillus subtilis": [
+            0.035,
+            0.0533333333,
+            0.0733333333,
+            0.103333333,
+            0.135
+        ]
+    },
+    "atp;damp": {
+        "Gallus gallus": [
+            87.0
+        ]
+    },
+    "akg;ala__D": {
+        "Bacillus sp.": [
+            129.0
+        ],
+        "Rattus norvegicus": [
+            500.0
+        ]
+    },
+    "ptrc;spmd": {
+        "Senecio vernalis": [
+            0.032
+        ]
+    },
+    "gudac;amet": {
+        "Rattus norvegicus": [
+            0.081,
+            0.081,
+            0.081,
+            0.081,
+            0.081
+        ]
+    },
+    "accoa;gam1p": {
+        "Escherichia coli": [
+            1500.0,
+            1350.0,
+            1500.0,
+            1350.0,
+            120.0
+        ]
+    },
+    "atp;dad_2": {
+        "Drosophila melanogaster": [
+            20.6,
+            18.0
+        ],
+        "Staphylococcus aureus": [
+            1.82
+        ],
+        "Dictyostelium discoideum": [
+            0.0047,
+            3.7
+        ]
+    },
+    "atp;dgsn": {
+        "Drosophila melanogaster": [
+            15.1,
+            18.0
+        ],
+        "Staphylococcus aureus": [
+            0.57
+        ],
+        "Dictyostelium discoideum": [
+            3.0
+        ],
+        "Bacillus subtilis": [
+            1.53
+        ]
+    },
+    "atp;cbl1": {
+        "Salmonella enterica": [
+            0.160666667,
+            0.160666667,
+            0.150666667,
+            0.150666667
+        ],
+        "Lactobacillus reuteri": [
+            0.026,
+            0.024,
+            0.024
+        ]
+    },
+    "cbl1;gtp": {
+        "Lactobacillus reuteri": [
+            0.021
+        ]
+    },
+    "cbl1;itp": {
+        "Lactobacillus reuteri": [
+            0.019
+        ]
+    },
+    "cbl1;datp": {
+        "Lactobacillus reuteri": [
+            0.0051
+        ]
+    },
+    "cbl1;ctp": {
+        "Lactobacillus reuteri": [
+            0.0086
+        ]
+    },
+    "cbl1;utp": {
+        "Lactobacillus reuteri": [
+            0.00195
+        ]
+    },
+    "3pg;atp": {
+        "Pyrococcus woesei": [
+            113.44,
+            238.52,
+            505.79,
+            915.96
+        ],
+        "Methanothermus fervidus": [
+            225.22,
+            149.8,
+            254.53,
+            338.86
+        ],
+        "Saccharomyces cerevisiae": [
+            150.0,
+            354.0,
+            354.0,
+            343.5,
+            343.5,
+            72.0,
+            16.0,
+            31.0,
+            17.0,
+            7.6,
+            1.05,
+            2.7,
+            0.71,
+            5.3,
+            0.00833333333,
+            0.00833333333
+        ],
+        "Rattus norvegicus": [
+            8.65,
+            9.13333333,
+            3.98333333,
+            3.93333333
+        ],
+        "Escherichia coli": [
+            1480.0
+        ],
+        "Entamoeba histolytica": [
+            136.0,
+            97.0,
+            136.0,
+            97.0
+        ]
+    },
+    "13dpg;adp": {
+        "Rattus norvegicus": [
+            33.1333333,
+            32.8666667,
+            25.6833333,
+            25.4166667
+        ],
+        "Entamoeba histolytica": [
+            984.0,
+            437.0,
+            984.0,
+            437.0
+        ],
+        "Saccharomyces cerevisiae": [
+            58.6,
+            58.6
+        ]
+    },
+    "3pg;gtp": {
+        "Entamoeba histolytica": [
+            136.0,
+            97.0
+        ]
+    },
+    "13dpg;gdp": {
+        "Entamoeba histolytica": [
+            984.0,
+            437.0
+        ]
+    },
+    "adp;glc__D": {
+        "Pyrococcus furiosus": [
+            3500.0
+        ]
+    },
+    "24dab;pyr": {
+        "Pseudomonas aeruginosa": [
+            1.15
+        ]
+    },
+    "adp;pep": {
+        "Homo sapiens": [
+            355.0,
+            355.0,
+            355.0,
+            349.0,
+            350.0,
+            64.9,
+            64.9
+        ],
+        "Corynebacterium glutamicum": [
+            2540.0
+        ],
+        "Saccharomyces cerevisiae": [
+            58.4,
+            66.0,
+            232.0,
+            226.0,
+            66.0,
+            226.0,
+            66.0,
+            226.0,
+            188.0,
+            195.0,
+            188.0,
+            195.0,
+            20.1460026,
+            20.1306449,
+            20.1,
+            20.146,
+            0.0
+        ],
+        "Escherichia coli": [
+            123.0,
+            160.0,
+            132.0,
+            127.0
+        ],
+        "Arabidopsis thaliana": [
+            95000.0,
+            53000.0,
+            95000.0,
+            53000.0
+        ],
+        "Trypanosoma brucei": [
+            0.00056,
+            0.000308333333,
+            0.000256666667,
+            0.000543333333,
+            0.000113666667,
+            0.00017,
+            0.000483333333,
+            0.000122,
+            0.000191666667,
+            0.000476666667,
+            0.00018,
+            0.000208333333,
+            0.000516666667,
+            0.00029,
+            0.000256666667,
+            0.00056,
+            0.000296666667,
+            0.000193333333,
+            0.000556666667,
+            0.00017,
+            0.000241666667,
+            0.000523333333,
+            0.000133333333,
+            0.000221666667,
+            0.000523333333,
+            0.000141,
+            0.000241666667,
+            0.000571666667,
+            0.000154333333,
+            0.000248333333,
+            0.000583333333,
+            0.000205,
+            0.000286666667,
+            0.000611666667,
+            0.000195,
+            0.000273333333,
+            0.000483333333,
+            9e-05,
+            0.00029,
+            7.5e-05,
+            0.000456666667,
+            0.0001,
+            0.00014,
+            0.000386666667,
+            0.000176666667,
+            0.000131666667,
+            0.00048,
+            0.00032,
+            0.000103333333,
+            0.000644333333,
+            0.000704666667,
+            0.000483166667,
+            0.000503333333,
+            0.000362333333,
+            0.00029,
+            0.000503333333,
+            0.0005315,
+            0.000507333333,
+            0.000458833333,
+            0.000342333333,
+            0.000277833333,
+            338.0,
+            316.0,
+            341.3,
+            328.0,
+            281.2,
+            316.3,
+            231.2,
+            234.8
+        ]
+    },
+    "accoa;h2o;pyr": {
+        "Mycobacterium tuberculosis": [
+            6.1,
+            4.5,
+            4.5
+        ]
+    },
+    "b2coa;h2o": {
+        "Mycobacterium tuberculosis": [
+            0.05,
+            0.04
+        ]
+    },
+    "akg;ala__L": {
+        "Pyrococcus furiosus": [
+            114.0,
+            186.0
+        ],
+        "Trypanosoma cruzi": [
+            23.5,
+            21.8
+        ],
+        "Arabidopsis thaliana": [
+            1.67,
+            2.15
+        ]
+    },
+    "glu__L;pyr": {
+        "Pyrococcus furiosus": [
+            142.0,
+            216.0
+        ],
+        "Arabidopsis thaliana": [
+            6.47,
+            5.8
+        ]
+    },
+    "atp;f6p_B": {
+        "Rattus norvegicus": [
+            0.092,
+            0.071
+        ]
+    },
+    "atp;f6p": {
+        "Rattus norvegicus": [
+            0.073,
+            0.073,
+            0.073
+        ],
+        "Homo sapiens": [
+            0.14
+        ],
+        "Escherichia coli": [
+            167.0,
+            10.93,
+            140.0,
+            110.7,
+            49.0,
+            120.0,
+            88.0,
+            60.0,
+            61.0,
+            30.5
+        ],
+        "Geobacillus stearothermophilus": [
+            112.0,
+            41.7
+        ],
+        "Saccharomyces cerevisiae": [
+            3.1900301,
+            209.6,
+            210.0,
+            3.1168891
+        ]
+    },
+    "atp;fru": {
+        "Homo sapiens": [
+            116.9,
+            117.4,
+            6.9,
+            7.6
+        ],
+        "Escherichia coli": [
+            14.0
+        ],
+        "Aeropyrum pernix": [
+            10.0
+        ],
+        "Solanum chacoense": [
+            3.78
+        ]
+    },
+    "atp;xylu__D": {
+        "Homo sapiens": [
+            11.1,
+            7.6
+        ]
+    },
+    "atp;rbl__D": {
+        "Homo sapiens": [
+            7.6,
+            4.8
+        ]
+    },
+    "atp;rib__D": {
+        "Homo sapiens": [
+            1.55,
+            8.2
+        ]
+    },
+    "dmpp;trp__L": {
+        "Aspergillus fumigatus": [
+            0.37,
+            0.37
+        ]
+    },
+    "cbp;lys__L": {
+        "Pseudomonas syringae phaseolicola": [
+            0.0036
+        ],
+        "Escherichia coli": [
+            1.3
+        ]
+    },
+    "cbp;ptrc": {
+        "Pseudomonas syringae phaseolicola": [
+            0.025
+        ],
+        "Escherichia coli": [
+            0.38
+        ]
+    },
+    "citr__L;pi": {
+        "Enterococcus faecalis": [
+            62.0,
+            89.0,
+            69.0,
+            72.0,
+            40.0,
+            15.0
+        ]
+    },
+    "pser__L;so3": {
+        "Methanosarcina acetivorans": [
+            0.148333333,
+            0.183333333
+        ]
+    },
+    "akg;accoa;h2o": {
+        "Saccharomyces cerevisiae": [
+            0.6
+        ],
+        "Thermus thermophilus": [
+            0.983333333,
+            1.53333333
+        ]
+    },
+    "akg;tyr__L": {
+        "Rattus norvegicus": [
+            576.0,
+            566.0,
+            300.0
+        ],
+        "Thermotoga maritima": [
+            0.0433333333
+        ]
+    },
+    "34hpp;glu__L": {
+        "Rattus norvegicus": [
+            210.0,
+            165.0
+        ]
+    },
+    "akg;phe__L": {
+        "Escherichia coli": [
+            180.0
+        ],
+        "Rattus norvegicus": [
+            300.0
+        ],
+        "Thermotoga maritima": [
+            0.00866666667
+        ]
+    },
+    "glx;met__L": {
+        "Homo sapiens": [
+            3.44
+        ]
+    },
+    "glx;gln__L": {
+        "Homo sapiens": [
+            1.5916666666666666
+        ]
+    },
+    "atp;f1p": {
+        "Escherichia coli": [
+            1.4,
+            1.4
+        ]
+    },
+    "adp;fdp": {
+        "Geobacillus stearothermophilus": [
+            3.2,
+            3.2,
+            3.2,
+            3.2,
+            3.2
+        ]
+    },
+    "f6p;utp": {
+        "Geobacillus stearothermophilus": [
+            104.16,
+            104.16
+        ]
+    },
+    "ctp;f6p": {
+        "Geobacillus stearothermophilus": [
+            109.76,
+            109.76
+        ]
+    },
+    "f6p;gtp": {
+        "Geobacillus stearothermophilus": [
+            81.86,
+            81.76
+        ]
+    },
+    "ptrc;ametam": {
+        "Pyrococcus furiosus": [
+            0.18
+        ],
+        "Homo sapiens": [
+            1.9
+        ],
+        "Thermotoga maritima": [
+            0.77,
+            22.7
+        ]
+    },
+    "atp;hom__L": {
+        "Methanocaldococcus jannaschii": [
+            28.0
+        ]
+    },
+    "glx;glu__L": {
+        "Homo sapiens": [
+            3.0833333333333335
+        ]
+    },
+    "glx;tyr__L": {
+        "Homo sapiens": [
+            2.1916666666666664
+        ]
+    },
+    "glx;trp__L": {
+        "Homo sapiens": [
+            4.233333333333333
+        ]
+    },
+    "glx;leu__L": {
+        "Homo sapiens": [
+            4.75
+        ]
+    },
+    "glx;phe__L": {
+        "Homo sapiens": [
+            5.451666666666667
+        ]
+    },
+    "atp;peptide": {
+        "Homo sapiens": [
+            0.36666666666666664,
+            0.4166666666666667,
+            1.9833333333333334
+        ]
+    },
+    "acgam1p;utp": {
+        "Saccharomyces cerevisiae": [
+            15.4196667
+        ],
+        "Escherichia coli": [
+            350.0,
+            250.0,
+            330.0
+        ]
+    },
+    "akg;24dab": {
+        "Pseudomonas aeruginosa": [
+            1.39
+        ]
+    },
+    "amet;selhcys": {
+        "Astragalus bisulcatus": [
+            0.0074
+        ],
+        "Escherichia coli": [
+            0.74
+        ]
+    },
+    "oxadpcoa;coa": {
+        "Pseudomonas sp.": [
+            7.83333333
+        ]
+    },
+    "atp;gmp": {
+        "Arabidopsis thaliana": [
+            3.9
+        ]
+    },
+    "atp;dgmp": {
+        "Arabidopsis thaliana": [
+            1.4
+        ]
+    },
+    "chor;gln__L": {
+        "Escherichia coli": [
+            0.53,
+            0.000114,
+            0.53,
+            0.6
+        ],
+        "Pseudomonas putida": [
+            0.2
+        ]
+    },
+    "chor;nh3": {
+        "Escherichia coli": [
+            0.032,
+            8.3e-06,
+            0.032,
+            0.032
+        ]
+    },
+    "catechol;amet": {
+        "Ocimum basilicum": [
+            0.0046
+        ]
+    },
+    "thf;ser__L": {
+        "Macaca radiata": [
+            0.0017,
+            0.0017,
+            0.0017,
+            0.0017,
+            0.0017,
+            0.0017,
+            0.0017,
+            0.0017
+        ],
+        "Rattus norvegicus": [
+            0.815,
+            0.835
+        ],
+        "Homo sapiens": [
+            13.133333333333333,
+            9.583333333333334,
+            9.583333333333334
+        ],
+        "Arabidopsis thaliana": [
+            15.8
+        ],
+        "Escherichia coli": [
+            11.5,
+            11.5
+        ]
+    },
+    "athr__L": {
+        "Rattus norvegicus": [
+            0.203333333,
+            0.06
+        ]
+    },
+    "mlthf;dump;h;nadph": {
+        "Thermotoga maritima": [
+            0.1
+        ],
+        "Chlamydia trachomatis": [
+            0.666333333,
+            0.666333333,
+            0.666333333
+        ]
+    },
+    "5mthf;hcys__L": {
+        "Sus scrofa": [
+            5.0,
+            5.0
+        ]
+    },
+    "atp;skm": {
+        "Methanocaldococcus jannaschii": [
+            57.0
+        ],
+        "Erwinia chrysanthemi": [
+            35.0,
+            35.0
+        ],
+        "Mycobacterium tuberculosis": [
+            44.0
+        ]
+    },
+    "agm;ametam": {
+        "Pyrococcus furiosus": [
+            0.1
+        ],
+        "Thermus thermophilus": [
+            0.37
+        ]
+    },
+    "dctp;dna": {
+        "Bacteriophage RB69": [
+            200.0
+        ],
+        "Homo sapiens": [
+            0.0483333333
+        ],
+        "Human immunodeficiency virus": [
+            0.326666667,
+            0.0273333333,
+            0.0498333333
+        ]
+    },
+    "dgtp;dna": {
+        "Bacteriophage RB69": [
+            0.1
+        ],
+        "Homo sapiens": [
+            0.0466666667
+        ],
+        "Human immunodeficiency virus": [
+            0.211666667,
+            0.0273333333
+        ]
+    },
+    "dna;dttp": {
+        "Bacteriophage RB69": [
+            273.0
+        ],
+        "Homo sapiens": [
+            3.7,
+            0.04,
+            0.02,
+            0.016,
+            0.004,
+            0.006
+        ],
+        "Human immunodeficiency virus": [
+            0.059,
+            2.6,
+            0.00316666667,
+            0.0216666667,
+            0.0025
+        ]
+    },
+    "dna;h2o": {
+        "Bacteriophage T4": [
+            170.0,
+            420.0,
+            170.0,
+            270.0,
+            170.0,
+            65.1,
+            0.16
+        ],
+        "Escherichia coli": [
+            5.8,
+            7.8
+        ]
+    },
+    "accoa;thr__L": {
+        "Escherichia coli": [
+            500.0
+        ]
+    },
+    "ser__L;ppcoa": {
+        "Escherichia coli": [
+            25.0
+        ]
+    },
+    "accoa;ser__L": {
+        "Escherichia coli": [
+            427.0,
+            2480.0,
+            1100.0,
+            2480.0,
+            2480.0,
+            2480.0
+        ],
+        "Haemophilus influenzae": [
+            3300.0,
+            3300.0,
+            1080.0,
+            2200.0,
+            1350.0
+        ],
+        "Arabidopsis thaliana": [
+            330.0,
+            330.0,
+            212.0,
+            212.0,
+            108.6,
+            108.6
+        ]
+    },
+    "coa;acser": {
+        "Escherichia coli": [
+            16.9,
+            1100.0
+        ],
+        "Haemophilus influenzae": [
+            420.0,
+            420.0,
+            300.0
+        ]
+    },
+    "atp;pi;pyr": {
+        "Entamoeba histolytica": [
+            15.0,
+            10.0
+        ],
+        "Zea mays": [
+            43.666666666666664,
+            43.666666666666664,
+            43.666666666666664
+        ]
+    },
+    "amp;ppi;pep": {
+        "Entamoeba histolytica": [
+            80.0,
+            53.0,
+            87.0,
+            4.0,
+            4.0,
+            53.0,
+            53.0,
+            87.0,
+            87.0
+        ],
+        "Zea mays": [
+            40.333333333333336,
+            40.333333333333336,
+            40.333333333333336
+        ]
+    },
+    "akg;trp__L": {
+        "Rattus norvegicus": [
+            300.0
+        ],
+        "Thermotoga maritima": [
+            0.0141666667
+        ]
+    },
+    "pi;suc6p": {
+        "Thermoanaerobacterium thermosaccharolyticum": [
+            82.6
+        ]
+    },
+    "fru;g1p": {
+        "Thermoanaerobacterium thermosaccharolyticum": [
+            14.4,
+            16.9
+        ]
+    },
+    "pydam;pyr": {
+        "Rhizobium loti": [
+            28.0,
+            29.0,
+            28.0
+        ]
+    },
+    "ala__L;pydx": {
+        "Rhizobium loti": [
+            41.0,
+            41.0
+        ]
+    },
+    "accoa;gam6p": {
+        "Saccharomyces cerevisiae": [
+            0.2075
+        ],
+        "Homo sapiens": [
+            22.1,
+            9.0,
+            9.0
+        ],
+        "Aspergillus fumigatus": [
+            38.0,
+            38.0
+        ]
+    },
+    "atp;glcur": {
+        "Arabidopsis thaliana": [
+            8.3,
+            8.5
+        ]
+    },
+    "akg;acorn": {
+        "Salmonella typhimurium": [
+            1.55
+        ]
+    },
+    "2me4p;ctp": {
+        "Escherichia coli": [
+            25.9,
+            48.4,
+            54.1
+        ],
+        "Arabidopsis thaliana": [
+            26.0,
+            26.0
+        ]
+    },
+    "atp;gam": {
+        "Aeropyrum pernix": [
+            18.0
+        ],
+        "Homo sapiens": [
+            19.9,
+            20.0
+        ]
+    },
+    "atp;acgam": {
+        "Aeropyrum pernix": [
+            1.0
+        ],
+        "Shewanella sp.": [
+            7.1
+        ]
+    },
+    "glc__D;gtp": {
+        "Mycobacterium tuberculosis": [
+            59.833333333333336
+        ],
+        "Solanum chacoense": [
+            0.85
+        ]
+    },
+    "glc__D;datp": {
+        "Mycobacterium tuberculosis": [
+            61.5
+        ]
+    },
+    "glc__D;utp": {
+        "Mycobacterium tuberculosis": [
+            36.833333333333336
+        ],
+        "Solanum chacoense": [
+            3.02
+        ],
+        "Trypanosoma brucei": [
+            40.0
+        ]
+    },
+    "ctp;glc__D": {
+        "Mycobacterium tuberculosis": [
+            18.666666666666668
+        ],
+        "Solanum chacoense": [
+            1.61
+        ]
+    },
+    "fru;uacgam": {
+        "Solanum tuberosum": [
+            0.9
+        ]
+    },
+    "amp;dmpp": {
+        "Humulus lupulus": [
+            0.00828333333
+        ]
+    },
+    "adp;dmpp": {
+        "Humulus lupulus": [
+            0.0238333333
+        ]
+    },
+    "atp;dmpp": {
+        "Humulus lupulus": [
+            0.0218333333,
+            0.0271666667
+        ]
+    },
+    "glc__D;dttp": {
+        "Solanum chacoense": [
+            1.42
+        ]
+    },
+    "adp;pcreat": {
+        "Homo sapiens": [
+            467.333333
+        ]
+    },
+    "atp;asp__L": {
+        "Saccharomyces cerevisiae": [
+            46.6,
+            469.3,
+            46.6,
+            49.3
+        ],
+        "Escherichia coli": [
+            0.39,
+            6.3,
+            1.35,
+            98.0,
+            0.16
+        ],
+        "Thermus thermophilus": [
+            25.0
+        ],
+        "Arabidopsis thaliana": [
+            8.4,
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            6.2,
+            6.2,
+            6.2,
+            6.2,
+            0.23,
+            0.31,
+            23.4,
+            14.5,
+            8.4
+        ]
+    },
+    "atp;nad": {
+        "Bacillus subtilis": [
+            5.46,
+            8.0,
+            1.36,
+            3.36
+        ],
+        "Methanocaldococcus jannaschii": [
+            399.0,
+            424.0
+        ]
+    },
+    "ptrc;amet": {
+        "Calystegia sepium": [
+            0.16,
+            0.086
+        ],
+        "Datura stramonium": [
+            0.388
+        ],
+        "Solanum lycopersicum": [
+            0.19
+        ],
+        "Datura innoxia": [
+            0.383,
+            0.359
+        ],
+        "Physalis divaricata": [
+            0.198
+        ],
+        "Solanum dulcamara": [
+            0.047
+        ]
+    },
+    "adn;atp": {
+        "Leishmania donovani": [
+            1.43333333,
+            1.2
+        ]
+    },
+    "accoa;bzalc": {
+        "Clarkia breweri": [
+            17.5
+        ]
+    },
+    "asp__L;pphn": {
+        "Petunia hybrida": [
+            6.1,
+            4.3
+        ],
+        "Arabidopsis thaliana": [
+            4.6,
+            3.6
+        ]
+    },
+    "glu__L;pphn": {
+        "Petunia hybrida": [
+            13.4,
+            4.5
+        ],
+        "Arabidopsis thaliana": [
+            9.0,
+            4.7
+        ]
+    },
+    "akg;Largn": {
+        "Petunia hybrida": [
+            6.4
+        ]
+    },
+    "glu__L;oaa": {
+        "Petunia hybrida": [
+            55.9
+        ],
+        "Arabidopsis thaliana": [
+            170.0,
+            319.0,
+            574.0,
+            279.0
+        ]
+    },
+    "M02451": {
+        "Pyrobaculum aerophilum": [
+            51.2
+        ]
+    },
+    "M02449": {
+        "Pyrobaculum aerophilum": [
+            24.8
+        ]
+    },
+    "M02447": {
+        "Pyrobaculum aerophilum": [
+            8.9
+        ]
+    },
+    "M02446": {
+        "Pyrobaculum aerophilum": [
+            8.7
+        ]
+    },
+    "atp;all__D": {
+        "Escherichia coli": [
+            47.0,
+            47.0
+        ]
+    },
+    "akg;26dap_LL": {
+        "Arabidopsis thaliana": [
+            17.6
+        ]
+    },
+    "thdp;h2o;glu__L": {
+        "Arabidopsis thaliana": [
+            0.3
+        ]
+    },
+    "datp;dna": {
+        "Human immunodeficiency virus": [
+            0.0541666667,
+            0.0003
+        ],
+        "Homo sapiens": [
+            32000.0
+        ]
+    },
+    "atp;dna": {
+        "Human immunodeficiency virus": [
+            0.0171666667
+        ]
+    },
+    "mlthf;dump": {
+        "Homo sapiens": [
+            0.213,
+            0.213,
+            0.213,
+            0.213,
+            4.16666667,
+            2.5,
+            1.0
+        ],
+        "Escherichia coli": [
+            2.1,
+            2.1,
+            0.6,
+            0.48,
+            0.32,
+            0.28
+        ],
+        "Lactobacillus casei": [
+            6.15,
+            8.0,
+            8.0,
+            5.5,
+            5.5,
+            3.6,
+            3.6,
+            2.7,
+            3.6,
+            7.8,
+            5.5
+        ],
+        "Bacteriophage T4": [
+            11.8
+        ],
+        "Leishmania major": [
+            5.8,
+            3.0
+        ],
+        "Trypanosoma cruzi": [
+            3.4
+        ]
+    },
+    "aacoa;coa": {
+        "Streptomyces collinus": [
+            40.0666667,
+            40.0666667,
+            36.1666667,
+            36.1666667
+        ],
+        "Zoogloea ramigera": [
+            465.0
+        ]
+    },
+    "3php;glu__L": {
+        "Escherichia coli": [
+            1.75
+        ]
+    },
+    "akg;hisp": {
+        "Thermotoga maritima": [
+            0.0466666667
+        ]
+    },
+    "ppi;orot5p": {
+        "Salmonella typhimurium": [
+            18.0,
+            18.0
+        ]
+    },
+    "adp;cbp": {
+        "Enterococcus faecalis": [
+            730.0
+        ]
+    },
+    "atp;cbm": {
+        "Enterococcus faecalis": [
+            92.0
+        ]
+    },
+    "cellb;pi": {
+        "Thermotoga neapolitana": [
+            26.3
+        ]
+    },
+    "dgsn;utp": {
+        "Bacillus subtilis": [
+            1.41
+        ]
+    },
+    "ctp;dgsn": {
+        "Bacillus subtilis": [
+            2.25
+        ]
+    },
+    "dgsn;gtp": {
+        "Bacillus subtilis": [
+            1.69
+        ]
+    },
+    "alatrna;uAgla": {
+        "Lactobacillus viridescens": [
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0
+        ]
+    },
+    "sertrna;uAgla": {
+        "Lactobacillus viridescens": [
+            0.533333333,
+            0.533333333
+        ]
+    },
+    "atp": {
+        "Homo sapiens": [
+            5.0
+        ]
+    },
+    "datp;apppa": {
+        "Homo sapiens": [
+            2.0
+        ]
+    },
+    "cys__L;suchms": {
+        "Escherichia coli": [
+            121.0,
+            117.0,
+            1.8,
+            121.0,
+            166.0
+        ]
+    },
+    "suchms": {
+        "Escherichia coli": [
+            1.8,
+            5.49,
+            2.66
+        ]
+    },
+    "cys__L;phom": {
+        "Arabidopsis thaliana": [
+            30.0
+        ]
+    },
+    "h2o;suchms": {
+        "Helicobacter pylori": [
+            0.297
+        ]
+    },
+    "grdp;amet": {
+        "Streptomyces coelicolor": [
+            0.0092,
+            0.0057
+        ]
+    },
+    "8aonn;amet": {
+        "Escherichia coli": [
+            0.283333333,
+            0.08,
+            0.013
+        ],
+        "Mycobacterium tuberculosis": [
+            0.0166666667
+        ]
+    },
+    "3psme;pi": {
+        "Streptococcus pneumoniae": [
+            0.23,
+            0.22
+        ]
+    },
+    "M01075": {
+        "Homo sapiens": [
+            14.0,
+            83.0
+        ]
+    },
+    "atp;h2o;gln__L": {
+        "Campylobacter jejuni": [
+            2.5,
+            2.5
+        ]
+    }
+}

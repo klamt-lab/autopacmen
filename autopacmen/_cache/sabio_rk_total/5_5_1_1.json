@@ -1,0 +1,30 @@
+{
+    "REST": {
+        "Pseudomonas reinekei": [
+            125.0,
+            120.0
+        ],
+        "Pseudomonas putida": [
+            0.816666667,
+            1.06666667,
+            0.055,
+            148.333333,
+            65.0,
+            9.83333333
+        ],
+        "Acinetobacter calcoaceticus": [
+            0.283333333,
+            43.3333333,
+            78.3333333,
+            30.0
+        ]
+    },
+    "ccmuac": {
+        "Pseudomonas putida": [
+            210.0
+        ],
+        "Acinetobacter calcoaceticus": [
+            61.6666667
+        ]
+    }
+}

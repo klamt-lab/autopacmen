@@ -1,0 +1,21 @@
+{
+    "pydam;pyr": {
+        "Rhizobium loti": [
+            28.0,
+            29.0,
+            28.0
+        ]
+    },
+    "ala__L;pydx": {
+        "Rhizobium loti": [
+            41.0,
+            41.0
+        ]
+    },
+    "REST": {
+        "Rhizobium loti": [
+            24.0,
+            9.0
+        ]
+    }
+}

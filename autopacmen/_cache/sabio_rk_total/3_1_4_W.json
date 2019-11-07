@@ -1,0 +1,90 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            1.78,
+            2.37
+        ],
+        "Helicobacter pylori": [
+            18.083333333333332,
+            33.46666666666667
+        ],
+        "Thermus thermophilus": [
+            0.0035
+        ],
+        "Methanocaldococcus jannaschii": [
+            130.2,
+            3.26,
+            8.6,
+            105.7,
+            114.2,
+            19.1,
+            52.9,
+            125.9
+        ],
+        "Streptomyces chromofuscus": [
+            0.7,
+            1.9,
+            0.67
+        ],
+        "Staphylococcus aureus": [
+            0.73,
+            0.0014
+        ],
+        "Bacillus cereus": [
+            1.81666667e-05,
+            8.18333333e-06,
+            1.25333333e-05,
+            1.35666667e-05,
+            1.73333333e-05,
+            0.00196666667,
+            6.53333333e-06,
+            1.85e-05,
+            2.98333333e-06
+        ],
+        "Mycobacterium tuberculosis": [
+            1800.0
+        ]
+    },
+    "35cgmp;h2o": {
+        "Helicobacter pylori": [
+            15.95
+        ],
+        "Thermus thermophilus": [
+            0.017
+        ],
+        "Homo sapiens": [
+            0.18
+        ]
+    },
+    "23camp;h2o": {
+        "Escherichia coli": [
+            7.63
+        ],
+        "Staphylococcus aureus": [
+            0.91
+        ]
+    },
+    "23cgmp;h2o": {
+        "Escherichia coli": [
+            1.97
+        ],
+        "Staphylococcus aureus": [
+            0.37
+        ]
+    },
+    "h2o;pchol_cho": {
+        "Bacillus cereus": [
+            1000.0
+        ]
+    },
+    "h2o;pe_cho": {
+        "Bacillus cereus": [
+            540.0
+        ]
+    },
+    "h2o;ps_cho": {
+        "Bacillus cereus": [
+            210.0
+        ]
+    }
+}

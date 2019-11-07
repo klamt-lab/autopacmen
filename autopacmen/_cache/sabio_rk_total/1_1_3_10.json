@@ -1,0 +1,92 @@
+{
+    "glc__D;o2": {
+        "Phanerochaete chrysosporium": [
+            70.0,
+            98.8,
+            109.0,
+            111.0,
+            50.0,
+            80.1,
+            93.7,
+            57.1,
+            85.0,
+            95.0,
+            72.9,
+            91.7,
+            97.9,
+            105.4,
+            60.9,
+            77.0,
+            82.7,
+            97.2,
+            94.6,
+            84.0,
+            107.9,
+            108.8,
+            102.7,
+            100.1,
+            120.5,
+            105.2
+        ],
+        "Trametes ochracea": [
+            54.0,
+            71.0
+        ]
+    },
+    "Glc_aD;o2": {
+        "Phanerochaete chrysosporium": [
+            113.8
+        ]
+    },
+    "REST": {
+        "Phanerochaete chrysosporium": [
+            88.3,
+            137.9,
+            101.3,
+            40.4
+        ],
+        "Trametes ochracea": [
+            13.0,
+            53.0,
+            34.0,
+            12.0,
+            4.4,
+            4.6,
+            210.0,
+            270.0,
+            180.0,
+            230.0,
+            120.0,
+            210.0,
+            640.0,
+            750.0,
+            280.0,
+            20.0,
+            150.0,
+            21.0
+        ]
+    },
+    "xyl__D;o2": {
+        "Phanerochaete chrysosporium": [
+            31.7
+        ],
+        "Trametes ochracea": [
+            30.0
+        ]
+    },
+    "all__D;o2": {
+        "Trametes ochracea": [
+            20.0
+        ]
+    },
+    "gal;o2": {
+        "Trametes ochracea": [
+            3.1
+        ]
+    },
+    "arab__L;o2": {
+        "Trametes ochracea": [
+            0.81
+        ]
+    }
+}

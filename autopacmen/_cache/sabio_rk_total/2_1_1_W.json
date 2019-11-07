@@ -1,0 +1,264 @@
+{
+    "REST": {
+        "Vitis vinifera": [
+            0.09,
+            0.118,
+            0.1,
+            0.084,
+            0.112,
+            0.128,
+            2.3825,
+            0.8976
+        ],
+        "Methanocaldococcus jannaschii": [
+            0.012166666666666666,
+            0.008333333333333333
+        ],
+        "Saccharomyces cerevisiae": [
+            0.011,
+            0.006333333333333333,
+            0.01,
+            0.012333333333333333
+        ],
+        "Glycine max": [
+            0.0001,
+            0.001
+        ],
+        "Homo sapiens": [
+            0.021666666666666667,
+            0.0595,
+            0.00821,
+            0.011666666666666665,
+            0.03333333333333333,
+            0.0057,
+            0.02666666666666667,
+            0.036,
+            0.018333333333333333,
+            0.006833333333333333,
+            0.004833333333333333,
+            0.041666666666666664,
+            0.025,
+            0.02,
+            0.075,
+            0.0065,
+            0.004,
+            0.0015,
+            0.001
+        ],
+        "Arabidopsis thaliana": [
+            25.0,
+            70.0
+        ],
+        "Astragalus bisulcatus": [
+            0.0062
+        ],
+        "Escherichia coli": [
+            0.121833333,
+            0.099,
+            0.196666667,
+            0.0603333333,
+            0.216666667,
+            0.226666667,
+            0.0010666666666666667,
+            0.00017
+        ],
+        "Ocimum basilicum": [
+            0.013,
+            0.00087,
+            0.0013,
+            0.0008,
+            0.0031
+        ],
+        "Oryctolagus cuniculus": [
+            0.4,
+            0.0833333333,
+            0.666666667,
+            0.233333333,
+            0.25,
+            0.2,
+            0.45,
+            0.366666667,
+            3.66666667,
+            0.166666667,
+            0.0333333333,
+            0.1,
+            0.116666667
+        ],
+        "Lactobacillus casei": [
+            0.011,
+            0.013,
+            0.0153333333
+        ],
+        "Papaver somniferum": [
+            0.08,
+            0.03,
+            0.02
+        ],
+        "Drosophila melanogaster": [
+            0.11
+        ],
+        "Zea mays": [
+            0.249
+        ],
+        "Rattus norvegicus": [
+            0.1,
+            0.0025,
+            0.07816666666666668
+        ],
+        "Gallus gallus": [
+            0.04183333333333333,
+            0.0023333333333333335
+        ]
+    },
+    "cyart;amet": {
+        "Glycine max": [
+            0.02,
+            0.01,
+            0.001
+        ]
+    },
+    "ptrc;amet": {
+        "Calystegia sepium": [
+            0.16,
+            0.086
+        ],
+        "Datura stramonium": [
+            0.388
+        ],
+        "Solanum lycopersicum": [
+            0.19
+        ],
+        "Datura innoxia": [
+            0.383,
+            0.359
+        ],
+        "Physalis divaricata": [
+            0.198
+        ],
+        "Solanum dulcamara": [
+            0.047
+        ]
+    },
+    "amet;selhcys": {
+        "Astragalus bisulcatus": [
+            0.0074
+        ],
+        "Escherichia coli": [
+            0.74
+        ]
+    },
+    "catechol;amet": {
+        "Ocimum basilicum": [
+            0.0046
+        ]
+    },
+    "mlthf;dump;h;nadph": {
+        "Thermotoga maritima": [
+            0.1
+        ],
+        "Chlamydia trachomatis": [
+            0.666333333,
+            0.666333333,
+            0.666333333
+        ]
+    },
+    "5mthf;hcys__L": {
+        "Sus scrofa": [
+            5.0,
+            5.0
+        ]
+    },
+    "mlthf;dump": {
+        "Homo sapiens": [
+            0.213,
+            0.213,
+            0.213,
+            0.213,
+            4.16666667,
+            2.5,
+            1.0
+        ],
+        "Escherichia coli": [
+            2.1,
+            2.1,
+            0.6,
+            0.48,
+            0.32,
+            0.28
+        ],
+        "Lactobacillus casei": [
+            6.15,
+            8.0,
+            8.0,
+            5.5,
+            5.5,
+            3.6,
+            3.6,
+            2.7,
+            3.6,
+            7.8,
+            5.5
+        ],
+        "Bacteriophage T4": [
+            11.8
+        ],
+        "Leishmania major": [
+            5.8,
+            3.0
+        ],
+        "Trypanosoma cruzi": [
+            3.4
+        ]
+    },
+    "gudac;amet": {
+        "Rattus norvegicus": [
+            0.081,
+            0.081,
+            0.081,
+            0.081,
+            0.081
+        ]
+    },
+    "mppp9;amet": {
+        "Synechocystis sp.": [
+            0.057
+        ]
+    },
+    "hcys__L;amet": {
+        "Escherichia coli": [
+            0.38
+        ]
+    },
+    "anth;amet": {
+        "Zea mays": [
+            0.45,
+            0.37
+        ]
+    },
+    "bz;amet": {
+        "Zea mays": [
+            0.04
+        ]
+    },
+    "ethadmp;amet": {
+        "Caenorhabditis elegans": [
+            8.233333333333333,
+            9.783333333333333,
+            8.233333333333333,
+            8.233333333333333,
+            9.783333333333333,
+            9.783333333333333
+        ]
+    },
+    "C01241;amet": {
+        "Caenorhabditis elegans": [
+            9.416666666666666
+        ]
+    },
+    "grdp;amet": {
+        "Streptomyces coelicolor": [
+            0.0092,
+            0.0057
+        ]
+    }
+}

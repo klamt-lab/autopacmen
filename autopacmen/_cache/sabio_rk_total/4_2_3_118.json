@@ -1,0 +1,12 @@
+{
+    "grdp;h2o": {
+        "Streptomyces coelicolor": [
+            3e-05
+        ]
+    },
+    "REST": {
+        "Streptomyces coelicolor": [
+            0.039
+        ]
+    }
+}

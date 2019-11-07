@@ -1,0 +1,37 @@
+{
+    "xyl__D;nadp": {
+        "Sus scrofa": [
+            58.0
+        ],
+        "Arthrobacter nicotinovorans": [
+            14.9,
+            10.5
+        ]
+    },
+    "rib__D;nadp": {
+        "Sus scrofa": [
+            40.0
+        ]
+    },
+    "arab__L;nadp": {
+        "Sus scrofa": [
+            45.0
+        ]
+    },
+    "REST": {
+        "Sus scrofa": [
+            22.0,
+            9.0
+        ]
+    },
+    "glc__D;nadp": {
+        "Sus scrofa": [
+            16.0
+        ]
+    },
+    "gal;nadp": {
+        "Sus scrofa": [
+            12.0
+        ]
+    }
+}

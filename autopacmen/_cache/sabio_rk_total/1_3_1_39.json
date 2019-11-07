@@ -1,0 +1,14 @@
+{
+    "but2eACP;h;nadph": {
+        "Staphylococcus aureus": [
+            0.19333333333333333
+        ]
+    },
+    "REST": {
+        "Staphylococcus aureus": [
+            0.5066666666666666,
+            0.3,
+            2.17
+        ]
+    }
+}

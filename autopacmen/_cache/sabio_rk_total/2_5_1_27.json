@@ -1,0 +1,18 @@
+{
+    "amp;dmpp": {
+        "Humulus lupulus": [
+            0.00828333333
+        ]
+    },
+    "adp;dmpp": {
+        "Humulus lupulus": [
+            0.0238333333
+        ]
+    },
+    "atp;dmpp": {
+        "Humulus lupulus": [
+            0.0218333333,
+            0.0271666667
+        ]
+    }
+}

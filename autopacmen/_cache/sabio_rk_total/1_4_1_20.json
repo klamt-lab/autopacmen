@@ -1,0 +1,113 @@
+{
+    "h2o;phe__L;nad": {
+        "Lysinibacillus sphaericus": [
+            68.0,
+            68.0
+        ],
+        "Bacillus badius": [
+            39.0
+        ],
+        "Thermoactinomyces intermedius": [
+            45.0
+        ]
+    },
+    "nadh;nh3;phpyr": {
+        "Lysinibacillus sphaericus": [
+            113.0,
+            113.0
+        ],
+        "Thermoactinomyces intermedius": [
+            91.0
+        ]
+    },
+    "h2o;leu__L;nad": {
+        "Lysinibacillus sphaericus": [
+            0.7,
+            0.7
+        ],
+        "Thermoactinomyces intermedius": [
+            3.6
+        ]
+    },
+    "4mop;nadh;nh3": {
+        "Lysinibacillus sphaericus": [
+            27.0,
+            27.0
+        ]
+    },
+    "h2o;ile__L;nad": {
+        "Lysinibacillus sphaericus": [
+            0.13,
+            0.14
+        ],
+        "Thermoactinomyces intermedius": [
+            0.24
+        ]
+    },
+    "REST": {
+        "Lysinibacillus sphaericus": [
+            7.2,
+            3.2,
+            51.0,
+            1.4,
+            33.0,
+            3.2,
+            1.4,
+            7.2,
+            51.0,
+            33.0
+        ],
+        "Thermoactinomyces intermedius": [
+            0.59,
+            1.9,
+            1.1,
+            26.0,
+            82.0,
+            79.0
+        ]
+    },
+    "h2o;met__L;nad": {
+        "Lysinibacillus sphaericus": [
+            1.2,
+            1.2
+        ],
+        "Thermoactinomyces intermedius": [
+            0.84
+        ]
+    },
+    "4met2obut;nadh;nh3": {
+        "Lysinibacillus sphaericus": [
+            27.0,
+            27.0
+        ],
+        "Thermoactinomyces intermedius": [
+            37.0
+        ]
+    },
+    "h2o;val__L;nad": {
+        "Lysinibacillus sphaericus": [
+            0.91,
+            0.91
+        ]
+    },
+    "h2o;tyr__L;nad": {
+        "Lysinibacillus sphaericus": [
+            68.0,
+            68.0
+        ],
+        "Bacillus badius": [
+            34.0
+        ]
+    },
+    "34hpp;nadh;nh3": {
+        "Lysinibacillus sphaericus": [
+            90.0,
+            90.0
+        ]
+    },
+    "4mop;h;nadh;nh3": {
+        "Thermoactinomyces intermedius": [
+            57.0
+        ]
+    }
+}

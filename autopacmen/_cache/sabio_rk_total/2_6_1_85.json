@@ -1,0 +1,21 @@
+{
+    "chor;gln__L": {
+        "Escherichia coli": [
+            0.53,
+            0.000114,
+            0.53,
+            0.6
+        ],
+        "Pseudomonas putida": [
+            0.2
+        ]
+    },
+    "chor;nh3": {
+        "Escherichia coli": [
+            0.032,
+            8.3e-06,
+            0.032,
+            0.032
+        ]
+    }
+}

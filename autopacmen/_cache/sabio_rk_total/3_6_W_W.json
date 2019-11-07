@@ -1,0 +1,425 @@
+{
+    "gtp;h2o": {
+        "Rattus norvegicus": [
+            0.0366666667,
+            0.04,
+            0.045,
+            0.03
+        ],
+        "SARS coronavirus": [
+            5.4
+        ],
+        "Homo sapiens": [
+            0.0076
+        ],
+        "Helicobacter pylori": [
+            0.0095
+        ],
+        "Streptococcus pneumoniae": [
+            0.00333333333
+        ],
+        "Mus musculus": [
+            820.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            97.65
+        ],
+        "Semliki forest virus": [
+            3.8333333333333335
+        ]
+    },
+    "dutp;h2o": {
+        "Methanocaldococcus jannaschii": [
+            1.0
+        ],
+        "Leishmania major": [
+            49.0
+        ],
+        "SARS coronavirus": [
+            14.8
+        ]
+    },
+    "dudp;h2o": {
+        "Leishmania major": [
+            65.0
+        ]
+    },
+    "datp;h2o": {
+        "Leishmania major": [
+            5.4
+        ],
+        "Xenopus laevis": [
+            0.15
+        ],
+        "SARS coronavirus": [
+            14.8
+        ],
+        "Arabidopsis thaliana": [
+            0.17
+        ]
+    },
+    "dttp;h2o": {
+        "Leishmania major": [
+            8.6
+        ],
+        "Homo sapiens": [
+            0.0074
+        ],
+        "Arabidopsis thaliana": [
+            0.25
+        ],
+        "Methanocaldococcus jannaschii": [
+            1.77
+        ]
+    },
+    "dgtp;h2o": {
+        "Leishmania major": [
+            6.4
+        ],
+        "SARS coronavirus": [
+            7.5
+        ],
+        "Arabidopsis thaliana": [
+            0.83
+        ],
+        "Homo sapiens": [
+            1.4,
+            2.0,
+            15.7
+        ],
+        "Methanocaldococcus jannaschii": [
+            96.64
+        ]
+    },
+    "dctp;h2o": {
+        "Leishmania major": [
+            13.0
+        ],
+        "SARS coronavirus": [
+            14.3
+        ],
+        "Escherichia coli": [
+            14.3
+        ]
+    },
+    "h2o;utp": {
+        "Leishmania major": [
+            0.0
+        ],
+        "Bacteriophage phi-6": [
+            0.46
+        ],
+        "Bacteriophage phi-8": [
+            0.0
+        ],
+        "Bacteriophage phi-13": [
+            1.38
+        ],
+        "SARS coronavirus": [
+            10.5
+        ],
+        "Homo sapiens": [
+            0.007
+        ],
+        "Mus musculus": [
+            200.0
+        ]
+    },
+    "atp;h2o": {
+        "Saccharomyces cerevisiae": [
+            0.09000000000000001,
+            0.616666667,
+            0.3,
+            3.5,
+            4.66666667,
+            5.66666667,
+            0.95,
+            0.7,
+            0.45,
+            1.16666667,
+            1.26666667,
+            20.0,
+            0.0045,
+            1.25833333
+        ],
+        "Bacteriophage phi-6": [
+            0.186
+        ],
+        "Bacteriophage phi-8": [
+            0.0
+        ],
+        "Bacteriophage phi-13": [
+            1.6
+        ],
+        "SARS coronavirus": [
+            19.1
+        ],
+        "Homo sapiens": [
+            0.0086
+        ],
+        "Clostridium thermocellum": [
+            0.4166666666666667
+        ],
+        "Helicobacter pylori": [
+            0.155
+        ],
+        "Bos taurus": [
+            195.0
+        ],
+        "Mus musculus": [
+            16.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            1.02
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            0.5,
+            0.03,
+            0.2,
+            0.15,
+            4.4,
+            4.2,
+            5.5,
+            1.6,
+            8.6,
+            3.3,
+            4.7,
+            2.1,
+            12.3,
+            13.9,
+            10.8
+        ],
+        "Saccharomyces cerevisiae": [
+            0.06,
+            0.0116666667,
+            5.0
+        ],
+        "Arabidopsis thaliana": [
+            0.25,
+            0.54,
+            0.11,
+            0.12,
+            0.06
+        ],
+        "Drosophila melanogaster": [
+            35.0,
+            735.0
+        ],
+        "Bos taurus": [
+            384.0,
+            44.5,
+            1457.0,
+            17.3333333,
+            1524.0,
+            9018.0
+        ],
+        "Escherichia coli": [
+            0.05,
+            51.7,
+            94.0
+        ],
+        "Pyrococcus horikoshii": [
+            290.0,
+            275.0,
+            467.0,
+            93.5,
+            191.0
+        ],
+        "Sulfolobus solfataricus": [
+            850.0,
+            198.0
+        ],
+        "Schizosaccharomyces pombe": [
+            0.17
+        ],
+        "Mus musculus": [
+            1.6,
+            23.0
+        ],
+        "Rattus norvegicus": [
+            41.3,
+            10.7,
+            12.8,
+            28.1,
+            17.8,
+            17.5,
+            28.5
+        ],
+        "Thermus thermophilus": [
+            1.42,
+            2.8,
+            3.57,
+            3.36,
+            5.7,
+            7.34,
+            9.1,
+            10.65,
+            10.97,
+            24.37
+        ],
+        "Bacillus methanolicus": [
+            129.1
+        ]
+    },
+    "ctp;h2o": {
+        "SARS coronavirus": [
+            13.9
+        ],
+        "Homo sapiens": [
+            0.0073
+        ],
+        "Escherichia coli": [
+            25.8
+        ],
+        "Mus musculus": [
+            8.7
+        ],
+        "Methanocaldococcus jannaschii": [
+            2.23
+        ]
+    },
+    "adp;h2o": {
+        "Homo sapiens": [
+            0.0051
+        ],
+        "Rattus norvegicus": [
+            3.1,
+            4.4
+        ]
+    },
+    "coa;h2o": {
+        "Saccharomyces cerevisiae": [
+            4.6
+        ]
+    },
+    "butpi;h2o": {
+        "Bos taurus": [
+            77.0
+        ]
+    },
+    "h2o;ppap": {
+        "Bos taurus": [
+            117.0
+        ]
+    },
+    "actp;h2o": {
+        "Bos taurus": [
+            181.0
+        ]
+    },
+    "ppi;h2o": {
+        "Bos taurus": [
+            90.0
+        ],
+        "Streptococcus gordonii": [
+            330.0,
+            3550.0,
+            830.0
+        ],
+        "Synechocystis sp.": [
+            916.0
+        ],
+        "Anabaena sp.": [
+            850.0
+        ],
+        "Pseudanabaena sp.": [
+            850.0
+        ],
+        "Rhodopseudomonas viridis": [
+            750.0
+        ],
+        "Rhodospirillum rubrum": [
+            750.0
+        ],
+        "Rhodopseudomonas palustris": [
+            800.0
+        ],
+        "Chlamydomonas reinhardtii": [
+            314.6,
+            334.6
+        ],
+        "Ochromonas danica": [
+            204.5
+        ],
+        "Euglena gracilis": [
+            280.0
+        ],
+        "Cyanophora paradoxa": [
+            208.5
+        ],
+        "Cyanidium caldarium": [
+            184.5
+        ],
+        "Spinacia oleracea": [
+            102.5
+        ]
+    },
+    "pi": {
+        "Streptococcus gordonii": [
+            34.0,
+            124.0,
+            168.0,
+            29.0,
+            140.0,
+            118.0
+        ]
+    },
+    "h2o;apppa": {
+        "Homo sapiens": [
+            3.5
+        ]
+    },
+    "h2o;itp": {
+        "Homo sapiens": [
+            580.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            911.72
+        ]
+    },
+    "ditp;h2o": {
+        "Homo sapiens": [
+            360.0
+        ]
+    },
+    "h2o;xtp": {
+        "Homo sapiens": [
+            640.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            1009.37
+        ]
+    },
+    "h2o;ap4a": {
+        "Deinococcus radiodurans": [
+            0.035
+        ],
+        "Homo sapiens": [
+            5.0
+        ],
+        "Caenorhabditis elegans": [
+            27.0
+        ]
+    },
+    "h2o;nad": {
+        "Bacillus methanolicus": [
+            3.9
+        ],
+        "Arabidopsis thaliana": [
+            0.19
+        ]
+    },
+    "h2o;nadh": {
+        "Bacillus methanolicus": [
+            0.0
+        ],
+        "Arabidopsis thaliana": [
+            0.01,
+            0.18,
+            0.06,
+            3.92
+        ]
+    }
+}

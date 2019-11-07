@@ -1,0 +1,44 @@
+{
+    "REST": {
+        "Rhodococcus sp.": [
+            642.86
+        ],
+        "Burkholderia xenovorans": [
+            0.1,
+            1.4,
+            0.3,
+            0.017,
+            4.8,
+            5.0,
+            6.5,
+            6.7,
+            7.5,
+            0.0036
+        ],
+        "Burkholderia cepacia": [
+            1.53,
+            2.1,
+            3.9,
+            4.18,
+            3.13,
+            0.00059,
+            0.0055,
+            0.0089
+        ],
+        "Burkholderia xenovorans LB400": [
+            0.98,
+            6.5
+        ],
+        "Pseudomonas fluorescens": [
+            16.0,
+            0.7
+        ],
+        "Cupriavidus metallidurans": [
+            2.9,
+            4.52
+        ],
+        "Arthrobacter nicotinovorans": [
+            792.0
+        ]
+    }
+}

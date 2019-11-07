@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.parse_brenda_json_for_model API documentation</title>
+<meta name="description" content="parse_brenda_for_model.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.parse_brenda_json_for_model</code></h1>
+</header>
+<section id="section-intro">
+<p>parse_brenda_for_model.py</p>
+<p>Contains functions which allow to vreate a model-specific and BRENDA-depending
+kcat database.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;parse_brenda_for_model.py
+
+Contains functions which allow to vreate a model-specific and BRENDA-depending
+kcat database.
+&#34;&#34;&#34;
+
+# IMPORTS
+# External modules
+import cobra
+import copy
+# Internal modules
+from submodules.helper_general import is_fitting_ec_numbers, json_load, json_write
+from typing import Any, Dict, List
+
+
+# PRIVATE FUNCTIONS
+def _get_transfer_ec_number_entry(ec_number_entry_key: str, brenda_kcat_database_original: Dict[str, Dict[str, Any]]) -&gt; Dict[str, Any]:
+    &#34;&#34;&#34;Returns the new EC number to which the given EC number was transferred.
+
+    This is indicated in the given dictionary by the &#39;TRANSFER&#39; key.
+    Especially since the EC class 7&#39;s (translocases) introduction in 2018, many EC numbers are being transferred to new ones.
+
+    Arguments
+    ----------
+    *ec_number_entry_key: str ~ The EC number for which its newly assigned one shall be searched.
+    *brenda_kcat_database_original: Dict[str, Dict[str, Any]] ~ The BRENDA database dictionary with TRANSFER data.
+
+    Output
+    ----------
+    Either...
+    * {&#39;ERROR&#39;: None} if the transferred new EC number is transferred to the old one (a futile cycle :O), or if the new EC number
+      is not in BRENDA&#39;s database :O, or if the new EC number does not have any kcat entries :O
+    * the dictionary containing the substrates, organisms and associated kcats of the new EC number
+    &#34;&#34;&#34;
+    ec_number_entry = brenda_kcat_database_original[ec_number_entry_key]
+    while &#34;TRANSFER&#34; in ec_number_entry.keys():
+        new_ec_number = ec_number_entry[&#34;TRANSFER&#34;]
+        if new_ec_number == ec_number_entry_key:
+            return {&#34;ERROR&#34;: None}
+        if new_ec_number not in brenda_kcat_database_original.keys():
+            return {&#34;ERROR&#34;: None}
+        ec_number_entry = brenda_kcat_database_original[new_ec_number]
+
+    if ec_number_entry == {}:
+        return {&#34;ERROR&#34;: None}
+
+    return copy.deepcopy(ec_number_entry)
+
+
+# PUBLIC FUNCTIONS
+def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_json_path: str) -&gt; None:
+    &#34;&#34;&#34;Reads out a BRENDA JSON file created with parse_brenda_textfile and creates a model-specific JSON.
+
+    Arguments
+    ----------
+    * sbml_path: str ~ The path of the SBML model of which a specific BRENDA JSON kcat database
+      shall be created
+    * brenda_json_path: str ~ The full path to the BRENDA JSON created with parse_brenda_textfile.
+    * output_json_path: str ~ The full path to the newly created JSON.
+
+    Output
+    ----------
+    A JSON in the given folder and the name &#39;kcat_database_brenda.json&#39;, and with the following structure:
+    &lt;pre&gt;
+    {
+        &#39;$EC_NUMBER&#39;: {
+            &#39;$BIGG_ID_METABOLITE&#39;: {
+                &#39;$ORGANISM&#39;: [
+                    kcat_list: float
+                ],
+                (...)
+            },
+            (...)
+        },
+        (...)
+    }
+    &lt;/pre&gt;
+    &#34;&#34;&#34;
+    model: cobra.Model = cobra.io.read_sbml_model(sbml_path)
+
+    # Get EC numbers of the model&#39;s reactions
+    ec_numbers_of_model: List[str] = []
+    for reaction in model.reactions:
+        if &#34;ec-code&#34; not in reaction.annotation.keys():
+            continue
+
+        ec_numbers_of_reaction = reaction.annotation[&#34;ec-code&#34;]
+        if type(ec_numbers_of_reaction) is str:
+            ec_numbers_of_reaction = [ec_numbers_of_reaction]
+        ec_numbers_of_model += ec_numbers_of_reaction
+    ec_numbers_of_model = list(set(ec_numbers_of_model))
+
+    # Get EC number entries for each EC number of the model
+    brenda_kcat_database_original = json_load(brenda_json_path)
+    brenda_kcat_database_for_model = {}
+    for ec_number in ec_numbers_of_model:
+        entry_error = False
+        if ec_number in brenda_kcat_database_original.keys():
+            ec_number_entry = _get_transfer_ec_number_entry(ec_number, brenda_kcat_database_original)
+            if &#34;ERROR&#34; in ec_number_entry.keys():
+                entry_error = True
+            else:
+                ec_number_entry[&#34;WILDCARD&#34;] = False
+                brenda_kcat_database_for_model[ec_number] = ec_number_entry
+
+        if (ec_number not in brenda_kcat_database_original.keys()) or entry_error:
+            eligible_ec_number_entries: List[Dict[str, Any]] = []
+            for wildcard_level in range(1, 5):
+                for database_ec_number in list(brenda_kcat_database_original.keys()):
+                    if is_fitting_ec_numbers(ec_number, database_ec_number, wildcard_level):
+                        database_ec_number_entry = _get_transfer_ec_number_entry(database_ec_number, brenda_kcat_database_original)
+                        if &#34;ERROR&#34; not in database_ec_number_entry.keys():
+                            eligible_ec_number_entries.append(database_ec_number_entry)
+                if len(eligible_ec_number_entries) &gt; 0:
+                    break
+            ec_number_entry = {}
+            for eligible_ec_number_entry in eligible_ec_number_entries:
+                for metabolite_key in eligible_ec_number_entry.keys():
+                    metabolite_entry = eligible_ec_number_entry[metabolite_key]
+                    if metabolite_key not in ec_number_entry.keys():
+                        ec_number_entry[metabolite_key] = metabolite_entry
+                    else:
+                        ec_number_entry[metabolite_key] = {**ec_number_entry[metabolite_key], **metabolite_entry}
+            ec_number_entry[&#34;WILDCARD&#34;] = True
+            brenda_kcat_database_for_model[ec_number] = ec_number_entry
+
+    json_write(output_json_path, brenda_kcat_database_for_model)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.parse_brenda_json_for_model.parse_brenda_json_for_model"><code class="name flex">
+<span>def <span class="ident">parse_brenda_json_for_model</span></span>(<span>sbml_path, brenda_json_path, output_json_path)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Reads out a BRENDA JSON file created with parse_brenda_textfile and creates a model-specific JSON.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>sbml_path: str ~ The path of the SBML model of which a specific BRENDA JSON kcat database
+shall be created</li>
+<li>brenda_json_path: str ~ The full path to the BRENDA JSON created with parse_brenda_textfile.</li>
+<li>output_json_path: str ~ The full path to the newly created JSON.</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>A JSON in the given folder and the name 'kcat_database_brenda.json', and with the following structure:
+<pre>
+{
+    '$EC_NUMBER': {
+        '$BIGG_ID_METABOLITE': {
+            '$ORGANISM': [
+                kcat_list: float
+            ],
+            (&hellip;)
+        },
+        (&hellip;)
+    },
+    (&hellip;)
+}
+</pre></p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_json_path: str) -&gt; None:
+    &#34;&#34;&#34;Reads out a BRENDA JSON file created with parse_brenda_textfile and creates a model-specific JSON.
+
+    Arguments
+    ----------
+    * sbml_path: str ~ The path of the SBML model of which a specific BRENDA JSON kcat database
+      shall be created
+    * brenda_json_path: str ~ The full path to the BRENDA JSON created with parse_brenda_textfile.
+    * output_json_path: str ~ The full path to the newly created JSON.
+
+    Output
+    ----------
+    A JSON in the given folder and the name &#39;kcat_database_brenda.json&#39;, and with the following structure:
+    &lt;pre&gt;
+    {
+        &#39;$EC_NUMBER&#39;: {
+            &#39;$BIGG_ID_METABOLITE&#39;: {
+                &#39;$ORGANISM&#39;: [
+                    kcat_list: float
+                ],
+                (...)
+            },
+            (...)
+        },
+        (...)
+    }
+    &lt;/pre&gt;
+    &#34;&#34;&#34;
+    model: cobra.Model = cobra.io.read_sbml_model(sbml_path)
+
+    # Get EC numbers of the model&#39;s reactions
+    ec_numbers_of_model: List[str] = []
+    for reaction in model.reactions:
+        if &#34;ec-code&#34; not in reaction.annotation.keys():
+            continue
+
+        ec_numbers_of_reaction = reaction.annotation[&#34;ec-code&#34;]
+        if type(ec_numbers_of_reaction) is str:
+            ec_numbers_of_reaction = [ec_numbers_of_reaction]
+        ec_numbers_of_model += ec_numbers_of_reaction
+    ec_numbers_of_model = list(set(ec_numbers_of_model))
+
+    # Get EC number entries for each EC number of the model
+    brenda_kcat_database_original = json_load(brenda_json_path)
+    brenda_kcat_database_for_model = {}
+    for ec_number in ec_numbers_of_model:
+        entry_error = False
+        if ec_number in brenda_kcat_database_original.keys():
+            ec_number_entry = _get_transfer_ec_number_entry(ec_number, brenda_kcat_database_original)
+            if &#34;ERROR&#34; in ec_number_entry.keys():
+                entry_error = True
+            else:
+                ec_number_entry[&#34;WILDCARD&#34;] = False
+                brenda_kcat_database_for_model[ec_number] = ec_number_entry
+
+        if (ec_number not in brenda_kcat_database_original.keys()) or entry_error:
+            eligible_ec_number_entries: List[Dict[str, Any]] = []
+            for wildcard_level in range(1, 5):
+                for database_ec_number in list(brenda_kcat_database_original.keys()):
+                    if is_fitting_ec_numbers(ec_number, database_ec_number, wildcard_level):
+                        database_ec_number_entry = _get_transfer_ec_number_entry(database_ec_number, brenda_kcat_database_original)
+                        if &#34;ERROR&#34; not in database_ec_number_entry.keys():
+                            eligible_ec_number_entries.append(database_ec_number_entry)
+                if len(eligible_ec_number_entries) &gt; 0:
+                    break
+            ec_number_entry = {}
+            for eligible_ec_number_entry in eligible_ec_number_entries:
+                for metabolite_key in eligible_ec_number_entry.keys():
+                    metabolite_entry = eligible_ec_number_entry[metabolite_key]
+                    if metabolite_key not in ec_number_entry.keys():
+                        ec_number_entry[metabolite_key] = metabolite_entry
+                    else:
+                        ec_number_entry[metabolite_key] = {**ec_number_entry[metabolite_key], **metabolite_entry}
+            ec_number_entry[&#34;WILDCARD&#34;] = True
+            brenda_kcat_database_for_model[ec_number] = ec_number_entry
+
+    json_write(output_json_path, brenda_kcat_database_for_model)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.parse_brenda_json_for_model.parse_brenda_json_for_model" href="#autopacmen.submodules.parse_brenda_json_for_model.parse_brenda_json_for_model">parse_brenda_json_for_model</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "REST": {
+        "Bacillus subtilis": [
+            0.011,
+            1.8,
+            3.79,
+            0.0115
+        ],
+        "Geobacillus stearothermophilus": [
+            2.04,
+            4.13
+        ],
+        "Bacillus sp.": [
+            3.3,
+            7.11
+        ]
+    },
+    "h;nadh;no": {
+        "Escherichia coli": [
+            0.2,
+            0.15,
+            0.12
+        ],
+        "Saccharomyces cerevisiae": [
+            0.02
+        ],
+        "Cupriavidus necator": [
+            0.03
+        ]
+    }
+}

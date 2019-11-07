@@ -1,0 +1,26 @@
+{
+    "pyr": {
+        "Escherichia coli": [
+            23.3
+        ],
+        "Nicotiana tabacum": [
+            0.527,
+            0.634
+        ]
+    },
+    "REST": {
+        "Saccharomyces cerevisiae": [
+            46.3
+        ],
+        "Spinacia oleracea": [
+            0.0186,
+            0.0148
+        ]
+    },
+    "akg;ichor": {
+        "Bacillus subtilis": [
+            0.233333333,
+            0.316666667
+        ]
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "phe__L": {
+        "Zea mays": [
+            11.9,
+            10.6
+        ],
+        "Rhodobacter sphaeroides": [
+            2.1,
+            0.01,
+            13.1
+        ],
+        "Rhodobacter capsulatus": [
+            0.04
+        ],
+        "Petroselinum crispum": [
+            13.5,
+            22.0
+        ],
+        "Anabaena variabilis": [
+            4.3
+        ],
+        "Nostoc punctiforme": [
+            1.96
+        ],
+        "Nicotiana tabacum": [
+            0.78,
+            1.09,
+            1.53,
+            1.12,
+            1.14,
+            1.35,
+            1.26,
+            0.58
+        ],
+        "Arabidopsis thaliana": [
+            0.1,
+            1.8,
+            3.2,
+            3.0,
+            115.8
+        ],
+        "Bambusa oldhamii": [
+            16.04,
+            10.11,
+            10.12
+        ]
+    },
+    "tyr__L": {
+        "Zea mays": [
+            0.94,
+            0.92
+        ],
+        "Rhodobacter sphaeroides": [
+            0.02,
+            3.4,
+            4.32
+        ],
+        "Arabidopsis thaliana": [
+            0.084
+        ],
+        "Rhodobacter capsulatus": [
+            0.06
+        ],
+        "Petroselinum crispum": [
+            0.3
+        ]
+    },
+    "REST": {
+        "Delftia sp.": [
+            8.68,
+            10.93,
+            3.03
+        ],
+        "Saccharomyces cerevisiae": [
+            0.22,
+            0.48,
+            0.43,
+            0.34,
+            0.24
+        ],
+        "Escherichia coli": [
+            58.6
+        ],
+        "Salmonella typhimurium": [
+            150.0
+        ]
+    },
+    "ser__D": {
+        "Saccharomyces cerevisiae": [
+            13.1,
+            1.67,
+            12.5
+        ],
+        "Delftia sp.": [
+            0.89
+        ],
+        "Escherichia coli": [
+            1.6
+        ],
+        "Salmonella typhimurium": [
+            3.3
+        ]
+    },
+    "asp__L": {
+        "Escherichia coli": [
+            1.02333333
+        ]
+    },
+    "ser__L": {
+        "Escherichia coli": [
+            0.049
+        ],
+        "Salmonella typhimurium": [
+            0.213
+        ],
+        "Delftia sp.": [
+            0.18
+        ]
+    }
+}

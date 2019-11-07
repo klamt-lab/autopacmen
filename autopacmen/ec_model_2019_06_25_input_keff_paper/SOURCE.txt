@@ -1,0 +1,5 @@
+Supplementary data of:
+Valgepea, K., Adamberg, K., Seiman, A., & Vilu, R. (2013).
+Escherichia coli achieves faster growth by increasing catalytic
+and translation rates of proteins.
+Molecular BioSystems, 9(9), 2344-2358.

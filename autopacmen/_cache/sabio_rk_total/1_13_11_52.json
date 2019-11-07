@@ -1,0 +1,44 @@
+{
+    "trp__L;o2": {
+        "Homo sapiens": [
+            7.4995,
+            6.06166667
+        ],
+        "Mus musculus": [
+            11.9023333,
+            1.54533333
+        ],
+        "Xenopus laevis": [
+            2.22283333
+        ],
+        "Danio rerio": [
+            2.6285
+        ],
+        "Sulculus diversicolor": [
+            0.406833333
+        ],
+        "Saccharomyces cerevisiae": [
+            8.246666666666666
+        ],
+        "Aspergillus oryzae": [
+            0.84,
+            31.886666666666667
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            11.759,
+            8.8825
+        ],
+        "Mus musculus": [
+            13.6528333
+        ],
+        "Saccharomyces cerevisiae": [
+            1.6833333333333333
+        ],
+        "Aspergillus oryzae": [
+            0.365,
+            6.226666666666667
+        ]
+    }
+}

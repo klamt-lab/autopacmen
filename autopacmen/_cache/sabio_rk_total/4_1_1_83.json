@@ -1,0 +1,18 @@
+{
+    "4hphac;h": {
+        "Clostridium difficile": [
+            110.0
+        ],
+        "Clostridium scatologenes": [
+            135.0
+        ]
+    },
+    "REST": {
+        "Clostridium difficile": [
+            65.0
+        ],
+        "Clostridium scatologenes": [
+            67.0
+        ]
+    }
+}

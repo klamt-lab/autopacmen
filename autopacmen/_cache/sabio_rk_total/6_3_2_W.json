@@ -1,0 +1,123 @@
+{
+    "atp;lys__L;uamag": {
+        "Streptococcus pyogenes": [
+            9.0,
+            9.0,
+            9.0
+        ]
+    },
+    "atp;ala__D": {
+        "Enterococcus faecalis": [
+            4.1
+        ],
+        "Enterococcus faecium": [
+            4.91666667
+        ]
+    },
+    "REST": {
+        "Enterococcus faecalis": [
+            0.25,
+            0.416666667
+        ],
+        "Enterococcus faecium": [
+            1.8,
+            2.6,
+            1.1
+        ],
+        "Mycobacterium tuberculosis": [
+            0.0516666667,
+            0.26,
+            0.063,
+            0.19,
+            0.04,
+            0.025
+        ],
+        "Escherichia coli": [
+            0.566666667,
+            0.916666667,
+            9.16666667,
+            13.8333333,
+            18.0
+        ]
+    },
+    "atp;ala__D;lac__D": {
+        "Enterococcus faecalis": [
+            0.47
+        ],
+        "Enterococcus faecium": [
+            1.56666667
+        ]
+    },
+    "atp;ala__D;phlac": {
+        "Enterococcus faecium": [
+            1.25
+        ]
+    },
+    "atp;cys__L;glu__L": {
+        "Pasteurella multocida": [
+            24.3,
+            25.3,
+            22.4
+        ],
+        "Arabidopsis thaliana": [
+            0.075,
+            0.101666667,
+            0.113333333
+        ]
+    },
+    "pant__R;atp;ala_B": {
+        "Mycobacterium tuberculosis": [
+            3.4,
+            3.4,
+            3.4,
+            3.4,
+            3.4,
+            3.4,
+            3.4,
+            3.4
+        ]
+    },
+    "pant__R;atp;cbm": {
+        "Mycobacterium tuberculosis": [
+            0.035
+        ]
+    },
+    "pant__R;4abut;atp": {
+        "Mycobacterium tuberculosis": [
+            0.27
+        ]
+    },
+    "pant__R;atp;gly": {
+        "Mycobacterium tuberculosis": [
+            0.05
+        ]
+    },
+    "pant__R;5aptn;atp": {
+        "Mycobacterium tuberculosis": [
+            0.03
+        ]
+    },
+    "pant__R;atp;mma": {
+        "Mycobacterium tuberculosis": [
+            0.015
+        ]
+    },
+    "atp;glucys;gly": {
+        "Pasteurella multocida": [
+            26.5,
+            36.3,
+            26.9
+        ]
+    },
+    "ctp;4ppan;cys__L": {
+        "Enterococcus faecalis": [
+            2.9,
+            2.9,
+            2.9,
+            2.9
+        ],
+        "Escherichia coli": [
+            0.883333333
+        ]
+    }
+}

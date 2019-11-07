@@ -1,0 +1,13 @@
+{
+    "REST": {
+        "Raphanus sativus": [
+            2.11,
+            287.0
+        ],
+        "Arabidopsis thaliana": [
+            2.3,
+            12.0,
+            46.0
+        ]
+    }
+}

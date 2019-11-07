@@ -1,0 +1,34 @@
+{
+    "REST": {
+        "Burkholderia thailandensis": [
+            17.0
+        ],
+        "Labrenzia aggregata": [
+            15.0
+        ],
+        "Agrobacterium tumefaciens": [
+            27.0
+        ],
+        "Agrobacterium vitis": [
+            4.3
+        ],
+        "Rhizobium meliloti": [
+            7.9
+        ],
+        "Brucella suis biovar 1": [
+            17.0
+        ],
+        "Bacillus thuringiensis": [
+            23.0
+        ],
+        "Burkholderia ambifaria": [
+            43.0
+        ],
+        "Shewanella pealeana": [
+            0.15
+        ],
+        "Shewanella woodyi": [
+            4.1
+        ]
+    }
+}

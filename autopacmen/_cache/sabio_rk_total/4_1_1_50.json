@@ -1,0 +1,15 @@
+{
+    "amet": {
+        "Methanocaldococcus jannaschii": [
+            0.00075
+        ],
+        "Arabidopsis thaliana": [
+            45.8333333
+        ]
+    },
+    "lys__L": {
+        "Arabidopsis thaliana": [
+            1.63333333
+        ]
+    }
+}

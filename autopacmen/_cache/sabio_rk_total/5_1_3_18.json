@@ -1,0 +1,13 @@
+{
+    "gdpmann": {
+        "Oryza sativa": [
+            0.127,
+            0.0303
+        ],
+        "Arabidopsis thaliana": [
+            0.041,
+            0.01,
+            0.007
+        ]
+    }
+}

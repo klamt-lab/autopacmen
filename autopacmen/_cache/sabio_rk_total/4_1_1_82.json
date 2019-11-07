@@ -1,0 +1,19 @@
+{
+    "3pop": {
+        "Bacteroides fragilis": [
+            10.2,
+            8.7,
+            10.2,
+            9.3,
+            9.7,
+            10.2,
+            10.2
+        ]
+    },
+    "pyr": {
+        "Bacteroides fragilis": [
+            0.05,
+            0.05
+        ]
+    }
+}

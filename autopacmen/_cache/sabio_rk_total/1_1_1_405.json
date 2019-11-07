@@ -1,0 +1,41 @@
+{
+    "ru5p__D;h;nadph": {
+        "Haemophilus influenzae": [
+            22.0,
+            22.0,
+            26.0,
+            26.0,
+            7.41,
+            7.41,
+            7.41,
+            7.41,
+            7.41
+        ],
+        "Staphylococcus aureus": [
+            0.79,
+            0.79,
+            0.79,
+            0.41
+        ]
+    },
+    "ara5p;h;nadph": {
+        "Haemophilus influenzae": [
+            2.3
+        ]
+    },
+    "e4p;h;nadph": {
+        "Haemophilus influenzae": [
+            0.5
+        ]
+    },
+    "REST": {
+        "Haemophilus influenzae": [
+            4.1
+        ]
+    },
+    "rbl__D;h;nadph": {
+        "Haemophilus influenzae": [
+            3.6
+        ]
+    }
+}

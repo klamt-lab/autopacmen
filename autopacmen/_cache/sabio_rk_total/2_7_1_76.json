@@ -1,0 +1,20 @@
+{
+    "atp;dad_2": {
+        "Staphylococcus aureus": [
+            1.82
+        ],
+        "Dictyostelium discoideum": [
+            3.7
+        ]
+    },
+    "REST": {
+        "Staphylococcus aureus": [
+            0.56,
+            0.19
+        ],
+        "Dictyostelium discoideum": [
+            0.0081,
+            3.3
+        ]
+    }
+}

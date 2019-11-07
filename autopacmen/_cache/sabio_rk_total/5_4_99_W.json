@@ -1,0 +1,74 @@
+{
+    "glu__L": {
+        "Clostridium tetanomorphum": [
+            5.8
+        ],
+        "Clostridium cochlearium": [
+            5.8
+        ]
+    },
+    "REST": {
+        "Clostridium cochlearium": [
+            5.8
+        ],
+        "Pseudomonas denitrificans": [
+            0.0014166666666666666
+        ],
+        "Homo sapiens": [
+            120.0,
+            283.333333,
+            150.0
+        ],
+        "Alicyclobacillus acidocaldarius": [
+            0.863333333,
+            1.02666667,
+            0.163333333
+        ],
+        "Xanthobacter autotrophicus": [
+            0.23333333333333334
+        ],
+        "Cupriavidus metallidurans": [
+            0.06166666666666667,
+            48.333333333333336
+        ]
+    },
+    "chor": {
+        "Pseudomonas aeruginosa": [
+            0.085
+        ],
+        "Escherichia coli": [
+            55.0,
+            27.0,
+            34.1833333,
+            69.0,
+            74.0,
+            71.0,
+            39.0333333
+        ],
+        "Bacillus subtilis": [
+            50.0,
+            46.0,
+            45.0,
+            43.0,
+            47.0,
+            44.0,
+            47.0,
+            50.0
+        ],
+        "Mycobacterium tuberculosis": [
+            26.0,
+            60.0,
+            62.0,
+            55.0,
+            69.5,
+            66.5,
+            10.8,
+            5.5,
+            5.5,
+            0.1
+        ],
+        "Yersinia pestis": [
+            70.0
+        ]
+    }
+}

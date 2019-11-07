@@ -1,0 +1,43 @@
+{
+    "2hmc": {
+        "Bacillus subtilis": [
+            10.0,
+            26.0
+        ],
+        "Pseudomonas putida": [
+            2100.0
+        ],
+        "Leptothrix cholodnii": [
+            2400.0
+        ]
+    },
+    "REST": {
+        "Bacillus subtilis": [
+            4.1,
+            112.0,
+            125.0,
+            3.0
+        ],
+        "Pseudomonas putida": [
+            2.9,
+            0.5,
+            1.7,
+            150.0,
+            320.0,
+            340.0,
+            110.0,
+            220.0,
+            210.0,
+            630.0
+        ],
+        "Leptothrix cholodnii": [
+            350.0,
+            420.0,
+            420.0,
+            2.0,
+            36.0,
+            13.2,
+            25.0
+        ]
+    }
+}

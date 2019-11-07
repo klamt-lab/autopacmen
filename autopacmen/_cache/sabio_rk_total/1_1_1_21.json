@@ -1,0 +1,492 @@
+{
+    "xyl__D;h;nadh": {
+        "Candida intermedia": [
+            16.0,
+            16.9
+        ],
+        "Candida tenuis": [
+            11.0,
+            12.4,
+            12.4,
+            12.4
+        ]
+    },
+    "xyl__D;h;nadph": {
+        "Candida intermedia": [
+            16.3,
+            23.5,
+            28.0
+        ],
+        "Candida tenuis": [
+            13.0,
+            18.9,
+            18.9
+        ],
+        "Rattus norvegicus": [
+            1.39,
+            1.505
+        ],
+        "Homo sapiens": [
+            0.4,
+            0.4,
+            0.51,
+            0.51,
+            0.51,
+            0.51,
+            0.51,
+            0.51,
+            0.51,
+            0.3
+        ],
+        "Sus scrofa": [
+            1.7,
+            13.0
+        ],
+        "Cryptococcus flavus": [
+            16.3,
+            15.5
+        ]
+    },
+    "REST": {
+        "Candida intermedia": [
+            0.6,
+            0.9,
+            0.8,
+            24.3,
+            21.2,
+            20.7,
+            20.7,
+            1.4,
+            6.8,
+            8.4,
+            14.1,
+            5.4,
+            5.9,
+            3.5,
+            10.2
+        ],
+        "Candida tenuis": [
+            1.1,
+            2.4,
+            15.5,
+            1.1,
+            15.8,
+            18.7,
+            18.5,
+            18.1,
+            17.2,
+            22.4,
+            19.3,
+            13.9,
+            15.6,
+            19.6,
+            15.1
+        ],
+        "Rattus norvegicus": [
+            1.16166667,
+            1.29
+        ],
+        "Homo sapiens": [
+            0.45,
+            0.41,
+            0.23,
+            0.16,
+            0.24,
+            0.45,
+            0.45,
+            1.36666667,
+            1.15,
+            1.21666667,
+            0.45,
+            2.28333333,
+            0.59,
+            0.64,
+            0.28,
+            0.64,
+            0.64,
+            0.47,
+            0.48,
+            0.73,
+            0.76,
+            2.21666667,
+            2.66666667,
+            1.3,
+            1.95,
+            2.28333333,
+            1.78333333,
+            0.416666667,
+            2.56666667,
+            1.0,
+            1.98333333,
+            1.2,
+            1.61666667,
+            0.75,
+            1.66666667,
+            0.75,
+            1.41666667,
+            1.53333333,
+            1.36666667,
+            2.66666667,
+            2.66666667,
+            2.3,
+            2.6,
+            3.38333333,
+            0.516666667,
+            0.583333333,
+            0.0116666667,
+            0.015,
+            0.0966666667,
+            0.288333333,
+            5.716666666666667,
+            7.283333333333333,
+            10.3,
+            9.766666666666666,
+            11.983333333333333,
+            5.2,
+            35.46666666666667,
+            6.366666666666666,
+            38.4,
+            0.36666666666666664,
+            37.083333333333336,
+            31.716666666666665,
+            1.1333333333333333,
+            0.0825,
+            0.126,
+            0.6033333333333334,
+            0.5
+        ],
+        "Bos taurus": [
+            0.05,
+            0.185,
+            0.275,
+            0.263333333,
+            0.21,
+            0.251666667,
+            0.191666667,
+            0.27,
+            0.77,
+            0.06,
+            0.08,
+            0.13,
+            0.77,
+            0.77
+        ],
+        "Sus scrofa": [
+            1.7,
+            57.0,
+            2.2,
+            15.0,
+            1.8,
+            8.9,
+            8.9,
+            13.0
+        ],
+        "Cryptococcus flavus": [
+            2.5,
+            11.0,
+            4.3,
+            6.2,
+            14.6,
+            12.8,
+            13.7,
+            14.2,
+            14.3,
+            14.0,
+            14.4,
+            13.3,
+            17.9,
+            15.1,
+            16.2,
+            21.5,
+            25.8,
+            23.9,
+            23.8,
+            20.4,
+            17.5,
+            5.8,
+            6.7,
+            24.0,
+            14.0,
+            4.7,
+            1.0
+        ]
+    },
+    "h;nadph;ppal": {
+        "Candida intermedia": [
+            6.9
+        ],
+        "Homo sapiens": [
+            1.86666667
+        ],
+        "Cryptococcus flavus": [
+            12.9
+        ]
+    },
+    "erthrs;h;nadph": {
+        "Candida intermedia": [
+            24.3
+        ]
+    },
+    "rib__D;nadph": {
+        "Candida intermedia": [
+            12.2
+        ]
+    },
+    "glc__D;h;nadph": {
+        "Candida intermedia": [
+            8.2
+        ],
+        "Bos taurus": [
+            0.251666667,
+            0.251666667,
+            0.28,
+            0.3,
+            0.28,
+            0.3,
+            0.28,
+            0.3,
+            0.28,
+            0.3,
+            0.28,
+            0.28,
+            0.28,
+            0.28
+        ],
+        "Homo sapiens": [
+            0.44,
+            1.8166666666666667,
+            1.8333333333333333
+        ],
+        "Sus scrofa": [
+            1.2
+        ],
+        "Cryptococcus flavus": [
+            5.0
+        ]
+    },
+    "arab__L;nadph": {
+        "Candida intermedia": [
+            24.5
+        ],
+        "Cryptococcus flavus": [
+            12.5
+        ]
+    },
+    "lyx__L;nadph": {
+        "Candida intermedia": [
+            18.4
+        ]
+    },
+    "gal;nadph": {
+        "Candida intermedia": [
+            15.2
+        ]
+    },
+    "nadh;ppal": {
+        "Candida intermedia": [
+            4.6
+        ],
+        "Candida tenuis": [
+            13.0
+        ]
+    },
+    "erthrs;h;nadh": {
+        "Candida intermedia": [
+            27.5
+        ]
+    },
+    "rib__D;nadh": {
+        "Candida intermedia": [
+            4.9
+        ]
+    },
+    "arab__L;nadh": {
+        "Candida intermedia": [
+            13.5
+        ]
+    },
+    "lyx__L;nadh": {
+        "Candida intermedia": [
+            6.6
+        ]
+    },
+    "glc__D;h;nadh": {
+        "Candida intermedia": [
+            5.6
+        ]
+    },
+    "gal;nadh": {
+        "Candida intermedia": [
+            9.4
+        ]
+    },
+    "h;mthgxl;nadh": {
+        "Candida tenuis": [
+            26.3,
+            10.8
+        ]
+    },
+    "glyald;h;nadph": {
+        "Homo sapiens": [
+            2.0,
+            0.55
+        ]
+    },
+    "h;mthgxl;nadph": {
+        "Homo sapiens": [
+            2.36666667,
+            2.65,
+            14.1,
+            42.233333333333334
+        ],
+        "Cryptococcus flavus": [
+            16.9
+        ]
+    },
+    "dha;h;nadph": {
+        "Homo sapiens": [
+            0.9
+        ]
+    },
+    "lald__D;h;nadph": {
+        "Homo sapiens": [
+            1.25,
+            0.95
+        ]
+    },
+    "h;lald__L;nadph": {
+        "Homo sapiens": [
+            1.6
+        ]
+    },
+    "g3p;h;nadph": {
+        "Homo sapiens": [
+            1.6
+        ]
+    },
+    "gal;h;nadph": {
+        "Homo sapiens": [
+            0.4,
+            3.6999999999999997,
+            1.1333333333333333
+        ],
+        "Cryptococcus flavus": [
+            9.6
+        ]
+    },
+    "glcur;h;nadph": {
+        "Homo sapiens": [
+            0.42
+        ],
+        "Sus scrofa": [
+            1.3,
+            20.0
+        ],
+        "Bos taurus": [
+            0.25
+        ]
+    },
+    "4hoxpacd;h;nadph": {
+        "Homo sapiens": [
+            0.59
+        ]
+    },
+    "fald;h;nadph": {
+        "Homo sapiens": [
+            0.883333333
+        ]
+    },
+    "acald;nadph": {
+        "Homo sapiens": [
+            1.85
+        ]
+    },
+    "gcald;nadph": {
+        "Homo sapiens": [
+            1.76666667
+        ]
+    },
+    "glx;nadph": {
+        "Homo sapiens": [
+            1.18333333
+        ]
+    },
+    "CE2006;h;nadph": {
+        "Homo sapiens": [
+            1.7
+        ]
+    },
+    "bzal;h;nadph": {
+        "Homo sapiens": [
+            2.46666667
+        ]
+    },
+    "h;nadph;pacald": {
+        "Homo sapiens": [
+            2.58333333
+        ]
+    },
+    "h;nadh;ppal": {
+        "Candida tenuis": [
+            5.3
+        ]
+    },
+    "gal;h;nadh": {
+        "Candida tenuis": [
+            10.9
+        ]
+    },
+    "bzal;nadh": {
+        "Candida tenuis": [
+            16.6
+        ]
+    },
+    "3mbzald;h;nadh": {
+        "Candida tenuis": [
+            11.3
+        ]
+    },
+    "h;lyx__L;nadph": {
+        "Cryptococcus flavus": [
+            11.3
+        ]
+    },
+    "rib__D;h;nadph": {
+        "Cryptococcus flavus": [
+            12.4
+        ]
+    },
+    "h;hptal;nadph": {
+        "Cryptococcus flavus": [
+            14.8
+        ]
+    },
+    "etoh;nadp": {
+        "Cryptococcus flavus": [
+            15.0
+        ]
+    },
+    "man;h;nadph": {
+        "Cryptococcus flavus": [
+            8.4
+        ]
+    },
+    "fru;h;nadph": {
+        "Bos taurus": [
+            0.015
+        ]
+    },
+    "retinal;h;nadph": {
+        "Homo sapiens": [
+            0.00583333333,
+            0.45,
+            0.00616666667,
+            0.296666667
+        ]
+    },
+    "nadp;retinol": {
+        "Homo sapiens": [
+            0.12
+        ]
+    }
+}

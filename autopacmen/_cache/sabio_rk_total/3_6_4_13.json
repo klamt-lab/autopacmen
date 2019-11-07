@@ -1,0 +1,15 @@
+{
+    "atp;h2o": {
+        "Saccharomyces cerevisiae": [
+            4.66666667,
+            3.5,
+            5.66666667,
+            0.09000000000000001
+        ]
+    },
+    "datp;h2o": {
+        "Xenopus laevis": [
+            0.15
+        ]
+    }
+}

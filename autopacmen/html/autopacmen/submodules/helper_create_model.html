@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.helper_create_model API documentation</title>
+<meta name="description" content="helper_create_model.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.helper_create_model</code></h1>
+</header>
+<section id="section-intro">
+<p>helper_create_model.py</p>
+<p>This module contains functions which are useful for a multitide of scripts
+which generate AutoPACMEN models.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2018-2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;helper_create_model.py
+
+This module contains functions which are useful for a multitide of scripts
+which generate AutoPACMEN models.
+&#34;&#34;&#34;
+
+# IMPORTS
+# External modules
+import cobra
+import copy
+import openpyxl
+from typing import Any, Dict, List
+# Internal modules
+from submodules.helper_general import get_float_cell_value
+
+
+# PRIVATE FUNCTIONS
+def _read_stoichiometries_worksheet(workbook: openpyxl.Workbook):
+    &#34;&#34;&#34;Reads a protein stoichiometries worksheet and returns the gene rules and protein stoichiometries.
+
+    This worksheet is a default part of AutoPACMEN&#39;s &#39;$PROJECT_NAME_protein_data.xlsx&#39;
+
+    Arguments
+    ----------
+    * workbook: openpyxl.Workbook ~ An opened XLSX workbook which
+      contains an AutoPACMEN &#39;Stoichiometries of complexes&#39; worksheet.
+
+    Output
+    ----------
+    Two dictionaries:
+    * i) reaction_id_gene_rules_mapping: A mapping of gene rules (as lists) as values
+        and reaction IDs as keys. The list is as follows:
+        [(&#34;COMPLEX_INTERNAL_ID_1&#34;, &#34;COMPLEX_INTERNAL_ID_2&#34;), &#34;SINGLE_ID_1&#34;, ...]
+    * ii) reaction_id_gene_rules_protein_stoichiometry_mapping: A mapping of
+         reaction IDs as keys, a tupled form of OR gene rule parts, and
+         a list of stoichiometries for the affected gene rule parts.
+    &#34;&#34;&#34;
+    # Load the worksheet containing the stoichiometries :D
+    worksheet = workbook[&#34;Stoichiometries of complexes&#34;]
+
+    # Set mapping variables
+    reaction_id_gene_rules_mapping = {}
+    reaction_id_gene_rules_protein_stoichiometry_mapping = {}
+    for row in worksheet.rows:
+        current_cell = 1
+        for cell in row:
+            if cell.value is None:
+                continue
+            if current_cell == 1:
+                reaction_id = cell.value
+                reaction_id_gene_rules_mapping[reaction_id] = []
+                reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id] = {}
+            elif ((current_cell-1) % 2) != 0:
+                gene_rule_or_part = str(cell.value)
+                if &#34;[&#34; in gene_rule_or_part:
+                    gene_rule_or_part = tuple(eval(gene_rule_or_part))
+                reaction_id_gene_rules_mapping[reaction_id].append(gene_rule_or_part)
+            else:
+                stoichiometry = str(cell.value)
+                stoichiometries = stoichiometry.split(&#34;;&#34;)
+
+                i = 0
+                for single_stoichiometry in stoichiometries:
+                    if len(stoichiometries) &gt; 1:
+                        single_protein = gene_rule_or_part[i]
+                    else:
+                        single_protein = gene_rule_or_part
+                    if gene_rule_or_part not in reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id].keys():
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][gene_rule_or_part] = {}
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][gene_rule_or_part][single_protein] = \
+                        float(single_stoichiometry)
+                    i += 1
+            current_cell += 1
+    return reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping
+
+
+# PUBLIC FUNCTIONS
+def add_prot_pool_reaction(model: cobra.Model, id_addition: str,
+                           p_total: float, p_measured: float,
+                           unmeasured_protein_fraction: float, mean_saturation: float) -&gt; cobra.Model:
+    &#34;&#34;&#34;Adds a protein pool reaction with the given parameters, in accordance with the GECKO paper.
+
+    The protein pool reaction gets the id &#39;ER_pool&#39;+id_addition
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model to which the protein pool reaction shall be added :D
+    * id_addition: str ~ A string that may be added ad the end of the protein pool reaction&#39;s id.
+    * p_total: float ~ g/gDW of all proteins per 1 gDW cells
+    * p_measured: float ~ g/gDW of all proteins with measured concentrations.
+    * unmeasured_protein_fraction: float ~ The fraction of the meass of the unmeasured proteins
+      on the total protein mass per gDW cells
+    * mean_saturation: float ~ A fitted value of all unmeasured protein&#39;s mean saturation.
+
+    Output
+    ----------
+    The given cobra model with a protein pool reaction :D
+    &#34;&#34;&#34;
+    # See suppl. data of GECKO paper, equation S28
+    pp_reaction = cobra.Reaction(&#34;ER_pool&#34;+id_addition)
+    pp_reaction.name = &#34;prot_pool reaction for unmeasured proteins&#34;
+    pp_reaction.subsystem = &#34;AutoPACMEN&#34;
+    pp_reaction.lower_bound = 0
+    pp_reaction.upper_bound = (p_total - p_measured) * unmeasured_protein_fraction * mean_saturation
+    # The flux is in g/gDW
+    prot_pool_metabolite = cobra.Metabolite(
+        &#34;prot_pool&#34;,
+        name=&#34;prot_pool pseudometabolite for unmeasured proteins&#34;,
+        compartment=&#34;AutoPACMEN&#34;)
+    pp_reaction.add_metabolites({prot_pool_metabolite: 1.0})
+    model.add_reactions([pp_reaction])
+    return model, prot_pool_metabolite
+
+
+def apply_scenario_on_model(model: cobra.Model, scenario: Dict[str, Any]) -&gt; cobra.Model:
+    &#34;&#34;&#34;Returns a model on which the given scenario is applied.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model on which the scenario shall be applied.
+    * scenario: Dict[str, Any] ~ The scenario&#39;s dictionary representation.
+    &#34;&#34;&#34;
+    # Change objective if given in the scenario (otherwise, the default obejective is used)
+    if &#34;objective&#34; in scenario.keys():
+        model.objective = scenario[&#34;objective&#34;]
+    # Change reactions as given in the scenario
+    if &#34;setup&#34; in scenario.keys():
+        reactions_to_set_up = scenario[&#34;setup&#34;].keys()
+        for reaction_to_set_up in reactions_to_set_up:
+            reaction_setup = scenario[&#34;setup&#34;][reaction_to_set_up]
+            if &#34;lower_bound&#34; in reaction_setup.keys():
+                new_lower_bound = reaction_setup[&#34;lower_bound&#34;]
+                model.reactions.get_by_id(reaction_to_set_up).lower_bound = new_lower_bound
+            if &#34;upper_bound&#34; in reaction_setup.keys():
+                new_upper_bound = reaction_setup[&#34;upper_bound&#34;]
+                model.reactions.get_by_id(reaction_to_set_up).upper_bound = new_upper_bound
+    # Return changed model :D
+    return model
+
+
+def get_irreversible_model(model: cobra.Model, id_addition: str) -&gt; cobra.Model:
+    &#34;&#34;&#34;Returns an irreversible model for further AutoPACMEN processing.
+
+    Only reactions with gene rules, i.e. with proteins, are made irreversible.
+    The splitted reactios are then called reaction.id+id_addition+&#34;forward&#34; or
+    &#34;reverse&#34;, respectively.
+
+    In addition, this function corrects the arm reaction metabolites for
+    reversible reactions of sMOMENT models with measured protein concentrations.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model that shall be made irreversible as described
+    * id_addition: str ~ The string that is added before &#39;reversed&#39; or &#39;forward&#39;
+    &#34;&#34;&#34;
+    model_reaction_ids = [x.id for x in model.reactions]
+    for reaction_id in model_reaction_ids:
+        reaction = model.reactions.get_by_id(reaction_id)
+
+        if reaction.lower_bound &gt;= 0:
+            continue
+        if reaction.gene_reaction_rule == &#34;&#34;:
+            continue
+
+        forward_reaction = copy.deepcopy(reaction)
+        forward_reaction.upper_bound = reaction.upper_bound
+        forward_reaction.lower_bound = 0
+        forward_reaction.id += id_addition + &#34;forward&#34;
+        forward_reaction_metabolites_copy = copy.deepcopy(forward_reaction.metabolites)
+        for key in list(forward_reaction_metabolites_copy.keys()):
+            if key.id.startswith(&#34;armm_&#34;):
+                if key.id.endswith(&#34;reverse&#34;):
+                    forward_reaction_metabolites_copy[key] = -1
+                else:
+                    forward_reaction_metabolites_copy[key] = 0
+            else:
+                forward_reaction_metabolites_copy[key] = 0
+        forward_reaction.add_metabolites(forward_reaction_metabolites_copy)
+        model.add_reactions([forward_reaction])
+
+        reverse_reaction = copy.deepcopy(reaction)
+        reverse_reaction.id += id_addition + &#34;reverse&#34;
+        reverse_reaction.upper_bound = -reaction.lower_bound
+        reverse_reaction.lower_bound = 0
+        reverse_reaction_metabolites_copy = copy.deepcopy(reverse_reaction.metabolites)
+        for key in list(reverse_reaction_metabolites_copy.keys()):
+            if not key.id.startswith(&#34;armm_&#34;):
+                reverse_reaction_metabolites_copy[key] *= -2
+            else:
+                if key.id.endswith(&#34;reverse&#34;):
+                    reverse_reaction_metabolites_copy[key] *= 0
+                elif key.id.endswith(&#34;forward&#34;):
+                    reverse_reaction_metabolites_copy[key] *= -1
+        reverse_reaction.add_metabolites(reverse_reaction_metabolites_copy)
+        model.add_reactions([reverse_reaction])
+
+        model.remove_reactions([reaction])
+    return model
+
+
+def get_model_with_separated_measured_enzyme_reactions(model: cobra.Model, protein_id_concentration_mapping: Dict[str, float],
+                                                       reaction_id_gene_rules_mapping: Dict[str, Any],
+                                                       reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any],
+                                                       excluded_reactions: List[str],
+                                                       protein_id_mass_mapping: Dict[str, float]):
+    &#34;&#34;&#34;Splits the reactions with measured enzymes in their gene rules according to the OR blocks in the gene rule.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model for which the reactions shall be splitted.
+    * protein_id_concentration_mapping: Dict[str, float] ~ A mapping of protein IDs to measured concentrations.
+    * reaction_id_gene_rules_mapping: Dict[str, Any] ~ A mapping of gene rules as list (created with
+      _read_stoichiometries_worksheet()) as child with their reaction&#39;s IDs as keys
+    * reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any] ~ A dictionary describing the
+      internal protein stoichiometries in complexes (created with _read_stoichiometries_worksheet())
+    * excluded_reactions: List[str] ~ A list of reactions for which no enzyme constraints shall be added.
+    &#34;&#34;&#34;
+    all_measured_proteins = list(protein_id_concentration_mapping.keys())
+    print(&#34;Measured protein concentration data [mmol/gDW] collected of:&#34;)
+    print(all_measured_proteins)
+    reaction_ids = [x.id for x in model.reactions]
+    for reaction_id in reaction_ids:
+        reaction = model.reactions.get_by_id(reaction_id)
+        if reaction.id not in reaction_id_gene_rules_mapping.keys():
+            continue
+        if reaction.id in excluded_reactions:
+            continue
+
+        gene_rule = reaction_id_gene_rules_mapping[reaction_id]
+        # Check if all proteins in the reaction&#39;s gene rule have a found mass
+        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme &#39;s0001&#39;
+        all_available = True
+        for enzyme in gene_rule:
+            if type(enzyme) == str:
+                if enzyme not in list(protein_id_mass_mapping.keys()):
+                    print(enzyme)
+                    all_available = False
+                    break
+            else:
+                for enzyme_id in enzyme:
+                    if enzyme_id not in list(protein_id_mass_mapping.keys()):
+                        all_available = False
+                        break
+        # If not all of the mass-checked enzymes have a found mass, ignore this reaction
+        if not all_available:
+            continue
+
+        # Check for measured proteins in the reaction&#39;s gene rule
+        # If measured proteins were found, separate for each gene rule element :D
+        current_split_no = 1
+        measured_elements = []
+        unmeasured_elements = []
+        gene_rule_as_list = reaction_id_gene_rules_mapping[reaction.id]
+        for element in gene_rule_as_list:
+            if type(element) is tuple:
+                at_least_one_measured = False
+                for subelement in element:
+                    if subelement in all_measured_proteins:
+                        at_least_one_measured = True
+                        break
+                if at_least_one_measured:
+                    measured_elements.append(element)
+                else:
+                    unmeasured_elements.append(element)
+            elif type(element) is str:
+                if element in all_measured_proteins:
+                    measured_elements.append(element)
+                else:
+                    unmeasured_elements.append(element)
+
+        if len(measured_elements) == 0:
+            continue
+
+        add_arm_reaction = False
+        if (len(unmeasured_elements) &gt;= 1) or (len(measured_elements) &gt; 1):
+            if reaction.lower_bound &gt;= 0:
+                add_arm_reaction = True
+                arm_metabolite = cobra.Metabolite(id=&#34;armm_&#34;+reaction.id,
+                                                  name=&#34;arm reaction metabolite for splitting of &#34;+reaction.id,
+                                                  compartment=&#34;sMOMENT&#34;)
+                arm_reaction = cobra.Reaction(id=&#34;armr_&#34;+reaction.id,
+                                              name=&#34;Arm reaction for splitting of &#34;+reaction.id,
+                                              lower_bound=0,
+                                              upper_bound=reaction.upper_bound)
+                arm_reaction.add_metabolites({arm_metabolite: -1})
+                model.add_reactions([arm_reaction])
+            else:
+                add_arm_reaction = True
+                arm_metabolite_fwd = cobra.Metabolite(id=&#34;armm_&#34;+reaction.id+&#34;_forward&#34;,
+                                                      name=&#34;arm reaction metabolite for splitting of &#34;+reaction.id+&#34; forward&#34;,
+                                                      compartment=&#34;sMOMENT&#34;)
+                arm_reaction_fwd = cobra.Reaction(id=&#34;armr_&#34;+reaction.id+&#34;_forward&#34;,
+                                                  name=&#34;Arm reaction for splitting of &#34;+reaction.id,
+                                                  lower_bound=0,
+                                                  upper_bound=reaction.upper_bound)
+                arm_reaction_fwd.add_metabolites({arm_metabolite_fwd: -1})
+                model.add_reactions([arm_reaction_fwd])
+
+                arm_metabolite_rev = cobra.Metabolite(id=&#34;armm_&#34;+reaction.id+&#34;_reverse&#34;,
+                                                      name=&#34;arm reaction metabolite for splitting of &#34;+reaction.id,
+                                                      compartment=&#34;sMOMENT&#34;)
+                arm_reaction_rev = cobra.Reaction(id=&#34;armr_&#34;+reaction.id+&#34;_reverse&#34;,
+                                                  name=&#34;Arm reaction for splitting of &#34;+reaction.id,
+                                                  lower_bound=0,
+                                                  upper_bound=reaction.upper_bound)
+                arm_reaction_rev.add_metabolites({arm_metabolite_rev: -1})
+                model.add_reactions([arm_reaction_rev])
+
+        # Create reaction for unmeasured elements
+        new_reaction = copy.deepcopy(reaction)
+        new_reaction.id += &#34;_GPRSPLIT_&#34;+&#34;1&#34;
+
+        new_gene_reaction_rule = &#34;&#34;
+        reaction_id_gene_rules_mapping[new_reaction.id] = []
+        reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id] = {}
+        for element in unmeasured_elements:
+            reaction_id_gene_rules_mapping[new_reaction.id].append(element)
+            if type(element) is tuple:
+                for subelement in element:
+                    if element not in reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id].keys():
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][subelement] = \
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][subelement]
+                if len(new_gene_reaction_rule) &gt; 0:
+                    new_gene_reaction_rule += &#34; or &#34;
+                new_gene_reaction_rule += &#34;(&#34; + &#34; and &#34;.join(element) + &#34;)&#34;
+            else:
+                reaction_id_gene_rules_mapping[new_reaction.id].append(element)
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][element] = \
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][element]
+                if len(new_gene_reaction_rule) &gt; 0:
+                    new_gene_reaction_rule += &#34; or &#34;
+                new_gene_reaction_rule += element
+        model.gene_reaction_rule = new_gene_reaction_rule
+
+        if add_arm_reaction:
+            if reaction.lower_bound &gt;= 0:
+                new_reaction.add_metabolites({arm_metabolite: 1})
+            else:
+                new_reaction.add_metabolites({arm_metabolite_fwd: 1, arm_metabolite_rev: 1})
+
+        if new_gene_reaction_rule != &#34;&#34;:
+            # print(f&#34;Adding splitted reaction {new_reaction.id}&#34;)
+            model.add_reactions([new_reaction])
+            # print(reaction_id_gene_rules_mapping[new_reaction.id])
+            current_split_no = 2
+        else:
+            current_split_no = 1
+
+        # Create reactions for measured elements
+        for element in measured_elements:
+            new_reaction = copy.deepcopy(reaction)
+            new_reaction.id += &#34;_GPRSPLIT_&#34;+str(current_split_no)
+            reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id] = {}
+            current_split_no += 1
+            reaction_id_gene_rules_mapping[new_reaction.id] = [element]
+            if type(element) is tuple:
+                for subelement in element:
+                    if element not in reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id].keys():
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][subelement] = \
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][subelement]
+                new_reaction.gene_reaction_rule = &#34; and &#34;.join(element)
+            else:
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][element] = \
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][element]
+                new_reaction.gene_reaction_rule = element
+
+            # print(&#34;Adding new gene-rule-splitted reaction&#34;, new_reaction.id)
+            if add_arm_reaction:
+                if reaction.lower_bound &gt;= 0:
+                    new_reaction.add_metabolites({arm_metabolite: 1})
+                else:
+                    new_reaction.add_metabolites({arm_metabolite_fwd: 1, arm_metabolite_rev: 1})
+            model.add_reactions([new_reaction])
+            # print(reaction_id_gene_rules_mapping[new_reaction.id])
+        model.remove_reactions([reaction])
+
+    return model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping
+
+
+def get_p_measured(protein_id_concentration_mapping: Dict[str, float],
+                   protein_id_mass_mapping: Dict[str, float]) -&gt; float:
+    &#34;&#34;&#34;Return p_measured (as defined in the GECKO paper) using the given arguments.
+
+    Arguments
+    ----------
+    * protein_id_concentration_mapping: Dict[str, float] ~ The given concentrations
+      of the proteins.
+    * protein_id_mass_mapping: Dict[str, float] ~ The masses of the given proteins.
+    &#34;&#34;&#34;
+    p_measured = .0
+    measured_protein_ids = (protein_id_concentration_mapping.keys())
+    for measured_protein_id in measured_protein_ids:
+        protein_concentration = protein_id_concentration_mapping[measured_protein_id]  # mmol/gDW
+        protein_mass = protein_id_mass_mapping[measured_protein_id]  # Da = g/mol
+        protein_mass_concentration = (protein_concentration/1000) * protein_mass  # (mol/gDW) * (g/mol) = g/gDW
+        p_measured += protein_mass_concentration
+    return p_measured
+
+
+def read_enzyme_stoichiometries_xlsx(basepath: str):
+    &#34;&#34;&#34;Reads the internal protein stoichiometries for each enzyme XLSX.
+
+    Arguments
+    ----------
+    * basepath: str ~ The path in which the XLSX can be found.
+    &#34;&#34;&#34;
+    workbook = openpyxl.load_workbook(filename=basepath+&#34;_enzyme_stoichiometries.xlsx&#34;, read_only=True)
+    reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
+        _read_stoichiometries_worksheet(workbook)
+
+    return reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping
+
+
+def read_protein_data_xlsx(basepath: str):
+    &#34;&#34;&#34;Reads the protein data XLSX &#39;$PROJECT_NAME_protein_data.xlsx&#39;
+
+    Argument
+    ----------
+    * basepath: str ~ The folder in which the XLSX exists.
+
+    Output
+    ----------
+    4 values:
+    1. protein_id_concentration_mapping: Dict[str, float] ~ A dictionary with each protein ID
+       as key the associated protein concentration as child.
+    2. p_total: float ~ The full fraction of proteins per gram biomass (g/gDW)
+    3. unmeasured_protein_fraction: float ~ The mass fraction of the proteins without a measured
+       concentration.
+    4. mean_saturation: float ~ A given - and usually fitted - value of mean saturation for all
+       enzymes.
+    &#34;&#34;&#34;
+    protein_id_concentration_mapping: Dict[str, float] = {}
+    workbook = openpyxl.load_workbook(filename=basepath+&#34;_protein_data.xlsx&#34;, read_only=True)
+
+    worksheet = workbook[&#34;Total protein data&#34;]
+    p_total_value = worksheet.cell(row=1, column=2).value
+    unmeasured_protein_fraction_value = worksheet.cell(row=2, column=2).value
+    mean_saturation_value = worksheet.cell(row=3, column=2).value
+    p_total = get_float_cell_value(p_total_value)
+    unmeasured_protein_fraction = get_float_cell_value(unmeasured_protein_fraction_value)
+    mean_saturation = get_float_cell_value(mean_saturation_value)
+
+    worksheet2 = workbook[&#34;Single protein data&#34;]
+    row = 2
+    while True:
+        protein_id = worksheet2.cell(row=row, column=1).value
+        if protein_id is None:
+            break
+        protein_concentration_value = worksheet2.cell(row=row, column=2).value
+        protein_concentration = get_float_cell_value(protein_concentration_value)
+        protein_id_concentration_mapping[protein_id] = protein_concentration
+        row += 1
+
+    return protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.helper_create_model.add_prot_pool_reaction"><code class="name flex">
+<span>def <span class="ident">add_prot_pool_reaction</span></span>(<span>model, id_addition, p_total, p_measured, unmeasured_protein_fraction, mean_saturation)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Adds a protein pool reaction with the given parameters, in accordance with the GECKO paper.</p>
+<p>The protein pool reaction gets the id 'ER_pool'+id_addition</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The model to which the protein pool reaction shall be added :D</li>
+<li>id_addition: str ~ A string that may be added ad the end of the protein pool reaction's id.</li>
+<li>p_total: float ~ g/gDW of all proteins per 1 gDW cells</li>
+<li>p_measured: float ~ g/gDW of all proteins with measured concentrations.</li>
+<li>unmeasured_protein_fraction: float ~ The fraction of the meass of the unmeasured proteins
+on the total protein mass per gDW cells</li>
+<li>mean_saturation: float ~ A fitted value of all unmeasured protein's mean saturation.</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>The given cobra model with a protein pool reaction :D</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_prot_pool_reaction(model: cobra.Model, id_addition: str,
+                           p_total: float, p_measured: float,
+                           unmeasured_protein_fraction: float, mean_saturation: float) -&gt; cobra.Model:
+    &#34;&#34;&#34;Adds a protein pool reaction with the given parameters, in accordance with the GECKO paper.
+
+    The protein pool reaction gets the id &#39;ER_pool&#39;+id_addition
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model to which the protein pool reaction shall be added :D
+    * id_addition: str ~ A string that may be added ad the end of the protein pool reaction&#39;s id.
+    * p_total: float ~ g/gDW of all proteins per 1 gDW cells
+    * p_measured: float ~ g/gDW of all proteins with measured concentrations.
+    * unmeasured_protein_fraction: float ~ The fraction of the meass of the unmeasured proteins
+      on the total protein mass per gDW cells
+    * mean_saturation: float ~ A fitted value of all unmeasured protein&#39;s mean saturation.
+
+    Output
+    ----------
+    The given cobra model with a protein pool reaction :D
+    &#34;&#34;&#34;
+    # See suppl. data of GECKO paper, equation S28
+    pp_reaction = cobra.Reaction(&#34;ER_pool&#34;+id_addition)
+    pp_reaction.name = &#34;prot_pool reaction for unmeasured proteins&#34;
+    pp_reaction.subsystem = &#34;AutoPACMEN&#34;
+    pp_reaction.lower_bound = 0
+    pp_reaction.upper_bound = (p_total - p_measured) * unmeasured_protein_fraction * mean_saturation
+    # The flux is in g/gDW
+    prot_pool_metabolite = cobra.Metabolite(
+        &#34;prot_pool&#34;,
+        name=&#34;prot_pool pseudometabolite for unmeasured proteins&#34;,
+        compartment=&#34;AutoPACMEN&#34;)
+    pp_reaction.add_metabolites({prot_pool_metabolite: 1.0})
+    model.add_reactions([pp_reaction])
+    return model, prot_pool_metabolite</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_create_model.apply_scenario_on_model"><code class="name flex">
+<span>def <span class="ident">apply_scenario_on_model</span></span>(<span>model, scenario)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns a model on which the given scenario is applied.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The model on which the scenario shall be applied.</li>
+<li>scenario: Dict[str, Any] ~ The scenario's dictionary representation.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def apply_scenario_on_model(model: cobra.Model, scenario: Dict[str, Any]) -&gt; cobra.Model:
+    &#34;&#34;&#34;Returns a model on which the given scenario is applied.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model on which the scenario shall be applied.
+    * scenario: Dict[str, Any] ~ The scenario&#39;s dictionary representation.
+    &#34;&#34;&#34;
+    # Change objective if given in the scenario (otherwise, the default obejective is used)
+    if &#34;objective&#34; in scenario.keys():
+        model.objective = scenario[&#34;objective&#34;]
+    # Change reactions as given in the scenario
+    if &#34;setup&#34; in scenario.keys():
+        reactions_to_set_up = scenario[&#34;setup&#34;].keys()
+        for reaction_to_set_up in reactions_to_set_up:
+            reaction_setup = scenario[&#34;setup&#34;][reaction_to_set_up]
+            if &#34;lower_bound&#34; in reaction_setup.keys():
+                new_lower_bound = reaction_setup[&#34;lower_bound&#34;]
+                model.reactions.get_by_id(reaction_to_set_up).lower_bound = new_lower_bound
+            if &#34;upper_bound&#34; in reaction_setup.keys():
+                new_upper_bound = reaction_setup[&#34;upper_bound&#34;]
+                model.reactions.get_by_id(reaction_to_set_up).upper_bound = new_upper_bound
+    # Return changed model :D
+    return model</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_create_model.get_irreversible_model"><code class="name flex">
+<span>def <span class="ident">get_irreversible_model</span></span>(<span>model, id_addition)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns an irreversible model for further AutoPACMEN processing.</p>
+<p>Only reactions with gene rules, i.e. with proteins, are made irreversible.
+The splitted reactios are then called reaction.id+id_addition+"forward" or
+"reverse", respectively.</p>
+<p>In addition, this function corrects the arm reaction metabolites for
+reversible reactions of sMOMENT models with measured protein concentrations.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The model that shall be made irreversible as described</li>
+<li>id_addition: str ~ The string that is added before 'reversed' or 'forward'</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_irreversible_model(model: cobra.Model, id_addition: str) -&gt; cobra.Model:
+    &#34;&#34;&#34;Returns an irreversible model for further AutoPACMEN processing.
+
+    Only reactions with gene rules, i.e. with proteins, are made irreversible.
+    The splitted reactios are then called reaction.id+id_addition+&#34;forward&#34; or
+    &#34;reverse&#34;, respectively.
+
+    In addition, this function corrects the arm reaction metabolites for
+    reversible reactions of sMOMENT models with measured protein concentrations.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model that shall be made irreversible as described
+    * id_addition: str ~ The string that is added before &#39;reversed&#39; or &#39;forward&#39;
+    &#34;&#34;&#34;
+    model_reaction_ids = [x.id for x in model.reactions]
+    for reaction_id in model_reaction_ids:
+        reaction = model.reactions.get_by_id(reaction_id)
+
+        if reaction.lower_bound &gt;= 0:
+            continue
+        if reaction.gene_reaction_rule == &#34;&#34;:
+            continue
+
+        forward_reaction = copy.deepcopy(reaction)
+        forward_reaction.upper_bound = reaction.upper_bound
+        forward_reaction.lower_bound = 0
+        forward_reaction.id += id_addition + &#34;forward&#34;
+        forward_reaction_metabolites_copy = copy.deepcopy(forward_reaction.metabolites)
+        for key in list(forward_reaction_metabolites_copy.keys()):
+            if key.id.startswith(&#34;armm_&#34;):
+                if key.id.endswith(&#34;reverse&#34;):
+                    forward_reaction_metabolites_copy[key] = -1
+                else:
+                    forward_reaction_metabolites_copy[key] = 0
+            else:
+                forward_reaction_metabolites_copy[key] = 0
+        forward_reaction.add_metabolites(forward_reaction_metabolites_copy)
+        model.add_reactions([forward_reaction])
+
+        reverse_reaction = copy.deepcopy(reaction)
+        reverse_reaction.id += id_addition + &#34;reverse&#34;
+        reverse_reaction.upper_bound = -reaction.lower_bound
+        reverse_reaction.lower_bound = 0
+        reverse_reaction_metabolites_copy = copy.deepcopy(reverse_reaction.metabolites)
+        for key in list(reverse_reaction_metabolites_copy.keys()):
+            if not key.id.startswith(&#34;armm_&#34;):
+                reverse_reaction_metabolites_copy[key] *= -2
+            else:
+                if key.id.endswith(&#34;reverse&#34;):
+                    reverse_reaction_metabolites_copy[key] *= 0
+                elif key.id.endswith(&#34;forward&#34;):
+                    reverse_reaction_metabolites_copy[key] *= -1
+        reverse_reaction.add_metabolites(reverse_reaction_metabolites_copy)
+        model.add_reactions([reverse_reaction])
+
+        model.remove_reactions([reaction])
+    return model</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_create_model.get_model_with_separated_measured_enzyme_reactions"><code class="name flex">
+<span>def <span class="ident">get_model_with_separated_measured_enzyme_reactions</span></span>(<span>model, protein_id_concentration_mapping, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping, excluded_reactions, protein_id_mass_mapping)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Splits the reactions with measured enzymes in their gene rules according to the OR blocks in the gene rule.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The model for which the reactions shall be splitted.</li>
+<li>protein_id_concentration_mapping: Dict[str, float] ~ A mapping of protein IDs to measured concentrations.</li>
+<li>reaction_id_gene_rules_mapping: Dict[str, Any] ~ A mapping of gene rules as list (created with
+_read_stoichiometries_worksheet()) as child with their reaction's IDs as keys</li>
+<li>reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any] ~ A dictionary describing the
+internal protein stoichiometries in complexes (created with _read_stoichiometries_worksheet())</li>
+<li>excluded_reactions: List[str] ~ A list of reactions for which no enzyme constraints shall be added.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_model_with_separated_measured_enzyme_reactions(model: cobra.Model, protein_id_concentration_mapping: Dict[str, float],
+                                                       reaction_id_gene_rules_mapping: Dict[str, Any],
+                                                       reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any],
+                                                       excluded_reactions: List[str],
+                                                       protein_id_mass_mapping: Dict[str, float]):
+    &#34;&#34;&#34;Splits the reactions with measured enzymes in their gene rules according to the OR blocks in the gene rule.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The model for which the reactions shall be splitted.
+    * protein_id_concentration_mapping: Dict[str, float] ~ A mapping of protein IDs to measured concentrations.
+    * reaction_id_gene_rules_mapping: Dict[str, Any] ~ A mapping of gene rules as list (created with
+      _read_stoichiometries_worksheet()) as child with their reaction&#39;s IDs as keys
+    * reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any] ~ A dictionary describing the
+      internal protein stoichiometries in complexes (created with _read_stoichiometries_worksheet())
+    * excluded_reactions: List[str] ~ A list of reactions for which no enzyme constraints shall be added.
+    &#34;&#34;&#34;
+    all_measured_proteins = list(protein_id_concentration_mapping.keys())
+    print(&#34;Measured protein concentration data [mmol/gDW] collected of:&#34;)
+    print(all_measured_proteins)
+    reaction_ids = [x.id for x in model.reactions]
+    for reaction_id in reaction_ids:
+        reaction = model.reactions.get_by_id(reaction_id)
+        if reaction.id not in reaction_id_gene_rules_mapping.keys():
+            continue
+        if reaction.id in excluded_reactions:
+            continue
+
+        gene_rule = reaction_id_gene_rules_mapping[reaction_id]
+        # Check if all proteins in the reaction&#39;s gene rule have a found mass
+        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme &#39;s0001&#39;
+        all_available = True
+        for enzyme in gene_rule:
+            if type(enzyme) == str:
+                if enzyme not in list(protein_id_mass_mapping.keys()):
+                    print(enzyme)
+                    all_available = False
+                    break
+            else:
+                for enzyme_id in enzyme:
+                    if enzyme_id not in list(protein_id_mass_mapping.keys()):
+                        all_available = False
+                        break
+        # If not all of the mass-checked enzymes have a found mass, ignore this reaction
+        if not all_available:
+            continue
+
+        # Check for measured proteins in the reaction&#39;s gene rule
+        # If measured proteins were found, separate for each gene rule element :D
+        current_split_no = 1
+        measured_elements = []
+        unmeasured_elements = []
+        gene_rule_as_list = reaction_id_gene_rules_mapping[reaction.id]
+        for element in gene_rule_as_list:
+            if type(element) is tuple:
+                at_least_one_measured = False
+                for subelement in element:
+                    if subelement in all_measured_proteins:
+                        at_least_one_measured = True
+                        break
+                if at_least_one_measured:
+                    measured_elements.append(element)
+                else:
+                    unmeasured_elements.append(element)
+            elif type(element) is str:
+                if element in all_measured_proteins:
+                    measured_elements.append(element)
+                else:
+                    unmeasured_elements.append(element)
+
+        if len(measured_elements) == 0:
+            continue
+
+        add_arm_reaction = False
+        if (len(unmeasured_elements) &gt;= 1) or (len(measured_elements) &gt; 1):
+            if reaction.lower_bound &gt;= 0:
+                add_arm_reaction = True
+                arm_metabolite = cobra.Metabolite(id=&#34;armm_&#34;+reaction.id,
+                                                  name=&#34;arm reaction metabolite for splitting of &#34;+reaction.id,
+                                                  compartment=&#34;sMOMENT&#34;)
+                arm_reaction = cobra.Reaction(id=&#34;armr_&#34;+reaction.id,
+                                              name=&#34;Arm reaction for splitting of &#34;+reaction.id,
+                                              lower_bound=0,
+                                              upper_bound=reaction.upper_bound)
+                arm_reaction.add_metabolites({arm_metabolite: -1})
+                model.add_reactions([arm_reaction])
+            else:
+                add_arm_reaction = True
+                arm_metabolite_fwd = cobra.Metabolite(id=&#34;armm_&#34;+reaction.id+&#34;_forward&#34;,
+                                                      name=&#34;arm reaction metabolite for splitting of &#34;+reaction.id+&#34; forward&#34;,
+                                                      compartment=&#34;sMOMENT&#34;)
+                arm_reaction_fwd = cobra.Reaction(id=&#34;armr_&#34;+reaction.id+&#34;_forward&#34;,
+                                                  name=&#34;Arm reaction for splitting of &#34;+reaction.id,
+                                                  lower_bound=0,
+                                                  upper_bound=reaction.upper_bound)
+                arm_reaction_fwd.add_metabolites({arm_metabolite_fwd: -1})
+                model.add_reactions([arm_reaction_fwd])
+
+                arm_metabolite_rev = cobra.Metabolite(id=&#34;armm_&#34;+reaction.id+&#34;_reverse&#34;,
+                                                      name=&#34;arm reaction metabolite for splitting of &#34;+reaction.id,
+                                                      compartment=&#34;sMOMENT&#34;)
+                arm_reaction_rev = cobra.Reaction(id=&#34;armr_&#34;+reaction.id+&#34;_reverse&#34;,
+                                                  name=&#34;Arm reaction for splitting of &#34;+reaction.id,
+                                                  lower_bound=0,
+                                                  upper_bound=reaction.upper_bound)
+                arm_reaction_rev.add_metabolites({arm_metabolite_rev: -1})
+                model.add_reactions([arm_reaction_rev])
+
+        # Create reaction for unmeasured elements
+        new_reaction = copy.deepcopy(reaction)
+        new_reaction.id += &#34;_GPRSPLIT_&#34;+&#34;1&#34;
+
+        new_gene_reaction_rule = &#34;&#34;
+        reaction_id_gene_rules_mapping[new_reaction.id] = []
+        reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id] = {}
+        for element in unmeasured_elements:
+            reaction_id_gene_rules_mapping[new_reaction.id].append(element)
+            if type(element) is tuple:
+                for subelement in element:
+                    if element not in reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id].keys():
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][subelement] = \
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][subelement]
+                if len(new_gene_reaction_rule) &gt; 0:
+                    new_gene_reaction_rule += &#34; or &#34;
+                new_gene_reaction_rule += &#34;(&#34; + &#34; and &#34;.join(element) + &#34;)&#34;
+            else:
+                reaction_id_gene_rules_mapping[new_reaction.id].append(element)
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][element] = \
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][element]
+                if len(new_gene_reaction_rule) &gt; 0:
+                    new_gene_reaction_rule += &#34; or &#34;
+                new_gene_reaction_rule += element
+        model.gene_reaction_rule = new_gene_reaction_rule
+
+        if add_arm_reaction:
+            if reaction.lower_bound &gt;= 0:
+                new_reaction.add_metabolites({arm_metabolite: 1})
+            else:
+                new_reaction.add_metabolites({arm_metabolite_fwd: 1, arm_metabolite_rev: 1})
+
+        if new_gene_reaction_rule != &#34;&#34;:
+            # print(f&#34;Adding splitted reaction {new_reaction.id}&#34;)
+            model.add_reactions([new_reaction])
+            # print(reaction_id_gene_rules_mapping[new_reaction.id])
+            current_split_no = 2
+        else:
+            current_split_no = 1
+
+        # Create reactions for measured elements
+        for element in measured_elements:
+            new_reaction = copy.deepcopy(reaction)
+            new_reaction.id += &#34;_GPRSPLIT_&#34;+str(current_split_no)
+            reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id] = {}
+            current_split_no += 1
+            reaction_id_gene_rules_mapping[new_reaction.id] = [element]
+            if type(element) is tuple:
+                for subelement in element:
+                    if element not in reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id].keys():
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][subelement] = \
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][subelement]
+                new_reaction.gene_reaction_rule = &#34; and &#34;.join(element)
+            else:
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element] = {}
+                reaction_id_gene_rules_protein_stoichiometry_mapping[new_reaction.id][element][element] = \
+                    reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][element][element]
+                new_reaction.gene_reaction_rule = element
+
+            # print(&#34;Adding new gene-rule-splitted reaction&#34;, new_reaction.id)
+            if add_arm_reaction:
+                if reaction.lower_bound &gt;= 0:
+                    new_reaction.add_metabolites({arm_metabolite: 1})
+                else:
+                    new_reaction.add_metabolites({arm_metabolite_fwd: 1, arm_metabolite_rev: 1})
+            model.add_reactions([new_reaction])
+            # print(reaction_id_gene_rules_mapping[new_reaction.id])
+        model.remove_reactions([reaction])
+
+    return model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_create_model.get_p_measured"><code class="name flex">
+<span>def <span class="ident">get_p_measured</span></span>(<span>protein_id_concentration_mapping, protein_id_mass_mapping)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Return p_measured (as defined in the GECKO paper) using the given arguments.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>protein_id_concentration_mapping: Dict[str, float] ~ The given concentrations
+of the proteins.</li>
+<li>protein_id_mass_mapping: Dict[str, float] ~ The masses of the given proteins.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_p_measured(protein_id_concentration_mapping: Dict[str, float],
+                   protein_id_mass_mapping: Dict[str, float]) -&gt; float:
+    &#34;&#34;&#34;Return p_measured (as defined in the GECKO paper) using the given arguments.
+
+    Arguments
+    ----------
+    * protein_id_concentration_mapping: Dict[str, float] ~ The given concentrations
+      of the proteins.
+    * protein_id_mass_mapping: Dict[str, float] ~ The masses of the given proteins.
+    &#34;&#34;&#34;
+    p_measured = .0
+    measured_protein_ids = (protein_id_concentration_mapping.keys())
+    for measured_protein_id in measured_protein_ids:
+        protein_concentration = protein_id_concentration_mapping[measured_protein_id]  # mmol/gDW
+        protein_mass = protein_id_mass_mapping[measured_protein_id]  # Da = g/mol
+        protein_mass_concentration = (protein_concentration/1000) * protein_mass  # (mol/gDW) * (g/mol) = g/gDW
+        p_measured += protein_mass_concentration
+    return p_measured</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_create_model.read_enzyme_stoichiometries_xlsx"><code class="name flex">
+<span>def <span class="ident">read_enzyme_stoichiometries_xlsx</span></span>(<span>basepath)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Reads the internal protein stoichiometries for each enzyme XLSX.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>basepath: str ~ The path in which the XLSX can be found.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_enzyme_stoichiometries_xlsx(basepath: str):
+    &#34;&#34;&#34;Reads the internal protein stoichiometries for each enzyme XLSX.
+
+    Arguments
+    ----------
+    * basepath: str ~ The path in which the XLSX can be found.
+    &#34;&#34;&#34;
+    workbook = openpyxl.load_workbook(filename=basepath+&#34;_enzyme_stoichiometries.xlsx&#34;, read_only=True)
+    reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
+        _read_stoichiometries_worksheet(workbook)
+
+    return reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_create_model.read_protein_data_xlsx"><code class="name flex">
+<span>def <span class="ident">read_protein_data_xlsx</span></span>(<span>basepath)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Reads the protein data XLSX '$PROJECT_NAME_protein_data.xlsx'</p>
+<h2 id="argument">Argument</h2>
+<ul>
+<li>basepath: str ~ The folder in which the XLSX exists.</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>4 values:
+1. protein_id_concentration_mapping: Dict[str, float] ~ A dictionary with each protein ID
+as key the associated protein concentration as child.
+2. p_total: float ~ The full fraction of proteins per gram biomass (g/gDW)
+3. unmeasured_protein_fraction: float ~ The mass fraction of the proteins without a measured
+concentration.
+4. mean_saturation: float ~ A given - and usually fitted - value of mean saturation for all
+enzymes.</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_protein_data_xlsx(basepath: str):
+    &#34;&#34;&#34;Reads the protein data XLSX &#39;$PROJECT_NAME_protein_data.xlsx&#39;
+
+    Argument
+    ----------
+    * basepath: str ~ The folder in which the XLSX exists.
+
+    Output
+    ----------
+    4 values:
+    1. protein_id_concentration_mapping: Dict[str, float] ~ A dictionary with each protein ID
+       as key the associated protein concentration as child.
+    2. p_total: float ~ The full fraction of proteins per gram biomass (g/gDW)
+    3. unmeasured_protein_fraction: float ~ The mass fraction of the proteins without a measured
+       concentration.
+    4. mean_saturation: float ~ A given - and usually fitted - value of mean saturation for all
+       enzymes.
+    &#34;&#34;&#34;
+    protein_id_concentration_mapping: Dict[str, float] = {}
+    workbook = openpyxl.load_workbook(filename=basepath+&#34;_protein_data.xlsx&#34;, read_only=True)
+
+    worksheet = workbook[&#34;Total protein data&#34;]
+    p_total_value = worksheet.cell(row=1, column=2).value
+    unmeasured_protein_fraction_value = worksheet.cell(row=2, column=2).value
+    mean_saturation_value = worksheet.cell(row=3, column=2).value
+    p_total = get_float_cell_value(p_total_value)
+    unmeasured_protein_fraction = get_float_cell_value(unmeasured_protein_fraction_value)
+    mean_saturation = get_float_cell_value(mean_saturation_value)
+
+    worksheet2 = workbook[&#34;Single protein data&#34;]
+    row = 2
+    while True:
+        protein_id = worksheet2.cell(row=row, column=1).value
+        if protein_id is None:
+            break
+        protein_concentration_value = worksheet2.cell(row=row, column=2).value
+        protein_concentration = get_float_cell_value(protein_concentration_value)
+        protein_id_concentration_mapping[protein_id] = protein_concentration
+        row += 1
+
+    return protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.helper_create_model.add_prot_pool_reaction" href="#autopacmen.submodules.helper_create_model.add_prot_pool_reaction">add_prot_pool_reaction</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_create_model.apply_scenario_on_model" href="#autopacmen.submodules.helper_create_model.apply_scenario_on_model">apply_scenario_on_model</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_create_model.get_irreversible_model" href="#autopacmen.submodules.helper_create_model.get_irreversible_model">get_irreversible_model</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_create_model.get_model_with_separated_measured_enzyme_reactions" href="#autopacmen.submodules.helper_create_model.get_model_with_separated_measured_enzyme_reactions">get_model_with_separated_measured_enzyme_reactions</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_create_model.get_p_measured" href="#autopacmen.submodules.helper_create_model.get_p_measured">get_p_measured</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_create_model.read_enzyme_stoichiometries_xlsx" href="#autopacmen.submodules.helper_create_model.read_enzyme_stoichiometries_xlsx">read_enzyme_stoichiometries_xlsx</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_create_model.read_protein_data_xlsx" href="#autopacmen.submodules.helper_create_model.read_protein_data_xlsx">read_protein_data_xlsx</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

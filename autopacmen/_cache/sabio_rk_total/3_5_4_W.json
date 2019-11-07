@@ -1,0 +1,107 @@
+{
+    "methf;h2o": {
+        "Photobacterium phosphoreum": [
+            53.0
+        ],
+        "Sus scrofa": [
+            8700.0
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            8.6
+        ],
+        "Pseudomonas sp.": [
+            0.8,
+            1.4,
+            1.6,
+            1.9
+        ],
+        "Agrobacterium tumefaciens": [
+            64.0,
+            1.6,
+            2.9,
+            131.0,
+            0.46,
+            1.2,
+            110.0,
+            46.0,
+            48.0,
+            0.036,
+            19.0,
+            28.0
+        ],
+        "unknown prokaryotic organism": [
+            0.28,
+            1.05,
+            1.01,
+            1.91
+        ],
+        "Thermotoga maritima": [
+            7.2
+        ]
+    },
+    "gua;h2o": {
+        "Homo sapiens": [
+            17.4
+        ]
+    },
+    "dctp;h2o": {
+        "Methanocaldococcus jannaschii": [
+            0.2,
+            0.27,
+            5.0,
+            0.41,
+            0.3
+        ]
+    },
+    "ade;h2o": {
+        "Helicobacter pylori": [
+            0.007833333333333333
+        ]
+    },
+    "h2o;hatrz": {
+        "Pseudomonas sp.": [
+            3.2
+        ]
+    },
+    "gtp;h2o": {
+        "Helicobacter pylori": [
+            43.21666666666667
+        ]
+    },
+    "h2o;ahcys": {
+        "Thermotoga maritima": [
+            12.2
+        ]
+    },
+    "fol;h2o": {
+        "Agrobacterium tumefaciens": [
+            6.4
+        ]
+    },
+    "CE2705;h2o": {
+        "Agrobacterium tumefaciens": [
+            0.09
+        ]
+    },
+    "adn;h2o": {
+        "Helicobacter pylori": [
+            18.35,
+            5.516666666666667
+        ],
+        "Mus musculus": [
+            250.0
+        ],
+        "Thermotoga maritima": [
+            2.3
+        ]
+    },
+    "dcmp;h2o": {
+        "Homo sapiens": [
+            960.0,
+            960.0,
+            960.0
+        ]
+    }
+}

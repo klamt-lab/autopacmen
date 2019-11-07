@@ -1,0 +1,126 @@
+{
+    "REST": {
+        "Mycobacterium tuberculosis": [
+            0.027,
+            0.017,
+            0.021,
+            0.023,
+            0.26
+        ],
+        "Methylosinus trichosporium": [
+            0.3,
+            1.13
+        ],
+        "Rattus norvegicus": [
+            161.6,
+            44.1
+        ],
+        "Pseudomonas fluorescens": [
+            0.5,
+            1.4,
+            1.2,
+            2.5,
+            4.8,
+            4.7,
+            6.7,
+            7.3,
+            7.8,
+            9.4,
+            8.6,
+            11.9,
+            12.6,
+            12.7,
+            14.0,
+            13.2,
+            11.0,
+            10.4,
+            12.8,
+            14.5,
+            11.1,
+            4.1,
+            4.5,
+            0.6,
+            5.0,
+            5.4,
+            7.4,
+            2.1,
+            9.3,
+            10.1,
+            10.6,
+            1.7,
+            12.3,
+            6.3,
+            3.9
+        ],
+        "Cytophaga hutchinsonii": [
+            2.15
+        ],
+        "Arthrobacter nicotinovorans": [
+            3.9e-06
+        ],
+        "Homo sapiens": [
+            0.433333333,
+            0.605,
+            2.06333333,
+            0.78,
+            0.233333333
+        ],
+        "Sus scrofa": [
+            0.588333333
+        ],
+        "Bacillus thermoglucosidasius": [
+            7.1,
+            8.0,
+            147.0,
+            180.0,
+            276.0,
+            279.0
+        ],
+        "Rhodococcus erythropolis": [
+            3.6,
+            3.9,
+            4.9,
+            6.0
+        ],
+        "Sphingobium chlorophenolicum": [
+            0.0093,
+            5.5
+        ]
+    },
+    "h;ch4;nadh;o2": {
+        "Methylosinus trichosporium": [
+            1.05
+        ]
+    },
+    "h;nadph;o2;tma": {
+        "Homo sapiens": [
+            0.383333333,
+            0.561666667
+        ],
+        "Sus scrofa": [
+            0.55
+        ]
+    },
+    "fad;h;nadh": {
+        "Bacillus thermoglucosidasius": [
+            43.0,
+            225.0,
+            252.0
+        ]
+    },
+    "h;nadh;o2": {
+        "Bacillus thermoglucosidasius": [
+            1.4
+        ]
+    },
+    "bzal;h;nadph;o2": {
+        "Pseudomonas fluorescens": [
+            2.2
+        ]
+    },
+    "4hbald;h;nadph;o2": {
+        "Pseudomonas fluorescens": [
+            7.6
+        ]
+    }
+}

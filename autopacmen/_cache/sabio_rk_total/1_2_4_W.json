@@ -1,0 +1,16 @@
+{
+    "pyr;thmpp": {
+        "Geobacillus stearothermophilus": [
+            0.46,
+            0.48,
+            0.48,
+            0.46
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            0.2,
+            3.3
+        ]
+    }
+}

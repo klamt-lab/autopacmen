@@ -1,0 +1,28 @@
+{
+    "arg__L": {
+        "Chlamydophila pneumoniae": [
+            6.9
+        ],
+        "Methanocaldococcus jannaschii": [
+            2.7
+        ],
+        "Paramecium bursaria chlorella virus 1": [
+            15.0,
+            24.0,
+            15.0
+        ],
+        "Sulfolobus solfataricus": [
+            2.6,
+            0.019
+        ],
+        "Avena sativa": [
+            0.0027500000000000003,
+            0.00025
+        ]
+    },
+    "lys__L": {
+        "Paramecium bursaria chlorella virus 1": [
+            0.45
+        ]
+    }
+}

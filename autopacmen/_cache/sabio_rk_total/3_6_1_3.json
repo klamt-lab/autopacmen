@@ -1,0 +1,19 @@
+{
+    "atp;h2o": {
+        "Saccharomyces cerevisiae": [
+            20.0,
+            20.0
+        ],
+        "Clostridium thermocellum": [
+            0.4166666666666667
+        ],
+        "Helicobacter pylori": [
+            0.155
+        ]
+    },
+    "gtp;h2o": {
+        "Helicobacter pylori": [
+            0.0095
+        ]
+    }
+}

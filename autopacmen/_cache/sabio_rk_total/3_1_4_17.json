@@ -1,0 +1,22 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            1.78
+        ],
+        "Helicobacter pylori": [
+            18.083333333333332,
+            33.46666666666667
+        ],
+        "Thermus thermophilus": [
+            0.0035
+        ]
+    },
+    "35cgmp;h2o": {
+        "Helicobacter pylori": [
+            15.95
+        ],
+        "Thermus thermophilus": [
+            0.017
+        ]
+    }
+}

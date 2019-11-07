@@ -1,0 +1,19 @@
+{
+    "REST": {
+        "Saccharomyces cerevisiae": [
+            0.011,
+            0.01,
+            0.01
+        ],
+        "Glycine max": [
+            0.001
+        ]
+    },
+    "cyart;amet": {
+        "Glycine max": [
+            0.01,
+            0.02,
+            0.02
+        ]
+    }
+}

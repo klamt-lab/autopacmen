@@ -1,0 +1,342 @@
+{
+    "REST": {
+        "Aedes aegypti": [
+            2.86666667,
+            3.43333333,
+            2.31666667,
+            9.35,
+            2.71666667,
+            2.8,
+            4.71666667,
+            3.83333333,
+            4.71666667,
+            12.6333333,
+            5.75,
+            25.6666667,
+            5.28333333
+        ],
+        "Homo sapiens": [
+            0.39333333333333337,
+            1.7016666666666664,
+            2.6199999999999997,
+            3.591666666666667,
+            4.828333333333333,
+            4.133333333333333,
+            4.27,
+            7.668333333333334,
+            1.4849999999999999,
+            9.754999999999999,
+            2.6550000000000002,
+            2.5083333333333333,
+            3.481666666666667,
+            4.838333333333334,
+            0.92,
+            139.0,
+            2.99,
+            0.9183333333333333,
+            0.36333333333333334,
+            1.5650000000000002,
+            186.0,
+            194.0,
+            230.0,
+            3.64
+        ],
+        "Escherichia coli": [
+            0.00086,
+            0.00092
+        ],
+        "Treponema denticola": [
+            0.0001,
+            0.00045
+        ],
+        "Rhizobium loti": [
+            24.0,
+            9.0
+        ],
+        "Salmonella typhimurium": [
+            0.82
+        ]
+    },
+    "glx;glu__L": {
+        "Homo sapiens": [
+            3.0833333333333335
+        ]
+    },
+    "glx;tyr__L": {
+        "Homo sapiens": [
+            2.1916666666666664
+        ]
+    },
+    "glx;trp__L": {
+        "Homo sapiens": [
+            4.233333333333333
+        ]
+    },
+    "glx;leu__L": {
+        "Homo sapiens": [
+            4.75
+        ]
+    },
+    "glx;ala__L": {
+        "Homo sapiens": [
+            2.893333333333333
+        ],
+        "Arabidopsis thaliana": [
+            2.86
+        ]
+    },
+    "glx;phe__L": {
+        "Homo sapiens": [
+            5.451666666666667
+        ]
+    },
+    "akg;24dab": {
+        "Pseudomonas aeruginosa": [
+            1.39
+        ]
+    },
+    "akg;4abut": {
+        "Escherichia coli": [
+            47.4,
+            47.4,
+            47.4,
+            47.4,
+            47.4
+        ]
+    },
+    "akg;asp__L": {
+        "Escherichia coli": [
+            0.016,
+            0.016
+        ],
+        "Petunia hybrida": [
+            34.6
+        ],
+        "Arabidopsis thaliana": [
+            16.8,
+            217.0,
+            205.0,
+            176.0
+        ]
+    },
+    "akg;glu__L": {
+        "Escherichia coli": [
+            6e-05
+        ]
+    },
+    "akg;glu__D": {
+        "Escherichia coli": [
+            0.00015
+        ]
+    },
+    "tyr__L;pyr": {
+        "Trypanosoma cruzi": [
+            44.6,
+            47.4
+        ]
+    },
+    "4mop;ala__L": {
+        "Trypanosoma cruzi": [
+            21.2,
+            20.4
+        ]
+    },
+    "asp__L;pphn": {
+        "Petunia hybrida": [
+            6.1,
+            4.3
+        ],
+        "Arabidopsis thaliana": [
+            4.6,
+            3.6
+        ]
+    },
+    "glu__L;pphn": {
+        "Petunia hybrida": [
+            13.4,
+            4.5
+        ],
+        "Arabidopsis thaliana": [
+            9.0,
+            4.7
+        ]
+    },
+    "akg;Largn": {
+        "Petunia hybrida": [
+            6.4
+        ]
+    },
+    "glu__L;oaa": {
+        "Petunia hybrida": [
+            55.9
+        ],
+        "Arabidopsis thaliana": [
+            170.0,
+            319.0,
+            574.0,
+            279.0
+        ]
+    },
+    "chor;gln__L": {
+        "Escherichia coli": [
+            0.53,
+            0.000114,
+            0.53,
+            0.6
+        ],
+        "Pseudomonas putida": [
+            0.2
+        ]
+    },
+    "chor;nh3": {
+        "Escherichia coli": [
+            0.032,
+            8.3e-06,
+            0.032,
+            0.032
+        ]
+    },
+    "akg;26dap_LL": {
+        "Arabidopsis thaliana": [
+            17.6
+        ]
+    },
+    "thdp;h2o;glu__L": {
+        "Arabidopsis thaliana": [
+            0.3
+        ]
+    },
+    "3php;glu__L": {
+        "Escherichia coli": [
+            1.75
+        ]
+    },
+    "akg;ala__D": {
+        "Bacillus sp.": [
+            129.0
+        ],
+        "Rattus norvegicus": [
+            500.0
+        ]
+    },
+    "akg;hisp": {
+        "Thermotoga maritima": [
+            0.0466666667
+        ]
+    },
+    "akg;phe__L": {
+        "Thermotoga maritima": [
+            0.00866666667
+        ],
+        "Escherichia coli": [
+            180.0
+        ],
+        "Rattus norvegicus": [
+            300.0
+        ]
+    },
+    "akg;tyr__L": {
+        "Thermotoga maritima": [
+            0.0433333333
+        ],
+        "Rattus norvegicus": [
+            576.0,
+            300.0,
+            566.0
+        ]
+    },
+    "akg;trp__L": {
+        "Thermotoga maritima": [
+            0.0141666667
+        ],
+        "Rattus norvegicus": [
+            300.0
+        ]
+    },
+    "24dab;pyr": {
+        "Pseudomonas aeruginosa": [
+            1.15
+        ]
+    },
+    "pydam;pyr": {
+        "Rhizobium loti": [
+            28.0,
+            29.0,
+            28.0
+        ]
+    },
+    "ala__L;pydx": {
+        "Rhizobium loti": [
+            41.0,
+            41.0
+        ]
+    },
+    "akg;ala__L": {
+        "Pyrococcus furiosus": [
+            114.0,
+            186.0
+        ],
+        "Trypanosoma cruzi": [
+            23.5,
+            21.8
+        ],
+        "Arabidopsis thaliana": [
+            1.67,
+            2.15
+        ]
+    },
+    "glu__L;pyr": {
+        "Pyrococcus furiosus": [
+            142.0,
+            216.0
+        ],
+        "Arabidopsis thaliana": [
+            6.47,
+            5.8
+        ]
+    },
+    "glx;ser__L": {
+        "Arabidopsis thaliana": [
+            6.4
+        ]
+    },
+    "8aonn;amet": {
+        "Escherichia coli": [
+            0.283333333,
+            0.08,
+            0.013
+        ],
+        "Mycobacterium tuberculosis": [
+            0.0166666667
+        ]
+    },
+    "akg;lys__L": {
+        "Arabidopsis thaliana": [
+            5.33,
+            4.42,
+            2.83,
+            3.75
+        ]
+    },
+    "34hpp;glu__L": {
+        "Rattus norvegicus": [
+            210.0,
+            165.0
+        ]
+    },
+    "akg;acorn": {
+        "Salmonella typhimurium": [
+            1.55
+        ]
+    },
+    "glx;met__L": {
+        "Homo sapiens": [
+            3.44
+        ]
+    },
+    "glx;gln__L": {
+        "Homo sapiens": [
+            1.5916666666666666
+        ]
+    }
+}

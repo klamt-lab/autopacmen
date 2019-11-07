@@ -1,0 +1,20 @@
+{
+    "REST": {
+        "Xanthomonas campestris": [
+            15.0,
+            2.4,
+            0.035,
+            0.086
+        ]
+    },
+    "galctn__L": {
+        "Xanthomonas campestris": [
+            0.9
+        ]
+    },
+    "altrn": {
+        "Xanthomonas campestris": [
+            0.064
+        ]
+    }
+}

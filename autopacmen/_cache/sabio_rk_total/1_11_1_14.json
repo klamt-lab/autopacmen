@@ -1,0 +1,54 @@
+{
+    "REST": {
+        "Phanerochaete chrysosporium": [
+            43.0,
+            23.0,
+            30.0,
+            16.0,
+            22.0,
+            27.0,
+            38.0,
+            38.0,
+            39.0,
+            13.0,
+            27.0,
+            10.0,
+            40.0,
+            16.0,
+            15.0,
+            16.0,
+            15.0,
+            13.0,
+            19.0,
+            18.0,
+            6.9,
+            15.0,
+            13.0,
+            19.0,
+            9.7,
+            15.0,
+            15.0
+        ]
+    },
+    "catechol;h2o2": {
+        "Phanerochaete chrysosporium": [
+            36.0
+        ]
+    },
+    "34dhbz;h2o2": {
+        "Phanerochaete chrysosporium": [
+            25.0
+        ]
+    },
+    "fer;h2o2": {
+        "Phanerochaete chrysosporium": [
+            38.0,
+            16.0
+        ]
+    },
+    "h2o2;vanlt": {
+        "Phanerochaete chrysosporium": [
+            18.0
+        ]
+    }
+}

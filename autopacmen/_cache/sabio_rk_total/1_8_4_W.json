@@ -1,0 +1,23 @@
+{
+    "REST": {
+        "Escherichia coli": [
+            0.05333333333333334
+        ],
+        "Homo sapiens": [
+            1.89,
+            1.83,
+            1.3,
+            4.66,
+            293.0,
+            6.79,
+            71.3,
+            8.16
+        ],
+        "Neisseria meningitidis": [
+            3.4
+        ],
+        "Lemna minor": [
+            56.0
+        ]
+    }
+}

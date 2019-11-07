@@ -1,0 +1,295 @@
+{
+    "Glucose_Aerobic_Growth": {
+        "setup": {
+            "R_EX_glc__D_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.73
+        },
+        "weight": 3
+    },
+    "Glucose_Anaerobic_Growth": {
+        "setup": {
+            "R_EX_glc__D_e": {
+                "lower_bound": -1000
+            },
+            "R_EX_o2_e": {
+                "lower_bound": 0,
+                "upper_bound": 0
+            },
+            "R_EX_succ_e": {
+                "upper_bound": 1000
+            },
+            "R_EX_for_e": {
+                "upper_bound": 1000
+            },
+            "R_EX_glyclt_e": {
+                "upper_bound": 1000
+            },
+            "R_EX_lac__D_e": {
+                "upper_bound": 1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.46
+        },
+        "weight": 3
+    },
+    "Acetate": {
+        "setup": {
+            "R_EX_ac_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.29
+        }
+    },
+    "Glycerol": {
+        "setup": {
+            "R_EX_glyc_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.47
+        }
+    },
+    "Oxoglutarate": {
+        "setup": {
+            "R_EX_akg_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.24
+        }
+    },
+    "L_Alanine": {
+        "setup": {
+            "R_EX_ala__L_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.24
+        }
+    },
+    "Pyruvate": {
+        "setup": {
+            "R_EX_pyr_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.41
+        }
+    },
+    "Fructose": {
+        "setup": {
+            "R_EX_fru_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.54
+        }
+    },
+    "Guanosine": {
+        "setup": {
+            "R_EX_gsn_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.37
+        }
+    },
+    "N_acetylglucosamine": {
+        "setup": {
+            "R_EX_acgam_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.61
+        }
+    },
+    "Fumarate": {
+        "setup": {
+            "R_EX_fum_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.47
+        }
+    },
+    "Ribose": {
+        "setup": {
+            "R_EX_rib__D_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.41
+        }
+    },
+    "L_Lactate": {
+        "setup": {
+            "R_EX_lac__L_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.41
+        }
+    },
+    "Gluconate": {
+        "setup": {
+            "R_EX_glcn_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.68
+        }
+    },
+    "Sorbitol": {
+        "setup": {
+            "R_EX_sbt__D_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.48
+        }
+    },
+    "Glucosamine": {
+        "setup": {
+            "R_EX_gam_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.4
+        }
+    },
+    "L_Malate": {
+        "setup": {
+            "R_EX_mal__L_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.55
+        }
+    },
+    "Succinate": {
+        "setup": {
+            "R_EX_succ_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.5
+        }
+    },
+    "Maltose": {
+        "setup": {
+            "R_EX_malt_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.52
+        }
+    },
+    "Glucose_6_Phosphate": {
+        "setup": {
+            "R_EX_g6p_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.78
+        }
+    },
+    "Mannitol": {
+        "setup": {
+            "R_EX_mnl_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.61
+        }
+    },
+    "Trehalose": {
+        "setup": {
+            "R_EX_tre_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.48
+        }
+    },
+    "Xylose": {
+        "setup": {
+            "R_EX_xyl__D_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.51
+        }
+    },
+    "Mannose": {
+        "setup": {
+            "R_EX_man_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.35
+        }
+    },
+    "Galactose": {
+        "setup": {
+            "R_EX_gal_e": {
+                "lower_bound": -1000
+            }
+        },
+        "target": {
+            "reaction": "R_BIOMASS_Ec_iJO1366_core_53p95M",
+            "value": 0.24
+        }
+    }
+}

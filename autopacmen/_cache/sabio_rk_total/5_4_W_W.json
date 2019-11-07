@@ -1,0 +1,185 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            1.79116667,
+            2.85,
+            3.9,
+            4.39,
+            1.72,
+            143.0,
+            150.0,
+            120.0,
+            283.333333
+        ],
+        "Gallus gallus": [
+            0.22,
+            1.63833333,
+            2.78,
+            0.8,
+            0.65,
+            0.89,
+            0.608333333,
+            325.0,
+            165.0,
+            0.4,
+            1197.0,
+            1333.0,
+            510.0
+        ],
+        "Equus caballus": [
+            1.7,
+            2.57,
+            3.57,
+            12.5
+        ],
+        "Escherichia coli": [
+            0.0055,
+            10.0,
+            220.0
+        ],
+        "Saccharomyces cerevisiae": [
+            0.0087,
+            0.16,
+            490.0,
+            400.0,
+            1200.0,
+            0.0074
+        ],
+        "Lactococcus lactis subsp. lactis": [
+            0.83,
+            0.0178,
+            175.0,
+            16.6,
+            17.1,
+            17.0,
+            177.0,
+            0.0298,
+            17.6
+        ],
+        "Neisseria meningitidis": [
+            20.0
+        ],
+        "Clostridium cochlearium": [
+            5.8
+        ],
+        "Pseudomonas denitrificans": [
+            0.0014166666666666666
+        ],
+        "Entamoeba histolytica": [
+            57.0,
+            45.0,
+            14.0,
+            6.4
+        ],
+        "Alicyclobacillus acidocaldarius": [
+            0.863333333,
+            1.02666667,
+            0.163333333
+        ],
+        "Acetobacter xylinus": [
+            135.0
+        ],
+        "Xanthobacter autotrophicus": [
+            0.23333333333333334
+        ],
+        "Cupriavidus metallidurans": [
+            0.06166666666666667,
+            48.333333333333336
+        ]
+    },
+    "3pg": {
+        "Escherichia coli": [
+            330.0,
+            22.0
+        ],
+        "Saccharomyces cerevisiae": [
+            400.0,
+            630.0
+        ],
+        "Triticum aestivum": [
+            950.0
+        ],
+        "Onchocerca volvulus": [
+            83.0
+        ],
+        "Caenorhabditis elegans": [
+            72.0
+        ],
+        "Brugia malayi": [
+            110.0
+        ]
+    },
+    "glu__L": {
+        "Clostridium tetanomorphum": [
+            5.8
+        ],
+        "Clostridium cochlearium": [
+            5.8
+        ]
+    },
+    "chor": {
+        "Arabidopsis thaliana": [
+            0.645
+        ],
+        "Escherichia coli": [
+            1.33333333,
+            2.93333333,
+            2.8833333333333333,
+            34.1833333,
+            69.0,
+            71.0,
+            39.0333333,
+            74.0,
+            55.0,
+            27.0
+        ],
+        "Pseudomonas aeruginosa": [
+            0.085
+        ],
+        "Bacillus subtilis": [
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            50.0
+        ],
+        "Mycobacterium tuberculosis": [
+            0.1,
+            66.5,
+            69.5,
+            5.5,
+            10.8,
+            55.0,
+            26.0,
+            60.0,
+            62.0
+        ],
+        "Yersinia pestis": [
+            70.0
+        ]
+    },
+    "ichor": {
+        "Escherichia coli": [
+            1.8
+        ]
+    },
+    "man1p": {
+        "Pseudomonas aeruginosa": [
+            22.5,
+            22.5,
+            22.5
+        ]
+    },
+    "gam6p": {
+        "Escherichia coli": [
+            7.9,
+            2.41666667
+        ]
+    },
+    "g1p": {
+        "Pseudomonas aeruginosa": [
+            50.0
+        ]
+    }
+}

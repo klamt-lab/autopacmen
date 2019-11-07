@@ -1,0 +1,24 @@
+{
+    "REST": {
+        "Candida sp. (strain HA167)": [
+            170.0,
+            143.0
+        ]
+    },
+    "sbt__D;nad": {
+        "Candida sp. (strain HA167)": [
+            114.0
+        ]
+    },
+    "fru;h;nadh": {
+        "Candida sp. (strain HA167)": [
+            920.0
+        ]
+    },
+    "xylu__D;h;nadh": {
+        "Candida sp. (strain HA167)": [
+            1500.0,
+            1800.0
+        ]
+    }
+}

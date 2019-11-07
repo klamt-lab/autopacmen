@@ -1,0 +1,42 @@
+{
+    "REST": {
+        "Acinetobacter baylyi": [
+            0.06,
+            0.05,
+            4.13,
+            0.65,
+            55.0,
+            57.0
+        ],
+        "Pseudomonas putida": [
+            197.0
+        ],
+        "Azospirillum brasilense": [
+            53.9,
+            15.4,
+            21.3,
+            23.0,
+            16.7,
+            9.86,
+            35.5,
+            10.2,
+            52.3,
+            15.3
+        ]
+    },
+    "h2o;nadp;ppal": {
+        "Acinetobacter baylyi": [
+            2.07
+        ]
+    },
+    "h2o;nad;ppal": {
+        "Acinetobacter baylyi": [
+            0.58
+        ]
+    },
+    "acald;h2o;nadp": {
+        "Acinetobacter baylyi": [
+            0.41
+        ]
+    }
+}

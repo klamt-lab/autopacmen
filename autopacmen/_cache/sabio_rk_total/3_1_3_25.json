@@ -1,0 +1,31 @@
+{
+    "mi1p__D;h2o": {
+        "Homo sapiens": [
+            22.0,
+            22.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            4.2,
+            1.5
+        ],
+        "Archaeoglobus fulgidus": [
+            2.5
+        ],
+        "Thermotoga maritima": [
+            207.0
+        ],
+        "Escherichia coli": [
+            6.5
+        ]
+    },
+    "g6p;h2o": {
+        "Homo sapiens": [
+            1.6
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            0.6
+        ]
+    }
+}

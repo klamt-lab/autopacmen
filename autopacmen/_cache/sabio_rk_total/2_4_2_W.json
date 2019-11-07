@@ -1,0 +1,106 @@
+{
+    "prpp;hxan": {
+        "Trypanosoma cruzi": [
+            23.0,
+            23.0,
+            23.05
+        ],
+        "Thermoanaerobacter tengcongensis": [
+            4.12,
+            7.97,
+            15.9,
+            4.12,
+            7.97,
+            15.9
+        ],
+        "Homo sapiens": [
+            5.7,
+            5.7
+        ]
+    },
+    "ppi;imp": {
+        "Trypanosoma cruzi": [
+            0.48,
+            0.47,
+            0.468
+        ]
+    },
+    "prpp;gua": {
+        "Thermoanaerobacter tengcongensis": [
+            2.04,
+            3.98,
+            8.16,
+            2.04,
+            3.98,
+            8.16
+        ],
+        "Trypanosoma cruzi": [
+            32.55
+        ]
+    },
+    "ppi;gmp": {
+        "Homo sapiens": [
+            10.48,
+            10.48
+        ],
+        "Trypanosoma cruzi": [
+            0.091
+        ]
+    },
+    "ins;pi": {
+        "Homo sapiens": [
+            56.0,
+            56.0
+        ]
+    },
+    "r1p;hxan": {
+        "Homo sapiens": [
+            110.0
+        ]
+    },
+    "ppi;ump": {
+        "Bacillus subtilis": [
+            0.0015
+        ],
+        "Escherichia coli": [
+            0.024
+        ]
+    },
+    "prpp;ura": {
+        "Escherichia coli": [
+            2.7
+        ],
+        "Salmonella typhimurium": [
+            0.9
+        ]
+    },
+    "prpp;ncam": {
+        "Mus musculus": [
+            0.02
+        ]
+    },
+    "REST": {
+        "Salmonella typhimurium": [
+            34.0,
+            34.0,
+            35.0,
+            0.04,
+            3.5
+        ],
+        "Pseudomonas aeruginosa": [
+            11.25,
+            12.2333333,
+            12.0
+        ],
+        "Escherichia coli": [
+            6.9e-05,
+            0.00297
+        ]
+    },
+    "ppi;orot5p": {
+        "Salmonella typhimurium": [
+            18.0,
+            18.0
+        ]
+    }
+}

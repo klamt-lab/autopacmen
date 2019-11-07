@@ -1,0 +1,14 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            10.6,
+            138.0
+        ]
+    },
+    "h2o;hmcarn": {
+        "Homo sapiens": [
+            0.2,
+            18.04
+        ]
+    }
+}

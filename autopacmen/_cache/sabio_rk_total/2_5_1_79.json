@@ -1,0 +1,13 @@
+{
+    "ametam;spmd": {
+        "Thermus thermophilus": [
+            0.65,
+            0.73
+        ]
+    },
+    "REST": {
+        "Thermus thermophilus": [
+            0.29
+        ]
+    }
+}

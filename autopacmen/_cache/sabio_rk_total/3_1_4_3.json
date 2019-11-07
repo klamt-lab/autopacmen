@@ -1,0 +1,17 @@
+{
+    "h2o;pchol_cho": {
+        "Bacillus cereus": [
+            1000.0
+        ]
+    },
+    "h2o;pe_cho": {
+        "Bacillus cereus": [
+            540.0
+        ]
+    },
+    "h2o;ps_cho": {
+        "Bacillus cereus": [
+            210.0
+        ]
+    }
+}

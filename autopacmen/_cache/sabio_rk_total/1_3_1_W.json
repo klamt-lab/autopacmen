@@ -1,0 +1,210 @@
+{
+    "b2coa;h;nadh": {
+        "Plasmodium falciparum": [
+            1.62,
+            1.62,
+            1.62
+        ],
+        "Escherichia coli": [
+            0.23
+        ]
+    },
+    "but2eACP;h;nadh": {
+        "Escherichia coli": [
+            4.02
+        ]
+    },
+    "REST": {
+        "Clostridium propionicum": [
+            4.5,
+            29.0,
+            2.0,
+            3.5,
+            3.5
+        ],
+        "Escherichia coli": [
+            1.0,
+            2.6,
+            4.9,
+            4.8,
+            4.0,
+            10.0,
+            12.0,
+            14.0,
+            16.0,
+            26.0,
+            32.0,
+            35.0,
+            36.0,
+            40.0,
+            41.0,
+            42.0,
+            48.0,
+            49.0,
+            51.0,
+            57.0,
+            62.0
+        ],
+        "Staphylococcus aureus": [
+            0.5066666666666666,
+            2.17,
+            0.3
+        ],
+        "Medicago truncatula": [
+            0.18,
+            1.33833333
+        ],
+        "Arabidopsis thaliana": [
+            0.0583333333,
+            1.045
+        ],
+        "Homo sapiens": [
+            0.585,
+            1.8,
+            0.49,
+            0.125,
+            0.416666667,
+            0.0483333333,
+            0.0866666667,
+            0.2,
+            0.4166666666666667,
+            0.0333333333,
+            0.00666666667,
+            0.006666666666666667,
+            0.05,
+            0.08333333333333333,
+            0.0016666666666666668,
+            0.0183333333,
+            0.216666667,
+            0.163333333,
+            0.158333333,
+            0.18333333333333332,
+            0.015
+        ],
+        "Rattus norvegicus": [
+            0.6,
+            1.9,
+            2.1,
+            2.4,
+            2.7,
+            3.3,
+            2.2,
+            0.0301666667,
+            0.0375,
+            0.0208333333,
+            0.00816666667
+        ],
+        "Sulfolobus tokodaii": [
+            13.0
+        ],
+        "Lactococcus lactis subsp. lactis": [
+            49.3,
+            25.7
+        ],
+        "Enterococcus faecalis": [
+            0.4,
+            18.0,
+            10.4
+        ],
+        "Clostridium oroticum": [
+            45.0
+        ],
+        "Mus musculus": [
+            0.19,
+            0.22,
+            0.246666667,
+            0.123333333,
+            0.155
+        ],
+        "Bos taurus": [
+            0.335,
+            0.77
+        ],
+        "Macaca fuscata": [
+            34.0,
+            4.3,
+            9.1,
+            11.3,
+            14.0,
+            62.5
+        ]
+    },
+    "Largn;nadp": {
+        "Arabidopsis thaliana": [
+            84.2,
+            84.2,
+            37.3,
+            37.3
+        ]
+    },
+    "nadp;pphn": {
+        "Arabidopsis thaliana": [
+            3.4
+        ]
+    },
+    "but2eACP;h;nadph": {
+        "Staphylococcus aureus": [
+            0.19333333333333333
+        ]
+    },
+    "nad;pphn": {
+        "Escherichia coli": [
+            27.0,
+            27.0,
+            80.0
+        ]
+    },
+    "b2coa;nadph": {
+        "Homo sapiens": [
+            0.333333333,
+            0.333333333
+        ]
+    },
+    "xol7aone;h;nadph": {
+        "Rattus norvegicus": [
+            0.01,
+            0.01
+        ]
+    },
+    "xoldiolone;h;nadph": {
+        "Rattus norvegicus": [
+            0.0128333333
+        ]
+    },
+    "andrstndn;h;nadph": {
+        "Rattus norvegicus": [
+            0.0336666667
+        ],
+        "Homo sapiens": [
+            0.013
+        ]
+    },
+    "h;nadph;hx2coa": {
+        "Homo sapiens": [
+            0.53
+        ]
+    },
+    "h;nadph;dc2coa": {
+        "Homo sapiens": [
+            0.93
+        ],
+        "Bos taurus": [
+            0.52
+        ]
+    },
+    "dha;h;nadph": {
+        "Macaca fuscata": [
+            5.5
+        ]
+    },
+    "glyald;h;nadph": {
+        "Macaca fuscata": [
+            31.4
+        ]
+    },
+    "g3p;h;nadph": {
+        "Macaca fuscata": [
+            8.0
+        ]
+    }
+}

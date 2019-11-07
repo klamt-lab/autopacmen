@@ -1,0 +1,497 @@
+{
+    "h;glutrna;nadph": {
+        "Escherichia coli": [
+            0.13,
+            0.15
+        ]
+    },
+    "REST": {
+        "Arthrobacter nicotinovorans": [
+            0.65,
+            1.02,
+            1.35,
+            3.92,
+            3.1
+        ],
+        "Acinetobacter baylyi": [
+            0.06,
+            0.65,
+            0.05,
+            4.13,
+            55.0,
+            57.0
+        ],
+        "Pseudomonas putida": [
+            0.07116666666666666,
+            197.0,
+            0.0016666666666666668
+        ],
+        "Azospirillum brasilense": [
+            35.5,
+            9.86,
+            10.2,
+            15.4,
+            16.7,
+            15.3,
+            52.3,
+            21.3,
+            53.9,
+            23.0
+        ],
+        "Hippoglossus hippoglossus": [
+            110.0
+        ],
+        "Lactococcus lactis subsp. lactis": [
+            70.0
+        ],
+        "Entamoeba histolytica": [
+            104.0,
+            70.0,
+            34.0,
+            94.0
+        ],
+        "Escherichia coli": [
+            0.12,
+            0.074,
+            0.3
+        ],
+        "Geobacillus stearothermophilus": [
+            65.0,
+            76.0
+        ],
+        "Saccharomyces cerevisiae": [
+            0.6333333333333333,
+            6.0,
+            8.63,
+            8.633,
+            41.666666666666664,
+            11.166666666666666,
+            18.1616885,
+            19.1,
+            19.1200976,
+            18.2,
+            19.12,
+            18.162,
+            0.0045000000000000005
+        ],
+        "Aspergillus nidulans": [
+            65.0,
+            78.33333333333333
+        ],
+        "Oryza sativa": [
+            122.24
+        ],
+        "Methanocaldococcus jannaschii": [
+            2.0
+        ],
+        "Homo sapiens": [
+            0.45,
+            0.666666667,
+            2.5,
+            3.83333333,
+            4.16666667,
+            1.23333333,
+            3.0,
+            7.16666667,
+            4.5,
+            5.83333333,
+            2.33333333,
+            11.6666667,
+            12.3333333,
+            1.0,
+            9.83333333,
+            15.0,
+            15.1666667,
+            2.75,
+            11.1666667,
+            11.3333333,
+            0.000166666667,
+            4.0,
+            1.41666667,
+            4.66666667,
+            4.41666667,
+            0.0403333333,
+            5.33333333,
+            27.6666667,
+            28.5,
+            0.25,
+            0.0,
+            6.0,
+            7.83333333,
+            7.9,
+            0.133333333,
+            8.33333333,
+            8.16666667,
+            2.66666667,
+            9.33333333,
+            3.16666667,
+            53.0,
+            0.2,
+            0.158333333,
+            0.983333333,
+            0.13,
+            2.13333333,
+            0.3,
+            3.13333333,
+            0.55,
+            1.3,
+            0.833333333,
+            0.616666667,
+            0.366666667,
+            0.0316666667,
+            1.08333333,
+            1.56666667
+        ],
+        "Mus musculus": [
+            0.3,
+            0.4,
+            3.3,
+            4.8
+        ],
+        "Ovis aries": [
+            8.6,
+            1.5,
+            2.6,
+            5.5
+        ],
+        "Bos taurus": [
+            0.76,
+            1.19,
+            0.23,
+            1.29
+        ],
+        "Bacillus subtilis": [
+            0.74,
+            1.12,
+            2.75,
+            1.35,
+            1.08,
+            1.47,
+            0.97,
+            1.0,
+            8.0,
+            7.4
+        ],
+        "Arabidopsis thaliana": [
+            0.1,
+            0.058333333333333334,
+            1.39,
+            1.1,
+            0.06116666666666667,
+            0.027166666666666665,
+            0.02783333333333333
+        ],
+        "Burkholderia xenovorans LB400": [
+            9.5,
+            11.2
+        ],
+        "Azoarcus evansii": [
+            45.0
+        ],
+        "Streptococcus mutans": [
+            60.0,
+            68.0
+        ],
+        "Spinacia oleracea": [
+            27.0,
+            41.0,
+            59.0,
+            61.0
+        ]
+    },
+    "fald;h2o;nadp": {
+        "Arthrobacter nicotinovorans": [
+            0.38
+        ]
+    },
+    "acald;h2o;nadp": {
+        "Arthrobacter nicotinovorans": [
+            0.75
+        ],
+        "Acinetobacter baylyi": [
+            0.41
+        ]
+    },
+    "h2o;nadp;ppal": {
+        "Arthrobacter nicotinovorans": [
+            1.2
+        ],
+        "Acinetobacter baylyi": [
+            2.07
+        ],
+        "Bacillus subtilis": [
+            1.29
+        ]
+    },
+    "bzal;h2o;nadp": {
+        "Arthrobacter nicotinovorans": [
+            4.52
+        ]
+    },
+    "coa;nad;ppal": {
+        "Thermus thermophilus": [
+            8.4,
+            3.6,
+            2.6
+        ],
+        "Burkholderia xenovorans": [
+            2.3,
+            16.3
+        ],
+        "Burkholderia xenovorans LB400": [
+            16.3
+        ]
+    },
+    "h2o;nad;ppal": {
+        "Acinetobacter baylyi": [
+            0.58
+        ],
+        "Methanocaldococcus jannaschii": [
+            3.0
+        ],
+        "Homo sapiens": [
+            3.18333333,
+            3.16666667,
+            3.41666667,
+            11.6666667,
+            19.6666667
+        ],
+        "Rattus norvegicus": [
+            0.433333333,
+            1.13333333,
+            2.05,
+            1.83333333,
+            0.7,
+            0.14,
+            0.85
+        ],
+        "Bos taurus": [
+            1.85
+        ]
+    },
+    "13dpg;h;nadh": {
+        "Entamoeba histolytica": [
+            94.0,
+            104.0
+        ],
+        "Saccharomyces cerevisiae": [
+            10.2110974
+        ],
+        "Oryza sativa": [
+            73.56,
+            73.56
+        ],
+        "Spinacia oleracea": [
+            41.0
+        ]
+    },
+    "4pasp;h;nadph": {
+        "Arabidopsis thaliana": [
+            15.6,
+            15.6
+        ]
+    },
+    "aspsa;nadp;pi": {
+        "Haemophilus influenzae": [
+            330.0,
+            330.0,
+            330.0
+        ],
+        "Pseudomonas aeruginosa": [
+            160.0,
+            160.0,
+            160.0
+        ],
+        "Vibrio cholerae": [
+            120.0,
+            120.0,
+            120.0,
+            58.0,
+            58.0,
+            58.0
+        ],
+        "Escherichia coli": [
+            610.0,
+            680.0
+        ],
+        "Mycobacterium tuberculosis": [
+            8.49,
+            8.49,
+            8.49
+        ]
+    },
+    "aspsa;nad;pi": {
+        "Escherichia coli": [
+            4.8
+        ]
+    },
+    "4abutn;h2o;nad": {
+        "Escherichia coli": [
+            7.68333333,
+            5.65
+        ]
+    },
+    "4abutn;h2o;nadp": {
+        "Escherichia coli": [
+            2.11666667
+        ]
+    },
+    "acald;h2o;nad": {
+        "Homo sapiens": [
+            0.27,
+            1.63333333,
+            36.0,
+            4.66666667,
+            6.33333333,
+            7.0,
+            13.1666667,
+            19.6666667
+        ],
+        "Bos taurus": [
+            1.86
+        ],
+        "Rattus norvegicus": [
+            0.16,
+            0.41
+        ]
+    },
+    "retinal;h2o;nad": {
+        "Mus musculus": [
+            3.9
+        ],
+        "Rattus norvegicus": [
+            0.03
+        ]
+    },
+    "bzal;h2o;nad": {
+        "Mus musculus": [
+            0.2
+        ],
+        "Homo sapiens": [
+            5.83333333
+        ],
+        "Rattus norvegicus": [
+            0.12,
+            0.39
+        ]
+    },
+    "fald;h2o;nad": {
+        "Homo sapiens": [
+            67.5
+        ]
+    },
+    "h2o;nad;ptal": {
+        "Homo sapiens": [
+            22.8333333,
+            8.16666667
+        ]
+    },
+    "h2o;hptal;nad": {
+        "Homo sapiens": [
+            22.6666667,
+            4.33333333
+        ]
+    },
+    "h2o;nad;pacald": {
+        "Homo sapiens": [
+            30.0,
+            50.0
+        ],
+        "Bos taurus": [
+            1.39
+        ]
+    },
+    "gcald;h2o;nad": {
+        "Bos taurus": [
+            1.2
+        ]
+    },
+    "g3p;h2o;nad": {
+        "Bos taurus": [
+            0.28
+        ]
+    },
+    "h2o;nadp;ptal": {
+        "Bacillus subtilis": [
+            2.1
+        ]
+    },
+    "h2o;hptal;nadp": {
+        "Bacillus subtilis": [
+            0.87
+        ]
+    },
+    "ferulcoa;h;nadph": {
+        "Arabidopsis thaliana": [
+            0.038,
+            0.03716666666666667,
+            0.03166666666666666,
+            1.55,
+            0.16
+        ]
+    },
+    "caffcoa;h;nadph": {
+        "Arabidopsis thaliana": [
+            0.036333333333333336,
+            0.014499999999999999,
+            0.13
+        ]
+    },
+    "e4p;h2o;nad": {
+        "Escherichia coli": [
+            20.0,
+            20.0
+        ],
+        "Geobacillus stearothermophilus": [
+            0.1,
+            0.1
+        ]
+    },
+    "erthrs;h2o;nad": {
+        "Escherichia coli": [
+            0.36
+        ]
+    },
+    "2mop;coa;nad": {
+        "Bacillus subtilis": [
+            1.1,
+            1.1,
+            1.1
+        ]
+    },
+    "acald;coa;nad": {
+        "Burkholderia xenovorans LB400": [
+            17.2,
+            14.1
+        ],
+        "Thermus thermophilus": [
+            7.4,
+            3.5,
+            2.8
+        ],
+        "Burkholderia xenovorans": [
+            2.2,
+            17.2
+        ]
+    },
+    "acald;coa;nadp": {
+        "Burkholderia xenovorans LB400": [
+            12.9
+        ]
+    },
+    "13dpg;h;nadph": {
+        "Spinacia oleracea": [
+            61.0
+        ]
+    },
+    "4hbald;h2o;nad": {
+        "Pseudomonas putida": [
+            0.0016666666666666668
+        ]
+    },
+    "4hbald;h2o;nadp": {
+        "Pseudomonas putida": [
+            0.26366666666666666
+        ]
+    }
+}

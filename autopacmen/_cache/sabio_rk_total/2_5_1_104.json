@@ -1,0 +1,15 @@
+{
+    "agm;ametam": {
+        "Pyrococcus furiosus": [
+            0.1
+        ],
+        "Thermus thermophilus": [
+            0.37
+        ]
+    },
+    "REST": {
+        "Pyrococcus furiosus": [
+            2.09
+        ]
+    }
+}

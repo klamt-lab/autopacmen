@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.parse_sabio_rk API documentation</title>
+<meta name="description" content="sabio_rk.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.parse_sabio_rk</code></h1>
+</header>
+<section id="section-intro">
+<p>sabio_rk.py</p>
+<p>This module contains functions which acan access the SABIO-RK kinetic data
+platform.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;sabio_rk.py
+
+This module contains functions which acan access the SABIO-RK kinetic data
+platform.
+&#34;&#34;&#34;
+
+# IMPORTS
+# External libraries
+import copy
+import csv
+import io
+import requests
+import time
+from typing import Any, Dict, List
+# Internal libraries
+from submodules.helper_general import ensure_folder_existence, get_files, is_fitting_ec_numbers, json_load, json_write
+
+
+# SCRIPT-WIDE CONSTANTS
+# URL for SABIO-RK&#39;s kcat REST API
+QUERY_URL = &#34;http://sabiork.h-its.org/sabioRestWebServices/kineticlawsExportTsv&#34;
+# Time in seconds to wait between SABIO-RK API calls
+WAIT_TIME = 1.5
+# Constant unit multipliers since SABIO-RK contains kcats in different units :O
+# The multiplication numbers show with which number a kcat of the corresponding unit
+# has to be multiplied in order to get the kcat in s^(-1), the kcat unit that is
+# used all over AutoPACMEN.
+UNIT_MULTIPLIER: Dict[str, float] = {
+    &#34;s^(-1)&#34;: 1.0,
+    &#34;min^(-1)&#34;: 1/60,
+    &#34;h^(-1)&#34;: 1/(60*60),
+}
+
+
+# PRIVATE FUNCTIONS
+def _add_wildcard_to_ec_number(ec_number: str, level: int) -&gt; str:
+    &#34;&#34;&#34;Adds asterisk wildcards to the given EC number.
+
+    Input
+    ----------
+    * ec_number: str ~ The EC number which shall be wildcarded
+    * level: int ~ The wildcard level. It has to be at least 0 and
+      maximally 5
+
+
+    Example
+    ----------
+    &lt;pre&gt;
+    &gt;&gt;&gt; _add_wildcard_to_ec_number(&#34;1.1.1.1&#34;, 1)
+    1.1.1.*
+    &lt;/pre&gt;
+
+    Output
+    ----------
+    * The wildcarded EC number as string
+    &#34;&#34;&#34;
+    ec_number_list = ec_number.split(&#34;.&#34;)[::-1]
+    i = 0
+    while i &lt;= level:
+        if i &lt; level:
+            ec_number_list[i] = &#34;*&#34;
+        i += 1
+    wildcarded_ec_number = &#34;.&#34;.join(ec_number_list[::-1])
+    return wildcarded_ec_number
+
+
+def _extract_kcat_lines(result: csv.DictReader) -&gt; List[str]:
+    &#34;&#34;&#34;Converts a SABIO-RK csv.DictReader line into a list of strings with the content of these lines.
+
+    Input
+    ----------
+    * result: csv.DictReader ~ The csv.DictReader instance of a SABIO-RK kcat saerch output line
+
+    Output
+    ----------
+    A list of all kcat lines as strings
+    &#34;&#34;&#34;
+    kcat_lines: List[Any] = []
+    for row in result:
+        if (row[&#34;parameter.type&#34;] == &#34;kcat&#34;) and (row[&#34;parameter.startValue&#34;] != &#34;&#34;):
+            kcat_lines.append(row)
+    return kcat_lines
+
+
+def _get_species_results(result: csv.DictReader) -&gt; List[str]:
+    &#34;&#34;&#34;Returns the organism data from the given SABIO-RK API csv.DictReader
+
+    Arguments
+    ----------
+    * result: csv.DictReader ~ The csv.DictReader instance of a SABIO-RK kcat saerch output line
+
+    Output
+    ----------
+    The organism data from the SABIO-RK API result
+    &#34;&#34;&#34;
+    species_results: List[str] = []
+    for row in result:
+        species = row[&#34;Organism&#34;]
+        if species not in species_results:
+            species_results.append(species)
+    return species_results
+
+
+# PUBLIC FUNCTIONS
+def sabio_rk_query_with_string(query_string: str) -&gt; str:
+    &#34;&#34;&#34;Call SABIO-RK API with the given query string.
+
+    The query string is the actual term that is searched
+
+    Arguments
+    ----------
+    * query_string: str ~ The query string
+
+    Output
+    ----------
+    SABIO-RK&#39;s request result as str:
+
+    If results could be found, it is a csv-like structure that can
+    be futher processed e.g. with the Python standard library function csv.DictReader.
+    The returned result fields are the EC number, the KEGG reaction ID, the organism
+    and the &#39;parameter&#39;, i.e. the category of the given result. A possible category
+    is &#39;kcat&#39;.
+    If no results could be found, it is the str &#34;NO_RESULT&#34;.
+    &#34;&#34;&#34;
+    # Build-up SABIO-RK query with a dictionary format that can be understood by the
+    # requests library (this is also the way to retrieve potential huge amounts of
+    # information as shown in SABIO-RK&#39;s API documentation).
+    query = {&#34;fields[]&#34;: [&#34;ECNumber&#34;, &#34;KeggReactionID&#34;, &#34;Organism&#34;, &#34;Parameter&#34;, &#34;Substrate&#34;], &#34;q&#34;: query_string}
+
+    # Send the request to SABIO-RK :D
+    request = requests.post(QUERY_URL, params=query)
+
+    # Error check whether the API call was successful or
+    # not. &#39;Not successful&#39; means that no search result with the given query
+    # could be found. In this case, &#34;NO_RESULT&#34; is returned.
+    try:
+        request.raise_for_status()
+    except Exception:
+        print(&#34;SABIO-RK API error with query:&#34;)
+        print(query_string)
+        time.sleep(WAIT_TIME)
+        return &#34;NO_RESULT&#34;
+
+    # Wait time in order to not overload SABIO_RK&#39;s server
+    time.sleep(WAIT_TIME)
+
+    # Return successful search result in the given csv-like structure format.
+    return request.text
+
+
+def sabio_rk_query_with_query_dicts(query_dicts: List[Any]) -&gt; str:
+    &#34;&#34;&#34;Performs a SABIO-RK query with given query dicts and converts them into a string
+
+    Input
+    ----------
+    * query_dicts: List[Any] ~ A list of query dicts in the form of {id_name: ec_number, &#34;Parametertype&#34;: &#34;kcat&#34;, &#34;EnzymeType&#34;: &#34;wildtype&#34;}
+
+    Output
+    ----------
+    * As in sabio_rk_query_with_string()
+    &#34;&#34;&#34;
+    i = 0
+    # Add &#39;AND&#39; for all variables of a query dict
+    for i in range(len(query_dicts)):
+        query_dicts[i] = &#34; AND &#34;.join([f&#34;{k}:{v}&#34; for k, v in query_dicts[i].items()])
+    # Add &#39;OR&#39; between each individual query dict
+    query_string = &#34;(&#34; + &#34;) OR (&#34;.join(query_dicts) + &#34;)&#34;
+    # Add parentheses for URL conformity
+    query_string = &#34;(&#34; + query_string + &#34;)&#34;
+
+    # Perform the API call :D
+    return sabio_rk_query_with_string(query_string)
+
+
+def sabio_rk_query_get_csv_lines(query_dicts: List[Any]) -&gt; Any:
+    &#34;&#34;&#34;Returns the result of a SABIo-RK API call with the given query dicts as csvReader lines
+
+    Input
+    ----------
+    * query_dicts: List[Any] ~ A list of query dicts in the form of {id_name: ec_number, &#34;Parametertype&#34;: &#34;kcat&#34;, &#34;EnzymeType&#34;: &#34;wildtype&#34;}
+
+    Output
+    ----------
+    * The sabio_rk_query_with_string() result in a different form:
+      Either &#34;NO_RESULT&#34; (a str) if no search esult was found,
+      or a list of strings which includes the lines of the CSV that
+      is returned by SABIO-RK
+    &#34;&#34;&#34;
+    result = sabio_rk_query_with_query_dicts(query_dicts)
+    if result == &#34;NO_RESULT&#34;:
+        return &#34;NO_RESULT&#34;
+    else:
+        return list(csv.DictReader(io.StringIO(result), delimiter=&#34;\t&#34;))
+
+
+def get_id_associated_kcats(searched_ids: List[str], id_type: str,
+                            bigg_id_name_mapping_path: str, batch_size: int = 5) -&gt; Dict[str, Any]:
+    &#34;&#34;&#34;Returns a dictionary with SABIO-RK kcat data for the given EC numbers or KEGG IDs.
+
+    This function calls the SABIO-RK API.
+
+    Input
+    ----------
+    * searched_ids: List[str] ~ The list of searched IDs
+    * id_type: str ~ Must be either &#39;EC&#39; or &#39;KEGG&#39;, depending on whether you are looking for kcats for EC numbers
+      or KEGG IDs.
+    * batch_size: int = 5 ~ The SABIO-RK API search batching number (i.e., with satch_size=5 five IDs are searched at once)
+
+    Output
+    ----------
+    A dictionary with the following content:
+    &lt;pre&gt;
+    {
+        &#34;$EC_NUMBER_OR_KEGG_REACTION_ID&#34;: {
+            &#34;$SUBSTRATE_WITH_BIGG_ID_1&#34;: {
+                &#34;$ORGANISM_1&#34;: [
+                    $kcat_1,
+                    (...)
+                    $kcat_n,
+                ]
+            },
+            (...),
+            &#34;REST&#34;: {
+                &#34;$ORGANISM_1&#34;: [
+                    $kcat_1,
+                    (...)
+                    $kcat_n,
+                ]
+            }
+        }
+        (...),
+    }
+    &lt;/pre&gt;
+    &#39;REST&#39; stands for a substrate without found BIGG ID.
+    &#34;&#34;&#34;
+    # Set-up the cache if it does not exist yet \o/
+    cache_basepath = &#34;./_cache/sabio_rk_total/&#34;
+    ensure_folder_existence(&#34;./_cache/&#34;)
+    ensure_folder_existence(cache_basepath)
+    cache_files = get_files(cache_basepath)
+    # Load the given BIGG ID&lt;-&gt;metabolite common name mapping
+    bigg_id_name_mapping = json_load(bigg_id_name_mapping_path)
+    # In order to save search time, use the seat (i.e., a list where
+    # every member occurs only once) of the given searched IDs
+    searched_ids = list(set(searched_ids))
+
+    # Set the given ID name to the name which SABIO-RK uses for them
+    if id_type == &#34;EC&#34;:
+        id_name = &#34;ECNumber&#34;
+    elif id_type == &#34;KEGG&#34;:
+        id_name = &#34;KeggReactionID&#34;
+
+    # Depending on the wildcard level which is serched, either
+    # the output or the wildcard output will be used as output
+    # These central dictionaries will contain the ID&lt;-&gt;kcat mapping
+    output = {}
+    wildcard_output = {}
+    # We use batched searched in order to save search time :D
+    batch_start = 0
+    # Loop while not all IDs were searched \o/
+    while batch_start &lt; len(searched_ids):
+        # Get the batch for the search :-)
+        batch = searched_ids[batch_start: batch_start + batch_size]
+        # The query dicts contain a list of dictionaries which contain
+        # the data for a SABIO-RK search entry
+        query_dicts: List[Dict[str, str]] = []
+        # Go through each single EC number in the search bath
+        for ec_number in batch:
+            # Create the cache filename
+            cache_filename = ec_number.replace(&#34;.&#34;, &#34;_&#34;).replace(&#34;*&#34;, &#34;W&#34;) + &#34;.json&#34;
+            # If the EC number is already searched, i.e. it can be found in the cache,
+            # take the results from there in order to save much search time :D
+            if cache_filename in cache_files:
+                cache_filepath = cache_basepath + cache_filename
+                output[ec_number] = json_load(cache_filepath)
+                print(f&#34;Loading {cache_filename}...&#34;)
+            # Otherwise, create an actual SABIO-RK API search query
+            else:
+                query_dicts.append({id_name: ec_number, &#34;Parametertype&#34;: &#34;kcat&#34;, &#34;EnzymeType&#34;: &#34;wildtype&#34;})
+        # If not all of the searched IDs are present in the cache...
+        if len(query_dicts) &gt; 0:
+            # ...use SABIO-RK&#39;s API :D
+            print(f&#34;Performing query {query_dicts}...&#34;)
+            result = sabio_rk_query_get_csv_lines(query_dicts)
+
+            # If there was an error with the SABIO-RK result (i.e., no result found or an invalid given ID),
+            # continue with the next batch
+            if result == &#34;NO_RESULT&#34;:
+                batch_start += batch_size
+                continue
+        # ...otherwise set the query result to nothing
+        else:
+            result = []
+
+        # Loop through every SABIO-RK API query call result :D
+        temp_ec_numbers_found_in_search = []
+        result = _extract_kcat_lines(result)
+        for row in result:
+            # Get the unit of the parameter
+            unit = row[&#34;parameter.unit&#34;]
+            # If it is a weird unusable unit, do not use this result and continue with the next result \o/
+            if unit not in list(UNIT_MULTIPLIER.keys()):  # e.g. (s^-1)*(mg^-1)
+                continue
+
+            # Get the serached ID
+            ec_number = row[id_name]
+            # Generate a lowercarse and semicolon seperated list of substrates
+            substrates_names = row[&#34;Substrate&#34;]
+            substrates_list = [x.lower() for x in substrates_names.replace(&#34;+&#34;, &#34;&#34;).split(&#34;;&#34;)]
+            substrates_list = sorted(substrates_list)
+            # Convert the substrates name list into a BIGG ID list (only works
+            # if there is a name&lt;-&gt;BIGG ID mapping present for each substrate)
+            bigg_ig_substrates_list = []
+            for substrate in substrates_list:
+                if substrate in bigg_id_name_mapping.keys():
+                    bigg_id = bigg_id_name_mapping[substrate]
+                    bigg_ig_substrates_list.append(bigg_id)
+                # If one of the substrates cannot be found, use the pseudometabolite &#34;REST&#34;
+                # and break :O
+                else:
+                    bigg_ig_substrates_list = [&#34;REST&#34;]
+                    break
+            # Set the substrate list to a semicolon-connected string
+            substrate = &#34;;&#34;.join(bigg_ig_substrates_list)
+            # Get the result&#39;s organism :D
+            species = row[&#34;Organism&#34;]
+            # Get the kcat and set
+            # it to 1/s for consistent behaviour :D
+            raw_kcat = float(row[&#34;parameter.startValue&#34;])  # Without unit correction
+            kcat = raw_kcat * UNIT_MULTIPLIER[unit]  # With unit correction 🎉
+
+            # Add the result to the output for the given EC number, sustrate and species
+            if ec_number not in output.keys():
+                output[ec_number] = {}
+            if substrate not in output[ec_number].keys():
+                output[ec_number][substrate] = {}
+            if species not in output[ec_number][substrate].keys():
+                output[ec_number][substrate][species] = []
+            output[ec_number][substrate][species].append(kcat)
+
+            # Since we found a result, add the EC number :D
+            temp_ec_numbers_found_in_search.append(ec_number)
+
+        # Create cache files for all newly found EC numbers which were not present
+        # in the cache
+        temp_ec_numbers_found_in_search = list(set(temp_ec_numbers_found_in_search))
+        for ec_number in temp_ec_numbers_found_in_search:
+            cache_filename = ec_number.replace(&#34;.&#34;, &#34;_&#34;) + &#34;.json&#34;
+            if cache_filename not in cache_files:
+                json_write(cache_basepath + cache_filename, output[ec_number])
+
+        # Get all wildcarded searched EC numbers...
+        wildcarded_searched_ec_numbers = [x for x in batch if &#34;*&#34; in x]
+        # ...and loop through them in order to create a result for the EC numbers
+        # which fit into the wildcard (i.e 1.1.1.123 in 1.1.1.*) :D
+        for wildcarded_ec_number in wildcarded_searched_ec_numbers:
+            # Ste the cache name for the wildcarded EC number
+            cache_filename = wildcarded_ec_number.replace(&#34;.&#34;, &#34;_&#34;).replace(&#34;*&#34;, &#34;W&#34;) + &#34;.json&#34;
+            # If the wildcarded EC number cannot be found in the cache, search for
+            # fitting EC numbers, and combine their entries into a huge entry for the
+            # wildcarded EC number
+            if cache_filename not in cache_files:
+                fitting_ec_numbers = []
+                for found_ec_number in temp_ec_numbers_found_in_search:
+                    if is_fitting_ec_numbers(wildcarded_ec_number, found_ec_number, wildcarded_ec_number.count(&#34;*&#34;)):
+                        fitting_ec_numbers.append(found_ec_number)
+
+                # Combine the EC number entries of fitting EC numbers :D
+                wildcarded_ec_number_dict: Dict[str, Any] = {}
+                for fitting_ec_number in fitting_ec_numbers:
+                    fitting_ec_number_result = output[fitting_ec_number]
+                    for metabolite_key in fitting_ec_number_result.keys():
+                        if metabolite_key not in wildcarded_ec_number_dict.keys():
+                            wildcarded_ec_number_dict[metabolite_key] = fitting_ec_number_result[metabolite_key]
+                        else:
+                            for organism_key in fitting_ec_number_result[metabolite_key].keys():
+                                if organism_key not in wildcarded_ec_number_dict[metabolite_key].keys():
+                                    wildcarded_ec_number_dict[metabolite_key][organism_key] =\
+                                        copy.deepcopy(fitting_ec_number_result[metabolite_key][organism_key])
+                                else:
+                                    wildcarded_ec_number_dict[metabolite_key][organism_key] +=\
+                                        copy.deepcopy(fitting_ec_number_result[metabolite_key][organism_key])
+                                wildcarded_ec_number_dict[metabolite_key][organism_key] =\
+                                    list(set(wildcarded_ec_number_dict[metabolite_key][organism_key]))
+                # Create cache files for the searched wildcarded EC numbers \o/
+                if wildcarded_ec_number_dict != {}:
+                    json_write(cache_basepath + cache_filename, wildcarded_ec_number_dict)
+                    wildcard_output[wildcarded_ec_number] = wildcarded_ec_number_dict
+            # If the wildcarded EC number is in the cache, load the cache file :D
+            else:
+                wildcard_output[wildcarded_ec_number] = json_load(cache_basepath + cache_filename)
+                print(f&#34;Loading {cache_filename}...&#34;)
+
+        # Continue with the next searched ID batch :D
+        batch_start += batch_size
+
+    # If the wildcard level is greater than 0, set the wildcard output as output
+    if len(wildcard_output.keys()) &gt; 0:
+        output = wildcard_output
+
+    return output
+
+
+def get_ec_number_kcats_wildcard_search(ec_numbers: List[str],
+                                        bigg_id_name_mapping_path: str,
+                                        batch_size: int = 5) -&gt; Dict[str, Any]:
+    &#34;&#34;&#34;Returns EC number-dependent kcats using an incremental wildcard level until kcarts were found for all ECs.
+
+    Arguments
+    ----------
+    *ec_numbers: List[str] ~ The list of checked EC numbers.
+    *bigg_id_name_mapping_path: str ~ The full path to a BIGG ID&lt;-&gt;Name mapping
+    *batch_size: int = 5 ~ How many EC numbers shall be looked up in parallel in SABIO-RK. Do not set this too high!
+
+    Output
+    ----------
+    A dictionary with the following content:
+    &lt;pre&gt;
+            {
+            &#34;$EC_NUMBER_OR_KEGG_REACTION_ID&#34;: {
+                &#34;$SUBSTRATE_WITH_BIGG_ID_1&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                },
+                (...),
+                &#34;REST&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                }
+            }
+            (...),
+        }
+    &lt;/pre&gt;
+    &#39;REST&#39; stands for a substrate without found BIGG ID.
+    &#34;&#34;&#34;
+    print(&#34;Starting EC numbers kcat search in SABIO-RK...&#34;)
+
+    # We will look-up all EC numbers in SABIO-RK. If an EC number does not have an entry in
+    # SABIO-RK, the wildcard level will become higher, e.g. 1.1.1.1 would become 1.1.1.*, and
+    # if no entry is found in SABIO-EK, it would become 1.1.*.*, and so on
+    # We start with no wildcards :D
+    wildcard_level = 0
+    # A list containing all found EC numbers, which won&#39;t be looked up using a higher wildcard level
+    all_found_ec_numbers: List[str] = []
+    # The central returned dictionary which will contain all combined kcat entries, divided
+    # for organisms and metabolites
+    ec_number_kcat_mapping: Dict[str, Any] = {}
+    # Since an EC number has a maximum of 5 numbers and there is at least one EC number entry for
+    # all EC number major category (e.g. 1.*.*.*), wildcards levels from 0 to 4 are reasonable,
+    # and we loop throigh them :D
+    for wildcard_level in range(5):
+        # Get the list of all EC numbers which we want to search, i.e. all EC numbers which
+        # are not already found.
+        ec_numbers_to_analyze = list(set(ec_numbers) ^ set(all_found_ec_numbers))  # Difference
+        # Add the current wildcard level to the searched EC numbers
+        searched_ec_numbers = [_add_wildcard_to_ec_number(x, wildcard_level) for x in ec_numbers_to_analyze]
+        # If no searched EC numbers are left with the current wildcard level, quit the for loop since we
+        # are done :D
+        if searched_ec_numbers == []:
+            break
+        # If there are searched EC numbers left, get the EC-number associated kcat entries
+        print(f&#34;Wildcard level {wildcard_level}...&#34;)
+        print(searched_ec_numbers)
+        if wildcard_level &lt; 3:
+            # With a low wildcard level, the default batch size of 5 is acceptable and
+            # helps to search quicker
+            resulting_ec_number_kcat_mapping = get_id_associated_kcats(searched_ec_numbers, &#34;EC&#34;,
+                                                                       bigg_id_name_mapping_path)
+        else:
+            # With a high wildcard level, no batching of searched EC numbers should be done since
+            # the high number of results would make the search much slower D:
+            resulting_ec_number_kcat_mapping = get_id_associated_kcats(searched_ec_numbers, &#34;EC&#34;,
+                                                                       bigg_id_name_mapping_path,
+                                                                       batch_size=1)
+
+        # In the following loops, the resulting dictionaries for wildcarded EC numbers are mapped to
+        # the searched EC numbers, e.g. the if 1.1.1.1233 and 1.1.1.2143 are searched and no results
+        # were found with wildcard level 0, the results from wildcard level 1.1.1.* are given
+        # to them with the entry that it comes from a wildcard
+        resulting_found_ec_numbers = resulting_ec_number_kcat_mapping.keys()
+        temp_all_found_ec_numbers: List[str] = []
+        for ec_number in ec_numbers_to_analyze:
+            if ec_number in all_found_ec_numbers:
+                continue
+            for found_ec_number in resulting_found_ec_numbers:
+                if not is_fitting_ec_numbers(ec_number, found_ec_number, wildcard_level):
+                    continue
+                kcat = resulting_ec_number_kcat_mapping[found_ec_number]
+                if ec_number not in list(ec_number_kcat_mapping.keys()):
+                    ec_number_kcat_mapping[ec_number] = kcat
+                    temp_all_found_ec_numbers += [ec_number]
+                else:
+                    ec_number_kcat_mapping[ec_number] = {**ec_number_kcat_mapping[ec_number], **kcat}
+                if wildcard_level == 0:
+                    ec_number_kcat_mapping[ec_number][&#34;WILDCARD&#34;] = False
+                else:
+                    ec_number_kcat_mapping[ec_number][&#34;WILDCARD&#34;] = True
+
+        # Continue with the new list of found EC numbers and the next wildcard level :D
+        all_found_ec_numbers += temp_all_found_ec_numbers
+        wildcard_level += 1
+
+    # Return the found major EC-number&lt;-&gt;kcat mapping \o/
+    return ec_number_kcat_mapping
+
+
+&#34;&#34;&#34;
+Exemplary usage:
+kegg_ids = [&#34;R00006&#34;, &#34;R00286&#34;, &#34;R00086&#34;]
+result = get_id_associated_kcats(kegg_ids, &#34;KEGG&#34;)
+print(result)
+
+ec_numbers = [&#34;1.1.1.213441&#34;, &#34;2.7.1.124243&#34;, &#34;1.234243.123213.123213&#34;, &#34;2.12323.123213.12213&#34;]
+result = get_ec_number_kcats_wildcard_search(ec_numbers)
+print(result)
+&#34;&#34;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.parse_sabio_rk.get_ec_number_kcats_wildcard_search"><code class="name flex">
+<span>def <span class="ident">get_ec_number_kcats_wildcard_search</span></span>(<span>ec_numbers, bigg_id_name_mapping_path, batch_size=5)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns EC number-dependent kcats using an incremental wildcard level until kcarts were found for all ECs.</p>
+<h2 id="arguments">Arguments</h2>
+<dl>
+<dt>*ec_numbers: List[str] ~ The list of checked EC numbers.</dt>
+<dt><strong><code>*bigg_id_name_mapping_path</code></strong> :&ensp;<code>str</code> ~ <code>The</code> <code>full</code> <code>path</code> <code>to</code> <code>a</code> <code>BIGG</code> <code>ID</code>&lt;-&gt;<code>Name</code> <code>mapping</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>*batch_size</code></strong> :&ensp;<code>int</code> = <code>5</code> ~ <code>How</code> <code>many</code> <code>EC</code> <code>numbers</code> <code>shall</code> <code>be</code> <code>looked</code> <code>up</code> <code>in</code> <code>parallel</code> <code>in</code> <code>SABIO</code>-<code>RK.</code> <code>Do</code> <code>not</code> <code>set</code> <code>this</code> <code>too</code> <code>high</code>!</dt>
+<dd>&nbsp;</dd>
+</dl>
+<h2 id="output">Output</h2>
+<p>A dictionary with the following content:
+<pre>
+        {
+        "$EC_NUMBER_OR_KEGG_REACTION_ID": {
+            "$SUBSTRATE_WITH_BIGG_ID_1": {
+                "$ORGANISM_1": [
+                    $kcat_1,
+                    (&hellip;)
+                    $kcat_n,
+                ]
+            },
+            (&hellip;),
+            "REST": {
+                "$ORGANISM_1": [
+                    $kcat_1,
+                    (&hellip;)
+                    $kcat_n,
+                ]
+            }
+        }
+        (&hellip;),
+    }
+</pre>
+'REST' stands for a substrate without found BIGG ID.</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_ec_number_kcats_wildcard_search(ec_numbers: List[str],
+                                        bigg_id_name_mapping_path: str,
+                                        batch_size: int = 5) -&gt; Dict[str, Any]:
+    &#34;&#34;&#34;Returns EC number-dependent kcats using an incremental wildcard level until kcarts were found for all ECs.
+
+    Arguments
+    ----------
+    *ec_numbers: List[str] ~ The list of checked EC numbers.
+    *bigg_id_name_mapping_path: str ~ The full path to a BIGG ID&lt;-&gt;Name mapping
+    *batch_size: int = 5 ~ How many EC numbers shall be looked up in parallel in SABIO-RK. Do not set this too high!
+
+    Output
+    ----------
+    A dictionary with the following content:
+    &lt;pre&gt;
+            {
+            &#34;$EC_NUMBER_OR_KEGG_REACTION_ID&#34;: {
+                &#34;$SUBSTRATE_WITH_BIGG_ID_1&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                },
+                (...),
+                &#34;REST&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                }
+            }
+            (...),
+        }
+    &lt;/pre&gt;
+    &#39;REST&#39; stands for a substrate without found BIGG ID.
+    &#34;&#34;&#34;
+    print(&#34;Starting EC numbers kcat search in SABIO-RK...&#34;)
+
+    # We will look-up all EC numbers in SABIO-RK. If an EC number does not have an entry in
+    # SABIO-RK, the wildcard level will become higher, e.g. 1.1.1.1 would become 1.1.1.*, and
+    # if no entry is found in SABIO-EK, it would become 1.1.*.*, and so on
+    # We start with no wildcards :D
+    wildcard_level = 0
+    # A list containing all found EC numbers, which won&#39;t be looked up using a higher wildcard level
+    all_found_ec_numbers: List[str] = []
+    # The central returned dictionary which will contain all combined kcat entries, divided
+    # for organisms and metabolites
+    ec_number_kcat_mapping: Dict[str, Any] = {}
+    # Since an EC number has a maximum of 5 numbers and there is at least one EC number entry for
+    # all EC number major category (e.g. 1.*.*.*), wildcards levels from 0 to 4 are reasonable,
+    # and we loop throigh them :D
+    for wildcard_level in range(5):
+        # Get the list of all EC numbers which we want to search, i.e. all EC numbers which
+        # are not already found.
+        ec_numbers_to_analyze = list(set(ec_numbers) ^ set(all_found_ec_numbers))  # Difference
+        # Add the current wildcard level to the searched EC numbers
+        searched_ec_numbers = [_add_wildcard_to_ec_number(x, wildcard_level) for x in ec_numbers_to_analyze]
+        # If no searched EC numbers are left with the current wildcard level, quit the for loop since we
+        # are done :D
+        if searched_ec_numbers == []:
+            break
+        # If there are searched EC numbers left, get the EC-number associated kcat entries
+        print(f&#34;Wildcard level {wildcard_level}...&#34;)
+        print(searched_ec_numbers)
+        if wildcard_level &lt; 3:
+            # With a low wildcard level, the default batch size of 5 is acceptable and
+            # helps to search quicker
+            resulting_ec_number_kcat_mapping = get_id_associated_kcats(searched_ec_numbers, &#34;EC&#34;,
+                                                                       bigg_id_name_mapping_path)
+        else:
+            # With a high wildcard level, no batching of searched EC numbers should be done since
+            # the high number of results would make the search much slower D:
+            resulting_ec_number_kcat_mapping = get_id_associated_kcats(searched_ec_numbers, &#34;EC&#34;,
+                                                                       bigg_id_name_mapping_path,
+                                                                       batch_size=1)
+
+        # In the following loops, the resulting dictionaries for wildcarded EC numbers are mapped to
+        # the searched EC numbers, e.g. the if 1.1.1.1233 and 1.1.1.2143 are searched and no results
+        # were found with wildcard level 0, the results from wildcard level 1.1.1.* are given
+        # to them with the entry that it comes from a wildcard
+        resulting_found_ec_numbers = resulting_ec_number_kcat_mapping.keys()
+        temp_all_found_ec_numbers: List[str] = []
+        for ec_number in ec_numbers_to_analyze:
+            if ec_number in all_found_ec_numbers:
+                continue
+            for found_ec_number in resulting_found_ec_numbers:
+                if not is_fitting_ec_numbers(ec_number, found_ec_number, wildcard_level):
+                    continue
+                kcat = resulting_ec_number_kcat_mapping[found_ec_number]
+                if ec_number not in list(ec_number_kcat_mapping.keys()):
+                    ec_number_kcat_mapping[ec_number] = kcat
+                    temp_all_found_ec_numbers += [ec_number]
+                else:
+                    ec_number_kcat_mapping[ec_number] = {**ec_number_kcat_mapping[ec_number], **kcat}
+                if wildcard_level == 0:
+                    ec_number_kcat_mapping[ec_number][&#34;WILDCARD&#34;] = False
+                else:
+                    ec_number_kcat_mapping[ec_number][&#34;WILDCARD&#34;] = True
+
+        # Continue with the new list of found EC numbers and the next wildcard level :D
+        all_found_ec_numbers += temp_all_found_ec_numbers
+        wildcard_level += 1
+
+    # Return the found major EC-number&lt;-&gt;kcat mapping \o/
+    return ec_number_kcat_mapping</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.parse_sabio_rk.get_id_associated_kcats"><code class="name flex">
+<span>def <span class="ident">get_id_associated_kcats</span></span>(<span>searched_ids, id_type, bigg_id_name_mapping_path, batch_size=5)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns a dictionary with SABIO-RK kcat data for the given EC numbers or KEGG IDs.</p>
+<p>This function calls the SABIO-RK API.</p>
+<h2 id="input">Input</h2>
+<ul>
+<li>searched_ids: List[str] ~ The list of searched IDs</li>
+<li>id_type: str ~ Must be either 'EC' or 'KEGG', depending on whether you are looking for kcats for EC numbers
+or KEGG IDs.</li>
+<li>batch_size: int = 5 ~ The SABIO-RK API search batching number (i.e., with satch_size=5 five IDs are searched at once)</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>A dictionary with the following content:
+<pre>
+{
+    "$EC_NUMBER_OR_KEGG_REACTION_ID": {
+        "$SUBSTRATE_WITH_BIGG_ID_1": {
+            "$ORGANISM_1": [
+                $kcat_1,
+                (&hellip;)
+                $kcat_n,
+            ]
+        },
+        (&hellip;),
+        "REST": {
+            "$ORGANISM_1": [
+                $kcat_1,
+                (&hellip;)
+                $kcat_n,
+            ]
+        }
+    }
+    (&hellip;),
+}
+</pre>
+'REST' stands for a substrate without found BIGG ID.</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_id_associated_kcats(searched_ids: List[str], id_type: str,
+                            bigg_id_name_mapping_path: str, batch_size: int = 5) -&gt; Dict[str, Any]:
+    &#34;&#34;&#34;Returns a dictionary with SABIO-RK kcat data for the given EC numbers or KEGG IDs.
+
+    This function calls the SABIO-RK API.
+
+    Input
+    ----------
+    * searched_ids: List[str] ~ The list of searched IDs
+    * id_type: str ~ Must be either &#39;EC&#39; or &#39;KEGG&#39;, depending on whether you are looking for kcats for EC numbers
+      or KEGG IDs.
+    * batch_size: int = 5 ~ The SABIO-RK API search batching number (i.e., with satch_size=5 five IDs are searched at once)
+
+    Output
+    ----------
+    A dictionary with the following content:
+    &lt;pre&gt;
+    {
+        &#34;$EC_NUMBER_OR_KEGG_REACTION_ID&#34;: {
+            &#34;$SUBSTRATE_WITH_BIGG_ID_1&#34;: {
+                &#34;$ORGANISM_1&#34;: [
+                    $kcat_1,
+                    (...)
+                    $kcat_n,
+                ]
+            },
+            (...),
+            &#34;REST&#34;: {
+                &#34;$ORGANISM_1&#34;: [
+                    $kcat_1,
+                    (...)
+                    $kcat_n,
+                ]
+            }
+        }
+        (...),
+    }
+    &lt;/pre&gt;
+    &#39;REST&#39; stands for a substrate without found BIGG ID.
+    &#34;&#34;&#34;
+    # Set-up the cache if it does not exist yet \o/
+    cache_basepath = &#34;./_cache/sabio_rk_total/&#34;
+    ensure_folder_existence(&#34;./_cache/&#34;)
+    ensure_folder_existence(cache_basepath)
+    cache_files = get_files(cache_basepath)
+    # Load the given BIGG ID&lt;-&gt;metabolite common name mapping
+    bigg_id_name_mapping = json_load(bigg_id_name_mapping_path)
+    # In order to save search time, use the seat (i.e., a list where
+    # every member occurs only once) of the given searched IDs
+    searched_ids = list(set(searched_ids))
+
+    # Set the given ID name to the name which SABIO-RK uses for them
+    if id_type == &#34;EC&#34;:
+        id_name = &#34;ECNumber&#34;
+    elif id_type == &#34;KEGG&#34;:
+        id_name = &#34;KeggReactionID&#34;
+
+    # Depending on the wildcard level which is serched, either
+    # the output or the wildcard output will be used as output
+    # These central dictionaries will contain the ID&lt;-&gt;kcat mapping
+    output = {}
+    wildcard_output = {}
+    # We use batched searched in order to save search time :D
+    batch_start = 0
+    # Loop while not all IDs were searched \o/
+    while batch_start &lt; len(searched_ids):
+        # Get the batch for the search :-)
+        batch = searched_ids[batch_start: batch_start + batch_size]
+        # The query dicts contain a list of dictionaries which contain
+        # the data for a SABIO-RK search entry
+        query_dicts: List[Dict[str, str]] = []
+        # Go through each single EC number in the search bath
+        for ec_number in batch:
+            # Create the cache filename
+            cache_filename = ec_number.replace(&#34;.&#34;, &#34;_&#34;).replace(&#34;*&#34;, &#34;W&#34;) + &#34;.json&#34;
+            # If the EC number is already searched, i.e. it can be found in the cache,
+            # take the results from there in order to save much search time :D
+            if cache_filename in cache_files:
+                cache_filepath = cache_basepath + cache_filename
+                output[ec_number] = json_load(cache_filepath)
+                print(f&#34;Loading {cache_filename}...&#34;)
+            # Otherwise, create an actual SABIO-RK API search query
+            else:
+                query_dicts.append({id_name: ec_number, &#34;Parametertype&#34;: &#34;kcat&#34;, &#34;EnzymeType&#34;: &#34;wildtype&#34;})
+        # If not all of the searched IDs are present in the cache...
+        if len(query_dicts) &gt; 0:
+            # ...use SABIO-RK&#39;s API :D
+            print(f&#34;Performing query {query_dicts}...&#34;)
+            result = sabio_rk_query_get_csv_lines(query_dicts)
+
+            # If there was an error with the SABIO-RK result (i.e., no result found or an invalid given ID),
+            # continue with the next batch
+            if result == &#34;NO_RESULT&#34;:
+                batch_start += batch_size
+                continue
+        # ...otherwise set the query result to nothing
+        else:
+            result = []
+
+        # Loop through every SABIO-RK API query call result :D
+        temp_ec_numbers_found_in_search = []
+        result = _extract_kcat_lines(result)
+        for row in result:
+            # Get the unit of the parameter
+            unit = row[&#34;parameter.unit&#34;]
+            # If it is a weird unusable unit, do not use this result and continue with the next result \o/
+            if unit not in list(UNIT_MULTIPLIER.keys()):  # e.g. (s^-1)*(mg^-1)
+                continue
+
+            # Get the serached ID
+            ec_number = row[id_name]
+            # Generate a lowercarse and semicolon seperated list of substrates
+            substrates_names = row[&#34;Substrate&#34;]
+            substrates_list = [x.lower() for x in substrates_names.replace(&#34;+&#34;, &#34;&#34;).split(&#34;;&#34;)]
+            substrates_list = sorted(substrates_list)
+            # Convert the substrates name list into a BIGG ID list (only works
+            # if there is a name&lt;-&gt;BIGG ID mapping present for each substrate)
+            bigg_ig_substrates_list = []
+            for substrate in substrates_list:
+                if substrate in bigg_id_name_mapping.keys():
+                    bigg_id = bigg_id_name_mapping[substrate]
+                    bigg_ig_substrates_list.append(bigg_id)
+                # If one of the substrates cannot be found, use the pseudometabolite &#34;REST&#34;
+                # and break :O
+                else:
+                    bigg_ig_substrates_list = [&#34;REST&#34;]
+                    break
+            # Set the substrate list to a semicolon-connected string
+            substrate = &#34;;&#34;.join(bigg_ig_substrates_list)
+            # Get the result&#39;s organism :D
+            species = row[&#34;Organism&#34;]
+            # Get the kcat and set
+            # it to 1/s for consistent behaviour :D
+            raw_kcat = float(row[&#34;parameter.startValue&#34;])  # Without unit correction
+            kcat = raw_kcat * UNIT_MULTIPLIER[unit]  # With unit correction 🎉
+
+            # Add the result to the output for the given EC number, sustrate and species
+            if ec_number not in output.keys():
+                output[ec_number] = {}
+            if substrate not in output[ec_number].keys():
+                output[ec_number][substrate] = {}
+            if species not in output[ec_number][substrate].keys():
+                output[ec_number][substrate][species] = []
+            output[ec_number][substrate][species].append(kcat)
+
+            # Since we found a result, add the EC number :D
+            temp_ec_numbers_found_in_search.append(ec_number)
+
+        # Create cache files for all newly found EC numbers which were not present
+        # in the cache
+        temp_ec_numbers_found_in_search = list(set(temp_ec_numbers_found_in_search))
+        for ec_number in temp_ec_numbers_found_in_search:
+            cache_filename = ec_number.replace(&#34;.&#34;, &#34;_&#34;) + &#34;.json&#34;
+            if cache_filename not in cache_files:
+                json_write(cache_basepath + cache_filename, output[ec_number])
+
+        # Get all wildcarded searched EC numbers...
+        wildcarded_searched_ec_numbers = [x for x in batch if &#34;*&#34; in x]
+        # ...and loop through them in order to create a result for the EC numbers
+        # which fit into the wildcard (i.e 1.1.1.123 in 1.1.1.*) :D
+        for wildcarded_ec_number in wildcarded_searched_ec_numbers:
+            # Ste the cache name for the wildcarded EC number
+            cache_filename = wildcarded_ec_number.replace(&#34;.&#34;, &#34;_&#34;).replace(&#34;*&#34;, &#34;W&#34;) + &#34;.json&#34;
+            # If the wildcarded EC number cannot be found in the cache, search for
+            # fitting EC numbers, and combine their entries into a huge entry for the
+            # wildcarded EC number
+            if cache_filename not in cache_files:
+                fitting_ec_numbers = []
+                for found_ec_number in temp_ec_numbers_found_in_search:
+                    if is_fitting_ec_numbers(wildcarded_ec_number, found_ec_number, wildcarded_ec_number.count(&#34;*&#34;)):
+                        fitting_ec_numbers.append(found_ec_number)
+
+                # Combine the EC number entries of fitting EC numbers :D
+                wildcarded_ec_number_dict: Dict[str, Any] = {}
+                for fitting_ec_number in fitting_ec_numbers:
+                    fitting_ec_number_result = output[fitting_ec_number]
+                    for metabolite_key in fitting_ec_number_result.keys():
+                        if metabolite_key not in wildcarded_ec_number_dict.keys():
+                            wildcarded_ec_number_dict[metabolite_key] = fitting_ec_number_result[metabolite_key]
+                        else:
+                            for organism_key in fitting_ec_number_result[metabolite_key].keys():
+                                if organism_key not in wildcarded_ec_number_dict[metabolite_key].keys():
+                                    wildcarded_ec_number_dict[metabolite_key][organism_key] =\
+                                        copy.deepcopy(fitting_ec_number_result[metabolite_key][organism_key])
+                                else:
+                                    wildcarded_ec_number_dict[metabolite_key][organism_key] +=\
+                                        copy.deepcopy(fitting_ec_number_result[metabolite_key][organism_key])
+                                wildcarded_ec_number_dict[metabolite_key][organism_key] =\
+                                    list(set(wildcarded_ec_number_dict[metabolite_key][organism_key]))
+                # Create cache files for the searched wildcarded EC numbers \o/
+                if wildcarded_ec_number_dict != {}:
+                    json_write(cache_basepath + cache_filename, wildcarded_ec_number_dict)
+                    wildcard_output[wildcarded_ec_number] = wildcarded_ec_number_dict
+            # If the wildcarded EC number is in the cache, load the cache file :D
+            else:
+                wildcard_output[wildcarded_ec_number] = json_load(cache_basepath + cache_filename)
+                print(f&#34;Loading {cache_filename}...&#34;)
+
+        # Continue with the next searched ID batch :D
+        batch_start += batch_size
+
+    # If the wildcard level is greater than 0, set the wildcard output as output
+    if len(wildcard_output.keys()) &gt; 0:
+        output = wildcard_output
+
+    return output</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.parse_sabio_rk.sabio_rk_query_get_csv_lines"><code class="name flex">
+<span>def <span class="ident">sabio_rk_query_get_csv_lines</span></span>(<span>query_dicts)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns the result of a SABIo-RK API call with the given query dicts as csvReader lines</p>
+<h2 id="input">Input</h2>
+<ul>
+<li>query_dicts: List[Any] ~ A list of query dicts in the form of {id_name: ec_number, "Parametertype": "kcat", "EnzymeType": "wildtype"}</li>
+</ul>
+<h2 id="output">Output</h2>
+<ul>
+<li>The sabio_rk_query_with_string() result in a different form:
+Either "NO_RESULT" (a str) if no search esult was found,
+or a list of strings which includes the lines of the CSV that
+is returned by SABIO-RK</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sabio_rk_query_get_csv_lines(query_dicts: List[Any]) -&gt; Any:
+    &#34;&#34;&#34;Returns the result of a SABIo-RK API call with the given query dicts as csvReader lines
+
+    Input
+    ----------
+    * query_dicts: List[Any] ~ A list of query dicts in the form of {id_name: ec_number, &#34;Parametertype&#34;: &#34;kcat&#34;, &#34;EnzymeType&#34;: &#34;wildtype&#34;}
+
+    Output
+    ----------
+    * The sabio_rk_query_with_string() result in a different form:
+      Either &#34;NO_RESULT&#34; (a str) if no search esult was found,
+      or a list of strings which includes the lines of the CSV that
+      is returned by SABIO-RK
+    &#34;&#34;&#34;
+    result = sabio_rk_query_with_query_dicts(query_dicts)
+    if result == &#34;NO_RESULT&#34;:
+        return &#34;NO_RESULT&#34;
+    else:
+        return list(csv.DictReader(io.StringIO(result), delimiter=&#34;\t&#34;))</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.parse_sabio_rk.sabio_rk_query_with_query_dicts"><code class="name flex">
+<span>def <span class="ident">sabio_rk_query_with_query_dicts</span></span>(<span>query_dicts)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Performs a SABIO-RK query with given query dicts and converts them into a string</p>
+<h2 id="input">Input</h2>
+<ul>
+<li>query_dicts: List[Any] ~ A list of query dicts in the form of {id_name: ec_number, "Parametertype": "kcat", "EnzymeType": "wildtype"}</li>
+</ul>
+<h2 id="output">Output</h2>
+<ul>
+<li>As in sabio_rk_query_with_string()</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sabio_rk_query_with_query_dicts(query_dicts: List[Any]) -&gt; str:
+    &#34;&#34;&#34;Performs a SABIO-RK query with given query dicts and converts them into a string
+
+    Input
+    ----------
+    * query_dicts: List[Any] ~ A list of query dicts in the form of {id_name: ec_number, &#34;Parametertype&#34;: &#34;kcat&#34;, &#34;EnzymeType&#34;: &#34;wildtype&#34;}
+
+    Output
+    ----------
+    * As in sabio_rk_query_with_string()
+    &#34;&#34;&#34;
+    i = 0
+    # Add &#39;AND&#39; for all variables of a query dict
+    for i in range(len(query_dicts)):
+        query_dicts[i] = &#34; AND &#34;.join([f&#34;{k}:{v}&#34; for k, v in query_dicts[i].items()])
+    # Add &#39;OR&#39; between each individual query dict
+    query_string = &#34;(&#34; + &#34;) OR (&#34;.join(query_dicts) + &#34;)&#34;
+    # Add parentheses for URL conformity
+    query_string = &#34;(&#34; + query_string + &#34;)&#34;
+
+    # Perform the API call :D
+    return sabio_rk_query_with_string(query_string)</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.parse_sabio_rk.sabio_rk_query_with_string"><code class="name flex">
+<span>def <span class="ident">sabio_rk_query_with_string</span></span>(<span>query_string)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Call SABIO-RK API with the given query string.</p>
+<p>The query string is the actual term that is searched</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>query_string: str ~ The query string</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>SABIO-RK's request result as str:</p>
+<p>If results could be found, it is a csv-like structure that can
+be futher processed e.g. with the Python standard library function csv.DictReader.
+The returned result fields are the EC number, the KEGG reaction ID, the organism
+and the 'parameter', i.e. the category of the given result. A possible category
+is 'kcat'.
+If no results could be found, it is the str "NO_RESULT".</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sabio_rk_query_with_string(query_string: str) -&gt; str:
+    &#34;&#34;&#34;Call SABIO-RK API with the given query string.
+
+    The query string is the actual term that is searched
+
+    Arguments
+    ----------
+    * query_string: str ~ The query string
+
+    Output
+    ----------
+    SABIO-RK&#39;s request result as str:
+
+    If results could be found, it is a csv-like structure that can
+    be futher processed e.g. with the Python standard library function csv.DictReader.
+    The returned result fields are the EC number, the KEGG reaction ID, the organism
+    and the &#39;parameter&#39;, i.e. the category of the given result. A possible category
+    is &#39;kcat&#39;.
+    If no results could be found, it is the str &#34;NO_RESULT&#34;.
+    &#34;&#34;&#34;
+    # Build-up SABIO-RK query with a dictionary format that can be understood by the
+    # requests library (this is also the way to retrieve potential huge amounts of
+    # information as shown in SABIO-RK&#39;s API documentation).
+    query = {&#34;fields[]&#34;: [&#34;ECNumber&#34;, &#34;KeggReactionID&#34;, &#34;Organism&#34;, &#34;Parameter&#34;, &#34;Substrate&#34;], &#34;q&#34;: query_string}
+
+    # Send the request to SABIO-RK :D
+    request = requests.post(QUERY_URL, params=query)
+
+    # Error check whether the API call was successful or
+    # not. &#39;Not successful&#39; means that no search result with the given query
+    # could be found. In this case, &#34;NO_RESULT&#34; is returned.
+    try:
+        request.raise_for_status()
+    except Exception:
+        print(&#34;SABIO-RK API error with query:&#34;)
+        print(query_string)
+        time.sleep(WAIT_TIME)
+        return &#34;NO_RESULT&#34;
+
+    # Wait time in order to not overload SABIO_RK&#39;s server
+    time.sleep(WAIT_TIME)
+
+    # Return successful search result in the given csv-like structure format.
+    return request.text</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.parse_sabio_rk.get_ec_number_kcats_wildcard_search" href="#autopacmen.submodules.parse_sabio_rk.get_ec_number_kcats_wildcard_search">get_ec_number_kcats_wildcard_search</a></code></li>
+<li><code><a title="autopacmen.submodules.parse_sabio_rk.get_id_associated_kcats" href="#autopacmen.submodules.parse_sabio_rk.get_id_associated_kcats">get_id_associated_kcats</a></code></li>
+<li><code><a title="autopacmen.submodules.parse_sabio_rk.sabio_rk_query_get_csv_lines" href="#autopacmen.submodules.parse_sabio_rk.sabio_rk_query_get_csv_lines">sabio_rk_query_get_csv_lines</a></code></li>
+<li><code><a title="autopacmen.submodules.parse_sabio_rk.sabio_rk_query_with_query_dicts" href="#autopacmen.submodules.parse_sabio_rk.sabio_rk_query_with_query_dicts">sabio_rk_query_with_query_dicts</a></code></li>
+<li><code><a title="autopacmen.submodules.parse_sabio_rk.sabio_rk_query_with_string" href="#autopacmen.submodules.parse_sabio_rk.sabio_rk_query_with_string">sabio_rk_query_with_string</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

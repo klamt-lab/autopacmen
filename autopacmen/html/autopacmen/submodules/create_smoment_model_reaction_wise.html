@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.create_smoment_model_reaction_wise API documentation</title>
+<meta name="description" content="create_smoment_model_reaction_wise.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.create_smoment_model_reaction_wise</code></h1>
+</header>
+<section id="section-intro">
+<p>create_smoment_model_reaction_wise.py</p>
+<p>Includes the central function which allows to create a proteome-constraint-enhanced
+stoichiometric model :D</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;create_smoment_model_reaction_wise.py
+
+Includes the central function which allows to create a proteome-constraint-enhanced
+stoichiometric model :D
+&#34;&#34;&#34;
+
+# IMPORTS
+# External modules
+import cobra
+import math
+import random
+import statistics
+import sys
+from typing import Dict, List
+# Internal modules
+from submodules.helper_general import json_load, standardize_folder
+from submodules.helper_create_model import add_prot_pool_reaction, get_irreversible_model, get_p_measured, \
+                                           read_enzyme_stoichiometries_xlsx, read_protein_data_xlsx, \
+                                           get_model_with_separated_measured_enzyme_reactions
+
+
+# PUBLIC FUNCTIONS
+def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
+                                       project_folder: str, project_name: str,
+                                       excluded_reactions: List[str],
+                                       type_of_default_kcat_selection: str = &#34;median&#34;) -&gt; None:
+    &#34;&#34;&#34;Adds proteomic constraints according to sMOMENT to the given stoichiometric model and stores it as SBML.
+
+    Arguments
+    ----------
+
+    * model: cobra.Model ~ A cobra Model representation of the metabolic network. This model will
+      be changed using cobrapy functions in order to add the proteomic constraints.
+    * output_sbml_name: str ~ The base name of the created SBML.
+    * project_folder: str ~ The folder in which the spreadsheets and JSONs with the model&#39;s supplemental
+      data can be found.
+    * project_name: str ~ The sMOMENTed model creation&#39;s name, which will be added at the beginning
+      of the created SBML&#39;s name.
+    * excluded_reactions: List[str] ~ A string list of reaction IDs (the &#39;reverse&#39; and &#39;forward&#39;
+      name additions must not be added, i.e. for &#39;ACALD_forward&#39; just &#39;ACALD&#39; has to be given) to
+      which no kcat shall be added. Typically used for gas exchange reactions such as &#39;CO2tex&#39;.
+    * type_of_default_kcat_selection: str ~ The type of selection of default kcat values. Can be &#34;mean&#34;,
+      &#34;median&#34; or &#34;random&#34;. Is &#34;median&#34; by default.
+
+    Output
+    ----------
+    An SBML in the given folder with the given name, which describes the given stoichiometric model
+    enhanced by the protein constraint introduction with this function.
+    &#34;&#34;&#34;
+    # Standardize project folder
+    project_folder = standardize_folder(project_folder)
+
+    # Set folder path for newly created SBML and name for the reaction ID addition (added at the end,
+    # and used in order to have a programatically convinient way to separate additions such as &#39;reverse&#39;
+    # from the &#39;actual&#39; reaction ID).
+    basepath: str = project_folder + project_name
+    id_addition: str = &#34;_TG_&#34;
+
+    # READ REACTIONS&lt;-&gt;KEGG ID XLSX
+    protein_id_mass_mapping: Dict[str, float] = json_load(basepath + &#34;_protein_id_mass_mapping.json&#34;)
+
+    # Load protein data XLSX
+    protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation = \
+        read_protein_data_xlsx(basepath)
+
+    # Read enzyme stoichiometries xlsx
+    reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
+        read_enzyme_stoichiometries_xlsx(basepath)
+
+    # Calculate p_measured
+    p_measured = get_p_measured(protein_id_concentration_mapping, protein_id_mass_mapping)
+
+    # Split reactions with measured enzymes
+    model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
+        get_model_with_separated_measured_enzyme_reactions(model,
+                                                           protein_id_concentration_mapping,
+                                                           reaction_id_gene_rules_mapping,
+                                                           reaction_id_gene_rules_protein_stoichiometry_mapping,
+                                                           excluded_reactions,
+                                                           protein_id_mass_mapping)
+
+    # Make model irreversible, separating all reversible reactions to which a gene rule is given
+    # in order to save some reactions.
+    model = get_irreversible_model(model, id_addition)
+
+    # Add prot_pool reaction according to the given protein pool values
+    model, prot_pool_metabolite = add_prot_pool_reaction(model, id_addition, p_total, p_measured,
+                                                         unmeasured_protein_fraction, mean_saturation)
+
+    # Read reaction &lt;-&gt; kcat mapping :-)
+    reactions_kcat_mapping_database = json_load(basepath + &#34;_reactions_kcat_mapping_combined.json&#34;)
+
+    # sMOMENT :D
+    # Get all kcats which are not math.nan and calculate the median of them, which will be used as default kcat
+    all_kcats = [x[&#34;forward&#34;] for x in reactions_kcat_mapping_database.values()] + \
+                [x[&#34;reverse&#34;] for x in reactions_kcat_mapping_database.values()]
+    all_kcats = [x for x in all_kcats if not math.isnan(x)]
+
+    if type_of_default_kcat_selection == &#34;median&#34;:
+        default_kcat = statistics.median(all_kcats)
+    elif type_of_default_kcat_selection == &#34;mean&#34;:
+        default_kcat = statistics.mean(all_kcats)
+    elif type_of_default_kcat_selection == &#34;random&#34;:
+        default_kcat = random.choice(all_kcats)
+    else:
+        print(&#39;ERROR: Argument type_of_default_kcat_selection must be either &#34;median&#34;, &#34;mean&#34; or &#34;random&#34;.&#39;)
+        sys.exit(-1)
+
+    print(f&#34;Default kcat is: {default_kcat}&#34;)
+
+    # Get all reaction IDs of the given model
+    model_reaction_ids = [x.id for x in model.reactions]
+
+    # Add measured enzyme pseudo-metabolites and pseudo-reactions
+    for protein_id in protein_id_concentration_mapping.keys():
+        new_metabolite = cobra.Metabolite(id=&#34;ENZYME_&#34;+protein_id,
+                                          name=&#34;Pseudo-metabolite of protein &#34;+protein_id,
+                                          compartment=&#34;sMOMENT&#34;)
+        max_protein_concentration = protein_id_concentration_mapping[protein_id]
+        new_reaction = cobra.Reaction(id=&#34;ENZYME_DELIVERY_&#34;+protein_id,
+                                      name=&#34;Delivery reaction of pseudo-metabolite &#34;+protein_id,
+                                      lower_bound=0,
+                                      upper_bound=max_protein_concentration)
+        new_reaction.add_metabolites({new_metabolite: 1})
+        model.add_reactions([new_reaction])
+
+    # Main loop :D, add enzyme constraints to reactions \o/
+    for model_reaction_id in model_reaction_ids:
+        # Get the reaction and split the ID at the ID addition
+        reaction = model.reactions.get_by_id(model_reaction_id)
+        splitted_id = reaction.id.split(id_addition)
+
+        # If the reaction has no name, ignore it
+        if splitted_id[0] == &#34;&#34;:
+            continue
+        # Take the reaction ID from the first part of the split
+        reaction_id = splitted_id[0]
+        # Remove GPRSPLIT name addition from reactions with measured protein concentrations
+        if &#34;_GPRSPLIT_&#34; in reaction_id:
+            reaction_id = reaction_id.split(&#34;_GPRSPLIT_&#34;)[0]
+
+        # If the reaction has no associated enzyme stoichiometries, ignore it
+        if reaction_id not in list(reaction_id_gene_rules_mapping.keys()):
+            continue
+        # If the reaction has no gene rule, ignore it
+        gene_rule = reaction_id_gene_rules_mapping[reaction_id]
+        if gene_rule == [&#34;&#34;]:
+            continue
+        # If the reaction is manually excluded, ignore it
+        if reaction_id in excluded_reactions:
+            continue
+
+        # Check if all proteins in the reaction&#39;s gene rule have a found mass
+        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme &#39;s0001&#39;
+        all_available = True
+        for enzyme in gene_rule:
+            if type(enzyme) == str:
+                if enzyme not in list(protein_id_mass_mapping.keys()):
+                    print(enzyme)
+                    all_available = False
+                    break
+            else:
+                for enzyme_id in enzyme:
+                    if enzyme_id not in list(protein_id_mass_mapping.keys()):
+                        all_available = False
+                        break
+        # If not all of the mass-checked enzymes have a found mass, ignore this reaction
+        if not all_available:
+            continue
+
+        # Retrieve the reaction&#39;s forward and reverse kcats from the given reaction&lt;-&gt;kcat database
+        if reaction_id in reactions_kcat_mapping_database.keys():
+            forward_kcat = reactions_kcat_mapping_database[reaction_id][&#34;forward&#34;]
+            reverse_kcat = reactions_kcat_mapping_database[reaction_id][&#34;reverse&#34;]
+        # If the reaction is not in the database, set the default kcat
+        else:
+            forward_kcat = default_kcat
+            reverse_kcat = default_kcat
+
+        # If the given reaction&lt;-&gt;kcat database contains math.nan as the reaction&#39;s kcat,
+        # set the default kcat as math.nan means that no kcat could be found.
+        if math.isnan(forward_kcat):
+            forward_kcat = default_kcat
+        if math.isnan(reverse_kcat):
+            reverse_kcat = default_kcat
+
+        # Add the given forward or reverse kcat is the reaction was
+        # splitted due to its reversibility.
+        # If the reaction is not splitted, add the forward kcat (this
+        # is the only possible direction for non-splitted=non-reversible
+        # reactions)
+        if model_reaction_id.endswith(id_addition + &#34;forward&#34;):
+            reaction_kcat = forward_kcat
+        elif model_reaction_id.endswith(id_addition + &#34;reverse&#34;):
+            reaction_kcat = reverse_kcat
+        else:
+            reaction_kcat = forward_kcat
+
+        # Add protein pool pseudo-metabolite depending on isozyme complex presence
+        stoichiometries = []
+        for isozyme_id in gene_rule:
+            # If it&#39;s not a complex :O...
+            if type(isozyme_id) is str:
+                # ...get the reaction ID without the additions...
+                reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
+
+                # ...get the number of units for this protein...
+                stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                # ...and determine the protein pool stoichiometry by
+                # 1) Multiplying the number of units for this protein with its mass (converted from kDa to mDa, since the reaction
+                #    flux is defined for mmol/(gDW*h) and not mol/(gDW*h))
+                stoichiometry *= (protein_id_mass_mapping[isozyme_id] / 1000)
+                # 2) Dividing it with the reaction&#39;s kcat (converted from 1/s to 1/h)
+                stoichiometry /= (reaction_kcat * 3600)
+                # 3) Setting the right direction (educt)
+                stoichiometry *= -1
+                stoichiometries.append(stoichiometry)
+
+                # Add proteomics constraints
+                if isozyme_id in protein_id_concentration_mapping.keys():
+                    enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+isozyme_id)
+                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                    stoichiometry *= 1 / (reaction_kcat * 3600)
+                    stoichiometry *= -1
+                    reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+            # If it is a complex :O...
+            else:
+                # ...convert the complex IDs to a hashable tuple (used for the stoichiometry selection)...
+                isozyme_id = tuple(isozyme_id)
+                stoichiometry = 0
+
+                # ...go through each single ID of the complex...
+                for single_id in isozyme_id:
+                    # ...get the reaction ID without additions...
+                    reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
+
+                    # ...get the number of units for this protein...
+                    single_stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                    # ...and determine the protein pool stoichiometry addition by
+                    # 1) Multiplying the number of units for this protein with its mass (converted from kDa to Da)
+                    single_stoichiometry *= (protein_id_mass_mapping[single_id] / 1000)
+                    # 2) Dividing it with the reaction&#39;s kcat (converted from 1/s to 1/h)
+                    single_stoichiometry /= (reaction_kcat * 3600)
+                    # 3) Setting the right direction (educt)
+                    single_stoichiometry *= -1
+                    # 4) and add it to the complex&#39;s stoichiometry
+                    stoichiometry += single_stoichiometry
+                # Add to list of stoichiometries
+                stoichiometries.append(stoichiometry)
+
+                # Add proteomics constraints
+                for single_id in isozyme_id:
+                    if single_id in protein_id_concentration_mapping.keys():
+                        enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+single_id)
+                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                        stoichiometry *= 1 / (reaction_kcat * 3600)
+                        stoichiometry *= -1
+                        reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+
+        # Take the maximal stoichiometry (i.e., the one with the least cost since this one will usually be prefered
+        # anyway in an FBA).
+        metabolites = {}
+        metabolites[prot_pool_metabolite] = max(stoichiometries)
+        reaction.add_metabolites(metabolites)
+
+    # Output as SBML (without constraints due to cobrapy limitations)
+    cobra.io.write_sbml_model(model, project_folder + output_sbml_name)
+
+
+def create_smoment_model_reaction_wise_with_sbml(input_sbml_path: str, output_sbml_name: str,
+                                                 project_folder: str, project_name: str,
+                                                 excluded_reactions: List[str],
+                                                 type_of_default_kcat_selection: str = &#34;median&#34;) -&gt; None:
+    &#34;&#34;&#34;See this module&#39;s create_smoment_model_reaction_wise()&#34;&#34;&#34;
+    # Load SBML model
+    model: cobra.Model = cobra.io.read_sbml_model(input_sbml_path)
+    # Call gecko model creation function :D
+    create_smoment_model_reaction_wise(model, output_sbml_name,
+                                       project_folder, project_name,
+                                       excluded_reactions,
+                                       type_of_default_kcat_selection)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.create_smoment_model_reaction_wise.create_smoment_model_reaction_wise"><code class="name flex">
+<span>def <span class="ident">create_smoment_model_reaction_wise</span></span>(<span>model, output_sbml_name, project_folder, project_name, excluded_reactions, type_of_default_kcat_selection='median')</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Adds proteomic constraints according to sMOMENT to the given stoichiometric model and stores it as SBML.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ A cobra Model representation of the metabolic network. This model will
+be changed using cobrapy functions in order to add the proteomic constraints.</li>
+<li>output_sbml_name: str ~ The base name of the created SBML.</li>
+<li>project_folder: str ~ The folder in which the spreadsheets and JSONs with the model's supplemental
+data can be found.</li>
+<li>project_name: str ~ The sMOMENTed model creation's name, which will be added at the beginning
+of the created SBML's name.</li>
+<li>excluded_reactions: List[str] ~ A string list of reaction IDs (the 'reverse' and 'forward'
+name additions must not be added, i.e. for 'ACALD_forward' just 'ACALD' has to be given) to
+which no kcat shall be added. Typically used for gas exchange reactions such as 'CO2tex'.</li>
+<li>type_of_default_kcat_selection: str ~ The type of selection of default kcat values. Can be "mean",
+"median" or "random". Is "median" by default.</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>An SBML in the given folder with the given name, which describes the given stoichiometric model
+enhanced by the protein constraint introduction with this function.</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
+                                       project_folder: str, project_name: str,
+                                       excluded_reactions: List[str],
+                                       type_of_default_kcat_selection: str = &#34;median&#34;) -&gt; None:
+    &#34;&#34;&#34;Adds proteomic constraints according to sMOMENT to the given stoichiometric model and stores it as SBML.
+
+    Arguments
+    ----------
+
+    * model: cobra.Model ~ A cobra Model representation of the metabolic network. This model will
+      be changed using cobrapy functions in order to add the proteomic constraints.
+    * output_sbml_name: str ~ The base name of the created SBML.
+    * project_folder: str ~ The folder in which the spreadsheets and JSONs with the model&#39;s supplemental
+      data can be found.
+    * project_name: str ~ The sMOMENTed model creation&#39;s name, which will be added at the beginning
+      of the created SBML&#39;s name.
+    * excluded_reactions: List[str] ~ A string list of reaction IDs (the &#39;reverse&#39; and &#39;forward&#39;
+      name additions must not be added, i.e. for &#39;ACALD_forward&#39; just &#39;ACALD&#39; has to be given) to
+      which no kcat shall be added. Typically used for gas exchange reactions such as &#39;CO2tex&#39;.
+    * type_of_default_kcat_selection: str ~ The type of selection of default kcat values. Can be &#34;mean&#34;,
+      &#34;median&#34; or &#34;random&#34;. Is &#34;median&#34; by default.
+
+    Output
+    ----------
+    An SBML in the given folder with the given name, which describes the given stoichiometric model
+    enhanced by the protein constraint introduction with this function.
+    &#34;&#34;&#34;
+    # Standardize project folder
+    project_folder = standardize_folder(project_folder)
+
+    # Set folder path for newly created SBML and name for the reaction ID addition (added at the end,
+    # and used in order to have a programatically convinient way to separate additions such as &#39;reverse&#39;
+    # from the &#39;actual&#39; reaction ID).
+    basepath: str = project_folder + project_name
+    id_addition: str = &#34;_TG_&#34;
+
+    # READ REACTIONS&lt;-&gt;KEGG ID XLSX
+    protein_id_mass_mapping: Dict[str, float] = json_load(basepath + &#34;_protein_id_mass_mapping.json&#34;)
+
+    # Load protein data XLSX
+    protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation = \
+        read_protein_data_xlsx(basepath)
+
+    # Read enzyme stoichiometries xlsx
+    reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
+        read_enzyme_stoichiometries_xlsx(basepath)
+
+    # Calculate p_measured
+    p_measured = get_p_measured(protein_id_concentration_mapping, protein_id_mass_mapping)
+
+    # Split reactions with measured enzymes
+    model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
+        get_model_with_separated_measured_enzyme_reactions(model,
+                                                           protein_id_concentration_mapping,
+                                                           reaction_id_gene_rules_mapping,
+                                                           reaction_id_gene_rules_protein_stoichiometry_mapping,
+                                                           excluded_reactions,
+                                                           protein_id_mass_mapping)
+
+    # Make model irreversible, separating all reversible reactions to which a gene rule is given
+    # in order to save some reactions.
+    model = get_irreversible_model(model, id_addition)
+
+    # Add prot_pool reaction according to the given protein pool values
+    model, prot_pool_metabolite = add_prot_pool_reaction(model, id_addition, p_total, p_measured,
+                                                         unmeasured_protein_fraction, mean_saturation)
+
+    # Read reaction &lt;-&gt; kcat mapping :-)
+    reactions_kcat_mapping_database = json_load(basepath + &#34;_reactions_kcat_mapping_combined.json&#34;)
+
+    # sMOMENT :D
+    # Get all kcats which are not math.nan and calculate the median of them, which will be used as default kcat
+    all_kcats = [x[&#34;forward&#34;] for x in reactions_kcat_mapping_database.values()] + \
+                [x[&#34;reverse&#34;] for x in reactions_kcat_mapping_database.values()]
+    all_kcats = [x for x in all_kcats if not math.isnan(x)]
+
+    if type_of_default_kcat_selection == &#34;median&#34;:
+        default_kcat = statistics.median(all_kcats)
+    elif type_of_default_kcat_selection == &#34;mean&#34;:
+        default_kcat = statistics.mean(all_kcats)
+    elif type_of_default_kcat_selection == &#34;random&#34;:
+        default_kcat = random.choice(all_kcats)
+    else:
+        print(&#39;ERROR: Argument type_of_default_kcat_selection must be either &#34;median&#34;, &#34;mean&#34; or &#34;random&#34;.&#39;)
+        sys.exit(-1)
+
+    print(f&#34;Default kcat is: {default_kcat}&#34;)
+
+    # Get all reaction IDs of the given model
+    model_reaction_ids = [x.id for x in model.reactions]
+
+    # Add measured enzyme pseudo-metabolites and pseudo-reactions
+    for protein_id in protein_id_concentration_mapping.keys():
+        new_metabolite = cobra.Metabolite(id=&#34;ENZYME_&#34;+protein_id,
+                                          name=&#34;Pseudo-metabolite of protein &#34;+protein_id,
+                                          compartment=&#34;sMOMENT&#34;)
+        max_protein_concentration = protein_id_concentration_mapping[protein_id]
+        new_reaction = cobra.Reaction(id=&#34;ENZYME_DELIVERY_&#34;+protein_id,
+                                      name=&#34;Delivery reaction of pseudo-metabolite &#34;+protein_id,
+                                      lower_bound=0,
+                                      upper_bound=max_protein_concentration)
+        new_reaction.add_metabolites({new_metabolite: 1})
+        model.add_reactions([new_reaction])
+
+    # Main loop :D, add enzyme constraints to reactions \o/
+    for model_reaction_id in model_reaction_ids:
+        # Get the reaction and split the ID at the ID addition
+        reaction = model.reactions.get_by_id(model_reaction_id)
+        splitted_id = reaction.id.split(id_addition)
+
+        # If the reaction has no name, ignore it
+        if splitted_id[0] == &#34;&#34;:
+            continue
+        # Take the reaction ID from the first part of the split
+        reaction_id = splitted_id[0]
+        # Remove GPRSPLIT name addition from reactions with measured protein concentrations
+        if &#34;_GPRSPLIT_&#34; in reaction_id:
+            reaction_id = reaction_id.split(&#34;_GPRSPLIT_&#34;)[0]
+
+        # If the reaction has no associated enzyme stoichiometries, ignore it
+        if reaction_id not in list(reaction_id_gene_rules_mapping.keys()):
+            continue
+        # If the reaction has no gene rule, ignore it
+        gene_rule = reaction_id_gene_rules_mapping[reaction_id]
+        if gene_rule == [&#34;&#34;]:
+            continue
+        # If the reaction is manually excluded, ignore it
+        if reaction_id in excluded_reactions:
+            continue
+
+        # Check if all proteins in the reaction&#39;s gene rule have a found mass
+        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme &#39;s0001&#39;
+        all_available = True
+        for enzyme in gene_rule:
+            if type(enzyme) == str:
+                if enzyme not in list(protein_id_mass_mapping.keys()):
+                    print(enzyme)
+                    all_available = False
+                    break
+            else:
+                for enzyme_id in enzyme:
+                    if enzyme_id not in list(protein_id_mass_mapping.keys()):
+                        all_available = False
+                        break
+        # If not all of the mass-checked enzymes have a found mass, ignore this reaction
+        if not all_available:
+            continue
+
+        # Retrieve the reaction&#39;s forward and reverse kcats from the given reaction&lt;-&gt;kcat database
+        if reaction_id in reactions_kcat_mapping_database.keys():
+            forward_kcat = reactions_kcat_mapping_database[reaction_id][&#34;forward&#34;]
+            reverse_kcat = reactions_kcat_mapping_database[reaction_id][&#34;reverse&#34;]
+        # If the reaction is not in the database, set the default kcat
+        else:
+            forward_kcat = default_kcat
+            reverse_kcat = default_kcat
+
+        # If the given reaction&lt;-&gt;kcat database contains math.nan as the reaction&#39;s kcat,
+        # set the default kcat as math.nan means that no kcat could be found.
+        if math.isnan(forward_kcat):
+            forward_kcat = default_kcat
+        if math.isnan(reverse_kcat):
+            reverse_kcat = default_kcat
+
+        # Add the given forward or reverse kcat is the reaction was
+        # splitted due to its reversibility.
+        # If the reaction is not splitted, add the forward kcat (this
+        # is the only possible direction for non-splitted=non-reversible
+        # reactions)
+        if model_reaction_id.endswith(id_addition + &#34;forward&#34;):
+            reaction_kcat = forward_kcat
+        elif model_reaction_id.endswith(id_addition + &#34;reverse&#34;):
+            reaction_kcat = reverse_kcat
+        else:
+            reaction_kcat = forward_kcat
+
+        # Add protein pool pseudo-metabolite depending on isozyme complex presence
+        stoichiometries = []
+        for isozyme_id in gene_rule:
+            # If it&#39;s not a complex :O...
+            if type(isozyme_id) is str:
+                # ...get the reaction ID without the additions...
+                reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
+
+                # ...get the number of units for this protein...
+                stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                # ...and determine the protein pool stoichiometry by
+                # 1) Multiplying the number of units for this protein with its mass (converted from kDa to mDa, since the reaction
+                #    flux is defined for mmol/(gDW*h) and not mol/(gDW*h))
+                stoichiometry *= (protein_id_mass_mapping[isozyme_id] / 1000)
+                # 2) Dividing it with the reaction&#39;s kcat (converted from 1/s to 1/h)
+                stoichiometry /= (reaction_kcat * 3600)
+                # 3) Setting the right direction (educt)
+                stoichiometry *= -1
+                stoichiometries.append(stoichiometry)
+
+                # Add proteomics constraints
+                if isozyme_id in protein_id_concentration_mapping.keys():
+                    enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+isozyme_id)
+                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                    stoichiometry *= 1 / (reaction_kcat * 3600)
+                    stoichiometry *= -1
+                    reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+            # If it is a complex :O...
+            else:
+                # ...convert the complex IDs to a hashable tuple (used for the stoichiometry selection)...
+                isozyme_id = tuple(isozyme_id)
+                stoichiometry = 0
+
+                # ...go through each single ID of the complex...
+                for single_id in isozyme_id:
+                    # ...get the reaction ID without additions...
+                    reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
+
+                    # ...get the number of units for this protein...
+                    single_stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                    # ...and determine the protein pool stoichiometry addition by
+                    # 1) Multiplying the number of units for this protein with its mass (converted from kDa to Da)
+                    single_stoichiometry *= (protein_id_mass_mapping[single_id] / 1000)
+                    # 2) Dividing it with the reaction&#39;s kcat (converted from 1/s to 1/h)
+                    single_stoichiometry /= (reaction_kcat * 3600)
+                    # 3) Setting the right direction (educt)
+                    single_stoichiometry *= -1
+                    # 4) and add it to the complex&#39;s stoichiometry
+                    stoichiometry += single_stoichiometry
+                # Add to list of stoichiometries
+                stoichiometries.append(stoichiometry)
+
+                # Add proteomics constraints
+                for single_id in isozyme_id:
+                    if single_id in protein_id_concentration_mapping.keys():
+                        enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+single_id)
+                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                        stoichiometry *= 1 / (reaction_kcat * 3600)
+                        stoichiometry *= -1
+                        reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+
+        # Take the maximal stoichiometry (i.e., the one with the least cost since this one will usually be prefered
+        # anyway in an FBA).
+        metabolites = {}
+        metabolites[prot_pool_metabolite] = max(stoichiometries)
+        reaction.add_metabolites(metabolites)
+
+    # Output as SBML (without constraints due to cobrapy limitations)
+    cobra.io.write_sbml_model(model, project_folder + output_sbml_name)</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.create_smoment_model_reaction_wise.create_smoment_model_reaction_wise_with_sbml"><code class="name flex">
+<span>def <span class="ident">create_smoment_model_reaction_wise_with_sbml</span></span>(<span>input_sbml_path, output_sbml_name, project_folder, project_name, excluded_reactions, type_of_default_kcat_selection='median')</span>
+</code></dt>
+<dd>
+<section class="desc"><p>See this module's create_smoment_model_reaction_wise()</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_smoment_model_reaction_wise_with_sbml(input_sbml_path: str, output_sbml_name: str,
+                                                 project_folder: str, project_name: str,
+                                                 excluded_reactions: List[str],
+                                                 type_of_default_kcat_selection: str = &#34;median&#34;) -&gt; None:
+    &#34;&#34;&#34;See this module&#39;s create_smoment_model_reaction_wise()&#34;&#34;&#34;
+    # Load SBML model
+    model: cobra.Model = cobra.io.read_sbml_model(input_sbml_path)
+    # Call gecko model creation function :D
+    create_smoment_model_reaction_wise(model, output_sbml_name,
+                                       project_folder, project_name,
+                                       excluded_reactions,
+                                       type_of_default_kcat_selection)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.create_smoment_model_reaction_wise.create_smoment_model_reaction_wise" href="#autopacmen.submodules.create_smoment_model_reaction_wise.create_smoment_model_reaction_wise">create_smoment_model_reaction_wise</a></code></li>
+<li><code><a title="autopacmen.submodules.create_smoment_model_reaction_wise.create_smoment_model_reaction_wise_with_sbml" href="#autopacmen.submodules.create_smoment_model_reaction_wise.create_smoment_model_reaction_wise_with_sbml">create_smoment_model_reaction_wise_with_sbml</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

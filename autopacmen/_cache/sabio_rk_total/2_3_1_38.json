@@ -1,0 +1,16 @@
+{
+    "REST": {
+        "Streptomyces collinus": [
+            0.0508333333,
+            0.0225
+        ]
+    },
+    "aacoa;coa": {
+        "Streptomyces collinus": [
+            40.0666667,
+            40.0666667,
+            36.1666667,
+            36.1666667
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "akg;accoa;h2o": {
+        "Saccharomyces cerevisiae": [
+            0.6
+        ],
+        "Thermus thermophilus": [
+            0.983333333,
+            1.53333333
+        ]
+    },
+    "accoa;h2o;oaa": {
+        "Saccharomyces cerevisiae": [
+            0.3
+        ]
+    }
+}

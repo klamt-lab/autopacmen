@@ -1,0 +1,32 @@
+{
+    "REST": {
+        "Aspergillus kawachi": [
+            990.0
+        ],
+        "Arabidopsis thaliana": [
+            0.87,
+            1.35
+        ],
+        "Bacillus subtilis": [
+            306.0,
+            295.0,
+            8.2,
+            22.0,
+            12.0,
+            0.87,
+            32.0,
+            88.0,
+            0.75,
+            2.3
+        ],
+        "Hordeum vulgare": [
+            15.0,
+            6.9
+        ],
+        "Bacteroides ovatus": [
+            0.057,
+            0.25,
+            0.057
+        ]
+    }
+}

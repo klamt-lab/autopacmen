@@ -1,0 +1,227 @@
+{
+    "accoa;gln__L": {
+        "Mycobacterium tuberculosis": [
+            3.3333333333333335,
+            3.3333333333333335,
+            3.3333333333333335
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            0.06,
+            3.56666667
+        ],
+        "Scutellaria baicalensis": [
+            0.012,
+            0.00883333333,
+            0.00383333333
+        ],
+        "Sorbus aucuparia": [
+            0.017,
+            0.029333333333333333,
+            0.037000000000000005,
+            0.0016666666666666668,
+            0.0045000000000000005,
+            0.014833333333333334,
+            0.007166666666666667
+        ],
+        "Medicago sativa": [
+            0.03683333333333333,
+            0.06183333333333333,
+            0.06816666666666667
+        ],
+        "Homo sapiens": [
+            2.66666667,
+            99.6
+        ],
+        "Mycobacterium tuberculosis": [
+            0.0883333333,
+            0.075,
+            0.08,
+            4000.0,
+            0.0233333333,
+            0.01,
+            0.0266666667,
+            3600.0,
+            7000.0
+        ],
+        "Streptomyces collinus": [
+            0.0508333333,
+            0.0225
+        ],
+        "Bacillus subtilis": [
+            0.073,
+            0.13,
+            1.4,
+            0.09,
+            12.0,
+            15.0,
+            17.0
+        ],
+        "Clarkia breweri": [
+            0.4,
+            4.6
+        ],
+        "Salvia splendens": [
+            8.7,
+            0.55,
+            0.76
+        ],
+        "Lysinibacillus sphaericus": [
+            0.5,
+            0.3
+        ],
+        "Erwinia carotovora": [
+            0.53,
+            1.52,
+            0.07,
+            1.7,
+            1.5
+        ],
+        "Leishmania major": [
+            24.0,
+            23.6
+        ],
+        "Trypanosoma brucei": [
+            18.2,
+            76.8
+        ],
+        "Zoogloea ramigera": [
+            256.0,
+            353.0,
+            266.0,
+            174.0,
+            177.0,
+            434.0,
+            469.0
+        ],
+        "Vitis labrusca": [
+            0.0058,
+            0.0035,
+            0.01,
+            0.022
+        ],
+        "Saccharomyces cerevisiae": [
+            1.7,
+            2e-05
+        ]
+    },
+    "oxadpcoa;coa": {
+        "Pseudomonas sp.": [
+            7.83333333
+        ]
+    },
+    "accoa;bzalc": {
+        "Clarkia breweri": [
+            17.5
+        ]
+    },
+    "aacoa;coa": {
+        "Streptomyces collinus": [
+            40.0666667,
+            40.0666667,
+            36.1666667,
+            36.1666667
+        ],
+        "Zoogloea ramigera": [
+            465.0
+        ]
+    },
+    "benzcoa;bzalc": {
+        "Vitis labrusca": [
+            0.045,
+            0.045
+        ],
+        "Clarkia breweri": [
+            4.0,
+            2.5
+        ]
+    },
+    "accoa;gam1p": {
+        "Escherichia coli": [
+            1500.0,
+            1350.0,
+            1500.0,
+            1350.0,
+            120.0
+        ]
+    },
+    "accoa;thr__L": {
+        "Escherichia coli": [
+            500.0
+        ]
+    },
+    "ser__L;ppcoa": {
+        "Escherichia coli": [
+            25.0
+        ]
+    },
+    "accoa;ser__L": {
+        "Escherichia coli": [
+            427.0,
+            2480.0,
+            1100.0,
+            2480.0,
+            2480.0,
+            2480.0
+        ],
+        "Haemophilus influenzae": [
+            3300.0,
+            3300.0,
+            1080.0,
+            2200.0,
+            1350.0
+        ],
+        "Arabidopsis thaliana": [
+            330.0,
+            330.0,
+            212.0,
+            212.0,
+            108.6,
+            108.6
+        ]
+    },
+    "coa;acser": {
+        "Escherichia coli": [
+            16.9,
+            1100.0
+        ],
+        "Haemophilus influenzae": [
+            420.0,
+            420.0,
+            300.0
+        ]
+    },
+    "actp;coa": {
+        "Methanosarcina thermophila": [
+            5252.0,
+            3226.0,
+            2434.0,
+            4110.0
+        ]
+    },
+    "h2o;ppcoa": {
+        "Erwinia carotovora": [
+            0.19
+        ]
+    },
+    "accoa;h2o": {
+        "Erwinia carotovora": [
+            0.043
+        ]
+    },
+    "accoa;gam6p": {
+        "Saccharomyces cerevisiae": [
+            0.2075
+        ],
+        "Homo sapiens": [
+            22.1,
+            9.0,
+            9.0
+        ],
+        "Aspergillus fumigatus": [
+            38.0,
+            38.0
+        ]
+    }
+}

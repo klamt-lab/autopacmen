@@ -1,0 +1,45 @@
+{
+    "REST": {
+        "Mesocricetus auratus": [
+            0.416666667,
+            0.85,
+            0.366666667,
+            0.00666666667,
+            0.005
+        ],
+        "Homo sapiens": [
+            0.0085,
+            0.00616666667,
+            0.000766666667
+        ]
+    },
+    "CE2209;nad": {
+        "Mesocricetus auratus": [
+            0.45
+        ]
+    },
+    "ahandrostan;h;nadh": {
+        "Mesocricetus auratus": [
+            0.00666666667
+        ]
+    },
+    "estrones;h;nadh": {
+        "Mesocricetus auratus": [
+            0.00666666667
+        ]
+    },
+    "CE2209;nadp": {
+        "Homo sapiens": [
+            0.0035,
+            0.00966666667,
+            0.00616666667,
+            0.00783333333,
+            0.0025
+        ]
+    },
+    "andrstandn;h;nadph": {
+        "Homo sapiens": [
+            0.00466666667
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+Carbon sources name	Maximum growth rate measured 	Maximum growth rate predicted by MOMENT	Maximum growth rate predicted by FBAwMC
+Acetate	0.29 ±0.02	0.300	0.549
+Glycerol	0.47 ±0.03	0.509	0.647
+Oxoglutarate	0.24 ±0.04	0.450	0.638
+L-Alanine	0.24 ±0.03	0.432	0.627
+Pyruvate	0.41 ±0.03	0.477	0.621
+Fructose	0.54 ±0.04	0.497	0.648
+Guanosine	0.37 ±0.03	0.589	0.685
+N-acetylglucosamine	0.61 ±0.03	0.518	0.666
+Fumarate	0.47 ±0.03	0.460	0.622
+Ribose	0.41 ±0.01	0.407	0.611
+L-Lactate	0.41 ±0.03	0.424	0.591
+Gluconate	0.68 ±0.03	0.513	0.639
+Sorbitol	0.48 ±0.03	0.479	0.647
+Glucosamine	0.4 ±0.03	0.497	0.662
+L-Malate	0.55 ±0.03	0.467	0.607
+Succinate	0.5 ±0.02	0.446	0.620
+Glucose	0.66 ±0.05	0.506	0.646
+Maltose	0.52 ±0.02	0.494	0.647
+Glucose 6-Phosphate	0.78 ±0.04	0.567	0.654
+Mannitol	0.61 ±0.03	0.461	0.637
+Trehalose	0.48 ±0.04	0.509	0.651
+Xylose	0.51 ±0.03	0.495	0.630
+Mannose	0.35 ±0.03	0.487	0.646
+Galactose	0.24 ±0.02	0.489	0.633

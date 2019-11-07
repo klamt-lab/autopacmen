@@ -1,0 +1,269 @@
+{
+    "REST": {
+        "Rattus norvegicus": [
+            25.0,
+            25.0,
+            9.5,
+            9.5,
+            25.0,
+            22.0,
+            26.0,
+            10.0,
+            56.0,
+            14.0,
+            17.0,
+            45.0,
+            4.0,
+            5.6,
+            25.0,
+            23.0,
+            21.0,
+            28.0,
+            16.0,
+            12.0,
+            10.0,
+            10.0,
+            41.0
+        ],
+        "Mus musculus": [
+            41.0,
+            42.0,
+            30.0,
+            20.0,
+            27.0,
+            24.0,
+            20.0,
+            21.0,
+            2.2,
+            3.0,
+            34.0,
+            41.0,
+            24.0,
+            23.0,
+            16.0,
+            16.0,
+            17.0,
+            15.0,
+            55.0
+        ],
+        "Mesocricetus auratus": [
+            30.0,
+            15.0,
+            26.0,
+            22.0,
+            58.0,
+            24.0,
+            17.0,
+            39.0,
+            2.1,
+            6.9,
+            27.0,
+            28.0,
+            22.0,
+            31.0,
+            23.0,
+            16.0,
+            28.0,
+            26.0,
+            44.0
+        ],
+        "Cavia porcellus": [
+            24.0,
+            13.0,
+            19.0,
+            9.1,
+            26.0,
+            30.0,
+            13.0,
+            23.0,
+            3.5,
+            6.9,
+            26.0,
+            76.0,
+            20.0,
+            32.0,
+            27.0,
+            15.0,
+            20.0,
+            23.0
+        ],
+        "Homo sapiens": [
+            1.6,
+            0.48,
+            2.5,
+            1.7,
+            2.0,
+            1.8,
+            1.1,
+            0.78,
+            0.73,
+            0.65,
+            1.5,
+            3.8,
+            0.52,
+            0.82,
+            0.52,
+            0.48,
+            0.6,
+            0.65,
+            1.5
+        ],
+        "Caenorhabditis elegans": [
+            246.66666666666666,
+            2.32,
+            85.82,
+            2.84
+        ],
+        "Trichoderma reesei": [
+            1.0
+        ]
+    },
+    "mthgxl;nadp": {
+        "Mus musculus": [
+            11.0
+        ],
+        "Rattus norvegicus": [
+            5.6
+        ],
+        "Mesocricetus auratus": [
+            6.9,
+            8.7
+        ],
+        "Homo sapiens": [
+            0.57
+        ]
+    },
+    "dha;h;nadph": {
+        "Mus musculus": [
+            3.3
+        ],
+        "Rattus norvegicus": [
+            5.1
+        ],
+        "Mesocricetus auratus": [
+            8.7
+        ],
+        "Cavia porcellus": [
+            3.8
+        ],
+        "Homo sapiens": [
+            0.23
+        ]
+    },
+    "h;eryth;nadph": {
+        "Rattus norvegicus": [
+            25.0
+        ],
+        "Mesocricetus auratus": [
+            25.0
+        ],
+        "Cavia porcellus": [
+            24.0
+        ],
+        "Homo sapiens": [
+            0.6
+        ],
+        "Caenorhabditis elegans": [
+            3.32
+        ]
+    },
+    "erthrs;h;nadph": {
+        "Mus musculus": [
+            18.0
+        ],
+        "Rattus norvegicus": [
+            18.0
+        ],
+        "Mesocricetus auratus": [
+            23.0
+        ],
+        "Cavia porcellus": [
+            28.0
+        ],
+        "Homo sapiens": [
+            0.43
+        ],
+        "Caenorhabditis elegans": [
+            1.8
+        ]
+    },
+    "rbl__D;h;nadph": {
+        "Mus musculus": [
+            26.0
+        ],
+        "Rattus norvegicus": [
+            19.0
+        ],
+        "Mesocricetus auratus": [
+            31.0
+        ],
+        "Cavia porcellus": [
+            7.8
+        ],
+        "Homo sapiens": [
+            0.52
+        ],
+        "Trichoderma reesei": [
+            8.24
+        ]
+    },
+    "xylu__D;h;nadph": {
+        "Mus musculus": [
+            7.4
+        ],
+        "Rattus norvegicus": [
+            18.0
+        ],
+        "Mesocricetus auratus": [
+            6.9
+        ],
+        "Cavia porcellus": [
+            19.0
+        ],
+        "Homo sapiens": [
+            0.1
+        ],
+        "Caenorhabditis elegans": [
+            1.22
+        ]
+    },
+    "xylu__L;nadph": {
+        "Mus musculus": [
+            37.0
+        ],
+        "Rattus norvegicus": [
+            39.0
+        ],
+        "Mesocricetus auratus": [
+            36.0
+        ],
+        "Cavia porcellus": [
+            37.0
+        ],
+        "Homo sapiens": [
+            0.65
+        ]
+    },
+    "h;xylu__L;nadph": {
+        "Trichoderma reesei": [
+            11.4,
+            7.75
+        ],
+        "Caenorhabditis elegans": [
+            4.98
+        ],
+        "Rattus norvegicus": [
+            9.83
+        ]
+    },
+    "sbt__D;nadp": {
+        "Trichoderma reesei": [
+            1.8
+        ]
+    },
+    "h;rbl__L;nadph": {
+        "Caenorhabditis elegans": [
+            0.49
+        ]
+    }
+}

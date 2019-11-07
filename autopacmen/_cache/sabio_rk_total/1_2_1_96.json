@@ -1,0 +1,18 @@
+{
+    "4hbald;h2o;nad": {
+        "Pseudomonas putida": [
+            0.0016666666666666668
+        ]
+    },
+    "4hbald;h2o;nadp": {
+        "Pseudomonas putida": [
+            0.26366666666666666
+        ]
+    },
+    "REST": {
+        "Pseudomonas putida": [
+            0.07116666666666666,
+            0.0016666666666666668
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "cyart;amet": {
+        "Glycine max": [
+            0.001
+        ]
+    },
+    "REST": {
+        "Glycine max": [
+            0.0001
+        ]
+    }
+}

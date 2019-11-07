@@ -1,0 +1,24 @@
+{
+    "tyr__L": {
+        "Rhodobacter sphaeroides": [
+            3.4,
+            0.02,
+            4.32
+        ],
+        "Arabidopsis thaliana": [
+            0.084
+        ],
+        "Rhodobacter capsulatus": [
+            0.06
+        ]
+    },
+    "phe__L": {
+        "Rhodobacter sphaeroides": [
+            0.01,
+            13.1
+        ],
+        "Rhodobacter capsulatus": [
+            0.04
+        ]
+    }
+}

@@ -1,0 +1,438 @@
+{
+    "REST": {
+        "Saccharomyces cerevisiae": [
+            4.5,
+            9.0,
+            3.4,
+            7.9,
+            6.8,
+            7.0,
+            4.2,
+            3.09,
+            3.35,
+            4.2,
+            2.55,
+            8.1
+        ],
+        "Yersinia enterocolitica": [
+            345.0,
+            285.0,
+            46.6,
+            3.84,
+            283.0,
+            277.0,
+            278.0,
+            816.0
+        ],
+        "Bacillus subtilis": [
+            0.017,
+            0.016,
+            0.061,
+            0.06,
+            0.028,
+            0.022
+        ],
+        "Bos taurus": [
+            15.0,
+            29.2
+        ],
+        "Mus musculus": [
+            56.0
+        ],
+        "Homo sapiens": [
+            0.9,
+            0.904,
+            2.9,
+            3.2,
+            0.4,
+            5.2,
+            5.1,
+            0.136,
+            0.24,
+            0.35,
+            1.52,
+            1.25,
+            1.0,
+            0.0061,
+            0.6,
+            53.0,
+            0.45,
+            62.0,
+            198.0,
+            0.0094,
+            0.06,
+            0.013,
+            109.0,
+            121.0
+        ],
+        "Arabidopsis thaliana": [
+            0.15,
+            1.76
+        ],
+        "Staphylococcus aureus": [
+            0.00883333333
+        ],
+        "Rattus norvegicus": [
+            0.84,
+            1.61,
+            0.013
+        ],
+        "Escherichia coli": [
+            0.0,
+            0.56,
+            3.55,
+            4.9,
+            4.1,
+            5.93,
+            7.0,
+            9.84,
+            10.0,
+            26.0,
+            27.0,
+            156.0,
+            29.0,
+            31.0,
+            33.0,
+            37.0,
+            38.0,
+            39.0,
+            43.0,
+            44.4,
+            44.0,
+            60.0,
+            61.0,
+            69.0,
+            71.0,
+            73.0,
+            79.0,
+            80.5,
+            81.0,
+            80.0,
+            91.0,
+            101.0
+        ],
+        "Salmonella typhimurium": [
+            62.0
+        ],
+        "Drosophila melanogaster": [
+            6.3
+        ],
+        "Semliki forest virus": [
+            0.09166666666666666
+        ],
+        "Corynebacterium glutamicum": [
+            3.2
+        ],
+        "Sus scrofa": [
+            22.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            2.7,
+            7.0
+        ],
+        "Archaeoglobus fulgidus": [
+            2.7
+        ],
+        "Thermotoga maritima": [
+            268.0
+        ],
+        "Chromobacterium violaceum": [
+            0.05,
+            3.3,
+            4.2,
+            5.4,
+            5.2,
+            7.1,
+            8.6,
+            9.4,
+            4.3,
+            11.6,
+            12.3
+        ],
+        "Schizosaccharomyces pombe": [
+            0.00054,
+            5.48,
+            7.48,
+            7.28,
+            9.64,
+            10.5,
+            11.0,
+            11.2,
+            41.2,
+            0.00404
+        ],
+        "Spinacia oleracea": [
+            0.42,
+            21.0
+        ],
+        "Oryctolagus cuniculus": [
+            39.0
+        ]
+    },
+    "h2o;tyrp": {
+        "Bos taurus": [
+            14.6,
+            11.9
+        ]
+    },
+    "amp;h2o": {
+        "Escherichia coli": [
+            4.9,
+            750.0,
+            23.0
+        ],
+        "Homo sapiens": [
+            0.04
+        ],
+        "Drosophila melanogaster": [
+            0.28
+        ]
+    },
+    "gmp;h2o": {
+        "Escherichia coli": [
+            65.0,
+            11.0
+        ],
+        "Homo sapiens": [
+            0.07
+        ],
+        "Drosophila melanogaster": [
+            0.88
+        ]
+    },
+    "h2o;ump": {
+        "Escherichia coli": [
+            34.2,
+            61.0
+        ],
+        "Homo sapiens": [
+            6.2
+        ],
+        "Drosophila melanogaster": [
+            2.3
+        ]
+    },
+    "cmp;h2o": {
+        "Escherichia coli": [
+            26.0
+        ],
+        "Homo sapiens": [
+            19.0,
+            7.0
+        ],
+        "Drosophila melanogaster": [
+            12.0
+        ]
+    },
+    "damp;h2o": {
+        "Escherichia coli": [
+            0.3,
+            14.0
+        ]
+    },
+    "dgmp;h2o": {
+        "Escherichia coli": [
+            8.04,
+            0.2,
+            15.0
+        ]
+    },
+    "dump;h2o": {
+        "Escherichia coli": [
+            24.0,
+            0.23,
+            21.4
+        ]
+    },
+    "dcmp;h2o": {
+        "Escherichia coli": [
+            0.23,
+            26.0
+        ]
+    },
+    "glyc2p;h2o": {
+        "Escherichia coli": [
+            2.9
+        ]
+    },
+    "atp;h2o": {
+        "Homo sapiens": [
+            119.0
+        ]
+    },
+    "h2o;utp": {
+        "Homo sapiens": [
+            119.0
+        ]
+    },
+    "gtp;h2o": {
+        "Homo sapiens": [
+            113.0
+        ]
+    },
+    "dttp;h2o": {
+        "Homo sapiens": [
+            107.0
+        ]
+    },
+    "ctp;h2o": {
+        "Homo sapiens": [
+            93.0
+        ]
+    },
+    "gdp;h2o": {
+        "Homo sapiens": [
+            86.0
+        ]
+    },
+    "h2o;udp": {
+        "Homo sapiens": [
+            79.0
+        ]
+    },
+    "adp;h2o": {
+        "Homo sapiens": [
+            73.0
+        ]
+    },
+    "h2o;tdp": {
+        "Homo sapiens": [
+            69.0
+        ]
+    },
+    "cdp;h2o": {
+        "Homo sapiens": [
+            58.0
+        ]
+    },
+    "h2o;pep": {
+        "Homo sapiens": [
+            2.0
+        ]
+    },
+    "2pglyc;h2o": {
+        "Escherichia coli": [
+            94.0
+        ]
+    },
+    "5aprbu;h2o": {
+        "Bacillus subtilis": [
+            5.566666666666666,
+            0.8833333333333333,
+            0.65
+        ]
+    },
+    "fdp;h2o": {
+        "Sus scrofa": [
+            21.0,
+            21.0,
+            21.0,
+            21.0,
+            21.0,
+            21.0,
+            21.0,
+            21.0,
+            18.4,
+            18.4,
+            18.4,
+            18.4,
+            19.0,
+            22.0,
+            22.0,
+            22.0,
+            22.0,
+            21.0,
+            9.1,
+            12.5,
+            12.5,
+            18.0,
+            18.0,
+            20.0
+        ],
+        "Escherichia coli": [
+            24.0,
+            8.0,
+            26.0,
+            24.0,
+            8.0,
+            26.0,
+            24.0,
+            8.0,
+            26.0,
+            24.0,
+            24.0
+        ],
+        "Homo sapiens": [
+            23.4,
+            20.8,
+            23.4,
+            20.8
+        ],
+        "Spinacia oleracea": [
+            125.0
+        ]
+    },
+    "h2o;pser__L": {
+        "Escherichia coli": [
+            1.43
+        ]
+    },
+    "dtmp;h2o": {
+        "Escherichia coli": [
+            0.16,
+            30.4
+        ]
+    },
+    "dimp;h2o": {
+        "Escherichia coli": [
+            0.24
+        ]
+    },
+    "pap;h2o": {
+        "Chromobacterium violaceum": [
+            22.0
+        ],
+        "Thermus thermophilus": [
+            95.0
+        ],
+        "Mycoplasma pneumoniae": [
+            0.75
+        ]
+    },
+    "h2o;minohp": {
+        "Bacillus subtilis": [
+            5.166666666666667,
+            1.7833333333333332
+        ]
+    },
+    "mi1p__D;h2o": {
+        "Homo sapiens": [
+            22.0,
+            22.0
+        ],
+        "Methanocaldococcus jannaschii": [
+            4.2,
+            1.5
+        ],
+        "Archaeoglobus fulgidus": [
+            2.5
+        ],
+        "Thermotoga maritima": [
+            207.0
+        ],
+        "Escherichia coli": [
+            6.5
+        ]
+    },
+    "g6p;h2o": {
+        "Homo sapiens": [
+            1.6
+        ]
+    },
+    "h2o;s17bp": {
+        "Spinacia oleracea": [
+            0.84,
+            81.0
+        ]
+    }
+}

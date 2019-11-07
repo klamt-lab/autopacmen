@@ -1,0 +1,29 @@
+{
+    "f6p;ppi": {
+        "Propionibacterium freudenreichii subsp. shermanii": [
+            284.0
+        ],
+        "Entamoeba histolytica": [
+            626.0,
+            235.0,
+            626.0,
+            235.0
+        ]
+    },
+    "fdp;pi": {
+        "Entamoeba histolytica": [
+            823.0,
+            710.0,
+            823.0,
+            710.0
+        ]
+    },
+    "REST": {
+        "Borrelia burgdorferi": [
+            80.0
+        ],
+        "Entamoeba histolytica": [
+            325.0
+        ]
+    }
+}

@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.get_initial_spreadsheets API documentation</title>
+<meta name="description" content="get_initial_spreadsheets.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.get_initial_spreadsheets</code></h1>
+</header>
+<section id="section-intro">
+<p>get_initial_spreadsheets.py</p>
+<p>This module contains functions which allow to genreate 'initial spreadsheets', i.e.
+spreadsheets in which the user may enter necessary information for the generation of
+AutoPACMEN models.
+This is typically the first script that is used in the course of a AutoPACMEN
+workflow, after the wanted SBML model was selected and generated.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;get_initial_spreadsheets.py
+
+This module contains functions which allow to genreate &#39;initial spreadsheets&#39;, i.e.
+spreadsheets in which the user may enter necessary information for the generation of
+AutoPACMEN models.
+This is typically the first script that is used in the course of a AutoPACMEN
+workflow, after the wanted SBML model was selected and generated.
+&#34;&#34;&#34;
+
+# IMPORTS
+# External modules
+import cobra
+import xlsxwriter
+from typing import Any, Dict, List, Union
+# Internal modules
+from submodules.kegg import kegg_rest_get_batch
+from submodules.helper_general import standardize_folder
+
+
+# INTERNAL FUNCTIONS SECTION
+def _gene_rule_as_list(gene_rule: str) -&gt; List[Any]:
+    &#34;&#34;&#34;Returns a given string gene rule in list form.
+
+    I.e. (b0001 or b0002) and b0003 is returned as
+    [[&#34;b0001&#34;, &#34;b0002&#34;], &#34;b0003&#34;]
+
+    Arguments:
+    *gene_rule: str ~ The gene rule which shall be converted into the list form.
+    &#34;&#34;&#34;
+    # Gene rules: Only ) or (, (in blocks only and); No ) and (
+    gene_rule_blocks = gene_rule.split(&#34; ) or ( &#34;)
+    gene_rule_blocks = [x.replace(&#34;(&#34;, &#34;&#34;).replace(&#34;)&#34;, &#34;&#34;) for x in gene_rule_blocks]
+    gene_rules_array: List[Union[str, List[str]]] = []
+    for block in gene_rule_blocks:
+        if &#34; or &#34; in block:
+            block_list = block.split(&#34; or &#34;)
+            block_list = [x.lstrip().rstrip() for x in block_list]
+            gene_rules_array += block_list
+        elif &#34; and &#34; in block:
+            block_list = block.split(&#34; and &#34;)
+            block_list = [x.lstrip().rstrip() for x in block_list]
+            gene_rules_array.append(block_list)
+        else:  # single enzyme
+            gene_rules_array.append(block)
+    return gene_rules_array
+
+
+# PUBLIC FUNCTIONS SECTION
+def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_name: str) -&gt; None:
+    &#34;&#34;&#34;Creates a number of initially needed XLSX spreadsheets in the given folder.
+
+    Output
+    ----------
+    The following spreadsheets are going to be created (all file names start with project_name+&#34;_&#34;):
+    * reactions.xlsx ~ A list of all KEGG IDs for each reaction of the model, the user can then select
+      one of the given KEGG IDs. It is checked (using the KEGG REST API) if a reaction does not occur
+      in any KEGG pathway, and such reactions are automatically marked as not included.
+    * metabolites.xlsx ~ A list of all KEGG IDs for each metabolite of the model, the user can then select
+      one of the given KEGG IDs. It is checked (using the KEGG REST API) if a metabolite does not occur
+      in any KEGG reaction, and such metabolites are automatically marked as not included.
+    * compartments.xlsx ~ A list of the model&#39;s compartments, which allows the user to set
+      a pH and ionic strength value for each of them. THis data is used for the calculation of
+      thermodaynamic data.
+    * metabolite_concentration.xlsx ~ Allows to set default maximal and minimal metabolite
+      concentrations (used in THermoFBA or OptMDFPathway in CellNetAnalyzer) for each of the
+      model&#39;s metabolites.
+    * protein_data.xlsx ~ Allows to set the total protein pool as well as single protein concentrations
+      of the model&#39;s proteins.
+    * protein_data.xlsx ~ Allows to set the total protein pool as well as single protein concentrations
+      of the model&#39;s proteins.
+    * enzyme_stoichiometries.xlsx ~ Allows to set the internal stoichiometries for each enzyme of a given reaction.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The cobrapy model for which the initial spreadsheets will be created.
+    * project_folder: str ~ In this folder, all XLSX files will be stored.
+    * project_name: str ~ This project name is added before each XLSX file name.
+    &#34;&#34;&#34;
+    # Standardize project folder
+    project_folder = standardize_folder(project_folder)
+
+    # Get basepath for all spreadsheets
+    basepath = project_folder + project_name
+
+    # GET REACTION KEGG IDS AND AMBIGUITIES
+    reaction_id_kegg_id_mapping: Dict[str, str] = {}
+    reaction_id_reaction_name_mapping: Dict[str, str] = {}
+    reaction_id_eligible_ids_mapping: Dict[str, str] = {}
+    for reaction in model.reactions:
+        if &#34;kegg.reaction&#34; not in reaction.annotation.keys():
+            print(f&#34;INFO: Reaction {reaction.id} does not have a KEGG ID annotation&#34;)
+            continue
+        kegg_ids = reaction.annotation[&#34;kegg.reaction&#34;]
+        if type(kegg_ids) is str:  # Single ID :O
+            kegg_ids = [kegg_ids]
+        else:  # Multiple IDs :O
+            entries = kegg_rest_get_batch(kegg_ids, batch_size=len(kegg_ids))
+            i = 0
+            eligible_ids = []
+            for entry in entries:
+                entry_as_str = &#34;&#34;.join(entry)
+                if &#34;PATHWAY&#34; in entry_as_str:
+                    eligible_ids.append(kegg_ids[i])
+                i += 1
+            if len(eligible_ids) == 1:
+                reaction_id_eligible_ids_mapping[reaction.id] = eligible_ids[0]
+
+        reaction_id_kegg_id_mapping[reaction.id] = kegg_ids
+        reaction_id_reaction_name_mapping[reaction.id] = reaction.name
+
+    # GET METABOLITE KEGG IDS AND AMBIGUITIES
+    metabolite_id_kegg_id_mapping: Dict[str, str] = {}
+    metabolite_id_metabolite_name_mapping: Dict[str, str] = {}
+    metabolite_name_eligible_ids_mapping: Dict[str, str] = {}
+    searched_metabolites: List[str] = []
+    for metabolite in model.metabolites:
+        if &#34;kegg.compound&#34; not in metabolite.annotation.keys():
+            print(f&#34;INFO: Metabolite {metabolite.id} does not have a KEGG ID annotation&#34;)
+            continue
+        kegg_ids = metabolite.annotation[&#34;kegg.compound&#34;]
+        if type(kegg_ids) is str:  # Single ID :O
+            kegg_ids = [kegg_ids]
+        else:  # Multiple IDs :O
+            if metabolite.name not in searched_metabolites:
+                entries = kegg_rest_get_batch(kegg_ids, batch_size=len(kegg_ids))
+                i = 0
+                eligible_ids = []
+                for entry in entries:
+                    entry_as_str = &#34;&#34;.join(entry)
+                    if &#34;REACTION&#34; in entry_as_str:
+                        eligible_ids.append(kegg_ids[i])
+                    i += 1
+                if len(eligible_ids) == 1:
+                    metabolite_name_eligible_ids_mapping[metabolite.name] = eligible_ids[0]
+                searched_metabolites.append(metabolite.name)
+        metabolite_id_kegg_id_mapping[metabolite.id] = kegg_ids
+        metabolite_id_metabolite_name_mapping[metabolite.id] = metabolite.name
+
+    # Reactions &lt;-&gt; KEGG ID mapping XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_reactions.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Reaction IDs&#34;)
+
+    yellow = workbook.add_format()
+    yellow.set_bg_color(&#34;#FFFF00&#34;)
+    blue = workbook.add_format()
+    blue.set_bg_color(&#34;#FF00FF&#34;)
+
+    row = 0
+    for key in reaction_id_reaction_name_mapping.keys():
+        worksheet.write(row, 0, key)
+        worksheet.write(row, 1, reaction_id_reaction_name_mapping[key])
+        column = 2
+        kegg_ids = reaction_id_kegg_id_mapping[key]
+        for kegg_id in kegg_ids:
+            if len(kegg_ids) == 1:
+                worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id)
+                worksheet.write(row, column+1, kegg_id)
+                worksheet.write(row, column+2, &#34;Yes&#34;)
+            else:
+                if key in reaction_id_eligible_ids_mapping.keys():
+                    if kegg_id == reaction_id_eligible_ids_mapping[key]:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                        worksheet.write(row, column+2, &#34;Yes&#34;)
+                    else:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                else:
+                    worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id, yellow)
+                    worksheet.write(row, column+1, kegg_id, yellow)
+            column += 3
+        row += 1
+    workbook.close()
+
+    # Metabolites&lt;-&gt;KEGG ID mapping XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_metabolites.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Metabolite IDs&#34;)
+
+    yellow = workbook.add_format()
+    yellow.set_bg_color(&#34;#FFFF00&#34;)
+    blue = workbook.add_format()
+    blue.set_bg_color(&#34;#FF00FF&#34;)
+
+    row = 0
+    for key in metabolite_id_metabolite_name_mapping.keys():
+        metabolite_name = metabolite_id_metabolite_name_mapping[key]
+        worksheet.write(row, 0, key)
+        worksheet.write(row, 1, metabolite_name)
+        column = 2
+        kegg_ids = metabolite_id_kegg_id_mapping[key]
+        for kegg_id in kegg_ids:
+            if len(kegg_ids) == 1:
+                worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id)
+                worksheet.write(row, column+1, kegg_id)
+                worksheet.write(row, column+2, &#34;Yes&#34;)
+            else:
+                if metabolite_name in metabolite_name_eligible_ids_mapping.keys():
+                    if kegg_id == metabolite_name_eligible_ids_mapping[metabolite_name]:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                        worksheet.write(row, column+2, &#34;Yes&#34;)
+                    else:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                else:
+                    worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id, yellow)
+                    worksheet.write(row, column+1, kegg_id, yellow)
+            column += 3
+        row += 1
+    workbook.close()
+
+    # Compartment data XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_compartments.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Compartment pH&#34;)
+
+    row = 0
+    for compartment_key in model.compartments.keys():
+        compartment_name = model.compartments[compartment_key]
+        worksheet.write(row, 0, compartment_key)
+        worksheet.write(row, 1, compartment_name)
+        worksheet.write(row, 2, &#34;NA&#34;)
+        worksheet.write(row, 3, &#34;NA&#34;)
+        row += 1
+    workbook.close()
+
+    # Protein data XLSX :D
+    print(&#34;NOTE: &#34;+project_name+&#34;_protein_data.xlsx has as default value for the enzyme pool P 0.095 mmol/gDW.&#34;)
+    print(&#34;Please adjust the value accordingly for your model!&#34;)
+    workbook = xlsxwriter.Workbook(basepath+&#34;_protein_data.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Total protein data&#34;)
+    worksheet.write(0, 0, &#34;Total protein content [g/gDW]:&#34;)
+    worksheet.write(0, 1, .095)
+    worksheet.write(1, 0, &#34;Fraction of masses of model-included enzymes in comparison to all enzymes (0.0 to 1.0):&#34;)
+    worksheet.write(1, 1, 1.0)
+    worksheet.write(2, 0, &#34;Average saturation level (0.0 to 1.0):&#34;)
+    worksheet.write(2, 0, 1.0)
+    worksheet2 = workbook.add_worksheet(&#34;Single protein data&#34;)
+    worksheet2.write(0, 0, &#34;Protein ID (as in SBML model)&#34;)
+    worksheet2.write(0, 1, &#34;Protein concentration [mmol/gDW]&#34;)
+    workbook.close()
+
+    # Metabolite concentrations XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_metabolite_concentrations.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Default data&#34;)
+    worksheet.write(0, 0, &#34;Default minimal metabolite concentration [M]:&#34;)
+    worksheet.write(1, 0, &#34;Default maximal metabolite concentration [M]:&#34;)
+    worksheet2 = workbook.add_worksheet(&#34;Single metabolite data&#34;)
+    worksheet2.write(0, 0, &#34;Metabolite ID (as in SBML model)&#34;)
+    worksheet2.write(0, 1, &#34;Minimal metabolite concentration [M]&#34;)
+    worksheet2.write(0, 2, &#34;Maximal metabolite concentration [M]&#34;)
+    workbook.close()
+
+    # Enzyme stoichiometry XLSX :D
+    # Get gene rule &lt;-&gt; Reaction ID mapping
+    reaction_id_gene_rules_mapping = {}
+    for reaction in model.reactions:
+        listed_gene_rules = _gene_rule_as_list(reaction.gene_reaction_rule)
+        if listed_gene_rules != [&#39;&#39;]:
+            reaction_id_gene_rules_mapping[reaction.id] = listed_gene_rules
+
+    # Write XLSX
+    workbook = xlsxwriter.Workbook(basepath+&#34;_enzyme_stoichiometries.xlsx&#34;)
+    # Gene stoichiometry worksheets
+    worksheet_stoichiometry = workbook.add_worksheet(&#34;Stoichiometries of complexes&#34;)
+    line = 0
+    for reaction_id in reaction_id_gene_rules_mapping.keys():
+        gene_rule = reaction_id_gene_rules_mapping[reaction_id]
+        if gene_rule == [&#34;&#34;]:
+            continue
+        worksheet_stoichiometry.write(line, 0, reaction_id)
+        row = 1
+        for or_part in gene_rule:
+            worksheet_stoichiometry.write(line, row, str(or_part))
+            if type(or_part) is str:
+                default_stoichiometry = &#34;1&#34;
+            else:
+                default_stoichiometry = &#34;;&#34;.join([&#34;1&#34; for _ in range(len(or_part))])
+            worksheet_stoichiometry.write(line, row+1, default_stoichiometry)
+            row += 2
+        line += 1
+
+    workbook.close()
+
+
+def get_initial_spreadsheets_with_sbml(sbml_path: str, project_folder: str, project_name: str) -&gt; None:
+    &#34;&#34;&#34;Allows to call get_initial_spreadsheets with an SBML.
+
+    Arguments
+    ----------
+    * sbml_path: str ~ The SBML of the analyzed model.
+    * project_folder: str ~ In this folder, all XLSX files will be stored.
+    * project_name: str ~ This project name is added before each XLSX file name.
+    &#34;&#34;&#34;
+    # LOAD SBML MODEL
+    model: cobra.Model = cobra.io.read_sbml_model(sbml_path)
+    get_initial_spreadsheets(model, project_folder, project_name)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.get_initial_spreadsheets.get_initial_spreadsheets"><code class="name flex">
+<span>def <span class="ident">get_initial_spreadsheets</span></span>(<span>model, project_folder, project_name)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Creates a number of initially needed XLSX spreadsheets in the given folder.</p>
+<h2 id="output">Output</h2>
+<p>The following spreadsheets are going to be created (all file names start with project_name+"_"):
+* reactions.xlsx ~ A list of all KEGG IDs for each reaction of the model, the user can then select
+one of the given KEGG IDs. It is checked (using the KEGG REST API) if a reaction does not occur
+in any KEGG pathway, and such reactions are automatically marked as not included.
+* metabolites.xlsx ~ A list of all KEGG IDs for each metabolite of the model, the user can then select
+one of the given KEGG IDs. It is checked (using the KEGG REST API) if a metabolite does not occur
+in any KEGG reaction, and such metabolites are automatically marked as not included.
+* compartments.xlsx ~ A list of the model's compartments, which allows the user to set
+a pH and ionic strength value for each of them. THis data is used for the calculation of
+thermodaynamic data.
+* metabolite_concentration.xlsx ~ Allows to set default maximal and minimal metabolite
+concentrations (used in THermoFBA or OptMDFPathway in CellNetAnalyzer) for each of the
+model's metabolites.
+* protein_data.xlsx ~ Allows to set the total protein pool as well as single protein concentrations
+of the model's proteins.
+* protein_data.xlsx ~ Allows to set the total protein pool as well as single protein concentrations
+of the model's proteins.
+* enzyme_stoichiometries.xlsx ~ Allows to set the internal stoichiometries for each enzyme of a given reaction.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The cobrapy model for which the initial spreadsheets will be created.</li>
+<li>project_folder: str ~ In this folder, all XLSX files will be stored.</li>
+<li>project_name: str ~ This project name is added before each XLSX file name.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_name: str) -&gt; None:
+    &#34;&#34;&#34;Creates a number of initially needed XLSX spreadsheets in the given folder.
+
+    Output
+    ----------
+    The following spreadsheets are going to be created (all file names start with project_name+&#34;_&#34;):
+    * reactions.xlsx ~ A list of all KEGG IDs for each reaction of the model, the user can then select
+      one of the given KEGG IDs. It is checked (using the KEGG REST API) if a reaction does not occur
+      in any KEGG pathway, and such reactions are automatically marked as not included.
+    * metabolites.xlsx ~ A list of all KEGG IDs for each metabolite of the model, the user can then select
+      one of the given KEGG IDs. It is checked (using the KEGG REST API) if a metabolite does not occur
+      in any KEGG reaction, and such metabolites are automatically marked as not included.
+    * compartments.xlsx ~ A list of the model&#39;s compartments, which allows the user to set
+      a pH and ionic strength value for each of them. THis data is used for the calculation of
+      thermodaynamic data.
+    * metabolite_concentration.xlsx ~ Allows to set default maximal and minimal metabolite
+      concentrations (used in THermoFBA or OptMDFPathway in CellNetAnalyzer) for each of the
+      model&#39;s metabolites.
+    * protein_data.xlsx ~ Allows to set the total protein pool as well as single protein concentrations
+      of the model&#39;s proteins.
+    * protein_data.xlsx ~ Allows to set the total protein pool as well as single protein concentrations
+      of the model&#39;s proteins.
+    * enzyme_stoichiometries.xlsx ~ Allows to set the internal stoichiometries for each enzyme of a given reaction.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The cobrapy model for which the initial spreadsheets will be created.
+    * project_folder: str ~ In this folder, all XLSX files will be stored.
+    * project_name: str ~ This project name is added before each XLSX file name.
+    &#34;&#34;&#34;
+    # Standardize project folder
+    project_folder = standardize_folder(project_folder)
+
+    # Get basepath for all spreadsheets
+    basepath = project_folder + project_name
+
+    # GET REACTION KEGG IDS AND AMBIGUITIES
+    reaction_id_kegg_id_mapping: Dict[str, str] = {}
+    reaction_id_reaction_name_mapping: Dict[str, str] = {}
+    reaction_id_eligible_ids_mapping: Dict[str, str] = {}
+    for reaction in model.reactions:
+        if &#34;kegg.reaction&#34; not in reaction.annotation.keys():
+            print(f&#34;INFO: Reaction {reaction.id} does not have a KEGG ID annotation&#34;)
+            continue
+        kegg_ids = reaction.annotation[&#34;kegg.reaction&#34;]
+        if type(kegg_ids) is str:  # Single ID :O
+            kegg_ids = [kegg_ids]
+        else:  # Multiple IDs :O
+            entries = kegg_rest_get_batch(kegg_ids, batch_size=len(kegg_ids))
+            i = 0
+            eligible_ids = []
+            for entry in entries:
+                entry_as_str = &#34;&#34;.join(entry)
+                if &#34;PATHWAY&#34; in entry_as_str:
+                    eligible_ids.append(kegg_ids[i])
+                i += 1
+            if len(eligible_ids) == 1:
+                reaction_id_eligible_ids_mapping[reaction.id] = eligible_ids[0]
+
+        reaction_id_kegg_id_mapping[reaction.id] = kegg_ids
+        reaction_id_reaction_name_mapping[reaction.id] = reaction.name
+
+    # GET METABOLITE KEGG IDS AND AMBIGUITIES
+    metabolite_id_kegg_id_mapping: Dict[str, str] = {}
+    metabolite_id_metabolite_name_mapping: Dict[str, str] = {}
+    metabolite_name_eligible_ids_mapping: Dict[str, str] = {}
+    searched_metabolites: List[str] = []
+    for metabolite in model.metabolites:
+        if &#34;kegg.compound&#34; not in metabolite.annotation.keys():
+            print(f&#34;INFO: Metabolite {metabolite.id} does not have a KEGG ID annotation&#34;)
+            continue
+        kegg_ids = metabolite.annotation[&#34;kegg.compound&#34;]
+        if type(kegg_ids) is str:  # Single ID :O
+            kegg_ids = [kegg_ids]
+        else:  # Multiple IDs :O
+            if metabolite.name not in searched_metabolites:
+                entries = kegg_rest_get_batch(kegg_ids, batch_size=len(kegg_ids))
+                i = 0
+                eligible_ids = []
+                for entry in entries:
+                    entry_as_str = &#34;&#34;.join(entry)
+                    if &#34;REACTION&#34; in entry_as_str:
+                        eligible_ids.append(kegg_ids[i])
+                    i += 1
+                if len(eligible_ids) == 1:
+                    metabolite_name_eligible_ids_mapping[metabolite.name] = eligible_ids[0]
+                searched_metabolites.append(metabolite.name)
+        metabolite_id_kegg_id_mapping[metabolite.id] = kegg_ids
+        metabolite_id_metabolite_name_mapping[metabolite.id] = metabolite.name
+
+    # Reactions &lt;-&gt; KEGG ID mapping XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_reactions.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Reaction IDs&#34;)
+
+    yellow = workbook.add_format()
+    yellow.set_bg_color(&#34;#FFFF00&#34;)
+    blue = workbook.add_format()
+    blue.set_bg_color(&#34;#FF00FF&#34;)
+
+    row = 0
+    for key in reaction_id_reaction_name_mapping.keys():
+        worksheet.write(row, 0, key)
+        worksheet.write(row, 1, reaction_id_reaction_name_mapping[key])
+        column = 2
+        kegg_ids = reaction_id_kegg_id_mapping[key]
+        for kegg_id in kegg_ids:
+            if len(kegg_ids) == 1:
+                worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id)
+                worksheet.write(row, column+1, kegg_id)
+                worksheet.write(row, column+2, &#34;Yes&#34;)
+            else:
+                if key in reaction_id_eligible_ids_mapping.keys():
+                    if kegg_id == reaction_id_eligible_ids_mapping[key]:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                        worksheet.write(row, column+2, &#34;Yes&#34;)
+                    else:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                else:
+                    worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?rn:&#34;+kegg_id, yellow)
+                    worksheet.write(row, column+1, kegg_id, yellow)
+            column += 3
+        row += 1
+    workbook.close()
+
+    # Metabolites&lt;-&gt;KEGG ID mapping XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_metabolites.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Metabolite IDs&#34;)
+
+    yellow = workbook.add_format()
+    yellow.set_bg_color(&#34;#FFFF00&#34;)
+    blue = workbook.add_format()
+    blue.set_bg_color(&#34;#FF00FF&#34;)
+
+    row = 0
+    for key in metabolite_id_metabolite_name_mapping.keys():
+        metabolite_name = metabolite_id_metabolite_name_mapping[key]
+        worksheet.write(row, 0, key)
+        worksheet.write(row, 1, metabolite_name)
+        column = 2
+        kegg_ids = metabolite_id_kegg_id_mapping[key]
+        for kegg_id in kegg_ids:
+            if len(kegg_ids) == 1:
+                worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id)
+                worksheet.write(row, column+1, kegg_id)
+                worksheet.write(row, column+2, &#34;Yes&#34;)
+            else:
+                if metabolite_name in metabolite_name_eligible_ids_mapping.keys():
+                    if kegg_id == metabolite_name_eligible_ids_mapping[metabolite_name]:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                        worksheet.write(row, column+2, &#34;Yes&#34;)
+                    else:
+                        worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id, blue)
+                        worksheet.write(row, column+1, kegg_id, blue)
+                else:
+                    worksheet.write_url(row, column, &#34;https://www.kegg.jp/dbget-bin/www_bget?cpd:&#34;+kegg_id, yellow)
+                    worksheet.write(row, column+1, kegg_id, yellow)
+            column += 3
+        row += 1
+    workbook.close()
+
+    # Compartment data XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_compartments.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Compartment pH&#34;)
+
+    row = 0
+    for compartment_key in model.compartments.keys():
+        compartment_name = model.compartments[compartment_key]
+        worksheet.write(row, 0, compartment_key)
+        worksheet.write(row, 1, compartment_name)
+        worksheet.write(row, 2, &#34;NA&#34;)
+        worksheet.write(row, 3, &#34;NA&#34;)
+        row += 1
+    workbook.close()
+
+    # Protein data XLSX :D
+    print(&#34;NOTE: &#34;+project_name+&#34;_protein_data.xlsx has as default value for the enzyme pool P 0.095 mmol/gDW.&#34;)
+    print(&#34;Please adjust the value accordingly for your model!&#34;)
+    workbook = xlsxwriter.Workbook(basepath+&#34;_protein_data.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Total protein data&#34;)
+    worksheet.write(0, 0, &#34;Total protein content [g/gDW]:&#34;)
+    worksheet.write(0, 1, .095)
+    worksheet.write(1, 0, &#34;Fraction of masses of model-included enzymes in comparison to all enzymes (0.0 to 1.0):&#34;)
+    worksheet.write(1, 1, 1.0)
+    worksheet.write(2, 0, &#34;Average saturation level (0.0 to 1.0):&#34;)
+    worksheet.write(2, 0, 1.0)
+    worksheet2 = workbook.add_worksheet(&#34;Single protein data&#34;)
+    worksheet2.write(0, 0, &#34;Protein ID (as in SBML model)&#34;)
+    worksheet2.write(0, 1, &#34;Protein concentration [mmol/gDW]&#34;)
+    workbook.close()
+
+    # Metabolite concentrations XLSX :D
+    workbook = xlsxwriter.Workbook(basepath+&#34;_metabolite_concentrations.xlsx&#34;)
+    worksheet = workbook.add_worksheet(&#34;Default data&#34;)
+    worksheet.write(0, 0, &#34;Default minimal metabolite concentration [M]:&#34;)
+    worksheet.write(1, 0, &#34;Default maximal metabolite concentration [M]:&#34;)
+    worksheet2 = workbook.add_worksheet(&#34;Single metabolite data&#34;)
+    worksheet2.write(0, 0, &#34;Metabolite ID (as in SBML model)&#34;)
+    worksheet2.write(0, 1, &#34;Minimal metabolite concentration [M]&#34;)
+    worksheet2.write(0, 2, &#34;Maximal metabolite concentration [M]&#34;)
+    workbook.close()
+
+    # Enzyme stoichiometry XLSX :D
+    # Get gene rule &lt;-&gt; Reaction ID mapping
+    reaction_id_gene_rules_mapping = {}
+    for reaction in model.reactions:
+        listed_gene_rules = _gene_rule_as_list(reaction.gene_reaction_rule)
+        if listed_gene_rules != [&#39;&#39;]:
+            reaction_id_gene_rules_mapping[reaction.id] = listed_gene_rules
+
+    # Write XLSX
+    workbook = xlsxwriter.Workbook(basepath+&#34;_enzyme_stoichiometries.xlsx&#34;)
+    # Gene stoichiometry worksheets
+    worksheet_stoichiometry = workbook.add_worksheet(&#34;Stoichiometries of complexes&#34;)
+    line = 0
+    for reaction_id in reaction_id_gene_rules_mapping.keys():
+        gene_rule = reaction_id_gene_rules_mapping[reaction_id]
+        if gene_rule == [&#34;&#34;]:
+            continue
+        worksheet_stoichiometry.write(line, 0, reaction_id)
+        row = 1
+        for or_part in gene_rule:
+            worksheet_stoichiometry.write(line, row, str(or_part))
+            if type(or_part) is str:
+                default_stoichiometry = &#34;1&#34;
+            else:
+                default_stoichiometry = &#34;;&#34;.join([&#34;1&#34; for _ in range(len(or_part))])
+            worksheet_stoichiometry.write(line, row+1, default_stoichiometry)
+            row += 2
+        line += 1
+
+    workbook.close()</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.get_initial_spreadsheets.get_initial_spreadsheets_with_sbml"><code class="name flex">
+<span>def <span class="ident">get_initial_spreadsheets_with_sbml</span></span>(<span>sbml_path, project_folder, project_name)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Allows to call get_initial_spreadsheets with an SBML.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>sbml_path: str ~ The SBML of the analyzed model.</li>
+<li>project_folder: str ~ In this folder, all XLSX files will be stored.</li>
+<li>project_name: str ~ This project name is added before each XLSX file name.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_initial_spreadsheets_with_sbml(sbml_path: str, project_folder: str, project_name: str) -&gt; None:
+    &#34;&#34;&#34;Allows to call get_initial_spreadsheets with an SBML.
+
+    Arguments
+    ----------
+    * sbml_path: str ~ The SBML of the analyzed model.
+    * project_folder: str ~ In this folder, all XLSX files will be stored.
+    * project_name: str ~ This project name is added before each XLSX file name.
+    &#34;&#34;&#34;
+    # LOAD SBML MODEL
+    model: cobra.Model = cobra.io.read_sbml_model(sbml_path)
+    get_initial_spreadsheets(model, project_folder, project_name)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.get_initial_spreadsheets.get_initial_spreadsheets" href="#autopacmen.submodules.get_initial_spreadsheets.get_initial_spreadsheets">get_initial_spreadsheets</a></code></li>
+<li><code><a title="autopacmen.submodules.get_initial_spreadsheets.get_initial_spreadsheets_with_sbml" href="#autopacmen.submodules.get_initial_spreadsheets.get_initial_spreadsheets_with_sbml">get_initial_spreadsheets_with_sbml</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

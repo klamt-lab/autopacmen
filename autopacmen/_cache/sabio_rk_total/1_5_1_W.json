@@ -1,0 +1,381 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            0.3,
+            1.2,
+            7.4,
+            7.9,
+            9.1,
+            10.9,
+            11.6,
+            11.1,
+            11.9,
+            11.7,
+            8.0,
+            8.6,
+            9.0,
+            31.2,
+            0.107,
+            33.2,
+            40.0,
+            42.8,
+            43.6,
+            44.9,
+            48.3,
+            55.0,
+            0.099,
+            71.3,
+            510.0
+        ],
+        "Rattus norvegicus": [
+            37.0,
+            152.0
+        ],
+        "Trypanosoma brucei": [
+            0.43,
+            0.54
+        ],
+        "Leishmania major": [
+            0.44,
+            1.84,
+            16.2,
+            22.7,
+            29.0
+        ],
+        "Leishmania tarentolae": [
+            0.23
+        ],
+        "Bacillus subtilis": [
+            0.7,
+            57.0,
+            60.0
+        ],
+        "Pseudomonas aeruginosa": [
+            2.25
+        ],
+        "Azospirillum brasilense": [
+            2.5,
+            3.6999999999999997
+        ],
+        "unknown prokaryotic organism": [
+            0.093,
+            1.3
+        ],
+        "Escherichia coli": [
+            1.3,
+            1.5,
+            4.5,
+            6.18,
+            8.6,
+            12.0,
+            29.0
+        ],
+        "Bos taurus": [
+            8.9,
+            5.8
+        ],
+        "Plasmodium falciparum": [
+            1.24
+        ],
+        "Pneumocystis carinii": [
+            284.0
+        ],
+        "Pneumocystis jiroveci": [
+            53.0
+        ],
+        "Geobacillus stearothermophilus": [
+            217.0,
+            2.2,
+            4.7
+        ],
+        "Lactobacillus casei": [
+            32.5,
+            0.4,
+            10.0,
+            25.0,
+            31.0
+        ],
+        "Enterococcus faecium": [
+            3.3
+        ],
+        "Gallus gallus": [
+            2.6
+        ],
+        "Mus musculus": [
+            66.4,
+            5.7
+        ],
+        "Trypanosoma brucei brucei": [
+            5.0
+        ],
+        "Trypanosoma cruzi": [
+            72.0
+        ],
+        "Clostridium botulinum": [
+            13.4
+        ],
+        "Saccharomyces cerevisiae": [
+            1.1,
+            20.0
+        ],
+        "Paracoccus denitrificans": [
+            28.0
+        ],
+        "Colwellia psychrerythraea": [
+            0.021333333333333333
+        ]
+    },
+    "nad;thbpt": {
+        "Homo sapiens": [
+            200.0
+        ]
+    },
+    "CE2705;h;nadph": {
+        "Trypanosoma brucei": [
+            0.05,
+            0.05
+        ],
+        "Leishmania major": [
+            0.57
+        ],
+        "Bos taurus": [
+            0.69
+        ]
+    },
+    "dhbpt;h;nadph": {
+        "Trypanosoma brucei brucei": [
+            0.0016,
+            0.07
+        ]
+    },
+    "fad;h;nadph": {
+        "Homo sapiens": [
+            0.088
+        ]
+    },
+    "1p2cbxl;h;nadph": {
+        "Pseudomonas aeruginosa": [
+            41.666666666666664,
+            1.6
+        ],
+        "Azospirillum brasilense": [
+            523.3333333333334
+        ],
+        "Colwellia psychrerythraea": [
+            35.0,
+            124.5
+        ],
+        "Shewanella loihica": [
+            6.7
+        ],
+        "Paracoccus denitrificans": [
+            260.0
+        ],
+        "Sulfitobacter sp.": [
+            6.8,
+            39.0
+        ],
+        "Roseobacter denitrificans": [
+            15.0
+        ],
+        "Bacillus cereus": [
+            5.8,
+            15.0
+        ],
+        "Burkholderia pseudomallei": [
+            7.8
+        ],
+        "Burkholderia multivorans": [
+            25.0,
+            33.0
+        ],
+        "Agrobacterium tumefaciens": [
+            32.0
+        ],
+        "Pseudomonas fluorescens": [
+            20.0
+        ],
+        "Burkholderia ambifaria": [
+            106.0,
+            54.0
+        ],
+        "Silicibacter pomeroyi": [
+            130.0
+        ],
+        "Rhodobacter sphaeroides": [
+            66.0
+        ],
+        "Bacillus thuringiensis": [
+            11.0
+        ],
+        "Burkholderia thailandensis": [
+            73.0
+        ]
+    },
+    "1pipdn2c;h;nadph": {
+        "Pseudomonas aeruginosa": [
+            35.333333333333336
+        ],
+        "Azospirillum brasilense": [
+            165.83333333333334
+        ],
+        "Colwellia psychrerythraea": [
+            1.3816666666666668
+        ]
+    },
+    "pro__L;nadp": {
+        "Pseudomonas aeruginosa": [
+            3.4166666666666665
+        ],
+        "Azospirillum brasilense": [
+            3.9166666666666665
+        ],
+        "Colwellia psychrerythraea": [
+            1.0883333333333334
+        ]
+    },
+    "1p2cbxl;h;nadh": {
+        "Azospirillum brasilense": [
+            615.0
+        ],
+        "Paracoccus denitrificans": [
+            81.0
+        ],
+        "Sulfitobacter sp.": [
+            8.2
+        ],
+        "Roseobacter denitrificans": [
+            3.7
+        ],
+        "Rhodobacter sphaeroides": [
+            12.0
+        ],
+        "Bacillus cereus": [
+            0.87,
+            2.1,
+            19.0
+        ],
+        "Bacillus thuringiensis": [
+            2.1
+        ],
+        "Burkholderia ambifaria": [
+            41.0
+        ],
+        "Burkholderia thailandensis": [
+            203.0
+        ],
+        "Burkholderia pseudomallei": [
+            6.0
+        ],
+        "Shewanella loihica": [
+            0.37
+        ],
+        "Colwellia psychrerythraea": [
+            10.35
+        ]
+    },
+    "1pipdn2c;h;nadh": {
+        "Azospirillum brasilense": [
+            161.5
+        ],
+        "Colwellia psychrerythraea": [
+            0.08783333333333332
+        ]
+    },
+    "pro__L;nad": {
+        "Azospirillum brasilense": [
+            4.233333333333333
+        ],
+        "Colwellia psychrerythraea": [
+            0.0069166666666666664
+        ]
+    },
+    "fol;h;nadph": {
+        "Bos taurus": [
+            0.15
+        ],
+        "Lactobacillus casei": [
+            0.06,
+            0.074
+        ]
+    },
+    "thf;nadp": {
+        "Escherichia coli": [
+            1.3
+        ],
+        "Lactobacillus casei": [
+            1.5
+        ]
+    },
+    "mlthf;nad": {
+        "Photobacterium phosphoreum": [
+            136.0
+        ]
+    },
+    "mlthf;nadp": {
+        "Photobacterium phosphoreum": [
+            113.0
+        ],
+        "Sus scrofa": [
+            1700.0
+        ],
+        "Leishmania major": [
+            14.0,
+            10.0
+        ]
+    },
+    "fad;h;nadh": {
+        "Saccharomyces cerevisiae": [
+            0.09
+        ],
+        "Cupriavidus necator": [
+            0.05
+        ],
+        "Escherichia coli": [
+            0.07
+        ]
+    },
+    "mlthf;h;nadph": {
+        "Sus scrofa": [
+            26.6666667
+        ]
+    },
+    "5mthf;mndn": {
+        "Sus scrofa": [
+            25.0
+        ]
+    },
+    "mlthf;h;nadh": {
+        "Leishmania major": [
+            11.1
+        ]
+    },
+    "akg;h;lys__L;nadh": {
+        "Saccharomyces cerevisiae": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+        ]
+    }
+}

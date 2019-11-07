@@ -1,0 +1,12 @@
+{
+    "REST": {
+        "Medicago truncatula": [
+            0.18,
+            1.33833333
+        ],
+        "Arabidopsis thaliana": [
+            1.045,
+            0.0583333333
+        ]
+    }
+}

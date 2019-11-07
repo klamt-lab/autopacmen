@@ -1,0 +1,16 @@
+{
+    "REST": {
+        "Bacillus subtilis": [
+            3.79,
+            1.8
+        ],
+        "Geobacillus stearothermophilus": [
+            4.13,
+            2.04
+        ],
+        "Bacillus sp.": [
+            3.3,
+            7.11
+        ]
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "REST": {
+        "Staphylococcus aureus": [
+            27.0,
+            4.0,
+            1020.0,
+            1000.0,
+            1400.0,
+            540.0,
+            800.0
+        ],
+        "Bacillus anthracis": [
+            27.0,
+            28.0
+        ],
+        "Pyrococcus horikoshii": [
+            8.1,
+            7.2,
+            7.1
+        ],
+        "Trypanosoma congolense": [
+            88.33333333333333,
+            151.66666666666666
+        ],
+        "Escherichia coli": [
+            176.4
+        ],
+        "Thermus scotoductus": [
+            1.9
+        ],
+        "Homo sapiens": [
+            618.333333,
+            266.666667,
+            700.0,
+            335.0
+        ],
+        "Pisum sativum": [
+            300.0,
+            345.0,
+            380.0,
+            190.0,
+            383.0
+        ],
+        "Plasmodium falciparum": [
+            106.0,
+            51.3,
+            45.5
+        ],
+        "Rattus norvegicus": [
+            0.15,
+            1.8,
+            2.8,
+            3.2,
+            4.8,
+            4.9,
+            4.6,
+            7.4,
+            0.11,
+            9.6,
+            0.13,
+            0.25,
+            3.5,
+            0.04,
+            17.3,
+            20.6,
+            0.16,
+            0.12
+        ],
+        "Bos taurus": [
+            13.7
+        ]
+    },
+    "h;nadph;gthox": {
+        "Bos taurus": [
+            285.0
+        ],
+        "Rattus norvegicus": [
+            240.0,
+            246.666667
+        ],
+        "Escherichia coli": [
+            60.0
+        ]
+    },
+    "nadp;gthrd": {
+        "Escherichia coli": [
+            50.0
+        ]
+    },
+    "h;lipoate;nadh": {
+        "Homo sapiens": [
+            25.0
+        ]
+    },
+    "h;nadph;trdox": {
+        "Escherichia coli": [
+            20.8333333,
+            17.8333333
+        ],
+        "Rattus norvegicus": [
+            20.0
+        ]
+    },
+    "nadp;trdrd": {
+        "Rattus norvegicus": [
+            16.5
+        ]
+    },
+    "h;mndn;nadph": {
+        "Rattus norvegicus": [
+            1.5,
+            0.18
+        ]
+    }
+}

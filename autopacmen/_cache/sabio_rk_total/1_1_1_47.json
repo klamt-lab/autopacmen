@@ -1,0 +1,73 @@
+{
+    "glc__D;nadp": {
+        "Sulfolobus solfataricus": [
+            47.7
+        ],
+        "Bacillus megaterium": [
+            120.0,
+            140.0,
+            802.0,
+            462.0,
+            802.0
+        ],
+        "Oncorhynchus mykiss": [
+            14.7
+        ],
+        "Bos taurus": [
+            41.0
+        ]
+    },
+    "glc__D;nad": {
+        "Sulfolobus solfataricus": [
+            74.9
+        ],
+        "Bacillus megaterium": [
+            190.0,
+            190.0,
+            430.0,
+            420.0
+        ],
+        "Oncorhynchus mykiss": [
+            11.1
+        ],
+        "Bos taurus": [
+            45.9
+        ]
+    },
+    "gal;nad": {
+        "Sulfolobus solfataricus": [
+            61.3
+        ]
+    },
+    "gal;nadp": {
+        "Sulfolobus solfataricus": [
+            37.4
+        ]
+    },
+    "xyl__D;nad": {
+        "Sulfolobus solfataricus": [
+            61.0
+        ]
+    },
+    "xyl__D;nadp": {
+        "Sulfolobus solfataricus": [
+            44.0
+        ]
+    },
+    "g6p;nadp": {
+        "Bos taurus": [
+            1.5
+        ],
+        "Oncorhynchus mykiss": [
+            12.7
+        ]
+    },
+    "g6p;nad": {
+        "Bos taurus": [
+            1.6
+        ],
+        "Oncorhynchus mykiss": [
+            14.2
+        ]
+    }
+}

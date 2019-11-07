@@ -1,0 +1,14 @@
+{
+    "atp;cys__L;glu__L": {
+        "Pasteurella multocida": [
+            25.3,
+            24.3,
+            22.4
+        ],
+        "Arabidopsis thaliana": [
+            0.075,
+            0.101666667,
+            0.113333333
+        ]
+    }
+}

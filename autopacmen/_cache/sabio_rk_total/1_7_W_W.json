@@ -1,0 +1,61 @@
+{
+    "REST": {
+        "Escherichia coli": [
+            770.0,
+            2380.0
+        ],
+        "Bacillus subtilis": [
+            0.011,
+            1.8,
+            3.79,
+            0.0115
+        ],
+        "Fusarium oxysporum": [
+            6.1,
+            15.0
+        ],
+        "Geobacillus stearothermophilus": [
+            2.04,
+            4.13
+        ],
+        "Bacillus sp.": [
+            3.3,
+            7.11
+        ],
+        "Achromobacter xylosoxidans": [
+            172.0
+        ],
+        "Achromobacter cycloclastes": [
+            163.0
+        ],
+        "Alcaligenes faecalis": [
+            64.0,
+            1478.0,
+            71.0,
+            392.0,
+            38.0,
+            109.0,
+            1046.0,
+            219.0,
+            125.0
+        ]
+    },
+    "h2o;o2;urate": {
+        "Bacillus subtilis": [
+            3.26
+        ]
+    },
+    "h;nadh;no": {
+        "Escherichia coli": [
+            0.2,
+            0.15,
+            0.12
+        ],
+        "Saccharomyces cerevisiae": [
+            0.02
+        ],
+        "Cupriavidus necator": [
+            0.03
+        ]
+    }
+}

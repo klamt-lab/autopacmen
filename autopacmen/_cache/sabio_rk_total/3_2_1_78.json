@@ -1,0 +1,17 @@
+{
+    "REST": {
+        "Aspergillus fumigatus": [
+            1935.0,
+            2246.0
+        ],
+        "Hordeum vulgare": [
+            12.9,
+            3.9
+        ],
+        "Bacillus subtilis": [
+            61.2,
+            75.1166667,
+            11.1333333
+        ]
+    }
+}

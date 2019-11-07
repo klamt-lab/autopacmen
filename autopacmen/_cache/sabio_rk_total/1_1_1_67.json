@@ -1,0 +1,26 @@
+{
+    "mnl;nad": {
+        "Aspergillus fumigatus": [
+            212.0,
+            212.0
+        ]
+    },
+    "fru;h;nadh": {
+        "Aspergillus fumigatus": [
+            86.0,
+            86.0
+        ]
+    },
+    "mnl;nadp": {
+        "Aspergillus fumigatus": [
+            3.6,
+            3.6
+        ]
+    },
+    "fru;h;nadph": {
+        "Aspergillus fumigatus": [
+            18.0,
+            18.0
+        ]
+    }
+}

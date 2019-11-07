@@ -1,0 +1,17 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            2.99
+        ]
+    },
+    "glx;met__L": {
+        "Homo sapiens": [
+            3.44
+        ]
+    },
+    "glx;gln__L": {
+        "Homo sapiens": [
+            1.5916666666666666
+        ]
+    }
+}

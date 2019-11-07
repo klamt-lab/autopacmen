@@ -1,11 +1,7 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# AutoPACMEN-custom gitignores:
+autopacmen/ec_model_2019_06_25_input/brenda_download.txt
 
-# C extensions
-*.so
-
+# Default GitHub Python .gitignore file content:
 # Distribution / packaging
 .Python
 build/
@@ -24,6 +20,14 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

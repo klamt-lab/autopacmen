@@ -1,0 +1,31 @@
+{
+    "trp__L;o2": {
+        "Chromobacterium violaceum": [
+            39.6
+        ]
+    },
+    "REST": {
+        "Chromobacterium violaceum": [
+            35.6,
+            47.4,
+            47.1
+        ],
+        "Bacillus subtilis": [
+            0.04483333333333333
+        ]
+    },
+    "o2;pppg9": {
+        "Myxococcus xanthus": [
+            0.0866666667
+        ],
+        "Bacillus subtilis": [
+            0.235,
+            0.0031666666666666666
+        ]
+    },
+    "cpppg3;o2": {
+        "Bacillus subtilis": [
+            0.0008333333333333334
+        ]
+    }
+}

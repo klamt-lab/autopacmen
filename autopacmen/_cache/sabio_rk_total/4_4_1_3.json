@@ -1,0 +1,23 @@
+{
+    "REST": {
+        "Synechocystis sp.": [
+            36.0,
+            29.0,
+            50.0,
+            29.0,
+            14.0,
+            37.0,
+            20.0
+        ]
+    },
+    "h2o;cyst__L": {
+        "Synechocystis sp.": [
+            7.0
+        ]
+    },
+    "h2o;cys__L": {
+        "Synechocystis sp.": [
+            0.15
+        ]
+    }
+}

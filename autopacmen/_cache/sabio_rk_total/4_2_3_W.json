@@ -1,0 +1,49 @@
+{
+    "g6p": {
+        "Bacillus circulans": [
+            0.073,
+            0.073
+        ]
+    },
+    "ahdt": {
+        "Homo sapiens": [
+            0.032
+        ]
+    },
+    "grdp": {
+        "Picea sitchensis": [
+            0.06,
+            0.89,
+            2.21,
+            2.25,
+            0.96
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            220.0,
+            203.0,
+            324.0,
+            600.0,
+            179.0
+        ],
+        "Magnolia grandiflora": [
+            0.00035
+        ],
+        "Streptomyces coelicolor": [
+            0.049,
+            0.039,
+            0.0032,
+            0.0062
+        ]
+    },
+    "grdp;h2o": {
+        "Arabidopsis thaliana": [
+            0.001,
+            0.001
+        ],
+        "Streptomyces coelicolor": [
+            3e-05
+        ]
+    }
+}

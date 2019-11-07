@@ -1,0 +1,22 @@
+{
+    "atp;minohp": {
+        "Homo sapiens": [
+            0.00011,
+            0.00106,
+            0.0005
+        ],
+        "Mus musculus": [
+            0.0053
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            0.0004,
+            0.0038,
+            0.00123
+        ],
+        "Mus musculus": [
+            0.0163
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "REST": {
+        "Spinacia oleracea": [
+            61.0,
+            41.0,
+            59.0,
+            27.0
+        ]
+    },
+    "13dpg;h;nadph": {
+        "Spinacia oleracea": [
+            61.0
+        ]
+    },
+    "13dpg;h;nadh": {
+        "Spinacia oleracea": [
+            41.0
+        ]
+    }
+}

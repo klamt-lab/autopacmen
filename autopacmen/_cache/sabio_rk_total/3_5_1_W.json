@@ -1,0 +1,261 @@
+{
+    "h2o;gln__L": {
+        "Escherichia coli": [
+            33.0,
+            91.4,
+            101.0,
+            82.5,
+            84.6
+        ],
+        "Homo sapiens": [
+            2.5,
+            22.0,
+            10.0
+        ],
+        "Bacillus subtilis": [
+            67.7,
+            38.8
+        ]
+    },
+    "h2o;urea": {
+        "Canavalia ensiformis": [
+            2766.66667
+        ],
+        "Enterobacter aerogenes": [
+            2970.0
+        ]
+    },
+    "REST": {
+        "Pseudomonas reinekei": [
+            9.48
+        ],
+        "Rhodococcus sp.": [
+            2.0,
+            6.0,
+            6.2,
+            8.0,
+            8.1,
+            15.0,
+            24.0,
+            3353.0,
+            38.0,
+            426.0,
+            48.0,
+            180.0,
+            313.0,
+            63.0,
+            192.0,
+            66.0,
+            67.0,
+            2504.0,
+            333.0,
+            229.0,
+            109.0,
+            245.0
+        ],
+        "Pseudomonas aeruginosa": [
+            0.81,
+            1.79,
+            2.48,
+            1.66,
+            0.65,
+            1.37
+        ],
+        "Escherichia coli": [
+            0.54,
+            4.7,
+            5.6,
+            10.4,
+            11.0,
+            16.2,
+            22.0,
+            25.0,
+            29.0,
+            30.0,
+            33.0,
+            38.0,
+            40.0,
+            42.0,
+            170.0,
+            48.0,
+            50.0,
+            54.0,
+            55.0,
+            57.0,
+            190.0,
+            194.0,
+            94.0
+        ],
+        "Arabidopsis thaliana": [
+            0.6,
+            1.7,
+            1.4,
+            0.4,
+            0.36,
+            5.0,
+            0.7,
+            1.1,
+            8.6,
+            0.9,
+            10.0,
+            11.0,
+            136.0,
+            13.0,
+            138.0,
+            6.4,
+            9.2,
+            15.0,
+            18.0,
+            22.6,
+            22.0,
+            259.0,
+            26.0,
+            29.0,
+            0.044,
+            33.0,
+            8.7,
+            51.0,
+            58.3,
+            0.54,
+            75.0,
+            88.5,
+            0.078,
+            1.9
+        ],
+        "Mycobacterium smegmatis": [
+            8.0
+        ],
+        "Helicobacter pylori": [
+            16.133333333333333
+        ],
+        "Cupriavidus metallidurans": [
+            0.77
+        ],
+        "Solanum lycopersicum": [
+            15.0
+        ],
+        "Kluyvera citrophila": [
+            27.0,
+            21.0,
+            63.0
+        ],
+        "Salmonella typhimurium": [
+            96.0,
+            113.0
+        ],
+        "Haemophilus influenzae": [
+            470.0,
+            230.0
+        ],
+        "Homo sapiens": [
+            0.42,
+            0.28,
+            5.55,
+            0.27
+        ],
+        "Elizabethkingia meningoseptica": [
+            16.0,
+            2.3
+        ],
+        "Colletotrichum lindemuthianum": [
+            11.0,
+            5.4,
+            6.0,
+            7.0
+        ]
+    },
+    "ad;ham": {
+        "Rhodococcus sp.": [
+            79.0
+        ]
+    },
+    "aa;ham": {
+        "Rhodococcus sp.": [
+            16.0
+        ]
+    },
+    "ham;ncam": {
+        "Rhodococcus sp.": [
+            8.0
+        ]
+    },
+    "aa;h2o": {
+        "Pseudomonas aeruginosa": [
+            59.4,
+            44.78,
+            64.04,
+            61.18,
+            77.29,
+            74.75,
+            74.76,
+            71.4
+        ]
+    },
+    "ad;h2o": {
+        "Pseudomonas aeruginosa": [
+            5.73,
+            13.74,
+            21.83,
+            4.04,
+            14.02,
+            15.56
+        ]
+    },
+    "h2o;acorn": {
+        "Thermus thermophilus": [
+            28.1
+        ]
+    },
+    "h2o;asn__L": {
+        "Escherichia coli": [
+            24.0
+        ],
+        "Arabidopsis thaliana": [
+            63.5
+        ],
+        "Elizabethkingia meningoseptica": [
+            1.2
+        ]
+    },
+    "chitin;h2o": {
+        "Helicobacter pylori": [
+            12.916666666666666
+        ]
+    },
+    "M00673;h2o": {
+        "Escherichia coli": [
+            50.0,
+            50.0
+        ]
+    },
+    "h2o;pheacgly": {
+        "Escherichia coli": [
+            47.0
+        ]
+    },
+    "h2o;sl26da": {
+        "Escherichia coli": [
+            266.666667
+        ],
+        "Salmonella typhimurium": [
+            242.0
+        ],
+        "Haemophilus influenzae": [
+            200.0,
+            370.0,
+            200.0,
+            200.0,
+            200.0
+        ]
+    },
+    "h2o;Ncbmpts": {
+        "Pseudomonas aeruginosa": [
+            3.3
+        ]
+    },
+    "gtspmd;h2o": {
+        "Trypanosoma brucei": [
+            5.1
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "arab__L;nad": {
+        "Azospirillum brasilense": [
+            19.0,
+            6.1
+        ]
+    },
+    "arab__L;nadp": {
+        "Azospirillum brasilense": [
+            33.333333333333336,
+            16.483333333333334
+        ]
+    },
+    "gal;nadp": {
+        "Azospirillum brasilense": [
+            26.0
+        ]
+    },
+    "gal;nad": {
+        "Azospirillum brasilense": [
+            19.833333333333332
+        ]
+    },
+    "REST": {
+        "Azospirillum brasilense": [
+            1.035,
+            9.666666666666666
+        ]
+    },
+    "xyl__D;nadp": {
+        "Azospirillum brasilense": [
+            12.0
+        ]
+    },
+    "xyl__D;nad": {
+        "Azospirillum brasilense": [
+            4.0
+        ]
+    }
+}

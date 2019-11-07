@@ -1,0 +1,30 @@
+{
+    "co2;rb15bp;h2o": {
+        "Nicotiana tabacum": [
+            2.9
+        ],
+        "Synechococcus sp.": [
+            11.8,
+            11.8,
+            11.8,
+            2.7
+        ],
+        "Synechocystis sp.": [
+            12.6666667,
+            12.6666667,
+            1.31666667,
+            1.31666667,
+            9.08333333,
+            9.08333333
+        ],
+        "Xanthobacter flavus": [
+            2.0
+        ],
+        "Bradyrhizobium diazoefficiens": [
+            3.2
+        ],
+        "Rhodobacter sphaeroides": [
+            2.9
+        ]
+    }
+}

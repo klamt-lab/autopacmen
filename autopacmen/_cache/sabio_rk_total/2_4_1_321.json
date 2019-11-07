@@ -1,0 +1,14 @@
+{
+    "REST": {
+        "Xanthomonas campestris": [
+            173.0,
+            43.0,
+            127.0,
+            114.0
+        ],
+        "Neurospora crassa": [
+            306.0,
+            146.0
+        ]
+    }
+}

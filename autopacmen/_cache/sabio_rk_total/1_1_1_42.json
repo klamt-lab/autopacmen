@@ -1,0 +1,45 @@
+{
+    "icit;nadp": {
+        "Plasmodium falciparum": [
+            138.0,
+            138.0,
+            138.0,
+            138.0
+        ],
+        "Sus scrofa": [
+            30.7
+        ],
+        "Escherichia coli": [
+            76.2,
+            76.2,
+            38.3,
+            789.0
+        ],
+        "Homo sapiens": [
+            440000.0
+        ],
+        "Rhodomicrobium vannielii": [
+            40.8833333
+        ],
+        "Streptococcus suis": [
+            14.0,
+            19.0
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            1.41,
+            20.6,
+            36.2,
+            20.6,
+            28.3,
+            1.41,
+            1.72
+        ]
+    },
+    "2hog;nad": {
+        "Escherichia coli": [
+            0.000724
+        ]
+    }
+}

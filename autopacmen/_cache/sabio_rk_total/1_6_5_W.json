@@ -1,0 +1,36 @@
+{
+    "h;mndn;nadph": {
+        "Sus scrofa": [
+            98.3333333
+        ],
+        "Leishmania major": [
+            74.0,
+            140.0
+        ],
+        "Arabidopsis thaliana": [
+            0.44
+        ],
+        "Synechocystis sp.": [
+            3.2
+        ]
+    },
+    "h;mndn;nadh": {
+        "Leishmania major": [
+            52.0,
+            87.0
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            516.6666666666666,
+            600.0,
+            0.3333333333333333,
+            0.01
+        ]
+    },
+    "mndn;nadh": {
+        "Homo sapiens": [
+            550.0
+        ]
+    }
+}

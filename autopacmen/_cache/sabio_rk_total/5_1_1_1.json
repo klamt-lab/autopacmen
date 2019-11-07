@@ -1,0 +1,47 @@
+{
+    "ala__D": {
+        "Escherichia coli": [
+            27.6666667,
+            28.3333333,
+            5.78333333
+        ],
+        "Streptomyces lavendulae": [
+            55.0,
+            63.3333333
+        ],
+        "Geobacillus stearothermophilus": [
+            0.001,
+            0.001,
+            0.00016,
+            0.00018
+        ],
+        "Treponema denticola": [
+            1.4
+        ]
+    },
+    "ser__D": {
+        "Streptomyces lavendulae": [
+            5.5,
+            13.3333333
+        ]
+    },
+    "ala__L": {
+        "Geobacillus stearothermophilus": [
+            0.00021,
+            0.00023,
+            0.0013,
+            0.0019
+        ],
+        "Treponema denticola": [
+            1.05
+        ],
+        "Escherichia coli": [
+            53.9833333
+        ]
+    },
+    "REST": {
+        "Treponema denticola": [
+            0.237
+        ]
+    }
+}

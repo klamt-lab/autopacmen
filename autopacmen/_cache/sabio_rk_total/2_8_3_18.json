@@ -1,0 +1,63 @@
+{
+    "acac;succoa": {
+        "Acetobacter aceti": [
+            36.5,
+            37.0
+        ]
+    },
+    "ac;succoa": {
+        "Acetobacter aceti": [
+            201.0,
+            280.0,
+            147.0,
+            49.0,
+            290.0,
+            280.0
+        ]
+    },
+    "accoa;succ": {
+        "Acetobacter aceti": [
+            70.9,
+            75.2,
+            71.0
+        ]
+    },
+    "accoa;for": {
+        "Acetobacter aceti": [
+            1.9
+        ]
+    },
+    "REST": {
+        "Acetobacter aceti": [
+            65.0,
+            65.0,
+            0.46
+        ]
+    },
+    "accoa;fum": {
+        "Acetobacter aceti": [
+            0.89
+        ]
+    },
+    "accoa;mal__D": {
+        "Acetobacter aceti": [
+            12.0
+        ]
+    },
+    "accoa;mal__L": {
+        "Acetobacter aceti": [
+            0.74,
+            0.8
+        ]
+    },
+    "accoa;oaa": {
+        "Acetobacter aceti": [
+            0.083
+        ]
+    },
+    "accoa;glutar": {
+        "Acetobacter aceti": [
+            0.27
+        ]
+    }
+}

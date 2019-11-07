@@ -1,0 +1,22 @@
+{
+    "CE2705;h;nadph": {
+        "Trypanosoma brucei": [
+            0.05,
+            0.05
+        ],
+        "Leishmania major": [
+            0.57
+        ]
+    },
+    "REST": {
+        "Leishmania tarentolae": [
+            0.23
+        ]
+    },
+    "dhbpt;h;nadph": {
+        "Trypanosoma brucei brucei": [
+            0.0016,
+            0.07
+        ]
+    }
+}

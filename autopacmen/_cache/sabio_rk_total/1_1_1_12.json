@@ -1,0 +1,32 @@
+{
+    "REST": {
+        "Trichoderma reesei": [
+            0.8546,
+            0.5849,
+            0.0327,
+            0.1095,
+            0.0723,
+            5.0091,
+            0.6772,
+            0.0164,
+            0.0018,
+            0.0037,
+            0.0016
+        ]
+    },
+    "galt;nad": {
+        "Trichoderma reesei": [
+            0.0438
+        ]
+    },
+    "sbt__D;nad": {
+        "Trichoderma reesei": [
+            0.1372
+        ]
+    },
+    "fru;h;nadh": {
+        "Trichoderma reesei": [
+            0.0335
+        ]
+    }
+}

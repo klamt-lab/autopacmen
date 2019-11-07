@@ -1,0 +1,22 @@
+{
+    "REST": {
+        "Staphylococcus aureus": [
+            27.0,
+            4.0,
+            1020.0,
+            1000.0,
+            1400.0,
+            540.0,
+            800.0
+        ],
+        "Bacillus anthracis": [
+            27.0,
+            28.0
+        ],
+        "Pyrococcus horikoshii": [
+            8.1,
+            7.2,
+            7.1
+        ]
+    }
+}

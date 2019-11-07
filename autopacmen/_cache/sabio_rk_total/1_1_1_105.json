@@ -1,0 +1,17 @@
+{
+    "retinal;h;nadph": {
+        "Homo sapiens": [
+            0.3
+        ]
+    },
+    "nadp;retinol": {
+        "Homo sapiens": [
+            0.183333333
+        ]
+    },
+    "nad;retinol": {
+        "Homo sapiens": [
+            0.02
+        ]
+    }
+}

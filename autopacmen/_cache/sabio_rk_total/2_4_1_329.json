@@ -1,0 +1,20 @@
+{
+    "REST": {
+        "Thermoanaerobacterium thermosaccharolyticum": [
+            66.2,
+            59.3,
+            24.2
+        ]
+    },
+    "pi;suc6p": {
+        "Thermoanaerobacterium thermosaccharolyticum": [
+            82.6
+        ]
+    },
+    "fru;g1p": {
+        "Thermoanaerobacterium thermosaccharolyticum": [
+            14.4,
+            16.9
+        ]
+    }
+}

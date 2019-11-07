@@ -1,0 +1,84 @@
+{
+    "REST": {
+        "Pseudomonas aeruginosa": [
+            0.01,
+            1012.0,
+            7.0
+        ],
+        "Bos taurus": [
+            0.34,
+            0.27,
+            0.101
+        ],
+        "Rattus norvegicus": [
+            0.0583333333,
+            0.09,
+            0.0133333333,
+            3.33333333,
+            300.0,
+            0.0015
+        ]
+    },
+    "h2o;arg__L": {
+        "Bacillus caldovelox": [
+            3000.0
+        ],
+        "Bos taurus": [
+            1366.66667,
+            1366.66667,
+            1200.0,
+            1200.0,
+            1200.0,
+            1200.0
+        ],
+        "Plasmodium falciparum": [
+            96.0
+        ],
+        "Rattus norvegicus": [
+            250.0,
+            141.0,
+            70.0
+        ],
+        "Homo sapiens": [
+            231.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            203.0,
+            231.0,
+            231.0
+        ],
+        "Pseudomonas aeruginosa": [
+            6.3
+        ],
+        "Mycoplasma arthritidis": [
+            29.0
+        ]
+    },
+    "agm;h2o": {
+        "Pseudomonas aeruginosa": [
+            4.2
+        ]
+    },
+    "h2o;nflgln": {
+        "Pseudomonas aeruginosa": [
+            13.2,
+            21.3,
+            31.0,
+            8.5,
+            13.2,
+            21.3,
+            31.0,
+            8.5
+        ]
+    },
+    "alltt;h2o": {
+        "Chlamydomonas reinhardtii": [
+            750.0
+        ]
+    }
+}

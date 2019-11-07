@@ -1,0 +1,22 @@
+{
+    "h;nadph;o2;cinnm": {
+        "Helianthus tuberosus": [
+            7.0,
+            6.66666667
+        ],
+        "Arabidopsis thaliana": [
+            1.715
+        ]
+    },
+    "REST": {
+        "Arabidopsis thaliana": [
+            2.74333333,
+            1.09666667,
+            3.86666667,
+            2.55666667,
+            1.17,
+            1.035,
+            0.458333333
+        ]
+    }
+}

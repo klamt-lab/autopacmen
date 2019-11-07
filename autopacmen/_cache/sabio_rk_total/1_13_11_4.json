@@ -1,0 +1,22 @@
+{
+    "HC00460;o2": {
+        "Pseudomonas alcaligenes": [
+            40.55
+        ],
+        "Pseudomonas putida": [
+            56.2666667
+        ]
+    },
+    "REST": {
+        "Pseudomonas alcaligenes": [
+            51.6333333,
+            10.2166667,
+            26.2166667
+        ],
+        "Pseudomonas putida": [
+            33.5833333,
+            13.8833333,
+            2.15
+        ]
+    }
+}

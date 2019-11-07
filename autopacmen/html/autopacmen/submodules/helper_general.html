@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.helper_general API documentation</title>
+<meta name="description" content="helper_general.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.helper_general</code></h1>
+</header>
+<section id="section-intro">
+<p>helper_general.py</p>
+<p>This module contains functions which are useful for a multitude of programs,
+and which are hard to be categorized.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2018-2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;helper_general.py
+
+This module contains functions which are useful for a multitude of programs,
+and which are hard to be categorized.
+&#34;&#34;&#34;
+
+# IMPORTS
+# External modules
+import json
+import openpyxl
+import os
+import pickle
+import requests
+import sys
+import time
+from pebble import concurrent
+from typing import Any, Dict, List
+
+
+# CONSTANT SECTION
+# As no useful UniProt API access libraries were found, the programs use the UniProt URL API directly.
+# UNIPROT_UPLOADLISTS_URL represents the UniProt ID conversion search URL. The paremeters for the
+# conversion are appendet after this string.
+UNIPROT_UPLOADLISTS_URL = &#34;https://www.uniprot.org/uploadlists&#34;
+# UNIPROT_URL represents the UniProtKB database search URL. After this string, the parameters are appended
+# (e.g. a UniProt ID to refer to the protein&#39;s entry).
+UNIPROT_URL = &#34;https://www.uniprot.org/uniprot&#34;
+
+
+# INTERNAL FUNCTIONS SECTION
+@concurrent.process(timeout=300)
+def _get(url: str) -&gt; str:
+    &#34;&#34;&#34;Internal function which tries to get the text of the given internet site.
+
+    Using pebble as concurrency library (see the decorator @concurrent.process),
+    this function stops with a timeout error after 300 seconds = 5 minutes.
+    This value was chosen as in the programs which use this internal function,
+    no request to biological databases should take longer than this time.
+
+    Argument
+    ----------
+    * url: str ~ The URL of the internet site.
+    &#34;&#34;&#34;
+    # Retrieve the text from the GET request representation directly.
+    text = requests.get(url).text
+
+    return text
+
+
+# PUBLIC FUNCTIONS SECTION
+def check_argument(argument: str, command: str) -&gt; str:
+    &#34;&#34;&#34;Checks wheter the given mandatory argument variable is None or not. If none, the program stops.
+
+    It is checked wheter the argument is None as argparser sets an argument variable to None
+    if the argument is not set.
+
+    Arguments
+    ----------
+    * argument: str ~ The argument that shall be checked and which shall not be None.
+    * command: str ~ The argument long name (i.e. the name after --) which is displayed
+      in an error message if the argument is None.
+    &#34;&#34;&#34;
+    if argument is None:
+        print(f&#34;Mandatory argument --{command} not given. Stopping program.&#34;)
+
+        # Exit program with error code (not 0).
+        sys.exit(-1)
+
+    return argument
+
+
+def ensure_folder_existence(folder: str) -&gt; None:
+    &#34;&#34;&#34;Checks if the given folder exists. If not, the folder is created.
+
+    Argument
+    ----------
+    * folder: str ~ The folder whose existence shall be enforced.
+    &#34;&#34;&#34;
+    if os.path.isdir(folder):
+        return
+    os.makedirs(folder)
+
+
+def get(url: str, num_tries: int = 3, sleep_time: float = 10.0) -&gt; List[str]:
+    &#34;&#34;&#34;Returns an internet site&#39;s content in the form of a list with one string per line.
+
+    Arguments
+    ----------
+    * url:str ~ The URL of the internet site.
+    * num_tries: int=3 ~ The number of maximal tries to retrieve the site.
+      Its default value of 3 resulted of empirical tests.
+    * sleep_time: float=10.0 ~ The number of seconds that shall be waited
+      after an error or after the site&#39;s text was retrieved.
+      Its default value of 10.0 seconds is in accordance with the NCBI
+      rule that its servers shall not be contacted more often than every
+      10 seconds.
+    &#34;&#34;&#34;
+    # Set text variable which will contain the site&#39;s text if no error happens.
+    text = &#34;&#34;
+
+    # Try it until num_tries is reached or until the site&#39;s content was
+    # successfully retrieved.
+    for i in range(num_tries):
+        # Wait the given time in doing nothing.
+        time.sleep(sleep_time)
+
+        # Try connection. May fail due to timeout (see _get()&#39;s comments)
+        # or due to a client- or server-side connection problem.
+        try:
+            # _get() is the internal function which actually sends the
+            # request to the site. It is a separate function in order to
+            # be able to start it in concurrent mode so that it is possible
+            # to await a timeout.
+            # Otherwise, if _get&#39;s content would be in
+            # this function, this function and the whole program would be
+            # blocked without the possibilty to stop after a set timeout.
+            # A &#39;future&#39; is a variable controlling a concurrently running
+            # process.
+            future = _get(url)
+            text = future.result()
+
+            # If no error/timeout occured while calling _get, we reach the
+            # break statement which causes that no other try will be performed
+            # as we got the site&#39;s data successfully.
+            break
+        except Exception as error:
+            # Print error. The error may be a timeout or a connection problem.
+            print(f&#34;Error with {url}&#34;)
+            print(f&#34;Error: {error}&#34;)
+            print(f&#34;In try {i+1}&#34;)
+
+            # Wait the time until the next try if the maximal number of tries
+            # is not reached yet.
+            time.sleep(sleep_time)
+
+    # Split the internet site&#39;s text into a string list containing each line.
+    text_lines: List[str] = text.split(&#34;\n&#34;)
+
+    # Return the line list.
+    return text_lines
+
+
+def get_and_save(url: str, filepath: str) -&gt; List[str]:
+    &#34;&#34;&#34;Retrieves the text content from the given URL and saves it in the given text file path.
+
+    It also returns the content of the URL as a list of strings (one list element per newline-separated line).
+
+    Arguments
+    ----------
+    * url: str ~ The URL of which the text content is read out
+    * filepath: str ~ The path pof the text file which will include the URL text content
+    &#34;&#34;&#34;
+    text = get(url)
+
+    with open(filepath, &#34;w&#34;) as f:
+        f.write(&#34;&#34;.join([i + &#34;\n&#34; for i in text]))
+
+    return text
+
+
+def get_entry_id_kegg_id_mapping(xlsx_path: str, worksheet_name: str) -&gt; Dict[str, str]:
+    &#34;&#34;&#34;Reads a worksheet in which the user can select the KEGG IDs of e.g. metabolites or reactions.
+
+    This is used for the KEGG ID XLSX for reactions and metabolites in AutoPACMEN.
+    THe functions returns a dictionary of IDs as keys and selected KEGG IDs as values.
+
+    Arguments
+    ----------
+    * xlsx_path: str ~ The path to the analyzed XLSX
+    * worksheet_name: str ~ THe name of the analyzed worksheet of the analyzed XLSX
+    &#34;&#34;&#34;
+    workbook = openpyxl.load_workbook(filename=xlsx_path, read_only=True)
+    worksheet = workbook[worksheet_name]
+
+    entry_id_kegg_id_mapping: Dict[str, str] = {}
+    for row in worksheet.rows:
+        current_cell = 1
+        assessment_found = False
+        for cell in row:
+            if current_cell == 1:
+                reaction_id = cell.value
+            if current_cell &gt; 3:
+                if ((current_cell - 1) % 3) == 0:
+                    current_kegg_id = cell.value
+
+                if ((current_cell - 2) % 3) == 0:
+                    assessment = cell.value
+                    if assessment is not None:
+                        if assessment == &#34;Yes&#34;:
+                            assessment_found = True
+                            break
+            current_cell += 1
+        if assessment_found:
+            entry_id_kegg_id_mapping[reaction_id] = current_kegg_id
+        else:
+            print(f&#34;ERROR: No assessment for reaction {reaction_id}!&#34;)
+            print(f&#34;Spreadsheet: {xlsx_path}&#34;)
+            print(f&#34;Terminating program...&#34;)
+            sys.exit(-1)
+    return entry_id_kegg_id_mapping
+
+
+def get_files(path: str) -&gt; List[str]:
+    &#34;&#34;&#34;Returns the names of the files in the given folder as a list of strings.
+
+    Arguments
+    ----------
+    * path: str ~ The path to the folder of which the file names shall be returned
+    &#34;&#34;&#34;
+    files: List[str] = []
+    for (_, _, filenames) in os.walk(path):
+        files.extend(filenames)
+    return files
+
+
+def get_float_cell_value(cell_value) -&gt; float:
+    &#34;&#34;&#34;Returns the value of an openpyxl cell value.
+
+    This function is used in oder to operate with spreadsheets
+    which use the comma as the decimal mark instead of a period.
+
+    Arguments
+    ----------
+    * cell_value ~ The openpyxl cell value
+    &#34;&#34;&#34;
+    if type(cell_value) not in (int, float):
+        cell_value = cell_value.replace(&#34;,&#34;, &#34;.&#34;)
+        cell_value = float(cell_value)
+    return cell_value
+
+
+def is_fitting_ec_numbers(ec_number_one: str, ec_number_two: str, wildcard_level: int) -&gt; bool:
+    &#34;&#34;&#34;Check whether the EC numbers are the same under the used wildcard level.
+
+    Arguments
+    ----------
+    * ec_number_one: str ~ The first given EC number.
+    * ec_number_two: str ~ The second given EC number.
+    * wildcard_level: int ~ The wildcard level.
+    &#34;&#34;&#34;
+    if wildcard_level == 0:
+        ec_number_one_full_numbers = ec_number_one.split(&#34;.&#34;)
+        ec_number_two_full_numbers = ec_number_two.split(&#34;.&#34;)
+    else:
+        ec_number_one_full_numbers = ec_number_one.split(&#34;.&#34;)[:-wildcard_level]
+        ec_number_two_full_numbers = ec_number_two.split(&#34;.&#34;)[:-wildcard_level]
+
+    if ec_number_one_full_numbers == ec_number_two_full_numbers:
+        return True
+    else:
+        return False
+
+
+def json_load(path: str) -&gt; Dict[Any, Any]:
+    &#34;&#34;&#34;Loads the given JSON file and returns it as dictionary.
+
+    Arguments
+    ----------
+    * path: str ~ The path of the JSON file
+    &#34;&#34;&#34;
+    with open(path) as f:
+        dictionary = json.load(f)
+    return dictionary
+
+
+def json_write(path: str, dictionary: Dict[Any, Any]) -&gt; None:
+    &#34;&#34;&#34;Writes a JSON file at the given path with the given dictionary as content.
+
+    Arguments
+    ----------
+    * path: str ~  The path of the JSON file that shall be written
+    * dictionary: Dict[Any, Any] ~ The dictionary which shalll be the content of
+      the created JSON file
+    &#34;&#34;&#34;
+    json_output = json.dumps(dictionary, indent=4)
+    with open(path, &#34;w&#34;, encoding=&#34;utf-8&#34;) as f:
+        f.write(json_output)
+
+
+def pickle_load(path: str) -&gt; Any:
+    &#34;&#34;&#34;Returns the value of the given pickle file.
+
+    Arguments
+    ----------
+    * path: str ~ The path to the pickle file.
+    &#34;&#34;&#34;
+    pickle_file = open(path, &#39;rb&#39;)
+    pickled_object = pickle.load(pickle_file)
+    pickle_file.close()
+    return pickled_object
+
+
+def pickle_write(path: str, pickled_object: Any) -&gt; None:
+    &#34;&#34;&#34;Writes the given object as pickled file with the given path
+
+    Arguments
+    ----------
+    * path: str ~ The path of the pickled file that shall be created
+    * pickled_object: Any ~ The object which shall be saved in the pickle file
+    &#34;&#34;&#34;
+    pickle_file = open(path, &#39;wb&#39;)
+    pickle.dump(pickled_object, pickle_file)
+    pickle_file.close()
+
+
+def mkdir(path: str) -&gt; None:
+    &#34;&#34;&#34;Creates a directory if the given directory does not exist yet.
+
+    Uses os.mkdir and os.path.exists internally.
+
+    Argument
+    ----------
+    * path: str ~ The directory&#39;s path.
+    &#34;&#34;&#34;
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+
+def resolve_pathway_ids(pathway_ids: str, pathways: List[Any]) -&gt; List[int]:
+    &#34;&#34;&#34;Returns a list index integer list of the given pathway_ids for the given pathway list.
+
+    It gets &#39;all&#39; and returns all indices of pathways or a comma-separated list of pathway numbers.
+
+    Example
+    ----------
+    If an organism has 5 pathways in total, this function would return for &#39;all&#39; as pathway_ids
+    [0, 1, 2, 3, 4], and for &#39;1,3,4&#39; it would return [0, 2, 3]
+
+    Arguments
+    ----------
+    * pathway_ids ~ The IDs of the pathways in a string. Can be &#39;all&#39; to get all indices, or
+      a comma-separated list of numbers.
+    * pathways ~ The list of pathways of which an index integer list shall be created.
+    &#34;&#34;&#34;
+    # Check if &#39;all&#39; is given...
+    if pathway_ids == &#34;all&#34;:
+        return [i for i in range(len(pathways))]
+    # ...if not, it should be a comma-separated list of numbers.
+    else:
+        # Return a list with each number as integer and substracted by 1.
+        # The substraction is done as e.g. the 1st pathway of an organism
+        # has the index 0 in a Python pathway list.
+        pathway_ids_list = pathway_ids.split(&#34;,&#34;)
+        return [int(i) - 1 for i in pathway_ids_list]
+
+
+def sanitize_path(text: str) -&gt; str:
+    &#34;&#34;&#34;Replaces all invalid characters for a path with valid ones.
+
+    E.g. useful for creating files with the name of KEGG pathways,
+    as these names may contain invalid characters.
+
+    Argument
+    ----------
+    * text: str ~ The string that may contain invalid characters.
+    &#34;&#34;&#34;
+    return text.replace(&#34;\\&#34;, &#34;_&#34;).replace(&#34;/&#34;, &#34;_&#34;).\
+        replace(&#34;:&#34;, &#34;_&#34;).replace(&#34;*&#34;, &#34;_&#34;).\
+        replace(&#34;&lt;&#34;, &#34;_&#34;).replace(&#34;&gt;&#34;, &#34;_&#34;).\
+        replace(&#34;|&#34;, &#34;_&#34;)
+
+
+def standardize_folder(folder: str) -&gt; str:
+    &#34;&#34;&#34;Returns for the given folder path is returned in a more standardized way.
+
+    I.e., folder paths with potential \\ are replaced with /. In addition, if
+    a path does not end with / will get an added /.
+
+    Argument
+    ----------
+    * folder: str ~ The folder path that shall be standardized.
+    &#34;&#34;&#34;
+    # Standardize for \ or / as path separator character.
+    folder = folder.replace(&#34;\\&#34;, &#34;/&#34;)
+
+    # If the last character is not a path separator, it is
+    # added so that all standardized folder path strings
+    # contain it.
+    if folder[-1] != &#34;/&#34;:
+        folder += &#34;/&#34;
+
+    return folder</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.helper_general.check_argument"><code class="name flex">
+<span>def <span class="ident">check_argument</span></span>(<span>argument, command)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Checks wheter the given mandatory argument variable is None or not. If none, the program stops.</p>
+<p>It is checked wheter the argument is None as argparser sets an argument variable to None
+if the argument is not set.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>argument: str ~ The argument that shall be checked and which shall not be None.</li>
+<li>command: str ~ The argument long name (i.e. the name after &ndash;) which is displayed
+in an error message if the argument is None.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check_argument(argument: str, command: str) -&gt; str:
+    &#34;&#34;&#34;Checks wheter the given mandatory argument variable is None or not. If none, the program stops.
+
+    It is checked wheter the argument is None as argparser sets an argument variable to None
+    if the argument is not set.
+
+    Arguments
+    ----------
+    * argument: str ~ The argument that shall be checked and which shall not be None.
+    * command: str ~ The argument long name (i.e. the name after --) which is displayed
+      in an error message if the argument is None.
+    &#34;&#34;&#34;
+    if argument is None:
+        print(f&#34;Mandatory argument --{command} not given. Stopping program.&#34;)
+
+        # Exit program with error code (not 0).
+        sys.exit(-1)
+
+    return argument</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.ensure_folder_existence"><code class="name flex">
+<span>def <span class="ident">ensure_folder_existence</span></span>(<span>folder)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Checks if the given folder exists. If not, the folder is created.</p>
+<h2 id="argument">Argument</h2>
+<ul>
+<li>folder: str ~ The folder whose existence shall be enforced.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def ensure_folder_existence(folder: str) -&gt; None:
+    &#34;&#34;&#34;Checks if the given folder exists. If not, the folder is created.
+
+    Argument
+    ----------
+    * folder: str ~ The folder whose existence shall be enforced.
+    &#34;&#34;&#34;
+    if os.path.isdir(folder):
+        return
+    os.makedirs(folder)</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.get"><code class="name flex">
+<span>def <span class="ident">get</span></span>(<span>url, num_tries=3, sleep_time=10.0)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns an internet site's content in the form of a list with one string per line.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>url:str ~ The URL of the internet site.</li>
+<li>num_tries: int=3 ~ The number of maximal tries to retrieve the site.
+Its default value of 3 resulted of empirical tests.</li>
+<li>sleep_time: float=10.0 ~ The number of seconds that shall be waited
+after an error or after the site's text was retrieved.
+Its default value of 10.0 seconds is in accordance with the NCBI
+rule that its servers shall not be contacted more often than every
+10 seconds.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get(url: str, num_tries: int = 3, sleep_time: float = 10.0) -&gt; List[str]:
+    &#34;&#34;&#34;Returns an internet site&#39;s content in the form of a list with one string per line.
+
+    Arguments
+    ----------
+    * url:str ~ The URL of the internet site.
+    * num_tries: int=3 ~ The number of maximal tries to retrieve the site.
+      Its default value of 3 resulted of empirical tests.
+    * sleep_time: float=10.0 ~ The number of seconds that shall be waited
+      after an error or after the site&#39;s text was retrieved.
+      Its default value of 10.0 seconds is in accordance with the NCBI
+      rule that its servers shall not be contacted more often than every
+      10 seconds.
+    &#34;&#34;&#34;
+    # Set text variable which will contain the site&#39;s text if no error happens.
+    text = &#34;&#34;
+
+    # Try it until num_tries is reached or until the site&#39;s content was
+    # successfully retrieved.
+    for i in range(num_tries):
+        # Wait the given time in doing nothing.
+        time.sleep(sleep_time)
+
+        # Try connection. May fail due to timeout (see _get()&#39;s comments)
+        # or due to a client- or server-side connection problem.
+        try:
+            # _get() is the internal function which actually sends the
+            # request to the site. It is a separate function in order to
+            # be able to start it in concurrent mode so that it is possible
+            # to await a timeout.
+            # Otherwise, if _get&#39;s content would be in
+            # this function, this function and the whole program would be
+            # blocked without the possibilty to stop after a set timeout.
+            # A &#39;future&#39; is a variable controlling a concurrently running
+            # process.
+            future = _get(url)
+            text = future.result()
+
+            # If no error/timeout occured while calling _get, we reach the
+            # break statement which causes that no other try will be performed
+            # as we got the site&#39;s data successfully.
+            break
+        except Exception as error:
+            # Print error. The error may be a timeout or a connection problem.
+            print(f&#34;Error with {url}&#34;)
+            print(f&#34;Error: {error}&#34;)
+            print(f&#34;In try {i+1}&#34;)
+
+            # Wait the time until the next try if the maximal number of tries
+            # is not reached yet.
+            time.sleep(sleep_time)
+
+    # Split the internet site&#39;s text into a string list containing each line.
+    text_lines: List[str] = text.split(&#34;\n&#34;)
+
+    # Return the line list.
+    return text_lines</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.get_and_save"><code class="name flex">
+<span>def <span class="ident">get_and_save</span></span>(<span>url, filepath)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Retrieves the text content from the given URL and saves it in the given text file path.</p>
+<p>It also returns the content of the URL as a list of strings (one list element per newline-separated line).</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>url: str ~ The URL of which the text content is read out</li>
+<li>filepath: str ~ The path pof the text file which will include the URL text content</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_and_save(url: str, filepath: str) -&gt; List[str]:
+    &#34;&#34;&#34;Retrieves the text content from the given URL and saves it in the given text file path.
+
+    It also returns the content of the URL as a list of strings (one list element per newline-separated line).
+
+    Arguments
+    ----------
+    * url: str ~ The URL of which the text content is read out
+    * filepath: str ~ The path pof the text file which will include the URL text content
+    &#34;&#34;&#34;
+    text = get(url)
+
+    with open(filepath, &#34;w&#34;) as f:
+        f.write(&#34;&#34;.join([i + &#34;\n&#34; for i in text]))
+
+    return text</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.get_entry_id_kegg_id_mapping"><code class="name flex">
+<span>def <span class="ident">get_entry_id_kegg_id_mapping</span></span>(<span>xlsx_path, worksheet_name)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Reads a worksheet in which the user can select the KEGG IDs of e.g. metabolites or reactions.</p>
+<p>This is used for the KEGG ID XLSX for reactions and metabolites in AutoPACMEN.
+THe functions returns a dictionary of IDs as keys and selected KEGG IDs as values.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>xlsx_path: str ~ The path to the analyzed XLSX</li>
+<li>worksheet_name: str ~ THe name of the analyzed worksheet of the analyzed XLSX</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_entry_id_kegg_id_mapping(xlsx_path: str, worksheet_name: str) -&gt; Dict[str, str]:
+    &#34;&#34;&#34;Reads a worksheet in which the user can select the KEGG IDs of e.g. metabolites or reactions.
+
+    This is used for the KEGG ID XLSX for reactions and metabolites in AutoPACMEN.
+    THe functions returns a dictionary of IDs as keys and selected KEGG IDs as values.
+
+    Arguments
+    ----------
+    * xlsx_path: str ~ The path to the analyzed XLSX
+    * worksheet_name: str ~ THe name of the analyzed worksheet of the analyzed XLSX
+    &#34;&#34;&#34;
+    workbook = openpyxl.load_workbook(filename=xlsx_path, read_only=True)
+    worksheet = workbook[worksheet_name]
+
+    entry_id_kegg_id_mapping: Dict[str, str] = {}
+    for row in worksheet.rows:
+        current_cell = 1
+        assessment_found = False
+        for cell in row:
+            if current_cell == 1:
+                reaction_id = cell.value
+            if current_cell &gt; 3:
+                if ((current_cell - 1) % 3) == 0:
+                    current_kegg_id = cell.value
+
+                if ((current_cell - 2) % 3) == 0:
+                    assessment = cell.value
+                    if assessment is not None:
+                        if assessment == &#34;Yes&#34;:
+                            assessment_found = True
+                            break
+            current_cell += 1
+        if assessment_found:
+            entry_id_kegg_id_mapping[reaction_id] = current_kegg_id
+        else:
+            print(f&#34;ERROR: No assessment for reaction {reaction_id}!&#34;)
+            print(f&#34;Spreadsheet: {xlsx_path}&#34;)
+            print(f&#34;Terminating program...&#34;)
+            sys.exit(-1)
+    return entry_id_kegg_id_mapping</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.get_files"><code class="name flex">
+<span>def <span class="ident">get_files</span></span>(<span>path)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns the names of the files in the given folder as a list of strings.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>path: str ~ The path to the folder of which the file names shall be returned</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_files(path: str) -&gt; List[str]:
+    &#34;&#34;&#34;Returns the names of the files in the given folder as a list of strings.
+
+    Arguments
+    ----------
+    * path: str ~ The path to the folder of which the file names shall be returned
+    &#34;&#34;&#34;
+    files: List[str] = []
+    for (_, _, filenames) in os.walk(path):
+        files.extend(filenames)
+    return files</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.get_float_cell_value"><code class="name flex">
+<span>def <span class="ident">get_float_cell_value</span></span>(<span>cell_value)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns the value of an openpyxl cell value.</p>
+<p>This function is used in oder to operate with spreadsheets
+which use the comma as the decimal mark instead of a period.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>cell_value ~ The openpyxl cell value</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_float_cell_value(cell_value) -&gt; float:
+    &#34;&#34;&#34;Returns the value of an openpyxl cell value.
+
+    This function is used in oder to operate with spreadsheets
+    which use the comma as the decimal mark instead of a period.
+
+    Arguments
+    ----------
+    * cell_value ~ The openpyxl cell value
+    &#34;&#34;&#34;
+    if type(cell_value) not in (int, float):
+        cell_value = cell_value.replace(&#34;,&#34;, &#34;.&#34;)
+        cell_value = float(cell_value)
+    return cell_value</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.is_fitting_ec_numbers"><code class="name flex">
+<span>def <span class="ident">is_fitting_ec_numbers</span></span>(<span>ec_number_one, ec_number_two, wildcard_level)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Check whether the EC numbers are the same under the used wildcard level.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>ec_number_one: str ~ The first given EC number.</li>
+<li>ec_number_two: str ~ The second given EC number.</li>
+<li>wildcard_level: int ~ The wildcard level.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def is_fitting_ec_numbers(ec_number_one: str, ec_number_two: str, wildcard_level: int) -&gt; bool:
+    &#34;&#34;&#34;Check whether the EC numbers are the same under the used wildcard level.
+
+    Arguments
+    ----------
+    * ec_number_one: str ~ The first given EC number.
+    * ec_number_two: str ~ The second given EC number.
+    * wildcard_level: int ~ The wildcard level.
+    &#34;&#34;&#34;
+    if wildcard_level == 0:
+        ec_number_one_full_numbers = ec_number_one.split(&#34;.&#34;)
+        ec_number_two_full_numbers = ec_number_two.split(&#34;.&#34;)
+    else:
+        ec_number_one_full_numbers = ec_number_one.split(&#34;.&#34;)[:-wildcard_level]
+        ec_number_two_full_numbers = ec_number_two.split(&#34;.&#34;)[:-wildcard_level]
+
+    if ec_number_one_full_numbers == ec_number_two_full_numbers:
+        return True
+    else:
+        return False</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.json_load"><code class="name flex">
+<span>def <span class="ident">json_load</span></span>(<span>path)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Loads the given JSON file and returns it as dictionary.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>path: str ~ The path of the JSON file</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def json_load(path: str) -&gt; Dict[Any, Any]:
+    &#34;&#34;&#34;Loads the given JSON file and returns it as dictionary.
+
+    Arguments
+    ----------
+    * path: str ~ The path of the JSON file
+    &#34;&#34;&#34;
+    with open(path) as f:
+        dictionary = json.load(f)
+    return dictionary</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.json_write"><code class="name flex">
+<span>def <span class="ident">json_write</span></span>(<span>path, dictionary)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Writes a JSON file at the given path with the given dictionary as content.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>path: str ~
+The path of the JSON file that shall be written</li>
+<li>dictionary: Dict[Any, Any] ~ The dictionary which shalll be the content of
+the created JSON file</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def json_write(path: str, dictionary: Dict[Any, Any]) -&gt; None:
+    &#34;&#34;&#34;Writes a JSON file at the given path with the given dictionary as content.
+
+    Arguments
+    ----------
+    * path: str ~  The path of the JSON file that shall be written
+    * dictionary: Dict[Any, Any] ~ The dictionary which shalll be the content of
+      the created JSON file
+    &#34;&#34;&#34;
+    json_output = json.dumps(dictionary, indent=4)
+    with open(path, &#34;w&#34;, encoding=&#34;utf-8&#34;) as f:
+        f.write(json_output)</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.mkdir"><code class="name flex">
+<span>def <span class="ident">mkdir</span></span>(<span>path)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Creates a directory if the given directory does not exist yet.</p>
+<p>Uses os.mkdir and os.path.exists internally.</p>
+<h2 id="argument">Argument</h2>
+<ul>
+<li>path: str ~ The directory's path.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mkdir(path: str) -&gt; None:
+    &#34;&#34;&#34;Creates a directory if the given directory does not exist yet.
+
+    Uses os.mkdir and os.path.exists internally.
+
+    Argument
+    ----------
+    * path: str ~ The directory&#39;s path.
+    &#34;&#34;&#34;
+    if not os.path.exists(path):
+        os.mkdir(path)</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.pickle_load"><code class="name flex">
+<span>def <span class="ident">pickle_load</span></span>(<span>path)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns the value of the given pickle file.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>path: str ~ The path to the pickle file.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pickle_load(path: str) -&gt; Any:
+    &#34;&#34;&#34;Returns the value of the given pickle file.
+
+    Arguments
+    ----------
+    * path: str ~ The path to the pickle file.
+    &#34;&#34;&#34;
+    pickle_file = open(path, &#39;rb&#39;)
+    pickled_object = pickle.load(pickle_file)
+    pickle_file.close()
+    return pickled_object</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.pickle_write"><code class="name flex">
+<span>def <span class="ident">pickle_write</span></span>(<span>path, pickled_object)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Writes the given object as pickled file with the given path</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>path: str ~ The path of the pickled file that shall be created</li>
+<li>pickled_object: Any ~ The object which shall be saved in the pickle file</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pickle_write(path: str, pickled_object: Any) -&gt; None:
+    &#34;&#34;&#34;Writes the given object as pickled file with the given path
+
+    Arguments
+    ----------
+    * path: str ~ The path of the pickled file that shall be created
+    * pickled_object: Any ~ The object which shall be saved in the pickle file
+    &#34;&#34;&#34;
+    pickle_file = open(path, &#39;wb&#39;)
+    pickle.dump(pickled_object, pickle_file)
+    pickle_file.close()</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.resolve_pathway_ids"><code class="name flex">
+<span>def <span class="ident">resolve_pathway_ids</span></span>(<span>pathway_ids, pathways)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns a list index integer list of the given pathway_ids for the given pathway list.</p>
+<p>It gets 'all' and returns all indices of pathways or a comma-separated list of pathway numbers.</p>
+<h2 id="example">Example</h2>
+<p>If an organism has 5 pathways in total, this function would return for 'all' as pathway_ids
+[0, 1, 2, 3, 4], and for '1,3,4' it would return [0, 2, 3]</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>pathway_ids ~ The IDs of the pathways in a string. Can be 'all' to get all indices, or
+a comma-separated list of numbers.</li>
+<li>pathways ~ The list of pathways of which an index integer list shall be created.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def resolve_pathway_ids(pathway_ids: str, pathways: List[Any]) -&gt; List[int]:
+    &#34;&#34;&#34;Returns a list index integer list of the given pathway_ids for the given pathway list.
+
+    It gets &#39;all&#39; and returns all indices of pathways or a comma-separated list of pathway numbers.
+
+    Example
+    ----------
+    If an organism has 5 pathways in total, this function would return for &#39;all&#39; as pathway_ids
+    [0, 1, 2, 3, 4], and for &#39;1,3,4&#39; it would return [0, 2, 3]
+
+    Arguments
+    ----------
+    * pathway_ids ~ The IDs of the pathways in a string. Can be &#39;all&#39; to get all indices, or
+      a comma-separated list of numbers.
+    * pathways ~ The list of pathways of which an index integer list shall be created.
+    &#34;&#34;&#34;
+    # Check if &#39;all&#39; is given...
+    if pathway_ids == &#34;all&#34;:
+        return [i for i in range(len(pathways))]
+    # ...if not, it should be a comma-separated list of numbers.
+    else:
+        # Return a list with each number as integer and substracted by 1.
+        # The substraction is done as e.g. the 1st pathway of an organism
+        # has the index 0 in a Python pathway list.
+        pathway_ids_list = pathway_ids.split(&#34;,&#34;)
+        return [int(i) - 1 for i in pathway_ids_list]</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.sanitize_path"><code class="name flex">
+<span>def <span class="ident">sanitize_path</span></span>(<span>text)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Replaces all invalid characters for a path with valid ones.</p>
+<p>E.g. useful for creating files with the name of KEGG pathways,
+as these names may contain invalid characters.</p>
+<h2 id="argument">Argument</h2>
+<ul>
+<li>text: str ~ The string that may contain invalid characters.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sanitize_path(text: str) -&gt; str:
+    &#34;&#34;&#34;Replaces all invalid characters for a path with valid ones.
+
+    E.g. useful for creating files with the name of KEGG pathways,
+    as these names may contain invalid characters.
+
+    Argument
+    ----------
+    * text: str ~ The string that may contain invalid characters.
+    &#34;&#34;&#34;
+    return text.replace(&#34;\\&#34;, &#34;_&#34;).replace(&#34;/&#34;, &#34;_&#34;).\
+        replace(&#34;:&#34;, &#34;_&#34;).replace(&#34;*&#34;, &#34;_&#34;).\
+        replace(&#34;&lt;&#34;, &#34;_&#34;).replace(&#34;&gt;&#34;, &#34;_&#34;).\
+        replace(&#34;|&#34;, &#34;_&#34;)</code></pre>
+</details>
+</dd>
+<dt id="autopacmen.submodules.helper_general.standardize_folder"><code class="name flex">
+<span>def <span class="ident">standardize_folder</span></span>(<span>folder)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Returns for the given folder path is returned in a more standardized way.</p>
+<p>I.e., folder paths with potential \ are replaced with /. In addition, if
+a path does not end with / will get an added /.</p>
+<h2 id="argument">Argument</h2>
+<ul>
+<li>folder: str ~ The folder path that shall be standardized.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def standardize_folder(folder: str) -&gt; str:
+    &#34;&#34;&#34;Returns for the given folder path is returned in a more standardized way.
+
+    I.e., folder paths with potential \\ are replaced with /. In addition, if
+    a path does not end with / will get an added /.
+
+    Argument
+    ----------
+    * folder: str ~ The folder path that shall be standardized.
+    &#34;&#34;&#34;
+    # Standardize for \ or / as path separator character.
+    folder = folder.replace(&#34;\\&#34;, &#34;/&#34;)
+
+    # If the last character is not a path separator, it is
+    # added so that all standardized folder path strings
+    # contain it.
+    if folder[-1] != &#34;/&#34;:
+        folder += &#34;/&#34;
+
+    return folder</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.helper_general.check_argument" href="#autopacmen.submodules.helper_general.check_argument">check_argument</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.ensure_folder_existence" href="#autopacmen.submodules.helper_general.ensure_folder_existence">ensure_folder_existence</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.get" href="#autopacmen.submodules.helper_general.get">get</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.get_and_save" href="#autopacmen.submodules.helper_general.get_and_save">get_and_save</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.get_entry_id_kegg_id_mapping" href="#autopacmen.submodules.helper_general.get_entry_id_kegg_id_mapping">get_entry_id_kegg_id_mapping</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.get_files" href="#autopacmen.submodules.helper_general.get_files">get_files</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.get_float_cell_value" href="#autopacmen.submodules.helper_general.get_float_cell_value">get_float_cell_value</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.is_fitting_ec_numbers" href="#autopacmen.submodules.helper_general.is_fitting_ec_numbers">is_fitting_ec_numbers</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.json_load" href="#autopacmen.submodules.helper_general.json_load">json_load</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.json_write" href="#autopacmen.submodules.helper_general.json_write">json_write</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.mkdir" href="#autopacmen.submodules.helper_general.mkdir">mkdir</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.pickle_load" href="#autopacmen.submodules.helper_general.pickle_load">pickle_load</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.pickle_write" href="#autopacmen.submodules.helper_general.pickle_write">pickle_write</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.resolve_pathway_ids" href="#autopacmen.submodules.helper_general.resolve_pathway_ids">resolve_pathway_ids</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.sanitize_path" href="#autopacmen.submodules.helper_general.sanitize_path">sanitize_path</a></code></li>
+<li><code><a title="autopacmen.submodules.helper_general.standardize_folder" href="#autopacmen.submodules.helper_general.standardize_folder">standardize_folder</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

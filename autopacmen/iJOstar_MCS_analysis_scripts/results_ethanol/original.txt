@@ -1,0 +1,766 @@
+MCS up to size 5:
+R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_TPITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_RPETGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_TKT2TGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_TKT1TGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_TALATGreverse	
+R_EX_ac_e	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_RPETGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TKT2TGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TKT1TGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TALATGreverse	
+R_EX_ac_e	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_ATPS4rppTGreverse	R_PTArTGforward	R_TPITGforward	
+R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_RPETGreverse	
+R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_TALATGreverse	
+R_EX_lac__D_e	R_ACKrTGreverse	R_ATPS4rppTGreverse	R_TPITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_RPETGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TKT2TGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TKT1TGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TALATGreverse	
+R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_PFL	R_PPC	R_D_LACtexTGreverse	R_TALATGreverse	
+R_ACKrTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACKrTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_RPETGreverse	
+R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TKT2TGreverse	
+R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TKT1TGreverse	
+R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TALATGreverse	
+R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_PTArTGforward	R_TPITGforward	
+R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_ATPS4rppTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_PFL	R_PPC	R_RPETGreverse	
+R_EX_lac__D_e	R_PFL	R_PPC	R_TKT2TGreverse	
+R_EX_lac__D_e	R_PFL	R_PPC	R_TKT1TGreverse	
+R_EX_lac__D_e	R_PFL	R_PPC	R_TALATGreverse	
+R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_RPETGreverse	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_TKT2TGreverse	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_TKT1TGreverse	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_TALATGreverse	
+R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_RPETGreverse	
+R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_TALATGreverse	
+R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_PFL	R_PPC	R_D_LACtexTGreverse	R_RPETGreverse	
+R_PFL	R_PPC	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_PFL	R_PPC	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_RPETGreverse	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TKT2TGreverse	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TKT1TGreverse	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TALATGreverse	
+R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_RPETGreverse	
+R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_TKT2TGreverse	
+R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_TKT1TGreverse	
+R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_TALATGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_RPETGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_TALATGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_ATPS4rppTGreverse	R_TPITGforward	
+R_ACt2rpp	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_TKT2TGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_TALATGreverse	
+R_ACt2rpp	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_RPETGreverse	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_RPETGreverse	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_TKT2TGreverse	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_TKT1TGreverse	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_TALATGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_TKT1TGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_EX_lac__D_e	R_PFL	R_PPC	R_ACtexTGreverse	R_PGITGforward	
+R_GLCptspp	R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_GLCptspp	R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_EX_ac_e	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_PGITGforward	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_PFL	R_ACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_FORtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_EX_for_e	R_GLCt2pp	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_DRPA	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	
+R_EX_ac_e	R_EX_for_e	R_EX_lac__D_e	R_PPC	R_PGITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_DRPA	R_PPC	R_PGITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_PGITGforward	R_PPM2TGforward	
+R_EX_for_e	R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_PFL	R_PTArTGforward	R_TPITGforward	
+R_GLCt2pp	R_PFL	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_PFL	R_D_LACt2ppTGreverse	R_PTArTGforward	R_TPITGforward	
+R_GLCt2pp	R_PFL	R_D_LACtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_GLCt2pp	R_ICL	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ICL	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_GLCt2pp	R_PFL	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_DRPA	R_PPC	R_ACALDTGreverse	
+R_ACtexTGreverse	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_PGITGforward	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PGITGforward	R_XYLI2TGforward	
+R_EX_lac__D_e	R_HEX7	R_PPC	R_H2OtexTGforward	R_PGITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_HCYSMT	R_PFL	R_PPC	
+R_EX_lac__D_e	R_DRPA	R_HCYSMT	R_PFL	R_PPC	
+R_EX_lac__D_e	R_HCYSMT	R_PFL	R_PPC	R_PPM2TGforward	
+R_EX_ac_e	R_GLCptspp	R_PFL	R_PPC	R_D_LACt2ppTGreverse	
+R_DRPA	R_GLCptspp	R_PFL	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_PPKTGreverse	
+R_GLCt2pp	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PFL	R_PPC	R_PPKTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	
+R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_H2OtppTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	
+R_ACt2rpp	R_GLCptspp	R_PFL	R_PPC	R_D_LACt2ppTGreverse	
+R_GLCptspp	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_FORtppi	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_DRPA	R_FORtppi	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_PGITGforward	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_FORtppi	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_DRPA	R_PPC	R_FORtexTGreverse	R_PGITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_H2OtppTGforward	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_ACtexTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_FORtppi	R_HCYSMT	R_PPC	R_ACtexTGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_FORtexTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_FORtexTGreverse	R_PGITGforward	
+R_EX_ac_e	R_EX_for_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	
+R_EX_lac__D_e	R_ACt2rpp	R_HCYSMT	R_PFL	R_PPC	
+R_EX_lac__D_e	R_DRPA	R_PPC	R_H2OtexTGforward	R_PGITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PGITGforward	
+R_MGSA	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_PTArTGforward	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ATPS4rppTGreverse	R_TALATGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	
+R_EX_ac_e	R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_DRPA	R_GLCptspp	R_PPC	
+R_EX_for_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	R_PPM2TGforward	
+R_EX_lac__D_e	R_DRPA	R_GLCptspp	R_PFL	R_PPC	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_TALATGreverse	
+R_EX_for_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_FORtppi	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_EX_lac__D_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_RPETGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_TKT2TGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_TKT1TGreverse	
+R_FORtppi	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_FORtexTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_PGITGforward	R_XYLI2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_GLCptspp	R_PFL	R_PPC	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCptspp	R_PFL	R_PPC	
+R_EX_for_e	R_DRPA	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_HEX7	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_TALATGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_DRPA	R_PPC	R_PGITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_ACt2rpp	R_GLCptspp	R_PPC	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCptspp	R_PFL	R_PPC	
+R_EX_lac__D_e	R_PFL	R_PPC	R_ACtexTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_HCYSMT	R_PFL	R_PPC	R_ACtexTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_GLCt2pp	R_ACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_FORtppi	R_GLCt2pp	R_ACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_ACtexTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_ICL	R_ACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_ACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_MALS	R_ACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_ACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_GLCt2pp	R_ACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_FORtppi	R_GLCptspp	R_PPC	R_ACtexTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	
+R_EX_lac__D_e	R_GLCptspp	R_PFL	R_PPC	R_ACtexTGreverse	
+R_EX_lac__D_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	R_ACtexTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_H2OtppTGforward	
+R_EX_for_e	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_for_e	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_DRPA	R_PFL	R_PPC	R_PPKTGreverse	
+R_FORtppi	R_GLCt2pp	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_GLCt2pp	R_MALS	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_h2o_e	R_GLCt2pp	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PGITGforward	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_H2OtexTGforward	R_PGITGforward	
+R_EX_ac_e	R_FORtppi	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_DRPA	R_GLCptspp	R_PPC	R_FORtexTGreverse	
+R_EX_lac__D_e	R_GLCptspp	R_PPC	R_FORtexTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	R_FORtexTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCptspp	R_PPC	R_FORtexTGreverse	
+R_EX_for_e	R_GLCt2pp	R_D_LACt2ppTGreverse	R_PTArTGforward	R_TPITGforward	
+R_FORtppi	R_GLCt2pp	R_D_LACt2ppTGreverse	R_PTArTGforward	R_TPITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_PTArTGforward	R_TPITGforward	
+R_EX_ac_e	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_DRPA	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPM2TGforward	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	R_PGITGforward	R_XYLI2TGforward	
+R_EX_h2o_e	R_PPC	R_LDH_DTGreverse	R_PGITGforward	R_XYLI2TGforward	
+R_EX_lac__D_e	R_DRPA	R_FORtppi	R_GLCptspp	R_PPC	
+R_EX_ac_e	R_EX_lac__D_e	R_FORtppi	R_GLCptspp	R_PPC	
+R_EX_lac__D_e	R_FORtppi	R_GLCptspp	R_PPC	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	R_H2OtexTGforward	
+R_EX_ac_e	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	
+R_EX_lac__D_e	R_PFL	R_PPC	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_FORtexTGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_DRPA	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PFL	R_PPC	R_D_LACtexTGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TALATGreverse	
+R_EX_ac_e	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_RPETGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_ICL	R_PPC	R_ACtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_DRPA	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_lac__D_e	R_DRPA	R_FORtppi	R_PPC	R_PPKTGreverse	
+R_EX_lac__D_e	R_DRPA	R_FORtppi	R_HCYSMT	R_PPC	
+R_EX_lac__D_e	R_ACt2rpp	R_PFL	R_PPC	R_PPKTGreverse	
+R_EX_ac_e	R_EX_h2o_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	
+R_EX_ac_e	R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_DRPA	R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_ac_e	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_EX_ac_e	R_EX_for_e	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_DRPA	R_GLCptspp	R_PPC	
+R_EX_ac_e	R_EX_for_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	
+R_GLCt2pp	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_DRPA	R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_DRPA	R_FORtppi	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_for_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TALATGreverse	
+R_FORtppi	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TALATGreverse	
+R_MGSA	R_PPC	R_FORtexTGreverse	R_LDH_DTGreverse	R_TALATGreverse	
+R_MGSA	R_PFL	R_PPC	R_LDH_DTGreverse	R_TALATGreverse	
+R_MGSA	R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	R_TALATGreverse	
+R_EX_h2o_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TALATGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_ACt2rpp	R_GLCptspp	R_PPC	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_HCYSMT	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_RPETGreverse	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_MGSA	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_TPITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_DRPA	R_HCYSMT	R_PPC	
+R_EX_for_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_PPM2TGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	
+R_EX_ac_e	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PFL	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_ACt2rpp	R_HCYSMT	R_PPC	
+R_EX_for_e	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_PGITGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_PGITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_H2OtexTGforward	
+R_EX_ac_e	R_FORtppi	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_for_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_RPETGreverse	
+R_EX_for_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_EX_for_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_ac_e	R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_DRPA	R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_DRPA	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	R_XYLI2TGforward	
+R_FORtppi	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	R_XYLI2TGforward	
+R_EX_ac_e	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_ac_e	R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCptspp	R_PPC	R_H2OtexTGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_h2o_e	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_DRPA	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_EX_h2o_e	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ATPS4rppTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_PPKTGreverse	
+R_DRPA	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_FORtppi	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_ACt2rpp	R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_HEX7	R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	R_PGITGforward	
+R_EX_h2o_e	R_HEX7	R_PPC	R_LDH_DTGreverse	R_PGITGforward	
+R_PFL	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_DRPA	R_HCYSMT	R_PFL	R_PPC	R_D_LACtexTGreverse	
+R_HCYSMT	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_HCYSMT	R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_ACt2rpp	R_HCYSMT	R_PFL	R_PPC	R_D_LACtexTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_GLCt2pp	R_PTArTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_FORtppi	R_GLCt2pp	R_PTArTGforward	R_TPITGforward	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_HCYSMT	R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPKTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ACALDTGreverse	
+R_FORtppi	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_FORtppi	R_GLCt2pp	R_TPITGforward	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_FORtppi	R_GLCt2pp	R_ACKrTGreverse	R_TPITGforward	
+R_FORtppi	R_GLCt2pp	R_ACKrTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_FORtppi	R_GLCt2pp	R_ACKrTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_ATPS4rppTGreverse	
+R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_DRPA	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_EX_ac_e	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_MGSA	R_PFL	R_PPC	R_LDH_DTGreverse	R_RPETGreverse	
+R_MGSA	R_PFL	R_PPC	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_MGSA	R_PFL	R_PPC	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_ac_e	R_FORtppi	R_GLCt2pp	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ATPS4rppTGreverse	R_RPETGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCt2pp	R_FORtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_H2OtppTGforward	
+R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtppTGforward	
+R_ACt2rpp	R_HCYSMT	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_RPETGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TKT2TGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TKT1TGreverse	
+R_EX_ac_e	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TALATGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ATPS4rppTGreverse	R_TKT2TGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_ATPS4rppTGreverse	R_TKT1TGreverse	
+R_EX_ac_e	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_FORtppi	R_GLCptspp	R_PPC	
+R_EX_lac__D_e	R_DRPA	R_GLCptspp	R_PPC	R_H2OtexTGforward	
+R_EX_ac_e	R_FORtppi	R_GLCt2pp	R_D_LACtexTGreverse	R_TPITGforward	
+R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_H2OtppTGforward	
+R_ACt2rpp	R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_FORtppi	R_GLCt2pp	R_TPITGforward	
+R_ACt2rpp	R_FORtppi	R_GLCt2pp	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACt2rpp	R_FORtppi	R_GLCt2pp	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCptspp	R_PPC	R_H2OtexTGforward	R_PPM2TGforward	
+R_ACt2rpp	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_MGSA	R_PPC	R_FORtexTGreverse	R_LDH_DTGreverse	R_RPETGreverse	
+R_MGSA	R_PPC	R_FORtexTGreverse	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_MGSA	R_PPC	R_FORtexTGreverse	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_ATPS4rppTGreverse	
+R_DRPA	R_HCYSMT	R_PFL	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_ac_e	R_EX_for_e	R_EX_lac__D_e	R_GLCt2pp	R_TPITGforward	
+R_EX_ac_e	R_EX_for_e	R_GLCt2pp	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_EX_for_e	R_GLCt2pp	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPM2TGforward	
+R_DRPA	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_EX_ac_e	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_EX_for_e	R_DRPA	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_ac_e	R_EX_for_e	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_for_e	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_EX_for_e	R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_ACt2rpp	R_MGSA	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_TPITGforward	
+R_HCYSMT	R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_HCYSMT	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_HCYSMT	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCt2pp	R_H2OtppTGforward	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_h2o_e	R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_RPETGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TKT2TGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACt2ppTGreverse	R_TKT1TGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_H2OtppTGforward	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCt2pp	R_ICL	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_ICL	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_ICL	R_D_LACtexTGreverse	R_TPITGforward	
+R_ACt2rpp	R_PFL	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_TPITGforward	
+R_EX_for_e	R_ACt2rpp	R_GLCt2pp	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_for_e	R_ACt2rpp	R_GLCt2pp	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_ACKrTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACKrTGreverse	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACKrTGreverse	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_FORtppi	R_MGSA	R_PPC	R_LDH_DTGreverse	R_RPETGreverse	
+R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_ACt2rpp	R_HCYSMT	R_PFL	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_FORtexTGreverse	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_MGSA	R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	R_RPETGreverse	
+R_MGSA	R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_MGSA	R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_h2o_e	R_DRPA	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_h2o_e	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_for_e	R_DRPA	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_FORtppi	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_FORtppi	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	R_XYLI2TGforward	
+R_EX_ac_e	R_FORtppi	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_DRPA	R_FORtppi	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_FORtppi	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_FORtppi	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_FORtppi	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_ac_e	R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_for_e	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_for_e	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_DRPA	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_for_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_EX_for_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_ACt2rpp	R_FORtppi	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_ac_e	R_FORtppi	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_DRPA	R_FORtppi	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_FORtppi	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_FORtppi	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_EX_ac_e	R_GLCptspp	R_PFL	R_PPC	R_D_LACtexTGreverse	
+R_DRPA	R_GLCptspp	R_PFL	R_PPC	R_D_LACtexTGreverse	
+R_GLCptspp	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_GLCptspp	R_PFL	R_PPC	R_D_LACtexTGreverse	
+R_EX_for_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_EX_for_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	
+R_EX_h2o_e	R_EX_lac__D_e	R_ACt2rpp	R_HCYSMT	R_PPC	
+R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_DRPA	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	R_XYLI2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_EX_lac__D_e	R_GLCt2pp	R_TPITGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_HEX7	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_EX_ac_e	R_EX_h2o_e	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_ac_e	R_EX_h2o_e	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_GLCt2pp	R_ACKrTGreverse	R_TPITGforward	
+R_EX_for_e	R_GLCt2pp	R_ACKrTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_for_e	R_GLCt2pp	R_ACKrTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_for_e	R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_RPETGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_TKT2TGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_TKT1TGreverse	
+R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_ICL	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_ICL	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_ICL	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_MGSA	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_TPITGforward	
+R_ACt2rpp	R_FORtppi	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	R_TALATGreverse	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	R_TALATGreverse	
+R_MGSA	R_ACKrTGreverse	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCt2pp	R_H2OtexTGforward	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_H2OtexTGforward	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_h2o_e	R_HEX7	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_for_e	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PTArTGforward	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_GLCptspp	R_PPC	R_PPM2TGforward	
+R_EX_h2o_e	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_h2o_e	R_DRPA	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_h2o_e	R_DRPA	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_h2o_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_HEX7	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PPKTGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_H2OtexTGforward	
+R_DRPA	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPKTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPKTGreverse	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCt2pp	R_MALS	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_MALS	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_MALS	R_D_LACtexTGreverse	R_TPITGforward	
+R_DRPA	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_EX_h2o_e	R_DRPA	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	
+R_EX_h2o_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_DRPA	R_PPC	R_H2OtexTGforward	R_PPKTGreverse	
+R_EX_h2o_e	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_DRPA	R_HCYSMT	R_PPC	
+R_EX_for_e	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_PPKTGreverse	
+R_EX_for_e	R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_DRPA	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_PPC	R_ACtexTGreverse	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TALATGreverse	
+R_ACt2rpp	R_PPC	R_ATPS4rppTGreverse	R_D_LACtexTGreverse	R_TALATGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_MALS	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_MALS	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_MALS	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_for_e	R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_HEX7	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_PPC	R_H2OtppTGforward	R_PTArTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PTArTGforward	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_PPKTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_DRPA	R_PPC	R_PPKTGreverse	
+R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_EX_ac_e	R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	R_PPM2TGforward	
+R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_HCYSMT	R_PPC	R_PPM2TGforward	
+R_EX_ac_e	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_H2OtppTGforward	
+R_EX_ac_e	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_DRPA	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_PFL	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_PFL	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PGITGforward	
+R_ACt2rpp	R_PFL	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_ac_e	R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_DRPA	R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_FORtppi	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PGITGforward	
+R_ACt2rpp	R_FORtppi	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_PPKTGreverse	
+R_DRPA	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_DRPA	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_ac_e	R_EX_h2o_e	R_GLCt2pp	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_EX_h2o_e	R_GLCt2pp	R_D_LACtexTGreverse	R_TPITGforward	
+R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACt2ppTGreverse	R_FORtexTGreverse	
+R_EX_h2o_e	R_DRPA	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_ICL	R_PPC	R_TPITGforward	
+R_ACt2rpp	R_ICL	R_PPC	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACt2rpp	R_ICL	R_PPC	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCptspp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_H2OtexTGforward	
+R_EX_lac__D_e	R_DRPA	R_HCYSMT	R_PPC	R_H2OtexTGforward	
+R_EX_lac__D_e	R_HCYSMT	R_PPC	R_H2OtexTGforward	R_PPM2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_h2o_e	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_ACt2rpp	R_FORtppi	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_DRPA	R_FORtppi	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_FORtppi	R_PPC	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_ACt2rpp	R_FORtppi	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_h2o_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_RPETGreverse	
+R_EX_h2o_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_h2o_e	R_MGSA	R_PPC	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_EX_h2o_e	R_HCYSMT	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_DRPA	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_h2o_e	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_ICL	R_PPC	R_TPITGforward	
+R_EX_ac_e	R_ICL	R_PPC	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_ICL	R_PPC	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_for_e	R_DRPA	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_FORtppi	R_PPC	R_PPKTGreverse	
+R_EX_for_e	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_for_e	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_FORtexTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_H2OtexTGforward	R_PPKTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_ACALDTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_H2OtppTGforward	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_ACKrTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_PPC	R_ACKrTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_PPC	R_ACKrTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_h2o_e	R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	
+R_EX_ac_e	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_DRPA	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_PPKTGreverse	R_PPM2TGforward	
+R_ACt2rpp	R_ATPS4rppTGreverse	R_LDH_DTGreverse	R_PGITGforward	R_TPITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_H2OtppTGforward	R_TPITGforward	
+R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_TPITGforward	
+R_EX_h2o_e	R_ACt2rpp	R_GLCt2pp	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_h2o_e	R_ACt2rpp	R_GLCt2pp	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_PPC	R_D_LACtexTGreverse	R_H2OtppTGforward	R_PTArTGforward	R_TPITGforward	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PTArTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_FORtppi	R_PPC	R_ACtexTGreverse	R_PGITGforward	
+R_FORtppi	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_for_e	R_GLCt2pp	R_D_LACtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_FORtppi	R_GLCt2pp	R_D_LACtexTGreverse	R_PTArTGforward	R_TPITGforward	
+R_EX_ac_e	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_ACt2rpp	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_for_e	R_GLCt2pp	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACtexTGreverse	R_D_LACtexTGreverse	R_FORtexTGreverse	R_TPITGforward	
+R_FORtppi	R_GLCt2pp	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ICL	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_MALS	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_GLCt2pp	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_GLCt2pp	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_EX_h2o_e	R_GLCt2pp	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtppTGforward	
+R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_H2OtppTGforward	
+R_ACt2rpp	R_HCYSMT	R_PPC	R_D_LACtexTGreverse	R_FORtexTGreverse	
+R_EX_ac_e	R_PPC	R_ACALDTGreverse	R_H2OtppTGforward	R_LDH_DTGreverse	
+R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_H2OtppTGforward	R_LDH_DTGreverse	
+R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_H2OtppTGforward	R_LDH_DTGreverse	
+R_EX_for_e	R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_H2OtexTGforward	R_TPITGforward	
+R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_DRPA	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_FORtexTGreverse	R_PGITGforward	
+R_EX_h2o_e	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_PGITGforward	
+R_DRPA	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_DRPA	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	
+R_DRPA	R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_GLCptspp	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_FORtppi	R_HCYSMT	R_PPC	
+R_EX_h2o_e	R_DRPA	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_D_LACtexTGreverse	R_PGITGforward	
+R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_D_LACtexTGreverse	R_PPM2TGforward	
+R_DRPA	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_lac__D_e	R_FORtppi	R_HCYSMT	R_PPC	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_FORtppi	R_HCYSMT	R_PPC	
+R_EX_lac__D_e	R_DRPA	R_HCYSMT	R_PPC	R_FORtexTGreverse	
+R_EX_lac__D_e	R_HCYSMT	R_PPC	R_FORtexTGreverse	R_PPM2TGforward	
+R_EX_lac__D_e	R_DRPA	R_PPC	R_FORtexTGreverse	R_PPKTGreverse	
+R_EX_ac_e	R_EX_for_e	R_EX_lac__D_e	R_PPC	R_PPKTGreverse	
+R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_H2OtexTGforward	R_PGITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_ACtexTGreverse	R_PGITGforward	
+R_EX_lac__D_e	R_PPC	R_ACKrTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_PPC	R_ACKrTGreverse	R_D_LACt2ppTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_PPC	R_ACKrTGreverse	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_PPC	R_FORtexTGreverse	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_FORtppi	R_PPC	R_PPKTGreverse	
+R_ICL	R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_PPC	R_ACtexTGreverse	R_D_LACtexTGreverse	R_H2OtppTGforward	R_TPITGforward	
+R_EX_lac__D_e	R_DRPA	R_PPC	R_H2OtexTGforward	R_TPITGforward	
+R_EX_h2o_e	R_DRPA	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	
+R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	R_PPM2TGforward	R_TPITGforward	
+R_EX_h2o_e	R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_D_LACt2ppTGreverse	R_PGITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_GLCt2pp	R_PFL	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_PFL	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_ac_e	R_GLCt2pp	R_PFL	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_EX_lac__D_e	R_PFL	R_PPC	R_PGITGforward	
+R_EX_lac__D_e	R_DRPA	R_PFL	R_PPC	R_PGITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_DRPA	R_PPC	R_PPKTGreverse	
+R_EX_lac__D_e	R_PFL	R_PPC	R_PGITGforward	R_PPM2TGforward	
+R_EX_h2o_e	R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_EX_for_e	R_EX_lac__D_e	R_PPC	R_PPKTGreverse	R_PPM2TGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_LDH_DTGreverse	
+R_EX_lac__D_e	R_ACt2rpp	R_GLCt2pp	R_PFL	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_PFL	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_ACt2rpp	R_GLCt2pp	R_PFL	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_lac__D_e	R_GLCt2pp	R_PFL	R_ACKrTGreverse	R_TPITGforward	
+R_GLCt2pp	R_PFL	R_ACKrTGreverse	R_D_LACt2ppTGreverse	R_TPITGforward	
+R_GLCt2pp	R_PFL	R_ACKrTGreverse	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_ac_e	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	R_PPM2TGforward	
+R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	R_RPETGreverse	
+R_PPC	R_ACALDTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_ac_e	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_ac_e	R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	
+R_DRPA	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPM2TGforward	R_TPITGforward	
+R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	R_PPM2TGforward	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_DRPA	R_PPC	R_TPITGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_PPM2TGforward	R_TPITGforward	
+R_EX_h2o_e	R_DRPA	R_PPC	R_D_LACtexTGreverse	R_TPITGforward	
+R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	R_PPM2TGforward	R_TPITGforward	
+R_DRPA	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_TPITGforward	
+R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	R_PPM2TGforward	R_TPITGforward	
+R_EX_lac__D_e	R_ACt2rpp	R_PFL	R_PPC	R_PGITGforward	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	R_PPM2TGforward	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	R_RPETGreverse	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	R_TKT2TGreverse	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_LDH_DTGreverse	R_TKT1TGreverse	
+R_EX_for_e	R_EX_lac__D_e	R_ACt2rpp	R_PPC	R_PPKTGreverse	
+R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	R_PPM2TGforward	
+R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_ACtexTGreverse	R_D_LACt2ppTGreverse	
+R_EX_h2o_e	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	R_PPM2TGforward	
+R_EX_h2o_e	R_ACt2rpp	R_PPC	R_ACALDTGreverse	R_D_LACt2ppTGreverse	

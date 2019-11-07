@@ -1,0 +1,42 @@
+{
+    "4pasp;h;nadph": {
+        "Arabidopsis thaliana": [
+            15.6,
+            15.6
+        ]
+    },
+    "aspsa;nadp;pi": {
+        "Haemophilus influenzae": [
+            330.0,
+            330.0,
+            330.0
+        ],
+        "Pseudomonas aeruginosa": [
+            160.0,
+            160.0,
+            160.0
+        ],
+        "Vibrio cholerae": [
+            120.0,
+            120.0,
+            120.0,
+            58.0,
+            58.0,
+            58.0
+        ],
+        "Escherichia coli": [
+            610.0,
+            680.0
+        ],
+        "Mycobacterium tuberculosis": [
+            8.49,
+            8.49,
+            8.49
+        ]
+    },
+    "aspsa;nad;pi": {
+        "Escherichia coli": [
+            4.8
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+MCS up to size 5:
+R_EX_co2_e	R_PPC	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_co2_e	R_EX_h2o_e	R_PPC	R_D_LACt2ppTGreverse	
+R_EX_co2_e	R_PPC	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_co2_e	R_EX_h2o_e	R_PPC	R_D_LACtexTGreverse	
+R_EX_co2_e	R_EX_lac__D_e	R_PPC	R_H2OtexTGforward	
+R_EX_lac__D_e	R_PPC	R_CO2texTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_CO2texTGreverse	
+R_EX_lac__D_e	R_PPC	R_CO2tppTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_PPC	R_CO2tppTGreverse	
+R_EX_co2_e	R_EX_h2o_e	R_EX_lac__D_e	R_PPC	
+R_EX_co2_e	R_PPC	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_EX_co2_e	R_EX_h2o_e	R_PPC	R_LDH_DTGreverse	
+R_PPC	R_CO2tppTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_EX_h2o_e	R_PPC	R_CO2tppTGreverse	R_LDH_DTGreverse	
+R_PPC	R_CO2texTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_PPC	R_CO2texTGreverse	R_D_LACtexTGreverse	
+R_PPC	R_CO2texTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_PPC	R_CO2texTGreverse	R_D_LACt2ppTGreverse	
+R_PPC	R_CO2tppTGreverse	R_D_LACtexTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_PPC	R_CO2tppTGreverse	R_D_LACtexTGreverse	
+R_PPC	R_CO2texTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_EX_h2o_e	R_PPC	R_CO2texTGreverse	R_LDH_DTGreverse	
+R_PPC	R_CO2tppTGreverse	R_D_LACt2ppTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_PPC	R_CO2tppTGreverse	R_D_LACt2ppTGreverse	
+R_EX_etoh_e	R_ASPT	R_FUMTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_EX_etoh_e	R_EX_lac__D_e	R_ASPT	R_FUMTGreverse	R_H2OtexTGforward	
+R_EX_etoh_e	R_EX_h2o_e	R_EX_lac__D_e	R_ASPT	R_FUMTGreverse	
+R_ASPT	R_ALCD2xTGreverse	R_FUMTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_ASPT	R_ETOHtexTGreverse	R_FUMTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_ASPT	R_ETOHtrppTGreverse	R_FUMTGreverse	R_H2OtexTGforward	R_LDH_DTGreverse	
+R_EX_etoh_e	R_ASPT	R_D_LACtexTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_ASPT	R_ALCD2xTGreverse	R_D_LACtexTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_ASPT	R_D_LACtexTGreverse	R_ETOHtexTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_ASPT	R_D_LACtexTGreverse	R_ETOHtrppTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_EX_lac__D_e	R_ASPT	R_ALCD2xTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_EX_lac__D_e	R_ASPT	R_ETOHtexTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_EX_lac__D_e	R_ASPT	R_ETOHtrppTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_EX_h2o_e	R_EX_lac__D_e	R_ASPT	R_ALCD2xTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_ASPT	R_ETOHtexTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_EX_lac__D_e	R_ASPT	R_ETOHtrppTGreverse	R_FUMTGreverse	
+R_EX_etoh_e	R_EX_h2o_e	R_ASPT	R_D_LACtexTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_ASPT	R_ALCD2xTGreverse	R_D_LACtexTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_ASPT	R_D_LACtexTGreverse	R_ETOHtexTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_ASPT	R_D_LACtexTGreverse	R_ETOHtrppTGreverse	R_FUMTGreverse	
+R_EX_etoh_e	R_ASPT	R_D_LACt2ppTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_ASPT	R_ALCD2xTGreverse	R_D_LACt2ppTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_ASPT	R_D_LACt2ppTGreverse	R_ETOHtexTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_ASPT	R_D_LACt2ppTGreverse	R_ETOHtrppTGreverse	R_FUMTGreverse	R_H2OtexTGforward	
+R_EX_etoh_e	R_EX_h2o_e	R_ASPT	R_FUMTGreverse	R_LDH_DTGreverse	
+R_EX_h2o_e	R_ASPT	R_ALCD2xTGreverse	R_FUMTGreverse	R_LDH_DTGreverse	
+R_EX_h2o_e	R_ASPT	R_ETOHtexTGreverse	R_FUMTGreverse	R_LDH_DTGreverse	
+R_EX_h2o_e	R_ASPT	R_ETOHtrppTGreverse	R_FUMTGreverse	R_LDH_DTGreverse	
+R_EX_etoh_e	R_EX_h2o_e	R_ASPT	R_D_LACt2ppTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_ASPT	R_ALCD2xTGreverse	R_D_LACt2ppTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_ASPT	R_D_LACt2ppTGreverse	R_ETOHtrppTGreverse	R_FUMTGreverse	
+R_EX_h2o_e	R_ASPT	R_D_LACt2ppTGreverse	R_ETOHtexTGreverse	R_FUMTGreverse	

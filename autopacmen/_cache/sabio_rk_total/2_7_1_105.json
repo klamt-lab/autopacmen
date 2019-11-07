@@ -1,0 +1,24 @@
+{
+    "atp;f6p_B": {
+        "Rattus norvegicus": [
+            0.092,
+            0.071
+        ]
+    },
+    "atp;f6p": {
+        "Rattus norvegicus": [
+            0.073,
+            0.073,
+            0.073
+        ],
+        "Homo sapiens": [
+            0.14
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            0.17,
+            0.17
+        ]
+    }
+}

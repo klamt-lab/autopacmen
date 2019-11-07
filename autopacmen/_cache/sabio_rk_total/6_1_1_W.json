@@ -1,0 +1,299 @@
+{
+    "atp;his__L;trnahis": {
+        "Escherichia coli": [
+            2.02,
+            130.0,
+            2.6,
+            1.5,
+            0.005,
+            0.026,
+            142.0,
+            120.0,
+            7.0,
+            34.0
+        ]
+    },
+    "atp;tyr__L;trnatyr": {
+        "Escherichia coli": [
+            0.74
+        ],
+        "Thiobacillus ferrooxidans": [
+            7.7
+        ],
+        "Acanthamoeba polyphaga mimivirus": [
+            0.126,
+            0.142,
+            0.0183,
+            0.0075,
+            0.0093,
+            0.0083,
+            0.0025,
+            0.01,
+            0.0011,
+            0.0073,
+            0.0149
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            0.11,
+            1.7,
+            0.035,
+            1.5,
+            3.4,
+            6.5,
+            70.0,
+            8.5,
+            6.2,
+            9.6,
+            10.0,
+            6.8
+        ],
+        "Thermus thermophilus": [
+            0.12,
+            2.1,
+            0.092,
+            0.18
+        ],
+        "Saccharomyces cerevisiae": [
+            0.016,
+            2.3,
+            4.4
+        ],
+        "Bacillus subtilis": [
+            0.05
+        ],
+        "Thermosynechococcus elongatus": [
+            0.1
+        ]
+    },
+    "atp;gln__L;trnagln": {
+        "Escherichia coli": [
+            2.61666667,
+            1.7,
+            0.3
+        ]
+    },
+    "atp;trp__L;trnatrp": {
+        "Escherichia coli": [
+            2.0,
+            1.5,
+            2.0
+        ],
+        "Bacillus subtilis": [
+            0.9,
+            0.61,
+            0.59,
+            0.9,
+            0.61,
+            0.59,
+            0.4
+        ]
+    },
+    "atp;trp__L": {
+        "Escherichia coli": [
+            111.0,
+            111.0
+        ]
+    },
+    "atp;glu__L;trnagln": {
+        "Bacillus subtilis": [
+            0.04,
+            0.04,
+            0.07
+        ],
+        "Thermosynechococcus elongatus": [
+            0.036
+        ]
+    },
+    "atp;ile__L;trnaile": {
+        "Pseudomonas fluorescens": [
+            0.177,
+            2.64,
+            4.2627
+        ]
+    },
+    "atp;pro__L;trnapro": {
+        "Methanocaldococcus jannaschii": [
+            63.0
+        ],
+        "Methanothermobacter thermautotrophicus": [
+            3.4,
+            1.8,
+            5.1,
+            6.9,
+            2.9
+        ],
+        "Escherichia coli": [
+            14.0
+        ],
+        "Rhodopseudomonas palustris": [
+            14.0
+        ],
+        "Aquifex aeolicus": [
+            15.0
+        ],
+        "Deinococcus radiodurans": [
+            32.0
+        ],
+        "Clostridium sticklandii": [
+            60.0
+        ],
+        "Thermus thermophilus": [
+            35.0
+        ],
+        "Borrelia burgdorferi": [
+            5.8
+        ],
+        "Cytophaga hutchinsonii": [
+            19.0
+        ],
+        "Novosphingobium aromaticivorans": [
+            26.0
+        ],
+        "Magnetospirillum magnetotacticum": [
+            35.0
+        ],
+        "Saccharomyces cerevisiae": [
+            5.6
+        ]
+    },
+    "atp;cys__L;trnacys": {
+        "Methanocaldococcus jannaschii": [
+            0.19
+        ],
+        "Methanothermobacter thermautotrophicus": [
+            0.02
+        ],
+        "Escherichia coli": [
+            0.022,
+            2.46,
+            99.6,
+            141.9
+        ],
+        "Rhodopseudomonas palustris": [
+            0.025
+        ],
+        "Aquifex aeolicus": [
+            0.09
+        ],
+        "Deinococcus radiodurans": [
+            0.014
+        ],
+        "Clostridium sticklandii": [
+            0.39
+        ],
+        "Thermus thermophilus": [
+            0.042
+        ],
+        "Borrelia burgdorferi": [
+            0.022
+        ],
+        "Cytophaga hutchinsonii": [
+            0.083
+        ],
+        "Novosphingobium aromaticivorans": [
+            0.065
+        ],
+        "Magnetospirillum magnetotacticum": [
+            0.11
+        ],
+        "Saccharomyces cerevisiae": [
+            0.003
+        ]
+    },
+    "atp;gly;trnagly": {
+        "Homo sapiens": [
+            0.31
+        ]
+    },
+    "atp;leu__L;trnaleu": {
+        "Escherichia coli": [
+            5.0,
+            5.1,
+            5.1
+        ],
+        "Homo sapiens": [
+            0.053,
+            0.049,
+            0.041,
+            0.019,
+            0.14,
+            0.13,
+            0.82,
+            0.79,
+            0.3,
+            0.27,
+            0.28,
+            0.25
+        ]
+    },
+    "atp;met__L;trnamet": {
+        "Acanthamoeba polyphaga mimivirus": [
+            0.0066,
+            0.0174,
+            0.047
+        ]
+    },
+    "atp;arg__L;trnaarg": {
+        "Cricetulus griseus": [
+            10.2,
+            22.0,
+            11.5,
+            28.0,
+            1.4,
+            2.5,
+            1.9,
+            2.3,
+            1.4,
+            2.5,
+            2.1,
+            3.8,
+            1.8,
+            3.0,
+            2.6,
+            4.1,
+            0.4,
+            0.17,
+            0.16,
+            0.13,
+            3.9,
+            4.0,
+            1.1,
+            1.4
+        ],
+        "Homo sapiens": [
+            7.4,
+            8.9,
+            6.2,
+            0.41,
+            0.28,
+            0.32
+        ]
+    },
+    "atp;thr__L;trnathr": {
+        "Escherichia coli": [
+            90.0,
+            90.0
+        ]
+    },
+    "atp;asp__L;trnaasp": {
+        "Saccharomyces cerevisiae": [
+            0.83,
+            27.0,
+            27.0,
+            0.83
+        ],
+        "Thermococcus kodakaraensis": [
+            0.061
+        ],
+        "Thermus thermophilus": [
+            2.7,
+            0.24
+        ],
+        "Escherichia coli": [
+            6.8,
+            6.8
+        ]
+    }
+}

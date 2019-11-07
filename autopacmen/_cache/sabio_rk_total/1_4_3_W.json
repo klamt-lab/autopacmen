@@ -1,0 +1,519 @@
+{
+    "ala__D;h2o;o2": {
+        "Sus scrofa": [
+            12.7,
+            8.5,
+            6.5,
+            6.6,
+            8.5
+        ],
+        "Rhodosporidium toruloides": [
+            83.3333333,
+            350.0,
+            350.0,
+            345.0
+        ],
+        "Cyprinus carpio": [
+            190.0
+        ],
+        "Caenorhabditis elegans": [
+            3.63,
+            14.9
+        ],
+        "Trigonopsis variabilis": [
+            52.5
+        ],
+        "Homo sapiens": [
+            3.66
+        ],
+        "Bacillus subtilis": [
+            0.92
+        ]
+    },
+    "pro__D;h2o;o2": {
+        "Sus scrofa": [
+            87.2,
+            10.3333333,
+            9.8,
+            21.0
+        ],
+        "Cyprinus carpio": [
+            142.0
+        ],
+        "Bacillus subtilis": [
+            0.5
+        ]
+    },
+    "met__D;h2o;o2": {
+        "Sus scrofa": [
+            143.0,
+            6.83333333,
+            6.5
+        ],
+        "Rhodosporidium toruloides": [
+            76.6666667
+        ],
+        "Caenorhabditis elegans": [
+            4.98
+        ]
+    },
+    "REST": {
+        "Sus scrofa": [
+            55.9,
+            16.6666667,
+            2.5,
+            4.8,
+            2.5,
+            17.0,
+            2.4
+        ],
+        "Rhodosporidium toruloides": [
+            21.6666667,
+            18.9166667,
+            28.8
+        ],
+        "Cyprinus carpio": [
+            170.0,
+            119.0,
+            117.0,
+            116.0,
+            76.7
+        ],
+        "Trigonopsis variabilis": [
+            42.0
+        ],
+        "Caenorhabditis elegans": [
+            1.51,
+            1.52,
+            3.0,
+            6.13,
+            6.04,
+            84.5,
+            25.1
+        ],
+        "Homo sapiens": [
+            0.68,
+            9.89,
+            14.833333333333334,
+            15.5,
+            48.8,
+            21.666666666666668
+        ],
+        "Bacillus subtilis": [
+            0.6,
+            4.15
+        ],
+        "Rattus norvegicus": [
+            2e-06,
+            3.5e-06
+        ],
+        "Agkistrodon rhodostoma": [
+            1.46,
+            2.2,
+            3.74,
+            1.21
+        ],
+        "Ophiophagus hannah": [
+            1.0,
+            5.0,
+            43.3,
+            11.9,
+            47.6,
+            50.7,
+            51.5,
+            56.0,
+            59.5
+        ],
+        "Naja kaouthia": [
+            9.35,
+            4.91,
+            21.04,
+            14.1
+        ],
+        "Lathyrus cicera": [
+            0.47,
+            3.7,
+            10.3,
+            28.3,
+            159.0
+        ],
+        "Lens culinaris": [
+            1.02,
+            15.3,
+            15.14
+        ]
+    },
+    "arg__D;h2o;o2": {
+        "Sus scrofa": [
+            3.16666667,
+            3.5,
+            3.2
+        ],
+        "Caenorhabditis elegans": [
+            1.69,
+            2.83
+        ],
+        "Homo sapiens": [
+            0.34
+        ]
+    },
+    "lys__D;h2o;o2": {
+        "Sus scrofa": [
+            0.8
+        ],
+        "Cyprinus carpio": [
+            42.3
+        ]
+    },
+    "ser__D;h2o;o2": {
+        "Sus scrofa": [
+            3.0,
+            3.1,
+            2.7
+        ],
+        "Cyprinus carpio": [
+            34.5
+        ],
+        "Caenorhabditis elegans": [
+            1.51
+        ],
+        "Homo sapiens": [
+            1.23,
+            4.0
+        ]
+    },
+    "asp__D;h2o;o2": {
+        "Rhodosporidium toruloides": [
+            0.483333333
+        ],
+        "Caenorhabditis elegans": [
+            2.51,
+            3.07,
+            4.29,
+            9.49,
+            26.1
+        ],
+        "Homo sapiens": [
+            70.6
+        ]
+    },
+    "glu__D;h2o;o2": {
+        "Rhodosporidium toruloides": [
+            1.0
+        ],
+        "Caenorhabditis elegans": [
+            0.76,
+            2.11,
+            3.01,
+            35.4,
+            5.31
+        ],
+        "Homo sapiens": [
+            5.54
+        ]
+    },
+    "pro__D;o2": {
+        "Rhodosporidium toruloides": [
+            77.3333333
+        ],
+        "Bacillus subtilis": [
+            3.5
+        ]
+    },
+    "gly;h2o;o2": {
+        "Bacillus subtilis": [
+            4.03,
+            0.6
+        ],
+        "Ophiophagus hannah": [
+            0.012
+        ]
+    },
+    "h2o;o2;srtn": {
+        "Rattus norvegicus": [
+            1.26666667e-05
+        ]
+    },
+    "h2o;o2;tym": {
+        "Rattus norvegicus": [
+            6.83333333e-06
+        ],
+        "Lens culinaris": [
+            12.8
+        ],
+        "Lathyrus cicera": [
+            32.9
+        ]
+    },
+    "h2o;ala__L;o2": {
+        "Agkistrodon rhodostoma": [
+            0.38
+        ],
+        "Ophiophagus hannah": [
+            16.0
+        ],
+        "Naja kaouthia": [
+            6.23
+        ],
+        "Bungarus fasciatus": [
+            292.98
+        ]
+    },
+    "h2o;asn__L;o2": {
+        "Agkistrodon rhodostoma": [
+            1.32
+        ],
+        "Ophiophagus hannah": [
+            38.4
+        ],
+        "Naja kaouthia": [
+            1.79
+        ],
+        "Bungarus fasciatus": [
+            84.08
+        ]
+    },
+    "h2o;lys__L;o2": {
+        "Agkistrodon rhodostoma": [
+            1.65
+        ],
+        "Ophiophagus hannah": [
+            14.0,
+            43.3,
+            62.8,
+            63.6,
+            83.2,
+            86.6,
+            86.6,
+            90.5,
+            86.6
+        ],
+        "Naja kaouthia": [
+            6.39
+        ],
+        "Bungarus fasciatus": [
+            318.91
+        ]
+    },
+    "h2o;gln__L;o2": {
+        "Agkistrodon rhodostoma": [
+            0.38
+        ],
+        "Ophiophagus hannah": [
+            45.5
+        ],
+        "Naja kaouthia": [
+            4.91
+        ],
+        "Bungarus fasciatus": [
+            430.4
+        ]
+    },
+    "h2o;ile__L;o2": {
+        "Agkistrodon rhodostoma": [
+            1.16
+        ],
+        "Ophiophagus hannah": [
+            13.5
+        ],
+        "Naja kaouthia": [
+            3.58
+        ],
+        "Bungarus fasciatus": [
+            66.7
+        ]
+    },
+    "h2o;his__L;o2": {
+        "Agkistrodon rhodostoma": [
+            0.82
+        ],
+        "Ophiophagus hannah": [
+            108.2
+        ],
+        "Naja kaouthia": [
+            9.74
+        ],
+        "Bungarus fasciatus": [
+            483.13
+        ]
+    },
+    "h2o;arg__L;o2": {
+        "Agkistrodon rhodostoma": [
+            1.32
+        ],
+        "Ophiophagus hannah": [
+            39.4
+        ],
+        "Naja kaouthia": [
+            25.71
+        ],
+        "Bungarus fasciatus": [
+            228.75
+        ]
+    },
+    "h2o;leu__L;o2": {
+        "Agkistrodon rhodostoma": [
+            3.3
+        ],
+        "Ophiophagus hannah": [
+            11.0,
+            28.8,
+            66.7,
+            93.9,
+            90.0,
+            96.1,
+            96.2,
+            93.2,
+            96.1,
+            96.2
+        ],
+        "Naja kaouthia": [
+            23.38
+        ],
+        "Vipera berus berus": [
+            75.16
+        ],
+        "Crotalus durissus cumanensis": [
+            1.8
+        ],
+        "Bothriechis schlegelii": [
+            1.32
+        ],
+        "Naja naja oxiana": [
+            47.98
+        ],
+        "Bungarus fasciatus": [
+            1025.05
+        ]
+    },
+    "h2o;met__L;o2": {
+        "Agkistrodon rhodostoma": [
+            1.65
+        ],
+        "Ophiophagus hannah": [
+            65.6
+        ],
+        "Naja kaouthia": [
+            24.39
+        ],
+        "Vipera berus berus": [
+            74.2
+        ],
+        "Naja naja oxiana": [
+            66.26
+        ],
+        "Bungarus fasciatus": [
+            589.33
+        ]
+    },
+    "h2o;trp__L;o2": {
+        "Agkistrodon rhodostoma": [
+            0.88
+        ],
+        "Ophiophagus hannah": [
+            32.1
+        ],
+        "Naja kaouthia": [
+            12.47
+        ],
+        "Naja naja oxiana": [
+            18.04
+        ],
+        "Bungarus fasciatus": [
+            98.82
+        ]
+    },
+    "h2o;phe__L;o2": {
+        "Agkistrodon rhodostoma": [
+            0.72
+        ],
+        "Ophiophagus hannah": [
+            54.1
+        ],
+        "Naja kaouthia": [
+            10.75
+        ],
+        "Vipera berus berus": [
+            28.5
+        ],
+        "Naja naja oxiana": [
+            17.18
+        ],
+        "Bungarus fasciatus": [
+            142.62
+        ]
+    },
+    "h2o;pro__L;o2": {
+        "Ophiophagus hannah": [
+            0.1
+        ]
+    },
+    "h2o;ser__L;o2": {
+        "Ophiophagus hannah": [
+            0.7
+        ]
+    },
+    "h2o;glu__L;o2": {
+        "Ophiophagus hannah": [
+            0.9
+        ],
+        "Bungarus fasciatus": [
+            790.53
+        ]
+    },
+    "h2o;val__L;o2": {
+        "Ophiophagus hannah": [
+            5.8
+        ],
+        "Naja kaouthia": [
+            1.25
+        ]
+    },
+    "h2o;24dab;o2": {
+        "Ophiophagus hannah": [
+            5.9
+        ]
+    },
+    "h2o;tyr__L;o2": {
+        "Ophiophagus hannah": [
+            4.8
+        ],
+        "Naja kaouthia": [
+            3.27
+        ],
+        "Bungarus fasciatus": [
+            100.59
+        ]
+    },
+    "h2o;cys__L;o2": {
+        "Naja kaouthia": [
+            3.04
+        ]
+    },
+    "h2o;asp__L;o2": {
+        "Bungarus fasciatus": [
+            47.49
+        ],
+        "Homo sapiens": [
+            46.6666667
+        ]
+    },
+    "h2o;o2;ptrc": {
+        "Lens culinaris": [
+            155.2
+        ],
+        "Lathyrus cicera": [
+            262.0
+        ]
+    },
+    "h2o;o2;spmd": {
+        "Lathyrus cicera": [
+            100.0
+        ]
+    },
+    "agm;h2o;o2": {
+        "Lathyrus cicera": [
+            45.9
+        ]
+    }
+}

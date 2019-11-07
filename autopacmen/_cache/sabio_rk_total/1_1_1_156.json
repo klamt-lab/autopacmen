@@ -1,0 +1,30 @@
+{
+    "REST": {
+        "Trichoderma reesei": [
+            18.0,
+            88.0,
+            9.2,
+            21.0
+        ]
+    },
+    "dha;h;nadph": {
+        "Trichoderma reesei": [
+            86.0
+        ]
+    },
+    "glyald;h;nadph": {
+        "Trichoderma reesei": [
+            7.5
+        ]
+    },
+    "h;mthgxl;nadph": {
+        "Trichoderma reesei": [
+            120.0
+        ]
+    },
+    "glyc;nadp": {
+        "Trichoderma reesei": [
+            56.0
+        ]
+    }
+}

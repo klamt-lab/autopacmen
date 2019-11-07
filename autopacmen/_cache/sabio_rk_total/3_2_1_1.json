@@ -1,0 +1,71 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            2.98,
+            0.87
+        ],
+        "Alteromonas haloplanktis": [
+            697.0,
+            392.0
+        ],
+        "Sus scrofa": [
+            291.0,
+            141.0
+        ],
+        "Vigna angularis": [
+            62.4,
+            85.3
+        ],
+        "Lactobacillus amylovorus": [
+            1300.0,
+            14000000.0
+        ],
+        "Lactobacillus plantarum": [
+            190.0,
+            12000000.0
+        ],
+        "Hordeum vulgare": [
+            0.91,
+            9.2,
+            6.5
+        ],
+        "Bacillus subtilis": [
+            6.1
+        ]
+    },
+    "amylose;h2o": {
+        "Vigna angularis": [
+            71.8,
+            55.5
+        ],
+        "Lactobacillus amylovorus": [
+            1800.0
+        ],
+        "Lactobacillus plantarum": [
+            320.0,
+            706.0,
+            706.0
+        ],
+        "Lactobacillus manihotivorans": [
+            225.0,
+            225.0
+        ],
+        "Lactobacillus fermentum": [
+            130.0,
+            130.0
+        ]
+    },
+    "h2o;starch": {
+        "Lactobacillus amylovorus": [
+            31000.0,
+            1400.0
+        ],
+        "Lactobacillus plantarum": [
+            3800.0,
+            240.0
+        ],
+        "Glycine max": [
+            280.0
+        ]
+    }
+}

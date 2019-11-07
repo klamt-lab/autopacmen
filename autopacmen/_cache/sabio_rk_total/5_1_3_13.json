@@ -1,0 +1,18 @@
+{
+    "dtdp4d6dg": {
+        "Amycolatopsis orientalis": [
+            0.08
+        ],
+        "Streptococcus suis": [
+            10.4
+        ],
+        "Streptococcus entericus": [
+            19.2
+        ]
+    },
+    "REST": {
+        "Salmonella typhimurium": [
+            39.0
+        ]
+    }
+}

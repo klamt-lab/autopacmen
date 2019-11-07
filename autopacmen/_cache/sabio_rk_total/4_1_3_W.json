@@ -1,0 +1,111 @@
+{
+    "chor;gln__L": {
+        "Salmonella typhimurium": [
+            3.7
+        ],
+        "Pseudomonas putida": [
+            3.4
+        ],
+        "Escherichia coli": [
+            3.7
+        ]
+    },
+    "REST": {
+        "Salmonella typhimurium": [
+            105.0
+        ],
+        "Aspergillus nidulans": [
+            8.63,
+            1.34
+        ],
+        "Burkholderia xenovorans LB400": [
+            0.63,
+            3.8
+        ],
+        "Pseudomonas putida": [
+            0.25,
+            7.5,
+            13.7,
+            14.4,
+            0.058,
+            19.3
+        ],
+        "Anas platyrhynchos": [
+            158.0
+        ],
+        "Homo sapiens": [
+            108.0
+        ],
+        "Thermus thermophilus": [
+            0.5,
+            1.1,
+            2.2
+        ],
+        "Burkholderia xenovorans": [
+            2.1,
+            3.9
+        ],
+        "Escherichia coli": [
+            10.5,
+            0.0002
+        ]
+    },
+    "4h2opntn": {
+        "Burkholderia xenovorans LB400": [
+            4.1,
+            4.6,
+            0.87,
+            0.78,
+            1.75,
+            4.1,
+            0.66
+        ],
+        "Thermus thermophilus": [
+            1.0,
+            0.79,
+            0.57,
+            0.13,
+            0.08,
+            1.0,
+            0.6,
+            2.4,
+            0.3,
+            2.4
+        ],
+        "Burkholderia xenovorans": [
+            2.3,
+            4.1,
+            0.8,
+            2.3
+        ],
+        "Pseudomonas putida": [
+            0.048,
+            0.19
+        ]
+    },
+    "oaa": {
+        "Burkholderia xenovorans LB400": [
+            16.5
+        ],
+        "Pseudomonas putida": [
+            1.85,
+            1.52
+        ]
+    },
+    "acald;pyr": {
+        "Burkholderia xenovorans LB400": [
+            0.86,
+            1.04
+        ]
+    },
+    "gcald;pyr": {
+        "Burkholderia xenovorans LB400": [
+            0.4
+        ]
+    },
+    "ppal;pyr": {
+        "Burkholderia xenovorans LB400": [
+            1.79
+        ]
+    }
+}

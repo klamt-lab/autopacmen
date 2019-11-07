@@ -1,0 +1,17 @@
+{
+    "cys__L;o2": {
+        "Rattus norvegicus": [
+            0.62
+        ],
+        "Bacillus cereus": [
+            2.0
+        ],
+        "Bacillus subtilis": [
+            0.39
+        ],
+        "Streptomyces coelicolor": [
+            0.33,
+            0.3
+        ]
+    }
+}

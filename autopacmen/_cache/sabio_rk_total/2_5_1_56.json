@@ -1,0 +1,15 @@
+{
+    "h2o;acmana;pep": {
+        "Campylobacter jejuni": [
+            0.316666667,
+            0.331666667
+        ]
+    },
+    "REST": {
+        "Campylobacter jejuni": [
+            0.196666667,
+            0.0583333333,
+            0.0133333333
+        ]
+    }
+}

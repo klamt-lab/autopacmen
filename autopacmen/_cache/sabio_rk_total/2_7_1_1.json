@@ -1,0 +1,91 @@
+{
+    "REST": {
+        "Toxoplasma gondii": [
+            3.47,
+            3.32
+        ],
+        "Entamoeba histolytica": [
+            279.0,
+            186.0,
+            152.0,
+            279.0,
+            186.0,
+            152.0
+        ],
+        "Leishmania mexicana": [
+            1899.46667,
+            1899.46667
+        ]
+    },
+    "atp;glc__D": {
+        "Trypanosoma cruzi": [
+            1136.0,
+            1136.0,
+            276.416667,
+            276.416667,
+            315.216667,
+            315.216667,
+            1136.0,
+            276.416667,
+            276.416667,
+            1136.0
+        ],
+        "Entamoeba histolytica": [
+            200.0,
+            189.0,
+            284.0,
+            237.0
+        ],
+        "Solanum chacoense": [
+            5.01,
+            3.5
+        ],
+        "Trypanosoma brucei": [
+            483.333333,
+            483.333333,
+            483.333333
+        ],
+        "Saccharomyces cerevisiae": [
+            10.2,
+            63.1,
+            10.2,
+            63.1
+        ]
+    },
+    "atp;man": {
+        "Entamoeba histolytica": [
+            180.0
+        ],
+        "Solanum chacoense": [
+            3.69
+        ]
+    },
+    "atp;fru": {
+        "Solanum chacoense": [
+            3.78
+        ]
+    },
+    "glc__D;dttp": {
+        "Solanum chacoense": [
+            1.42
+        ]
+    },
+    "glc__D;gtp": {
+        "Solanum chacoense": [
+            0.85
+        ]
+    },
+    "glc__D;utp": {
+        "Solanum chacoense": [
+            3.02
+        ],
+        "Trypanosoma brucei": [
+            40.0
+        ]
+    },
+    "ctp;glc__D": {
+        "Solanum chacoense": [
+            1.61
+        ]
+    }
+}

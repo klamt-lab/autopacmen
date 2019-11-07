@@ -1,0 +1,13 @@
+{
+    "acald;h2o;nad": {
+        "Homo sapiens": [
+            0.27
+        ]
+    },
+    "REST": {
+        "Homo sapiens": [
+            0.2,
+            0.13
+        ]
+    }
+}

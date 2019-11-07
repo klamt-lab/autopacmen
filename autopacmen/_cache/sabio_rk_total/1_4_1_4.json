@@ -1,0 +1,14 @@
+{
+    "akg;h;nadph;nh3": {
+        "Salmonella typhimurium": [
+            190.0,
+            190.0,
+            190.0
+        ]
+    },
+    "akg;h;nadh;nh3": {
+        "Salmonella typhimurium": [
+            20.3333333
+        ]
+    }
+}

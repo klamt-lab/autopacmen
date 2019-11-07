@@ -1,0 +1,16 @@
+{
+    "REST": {
+        "Arthrobacter globiformis": [
+            6.4,
+            14.4,
+            60.0
+        ]
+    },
+    "betald;h2o;o2": {
+        "Arthrobacter globiformis": [
+            11.3,
+            15.3,
+            133.0
+        ]
+    }
+}

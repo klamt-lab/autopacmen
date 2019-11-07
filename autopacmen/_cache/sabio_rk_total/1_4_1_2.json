@@ -1,0 +1,32 @@
+{
+    "h2o;glu__L;nad": {
+        "Clostridium symbiosum": [
+            15.2,
+            20.0
+        ],
+        "Laccaria bicolor": [
+            222.866667,
+            222.866667,
+            222.866667
+        ],
+        "Bacillus subtilis": [
+            18.1,
+            18.1
+        ]
+    },
+    "akg;h;nadh;nh3": {
+        "Clostridium symbiosum": [
+            179.0
+        ],
+        "Laccaria bicolor": [
+            1137.4,
+            1137.4,
+            1137.4
+        ],
+        "Bacillus subtilis": [
+            342.0,
+            342.0,
+            342.0
+        ]
+    }
+}

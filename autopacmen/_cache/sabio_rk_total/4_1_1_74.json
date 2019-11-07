@@ -1,0 +1,23 @@
+{
+    "REST": {
+        "Enterobacter cloacae": [
+            3.9,
+            46.4,
+            0.4,
+            5.3,
+            3.2,
+            22.7,
+            5.7,
+            4.5,
+            3.5
+        ],
+        "Saccharomyces cerevisiae": [
+            3.81
+        ]
+    },
+    "pyr": {
+        "Enterobacter cloacae": [
+            3.5
+        ]
+    }
+}

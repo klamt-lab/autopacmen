@@ -1,0 +1,25 @@
+{
+    "REST": {
+        "Sulfolobus solfataricus": [
+            1.51,
+            0.92,
+            16.0,
+            4.69,
+            0.05
+        ],
+        "Bacteroides ovatus": [
+            1.6,
+            0.071,
+            32.6,
+            31.0
+        ]
+    },
+    "h2o;iprimv": {
+        "Sulfolobus solfataricus": [
+            31.0
+        ],
+        "Bacteroides ovatus": [
+            1.78
+        ]
+    }
+}

@@ -1,0 +1,202 @@
+{
+    "amet": {
+        "Arabidopsis thaliana": [
+            0.5,
+            0.47,
+            1.22,
+            1.87,
+            0.19,
+            2.13,
+            4.82,
+            0.37
+        ],
+        "Pichia pastoris": [
+            0.0016
+        ],
+        "Malus domestica": [
+            9.2
+        ]
+    },
+    "mmet": {
+        "Pichia pastoris": [
+            0.045
+        ]
+    },
+    "rhcys": {
+        "Bacillus subtilis": [
+            0.029,
+            0.03,
+            0.029,
+            0.023,
+            0.029
+        ],
+        "Vibrio harveyi": [
+            0.39,
+            0.28,
+            0.36,
+            0.42,
+            0.4
+        ]
+    },
+    "3sala": {
+        "Treponema denticola": [
+            89.0
+        ]
+    },
+    "asp__L": {
+        "Treponema denticola": [
+            0.8
+        ]
+    },
+    "oaa": {
+        "Treponema denticola": [
+            0.15
+        ]
+    },
+    "h2o;cyst__L": {
+        "Homo sapiens": [
+            1.9,
+            1.7,
+            1.9,
+            2.3
+        ],
+        "Synechocystis sp.": [
+            7.0
+        ]
+    },
+    "h2o;cys__L": {
+        "Homo sapiens": [
+            0.4,
+            0.67,
+            0.67,
+            0.31,
+            0.47,
+            0.85
+        ],
+        "Synechocystis sp.": [
+            0.15
+        ]
+    },
+    "h2o;hcys__L": {
+        "Homo sapiens": [
+            3.5,
+            3.7,
+            0.92
+        ]
+    },
+    "hcys__L": {
+        "Homo sapiens": [
+            4.9
+        ]
+    },
+    "cys__L;hcys__L": {
+        "Homo sapiens": [
+            0.15
+        ]
+    },
+    "REST": {
+        "Mus musculus": [
+            46.0,
+            0.35,
+            0.0058
+        ],
+        "Leishmania major": [
+            1070.0,
+            1170.0,
+            1590.0
+        ],
+        "Homo sapiens": [
+            164.0,
+            39.5833333,
+            104.0,
+            1066.66667,
+            333.333333,
+            1360.0,
+            83.0,
+            883.333333,
+            1500.0,
+            222.0
+        ],
+        "Saccharomyces cerevisiae": [
+            1600.0,
+            1700.0,
+            2700.0,
+            6700.0,
+            1100.0
+        ],
+        "Rattus norvegicus": [
+            1100.0
+        ],
+        "Sus scrofa": [
+            616.666667
+        ],
+        "Yersinia pestis": [
+            306.0,
+            69.0
+        ],
+        "Pseudomonas aeruginosa": [
+            86.0,
+            271.0
+        ],
+        "Neisseria meningitidis": [
+            146.0,
+            204.0
+        ],
+        "Onchocerca volvulus": [
+            81.6666667
+        ],
+        "Trypanosoma cruzi": [
+            161.0,
+            363.0,
+            105.0,
+            265.0
+        ],
+        "Plasmodium falciparum": [
+            110.616667
+        ],
+        "Escherichia coli": [
+            106.0,
+            338.0,
+            21.4,
+            55.7,
+            60.2
+        ],
+        "Schizosaccharomyces pombe": [
+            111.33333333333333
+        ],
+        "Synechocystis sp.": [
+            36.0,
+            37.0,
+            14.0,
+            50.0,
+            20.0,
+            29.0
+        ]
+    },
+    "pep;so3": {
+        "Methanocaldococcus jannaschii": [
+            8.5
+        ]
+    },
+    "mthgxl;gthrd": {
+        "Saccharomyces cerevisiae": [
+            1816.66667
+        ],
+        "Rattus norvegicus": [
+            1183.33333
+        ],
+        "Sus scrofa": [
+            983.333333
+        ],
+        "Homo sapiens": [
+            1133.33333,
+            1050.0
+        ],
+        "Onchocerca volvulus": [
+            198.333333
+        ],
+        "Schizosaccharomyces pombe": [
+            1146.6666666666667
+        ]
+    }
+}

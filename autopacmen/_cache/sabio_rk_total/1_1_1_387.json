@@ -1,0 +1,19 @@
+{
+    "ser__L;nad": {
+        "Pseudomonas aeruginosa": [
+            10.4,
+            1.6
+        ]
+    },
+    "thr__L;nad": {
+        "Pseudomonas aeruginosa": [
+            9.6
+        ]
+    },
+    "REST": {
+        "Pseudomonas aeruginosa": [
+            5.8,
+            11.6
+        ]
+    }
+}

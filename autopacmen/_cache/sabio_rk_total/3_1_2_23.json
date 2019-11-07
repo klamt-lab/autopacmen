@@ -1,0 +1,84 @@
+{
+    "benzcoa;h2o": {
+        "Arthrobacter sp.": [
+            1.86
+        ],
+        "Bacillus halodurans": [
+            0.068
+        ],
+        "Pseudomonas sp.": [
+            0.26
+        ]
+    },
+    "REST": {
+        "Arthrobacter sp.": [
+            6.7,
+            0.08,
+            0.25,
+            0.00073
+        ],
+        "Bacillus halodurans": [
+            0.042,
+            6.5,
+            7.3,
+            0.34,
+            0.0081,
+            0.13
+        ],
+        "Pseudomonas reinekei": [
+            8.9,
+            18.0,
+            0.74,
+            19.0,
+            18.0,
+            18.0
+        ],
+        "Pseudomonas sp.": [
+            6.8,
+            12.0,
+            0.123
+        ]
+    },
+    "3hbzcoa;h2o": {
+        "Arthrobacter sp.": [
+            15.8
+        ],
+        "Bacillus halodurans": [
+            1.5
+        ],
+        "Pseudomonas reinekei": [
+            15.0
+        ]
+    },
+    "h2o;phaccoa": {
+        "Arthrobacter sp.": [
+            0.0009
+        ],
+        "Bacillus halodurans": [
+            0.034
+        ]
+    },
+    "accoa;h2o": {
+        "Arthrobacter sp.": [
+            0.0108
+        ]
+    },
+    "h2o;ppcoa": {
+        "Arthrobacter sp.": [
+            0.026
+        ],
+        "Bacillus halodurans": [
+            0.058
+        ]
+    },
+    "btcoa;h2o": {
+        "Arthrobacter sp.": [
+            0.0319
+        ]
+    },
+    "b2coa;h2o": {
+        "Arthrobacter sp.": [
+            0.075
+        ]
+    }
+}

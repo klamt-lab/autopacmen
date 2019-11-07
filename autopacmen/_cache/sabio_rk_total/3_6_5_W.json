@@ -1,0 +1,16 @@
+{
+    "gtp;h2o": {
+        "Rattus norvegicus": [
+            0.0366666667,
+            0.04,
+            0.045,
+            0.03
+        ],
+        "Streptococcus pneumoniae": [
+            0.00333333333
+        ],
+        "Semliki forest virus": [
+            3.8333333333333335
+        ]
+    }
+}

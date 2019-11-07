@@ -1,0 +1,20 @@
+{
+    "REST": {
+        "Paramecium bursaria chlorella virus 1": [
+            10.0,
+            14.0,
+            0.9
+        ],
+        "Selenomonas ruminantium": [
+            4.83
+        ],
+        "Nicotiana glutinosa": [
+            77.78
+        ]
+    },
+    "lys__L": {
+        "Nicotiana glutinosa": [
+            0.236
+        ]
+    }
+}

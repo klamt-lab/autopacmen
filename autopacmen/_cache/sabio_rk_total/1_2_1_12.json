@@ -1,0 +1,61 @@
+{
+    "REST": {
+        "Hippoglossus hippoglossus": [
+            110.0
+        ],
+        "Lactococcus lactis subsp. lactis": [
+            70.0
+        ],
+        "Entamoeba histolytica": [
+            94.0,
+            104.0,
+            70.0,
+            34.0,
+            70.0,
+            34.0
+        ],
+        "Escherichia coli": [
+            0.12,
+            0.12,
+            0.074,
+            0.074
+        ],
+        "Geobacillus stearothermophilus": [
+            76.0,
+            76.0,
+            65.0,
+            65.0
+        ],
+        "Saccharomyces cerevisiae": [
+            19.1200976,
+            18.1616885,
+            19.1,
+            8.63,
+            18.2,
+            19.12,
+            8.633,
+            18.162
+        ],
+        "Aspergillus nidulans": [
+            65.0,
+            78.33333333333333
+        ],
+        "Oryza sativa": [
+            122.24,
+            122.24
+        ]
+    },
+    "13dpg;h;nadh": {
+        "Entamoeba histolytica": [
+            94.0,
+            104.0
+        ],
+        "Saccharomyces cerevisiae": [
+            10.2110974
+        ],
+        "Oryza sativa": [
+            73.56,
+            73.56
+        ]
+    }
+}

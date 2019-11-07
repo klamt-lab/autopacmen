@@ -1,0 +1,27 @@
+{
+    "h2o;o2;ptrc": {
+        "Lens culinaris": [
+            155.2
+        ],
+        "Lathyrus cicera": [
+            262.0
+        ]
+    },
+    "REST": {
+        "Lathyrus cicera": [
+            159.0,
+            10.3,
+            28.3
+        ]
+    },
+    "h2o;o2;spmd": {
+        "Lathyrus cicera": [
+            100.0
+        ]
+    },
+    "agm;h2o;o2": {
+        "Lathyrus cicera": [
+            45.9
+        ]
+    }
+}

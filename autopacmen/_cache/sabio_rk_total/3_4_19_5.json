@@ -1,0 +1,25 @@
+{
+    "REST": {
+        "Escherichia coli": [
+            0.631
+        ],
+        "Lupinus luteus": [
+            0.813
+        ],
+        "Arabidopsis thaliana": [
+            2.48,
+            4.58
+        ]
+    },
+    "h2o;asn__L": {
+        "Escherichia coli": [
+            0.28
+        ],
+        "Lupinus luteus": [
+            0.32
+        ],
+        "Arabidopsis thaliana": [
+            3.25
+        ]
+    }
+}

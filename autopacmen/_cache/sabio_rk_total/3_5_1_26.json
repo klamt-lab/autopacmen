@@ -1,0 +1,16 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            5.55
+        ],
+        "Elizabethkingia meningoseptica": [
+            16.0,
+            2.3
+        ]
+    },
+    "h2o;asn__L": {
+        "Elizabethkingia meningoseptica": [
+            1.2
+        ]
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "atp;h2o;gln__L;utp": {
+        "Lactococcus lactis subsp. lactis": [
+            2.49,
+            0.076,
+            3.7
+        ],
+        "Escherichia coli": [
+            6.1
+        ],
+        "Lactococcus lactis": [
+            0.139,
+            2.85,
+            5.7,
+            0.195,
+            0.028,
+            0.13,
+            6.4,
+            0.134,
+            0.334,
+            5.18,
+            0.11
+        ],
+        "Mycobacterium tuberculosis": [
+            21.9,
+            22.9
+        ]
+    },
+    "atp;nh3;utp": {
+        "Escherichia coli": [
+            9.5
+        ],
+        "Lactococcus lactis": [
+            6.3,
+            6.3,
+            6.3
+        ]
+    },
+    "atp;ham;utp": {
+        "Escherichia coli": [
+            14.0
+        ]
+    },
+    "REST": {
+        "Escherichia coli": [
+            0.453,
+            1.41,
+            1.23,
+            0.93,
+            0.001
+        ],
+        "Lactococcus lactis": [
+            1.65
+        ],
+        "Oleomonas sagaranensis": [
+            40.3,
+            16.8,
+            44.2
+        ]
+    },
+    "h2o;gln__L": {
+        "Escherichia coli": [
+            5.62
+        ],
+        "Lactococcus lactis": [
+            0.084,
+            0.259,
+            0.082,
+            0.56,
+            0.078,
+            1.2,
+            0.076,
+            1.054
+        ]
+    },
+    "gtp;imp;asp__L": {
+        "Escherichia coli": [
+            1.37,
+            1.92
+        ],
+        "Zea mays": [
+            3.1,
+            3.1,
+            3.1
+        ]
+    },
+    "thf;atp;for": {
+        "Sus scrofa": [
+            2100.0
+        ],
+        "Leishmania major": [
+            3.7,
+            4.4
+        ]
+    },
+    "adp;cbp": {
+        "Escherichia coli": [
+            0.00516666667,
+            0.00516666667
+        ]
+    },
+    "atp;co2;h2o;nh3": {
+        "Homo sapiens": [
+            4.45,
+            4.45,
+            4.45,
+            4.45,
+            4.45
+        ],
+        "Rattus norvegicus": [
+            4.98333333
+        ]
+    }
+}

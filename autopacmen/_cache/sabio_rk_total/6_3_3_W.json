@@ -1,0 +1,22 @@
+{
+    "REST": {
+        "Arabidopsis thaliana": [
+            5.33333333
+        ]
+    },
+    "5fthf;atp": {
+        "Mycoplasma pneumoniae": [
+            0.79,
+            1.0,
+            0.94,
+            0.99
+        ]
+    },
+    "dann;atp;co2": {
+        "Escherichia coli": [
+            0.0621666667,
+            0.0621666667,
+            0.0278333333
+        ]
+    }
+}

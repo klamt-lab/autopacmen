@@ -1,0 +1,29 @@
+{
+    "gly;h2o;o2": {
+        "Bacillus subtilis": [
+            4.03,
+            0.6
+        ]
+    },
+    "REST": {
+        "Bacillus subtilis": [
+            4.15,
+            0.6
+        ]
+    },
+    "pro__D;o2": {
+        "Bacillus subtilis": [
+            3.5
+        ]
+    },
+    "ala__D;h2o;o2": {
+        "Bacillus subtilis": [
+            0.92
+        ]
+    },
+    "pro__D;h2o;o2": {
+        "Bacillus subtilis": [
+            0.5
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "ptrc;amet": {
+        "Calystegia sepium": [
+            0.16,
+            0.086
+        ],
+        "Datura stramonium": [
+            0.388
+        ],
+        "Solanum lycopersicum": [
+            0.19
+        ],
+        "Datura innoxia": [
+            0.383,
+            0.359
+        ],
+        "Physalis divaricata": [
+            0.198
+        ],
+        "Solanum dulcamara": [
+            0.047
+        ]
+    }
+}

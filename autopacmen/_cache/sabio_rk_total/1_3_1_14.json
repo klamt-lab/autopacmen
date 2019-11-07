@@ -1,0 +1,19 @@
+{
+    "REST": {
+        "Lactococcus lactis subsp. lactis": [
+            49.3,
+            49.3,
+            25.7
+        ],
+        "Enterococcus faecalis": [
+            18.0,
+            18.0,
+            10.4,
+            0.4
+        ],
+        "Clostridium oroticum": [
+            45.0,
+            45.0
+        ]
+    }
+}

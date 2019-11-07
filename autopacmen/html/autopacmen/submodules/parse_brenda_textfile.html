@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>autopacmen.submodules.parse_brenda_textfile API documentation</title>
+<meta name="description" content="parse_brenda_textfile.py …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>autopacmen.submodules.parse_brenda_textfile</code></h1>
+</header>
+<section id="section-intro">
+<p>parse_brenda_textfile.py</p>
+<p>Includes a function which converts a BRENDA textfile into a machine-readable JSON :D</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2019 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;parse_brenda_textfile.py
+
+Includes a function which converts a BRENDA textfile into a machine-readable JSON :D
+&#34;&#34;&#34;
+
+# IMPORTS
+# External modules
+from typing import Any, Dict, List
+# Internal modules
+from submodules.helper_general import json_write, json_load, standardize_folder
+
+
+# PUBLIC FUNCTIONS SECTION
+def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folder: str,
+                          json_output_path: str) -&gt; None:
+    &#34;&#34;&#34;Goes through a BRENDA database textfile and converts it into a machine-readable JSON.
+
+    The JSON includes kcats for found organisms and substrates.
+    As of 29/04/2019, the BRENDA database can be downloaded as textfile under
+    https://www.brenda-enzymes.org/download_brenda_without_registration.php
+
+    The BRENDA database is not in a completely standardized format, so that this functions
+    contains many convoluted checks and circumventions of non-standardized data.
+
+    kcats from mutated enzymes are excluded.
+
+    Arguments
+    ----------
+    * brenda_textfile_path: str ~ The BRENDA database text file path
+    * bigg_metabolites_json_folder: str ~ The folder in which the BIGG metabolites
+      database is stored (it has to have the name &#39;bigg_id_name_mapping.json&#39;).
+    * json_output_path: str ~ The path of the JSON that shall be created
+
+    Output
+    ----------
+    * A JSON containing the BRENDA textfile kcat data in a machine-readable format:
+    &lt;pre&gt;
+        {
+            &#34;$EC_NUMBER&#34;: {
+                &#34;$SUBSTRATE_WITH_BIGG_ID_1&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                },
+                (...),
+                &#34;REST&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                }
+            }
+            (...),
+        }
+    &lt;/pre&gt;
+    &#39;REST&#39; stands for a substrate without found BIGG ID.
+    &#34;&#34;&#34;
+    # Standardize output folder
+    bigg_metabolites_json_folder = standardize_folder(bigg_metabolites_json_folder)
+
+    # Load BIGG ID &lt;-&gt; metabolite name mapping :D
+    bigg_id_name_mapping: Dict[str, str] = json_load(bigg_metabolites_json_folder+&#34;bigg_id_name_mapping.json&#34;)
+
+    # Load BRENDA textfile as list of strings without newlines :D
+    with open(brenda_textfile_path, &#34;r&#34;) as f:
+        lines = f.readlines()
+    lines = [x.replace(&#34;\n&#34;, &#34;&#34;) for x in lines]
+
+    # Go through each line and collect the organism lines and kcat lines for each EC number
+    in_turnover_numbers = False
+    in_organism_reference = False
+    ec_number_kcat_lines_mapping: Dict[str, List[str]] = {}
+    ec_number_organsism_lines_mapping: Dict[str, List[str]] = {}
+    current_ec_number = &#34;&#34;
+    organism_lines: List[str] = []
+    kcat_lines: List[str] = []
+    i = 0
+    while i &lt; len(lines):
+        line = lines[i]
+        if line.startswith(&#34;ID\t&#34;):
+            if current_ec_number != &#34;&#34;:
+                ec_number_organsism_lines_mapping[current_ec_number] = organism_lines
+                ec_number_kcat_lines_mapping[current_ec_number] = kcat_lines
+            current_ec_number = line.replace(&#34;ID\t&#34;, &#34;&#34;).replace(&#34; ()&#34;, &#34;&#34;)
+            organism_lines = []
+            kcat_lines = []
+
+        if len(line) == 0:
+            in_turnover_numbers = False
+            in_organism_reference = False
+        elif line.startswith(&#34;PROTEIN&#34;):
+            in_organism_reference = True
+            i += 1
+            line = lines[i]
+        elif line.startswith(&#34;TURNOVER_NUMBER&#34;):
+            in_turnover_numbers = True
+            i += 1
+            line = lines[i]
+
+        if in_organism_reference:
+            if line.startswith(&#34;PR&#34;):
+                organism_lines.append(&#34;&#34;)
+            if len(organism_lines[-1]) &gt; 0:
+                organism_lines[-1] += &#34; &#34;
+            organism_lines[-1] += &#34; &#34; + line
+
+        elif in_turnover_numbers:
+            if line.startswith(&#34;TN&#34;):
+                kcat_lines.append(&#34;&#34;)
+            if len(kcat_lines[-1]) &gt; 0:
+                kcat_lines[-1] += &#34; &#34;
+            kcat_lines[-1] += line
+
+        if len(line) == 0:
+            in_turnover_numbers = False
+            in_organism_reference = False
+
+        i += 1
+
+    # Create the BRENDA database dictionary using the collected kcat and organism lines
+    # of each EC number :D
+    ec_numbers = list(ec_number_kcat_lines_mapping.keys())
+    brenda_kcat_database: Dict[str, Any] = {}
+    for ec_number in ec_numbers:
+        if &#34;(transferred to &#34; in ec_number:
+            actual_ec_number = ec_number.split(&#34; (transferred&#34;)[0]
+            brenda_kcat_database[actual_ec_number] = {}
+            brenda_kcat_database[actual_ec_number][&#34;TRANSFER&#34;] = \
+                ec_number.lower().split(&#34;(transferred to ec&#34;)[1].replace(&#34;)&#34;, &#34;&#34;).lstrip()
+            continue
+
+        brenda_kcat_database[ec_number] = {}
+
+        reference_number_organism_mapping = {}
+        organism_lines = ec_number_organsism_lines_mapping[ec_number]
+        for organism_line in organism_lines:
+            reference_number = organism_line.split(&#34;#&#34;)[1]
+            organism_line_split_first_part = organism_line.split(&#34;# &#34;)[1]
+            organism_line_split = organism_line_split_first_part.split(&#34; &#34;)
+            organism_line_split = [x for x in organism_line_split if len(x) &gt; 0]
+
+            end = 1
+            for part in organism_line_split:
+                # Some organism names contain their SwissProt or UniProt ID,
+                # since we don&#39;t nned them they are excluded
+                if (&#34;swissprot&#34; in part.lower()) or \
+                 (part.lower() == &#34;and&#34;) or \
+                 (&#34;uniprot&#34; in part.lower()) or \
+                 (&#34;genbank&#34; in part.lower()) or \
+                 (&#34;trembl&#34; in part.lower()):
+                    end -= 2
+                    break
+
+                if (&#34;&lt;&#34; in part) or (&#34;(&#34; in part):
+                    end -= 1
+                    break
+
+                end += 1
+            organism_name = &#34; &#34;.join(organism_line_split[:end])
+            reference_number_organism_mapping[reference_number] = organism_name
+
+        kcat_lines = ec_number_kcat_lines_mapping[ec_number]
+        for kcat_line in kcat_lines:
+            kcat_line = kcat_line
+            # Exclude kcats of mutated/changed proteins since
+            # they may not have a biological relevance
+            if (&#34;mutant&#34; in kcat_line.lower()) or (&#34;mutated&#34; in kcat_line.lower()):
+                continue
+            reference_number = kcat_line.split(&#34;#&#34;)[1].split(&#34;,&#34;)[0]
+            organism = reference_number_organism_mapping[reference_number]
+            kcat_str = &#34;&#34;.join(kcat_line.split(&#34;#&#34;)[2]).split(&#34;{&#34;)[0].lstrip().rstrip()
+            kcat = max([float(x) for x in kcat_str.split(&#34;-&#34;) if len(x) &gt; 0])
+            substrate = &#34;&#34;.join(kcat_line.split(&#34;{&#34;)[1]).split(&#34;}&#34;)[0]
+
+            substrate = substrate.lower()
+            if substrate in bigg_id_name_mapping.keys():
+                substrate = bigg_id_name_mapping[substrate]
+            else:
+                substrate = &#34;REST&#34;
+
+            if substrate not in brenda_kcat_database[ec_number].keys():
+                brenda_kcat_database[ec_number][substrate] = {}
+            if organism not in brenda_kcat_database[ec_number][substrate].keys():
+                brenda_kcat_database[ec_number][substrate][organism] = []
+            brenda_kcat_database[ec_number][substrate][organism].append(kcat)
+
+    # Write final BRENDA kcat database :D
+    json_write(json_output_path, brenda_kcat_database)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="autopacmen.submodules.parse_brenda_textfile.parse_brenda_textfile"><code class="name flex">
+<span>def <span class="ident">parse_brenda_textfile</span></span>(<span>brenda_textfile_path, bigg_metabolites_json_folder, json_output_path)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Goes through a BRENDA database textfile and converts it into a machine-readable JSON.</p>
+<p>The JSON includes kcats for found organisms and substrates.
+As of 29/04/2019, the BRENDA database can be downloaded as textfile under
+<a href="https://www.brenda-enzymes.org/download_brenda_without_registration.php">https://www.brenda-enzymes.org/download_brenda_without_registration.php</a></p>
+<p>The BRENDA database is not in a completely standardized format, so that this functions
+contains many convoluted checks and circumventions of non-standardized data.</p>
+<p>kcats from mutated enzymes are excluded.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>brenda_textfile_path: str ~ The BRENDA database text file path</li>
+<li>bigg_metabolites_json_folder: str ~ The folder in which the BIGG metabolites
+database is stored (it has to have the name 'bigg_id_name_mapping.json').</li>
+<li>json_output_path: str ~ The path of the JSON that shall be created</li>
+</ul>
+<h2 id="output">Output</h2>
+<ul>
+<li>A JSON containing the BRENDA textfile kcat data in a machine-readable format:
+<pre>
+    {
+        "$EC_NUMBER": {
+            "$SUBSTRATE_WITH_BIGG_ID_1": {
+                "$ORGANISM_1": [
+                    $kcat_1,
+                    (&hellip;)
+                    $kcat_n,
+                ]
+            },
+            (&hellip;),
+            "REST": {
+                "$ORGANISM_1": [
+                    $kcat_1,
+                    (&hellip;)
+                    $kcat_n,
+                ]
+            }
+        }
+        (&hellip;),
+    }
+</pre>
+'REST' stands for a substrate without found BIGG ID.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folder: str,
+                          json_output_path: str) -&gt; None:
+    &#34;&#34;&#34;Goes through a BRENDA database textfile and converts it into a machine-readable JSON.
+
+    The JSON includes kcats for found organisms and substrates.
+    As of 29/04/2019, the BRENDA database can be downloaded as textfile under
+    https://www.brenda-enzymes.org/download_brenda_without_registration.php
+
+    The BRENDA database is not in a completely standardized format, so that this functions
+    contains many convoluted checks and circumventions of non-standardized data.
+
+    kcats from mutated enzymes are excluded.
+
+    Arguments
+    ----------
+    * brenda_textfile_path: str ~ The BRENDA database text file path
+    * bigg_metabolites_json_folder: str ~ The folder in which the BIGG metabolites
+      database is stored (it has to have the name &#39;bigg_id_name_mapping.json&#39;).
+    * json_output_path: str ~ The path of the JSON that shall be created
+
+    Output
+    ----------
+    * A JSON containing the BRENDA textfile kcat data in a machine-readable format:
+    &lt;pre&gt;
+        {
+            &#34;$EC_NUMBER&#34;: {
+                &#34;$SUBSTRATE_WITH_BIGG_ID_1&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                },
+                (...),
+                &#34;REST&#34;: {
+                    &#34;$ORGANISM_1&#34;: [
+                        $kcat_1,
+                        (...)
+                        $kcat_n,
+                    ]
+                }
+            }
+            (...),
+        }
+    &lt;/pre&gt;
+    &#39;REST&#39; stands for a substrate without found BIGG ID.
+    &#34;&#34;&#34;
+    # Standardize output folder
+    bigg_metabolites_json_folder = standardize_folder(bigg_metabolites_json_folder)
+
+    # Load BIGG ID &lt;-&gt; metabolite name mapping :D
+    bigg_id_name_mapping: Dict[str, str] = json_load(bigg_metabolites_json_folder+&#34;bigg_id_name_mapping.json&#34;)
+
+    # Load BRENDA textfile as list of strings without newlines :D
+    with open(brenda_textfile_path, &#34;r&#34;) as f:
+        lines = f.readlines()
+    lines = [x.replace(&#34;\n&#34;, &#34;&#34;) for x in lines]
+
+    # Go through each line and collect the organism lines and kcat lines for each EC number
+    in_turnover_numbers = False
+    in_organism_reference = False
+    ec_number_kcat_lines_mapping: Dict[str, List[str]] = {}
+    ec_number_organsism_lines_mapping: Dict[str, List[str]] = {}
+    current_ec_number = &#34;&#34;
+    organism_lines: List[str] = []
+    kcat_lines: List[str] = []
+    i = 0
+    while i &lt; len(lines):
+        line = lines[i]
+        if line.startswith(&#34;ID\t&#34;):
+            if current_ec_number != &#34;&#34;:
+                ec_number_organsism_lines_mapping[current_ec_number] = organism_lines
+                ec_number_kcat_lines_mapping[current_ec_number] = kcat_lines
+            current_ec_number = line.replace(&#34;ID\t&#34;, &#34;&#34;).replace(&#34; ()&#34;, &#34;&#34;)
+            organism_lines = []
+            kcat_lines = []
+
+        if len(line) == 0:
+            in_turnover_numbers = False
+            in_organism_reference = False
+        elif line.startswith(&#34;PROTEIN&#34;):
+            in_organism_reference = True
+            i += 1
+            line = lines[i]
+        elif line.startswith(&#34;TURNOVER_NUMBER&#34;):
+            in_turnover_numbers = True
+            i += 1
+            line = lines[i]
+
+        if in_organism_reference:
+            if line.startswith(&#34;PR&#34;):
+                organism_lines.append(&#34;&#34;)
+            if len(organism_lines[-1]) &gt; 0:
+                organism_lines[-1] += &#34; &#34;
+            organism_lines[-1] += &#34; &#34; + line
+
+        elif in_turnover_numbers:
+            if line.startswith(&#34;TN&#34;):
+                kcat_lines.append(&#34;&#34;)
+            if len(kcat_lines[-1]) &gt; 0:
+                kcat_lines[-1] += &#34; &#34;
+            kcat_lines[-1] += line
+
+        if len(line) == 0:
+            in_turnover_numbers = False
+            in_organism_reference = False
+
+        i += 1
+
+    # Create the BRENDA database dictionary using the collected kcat and organism lines
+    # of each EC number :D
+    ec_numbers = list(ec_number_kcat_lines_mapping.keys())
+    brenda_kcat_database: Dict[str, Any] = {}
+    for ec_number in ec_numbers:
+        if &#34;(transferred to &#34; in ec_number:
+            actual_ec_number = ec_number.split(&#34; (transferred&#34;)[0]
+            brenda_kcat_database[actual_ec_number] = {}
+            brenda_kcat_database[actual_ec_number][&#34;TRANSFER&#34;] = \
+                ec_number.lower().split(&#34;(transferred to ec&#34;)[1].replace(&#34;)&#34;, &#34;&#34;).lstrip()
+            continue
+
+        brenda_kcat_database[ec_number] = {}
+
+        reference_number_organism_mapping = {}
+        organism_lines = ec_number_organsism_lines_mapping[ec_number]
+        for organism_line in organism_lines:
+            reference_number = organism_line.split(&#34;#&#34;)[1]
+            organism_line_split_first_part = organism_line.split(&#34;# &#34;)[1]
+            organism_line_split = organism_line_split_first_part.split(&#34; &#34;)
+            organism_line_split = [x for x in organism_line_split if len(x) &gt; 0]
+
+            end = 1
+            for part in organism_line_split:
+                # Some organism names contain their SwissProt or UniProt ID,
+                # since we don&#39;t nned them they are excluded
+                if (&#34;swissprot&#34; in part.lower()) or \
+                 (part.lower() == &#34;and&#34;) or \
+                 (&#34;uniprot&#34; in part.lower()) or \
+                 (&#34;genbank&#34; in part.lower()) or \
+                 (&#34;trembl&#34; in part.lower()):
+                    end -= 2
+                    break
+
+                if (&#34;&lt;&#34; in part) or (&#34;(&#34; in part):
+                    end -= 1
+                    break
+
+                end += 1
+            organism_name = &#34; &#34;.join(organism_line_split[:end])
+            reference_number_organism_mapping[reference_number] = organism_name
+
+        kcat_lines = ec_number_kcat_lines_mapping[ec_number]
+        for kcat_line in kcat_lines:
+            kcat_line = kcat_line
+            # Exclude kcats of mutated/changed proteins since
+            # they may not have a biological relevance
+            if (&#34;mutant&#34; in kcat_line.lower()) or (&#34;mutated&#34; in kcat_line.lower()):
+                continue
+            reference_number = kcat_line.split(&#34;#&#34;)[1].split(&#34;,&#34;)[0]
+            organism = reference_number_organism_mapping[reference_number]
+            kcat_str = &#34;&#34;.join(kcat_line.split(&#34;#&#34;)[2]).split(&#34;{&#34;)[0].lstrip().rstrip()
+            kcat = max([float(x) for x in kcat_str.split(&#34;-&#34;) if len(x) &gt; 0])
+            substrate = &#34;&#34;.join(kcat_line.split(&#34;{&#34;)[1]).split(&#34;}&#34;)[0]
+
+            substrate = substrate.lower()
+            if substrate in bigg_id_name_mapping.keys():
+                substrate = bigg_id_name_mapping[substrate]
+            else:
+                substrate = &#34;REST&#34;
+
+            if substrate not in brenda_kcat_database[ec_number].keys():
+                brenda_kcat_database[ec_number][substrate] = {}
+            if organism not in brenda_kcat_database[ec_number][substrate].keys():
+                brenda_kcat_database[ec_number][substrate][organism] = []
+            brenda_kcat_database[ec_number][substrate][organism].append(kcat)
+
+    # Write final BRENDA kcat database :D
+    json_write(json_output_path, brenda_kcat_database)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="autopacmen.submodules" href="index.html">autopacmen.submodules</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="autopacmen.submodules.parse_brenda_textfile.parse_brenda_textfile" href="#autopacmen.submodules.parse_brenda_textfile.parse_brenda_textfile">parse_brenda_textfile</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

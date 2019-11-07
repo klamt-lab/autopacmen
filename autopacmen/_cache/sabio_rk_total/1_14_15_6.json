@@ -1,0 +1,18 @@
+{
+    "REST": {
+        "Homo sapiens": [
+            0.00171666667
+        ],
+        "Bos taurus": [
+            0.655
+        ]
+    },
+    "7dhchsterol;o2;adfdRD": {
+        "Homo sapiens": [
+            0.221666667
+        ],
+        "Bos taurus": [
+            0.406666667
+        ]
+    }
+}

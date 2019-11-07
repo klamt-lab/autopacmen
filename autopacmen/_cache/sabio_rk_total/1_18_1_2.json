@@ -1,0 +1,42 @@
+{
+    "REST": {
+        "Spinacia oleracea": [
+            25.0,
+            12.6,
+            12.5,
+            23.2
+        ],
+        "Mycobacterium tuberculosis": [
+            2.5,
+            33.7,
+            33.7
+        ],
+        "Bacillus subtilis": [
+            22.7
+        ],
+        "Pisum sativum": [
+            74.1
+        ],
+        "Zea mays": [
+            44.0,
+            28.0,
+            120.0,
+            380.0,
+            130.0,
+            380.0,
+            140.0,
+            140.0,
+            520.0,
+            520.0,
+            1.0
+        ]
+    },
+    "nadph;fdxox": {
+        "Bacillus subtilis": [
+            35.4
+        ],
+        "Zea mays": [
+            115.0
+        ]
+    }
+}

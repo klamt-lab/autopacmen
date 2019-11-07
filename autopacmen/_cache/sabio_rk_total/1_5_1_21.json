@@ -1,0 +1,22 @@
+{
+    "1p2cbxl;h;nadph": {
+        "Pseudomonas aeruginosa": [
+            41.666666666666664
+        ]
+    },
+    "1pipdn2c;h;nadph": {
+        "Pseudomonas aeruginosa": [
+            35.333333333333336
+        ]
+    },
+    "pro__L;nadp": {
+        "Pseudomonas aeruginosa": [
+            3.4166666666666665
+        ]
+    },
+    "REST": {
+        "Pseudomonas aeruginosa": [
+            2.25
+        ]
+    }
+}

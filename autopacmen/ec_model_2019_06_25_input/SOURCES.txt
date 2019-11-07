@@ -1,0 +1,19 @@
+iJO1366 is published in the following publication:
+Orth, J. D., Conrad, T. M., Na, J., Lerman, J. A., Nam, H., Feist, A. M.,
+& Palsson, B. Ø. (2011).
+A comprehensive genome‐scale reconstruction of Escherichia coli
+metabolism—2011. Molecular systems biology, 7(1).
+
+bigg_models_metabolites.txt was downloaded from
+http://bigg.ucsd.edu/data_access
+
+brenda_download.txt has to be downloaded from
+https://www.brenda-enzymes.org/download_brenda_without_registration.php
+
+The values of c_sources_S3_Adadi_2012.txt come from
+Adadi R, Volkmer B, Milo R, Heinemann M, Shlomi T. Prediction of Microbial Growth Rate versus Biomass Yield by a
+Metabolic Network with Kinetic Parameters. PLOS Computational Biology. 2012 Jul 5;8(7):e1002575.
+
+This is also the main source of c_sources_S3_Adadi_2012_with_monk_values.txt, where only the two glucose values come from
+Monk JM, Koza A, Campodonico MA, Machado D, Seoane JM, Palsson BO, et al. Multi-omics Quantification of Species Variation
+of Escherichia coli Links Molecular Features with Strain Phenotypes. Cell Systems. 2016 Sep 28;3(3):238-251.e12.

@@ -1,0 +1,29 @@
+{
+    "REST": {
+        "Agrobacterium tumefaciens": [
+            0.31,
+            0.64,
+            2.3,
+            1.15,
+            0.11,
+            0.1
+        ],
+        "Bradyrhizobium diazoefficiens": [
+            0.11,
+            0.093,
+            0.1,
+            0.35,
+            0.14,
+            0.075
+        ]
+    },
+    "atp;gly": {
+        "Agrobacterium tumefaciens": [
+            2.1
+        ],
+        "Bradyrhizobium diazoefficiens": [
+            1.5,
+            1.01
+        ]
+    }
+}
