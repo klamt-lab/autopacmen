@@ -180,7 +180,7 @@ ax.hist(variabilities_smoment, bins=bins, density=True, histtype='step', cumulat
 ax.grid(True)
 ax.legend(loc='lower center')
 ax.set_xlabel('Variability (mmol/(gDW*h))')
-ax.set_ylabel('Fraction of all variabilites')
+ax.set_ylabel('Cumulative distribution')
 plt.show()
 fig.savefig('ec_model_2019_06_25_test_fva/fva_comparison_2019_06_25_fitted_mc_fm_50_vs_original_iJO1366_both_with_standard_exchange_scenario.png')
 
