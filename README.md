@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/autopacmen-Paulocracy.svg)](https://badge.fury.io/py/autopacmen-Paulocracy)
+
 # AutoPACMEN (Automatic integration of Protein Allocation Constraints for stoichiometric MEtabolic Networks)
 
 
