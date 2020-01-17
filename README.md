@@ -6,7 +6,7 @@
 ## General Description
 
 AutoPACMEN allows one to apply the sMOMENT method of automatically expanding a stoichiometric metabolic
-model with protein allocation constraints ([Bekiaris & Klamt, 2020](#AutoPACMEN's-Publication)).
+model with protein allocation constraints ([Bekiaris & Klamt, 2020](#autopacmens-publication)).
 AutoPACMEN consists of 2 parts:
 1) A Python 3 Model Generator which primarily uses [cobrapy](https://github.com/opencobra/cobrapy) and which applies the sMOMENT
    method on a stoichiometric metabolic model.
