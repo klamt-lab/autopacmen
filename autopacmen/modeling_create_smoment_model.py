@@ -52,7 +52,7 @@ from submodules.create_smoment_model_reaction_wise import create_smoment_model_r
 @click.option("--excluded_reactions",
               required=False,
               type=str,
-              prompt="Name of output SBML",
+              prompt="Excluded reactions",
               help="Excluded reactions for which the pseudo-metabolite of the protein pool shall not be introduced. Must be semicolon-separated.")
 @click.option("--type_of_default_kcat_selection",
               required=True,

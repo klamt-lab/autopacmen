@@ -66,7 +66,7 @@ def parse_brenda_textfile_cli(brenda_textfile_path: str, bigg_metabolites_json_f
     Load the BRENDA textfile 'C:\\folder\\download.txt' while the BIGG metabolites file
     is in 'C:\\bigg\\' and the newly generated JSON shall be named 'C:\\folder\\brenda.json'
     <pre>
-    python data_parse_bigg_metabolites_file.py --brenda_textfile_path C:\\folder\\download.txt --bigg_metabolites_json_folder C:\\bigg\\ --json_output_path C:\\folder\\brenda.json
+    python data_parse_brenda_textfile.py --brenda_textfile_path C:\\folder\\download.txt --bigg_metabolites_json_folder C:\\bigg\\ --json_output_path C:\\folder\\brenda.json
     </pre>
     """
     parse_brenda_textfile(brenda_textfile_path, bigg_metabolites_json_folder, json_output_path)

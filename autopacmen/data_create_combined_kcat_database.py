@@ -40,7 +40,7 @@ from submodules.create_combined_kcat_database import create_combined_kcat_databa
 @click.option("--output_path",
               required=True,
               type=click.Path(exists=True, file_okay=True, dir_okay=True),
-              prompt="BRENDA JSON path",
+              prompt="Output path",
               help="Full path to the newly created combined JSON")
 def parse_create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_database_path: str, output_path: str) -> None:
     """Combines the BRENDA and SABIO-RK JSONs into one big JSON which can be used by modeling_get_reactions_kcat_mapping.py
