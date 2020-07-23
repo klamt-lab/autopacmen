@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -166,7 +166,7 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
             continue
 
         # Check if all proteins in the reaction's gene rule have a found mass
-        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme 's0001'
+        # This is not the case for e.g. spontaneous reactions which often get the pseudo-enzyme 's0001'
         all_available = True
         for enzyme in gene_rule:
             if type(enzyme) == str:
@@ -212,7 +212,8 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
             reaction_kcat = forward_kcat
 
         # Add protein pool pseudo-metabolite depending on isozyme complex presence
-        stoichiometries = []
+        stoichiometries: List[float] = []
+        stoichiometry_enzyme_name_list: List[str] = []
         for isozyme_id in gene_rule:
             # If it's not a complex :O...
             if type(isozyme_id) is str:
@@ -230,6 +231,7 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                 # 3) Setting the right direction (educt)
                 stoichiometry *= -1
                 stoichiometries.append(stoichiometry)
+                stoichiometry_enzyme_name_list.append(isozyme_id)
 
                 # Add proteomics constraints
                 if isozyme_id in protein_id_concentration_mapping.keys():
@@ -245,6 +247,7 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                 stoichiometry = 0
 
                 # ...go through each single ID of the complex...
+                stoichiometry_enzyme_name_list.append("")
                 for single_id in isozyme_id:
                     # ...get the reaction ID without additions...
                     reaction_id = reaction_id.split("_TG_")[0]
@@ -260,6 +263,9 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                     single_stoichiometry *= -1
                     # 4) and add it to the complex's stoichiometry
                     stoichiometry += single_stoichiometry
+                    # Add name of current single ID
+                    stoichiometry_enzyme_name_list[-1] += single_id + " "
+                stoichiometry_enzyme_name_list[-1] = stoichiometry_enzyme_name_list[-1].rstrip()
                 # Add to list of stoichiometries
                 stoichiometries.append(stoichiometry)
 
@@ -275,8 +281,20 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
         # Take the maximal stoichiometry (i.e., the one with the least cost since this one will usually be prefered
         # anyway in an FBA).
         metabolites = {}
-        metabolites[prot_pool_metabolite] = max(stoichiometries)
+        max_stoichiometry = max(stoichiometries)
+        metabolites[prot_pool_metabolite] = max_stoichiometry
         reaction.add_metabolites(metabolites)
+        selected_enzyme = stoichiometry_enzyme_name_list[stoichiometries.index(max_stoichiometry)]
+        print("Reaction: ", model_reaction_id)
+        print("Selected kcat: ", reaction_kcat)
+        print("Selected molecular weight: ", end="")
+        if " " in selected_enzyme:  # Multiple enzymes
+            mass_sum = .0
+            for single_enzyme in selected_enzyme.split(" "):
+                mass_sum += protein_id_mass_mapping[single_enzyme]
+            print(mass_sum)
+        else:  # Single enzyme
+            print(protein_id_mass_mapping[selected_enzyme])
 
     # Output as SBML (without constraints due to cobrapy limitations)
     cobra.io.write_sbml_model(model, project_folder + output_sbml_name)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -308,7 +308,7 @@ def _print_assigned_kcats(reaction_id: str, forward_kcat: float, reverse_kcat: f
 # PUBLIC FUNCTIONS
 def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name: str,
                                organism: str, kcat_database_path: str, protein_kcat_database_path: str,
-                               type_of_kcat_selection: str) -> None:
+                               type_of_kcat_selection: str = "mean") -> None:
     """Returns a reaction<->kcat mapping for the given model :D
 
     The selection of kcats is depending on the affected metabolites of the reaction direction (one

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -77,9 +77,9 @@ def get_differential_reactions(scenario_names: List[str], flux_control_files_pat
 
     Definition of 'differential reaction'
     ----------
-    In a protein-constraint-enhanced metabolic network, the deletion of the constrain constraint in a reaction
+    In a protein-constraint-enhanced metabolic network, the deletion of the protein constraint in a reaction
     can have an influence on the objective solution value, or not. A 'differential reaction' is a reaction in
-    which the constraint deletion has an influence over the given threshold. I.e., if the original objective solution
+    which the constraint's deletion has an influence over the given threshold. I.e., if the original objective solution
     is 1.0 and - after the deletion of the protein constraint for the reaction - again 1.0, the reaction is not
     differential. If the deletion of the protein constraint leads e.g. to the solution 1.001 or .999, and the threshold
     is smaller or equal to .001, the reaction is 'differential'.
@@ -96,8 +96,10 @@ def get_differential_reactions(scenario_names: List[str], flux_control_files_pat
     Output
     ----------
     2 values:
-    * unique_differential_proteins_of_scenario: Dict[str, List[str]] ~
-    * differential_proteins_of_all_scenarios: List[str] ~ A list of all differential
+    * unique_differential_proteins_of_scenario: Dict[str, List[str]] ~ A list of all differential
+      reactions which occur in *only one* given scenario.
+    * differential_reactions_of_all_scenarios: List[str] ~ A list of all differential reactions which
+      occur in *all* given scenarios.
     """
     # Get the differential reactions of each single scenario
     differential_reactions_by_scenario: Dict[str, List[str]] = {}

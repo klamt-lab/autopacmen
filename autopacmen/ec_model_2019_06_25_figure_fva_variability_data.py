@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 
 This is the script for the generation of the comparative cumulative distributions
 of flux variabilities of iJO1366 vs. iJO1366* at a given maximal glucose uptake
-rate. The box-form in the legends was edited later to lines for optimal reasons (no
+rate. The box-form in the legends was edited later to lines for aesthetic reasons (no
 actual data was changed :-).
 """
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 # limitations under the License.
 """This script consists of all steps needed for the genration of iJO1366-sMOMENT.
 
-The single steps are explained in the supplementary file 1 of sMOMENT's publication.
+The single steps are explained in the supplementary file 1 of sMOMENT's publication (Bekiaris & Klamt, 2020).
 """
 
 # IMPORTS

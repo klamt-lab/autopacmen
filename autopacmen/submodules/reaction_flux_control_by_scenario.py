@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ from submodules.helper_general import standardize_folder
 # PRIVATE FUNCTIONS
 def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name: str,
                            scenario_key: str, objective: str):
-    """Calculated the reaction flux control for the given model.
+    """Calculate the reaction flux control for the given model.
 
     Arguments
     ----------
@@ -112,7 +112,7 @@ def reaction_flux_control_by_scenario(model: cobra.Model, output_folder: str, pr
 
     Output
     ----------
-    Rection flux control files in the given folder (see _reaction_flux_control()'s comment for more)
+    Reaction flux control files in the given folder (see _reaction_flux_control()'s comment for more)
     """
     # Standardize output folder
     output_folder = standardize_folder(output_folder)
