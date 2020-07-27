@@ -142,9 +142,14 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
     for ec_number in ec_numbers:
         if "(transferred to " in ec_number:
             actual_ec_number = ec_number.split(" (transferred")[0]
-            brenda_kcat_database[actual_ec_number] = {}
-            brenda_kcat_database[actual_ec_number]["TRANSFER"] = \
-                ec_number.lower().split("(transferred to ec")[1].replace(")", "").lstrip()
+            try:
+                brenda_kcat_database[actual_ec_number] = {}
+                brenda_kcat_database[actual_ec_number]["TRANSFER"] = \
+                    ec_number.lower().replace("  ", " ").split("(transferred to ec")[1].replace(")", "").lstrip()
+            except Exception:
+                # Some transfers go to general subgroups instead of single EC numbers so that
+                # no kcat database can be built from it D:
+                print("WARNING: BRENDA text file line " + ec_number + " is not interpretable!")
             continue
 
         brenda_kcat_database[ec_number] = {}

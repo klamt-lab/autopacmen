@@ -127,7 +127,7 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     species_to_search: List[str] = []
     taxonomy_dict_cache: Dict[str, List[str]] = {}
     for species in all_species:
-        cache_filename = species + "_taxonomy"
+        cache_filename = species.replace("/", "") + "_taxonomy"
         if cache_filename in cache_files:
             cache_filepath = cache_basepath + cache_filename
             taxonomy_dict_cache[species] = pickle_load(cache_filepath)
@@ -149,7 +149,7 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
                 taxonomy_dict_search[searched_species] = ["NOT FOUND"]
 
         for species in list(taxonomy_dict_search.keys()):
-            cache_filename = species + "_taxonomy"
+            cache_filename = species.replace("/", "") + "_taxonomy"
             if taxonomy_dict_search[species] == ["NOT FOUND"]:
                 cache_filename += "_NA"
             cache_filepath = cache_basepath + cache_filename

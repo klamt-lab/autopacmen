@@ -248,7 +248,7 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
     worksheet.write(1, 0, "Fraction of masses of model-included enzymes in comparison to all enzymes (0.0 to 1.0):")
     worksheet.write(1, 1, 1.0)
     worksheet.write(2, 0, "Average saturation level (0.0 to 1.0):")
-    worksheet.write(2, 0, 1.0)
+    worksheet.write(2, 1, 1.0)
     worksheet2 = workbook.add_worksheet("Single protein data")
     worksheet2.write(0, 0, "Protein ID (as in SBML model)")
     worksheet2.write(0, 1, "Protein concentration [mmol/gDW]")
