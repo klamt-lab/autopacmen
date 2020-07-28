@@ -80,7 +80,7 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
     bigg_id_name_mapping: Dict[str, str] = json_load(bigg_metabolites_json_folder+"bigg_id_name_mapping.json")
 
     # Load BRENDA textfile as list of strings without newlines :D
-    with open(brenda_textfile_path, "r") as f:
+    with open(brenda_textfile_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
     lines = [x.replace("\n", "") for x in lines]
 
