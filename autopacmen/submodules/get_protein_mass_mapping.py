@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -85,6 +85,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
     # are searched at once in order to save an amount of UniProt API calls)
     # and retrieve the amino acid sequences and using these sequences, their
     # masses.
+    print("Starting UniProt ID<->Protein mass search using UniProt API...")
     uniprot_ids = list(uniprot_id_protein_id_mapping.keys())
     batch_size = 5
     batch_start = 0
@@ -114,6 +115,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
         # the right associated masses are being picked.
         query = " OR ".join(batch)
         uniprot_query_url = f"https://www.uniprot.org/uniprot/?query={query}&format=tab&columns=id,sequence"
+        print(f"UniProt batch search for: {query}")
 
         # Call UniProt's API :-)
         uniprot_data = requests.get(uniprot_query_url).text.split("\n")
@@ -127,7 +129,10 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
             uniprot_id = line.split("\t")[0]
             sequence = line.split("\t")[1]
             # Get the protein mass using biopython's associated function for amino acid sequences
-            mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
+            try:
+                mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
+            except ValueError:  # e.g. if an "X" is in a sequence
+                continue
             uniprot_id_protein_mass_mapping[uniprot_id] = float(mass)
 
         # Create the pickled cache files for the searched protein masses
@@ -150,6 +155,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
             protein_id_mass_mapping[protein_id] = uniprot_id_protein_mass_mapping[uniprot_id]
 
     # Write protein mass list JSON :D
+    print("Protein ID<->Mass mapping done!")
     json_write(basepath+"_protein_id_mass_mapping.json", protein_id_mass_mapping)
 
 

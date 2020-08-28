@@ -15,7 +15,7 @@
 # limitations under the License.
 """get_reactions_kcat_mapping.py
 
-This module contains functions which in total return a mapping of
+This module contains functions which, in total, return a mapping of
 reactions to forward and reverse reaction direction kcats.
 """
 
@@ -188,6 +188,8 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     # Get the protein database kcat for this reaction (if there is one, otherwise it returns math.nan)
     if protein_kcat_database != {}:
         protein_database_kcat = _get_kcat_from_protein_kcat_database(searched_direction, reaction, protein_kcat_database)
+    else:
+        protein_database_kcat = math.nan
 
     # Add the protein database kcat if there is one, it will influence the resulting kcat since a mean is used
     if protein_database_kcat is not math.nan:
