@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -65,9 +65,21 @@ def create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_
     combined_database: Dict[str, Dict[str, Any]] = {}
     # Go through each EC number :D...
     for ec_number_key in ec_number_keys:
-        # Get the wildcard status (i.e., found with a * wildcard?)
-        is_sabio_rk_from_wildcard: bool = sabio_rk_database[ec_number_key]["WILDCARD"]
-        is_brenda_from_wildcard: bool = brenda_database[ec_number_key]["WILDCARD"]
+        # Get the wildcard status (i.e., found with a * wildcard?) and check if the EC number occurs anywhere...
+        # ...for SABIO-RK
+        if ec_number_key not in sabio_rk_database.keys():
+            print(f"WARNING: EC number {ec_number_key} could not be found in SABIO-RK, even with wildcards")
+            print("Possible reasons: The EC number format is invalid or there was an SABIO-RK API error")
+            is_sabio_rk_from_wildcard = True  # Let the combined database ignore this entry
+        else:
+            is_sabio_rk_from_wildcard = sabio_rk_database[ec_number_key]["WILDCARD"]
+        # ...and for BRENDA
+        if ec_number_key not in brenda_database.keys():
+            print(f"WARNING: EC number {ec_number_key} could not be found in SABIO-RK, even with wildcards")
+            print("Possible reason: The EC number format is invalid")
+            is_brenda_from_wildcard = True  # Let the combined database ignore this entry
+        else:
+            is_brenda_from_wildcard = brenda_database[ec_number_key]["WILDCARD"]
 
         # If both are from wildcards, ignore them :3
         if (is_sabio_rk_from_wildcard) and (is_brenda_from_wildcard):

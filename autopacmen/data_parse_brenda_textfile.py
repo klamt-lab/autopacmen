@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ from submodules.parse_brenda_textfile import parse_brenda_textfile
                    "must not have been changed.")
 @click.option("--json_output_path",
               required=True,
-              type=click.Path(exists=True, dir_okay=True),
+              type=click.Path(file_okay=True, dir_okay=True, writable=True),
               prompt="JSON output path",
               help="The full path for the more machine-readable JSON file of the"
                    " BRENDA database text file shall be placed. The resulting JSON "

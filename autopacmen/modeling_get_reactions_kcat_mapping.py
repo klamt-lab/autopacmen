@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,9 +56,11 @@ from submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
 @click.option("--protein_kcat_database_path",
               required=True,
               type=click.Path(exists=True, file_okay=True, dir_okay=True),
+              default="",
               prompt="protein kcat database path",
               help="Full path to the custom user-defined kcat<->protein JSON. It must be a dictionary containing the protein names"
-                   "(as given in the metabolic network's gene rules) as keys and associated kcats as children. See this script's description for more.")
+                   "(as given in the metabolic network's gene rules) as keys and associated kcats as children. See this script's description for more."
+                   "Default is '', which means that no user-defined database is given.")
 @click.option("--type_of_kcat_selection",
               required=True,
               type=str,

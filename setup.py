@@ -5,13 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="autopacmen-Paulocracy",
-    version="0.5.5",
+    version="0.5.6",
     author="Paulocracy",
     author_email="bekiaris@mpi-magdeburg.mpg.de",
     description="The AutoPACMEN package",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Paulocracy/autopacmen",
+    packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
