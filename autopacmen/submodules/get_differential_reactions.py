@@ -66,7 +66,8 @@ def get_all_differential_reactions(scenario_names: List[str], flux_control_files
     """
     for c_source in scenario_names:
         filepath = f"{flux_control_files_path}/{project_name}_reaction_flux_control_{c_source}.txt"
-        differential_reactions = _get_differential_reactions_from_flux_control_file(filepath, threshold)
+        differential_reactions = _get_differential_reactions_from_flux_control_file(
+            filepath, threshold)
     differential_reactions = list(set(differential_reactions))
     return differential_reactions
 
@@ -105,7 +106,8 @@ def get_differential_reactions(scenario_names: List[str], flux_control_files_pat
     differential_reactions_by_scenario: Dict[str, List[str]] = {}
     for scenario_name in scenario_names:
         filepath = f"{flux_control_files_path}/{project_name}_reaction_flux_control_{scenario_name}.txt"
-        differential_reactions = _get_differential_reactions_from_flux_control_file(filepath, threshold)
+        differential_reactions = _get_differential_reactions_from_flux_control_file(
+            filepath, threshold)
         differential_reactions_by_scenario[scenario_name] = differential_reactions
 
     # Check for substitution name
@@ -128,11 +130,14 @@ def get_differential_reactions(scenario_names: List[str], flux_control_files_pat
         del(scenario_names[old_index])
 
         if new_name in differential_reactions_by_scenario.keys():
-            combined_list = list(set(differential_reactions_by_scenario[new_name] + differential_reactions_by_scenario[old_name]))
-            differential_reactions_by_scenario[new_name] = copy.deepcopy(combined_list)
+            combined_list = list(set(
+                differential_reactions_by_scenario[new_name] + differential_reactions_by_scenario[old_name]))
+            differential_reactions_by_scenario[new_name] = copy.deepcopy(
+                combined_list)
         else:
             scenario_names.append(new_name)
-            differential_reactions_by_scenario[new_name] = copy.deepcopy(differential_reactions_by_scenario[old_name])
+            differential_reactions_by_scenario[new_name] = copy.deepcopy(
+                differential_reactions_by_scenario[old_name])
         del(differential_reactions_by_scenario[old_name])
 
     # Get the unique differential reactions by checking each differential reaction of a scenario
@@ -141,7 +146,8 @@ def get_differential_reactions(scenario_names: List[str], flux_control_files_pat
     unique_differential_reactions_of_scenario: Dict[str, List[str]] = {}
     for scenario_name in scenario_names:
         differential_reactions_of_scenario = differential_reactions_by_scenario[scenario_name]
-        all_differential_proteins.append(set(differential_reactions_of_scenario))
+        all_differential_proteins.append(
+            set(differential_reactions_of_scenario))
 
         other_differential_reactions: List[str] = []
         for other_c_source in scenario_names:
@@ -156,7 +162,8 @@ def get_differential_reactions(scenario_names: List[str], flux_control_files_pat
             print("Unique differential reactions of "+scenario_name+":")
             print(unique_differential_reactions_of_single_scenario)
 
-    differential_reactions_of_all_scenarios = set.intersection(*all_differential_proteins)
+    differential_reactions_of_all_scenarios = set.intersection(
+        *all_differential_proteins)
     if print_result:
         print("Differential reactions of all C sources:")
         print(differential_reactions_of_all_scenarios)

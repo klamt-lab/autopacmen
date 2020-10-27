@@ -18,7 +18,7 @@
 
 """
 
-from submodules.fva_comparison import fva_comparison_with_sbml
+from .submodules.fva_comparison import fva_comparison_with_sbml
 
 SBML_ORIGINAL: str = "./ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml"
 SBML_SMOMENT: str = "ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25.xml"

@@ -23,7 +23,7 @@ a machine-readable JSON.
 # External modules
 import click
 # Internal modules
-from submodules.parse_brenda_textfile import parse_brenda_textfile
+from .submodules.parse_brenda_textfile import parse_brenda_textfile
 
 
 # Set-up command-line parameters using click decorators

@@ -28,7 +28,7 @@ import requests
 import time
 from typing import Any, Dict, List
 # Internal libraries
-from submodules.helper_general import ensure_folder_existence, get_files, is_fitting_ec_numbers, json_load, json_write
+from .helper_general import ensure_folder_existence, get_files, is_fitting_ec_numbers, json_load, json_write
 
 
 # SCRIPT-WIDE CONSTANTS

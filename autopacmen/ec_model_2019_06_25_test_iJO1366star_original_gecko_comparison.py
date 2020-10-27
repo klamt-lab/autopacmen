@@ -18,7 +18,7 @@
 Compares iJO1366* with a GECKOed version (Sánchez et al., 2017) of iJO1366.
 """
 
-from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
+from .ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
 
 
 def fba_with_glucose_levels(model_gecko, model_smoment, glucose_levels, name):

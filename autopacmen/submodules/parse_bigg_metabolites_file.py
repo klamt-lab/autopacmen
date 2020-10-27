@@ -21,7 +21,7 @@ into an AutoPACMEN-readable JSON.
 
 # IMPORTS
 # Internal modules
-from submodules.helper_general import json_write, standardize_folder
+from .helper_general import json_write, standardize_folder
 
 
 # PUBLIC FUNCTIONS SECTIONS
@@ -78,4 +78,5 @@ def parse_bigg_metabolites_file(bigg_metabolites_file_path: str, json_output_fol
         bigg_id_name_mapping[bigg_id] = bigg_id
 
     # Write the JSON in the given folder :D
-    json_write(json_output_folder+"bigg_id_name_mapping.json", bigg_id_name_mapping)
+    json_write(json_output_folder+"bigg_id_name_mapping.json",
+               bigg_id_name_mapping)

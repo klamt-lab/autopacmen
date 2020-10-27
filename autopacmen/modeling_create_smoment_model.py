@@ -27,7 +27,8 @@ from submodules.create_smoment_model_reaction_wise import create_smoment_model_r
 @click.command()
 @click.option("--input_sbml_path",
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+              type=click.Path(exists=True, file_okay=True,
+                              dir_okay=True, readable=True),
               prompt="Path to input SBML",
               help="Path to the SBML model which describes the stoichiometric metabolic model "
                    "that shall be converted into a protein-constrained-enhanced model")

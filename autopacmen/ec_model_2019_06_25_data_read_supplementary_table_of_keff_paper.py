@@ -23,7 +23,7 @@ import cobra
 import openpyxl
 from typing import Any, Dict, List
 
-from submodules.helper_general import json_write
+from .submodules.helper_general import json_write
 
 # Get kcats
 workbook = openpyxl.load_workbook("ec_model_2019_06_25_input_keff_paper/c3mb70119k-1.xlsx", read_only=True)

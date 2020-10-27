@@ -24,7 +24,7 @@ An HTML documentation of the source code of AutoPACMEN's Python modules can be f
 This HTML documentation was automatically generated using [pdoc3](https://pdoc3.github.io/pdoc/) (link accessed on Oct 30, 2019).
 The HTML documentation's starting point is "index.html" in the "./html/autopacmen" subfolder.
 
-In addition, the exemplary usage of AutoPACMEN with iJO1366* is explained in AutoPACMEN's publication Supplementary File 1.
+All scripts starting with "ec_model_2019_06_25" show the exemplary usage of AutoPACMEN for the generation of iJO1366*. All these scripts are intended to be run from the "autopacmen" subfolder of this repository. AutoPACMEN's exemplary usage is explained in AutoPACMEN's publication Supplementary File 1.
 
 <b>Note:</b> As it has a huge file size, the downloaded complete BRENDA text file brenda_downloads.txt (as described in
 AutoPACMEN's manual) is not included here.

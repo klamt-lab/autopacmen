@@ -18,8 +18,8 @@
 
 """
 
-from submodules.fva_prot_pool import fva_prot_pool
-from ec_model_data_set_up_model import set_up_ec_model_with_sbml
+from .submodules.fva_prot_pool import fva_prot_pool
+from .ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
 
 model = set_up_ec_model_with_sbml("ec_model_output/iJO1366_GECKO.xml", .225)
 model.reactions.EX_glc__D_e.lower_bound = -1000

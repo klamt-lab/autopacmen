@@ -103,7 +103,8 @@ def get_reactions_kcat_mapping_cli(sbml_path: str, project_folder: str, project_
     python modeling_get_reactions_kcat_mapping.py --sbml_path C:\\model\\test.xml --project_folder C:\\project\\ --project_name example --organism 'Escherichia coli' --kcat_database_path C:\\database\\database.json --protein_kcat_database_path C:\\database\\user.json --type_of_kcat_selection 'mean'
     </pre>
     """
-    get_reactions_kcat_mapping(sbml_path, project_folder, project_name, organism, kcat_database_path, protein_kcat_database_path, type_of_kcat_selection)
+    get_reactions_kcat_mapping(sbml_path, project_folder, project_name, organism,
+                               kcat_database_path, protein_kcat_database_path, type_of_kcat_selection)
 
 
 # Start-up routine if script is called

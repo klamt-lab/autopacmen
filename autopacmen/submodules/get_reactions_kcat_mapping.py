@@ -28,8 +28,8 @@ import sys
 import statistics
 from typing import Any, Dict, List
 # Internal modules
-import submodules.ncbi_taxonomy as ncbi_taxonomy
-from submodules.helper_general import ensure_folder_existence, get_files, json_load, json_write, pickle_load, pickle_write, standardize_folder
+from .ncbi_taxonomy import get_entrez_id_from_organism_full_name_batch, get_taxonomy_from_organism_ncbi_id_batch, most_taxonomic_similar
+from .helper_general import ensure_folder_existence, get_files, json_load, json_write, pickle_load, pickle_write, standardize_folder
 
 
 # PRIVATE FUNCTIONS
@@ -141,8 +141,8 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     # taxonomy dict which includes 'NOT FOUND' for all non-found organisms and the
     # taxonomies for each found organism.
     if len(species_to_search) > 0:
-        ncbi_ids = ncbi_taxonomy.get_entrez_id_from_organism_full_name_batch(species_to_search)
-        taxonomy_dict_search = ncbi_taxonomy.get_taxonomy_from_organism_ncbi_id_batch(ncbi_ids)
+        ncbi_ids = get_entrez_id_from_organism_full_name_batch(species_to_search)
+        taxonomy_dict_search = get_taxonomy_from_organism_ncbi_id_batch(ncbi_ids)
 
         for searched_species in species_to_search:
             if searched_species not in taxonomy_dict_search.keys():
@@ -160,7 +160,7 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
 
     # Process the taxonomies in order to find the taxonomic distances of the given organism to the organisms
     # which are present in the kcat entries.
-    score_dict = ncbi_taxonomy.most_taxonomic_similar(organism, full_taxonomy_dict)
+    score_dict = most_taxonomic_similar(organism, full_taxonomy_dict)
     for species in full_taxonomy_dict.keys():
         if species not in score_dict:
             score_dict[species] = max(score_dict.values())+1

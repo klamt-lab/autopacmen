@@ -16,7 +16,7 @@
 """ec_model_2019_06_25_optimization_apply_manual_changes.py"""
 
 import cobra
-from submodules.apply_manual_changes import apply_manual_changes
+from .submodules.apply_manual_changes import apply_manual_changes
 
 
 KCAT_CHANGE_FACTORS = {

@@ -21,7 +21,7 @@ SABIO-RK and BRENDA data.
 
 # IMPORTS
 # Internal modules
-from submodules.helper_general import json_load, json_write
+from .helper_general import json_load, json_write
 # External modules
 from typing import Any, Dict, List
 

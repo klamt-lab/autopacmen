@@ -24,8 +24,8 @@ given metabolic model.
 import cobra
 from typing import List
 # Internal modules
-import submodules.parse_sabio_rk as sabio_rk
-from submodules.helper_general import json_write
+from .parse_sabio_rk import get_ec_number_kcats_wildcard_search
+from .helper_general import json_write
 
 
 # PUBLIC FUNCTIONS SECTION
@@ -82,7 +82,8 @@ def parse_sabio_rk_for_model(model: cobra.Model, json_output_path: str, bigg_id_
     ec_numbers_list = list(set(ec_numbers_list))
 
     # GET KCATS FOR EC NUMBERS
-    ec_number_kcat_mapping = sabio_rk.get_ec_number_kcats_wildcard_search(ec_numbers_list, bigg_id_name_mapping_path)
+    ec_number_kcat_mapping = get_ec_number_kcats_wildcard_search(
+        ec_numbers_list, bigg_id_name_mapping_path)
 
     json_write(json_output_path, ec_number_kcat_mapping)
 
@@ -97,4 +98,5 @@ def parse_sabio_rk_for_model_with_sbml(sbml_path: str, json_output_path: str, bi
     """
     # LOAD SBML MODEL
     model: cobra.Model = cobra.io.read_sbml_model(sbml_path)
-    parse_sabio_rk_for_model(model, json_output_path, bigg_id_name_mapping_path)
+    parse_sabio_rk_for_model(model, json_output_path,
+                             bigg_id_name_mapping_path)

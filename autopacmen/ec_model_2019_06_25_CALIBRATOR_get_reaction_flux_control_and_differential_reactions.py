@@ -22,11 +22,11 @@ Python functions as described in AutoPACMEN's manual.
 # External modules
 import cobra
 # Internal modules
-from ec_model_data_scenarios_for_optimization import ec_model_scenarios_for_optimization
-from ec_model_data_set_up_model import set_up_ec_model_with_sbml
-from submodules.reaction_flux_control_by_scenario import reaction_flux_control_by_scenario
-from submodules.get_differential_reactions import get_differential_reactions
-from submodules.helper_general import json_write
+from .ec_model_2019_06_25_data_scenarios_for_optimization import ec_model_scenarios_for_optimization
+from .ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
+from .submodules.reaction_flux_control_by_scenario import reaction_flux_control_by_scenario
+from .submodules.get_differential_reactions import get_differential_reactions
+from .submodules.helper_general import json_write
 
 
 # Set-up of project

@@ -28,8 +28,8 @@ import cobra
 import xlsxwriter
 from typing import Any, Dict, List, Union
 # Internal modules
-from submodules.kegg import kegg_rest_get_batch
-from submodules.helper_general import standardize_folder
+from .kegg import kegg_rest_get_batch
+from .helper_general import standardize_folder
 
 
 # INTERNAL FUNCTIONS SECTION
