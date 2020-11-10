@@ -73,11 +73,14 @@ def fva_prot_pool(model: cobra.Model, pp_upper_bounds: List[float], objective: s
         with model:
             if objective != &#34;&#34;:
                 model.objective = objective
-            model.reactions.get_by_id(&#34;ER_pool_TG_&#34;).upper_bound = pp_upper_bound
+            model.reactions.get_by_id(
+                &#34;ER_pool_TG_&#34;).upper_bound = pp_upper_bound
             solution = model.optimize()
-            print(f&#34;\sMOMENT-enhanced model, FVA solution for prot_pool upper bound of {pp_upper_bound}:&#34;)
+            print(
+                f&#34;\sMOMENT-enhanced model, FVA solution for prot_pool upper bound of {pp_upper_bound}:&#34;)
             model.summary(fva=1.0)
-            print(abs(solution.fluxes.EX_glc__D_e) / abs(solution.fluxes.EX_ac_e))
+            print(abs(solution.fluxes.EX_glc__D_e) /
+                  abs(solution.fluxes.EX_ac_e))
             model.metabolites.prot_pool.summary()
 
 
@@ -130,11 +133,14 @@ objective is used.</li>
         with model:
             if objective != &#34;&#34;:
                 model.objective = objective
-            model.reactions.get_by_id(&#34;ER_pool_TG_&#34;).upper_bound = pp_upper_bound
+            model.reactions.get_by_id(
+                &#34;ER_pool_TG_&#34;).upper_bound = pp_upper_bound
             solution = model.optimize()
-            print(f&#34;\sMOMENT-enhanced model, FVA solution for prot_pool upper bound of {pp_upper_bound}:&#34;)
+            print(
+                f&#34;\sMOMENT-enhanced model, FVA solution for prot_pool upper bound of {pp_upper_bound}:&#34;)
             model.summary(fva=1.0)
-            print(abs(solution.fluxes.EX_glc__D_e) / abs(solution.fluxes.EX_ac_e))
+            print(abs(solution.fluxes.EX_glc__D_e) /
+                  abs(solution.fluxes.EX_ac_e))
             model.metabolites.prot_pool.summary()</code></pre>
 </details>
 </dd>

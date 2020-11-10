@@ -24,7 +24,7 @@ import click
 import cobra
 from typing import Dict, Tuple, Union
 # Internal modules
-from submodules.apply_manual_changes import apply_manual_changes
+from .submodules.apply_manual_changes import apply_manual_changes
 
 
 # Set-up console arguments using click decorators

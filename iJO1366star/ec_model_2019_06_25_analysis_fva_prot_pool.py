@@ -13,16 +13,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""analysis_fba_comparison.py
+"""ec_model_analysis_fva_prot_pool.py
 
 
 """
 
-from .submodules.fva_comparison import fva_comparison_with_sbml
+from autopacmen.submodules.fva_prot_pool import fva_prot_pool
+from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
 
-SBML_ORIGINAL: str = "./ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml"
-SBML_SMOMENT: str = "ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25.xml"
-OUTPUT_FOLDER = "./ec_model_output"
-OBJECTIVE: str = "BIOMASS_Ec_iJO1366_core_53p95M"
+model = set_up_ec_model_with_sbml(
+    "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366star.xml", .225)
+model.reactions.EX_glc__D_e.lower_bound = -1000
+prot_pools = [.3]
+prot_pool_metabolite = model.metabolites.prot_pool
 
-fva_comparison_with_sbml(SBML_ORIGINAL, SBML_SMOMENT, OBJECTIVE)
+fva_prot_pool(model, prot_pools, "")

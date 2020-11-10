@@ -21,7 +21,7 @@
 </header>
 <section id="section-intro">
 <p>get_reactions_kcat_mapping.py</p>
-<p>This module contains functions which in total return a mapping of
+<p>This module contains functions which, in total, return a mapping of
 reactions to forward and reverse reaction direction kcats.</p>
 <details class="source">
 <summary>
@@ -29,7 +29,7 @@ reactions to forward and reverse reaction direction kcats.</p>
 </summary>
 <pre><code class="python">#!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
 # you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ reactions to forward and reverse reaction direction kcats.</p>
 # limitations under the License.
 &#34;&#34;&#34;get_reactions_kcat_mapping.py
 
-This module contains functions which in total return a mapping of
+This module contains functions which, in total, return a mapping of
 reactions to forward and reverse reaction direction kcats.
 &#34;&#34;&#34;
 
@@ -57,8 +57,8 @@ import sys
 import statistics
 from typing import Any, Dict, List
 # Internal modules
-import submodules.ncbi_taxonomy as ncbi_taxonomy
-from submodules.helper_general import ensure_folder_existence, get_files, json_load, json_write, pickle_load, pickle_write, standardize_folder
+from .ncbi_taxonomy import get_entrez_id_from_organism_full_name_batch, get_taxonomy_from_organism_ncbi_id_batch, most_taxonomic_similar
+from .helper_general import ensure_folder_existence, get_files, json_load, json_write, pickle_load, pickle_write, standardize_folder
 
 
 # PRIVATE FUNCTIONS
@@ -156,7 +156,7 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     species_to_search: List[str] = []
     taxonomy_dict_cache: Dict[str, List[str]] = {}
     for species in all_species:
-        cache_filename = species + &#34;_taxonomy&#34;
+        cache_filename = species.replace(&#34;/&#34;, &#34;&#34;) + &#34;_taxonomy&#34;
         if cache_filename in cache_files:
             cache_filepath = cache_basepath + cache_filename
             taxonomy_dict_cache[species] = pickle_load(cache_filepath)
@@ -170,15 +170,15 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     # taxonomy dict which includes &#39;NOT FOUND&#39; for all non-found organisms and the
     # taxonomies for each found organism.
     if len(species_to_search) &gt; 0:
-        ncbi_ids = ncbi_taxonomy.get_entrez_id_from_organism_full_name_batch(species_to_search)
-        taxonomy_dict_search = ncbi_taxonomy.get_taxonomy_from_organism_ncbi_id_batch(ncbi_ids)
+        ncbi_ids = get_entrez_id_from_organism_full_name_batch(species_to_search)
+        taxonomy_dict_search = get_taxonomy_from_organism_ncbi_id_batch(ncbi_ids)
 
         for searched_species in species_to_search:
             if searched_species not in taxonomy_dict_search.keys():
                 taxonomy_dict_search[searched_species] = [&#34;NOT FOUND&#34;]
 
         for species in list(taxonomy_dict_search.keys()):
-            cache_filename = species + &#34;_taxonomy&#34;
+            cache_filename = species.replace(&#34;/&#34;, &#34;&#34;) + &#34;_taxonomy&#34;
             if taxonomy_dict_search[species] == [&#34;NOT FOUND&#34;]:
                 cache_filename += &#34;_NA&#34;
             cache_filepath = cache_basepath + cache_filename
@@ -189,7 +189,7 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
 
     # Process the taxonomies in order to find the taxonomic distances of the given organism to the organisms
     # which are present in the kcat entries.
-    score_dict = ncbi_taxonomy.most_taxonomic_similar(organism, full_taxonomy_dict)
+    score_dict = most_taxonomic_similar(organism, full_taxonomy_dict)
     for species in full_taxonomy_dict.keys():
         if species not in score_dict:
             score_dict[species] = max(score_dict.values())+1
@@ -217,6 +217,8 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     # Get the protein database kcat for this reaction (if there is one, otherwise it returns math.nan)
     if protein_kcat_database != {}:
         protein_database_kcat = _get_kcat_from_protein_kcat_database(searched_direction, reaction, protein_kcat_database)
+    else:
+        protein_database_kcat = math.nan
 
     # Add the protein database kcat if there is one, it will influence the resulting kcat since a mean is used
     if protein_database_kcat is not math.nan:
@@ -337,7 +339,7 @@ def _print_assigned_kcats(reaction_id: str, forward_kcat: float, reverse_kcat: f
 # PUBLIC FUNCTIONS
 def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name: str,
                                organism: str, kcat_database_path: str, protein_kcat_database_path: str,
-                               type_of_kcat_selection: str) -&gt; None:
+                               type_of_kcat_selection: str = &#34;mean&#34;) -&gt; None:
     &#34;&#34;&#34;Returns a reaction&lt;-&gt;kcat mapping for the given model :D
 
     The selection of kcats is depending on the affected metabolites of the reaction direction (one
@@ -525,7 +527,7 @@ def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
 <dt id="autopacmen.submodules.get_reactions_kcat_mapping.get_reactions_kcat_mapping"><code class="name flex">
-<span>def <span class="ident">get_reactions_kcat_mapping</span></span>(<span>sbml_path, project_folder, project_name, organism, kcat_database_path, protein_kcat_database_path, type_of_kcat_selection)</span>
+<span>def <span class="ident">get_reactions_kcat_mapping</span></span>(<span>sbml_path, project_folder, project_name, organism, kcat_database_path, protein_kcat_database_path, type_of_kcat_selection='mean')</span>
 </code></dt>
 <dd>
 <section class="desc"><p>Returns a reaction&lt;-&gt;kcat mapping for the given model :D</p>
@@ -567,7 +569,7 @@ the following structure:
 </summary>
 <pre><code class="python">def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name: str,
                                organism: str, kcat_database_path: str, protein_kcat_database_path: str,
-                               type_of_kcat_selection: str) -&gt; None:
+                               type_of_kcat_selection: str = &#34;mean&#34;) -&gt; None:
     &#34;&#34;&#34;Returns a reaction&lt;-&gt;kcat mapping for the given model :D
 
     The selection of kcats is depending on the affected metabolites of the reaction direction (one

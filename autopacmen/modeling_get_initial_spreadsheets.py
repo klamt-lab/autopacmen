@@ -19,7 +19,7 @@ Command-line interface for AutoPACMEN's initial spreadsheets function
 """
 
 import click
-from submodules.get_initial_spreadsheets import get_initial_spreadsheets_with_sbml
+from .submodules.get_initial_spreadsheets import get_initial_spreadsheets_with_sbml
 
 
 @click.command()

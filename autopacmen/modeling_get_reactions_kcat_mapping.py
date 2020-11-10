@@ -22,7 +22,7 @@ Command-line interface for the retrieval of a protein<->kcat mapping of a model.
 # External modules
 import click
 # Internal modules
-from submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
+from .submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
 
 
 # Set-up console arguments using click decorators

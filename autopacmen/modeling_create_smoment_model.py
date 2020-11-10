@@ -20,7 +20,7 @@
 import click
 from typing import List
 # Internal modules
-from submodules.create_smoment_model_reaction_wise import create_smoment_model_reaction_wise_with_sbml
+from .submodules.create_smoment_model_reaction_wise import create_smoment_model_reaction_wise_with_sbml
 
 
 # Set-up console arguments using click decorators

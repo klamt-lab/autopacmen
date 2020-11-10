@@ -13,18 +13,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""ec_model_2019_06_25_modeling_create_gecko_model.py
+"""./iJO1366star/ec_model_2019_06_25_modeling_create_gecko_model.py
 
 This script generates the GECKOed model version of iJO1366. The GECKO
 method was followed as described in Sánchez et al., 2017.
 """
 
-from .submodules.create_gecko_model_reaction_wise import create_gecko_model_reaction_wise_with_sbml
+from autopacmen.submodules.create_gecko_model_reaction_wise import create_gecko_model_reaction_wise_with_sbml
 
-INPUT_SBML: str = "./ec_model_2019_06_25_input/iJO1366.xml"
+INPUT_SBML: str = "./iJO1366star/ec_model_2019_06_25_input/iJO1366.xml"
 OUTPUT_SBML: str = "iJO1366_2019_06_25_GECKO.xml"
-PROJECT_FOLDER: str = "./ec_model_2019_06_25_output/"
+PROJECT_FOLDER: str = "./iJO1366star/ec_model_2019_06_25_output/"
 PROJECT_NAME: str = "psb_orth"
 EXCLUDED_REACTIONS = ["CO2tex", "O2tex", "H2tex"]
 
-create_gecko_model_reaction_wise_with_sbml(INPUT_SBML, OUTPUT_SBML, PROJECT_FOLDER, PROJECT_NAME, EXCLUDED_REACTIONS)
+create_gecko_model_reaction_wise_with_sbml(
+    INPUT_SBML, OUTPUT_SBML, PROJECT_FOLDER, PROJECT_NAME, EXCLUDED_REACTIONS)

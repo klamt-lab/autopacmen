@@ -28,7 +28,7 @@
 </summary>
 <pre><code class="python">#!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
 # you may not use this file except in compliance with the License.
@@ -50,14 +50,14 @@ Functions for the generation of reaction flux controls for given scenarios.
 # External modules
 import cobra
 # Internal modules
-from submodules.helper_create_model import apply_scenario_on_model
-from submodules.helper_general import standardize_folder
+from .helper_create_model import apply_scenario_on_model
+from .helper_general import standardize_folder
 
 
 # PRIVATE FUNCTIONS
 def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name: str,
                            scenario_key: str, objective: str):
-    &#34;&#34;&#34;Calculated the reaction flux control for the given model.
+    &#34;&#34;&#34;Calculate the reaction flux control for the given model.
 
     Arguments
     ----------
@@ -93,7 +93,8 @@ def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name:
             continue
 
         # Proceed only if the raction has a protein constraint
-        is_with_protein_pool = &#34;prot_pool&#34; in [x.id for x in reaction.metabolites]
+        is_with_protein_pool = &#34;prot_pool&#34; in [
+            x.id for x in reaction.metabolites]
         if not is_with_protein_pool:
             continue
 
@@ -102,7 +103,8 @@ def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name:
         # to the original solution
         with model:
             prot_pool_stoichiometry = reaction.metabolites[prot_pool_metabolite]
-            reaction.subtract_metabolites({prot_pool_metabolite: prot_pool_stoichiometry})
+            reaction.subtract_metabolites(
+                {prot_pool_metabolite: prot_pool_stoichiometry})
             solution = model.optimize()
             base_solution_flux = base_solution.fluxes[objective]
             changed_solution_flux = solution.fluxes[objective]
@@ -140,7 +142,7 @@ def reaction_flux_control_by_scenario(model: cobra.Model, output_folder: str, pr
 
     Output
     ----------
-    Rection flux control files in the given folder (see _reaction_flux_control()&#39;s comment for more)
+    Reaction flux control files in the given folder (see _reaction_flux_control()&#39;s comment for more)
     &#34;&#34;&#34;
     # Standardize output folder
     output_folder = standardize_folder(output_folder)
@@ -151,13 +153,14 @@ def reaction_flux_control_by_scenario(model: cobra.Model, output_folder: str, pr
         objective = scenario[&#34;target&#34;][&#34;reaction&#34;]
         with model:
             model = apply_scenario_on_model(model, scenario)
-            _reaction_flux_control(model, output_folder, project_name, scenario_key, objective)
+            _reaction_flux_control(model, output_folder,
+                                   project_name, scenario_key, objective)
 
 
 &#34;&#34;&#34;
 Example:
 from ec_model_data_set_up_model import set_up_ec_model_with_sbml
-model: cobra.Model = set_up_ec_model_with_sbml(&#34;ec_model_output/iJO1366_sMOMENT.xml&#34;)
+model: cobra.Model = set_up_ec_model_with_sbml(&#34;./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT.xml&#34;)
 reaction_flux_control_by_c_source(model, OUTPUT_FOLDER, PROJECT_NAME, CHANGE, exchange_reactions, OBJECTIVE)
 &#34;&#34;&#34;</code></pre>
 </details>
@@ -186,7 +189,7 @@ solution if the protein constraint of the reaction is removed.</p>
 applied on the model, one by one</li>
 </ul>
 <h2 id="output">Output</h2>
-<p>Rection flux control files in the given folder (see _reaction_flux_control()'s comment for more)</p></section>
+<p>Reaction flux control files in the given folder (see _reaction_flux_control()'s comment for more)</p></section>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -208,7 +211,7 @@ applied on the model, one by one</li>
 
     Output
     ----------
-    Rection flux control files in the given folder (see _reaction_flux_control()&#39;s comment for more)
+    Reaction flux control files in the given folder (see _reaction_flux_control()&#39;s comment for more)
     &#34;&#34;&#34;
     # Standardize output folder
     output_folder = standardize_folder(output_folder)
@@ -219,7 +222,8 @@ applied on the model, one by one</li>
         objective = scenario[&#34;target&#34;][&#34;reaction&#34;]
         with model:
             model = apply_scenario_on_model(model, scenario)
-            _reaction_flux_control(model, output_folder, project_name, scenario_key, objective)</code></pre>
+            _reaction_flux_control(model, output_folder,
+                                   project_name, scenario_key, objective)</code></pre>
 </details>
 </dd>
 </dl>

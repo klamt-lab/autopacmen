@@ -132,6 +132,6 @@ def reaction_flux_control_by_scenario(model: cobra.Model, output_folder: str, pr
 """
 Example:
 from ec_model_data_set_up_model import set_up_ec_model_with_sbml
-model: cobra.Model = set_up_ec_model_with_sbml("ec_model_output/iJO1366_sMOMENT.xml")
+model: cobra.Model = set_up_ec_model_with_sbml("./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT.xml")
 reaction_flux_control_by_c_source(model, OUTPUT_FOLDER, PROJECT_NAME, CHANGE, exchange_reactions, OBJECTIVE)
 """

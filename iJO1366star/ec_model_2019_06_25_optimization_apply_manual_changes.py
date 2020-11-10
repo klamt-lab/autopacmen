@@ -13,10 +13,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""ec_model_2019_06_25_optimization_apply_manual_changes.py"""
+"""./iJO1366star/ec_model_2019_06_25_optimization_apply_manual_changes.py"""
 
 import cobra
-from .submodules.apply_manual_changes import apply_manual_changes
+from autopacmen.submodules.apply_manual_changes import apply_manual_changes
 
 
 KCAT_CHANGE_FACTORS = {
@@ -26,6 +26,6 @@ KCAT_CHANGE_FACTORS = {
     "LDH_D": ("reverse", 1/10),
 }
 
-model: cobra.Model = cobra.io.read_sbml_model("ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO.xml")
+model: cobra.Model = cobra.io.read_sbml_model("./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO.xml")
 model = apply_manual_changes(model, KCAT_CHANGE_FACTORS)
-cobra.io.write_sbml_model(model, "ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml")
+cobra.io.write_sbml_model(model, "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml")

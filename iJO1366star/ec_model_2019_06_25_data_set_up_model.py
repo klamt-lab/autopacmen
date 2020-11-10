@@ -16,7 +16,7 @@
 """ec_model_data_set_up_model.py"""
 
 import cobra
-from .ec_model_2019_06_25_data_standard_exchange_scenario import ec_model_shut_down_reactions
+from ec_model_2019_06_25_data_standard_exchange_scenario import ec_model_shut_down_reactions
 
 
 def set_up_ec_model(model: cobra.Model, prot_pool: float):

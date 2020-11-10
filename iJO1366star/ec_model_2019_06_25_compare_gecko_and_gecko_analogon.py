@@ -17,9 +17,9 @@
 import cobra
 
 gecko = cobra.io.read_sbml_model(
-    "ec_model_2019_06_25_output/iJO1366_2019_06_25_GECKO.xml")
+    "./iJO1366star/ec_model_2019_06_25_output/iJO1366_2019_06_25_GECKO.xml")
 analogon = cobra.io.read_sbml_model(
-    "ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25_GECKO_ANALOGON.xml")
+    "./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25_GECKO_ANALOGON.xml")
 
 gecko_reactions_with_arm = []
 for reaction in gecko.reactions:
