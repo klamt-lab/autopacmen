@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="generator" content="pdoc 0.7.1" />
+<meta name="generator" content="pdoc 0.8.1" />
 <title>autopacmen.submodules.helper_create_model API documentation</title>
 <meta name="description" content="helper_create_model.py …" />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
-<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
-<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
 <style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
 </head>
 <body>
@@ -536,10 +536,10 @@ def read_protein_data_xlsx(basepath: str):
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
 <dt id="autopacmen.submodules.helper_create_model.add_prot_pool_reaction"><code class="name flex">
-<span>def <span class="ident">add_prot_pool_reaction</span></span>(<span>model, id_addition, p_total, p_measured, unmeasured_protein_fraction, mean_saturation)</span>
+<span>def <span class="ident">add_prot_pool_reaction</span></span>(<span>model: cobra.core.model.Model, id_addition: str, p_total: float, p_measured: float, unmeasured_protein_fraction: float, mean_saturation: float) -> cobra.core.model.Model</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Adds a protein pool reaction with the given parameters, in accordance with the GECKO paper.</p>
+<div class="desc"><p>Adds a protein pool reaction with the given parameters, in accordance with the GECKO paper.</p>
 <p>The protein pool reaction gets the id 'ER_pool'+id_addition</p>
 <h2 id="arguments">Arguments</h2>
 <ul>
@@ -552,7 +552,7 @@ on the total protein mass per gDW cells</li>
 <li>mean_saturation: float ~ A fitted value of all unmeasured protein's mean saturation.</li>
 </ul>
 <h2 id="output">Output</h2>
-<p>The given cobra model with a protein pool reaction :D</p></section>
+<p>The given cobra model with a protein pool reaction :D</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -596,15 +596,15 @@ on the total protein mass per gDW cells</li>
 </details>
 </dd>
 <dt id="autopacmen.submodules.helper_create_model.apply_scenario_on_model"><code class="name flex">
-<span>def <span class="ident">apply_scenario_on_model</span></span>(<span>model, scenario)</span>
+<span>def <span class="ident">apply_scenario_on_model</span></span>(<span>model: cobra.core.model.Model, scenario: Dict[str, Any]) -> cobra.core.model.Model</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns a model on which the given scenario is applied.</p>
+<div class="desc"><p>Returns a model on which the given scenario is applied.</p>
 <h2 id="arguments">Arguments</h2>
 <ul>
 <li>model: cobra.Model ~ The model on which the scenario shall be applied.</li>
 <li>scenario: Dict[str, Any] ~ The scenario's dictionary representation.</li>
-</ul></section>
+</ul></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -638,10 +638,10 @@ on the total protein mass per gDW cells</li>
 </details>
 </dd>
 <dt id="autopacmen.submodules.helper_create_model.get_irreversible_model"><code class="name flex">
-<span>def <span class="ident">get_irreversible_model</span></span>(<span>model, id_addition)</span>
+<span>def <span class="ident">get_irreversible_model</span></span>(<span>model: cobra.core.model.Model, id_addition: str) -> cobra.core.model.Model</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns an irreversible model for further AutoPACMEN processing.</p>
+<div class="desc"><p>Returns an irreversible model for further AutoPACMEN processing.</p>
 <p>Only reactions with gene rules, i.e. with proteins, are made irreversible.
 The splitted reactios are then called reaction.id+id_addition+"forward" or
 "reverse", respectively.</p>
@@ -651,7 +651,7 @@ reversible reactions of sMOMENT models with measured protein concentrations.</p>
 <ul>
 <li>model: cobra.Model ~ The model that shall be made irreversible as described</li>
 <li>id_addition: str ~ The string that is added before 'reversed' or 'forward'</li>
-</ul></section>
+</ul></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -719,10 +719,10 @@ reversible reactions of sMOMENT models with measured protein concentrations.</p>
 </details>
 </dd>
 <dt id="autopacmen.submodules.helper_create_model.get_model_with_separated_measured_enzyme_reactions"><code class="name flex">
-<span>def <span class="ident">get_model_with_separated_measured_enzyme_reactions</span></span>(<span>model, protein_id_concentration_mapping, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping, excluded_reactions, protein_id_mass_mapping)</span>
+<span>def <span class="ident">get_model_with_separated_measured_enzyme_reactions</span></span>(<span>model: cobra.core.model.Model, protein_id_concentration_mapping: Dict[str, float], reaction_id_gene_rules_mapping: Dict[str, Any], reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any], excluded_reactions: List[str], protein_id_mass_mapping: Dict[str, float])</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Splits the reactions with measured enzymes in their gene rules according to the OR blocks in the gene rule.</p>
+<div class="desc"><p>Splits the reactions with measured enzymes in their gene rules according to the OR blocks in the gene rule.</p>
 <h2 id="arguments">Arguments</h2>
 <ul>
 <li>model: cobra.Model ~ The model for which the reactions shall be splitted.</li>
@@ -732,7 +732,7 @@ _read_stoichiometries_worksheet()) as child with their reaction's IDs as keys</l
 <li>reaction_id_gene_rules_protein_stoichiometry_mapping: Dict[str, Any] ~ A dictionary describing the
 internal protein stoichiometries in complexes (created with _read_stoichiometries_worksheet())</li>
 <li>excluded_reactions: List[str] ~ A list of reactions for which no enzyme constraints shall be added.</li>
-</ul></section>
+</ul></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -931,16 +931,16 @@ internal protein stoichiometries in complexes (created with _read_stoichiometrie
 </details>
 </dd>
 <dt id="autopacmen.submodules.helper_create_model.get_p_measured"><code class="name flex">
-<span>def <span class="ident">get_p_measured</span></span>(<span>protein_id_concentration_mapping, protein_id_mass_mapping)</span>
+<span>def <span class="ident">get_p_measured</span></span>(<span>protein_id_concentration_mapping: Dict[str, float], protein_id_mass_mapping: Dict[str, float]) -> float</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return p_measured (as defined in the GECKO paper) using the given arguments.</p>
+<div class="desc"><p>Return p_measured (as defined in the GECKO paper) using the given arguments.</p>
 <h2 id="arguments">Arguments</h2>
 <ul>
 <li>protein_id_concentration_mapping: Dict[str, float] ~ The given concentrations
 of the proteins.</li>
 <li>protein_id_mass_mapping: Dict[str, float] ~ The masses of the given proteins.</li>
-</ul></section>
+</ul></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -970,14 +970,14 @@ of the proteins.</li>
 </details>
 </dd>
 <dt id="autopacmen.submodules.helper_create_model.read_enzyme_stoichiometries_xlsx"><code class="name flex">
-<span>def <span class="ident">read_enzyme_stoichiometries_xlsx</span></span>(<span>basepath)</span>
+<span>def <span class="ident">read_enzyme_stoichiometries_xlsx</span></span>(<span>basepath: str)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Reads the internal protein stoichiometries for each enzyme XLSX.</p>
+<div class="desc"><p>Reads the internal protein stoichiometries for each enzyme XLSX.</p>
 <h2 id="arguments">Arguments</h2>
 <ul>
 <li>basepath: str ~ The path in which the XLSX can be found.</li>
-</ul></section>
+</ul></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -998,10 +998,10 @@ of the proteins.</li>
 </details>
 </dd>
 <dt id="autopacmen.submodules.helper_create_model.read_protein_data_xlsx"><code class="name flex">
-<span>def <span class="ident">read_protein_data_xlsx</span></span>(<span>basepath)</span>
+<span>def <span class="ident">read_protein_data_xlsx</span></span>(<span>basepath: str)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Reads the protein data XLSX '$PROJECT_NAME_protein_data.xlsx'</p>
+<div class="desc"><p>Reads the protein data XLSX '$PROJECT_NAME_protein_data.xlsx'</p>
 <h2 id="argument">Argument</h2>
 <ul>
 <li>basepath: str ~ The folder in which the XLSX exists.</li>
@@ -1014,7 +1014,7 @@ as key the associated protein concentration as child.
 3. unmeasured_protein_fraction: float ~ The mass fraction of the proteins without a measured
 concentration.
 4. mean_saturation: float ~ A given - and usually fitted - value of mean saturation for all
-enzymes.</p></section>
+enzymes.</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -1096,7 +1096,7 @@ enzymes.</p></section>
 </nav>
 </main>
 <footer id="footer">
-<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script>
