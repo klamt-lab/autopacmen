@@ -6,7 +6,8 @@ product_reaction_id = "EX_leu__L_e"
 min_yield = .2
 min_growth = .1
 
-model = cobra.io.read_sbml_model("ec_model_2019_06_25_output_optimization/iJO1366star.xml")
+model = cobra.io.read_sbml_model(
+    "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366star.xml")
 
 biomass_reaction = model.reactions.get_by_id(biomass_reaction_id)
 substrate_reaction = model.reactions.get_by_id(substrate_reaction_id)
@@ -30,4 +31,5 @@ solution = model.optimize()
 print(model.summary())
 print(-solution.fluxes[substrate_reaction_id])
 print(solution.fluxes[product_reaction_id])
-print(solution.fluxes[product_reaction_id] / (-solution.fluxes[substrate_reaction_id]))
+print(solution.fluxes[product_reaction_id] /
+      (-solution.fluxes[substrate_reaction_id]))

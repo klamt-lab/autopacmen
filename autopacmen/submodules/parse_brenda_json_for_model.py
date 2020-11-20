@@ -24,7 +24,7 @@ kcat database.
 import cobra
 import copy
 # Internal modules
-from submodules.helper_general import is_fitting_ec_numbers, json_load, json_write
+from .helper_general import is_fitting_ec_numbers, json_load, json_write
 from typing import Any, Dict, List
 
 
@@ -111,7 +111,8 @@ def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_js
     for ec_number in ec_numbers_of_model:
         entry_error = False
         if ec_number in brenda_kcat_database_original.keys():
-            ec_number_entry = _get_transfer_ec_number_entry(ec_number, brenda_kcat_database_original)
+            ec_number_entry = _get_transfer_ec_number_entry(
+                ec_number, brenda_kcat_database_original)
             if "ERROR" in ec_number_entry.keys():
                 entry_error = True
             else:
@@ -123,9 +124,11 @@ def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_js
             for wildcard_level in range(1, 5):
                 for database_ec_number in list(brenda_kcat_database_original.keys()):
                     if is_fitting_ec_numbers(ec_number, database_ec_number, wildcard_level):
-                        database_ec_number_entry = _get_transfer_ec_number_entry(database_ec_number, brenda_kcat_database_original)
+                        database_ec_number_entry = _get_transfer_ec_number_entry(
+                            database_ec_number, brenda_kcat_database_original)
                         if "ERROR" not in database_ec_number_entry.keys():
-                            eligible_ec_number_entries.append(database_ec_number_entry)
+                            eligible_ec_number_entries.append(
+                                database_ec_number_entry)
                 if len(eligible_ec_number_entries) > 0:
                     break
             ec_number_entry = {}
@@ -135,7 +138,8 @@ def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_js
                     if metabolite_key not in ec_number_entry.keys():
                         ec_number_entry[metabolite_key] = metabolite_entry
                     else:
-                        ec_number_entry[metabolite_key] = {**ec_number_entry[metabolite_key], **metabolite_entry}
+                        ec_number_entry[metabolite_key] = {
+                            **ec_number_entry[metabolite_key], **metabolite_entry}
             ec_number_entry["WILDCARD"] = True
             brenda_kcat_database_for_model[ec_number] = ec_number_entry
 

@@ -109,7 +109,8 @@ def get_entrez_id_from_organism_full_name_batch(organism_full_names: List[str]) 
         organism_ncbi_ids = record["IdList"][::-1]
         # txid+NUMBER+[ORGN] is the form that is used for NCBI BLASTP searches to restrict a search
         # to an organism using the Entrez query constraint input.
-        organism_ncbi_ids_result += ["txid"+x+"[ORGN]" for x in organism_ncbi_ids]
+        organism_ncbi_ids_result += ["txid"+x +
+                                     "[ORGN]" for x in organism_ncbi_ids]
 
         batch_start += NCBI_BATCH_SIZE
         time.sleep(WAIT_TIME)

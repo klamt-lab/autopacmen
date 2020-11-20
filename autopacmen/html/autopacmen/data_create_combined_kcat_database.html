@@ -50,7 +50,7 @@ CLI for the construction of a combined (BRENDA+SABIO-RK) kcat database.
 # External modules
 import click
 # Internal modules
-from submodules.create_combined_kcat_database import create_combined_kcat_database
+from .submodules.create_combined_kcat_database import create_combined_kcat_database
 
 
 # Set-up command-line parameters using click decorators
@@ -68,7 +68,7 @@ from submodules.create_combined_kcat_database import create_combined_kcat_databa
 @click.option(&#34;--output_path&#34;,
               required=True,
               type=click.Path(exists=True, file_okay=True, dir_okay=True),
-              prompt=&#34;BRENDA JSON path&#34;,
+              prompt=&#34;Output path&#34;,
               help=&#34;Full path to the newly created combined JSON&#34;)
 def parse_create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_database_path: str, output_path: str) -&gt; None:
     &#34;&#34;&#34;Combines the BRENDA and SABIO-RK JSONs into one big JSON which can be used by modeling_get_reactions_kcat_mapping.py

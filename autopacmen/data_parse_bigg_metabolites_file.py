@@ -23,7 +23,7 @@ machine-readable JSON.
 # External modules
 import click
 # Internal modules
-from submodules.parse_bigg_metabolites_file import parse_bigg_metabolites_file
+from .submodules.parse_bigg_metabolites_file import parse_bigg_metabolites_file
 
 
 # Set-up command-line parameters using click decorators

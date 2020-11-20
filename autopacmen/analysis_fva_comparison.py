@@ -25,19 +25,21 @@ It uses cobrapy's FVA functions.
 # External module for command-line interfaces
 import click
 # Internal module, contains the actual FBA comparison function
-from submodules.fva_comparison import fva_comparison_with_sbml
+from .submodules.fva_comparison import fva_comparison_with_sbml
 
 
 # Set-up command-line parameters using click decorators
 @click.command()
 @click.option("--sbml_original_path",
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+              type=click.Path(exists=True, file_okay=True,
+                              dir_okay=True, readable=True),
               prompt="Original SBML path",
               help="Full SBML path of original model without protein allocation constraints")
 @click.option("--sbml_protein_constrained_path",
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+              type=click.Path(exists=True, file_okay=True,
+                              dir_okay=True, readable=True),
               prompt="SBML path of sMOMENT-enhanced model",
               help="Full SBML path of sMOMENT-enhanced model.")
 @click.option("--objective",
@@ -55,7 +57,8 @@ def fba_comparison_cli(sbml_original_path: str, sbml_protein_constrained_path: s
     Example: Print a comparative FVA for the non-constrained model 'C:\\original.xml' and the sMOMENT-model 'C:\\pac.xml' and the objective 'ACALD':
     python analysis_fva_comparison.py --sbml_original_path C:\\original.xml --sbml_protein_constrained_path C:\\pac.xml --objective ACALD
     """
-    fva_comparison_with_sbml(sbml_original_path, sbml_protein_constrained_path, objective)
+    fva_comparison_with_sbml(
+        sbml_original_path, sbml_protein_constrained_path, objective)
 
 
 # Start-up routine if script is called

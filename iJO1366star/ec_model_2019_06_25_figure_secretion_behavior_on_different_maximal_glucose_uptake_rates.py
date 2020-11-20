@@ -13,7 +13,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""ec_model_2019_06_25_test_secretion_behavior_on_different_maximal_glucose_uptake_rates.py
+"""./iJO1366star/ec_model_2019_06_25_test_secretion_behavior_on_different_maximal_glucose_uptake_rates.py
 
 Shows the secretion and general FVA results of a protein-constrained model under different maximal
 glucose uptake rates, and returns them as comma-separated values which were later imported into a
@@ -136,7 +136,7 @@ def fba_with_glucose_levels(model, glucose_levels, name):
     print("Maximal O2" + ";" + ";".join([str(x) for x in values["o2_max"]]))
 
 
-model = set_up_ec_model_with_sbml("ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES_FMINCON_CHANGE_FACTOR_50.xml", 0.095)
+model = set_up_ec_model_with_sbml("./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES_FMINCON_CHANGE_FACTOR_50.xml", 0.095)
 
 aerobic_space = list(np.linspace(.14, 9.53, 25)) + list(np.linspace(9.54, 13.829, 25))
 fba_with_glucose_levels(model, aerobic_space, "Aerobe")

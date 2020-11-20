@@ -28,7 +28,7 @@
 </summary>
 <pre><code class="python">#!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
 # you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@ import time
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 from typing import Dict, List
 # Internal modules
-from submodules.helper_general import ensure_folder_existence, get_files, json_write, pickle_write, pickle_load, standardize_folder
+from .helper_general import ensure_folder_existence, get_files, json_write, pickle_write, pickle_load, standardize_folder
 
 
 # PUBLIC FUNCTIONS SECTION
@@ -113,6 +113,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
     # are searched at once in order to save an amount of UniProt API calls)
     # and retrieve the amino acid sequences and using these sequences, their
     # masses.
+    print(&#34;Starting UniProt ID&lt;-&gt;Protein mass search using UniProt API...&#34;)
     uniprot_ids = list(uniprot_id_protein_id_mapping.keys())
     batch_size = 5
     batch_start = 0
@@ -142,6 +143,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
         # the right associated masses are being picked.
         query = &#34; OR &#34;.join(batch)
         uniprot_query_url = f&#34;https://www.uniprot.org/uniprot/?query={query}&amp;format=tab&amp;columns=id,sequence&#34;
+        print(f&#34;UniProt batch search for: {query}&#34;)
 
         # Call UniProt&#39;s API :-)
         uniprot_data = requests.get(uniprot_query_url).text.split(&#34;\n&#34;)
@@ -155,7 +157,10 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
             uniprot_id = line.split(&#34;\t&#34;)[0]
             sequence = line.split(&#34;\t&#34;)[1]
             # Get the protein mass using biopython&#39;s associated function for amino acid sequences
-            mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
+            try:
+                mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
+            except ValueError:  # e.g. if an &#34;X&#34; is in a sequence
+                continue
             uniprot_id_protein_mass_mapping[uniprot_id] = float(mass)
 
         # Create the pickled cache files for the searched protein masses
@@ -178,6 +183,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
             protein_id_mass_mapping[protein_id] = uniprot_id_protein_mass_mapping[uniprot_id]
 
     # Write protein mass list JSON :D
+    print(&#34;Protein ID&lt;-&gt;Mass mapping done!&#34;)
     json_write(basepath+&#34;_protein_id_mass_mapping.json&#34;, protein_id_mass_mapping)
 
 
@@ -282,6 +288,7 @@ and the following structure:
     # are searched at once in order to save an amount of UniProt API calls)
     # and retrieve the amino acid sequences and using these sequences, their
     # masses.
+    print(&#34;Starting UniProt ID&lt;-&gt;Protein mass search using UniProt API...&#34;)
     uniprot_ids = list(uniprot_id_protein_id_mapping.keys())
     batch_size = 5
     batch_start = 0
@@ -311,6 +318,7 @@ and the following structure:
         # the right associated masses are being picked.
         query = &#34; OR &#34;.join(batch)
         uniprot_query_url = f&#34;https://www.uniprot.org/uniprot/?query={query}&amp;format=tab&amp;columns=id,sequence&#34;
+        print(f&#34;UniProt batch search for: {query}&#34;)
 
         # Call UniProt&#39;s API :-)
         uniprot_data = requests.get(uniprot_query_url).text.split(&#34;\n&#34;)
@@ -324,7 +332,10 @@ and the following structure:
             uniprot_id = line.split(&#34;\t&#34;)[0]
             sequence = line.split(&#34;\t&#34;)[1]
             # Get the protein mass using biopython&#39;s associated function for amino acid sequences
-            mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
+            try:
+                mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
+            except ValueError:  # e.g. if an &#34;X&#34; is in a sequence
+                continue
             uniprot_id_protein_mass_mapping[uniprot_id] = float(mass)
 
         # Create the pickled cache files for the searched protein masses
@@ -347,6 +358,7 @@ and the following structure:
             protein_id_mass_mapping[protein_id] = uniprot_id_protein_mass_mapping[uniprot_id]
 
     # Write protein mass list JSON :D
+    print(&#34;Protein ID&lt;-&gt;Mass mapping done!&#34;)
     json_write(basepath+&#34;_protein_id_mass_mapping.json&#34;, protein_id_mass_mapping)</code></pre>
 </details>
 </dd>

@@ -22,7 +22,7 @@ Command-line interface for get_protein_mass_mapping
 # External modules
 import click
 # Internal modules
-from submodules.get_protein_mass_mapping import get_protein_mass_mapping_with_sbml
+from .submodules.get_protein_mass_mapping import get_protein_mass_mapping_with_sbml
 
 
 # Set-up console arguments using click decorators

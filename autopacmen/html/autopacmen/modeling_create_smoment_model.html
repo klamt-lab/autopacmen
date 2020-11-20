@@ -47,14 +47,15 @@
 import click
 from typing import List
 # Internal modules
-from submodules.create_smoment_model_reaction_wise import create_smoment_model_reaction_wise_with_sbml
+from .submodules.create_smoment_model_reaction_wise import create_smoment_model_reaction_wise_with_sbml
 
 
 # Set-up console arguments using click decorators
 @click.command()
 @click.option(&#34;--input_sbml_path&#34;,
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+              type=click.Path(exists=True, file_okay=True,
+                              dir_okay=True, readable=True),
               prompt=&#34;Path to input SBML&#34;,
               help=&#34;Path to the SBML model which describes the stoichiometric metabolic model &#34;
                    &#34;that shall be converted into a protein-constrained-enhanced model&#34;)
@@ -79,7 +80,7 @@ from submodules.create_smoment_model_reaction_wise import create_smoment_model_r
 @click.option(&#34;--excluded_reactions&#34;,
               required=False,
               type=str,
-              prompt=&#34;Name of output SBML&#34;,
+              prompt=&#34;Excluded reactions&#34;,
               help=&#34;Excluded reactions for which the pseudo-metabolite of the protein pool shall not be introduced. Must be semicolon-separated.&#34;)
 @click.option(&#34;--type_of_default_kcat_selection&#34;,
               required=True,

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ Command-line interface for the retrieval of a protein<->kcat mapping of a model.
 # External modules
 import click
 # Internal modules
-from submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
+from .submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
 
 
 # Set-up console arguments using click decorators
@@ -56,9 +56,11 @@ from submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
 @click.option("--protein_kcat_database_path",
               required=True,
               type=click.Path(exists=True, file_okay=True, dir_okay=True),
+              default="",
               prompt="protein kcat database path",
               help="Full path to the custom user-defined kcat<->protein JSON. It must be a dictionary containing the protein names"
-                   "(as given in the metabolic network's gene rules) as keys and associated kcats as children. See this script's description for more.")
+                   "(as given in the metabolic network's gene rules) as keys and associated kcats as children. See this script's description for more."
+                   "Default is '', which means that no user-defined database is given.")
 @click.option("--type_of_kcat_selection",
               required=True,
               type=str,
@@ -101,7 +103,8 @@ def get_reactions_kcat_mapping_cli(sbml_path: str, project_folder: str, project_
     python modeling_get_reactions_kcat_mapping.py --sbml_path C:\\model\\test.xml --project_folder C:\\project\\ --project_name example --organism 'Escherichia coli' --kcat_database_path C:\\database\\database.json --protein_kcat_database_path C:\\database\\user.json --type_of_kcat_selection 'mean'
     </pre>
     """
-    get_reactions_kcat_mapping(sbml_path, project_folder, project_name, organism, kcat_database_path, protein_kcat_database_path, type_of_kcat_selection)
+    get_reactions_kcat_mapping(sbml_path, project_folder, project_name, organism,
+                               kcat_database_path, protein_kcat_database_path, type_of_kcat_selection)
 
 
 # Start-up routine if script is called

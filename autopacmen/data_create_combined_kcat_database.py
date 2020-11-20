@@ -22,7 +22,7 @@ CLI for the construction of a combined (BRENDA+SABIO-RK) kcat database.
 # External modules
 import click
 # Internal modules
-from submodules.create_combined_kcat_database import create_combined_kcat_database
+from .submodules.create_combined_kcat_database import create_combined_kcat_database
 
 
 # Set-up command-line parameters using click decorators

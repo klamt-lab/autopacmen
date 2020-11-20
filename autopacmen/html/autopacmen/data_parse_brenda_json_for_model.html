@@ -52,19 +52,21 @@ BRENDA database JSON.
 # External modules
 import click
 # Internal modules
-from submodules.parse_brenda_json_for_model import parse_brenda_json_for_model
+from .submodules.parse_brenda_json_for_model import parse_brenda_json_for_model
 
 
 # Set-up command-line parameters using click decorators
 @click.command()
 @click.option(&#34;--sbml_path&#34;,
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+              type=click.Path(exists=True, file_okay=True,
+                              dir_okay=True, readable=True),
               prompt=&#34;Path to SBML model&#34;,
               help=&#34;Full path to the SBML with the model of which the BRENDA JSON will be derived.&#34;)
 @click.option(&#34;--brenda_json_path&#34;,
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+              type=click.Path(exists=True, file_okay=True,
+                              dir_okay=True, readable=True),
               prompt=&#34;BRENDA JSON path&#34;,
               help=&#34;Full path to the BRENDA JSON created with data_parse_brenda_textfile.py&#34;)
 @click.option(&#34;--json_output_path&#34;,

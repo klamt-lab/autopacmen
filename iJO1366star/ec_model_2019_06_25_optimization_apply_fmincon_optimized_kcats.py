@@ -1,7 +1,7 @@
-import ec_model_2019_06_25_data_set_up_model
+from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
 import cobra
 
-model = ec_model_2019_06_25_data_set_up_model.set_up_ec_model_with_sbml("ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml", .095)
+model = set_up_ec_model_with_sbml("./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml", .095)
 
 reactions_to_change = [
         # Acetate
@@ -238,5 +238,5 @@ for reaction_to_change in reactions_to_change[:len(new_kcats_fmincon)]:
 
     i += 1
 
-# cobra.io.write_sbml_model(model, "ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES_FMINCON_CHANGE_FACTOR_50.xml")
-cobra.io.write_sbml_model(model, "ec_model_2019_06_25_output_optimization/iJO1366star.xml")
+# cobra.io.write_sbml_model(model, "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES_FMINCON_CHANGE_FACTOR_50.xml")
+cobra.io.write_sbml_model(model, "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366star.xml")

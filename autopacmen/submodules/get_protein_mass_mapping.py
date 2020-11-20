@@ -26,7 +26,7 @@ import time
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 from typing import Dict, List
 # Internal modules
-from submodules.helper_general import ensure_folder_existence, get_files, json_write, pickle_write, pickle_load, standardize_folder
+from .helper_general import ensure_folder_existence, get_files, json_write, pickle_write, pickle_load, standardize_folder
 
 
 # PUBLIC FUNCTIONS SECTION

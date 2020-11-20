@@ -13,7 +13,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""ec_model_2019_06_25_data_read_supplementary_table_of_keff_paper.py
+"""./iJO1366star/ec_model_2019_06_25_data_read_supplementary_table_of_keff_paper.py
 
 Converts the data from the keff paper into a more machine-readable JSON.
 """
@@ -23,10 +23,10 @@ import cobra
 import openpyxl
 from typing import Any, Dict, List
 
-from submodules.helper_general import json_write
+from autopacmen.submodules.helper_general import json_write
 
 # Get kcats
-workbook = openpyxl.load_workbook("ec_model_2019_06_25_input_keff_paper/c3mb70119k-1.xlsx", read_only=True)
+workbook = openpyxl.load_workbook("./iJO1366star/ec_model_2019_06_25_input_keff_paper/c3mb70119k-1.xlsx", read_only=True)
 worksheet = workbook["Table S2"]
 
 gene_id_data_mapping: Dict[str, Dict[str, Any]] = {}
@@ -62,7 +62,7 @@ for line in worksheet.rows:
 
 
 # Get directionality data
-model = cobra.io.read_sbml_model("ec_model_2019_06_25_input/iJO1366.xml")
+model = cobra.io.read_sbml_model("./iJO1366star/ec_model_2019_06_25_input/iJO1366.xml")
 pfba_solution = cobra.flux_analysis.pfba(model)
 for reaction in model.reactions:
     gene_reaction_rule = reaction.gene_reaction_rule
@@ -88,4 +88,4 @@ for reaction in model.reactions:
         gene_id_data_mapping[gene_name]["direction"][reaction.id] = direction
 
 # Write JSON :D
-json_write("ec_model_2019_06_25_input_keff_paper/gene_id_data_mapping.json", gene_id_data_mapping)
+json_write("./iJO1366star/ec_model_2019_06_25_input_keff_paper/gene_id_data_mapping.json", gene_id_data_mapping)

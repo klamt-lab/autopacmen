@@ -29,7 +29,7 @@ stoichiometric model :D</p>
 </summary>
 <pre><code class="python">#!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
 # you may not use this file except in compliance with the License.
@@ -57,10 +57,10 @@ import statistics
 import sys
 from typing import Dict, List
 # Internal modules
-from submodules.helper_general import json_load, standardize_folder
-from submodules.helper_create_model import add_prot_pool_reaction, get_irreversible_model, get_p_measured, \
-                                           read_enzyme_stoichiometries_xlsx, read_protein_data_xlsx, \
-                                           get_model_with_separated_measured_enzyme_reactions
+from .helper_general import json_load, standardize_folder
+from .helper_create_model import add_prot_pool_reaction, get_irreversible_model, get_p_measured, \
+    read_enzyme_stoichiometries_xlsx, read_protein_data_xlsx, \
+    get_model_with_separated_measured_enzyme_reactions
 
 
 # PUBLIC FUNCTIONS
@@ -101,7 +101,8 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
     id_addition: str = &#34;_TG_&#34;
 
     # READ REACTIONS&lt;-&gt;KEGG ID XLSX
-    protein_id_mass_mapping: Dict[str, float] = json_load(basepath + &#34;_protein_id_mass_mapping.json&#34;)
+    protein_id_mass_mapping: Dict[str, float] = json_load(
+        basepath + &#34;_protein_id_mass_mapping.json&#34;)
 
     # Load protein data XLSX
     protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation = \
@@ -112,7 +113,8 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
         read_enzyme_stoichiometries_xlsx(basepath)
 
     # Calculate p_measured
-    p_measured = get_p_measured(protein_id_concentration_mapping, protein_id_mass_mapping)
+    p_measured = get_p_measured(
+        protein_id_concentration_mapping, protein_id_mass_mapping)
 
     # Split reactions with measured enzymes
     model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
@@ -132,7 +134,8 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                                                          unmeasured_protein_fraction, mean_saturation)
 
     # Read reaction &lt;-&gt; kcat mapping :-)
-    reactions_kcat_mapping_database = json_load(basepath + &#34;_reactions_kcat_mapping_combined.json&#34;)
+    reactions_kcat_mapping_database = json_load(
+        basepath + &#34;_reactions_kcat_mapping_combined.json&#34;)
 
     # sMOMENT :D
     # Get all kcats which are not math.nan and calculate the median of them, which will be used as default kcat
@@ -195,7 +198,7 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
             continue
 
         # Check if all proteins in the reaction&#39;s gene rule have a found mass
-        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme &#39;s0001&#39;
+        # This is not the case for e.g. spontaneous reactions which often get the pseudo-enzyme &#39;s0001&#39;
         all_available = True
         for enzyme in gene_rule:
             if type(enzyme) == str:
@@ -241,7 +244,10 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
             reaction_kcat = forward_kcat
 
         # Add protein pool pseudo-metabolite depending on isozyme complex presence
-        stoichiometries = []
+        # List of selectable MW/kcat stoichiometries (the most conservative constraint will be chosen)
+        stoichiometries: List[float] = []
+        # List of enzyme names and stoichiometries (semicolon-separated) for a console report
+        stoichiometry_enzyme_name_list: List[str] = []
         for isozyme_id in gene_rule:
             # If it&#39;s not a complex :O...
             if type(isozyme_id) is str:
@@ -249,7 +255,9 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                 reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
 
                 # ...get the number of units for this protein...
-                stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                number_units = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                    reaction_id][isozyme_id][isozyme_id]
+                stoichiometry = number_units
                 # ...and determine the protein pool stoichiometry by
                 # 1) Multiplying the number of units for this protein with its mass (converted from kDa to mDa, since the reaction
                 #    flux is defined for mmol/(gDW*h) and not mol/(gDW*h))
@@ -259,14 +267,19 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                 # 3) Setting the right direction (educt)
                 stoichiometry *= -1
                 stoichiometries.append(stoichiometry)
+                stoichiometry_enzyme_name_list.append(
+                    isozyme_id + &#34;;&#34; + str(number_units))
 
                 # Add proteomics constraints
                 if isozyme_id in protein_id_concentration_mapping.keys():
-                    enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+isozyme_id)
-                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                    enzyme_pseudo_metabolite = model.metabolites.get_by_id(
+                        &#34;ENZYME_&#34;+isozyme_id)
+                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                        reaction_id][isozyme_id][isozyme_id]
                     stoichiometry *= 1 / (reaction_kcat * 3600)
                     stoichiometry *= -1
-                    reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+                    reaction.add_metabolites(
+                        {enzyme_pseudo_metabolite: stoichiometry})
             # If it is a complex :O...
             else:
                 # ...convert the complex IDs to a hashable tuple (used for the stoichiometry selection)...
@@ -274,38 +287,69 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                 stoichiometry = 0
 
                 # ...go through each single ID of the complex...
+                stoichiometry_enzyme_name_list.append(&#34;&#34;)
                 for single_id in isozyme_id:
                     # ...get the reaction ID without additions...
                     reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
 
                     # ...get the number of units for this protein...
-                    single_stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                    number_units = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                        reaction_id][isozyme_id][single_id]
+                    single_stoichiometry = number_units
                     # ...and determine the protein pool stoichiometry addition by
                     # 1) Multiplying the number of units for this protein with its mass (converted from kDa to Da)
-                    single_stoichiometry *= (protein_id_mass_mapping[single_id] / 1000)
+                    single_stoichiometry *= (
+                        protein_id_mass_mapping[single_id] / 1000)
                     # 2) Dividing it with the reaction&#39;s kcat (converted from 1/s to 1/h)
                     single_stoichiometry /= (reaction_kcat * 3600)
                     # 3) Setting the right direction (educt)
                     single_stoichiometry *= -1
                     # 4) and add it to the complex&#39;s stoichiometry
                     stoichiometry += single_stoichiometry
+                    # Add name of current single ID
+                    stoichiometry_enzyme_name_list[-1] += single_id + \
+                        &#34;;&#34; + str(number_units) + &#34; &#34;
+                stoichiometry_enzyme_name_list[-1] = stoichiometry_enzyme_name_list[-1].rstrip()
                 # Add to list of stoichiometries
                 stoichiometries.append(stoichiometry)
 
                 # Add proteomics constraints
                 for single_id in isozyme_id:
                     if single_id in protein_id_concentration_mapping.keys():
-                        enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+single_id)
-                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                        enzyme_pseudo_metabolite = model.metabolites.get_by_id(
+                            &#34;ENZYME_&#34;+single_id)
+                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                            reaction_id][isozyme_id][single_id]
                         stoichiometry *= 1 / (reaction_kcat * 3600)
                         stoichiometry *= -1
-                        reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+                        reaction.add_metabolites(
+                            {enzyme_pseudo_metabolite: stoichiometry})
 
         # Take the maximal stoichiometry (i.e., the one with the least cost since this one will usually be prefered
         # anyway in an FBA).
         metabolites = {}
-        metabolites[prot_pool_metabolite] = max(stoichiometries)
+        max_stoichiometry = max(stoichiometries)
+        metabolites[prot_pool_metabolite] = max_stoichiometry
         reaction.add_metabolites(metabolites)
+        selected_enzyme = stoichiometry_enzyme_name_list[stoichiometries.index(
+            max_stoichiometry)]
+
+        # Print report of selected kcat and molecular weight for this reaction
+        print(&#34;Reaction: &#34;, model_reaction_id)
+        print(&#34;Selected kcat: &#34;, reaction_kcat)
+        print(&#34;Selected molecular weight (kDa): &#34;, end=&#34;&#34;)
+        if &#34; &#34; in selected_enzyme:  # Multiple enzymes
+            mass_sum = .0
+            for single_enzyme in selected_enzyme.split(&#34; &#34;):
+                enzyme_name = single_enzyme.split(&#34;;&#34;)[0]
+                enzyme_unit_number = float(single_enzyme.split(&#34;;&#34;)[1])
+                mass_sum += protein_id_mass_mapping[enzyme_name] * \
+                    enzyme_unit_number
+            print(mass_sum)
+        else:  # Single enzyme
+            enzyme_name = selected_enzyme.split(&#34;;&#34;)[0]
+            enzyme_unit_number = float(selected_enzyme.split(&#34;;&#34;)[1])
+            print(protein_id_mass_mapping[enzyme_name] * enzyme_unit_number)
 
     # Output as SBML (without constraints due to cobrapy limitations)
     cobra.io.write_sbml_model(model, project_folder + output_sbml_name)
@@ -396,7 +440,8 @@ enhanced by the protein constraint introduction with this function.</p></section
     id_addition: str = &#34;_TG_&#34;
 
     # READ REACTIONS&lt;-&gt;KEGG ID XLSX
-    protein_id_mass_mapping: Dict[str, float] = json_load(basepath + &#34;_protein_id_mass_mapping.json&#34;)
+    protein_id_mass_mapping: Dict[str, float] = json_load(
+        basepath + &#34;_protein_id_mass_mapping.json&#34;)
 
     # Load protein data XLSX
     protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation = \
@@ -407,7 +452,8 @@ enhanced by the protein constraint introduction with this function.</p></section
         read_enzyme_stoichiometries_xlsx(basepath)
 
     # Calculate p_measured
-    p_measured = get_p_measured(protein_id_concentration_mapping, protein_id_mass_mapping)
+    p_measured = get_p_measured(
+        protein_id_concentration_mapping, protein_id_mass_mapping)
 
     # Split reactions with measured enzymes
     model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
@@ -427,7 +473,8 @@ enhanced by the protein constraint introduction with this function.</p></section
                                                          unmeasured_protein_fraction, mean_saturation)
 
     # Read reaction &lt;-&gt; kcat mapping :-)
-    reactions_kcat_mapping_database = json_load(basepath + &#34;_reactions_kcat_mapping_combined.json&#34;)
+    reactions_kcat_mapping_database = json_load(
+        basepath + &#34;_reactions_kcat_mapping_combined.json&#34;)
 
     # sMOMENT :D
     # Get all kcats which are not math.nan and calculate the median of them, which will be used as default kcat
@@ -490,7 +537,7 @@ enhanced by the protein constraint introduction with this function.</p></section
             continue
 
         # Check if all proteins in the reaction&#39;s gene rule have a found mass
-        # This is not the case for e.g. spontaneous reactions whcih often get the pseudo-enzyme &#39;s0001&#39;
+        # This is not the case for e.g. spontaneous reactions which often get the pseudo-enzyme &#39;s0001&#39;
         all_available = True
         for enzyme in gene_rule:
             if type(enzyme) == str:
@@ -536,7 +583,10 @@ enhanced by the protein constraint introduction with this function.</p></section
             reaction_kcat = forward_kcat
 
         # Add protein pool pseudo-metabolite depending on isozyme complex presence
-        stoichiometries = []
+        # List of selectable MW/kcat stoichiometries (the most conservative constraint will be chosen)
+        stoichiometries: List[float] = []
+        # List of enzyme names and stoichiometries (semicolon-separated) for a console report
+        stoichiometry_enzyme_name_list: List[str] = []
         for isozyme_id in gene_rule:
             # If it&#39;s not a complex :O...
             if type(isozyme_id) is str:
@@ -544,7 +594,9 @@ enhanced by the protein constraint introduction with this function.</p></section
                 reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
 
                 # ...get the number of units for this protein...
-                stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                number_units = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                    reaction_id][isozyme_id][isozyme_id]
+                stoichiometry = number_units
                 # ...and determine the protein pool stoichiometry by
                 # 1) Multiplying the number of units for this protein with its mass (converted from kDa to mDa, since the reaction
                 #    flux is defined for mmol/(gDW*h) and not mol/(gDW*h))
@@ -554,14 +606,19 @@ enhanced by the protein constraint introduction with this function.</p></section
                 # 3) Setting the right direction (educt)
                 stoichiometry *= -1
                 stoichiometries.append(stoichiometry)
+                stoichiometry_enzyme_name_list.append(
+                    isozyme_id + &#34;;&#34; + str(number_units))
 
                 # Add proteomics constraints
                 if isozyme_id in protein_id_concentration_mapping.keys():
-                    enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+isozyme_id)
-                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][isozyme_id]
+                    enzyme_pseudo_metabolite = model.metabolites.get_by_id(
+                        &#34;ENZYME_&#34;+isozyme_id)
+                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                        reaction_id][isozyme_id][isozyme_id]
                     stoichiometry *= 1 / (reaction_kcat * 3600)
                     stoichiometry *= -1
-                    reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+                    reaction.add_metabolites(
+                        {enzyme_pseudo_metabolite: stoichiometry})
             # If it is a complex :O...
             else:
                 # ...convert the complex IDs to a hashable tuple (used for the stoichiometry selection)...
@@ -569,38 +626,69 @@ enhanced by the protein constraint introduction with this function.</p></section
                 stoichiometry = 0
 
                 # ...go through each single ID of the complex...
+                stoichiometry_enzyme_name_list.append(&#34;&#34;)
                 for single_id in isozyme_id:
                     # ...get the reaction ID without additions...
                     reaction_id = reaction_id.split(&#34;_TG_&#34;)[0]
 
                     # ...get the number of units for this protein...
-                    single_stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                    number_units = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                        reaction_id][isozyme_id][single_id]
+                    single_stoichiometry = number_units
                     # ...and determine the protein pool stoichiometry addition by
                     # 1) Multiplying the number of units for this protein with its mass (converted from kDa to Da)
-                    single_stoichiometry *= (protein_id_mass_mapping[single_id] / 1000)
+                    single_stoichiometry *= (
+                        protein_id_mass_mapping[single_id] / 1000)
                     # 2) Dividing it with the reaction&#39;s kcat (converted from 1/s to 1/h)
                     single_stoichiometry /= (reaction_kcat * 3600)
                     # 3) Setting the right direction (educt)
                     single_stoichiometry *= -1
                     # 4) and add it to the complex&#39;s stoichiometry
                     stoichiometry += single_stoichiometry
+                    # Add name of current single ID
+                    stoichiometry_enzyme_name_list[-1] += single_id + \
+                        &#34;;&#34; + str(number_units) + &#34; &#34;
+                stoichiometry_enzyme_name_list[-1] = stoichiometry_enzyme_name_list[-1].rstrip()
                 # Add to list of stoichiometries
                 stoichiometries.append(stoichiometry)
 
                 # Add proteomics constraints
                 for single_id in isozyme_id:
                     if single_id in protein_id_concentration_mapping.keys():
-                        enzyme_pseudo_metabolite = model.metabolites.get_by_id(&#34;ENZYME_&#34;+single_id)
-                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[reaction_id][isozyme_id][single_id]
+                        enzyme_pseudo_metabolite = model.metabolites.get_by_id(
+                            &#34;ENZYME_&#34;+single_id)
+                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
+                            reaction_id][isozyme_id][single_id]
                         stoichiometry *= 1 / (reaction_kcat * 3600)
                         stoichiometry *= -1
-                        reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
+                        reaction.add_metabolites(
+                            {enzyme_pseudo_metabolite: stoichiometry})
 
         # Take the maximal stoichiometry (i.e., the one with the least cost since this one will usually be prefered
         # anyway in an FBA).
         metabolites = {}
-        metabolites[prot_pool_metabolite] = max(stoichiometries)
+        max_stoichiometry = max(stoichiometries)
+        metabolites[prot_pool_metabolite] = max_stoichiometry
         reaction.add_metabolites(metabolites)
+        selected_enzyme = stoichiometry_enzyme_name_list[stoichiometries.index(
+            max_stoichiometry)]
+
+        # Print report of selected kcat and molecular weight for this reaction
+        print(&#34;Reaction: &#34;, model_reaction_id)
+        print(&#34;Selected kcat: &#34;, reaction_kcat)
+        print(&#34;Selected molecular weight (kDa): &#34;, end=&#34;&#34;)
+        if &#34; &#34; in selected_enzyme:  # Multiple enzymes
+            mass_sum = .0
+            for single_enzyme in selected_enzyme.split(&#34; &#34;):
+                enzyme_name = single_enzyme.split(&#34;;&#34;)[0]
+                enzyme_unit_number = float(single_enzyme.split(&#34;;&#34;)[1])
+                mass_sum += protein_id_mass_mapping[enzyme_name] * \
+                    enzyme_unit_number
+            print(mass_sum)
+        else:  # Single enzyme
+            enzyme_name = selected_enzyme.split(&#34;;&#34;)[0]
+            enzyme_unit_number = float(selected_enzyme.split(&#34;;&#34;)[1])
+            print(protein_id_mass_mapping[enzyme_name] * enzyme_unit_number)
 
     # Output as SBML (without constraints due to cobrapy limitations)
     cobra.io.write_sbml_model(model, project_folder + output_sbml_name)</code></pre>

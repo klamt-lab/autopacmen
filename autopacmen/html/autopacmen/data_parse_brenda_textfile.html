@@ -29,7 +29,7 @@ a machine-readable JSON.</p>
 </summary>
 <pre><code class="python">#!/usr/bin/env python3
 #
-# Copyright 2019 PSB
+# Copyright 2019-2020 PSB
 #
 # Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
 # you may not use this file except in compliance with the License.
@@ -52,7 +52,7 @@ a machine-readable JSON.
 # External modules
 import click
 # Internal modules
-from submodules.parse_brenda_textfile import parse_brenda_textfile
+from .submodules.parse_brenda_textfile import parse_brenda_textfile
 
 
 # Set-up command-line parameters using click decorators
@@ -71,7 +71,7 @@ from submodules.parse_brenda_textfile import parse_brenda_textfile
                    &#34;must not have been changed.&#34;)
 @click.option(&#34;--json_output_path&#34;,
               required=True,
-              type=click.Path(exists=True, dir_okay=True),
+              type=click.Path(file_okay=True, dir_okay=True, writable=True),
               prompt=&#34;JSON output path&#34;,
               help=&#34;The full path for the more machine-readable JSON file of the&#34;
                    &#34; BRENDA database text file shall be placed. The resulting JSON &#34;
@@ -95,7 +95,7 @@ def parse_brenda_textfile_cli(brenda_textfile_path: str, bigg_metabolites_json_f
     Load the BRENDA textfile &#39;C:\\folder\\download.txt&#39; while the BIGG metabolites file
     is in &#39;C:\\bigg\\&#39; and the newly generated JSON shall be named &#39;C:\\folder\\brenda.json&#39;
     &lt;pre&gt;
-    python data_parse_bigg_metabolites_file.py --brenda_textfile_path C:\\folder\\download.txt --bigg_metabolites_json_folder C:\\bigg\\ --json_output_path C:\\folder\\brenda.json
+    python data_parse_brenda_textfile.py --brenda_textfile_path C:\\folder\\download.txt --bigg_metabolites_json_folder C:\\bigg\\ --json_output_path C:\\folder\\brenda.json
     &lt;/pre&gt;
     &#34;&#34;&#34;
     parse_brenda_textfile(brenda_textfile_path, bigg_metabolites_json_folder, json_output_path)
