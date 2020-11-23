@@ -23,7 +23,6 @@ Functions for the generation of a model's mapping of its proteins and their mass
 import cobra
 import requests
 import time
-from Bio.SeqUtils.ProtParam import ProteinAnalysis
 from typing import Dict, List
 # Internal modules
 from .helper_general import ensure_folder_existence, get_files, json_write, pickle_write, pickle_load, standardize_folder
@@ -33,7 +32,7 @@ from .helper_general import ensure_folder_existence, get_files, json_write, pick
 def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_name: str) -> None:
     """Returns a JSON with a mapping of protein IDs as keys, and as values the protein mass in kDa.
 
-    The protein masses are calculated using the amino acid sequence from UniProt (retrieved using
+    The protein masses are taken  from UniProt (retrieved using
     UniProt's REST API).
 
     Arguments
@@ -114,7 +113,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
         # With 'OR', all given IDs are searched, and subsequently in this script,
         # the right associated masses are being picked.
         query = " OR ".join(batch)
-        uniprot_query_url = f"https://www.uniprot.org/uniprot/?query={query}&format=tab&columns=id,sequence"
+        uniprot_query_url = f"https://www.uniprot.org/uniprot/?query={query}&format=tab&columns=id,mass"
         print(f"UniProt batch search for: {query}")
 
         # Call UniProt's API :-)
@@ -127,18 +126,20 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
             if line == "":
                 continue
             uniprot_id = line.split("\t")[0]
-            sequence = line.split("\t")[1]
-            # Get the protein mass using biopython's associated function for amino acid sequences
+            mass_string = line.split("\t")[1]
             try:
-                mass = ProteinAnalysis(sequence, monoisotopic=False).molecular_weight()
-            except ValueError:  # e.g. if an "X" is in a sequence
+                # Note that the mass entry from UniProt uses a comma as a thousand separator, so it has to be removed before parsing
+                mass = float(mass_string.replace(",",""))
+            except ValueError: # We may also risk the entry is missing
+               # print(f"No protein mass obtainable for protein ID {uniprot_id}")
                 continue
             uniprot_id_protein_mass_mapping[uniprot_id] = float(mass)
 
         # Create the pickled cache files for the searched protein masses
         for uniprot_id in batch:
-            cache_filepath = cache_basepath + uniprot_id
-            pickle_write(cache_filepath, uniprot_id_protein_mass_mapping[uniprot_id])
+            if uniprot_id in uniprot_id_protein_mass_mapping: # Takes into account that we may fail to obtain a UniProt ID
+                cache_filepath = cache_basepath + uniprot_id
+                pickle_write(cache_filepath, uniprot_id_protein_mass_mapping[uniprot_id])
 
         # Continue with the next batch :D
         batch_start += batch_size
