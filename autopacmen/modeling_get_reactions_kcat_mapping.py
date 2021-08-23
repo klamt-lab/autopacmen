@@ -55,7 +55,7 @@ from .submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
               help="Full path to the SABIO-RK&BRENDA kcat<->reaction JSON which was creates using data_create_combined_kcat_database.py")
 @click.option("--protein_kcat_database_path",
               required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True),
+              type=str,
               default="",
               prompt="protein kcat database path",
               help="Full path to the custom user-defined kcat<->protein JSON. It must be a dictionary containing the protein names"
