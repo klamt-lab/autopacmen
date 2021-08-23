@@ -26,7 +26,7 @@ workflow, after the wanted SBML model was selected and generated.
 # External modules
 import cobra
 import xlsxwriter
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, List
 # Internal modules
 from .kegg import kegg_rest_get_batch
 from .helper_general import standardize_folder
@@ -36,27 +36,30 @@ from .helper_general import standardize_folder
 def _gene_rule_as_list(gene_rule: str) -> List[Any]:
     """Returns a given string gene rule in list form.
 
-    I.e. (b0001 or b0002) and b0003 is returned as
+    I.e. (b0001 and b0002) or b0003 is returned as
     [["b0001", "b0002"], "b0003"]
 
     Arguments:
     *gene_rule: str ~ The gene rule which shall be converted into the list form.
     """
-    # Gene rules: Only ) or (, (in blocks only and); No ) and (
-    gene_rule_blocks = gene_rule.split(" ) or ( ")
-    gene_rule_blocks = [x.replace("(", "").replace(")", "") for x in gene_rule_blocks]
-    gene_rules_array: List[Union[str, List[str]]] = []
-    for block in gene_rule_blocks:
-        if " or " in block:
-            block_list = block.split(" or ")
-            block_list = [x.lstrip().rstrip() for x in block_list]
-            gene_rules_array += block_list
-        elif " and " in block:
-            block_list = block.split(" and ")
-            block_list = [x.lstrip().rstrip() for x in block_list]
-            gene_rules_array.append(block_list)
-        else:  # single enzyme
-            gene_rules_array.append(block)
+    gene_rules_array: List[Any] = []
+    if (" or " in gene_rule) and (" and " in gene_rule):
+        gene_rule_split = gene_rule.split("or")
+        gene_rule_split = [x.replace("(", "").replace(")", "") for x in gene_rule_split]
+        for part in gene_rule_split:
+            and_list = part.split(" and ")
+            and_list = [x.replace(" ", "") for x in and_list]
+            gene_rules_array.append(and_list)
+    elif (" or " in gene_rule):
+        gene_rule_split = gene_rule.split(" or ")
+        gene_rule_split = [x.replace("(", "").replace(")", "").replace(" ", "") for x in gene_rule_split]
+        for part in gene_rule_split:
+            gene_rules_array.append(part)
+    else:  # if ("and" in gene_rule):
+        gene_rule_split = gene_rule.split(" and ")
+        gene_rule_split = [x.replace("(", "").replace(")", "").replace(" ", "") for x in gene_rule_split]
+        gene_rules_array.append(gene_rule_split)
+
     return gene_rules_array
 
 
