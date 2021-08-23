@@ -39,7 +39,7 @@ function [best_prot_pool, start_prot_pool] = smoment_prot_pool_optimization(cna_
     % best_prot_pool ~ The final optimized prot_pool.
     % start_prot_pool ~ The unoptimized prot_pool. Useful for comparison
     %                   with start_prot_pool.
-    
+
     % Set global variables used in fmincon
     global g_cna_model;
     g_cna_model = cna_model;
@@ -47,19 +47,19 @@ function [best_prot_pool, start_prot_pool] = smoment_prot_pool_optimization(cna_
     g_scenarios = scenarios;
     global g_scenarios_matrix;
     g_scenarios_matrix = scenarios_matrix;
-    
+
     % Get start prot pool value
     metabolite_index = strmatch('M_prot_pool', cna_model.specID, 'exact');
-    reaction_index = strmatch('R_ER_pool_TG_', cna_model.specID, 'exact');
+    reaction_index = strmatch('R_ER_pool_TG_', cna_model.reacID, 'exact');
     start_prot_pool = cna_model.stoichMat(metabolite_index, reaction_index);
-    
+
     % Set lower and upper bounds for fmincon
     lower_bounds = [lowest_value];
     upper_bounds = [highest_value];
-    
+
     % Run optimization :D
     best_prot_pool = fmincon(@p_get_objective_value_for_prot_pool, start_prot_pool, [], [], [], [], lower_bounds, upper_bounds);
-    
+
     % Delete global variables
     clear g_cna_model;
     clear g_reactions_to_change;

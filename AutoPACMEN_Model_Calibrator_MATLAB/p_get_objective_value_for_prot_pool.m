@@ -29,7 +29,7 @@ function [f] = p_get_objective_value_for_prot_pool(x)
 
     % Change prot pool
     metabolite_index = strmatch('M_prot_pool', g_cna_model.specID, 'exact');
-    reaction_index = strmatch('R_ER_pool_TG_', g_cna_model.specID, 'exact');
+    reaction_index = strmatch('R_ER_pool_TG_', g_cna_model.reacID, 'exact');
     g_cna_model.stoichMat(metabolite_index, reaction_index) = x;
 
     % Get values for each scenario line
