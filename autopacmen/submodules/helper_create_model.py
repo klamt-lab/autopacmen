@@ -359,7 +359,7 @@ def get_model_with_separated_measured_enzyme_reactions(model: cobra.Model, prote
                 if len(new_gene_reaction_rule) > 0:
                     new_gene_reaction_rule += " or "
                 new_gene_reaction_rule += element
-        model.gene_reaction_rule = new_gene_reaction_rule
+        new_reaction.gene_reaction_rule = new_gene_reaction_rule
 
         if add_arm_reaction:
             if reaction.lower_bound >= 0:
