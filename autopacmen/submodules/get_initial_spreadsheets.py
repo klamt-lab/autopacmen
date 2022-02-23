@@ -44,21 +44,25 @@ def _gene_rule_as_list(gene_rule: str) -> List[Any]:
     """
     gene_rules_array: List[Any] = []
     if (" or " in gene_rule) and (" and " in gene_rule):
-        gene_rule_split = gene_rule.split("or")
+        gene_rule_split = gene_rule.split(" or ")
         gene_rule_split = [x.replace("(", "").replace(")", "") for x in gene_rule_split]
         for part in gene_rule_split:
             and_list = part.split(" and ")
             and_list = [x.replace(" ", "") for x in and_list]
+            if len(and_list) == 1:
+                and_list = and_list[0]
             gene_rules_array.append(and_list)
-    elif (" or " in gene_rule):
+    elif " or " in gene_rule:
         gene_rule_split = gene_rule.split(" or ")
         gene_rule_split = [x.replace("(", "").replace(")", "").replace(" ", "") for x in gene_rule_split]
         for part in gene_rule_split:
             gene_rules_array.append(part)
-    else:  # if ("and" in gene_rule):
+    elif " and " in gene_rule:
         gene_rule_split = gene_rule.split(" and ")
         gene_rule_split = [x.replace("(", "").replace(")", "").replace(" ", "") for x in gene_rule_split]
         gene_rules_array.append(gene_rule_split)
+    else:
+        gene_rules_array.append(gene_rule)
 
     return gene_rules_array
 
