@@ -242,7 +242,7 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
     workbook.close()
 
     # Protein data XLSX :D
-    print("NOTE: "+project_name+"_protein_data.xlsx has as default value for the enzyme pool P 0.095 mmol/gDW.")
+    print("NOTE: "+project_name+"_protein_data.xlsx has as default value for the enzyme pool P 0.095 g/gDW.")
     print("Please adjust the value accordingly for your model!")
     workbook = xlsxwriter.Workbook(basepath+"_protein_data.xlsx")
     worksheet = workbook.add_worksheet("Total protein data")
