@@ -165,15 +165,9 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
             organism_line_split_first_part = organism_line.split("# ")[1]
             organism_line_split = organism_line_split_first_part.split(" ")
             
-            organism_line_split_without_spaces = []
-            for word in organism_line_split:
-                if len(word) > 0:
-                    if "\t" in word:
-                        organism_line_split_without_spaces.append(word.replace("\t", ""))
-                        continue
-                    organism_line_split_without_spaces.append(word)
-
-            organism_line_split = organism_line_split_without_spaces
+            for part in organism_line_split:
+                if len(part) > 0:
+                    word = word.replace("\t", "")
 
             end = 1
             for part in organism_line_split:
