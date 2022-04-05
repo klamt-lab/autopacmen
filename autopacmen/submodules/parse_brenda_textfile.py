@@ -167,7 +167,7 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
             
             for part in organism_line_split:
                 if len(part) > 0:
-                    word = word.replace("\t", "")
+                    part = part.replace("\t", "")
 
             end = 1
             for part in organism_line_split:
