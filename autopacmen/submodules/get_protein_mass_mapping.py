@@ -113,7 +113,7 @@ def get_protein_mass_mapping(model: cobra.Model, project_folder: str, project_na
         # With 'OR', all given IDs are searched, and subsequently in this script,
         # the right associated masses are being picked.
         query = " OR ".join(batch)
-        uniprot_query_url = f"https://www.uniprot.org/uniprot/?query={query}&format=tab&columns=id,mass"
+        uniprot_query_url = f"https://rest.uniprot.org/uniprotkb/search?query=accession:{query}&format=tsv&fields=accession,mass"
         print(f"UniProt batch search for: {query}")
 
         # Call UniProt's API :-)
