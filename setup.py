@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="autopacmen-Paulocracy",
-    version="0.6.1",
+    version="0.6.2",
     author="Paulocracy",
     author_email="bekiaris@mpi-magdeburg.mpg.de",
     description="The AutoPACMEN package",
