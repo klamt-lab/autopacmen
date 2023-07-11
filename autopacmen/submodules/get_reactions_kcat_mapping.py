@@ -59,11 +59,9 @@ def _get_kcat_from_protein_kcat_database(searched_direction: str, reaction: cobr
         if gene_name not in protein_kcat_database.keys():
             continue
         kcat_direction = protein_kcat_database[gene_name]["direction"][reaction.id]
-        max_kcat = max(protein_kcat_database[gene_name]["kcats"])
 
-        if kcat_direction == searched_direction == "forward":
-            max_kcats.append(max_kcat)
-        else:
+        if kcat_direction == searched_direction:
+            max_kcat = max(protein_kcat_database[gene_name]["kcats"])
             max_kcats.append(max_kcat)
 
     # Get the minimal maximal kcat and return it :D
