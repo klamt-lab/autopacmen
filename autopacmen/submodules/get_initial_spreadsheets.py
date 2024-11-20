@@ -340,12 +340,22 @@ def get_initial_spreadsheets(
     line = 0
     for reaction_id in reaction_id_gene_rules_mapping.keys():
         gene_rule = reaction_id_gene_rules_mapping[reaction_id]
-        if gene_rule == [""]:
+        if gene_rule in ([""], [[""]]):
             continue
         worksheet_stoichiometry.write(line, 0, reaction_id)
         row = 1
         for or_part in gene_rule:
-            worksheet_stoichiometry.write(line, row, str(or_part))
+            if len(or_part) == 1:
+                written_part = str(or_part[0])
+            else:
+                written_part = str(or_part)
+            if written_part == "":
+                continue
+            worksheet_stoichiometry.write(
+                line,
+                row,
+                written_part
+            )
             if type(or_part) is str:
                 default_stoichiometry = "1"
             else:
