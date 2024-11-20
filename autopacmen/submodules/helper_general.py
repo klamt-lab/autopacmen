@@ -223,7 +223,7 @@ def get_files(path: str) -> List[str]:
     * path: str ~ The path to the folder of which the file names shall be returned
     """
     files: List[str] = []
-    for (_, _, filenames) in os.walk(path):
+    for _, _, filenames in os.walk(path):
         files.extend(filenames)
     return files
 
@@ -244,7 +244,9 @@ def get_float_cell_value(cell_value) -> float:
     return cell_value
 
 
-def is_fitting_ec_numbers(ec_number_one: str, ec_number_two: str, wildcard_level: int) -> bool:
+def is_fitting_ec_numbers(
+    ec_number_one: str, ec_number_two: str, wildcard_level: int
+) -> bool:
     """Check whether the EC numbers are the same under the used wildcard level.
 
     Arguments
@@ -299,7 +301,7 @@ def pickle_load(path: str) -> Any:
     ----------
     * path: str ~ The path to the pickle file.
     """
-    pickle_file = open(path, 'rb')
+    pickle_file = open(path, "rb")
     pickled_object = pickle.load(pickle_file)
     pickle_file.close()
     return pickled_object
@@ -313,7 +315,7 @@ def pickle_write(path: str, pickled_object: Any) -> None:
     * path: str ~ The path of the pickled file that shall be created
     * pickled_object: Any ~ The object which shall be saved in the pickle file
     """
-    pickle_file = open(path, 'wb')
+    pickle_file = open(path, "wb")
     pickle.dump(pickled_object, pickle_file)
     pickle_file.close()
 
@@ -369,10 +371,15 @@ def sanitize_path(text: str) -> str:
     ----------
     * text: str ~ The string that may contain invalid characters.
     """
-    return text.replace("\\", "_").replace("/", "_").\
-        replace(":", "_").replace("*", "_").\
-        replace("<", "_").replace(">", "_").\
-        replace("|", "_")
+    return (
+        text.replace("\\", "_")
+        .replace("/", "_")
+        .replace(":", "_")
+        .replace("*", "_")
+        .replace("<", "_")
+        .replace(">", "_")
+        .replace("|", "_")
+    )
 
 
 def standardize_folder(folder: str) -> str:

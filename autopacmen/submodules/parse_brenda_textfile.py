@@ -27,8 +27,9 @@ from .helper_general import json_load, json_write, standardize_folder
 
 
 # PUBLIC FUNCTIONS SECTION
-def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folder: str,
-                          json_output_path: str) -> None:
+def parse_brenda_textfile(
+    brenda_textfile_path: str, bigg_metabolites_json_folder: str, json_output_path: str
+) -> None:
     """Goes through a BRENDA database textfile and converts it into a machine-readable JSON.
 
     The JSON includes kcats for found organisms and substrates.
@@ -75,12 +76,12 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
     'REST' stands for a substrate without found BIGG ID.
     """
     # Standardize output folder
-    bigg_metabolites_json_folder = standardize_folder(
-        bigg_metabolites_json_folder)
+    bigg_metabolites_json_folder = standardize_folder(bigg_metabolites_json_folder)
 
     # Load BIGG ID <-> metabolite name mapping :D
     bigg_id_name_mapping: Dict[str, str] = json_load(
-        bigg_metabolites_json_folder+"bigg_id_name_mapping.json")
+        bigg_metabolites_json_folder + "bigg_id_name_mapping.json"
+    )
 
     # Load BRENDA textfile as list of strings without newlines :D
     with open(brenda_textfile_path, "r", encoding="utf-8") as f:
@@ -147,14 +148,21 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
             actual_ec_number = ec_number.split(" (transferred")[0]
             try:
                 brenda_kcat_database[actual_ec_number] = {}
-                brenda_kcat_database[actual_ec_number]["TRANSFER"] = \
-                    ec_number.lower().replace("  ", " ").split(
-                        "(transferred to ec")[1].replace(")", "").lstrip()
+                brenda_kcat_database[actual_ec_number]["TRANSFER"] = (
+                    ec_number.lower()
+                    .replace("  ", " ")
+                    .split("(transferred to ec")[1]
+                    .replace(")", "")
+                    .lstrip()
+                )
             except Exception:
                 # Some transfers go to general subgroups instead of single EC numbers so that
                 # no kcat database can be built from it D:
-                print("WARNING: BRENDA text file line " +
-                      ec_number + " is not interpretable!")
+                print(
+                    "WARNING: BRENDA text file line "
+                    + ec_number
+                    + " is not interpretable!"
+                )
             continue
 
         brenda_kcat_database[ec_number] = {}
@@ -165,7 +173,7 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
             reference_number = organism_line.split("#")[1]
             organism_line_split_first_part = organism_line.split("# ")[1]
             organism_line_split = organism_line_split_first_part.split(" ")
-            
+
             for part in organism_line_split:
                 if len(part) > 0:
                     part = part.replace("\t", "")
@@ -174,11 +182,13 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
             for part in organism_line_split:
                 # Some organism names contain their SwissProt or UniProt ID,
                 # since we don't nned them they are excluded
-                if ("swissprot" in part.lower()) or \
-                    (part.lower() == "and") or \
-                    ("uniprot" in part.lower()) or \
-                    ("genbank" in part.lower()) or \
-                        ("trembl" in part.lower()):
+                if (
+                    ("swissprot" in part.lower())
+                    or (part.lower() == "and")
+                    or ("uniprot" in part.lower())
+                    or ("genbank" in part.lower())
+                    or ("trembl" in part.lower())
+                ):
                     end -= 2
                     break
 
@@ -199,8 +209,7 @@ def parse_brenda_textfile(brenda_textfile_path: str, bigg_metabolites_json_folde
                 continue
             reference_number = kcat_line.split("#")[1].split(",")[0]
             organism = reference_number_organism_mapping[reference_number]
-            kcat_str = "".join(kcat_line.split("#")[2]).split("{")[
-                0].lstrip().rstrip()
+            kcat_str = "".join(kcat_line.split("#")[2]).split("{")[0].lstrip().rstrip()
             kcat = max([float(x) for x in kcat_str.split("-") if len(x) > 0])
             substrate = "".join(kcat_line.split("{")[1]).split("}")[0]
 

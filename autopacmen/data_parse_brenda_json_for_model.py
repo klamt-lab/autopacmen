@@ -29,26 +29,32 @@ from .submodules.parse_brenda_json_for_model import parse_brenda_json_for_model
 
 # Set-up command-line parameters using click decorators
 @click.command()
-@click.option("--sbml_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True,
-                              dir_okay=True, readable=True),
-              prompt="Path to SBML model",
-              help="Full path to the SBML with the model of which the BRENDA JSON will be derived.")
-@click.option("--brenda_json_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True,
-                              dir_okay=True, readable=True),
-              prompt="BRENDA JSON path",
-              help="Full path to the BRENDA JSON created with data_parse_brenda_textfile.py")
-@click.option("--json_output_path",
-              required=True,
-              type=click.Path(file_okay=True, dir_okay=True, writable=True),
-              prompt="JSON output path",
-              help="The full path for the model-specific JSON file of the "
-                   "BRENDA JSON created with data_parse_brenda_textfile.py")
+@click.option(
+    "--sbml_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="Path to SBML model",
+    help="Full path to the SBML with the model of which the BRENDA JSON will be derived.",
+)
+@click.option(
+    "--brenda_json_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="BRENDA JSON path",
+    help="Full path to the BRENDA JSON created with data_parse_brenda_textfile.py",
+)
+@click.option(
+    "--json_output_path",
+    required=True,
+    type=click.Path(file_okay=True, dir_okay=True, writable=True),
+    prompt="JSON output path",
+    help="The full path for the model-specific JSON file of the "
+    "BRENDA JSON created with data_parse_brenda_textfile.py",
+)
 # Command-line interface function
-def parse_brenda_json_for_model_cli(sbml_path: str, brenda_json_path: str, json_output_path: str) -> None:
+def parse_brenda_json_for_model_cli(
+    sbml_path: str, brenda_json_path: str, json_output_path: str
+) -> None:
     """Converts the given BRENDA JSON created with data_parse_brenda_textfile.py into a even more easily readable model-specific JSON.
 
     This conversion is needed for all subsequent AutoPACMEN steps. The model-specific JSON contains all of the model's EC number entries
@@ -66,7 +72,7 @@ def parse_brenda_json_for_model_cli(sbml_path: str, brenda_json_path: str, json_
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.

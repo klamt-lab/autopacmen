@@ -38,8 +38,13 @@ from .helper_general import json_load, standardize_folder
 
 
 # PUBLIC FUNCTIONS
-def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
-                                     project_folder: str, project_name: str, excluded_reactions: List[str]) -> cobra.Model:
+def create_gecko_model_reaction_wise(
+    model: cobra.Model,
+    output_sbml_name: str,
+    project_folder: str,
+    project_name: str,
+    excluded_reactions: List[str],
+) -> cobra.Model:
     """Creates a GECKO model as described in
 
     <i>
@@ -69,21 +74,30 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
 
     # READ REACTIONS<->KEGG ID XLSX
     protein_id_mass_mapping: Dict[str, float] = json_load(
-        basepath+"_protein_id_mass_mapping.json")
+        basepath + "_protein_id_mass_mapping.json"
+    )
 
     # LOAD XLSX WITH PROTEIN DATA
     # Load protein data XLSX
-    protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation = \
-        read_protein_data_xlsx(basepath)
+    (
+        protein_id_concentration_mapping,
+        p_total,
+        unmeasured_protein_fraction,
+        mean_saturation,
+    ) = read_protein_data_xlsx(basepath)
     # Read enzyme kinetics xlsx
-    reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
-        read_enzyme_stoichiometries_xlsx(basepath)
+    (
+        reaction_id_gene_rules_mapping,
+        reaction_id_gene_rules_protein_stoichiometry_mapping,
+    ) = read_enzyme_stoichiometries_xlsx(basepath)
 
     # Read reaction <-> kcat mapping :D
     reactions_kcat_mapping_database = json_load(
-        basepath + "_reactions_kcat_mapping_combined.json")
-    all_kcats = [x["forward"] for x in reactions_kcat_mapping_database.values()] + \
-                [x["reverse"] for x in reactions_kcat_mapping_database.values()]
+        basepath + "_reactions_kcat_mapping_combined.json"
+    )
+    all_kcats = [x["forward"] for x in reactions_kcat_mapping_database.values()] + [
+        x["reverse"] for x in reactions_kcat_mapping_database.values()
+    ]
     all_kcats = [x for x in all_kcats if not math.isnan(x)]
     default_kcat = statistics.median(all_kcats)
     print(f"Default kcat is: {default_kcat}")
@@ -93,38 +107,52 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
     id_addition = "_TG_"
     # Calculate p_measured
     p_measured = get_p_measured(
-        protein_id_concentration_mapping, protein_id_mass_mapping)
+        protein_id_concentration_mapping, protein_id_mass_mapping
+    )
     # Make model irreversible
     model = get_irreversible_model(model, id_addition)
     # Add prot_pool reaction
-    model, prot_pool_metabolite = add_prot_pool_reaction(model, id_addition, p_total, p_measured,
-                                                         unmeasured_protein_fraction, mean_saturation)
+    model, prot_pool_metabolite = add_prot_pool_reaction(
+        model,
+        id_addition,
+        p_total,
+        p_measured,
+        unmeasured_protein_fraction,
+        mean_saturation,
+    )
 
     # Add enzyme source reaction for every unmeasured protein
     for protein_id in list(protein_id_mass_mapping.keys()):
         if protein_id in list(protein_id_concentration_mapping.keys()):  # Measured
-            eu = cobra.Reaction(id=id_addition+"EU_"+protein_id,
-                                name=f"Enzyme usage reaction of measured protein {protein_id}",
-                                subsystem="AutoPACMEN")
-            enzyme = cobra.Metabolite(id=protein_id+"_met",
-                                      name=f"Protein {protein_id}",
-                                      compartment="AutoPACMEN")
+            eu = cobra.Reaction(
+                id=id_addition + "EU_" + protein_id,
+                name=f"Enzyme usage reaction of measured protein {protein_id}",
+                subsystem="AutoPACMEN",
+            )
+            enzyme = cobra.Metabolite(
+                id=protein_id + "_met",
+                name=f"Protein {protein_id}",
+                compartment="AutoPACMEN",
+            )
 
             eu.add_metabolites({enzyme: 1.0})
             eu.lower_bound = 0
             eu.upper_bound = protein_id_concentration_mapping[protein_id]
             model.add_reactions([eu])
         else:  # Unmeasured
-            er = cobra.Reaction(id=id_addition+"ER_"+protein_id,
-                                name=f"Enzyme usage reaction of unmeasured protein {protein_id}",
-                                subsystem="AutoPACMEN")
-            enzyme = cobra.Metabolite(id=protein_id+"_met",
-                                      name=f"Protein {protein_id}",
-                                      compartment="AutoPACMEN")
+            er = cobra.Reaction(
+                id=id_addition + "ER_" + protein_id,
+                name=f"Enzyme usage reaction of unmeasured protein {protein_id}",
+                subsystem="AutoPACMEN",
+            )
+            enzyme = cobra.Metabolite(
+                id=protein_id + "_met",
+                name=f"Protein {protein_id}",
+                compartment="AutoPACMEN",
+            )
             # Mapping is in Da, GECKO uses kDa (g/mmol)
             molecular_weight = protein_id_mass_mapping[protein_id] / 1000
-            er.add_metabolites({prot_pool_metabolite: -molecular_weight,
-                                enzyme: 1})
+            er.add_metabolites({prot_pool_metabolite: -molecular_weight, enzyme: 1})
             er.lower_bound = 0
             er.upper_bound = 1000.0
             model.add_reactions([er])
@@ -156,14 +184,14 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
         for enzyme in gene_rule:
             if type(enzyme) == str:
                 try:
-                    model.metabolites.get_by_id(enzyme+"_met")
+                    model.metabolites.get_by_id(enzyme + "_met")
                 except Exception:
                     all_available = False
                     break
             else:
                 for enzyme_id in enzyme:
                     try:
-                        model.metabolites.get_by_id(enzyme_id+"_met")
+                        model.metabolites.get_by_id(enzyme_id + "_met")
                     except Exception:
                         all_available = False
                         break
@@ -200,12 +228,11 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
 
         # Add arm reaction if isozymes occur
         if len(gene_rule) > 1:  # Isozymes occur :O
-            arm_reaction_id = id_addition + \
-                f"arm_reaction_{current_arm_reaction}"
+            arm_reaction_id = id_addition + f"arm_reaction_{current_arm_reaction}"
             arm_reaction_name = f"Arm reaction no. {current_arm_reaction} for gene rule {str(gene_rule)}"
-            arm_reaction = cobra.Reaction(id=arm_reaction_id,
-                                          name=arm_reaction_name,
-                                          subsystem="AutoPACMEN")
+            arm_reaction = cobra.Reaction(
+                id=arm_reaction_id, name=arm_reaction_name, subsystem="AutoPACMEN"
+            )
 
             arm_reaction_metabolites = {}
             for metabolite in list(reaction.metabolites.keys()):
@@ -216,9 +243,9 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
 
             im_id = f"im_{current_arm_reaction}"
             im_name = f"Intermediate metabolite of arm reaction {current_arm_reaction}"
-            intermediate_metabolite = cobra.Metabolite(id=im_id,
-                                                       name=im_name,
-                                                       compartment="AutoPACMEN")
+            intermediate_metabolite = cobra.Metabolite(
+                id=im_id, name=im_name, compartment="AutoPACMEN"
+            )
             arm_reaction_metabolites[intermediate_metabolite] = 1
             arm_reaction.add_metabolites(arm_reaction_metabolites)
             reaction.add_metabolites({intermediate_metabolite: -1})
@@ -238,12 +265,13 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
             new_reaction.id = new_reaction.id + id_addition + str(i)
             protein_ids = []
             if type(isozyme_id) is str:  # No complex :O
-                protein = model.metabolites.get_by_id(isozyme_id+"_met")
+                protein = model.metabolites.get_by_id(isozyme_id + "_met")
                 reaction_id = reaction_id.split("_TG_")[0]
 
                 stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
-                    reaction_id][isozyme_id][isozyme_id]
-                stoichiometry /= (reaction_kcat * 3600)
+                    reaction_id
+                ][isozyme_id][isozyme_id]
+                stoichiometry /= reaction_kcat * 3600
                 stoichiometry *= -1
 
                 metabolites = {}
@@ -255,12 +283,15 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
                 isozyme_id = tuple(isozyme_id)
 
                 for single_id in isozyme_id:
-                    protein = model.metabolites.get_by_id(single_id+"_met")
+                    protein = model.metabolites.get_by_id(single_id + "_met")
                     reaction_id = reaction_id.split("_TG_")[0]
 
-                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
-                        reaction_id][isozyme_id][single_id]
-                    stoichiometry /= (reaction_kcat * 3600)
+                    stoichiometry = (
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[
+                            reaction_id
+                        ][isozyme_id][single_id]
+                    )
+                    stoichiometry /= reaction_kcat * 3600
                     stoichiometry *= -1
 
                     metabolites[protein] = stoichiometry
@@ -274,18 +305,23 @@ def create_gecko_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
         model.add_reactions(new_reactions)
         model.remove_reactions([reaction])
 
-    cobra.io.write_sbml_model(model, project_folder+output_sbml_name)
+    cobra.io.write_sbml_model(model, project_folder + output_sbml_name)
 
     return model
 
 
-def create_gecko_model_reaction_wise_with_sbml(input_sbml_path: str, output_sbml_name: str,
-                                               project_folder: str, project_name: str, excluded_reactions: List[str]) -> cobra.Model:
+def create_gecko_model_reaction_wise_with_sbml(
+    input_sbml_path: str,
+    output_sbml_name: str,
+    project_folder: str,
+    project_name: str,
+    excluded_reactions: List[str],
+) -> cobra.Model:
     """See create_gecko_model_reaction_wise()"""
     # LOAD SBML MODEL
     model: cobra.Model = cobra.io.read_sbml_model(input_sbml_path)
     # Call gecko model creation function :D
-    model = create_gecko_model_reaction_wise(model, output_sbml_name,
-                                             project_folder, project_name,
-                                             excluded_reactions)
+    model = create_gecko_model_reaction_wise(
+        model, output_sbml_name, project_folder, project_name, excluded_reactions
+    )
     return model

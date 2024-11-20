@@ -53,21 +53,29 @@ def _gene_rule_as_list(gene_rule: str) -> List[Any]:
             and_list = part.split(" and ")
             and_list = [x.replace(" ", "") for x in and_list]
             gene_rules_array.append(and_list)
-    elif (" or " in gene_rule):
+    elif " or " in gene_rule:
         gene_rule_split = gene_rule.split(" or ")
-        gene_rule_split = [x.replace("(", "").replace(")", "").replace(" ", "") for x in gene_rule_split]
+        gene_rule_split = [
+            x.replace("(", "").replace(")", "").replace(" ", "")
+            for x in gene_rule_split
+        ]
         for part in gene_rule_split:
             gene_rules_array.append(part)
     else:  # if ("and" in gene_rule):
         gene_rule_split = gene_rule.split(" and ")
-        gene_rule_split = [x.replace("(", "").replace(")", "").replace(" ", "") for x in gene_rule_split]
+        gene_rule_split = [
+            x.replace("(", "").replace(")", "").replace(" ", "")
+            for x in gene_rule_split
+        ]
         gene_rules_array.append(gene_rule_split)
 
     return gene_rules_array
 
 
 # PUBLIC FUNCTIONS SECTION
-def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_name: str) -> None:
+def get_initial_spreadsheets(
+    model: cobra.Model, project_folder: str, project_name: str
+) -> None:
     """Creates a number of initially needed XLSX spreadsheets in the given folder.
 
     Output
@@ -136,7 +144,9 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
     searched_metabolites: List[str] = []
     for metabolite in model.metabolites:
         if "kegg.compound" not in metabolite.annotation.keys():
-            print(f"INFO: Metabolite {metabolite.id} does not have a KEGG ID annotation")
+            print(
+                f"INFO: Metabolite {metabolite.id} does not have a KEGG ID annotation"
+            )
             continue
         kegg_ids = metabolite.annotation["kegg.compound"]
         if type(kegg_ids) is str:  # Single ID :O
@@ -152,13 +162,15 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
                         eligible_ids.append(kegg_ids[i])
                     i += 1
                 if len(eligible_ids) == 1:
-                    metabolite_name_eligible_ids_mapping[metabolite.name] = eligible_ids[0]
+                    metabolite_name_eligible_ids_mapping[metabolite.name] = (
+                        eligible_ids[0]
+                    )
                 searched_metabolites.append(metabolite.name)
         metabolite_id_kegg_id_mapping[metabolite.id] = kegg_ids
         metabolite_id_metabolite_name_mapping[metabolite.id] = metabolite.name
 
     # Reactions <-> KEGG ID mapping XLSX :D
-    workbook = xlsxwriter.Workbook(basepath+"_reactions.xlsx")
+    workbook = xlsxwriter.Workbook(basepath + "_reactions.xlsx")
     worksheet = workbook.add_worksheet("Reaction IDs")
 
     yellow = workbook.add_format()
@@ -174,27 +186,44 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
         kegg_ids = reaction_id_kegg_id_mapping[key]
         for kegg_id in kegg_ids:
             if len(kegg_ids) == 1:
-                worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?rn:"+kegg_id)
-                worksheet.write(row, column+1, kegg_id)
-                worksheet.write(row, column+2, "Yes")
+                worksheet.write_url(
+                    row, column, "https://www.kegg.jp/dbget-bin/www_bget?rn:" + kegg_id
+                )
+                worksheet.write(row, column + 1, kegg_id)
+                worksheet.write(row, column + 2, "Yes")
             else:
                 if key in reaction_id_eligible_ids_mapping.keys():
                     if kegg_id == reaction_id_eligible_ids_mapping[key]:
-                        worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?rn:"+kegg_id, blue)
-                        worksheet.write(row, column+1, kegg_id, blue)
-                        worksheet.write(row, column+2, "Yes")
+                        worksheet.write_url(
+                            row,
+                            column,
+                            "https://www.kegg.jp/dbget-bin/www_bget?rn:" + kegg_id,
+                            blue,
+                        )
+                        worksheet.write(row, column + 1, kegg_id, blue)
+                        worksheet.write(row, column + 2, "Yes")
                     else:
-                        worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?rn:"+kegg_id, blue)
-                        worksheet.write(row, column+1, kegg_id, blue)
+                        worksheet.write_url(
+                            row,
+                            column,
+                            "https://www.kegg.jp/dbget-bin/www_bget?rn:" + kegg_id,
+                            blue,
+                        )
+                        worksheet.write(row, column + 1, kegg_id, blue)
                 else:
-                    worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?rn:"+kegg_id, yellow)
-                    worksheet.write(row, column+1, kegg_id, yellow)
+                    worksheet.write_url(
+                        row,
+                        column,
+                        "https://www.kegg.jp/dbget-bin/www_bget?rn:" + kegg_id,
+                        yellow,
+                    )
+                    worksheet.write(row, column + 1, kegg_id, yellow)
             column += 3
         row += 1
     workbook.close()
 
     # Metabolites<->KEGG ID mapping XLSX :D
-    workbook = xlsxwriter.Workbook(basepath+"_metabolites.xlsx")
+    workbook = xlsxwriter.Workbook(basepath + "_metabolites.xlsx")
     worksheet = workbook.add_worksheet("Metabolite IDs")
 
     yellow = workbook.add_format()
@@ -211,27 +240,44 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
         kegg_ids = metabolite_id_kegg_id_mapping[key]
         for kegg_id in kegg_ids:
             if len(kegg_ids) == 1:
-                worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?cpd:"+kegg_id)
-                worksheet.write(row, column+1, kegg_id)
-                worksheet.write(row, column+2, "Yes")
+                worksheet.write_url(
+                    row, column, "https://www.kegg.jp/dbget-bin/www_bget?cpd:" + kegg_id
+                )
+                worksheet.write(row, column + 1, kegg_id)
+                worksheet.write(row, column + 2, "Yes")
             else:
                 if metabolite_name in metabolite_name_eligible_ids_mapping.keys():
                     if kegg_id == metabolite_name_eligible_ids_mapping[metabolite_name]:
-                        worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?cpd:"+kegg_id, blue)
-                        worksheet.write(row, column+1, kegg_id, blue)
-                        worksheet.write(row, column+2, "Yes")
+                        worksheet.write_url(
+                            row,
+                            column,
+                            "https://www.kegg.jp/dbget-bin/www_bget?cpd:" + kegg_id,
+                            blue,
+                        )
+                        worksheet.write(row, column + 1, kegg_id, blue)
+                        worksheet.write(row, column + 2, "Yes")
                     else:
-                        worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?cpd:"+kegg_id, blue)
-                        worksheet.write(row, column+1, kegg_id, blue)
+                        worksheet.write_url(
+                            row,
+                            column,
+                            "https://www.kegg.jp/dbget-bin/www_bget?cpd:" + kegg_id,
+                            blue,
+                        )
+                        worksheet.write(row, column + 1, kegg_id, blue)
                 else:
-                    worksheet.write_url(row, column, "https://www.kegg.jp/dbget-bin/www_bget?cpd:"+kegg_id, yellow)
-                    worksheet.write(row, column+1, kegg_id, yellow)
+                    worksheet.write_url(
+                        row,
+                        column,
+                        "https://www.kegg.jp/dbget-bin/www_bget?cpd:" + kegg_id,
+                        yellow,
+                    )
+                    worksheet.write(row, column + 1, kegg_id, yellow)
             column += 3
         row += 1
     workbook.close()
 
     # Compartment data XLSX :D
-    workbook = xlsxwriter.Workbook(basepath+"_compartments.xlsx")
+    workbook = xlsxwriter.Workbook(basepath + "_compartments.xlsx")
     worksheet = workbook.add_worksheet("Compartment pH")
 
     row = 0
@@ -245,13 +291,21 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
     workbook.close()
 
     # Protein data XLSX :D
-    print("NOTE: "+project_name+"_protein_data.xlsx has as default value for the enzyme pool P 0.095 g/gDW.")
+    print(
+        "NOTE: "
+        + project_name
+        + "_protein_data.xlsx has as default value for the enzyme pool P 0.095 g/gDW."
+    )
     print("Please adjust the value accordingly for your model!")
-    workbook = xlsxwriter.Workbook(basepath+"_protein_data.xlsx")
+    workbook = xlsxwriter.Workbook(basepath + "_protein_data.xlsx")
     worksheet = workbook.add_worksheet("Total protein data")
     worksheet.write(0, 0, "Total protein content [g/gDW]:")
-    worksheet.write(0, 1, .095)
-    worksheet.write(1, 0, "Fraction of masses of model-included enzymes in comparison to all enzymes (0.0 to 1.0):")
+    worksheet.write(0, 1, 0.095)
+    worksheet.write(
+        1,
+        0,
+        "Fraction of masses of model-included enzymes in comparison to all enzymes (0.0 to 1.0):",
+    )
     worksheet.write(1, 1, 1.0)
     worksheet.write(2, 0, "Average saturation level (0.0 to 1.0):")
     worksheet.write(2, 1, 1.0)
@@ -261,7 +315,7 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
     workbook.close()
 
     # Metabolite concentrations XLSX :D
-    workbook = xlsxwriter.Workbook(basepath+"_metabolite_concentrations.xlsx")
+    workbook = xlsxwriter.Workbook(basepath + "_metabolite_concentrations.xlsx")
     worksheet = workbook.add_worksheet("Default data")
     worksheet.write(0, 0, "Default minimal metabolite concentration [M]:")
     worksheet.write(1, 0, "Default maximal metabolite concentration [M]:")
@@ -276,11 +330,11 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
     reaction_id_gene_rules_mapping = {}
     for reaction in model.reactions:
         listed_gene_rules = _gene_rule_as_list(reaction.gene_reaction_rule)
-        if listed_gene_rules != ['']:
+        if listed_gene_rules != [""]:
             reaction_id_gene_rules_mapping[reaction.id] = listed_gene_rules
 
     # Write XLSX
-    workbook = xlsxwriter.Workbook(basepath+"_enzyme_stoichiometries.xlsx")
+    workbook = xlsxwriter.Workbook(basepath + "_enzyme_stoichiometries.xlsx")
     # Gene stoichiometry worksheets
     worksheet_stoichiometry = workbook.add_worksheet("Stoichiometries of complexes")
     line = 0
@@ -296,14 +350,16 @@ def get_initial_spreadsheets(model: cobra.Model, project_folder: str, project_na
                 default_stoichiometry = "1"
             else:
                 default_stoichiometry = ";".join(["1" for _ in range(len(or_part))])
-            worksheet_stoichiometry.write(line, row+1, default_stoichiometry)
+            worksheet_stoichiometry.write(line, row + 1, default_stoichiometry)
             row += 2
         line += 1
 
     workbook.close()
 
 
-def get_initial_spreadsheets_with_sbml(sbml_path: str, project_folder: str, project_name: str) -> None:
+def get_initial_spreadsheets_with_sbml(
+    sbml_path: str, project_folder: str, project_name: str
+) -> None:
     """Allows to call get_initial_spreadsheets with an SBML.
 
     Arguments

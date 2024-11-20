@@ -21,8 +21,19 @@ from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
 
 from autopacmen.submodules.helper_create_model import get_irreversible_model
 
-model = set_up_ec_model_with_sbml("./iJO1366star/ec_model_2019_06_25_input/iJO1366.xml", .225)
+model = set_up_ec_model_with_sbml(
+    "./iJO1366star/ec_model_2019_06_25_input/iJO1366.xml", 0.225
+)
 model = get_irreversible_model(model, "_TG_")
-cobra.io.write_sbml_model(model, "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml")
-model = set_up_ec_model_with_sbml("./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml", .225)
-cobra.io.write_sbml_model(model, "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions_SHUT_DOWN_SCENARIO.xml")
+cobra.io.write_sbml_model(
+    model,
+    "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml",
+)
+model = set_up_ec_model_with_sbml(
+    "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml",
+    0.225,
+)
+cobra.io.write_sbml_model(
+    model,
+    "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions_SHUT_DOWN_SCENARIO.xml",
+)

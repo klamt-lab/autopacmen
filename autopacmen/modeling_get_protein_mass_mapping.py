@@ -28,23 +28,31 @@ from .submodules.get_protein_mass_mapping import get_protein_mass_mapping_with_s
 
 # Set-up console arguments using click decorators
 @click.command()
-@click.option("--sbml_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True),
-              prompt="Analyzed SBML",
-              help="Path to the SBML representation of the metabolic model of whose gene rules the protein masses shall be read out")
-@click.option("--project_folder",
-              required=True,
-              type=click.Path(exists=True, dir_okay=True),
-              prompt="Project folder",
-              help="Path to the folder in which the JSON with the protein mass data will be created")
-@click.option("--project_name",
-              required=True,
-              type=str,
-              prompt="Project name",
-              help="Name of the project. This will be the prefix of the created JSON.")
+@click.option(
+    "--sbml_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True),
+    prompt="Analyzed SBML",
+    help="Path to the SBML representation of the metabolic model of whose gene rules the protein masses shall be read out",
+)
+@click.option(
+    "--project_folder",
+    required=True,
+    type=click.Path(exists=True, dir_okay=True),
+    prompt="Project folder",
+    help="Path to the folder in which the JSON with the protein mass data will be created",
+)
+@click.option(
+    "--project_name",
+    required=True,
+    type=str,
+    prompt="Project name",
+    help="Name of the project. This will be the prefix of the created JSON.",
+)
 # Actual CLI function
-def get_protein_mass_list_cli(sbml_path: str, project_folder: str, project_name: str) -> None:
+def get_protein_mass_list_cli(
+    sbml_path: str, project_folder: str, project_name: str
+) -> None:
     """Creates a JSON with the protein masses for all proteins given in the gene rules of the given metabolic model.
 
     The protein masses are read out using the UniProt API. Therefore, the gene rules need protein names which can
@@ -63,7 +71,7 @@ def get_protein_mass_list_cli(sbml_path: str, project_folder: str, project_name:
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.

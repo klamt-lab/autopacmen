@@ -31,7 +31,9 @@ from .helper_general import is_fitting_ec_numbers, json_load, json_write
 
 
 # PRIVATE FUNCTIONS
-def _get_transfer_ec_number_entry(ec_number_entry_key: str, brenda_kcat_database_original: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
+def _get_transfer_ec_number_entry(
+    ec_number_entry_key: str, brenda_kcat_database_original: Dict[str, Dict[str, Any]]
+) -> Dict[str, Any]:
     """Returns the new EC number to which the given EC number was transferred.
 
     This is indicated in the given dictionary by the 'TRANSFER' key.
@@ -65,7 +67,9 @@ def _get_transfer_ec_number_entry(ec_number_entry_key: str, brenda_kcat_database
 
 
 # PUBLIC FUNCTIONS
-def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_json_path: str) -> None:
+def parse_brenda_json_for_model(
+    sbml_path: str, brenda_json_path: str, output_json_path: str
+) -> None:
     """Reads out a BRENDA JSON file created with parse_brenda_textfile and creates a model-specific JSON.
 
     Arguments
@@ -114,7 +118,8 @@ def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_js
         entry_error = False
         if ec_number in brenda_kcat_database_original.keys():
             ec_number_entry = _get_transfer_ec_number_entry(
-                ec_number, brenda_kcat_database_original)
+                ec_number, brenda_kcat_database_original
+            )
             if "ERROR" in ec_number_entry.keys():
                 entry_error = True
             else:
@@ -125,12 +130,14 @@ def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_js
             eligible_ec_number_entries: List[Dict[str, Any]] = []
             for wildcard_level in range(1, 5):
                 for database_ec_number in list(brenda_kcat_database_original.keys()):
-                    if is_fitting_ec_numbers(ec_number, database_ec_number, wildcard_level):
+                    if is_fitting_ec_numbers(
+                        ec_number, database_ec_number, wildcard_level
+                    ):
                         database_ec_number_entry = _get_transfer_ec_number_entry(
-                            database_ec_number, brenda_kcat_database_original)
+                            database_ec_number, brenda_kcat_database_original
+                        )
                         if "ERROR" not in database_ec_number_entry.keys():
-                            eligible_ec_number_entries.append(
-                                database_ec_number_entry)
+                            eligible_ec_number_entries.append(database_ec_number_entry)
                 if len(eligible_ec_number_entries) > 0:
                     break
             ec_number_entry = {}
@@ -141,7 +148,9 @@ def parse_brenda_json_for_model(sbml_path: str, brenda_json_path: str, output_js
                         ec_number_entry[metabolite_key] = metabolite_entry
                     else:
                         ec_number_entry[metabolite_key] = {
-                            **ec_number_entry[metabolite_key], **metabolite_entry}
+                            **ec_number_entry[metabolite_key],
+                            **metabolite_entry,
+                        }
             ec_number_entry["WILDCARD"] = True
             brenda_kcat_database_for_model[ec_number] = ec_number_entry
 

@@ -39,13 +39,20 @@ def get_full_organism_name_from_kegg_id(organism_kegg_id):
     # Use the KEGG API's "info" function
     kegg_organism_info = kegg_rest("info", organism_kegg_id)
     # The name is after many spaces and without unneccesary spaces at the beginning and the end
-    organism_full_name = kegg_organism_info[0].split(
-        "    ")[-1].replace("KEGG Genes Database", "").lstrip().rstrip()
+    organism_full_name = (
+        kegg_organism_info[0]
+        .split("    ")[-1]
+        .replace("KEGG Genes Database", "")
+        .lstrip()
+        .rstrip()
+    )
     # Return the retrieved name :D
     return organism_full_name
 
 
-def kegg_rest(type: str, argument: str, optional_argument: str = "", sleep_time: float = .5) -> List[str]:
+def kegg_rest(
+    type: str, argument: str, optional_argument: str = "", sleep_time: float = 0.5
+) -> List[str]:
     """This function calls Biopython's KEGG REST function and returns the lines as a string list.
 
     All empty lines are deleted from the list as they do not contain any information.
@@ -102,7 +109,8 @@ def kegg_rest_get_batch(input_ids: List[str], batch_size: int = 4) -> List[List[
     current_batch_start = 0
     while current_batch_start < len(input_ids):
         combined_input_ids = "+".join(
-            input_ids[current_batch_start:current_batch_start + batch_size])
+            input_ids[current_batch_start : current_batch_start + batch_size]
+        )
         batched_input_ids.append(combined_input_ids)
         current_batch_start += batch_size
 

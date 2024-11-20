@@ -22,8 +22,12 @@ import z_add_path
 
 from autopacmen.submodules.fva_comparison import fva_comparison_with_sbml
 
-SBML_ORIGINAL: str = "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml"
-SBML_SMOMENT: str = "./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25.xml"
+SBML_ORIGINAL: str = (
+    "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml"
+)
+SBML_SMOMENT: str = (
+    "./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25.xml"
+)
 OUTPUT_FOLDER = "./iJO1366star/ec_model_2019_06_25_output"
 OBJECTIVE: str = "BIOMASS_Ec_iJO1366_core_53p95M"
 

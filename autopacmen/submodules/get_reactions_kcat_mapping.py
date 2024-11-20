@@ -48,7 +48,9 @@ from .ncbi_taxonomy import (
 
 
 # PRIVATE FUNCTIONS
-def _get_kcat_from_protein_kcat_database(searched_direction: str, reaction: cobra.Reaction, protein_kcat_database):
+def _get_kcat_from_protein_kcat_database(
+    searched_direction: str, reaction: cobra.Reaction, protein_kcat_database
+):
     """Returns the kcat from the given protein<->kcat database for the given reaction, if there is one.
 
     The kcat is minimum of the maximal kcats for each protein of the reaction which can be found in the database.
@@ -88,9 +90,14 @@ def _get_kcat_from_protein_kcat_database(searched_direction: str, reaction: cobr
     return min_max_kcat
 
 
-def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, Any], organism: str,
-                   searched_direction: str, reaction: cobra.Reaction,
-                   protein_kcat_database) -> List[float]:
+def _get_kcat_list(
+    searched_metabolites: List[str],
+    complete_entry: Dict[str, Any],
+    organism: str,
+    searched_direction: str,
+    reaction: cobra.Reaction,
+    protein_kcat_database,
+) -> List[float]:
     """Returns a list of kcats for the given reaction, created with a taxonomic search and usingg the protein kcat database.
 
     Algorithm
@@ -144,8 +151,8 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
         if cache_filename in cache_files:
             cache_filepath = cache_basepath + cache_filename
             taxonomy_dict_cache[species] = pickle_load(cache_filepath)
-        elif cache_filename+"_NA" in cache_files:
-            cache_filepath = cache_basepath + cache_filename+"_NA"
+        elif cache_filename + "_NA" in cache_files:
+            cache_filepath = cache_basepath + cache_filename + "_NA"
             taxonomy_dict_cache[species] = pickle_load(cache_filepath)
         else:
             species_to_search.append(species)
@@ -176,11 +183,11 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     score_dict = most_taxonomic_similar(organism, full_taxonomy_dict)
     for species in full_taxonomy_dict.keys():
         if species not in score_dict:
-            score_dict[species] = max(score_dict.values())+1
+            score_dict[species] = max(score_dict.values()) + 1
     # If we added the organism without kcat entries for it, we delete its distance
     # since there is no kcat which can be retrieved from it
     if organism_added:
-        del(score_dict[organism])
+        del score_dict[organism]
 
     # Loop through the given organisms taxonomically and start with the lowest distance
     # Keep looping to higher taxonomic distances until the highest distance is reached
@@ -190,9 +197,13 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     current_distance = minimal_distance
     num_min_kcat_entries = 10
     kcat_list: List[float] = []
-    while (len(kcat_list) < num_min_kcat_entries) and (current_distance <= maximal_distance):
+    while (len(kcat_list) < num_min_kcat_entries) and (
+        current_distance <= maximal_distance
+    ):
         for species in score_dict.keys():
-            if species not in species_kcat_mapping.keys():  # e.g. soil bacterium -> bacterium
+            if (
+                species not in species_kcat_mapping.keys()
+            ):  # e.g. soil bacterium -> bacterium
                 continue
             if score_dict[species] == current_distance:
                 kcat_list += species_kcat_mapping[species]
@@ -200,7 +211,9 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
 
     # Get the protein database kcat for this reaction (if there is one, otherwise it returns math.nan)
     if protein_kcat_database != {}:
-        protein_database_kcat = _get_kcat_from_protein_kcat_database(searched_direction, reaction, protein_kcat_database)
+        protein_database_kcat = _get_kcat_from_protein_kcat_database(
+            searched_direction, reaction, protein_kcat_database
+        )
     else:
         protein_database_kcat = math.nan
 
@@ -211,8 +224,15 @@ def _get_kcat_list(searched_metabolites: List[str], complete_entry: Dict[str, An
     return kcat_list
 
 
-def _get_kcat(searched_metabolites, complete_entry, organism: str, searched_direction: str, reaction: cobra.Reaction,
-              protein_kcat_database, type_of_kcat_selection: str = "mean") -> float:
+def _get_kcat(
+    searched_metabolites,
+    complete_entry,
+    organism: str,
+    searched_direction: str,
+    reaction: cobra.Reaction,
+    protein_kcat_database,
+    type_of_kcat_selection: str = "mean",
+) -> float:
     """Returns the kcat for the reaction with the searched metabolites, the given organism and the given complete entry.
 
     Arguments
@@ -233,12 +253,26 @@ def _get_kcat(searched_metabolites, complete_entry, organism: str, searched_dire
     With the final kcat list, the mean of the kcats is taken and returned as output.
     """
     # Get the list of all eligible kcats
-    kcat_list = _get_kcat_list(searched_metabolites, complete_entry, organism, searched_direction, reaction, protein_kcat_database)
+    kcat_list = _get_kcat_list(
+        searched_metabolites,
+        complete_entry,
+        organism,
+        searched_direction,
+        reaction,
+        protein_kcat_database,
+    )
 
     # If the list is shorter than 10, search without any metabolite constraint in order to potentially get more kcats
     if len(kcat_list) < 10:
         searched_metabolites = ["ALL"]
-        kcat_list = _get_kcat_list(searched_metabolites, complete_entry, organism, searched_direction, reaction, protein_kcat_database)
+        kcat_list = _get_kcat_list(
+            searched_metabolites,
+            complete_entry,
+            organism,
+            searched_direction,
+            reaction,
+            protein_kcat_database,
+        )
 
     # Take the eligible kcats using the given selection method
     if type_of_kcat_selection == "mean":
@@ -255,7 +289,9 @@ def _get_kcat(searched_metabolites, complete_entry, organism: str, searched_dire
     return kcat
 
 
-def _get_searched_metabolites(complete_entry, reaction_part_bigg_ids: List[str]) -> List[str]:
+def _get_searched_metabolites(
+    complete_entry, reaction_part_bigg_ids: List[str]
+) -> List[str]:
     """Returns which metabolites have a valid BIGG ID that ca be found in the complete entry.
 
     Arguments
@@ -294,7 +330,9 @@ def _get_searched_metabolites(complete_entry, reaction_part_bigg_ids: List[str])
     return eligible_metabolites
 
 
-def _print_assigned_kcats(reaction_id: str, forward_kcat: float, reverse_kcat: float) -> None:
+def _print_assigned_kcats(
+    reaction_id: str, forward_kcat: float, reverse_kcat: float
+) -> None:
     """Prints the assigned kcats in the terminal.
 
     Example
@@ -321,9 +359,15 @@ def _print_assigned_kcats(reaction_id: str, forward_kcat: float, reverse_kcat: f
 
 
 # PUBLIC FUNCTIONS
-def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name: str,
-                               organism: str, kcat_database_path: str, protein_kcat_database_path: str,
-                               type_of_kcat_selection: str = "mean") -> None:
+def get_reactions_kcat_mapping(
+    sbml_path: str,
+    project_folder: str,
+    project_name: str,
+    organism: str,
+    kcat_database_path: str,
+    protein_kcat_database_path: str,
+    type_of_kcat_selection: str = "mean",
+) -> None:
     """Returns a reaction<->kcat mapping for the given model :D
 
     The selection of kcats is depending on the affected metabolites of the reaction direction (one
@@ -384,8 +428,12 @@ def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name
             forward_kcat: Any = 0
             reverse_kcat: Any = 0
             # Retrieve the kcats from the protein-dependent database :D
-            forward_kcat = _get_kcat_from_protein_kcat_database("forward", reaction, protein_kcat_database)
-            reverse_kcat = _get_kcat_from_protein_kcat_database("reverse", reaction, protein_kcat_database)
+            forward_kcat = _get_kcat_from_protein_kcat_database(
+                "forward", reaction, protein_kcat_database
+            )
+            reverse_kcat = _get_kcat_from_protein_kcat_database(
+                "reverse", reaction, protein_kcat_database
+            )
 
             # If no kcat could be assigned, set the kcat to math.nan
             # which indicates this case
@@ -458,8 +506,12 @@ def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name
                         complete_entry["ALL"][species_key] = []
                     # Add the list of kcats of the currently analyzed EC number to the current species
                     # and the current metabolite, and for "ALL"
-                    complete_entry[metabolite_key][species_key] += reaction_id_entry[metabolite_key][species_key]
-                    complete_entry["ALL"][species_key] += reaction_id_entry[metabolite_key][species_key]
+                    complete_entry[metabolite_key][species_key] += reaction_id_entry[
+                        metabolite_key
+                    ][species_key]
+                    complete_entry["ALL"][species_key] += reaction_id_entry[
+                        metabolite_key
+                    ][species_key]
 
         # If no entries with kcats could be found for any of the eligible EC numbers, continue with the next reaction.
         if complete_entry["ALL"] == {}:
@@ -484,12 +536,28 @@ def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name
         # Get the metabolites which are used in the subsequent forward kcat search
         searched_educts = _get_searched_metabolites(complete_entry, educt_bigg_ids)
         # Get the forward kcat depending on the educts and the organism
-        forward_kcat = _get_kcat(searched_educts, complete_entry, organism, "forward", reaction, protein_kcat_database, type_of_kcat_selection)
+        forward_kcat = _get_kcat(
+            searched_educts,
+            complete_entry,
+            organism,
+            "forward",
+            reaction,
+            protein_kcat_database,
+            type_of_kcat_selection,
+        )
 
         # Get the metabolites which are used in the subsequent forward kcat search
         searched_products = _get_searched_metabolites(complete_entry, product_bigg_ids)
         # Get the reverse kcat depending on the products and the organism
-        reverse_kcat = _get_kcat(searched_products, complete_entry, organism, "reverse", reaction, protein_kcat_database, type_of_kcat_selection)
+        reverse_kcat = _get_kcat(
+            searched_products,
+            complete_entry,
+            organism,
+            "reverse",
+            reaction,
+            protein_kcat_database,
+            type_of_kcat_selection,
+        )
 
         # Set the found out kcats in the reactions<->kcat mapping :D
         reactions_kcat_mapping[reaction.id] = {}
@@ -500,4 +568,6 @@ def get_reactions_kcat_mapping(sbml_path: str, project_folder: str, project_name
         _print_assigned_kcats(reaction.id, forward_kcat, reverse_kcat)
 
     # Export the kcat mapping results as JSON :D
-    json_write(basepath+"_reactions_kcat_mapping_combined.json", reactions_kcat_mapping)
+    json_write(
+        basepath + "_reactions_kcat_mapping_combined.json", reactions_kcat_mapping
+    )

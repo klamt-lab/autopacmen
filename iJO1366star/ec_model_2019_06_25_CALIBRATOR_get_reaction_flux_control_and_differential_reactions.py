@@ -41,24 +41,30 @@ project_name = "psb_orth"
 
 # Read SBML model
 print("Reading SBML model...")
-original_thermogecko_sbml_path: str = "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml"
-model: cobra.Model = set_up_ec_model_with_sbml(
-    original_thermogecko_sbml_path, .095)
+original_thermogecko_sbml_path: str = (
+    "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml"
+)
+model: cobra.Model = set_up_ec_model_with_sbml(original_thermogecko_sbml_path, 0.095)
 
 # Set protein bound
-model.reactions.get_by_id("ER_pool_TG_").upper_bound = .095
+model.reactions.get_by_id("ER_pool_TG_").upper_bound = 0.095
 
 # Get flux controlling proteins
 print("Getting flux control files...")
 reaction_flux_control_by_scenario(
-    model, flux_control_folder, project_name, ec_model_scenarios_for_optimization)
+    model, flux_control_folder, project_name, ec_model_scenarios_for_optimization
+)
 
 # Get differential proteins
 print("Getting differential reactions (Growth)...")
-unique_differential_reactions_of_scenarios, _ = \
-    get_differential_reactions(list(ec_model_scenarios_for_optimization.keys()), flux_control_folder, project_name,
-                               ec_model_scenarios_for_optimization,
-                               threshold=(.1) / 1000, print_result=True)
+unique_differential_reactions_of_scenarios, _ = get_differential_reactions(
+    list(ec_model_scenarios_for_optimization.keys()),
+    flux_control_folder,
+    project_name,
+    ec_model_scenarios_for_optimization,
+    threshold=(0.1) / 1000,
+    print_result=True,
+)
 
 # Get unique reactions in MATLAB style
 for scenario_key in unique_differential_reactions_of_scenarios.keys():
@@ -66,5 +72,7 @@ for scenario_key in unique_differential_reactions_of_scenarios.keys():
     unique_reactions = unique_differential_reactions_of_scenarios[scenario_key]
     for unique_reaction in unique_reactions:
         print(f'"R_{unique_reaction}",')
-json_write("./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES_unique_differential_reactions_of_scenarios.json",
-           unique_differential_reactions_of_scenarios)
+json_write(
+    "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES_unique_differential_reactions_of_scenarios.json",
+    unique_differential_reactions_of_scenarios,
+)

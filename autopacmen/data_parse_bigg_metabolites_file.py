@@ -29,17 +29,23 @@ from .submodules.parse_bigg_metabolites_file import parse_bigg_metabolites_file
 
 # Set-up command-line parameters using click decorators
 @click.command()
-@click.option("--bigg_metabolites_file_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
-              prompt="Full path to the BIGG metabolites",
-              help="BIGG metabolites file path")
-@click.option("--json_output_folder",
-              required=True,
-              type=click.Path(exists=True, dir_okay=True),
-              prompt="JSON output folder",
-              help="Path to the folder in which the newly generated JSON will be created")
-def parse_brenda_textfile_cli(bigg_metabolites_file_path: str, json_output_folder: str) -> None:
+@click.option(
+    "--bigg_metabolites_file_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="Full path to the BIGG metabolites",
+    help="BIGG metabolites file path",
+)
+@click.option(
+    "--json_output_folder",
+    required=True,
+    type=click.Path(exists=True, dir_okay=True),
+    prompt="JSON output folder",
+    help="Path to the folder in which the newly generated JSON will be created",
+)
+def parse_brenda_textfile_cli(
+    bigg_metabolites_file_path: str, json_output_folder: str
+) -> None:
     """Converts the given BIGG metabolites text file into a machine-readable JSON file.
 
     The BIGG metabolites text file can be downloaded as text file from http://bigg.ucsd.edu/data_access
@@ -58,7 +64,7 @@ def parse_brenda_textfile_cli(bigg_metabolites_file_path: str, json_output_folde
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.
