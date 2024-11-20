@@ -23,7 +23,9 @@ This module contains the functions which perform FVA for two cobrapy models.
 import cobra
 
 
-def fva_comparison(model_original: cobra.Model, model_smoment: cobra.Model, objective: str = "") -> None:
+def fva_comparison(
+    model_original: cobra.Model, model_smoment: cobra.Model, objective: str = ""
+) -> None:
     """Compares the original model with the AutoPACMEN model using FVA for 100% of the objective value.
 
     The results are printed in the console, and are using cobrapy's FVA summary function.
@@ -49,11 +51,15 @@ def fva_comparison(model_original: cobra.Model, model_smoment: cobra.Model, obje
         model_smoment.objective = objective
     # Perform and print FVA for the sMOMENTed model :D
     model_smoment.optimize()
-    print("\sMOMENT-enhanced model, FVA solution (for 100% of the maximal objective value):")
+    print(
+        "\sMOMENT-enhanced model, FVA solution (for 100% of the maximal objective value):"
+    )
     model_smoment.summary()
 
 
-def fva_comparison_with_sbml(sbml_original_path: str, sbml_smomented_path: str, objective: str) -> None:
+def fva_comparison_with_sbml(
+    sbml_original_path: str, sbml_smomented_path: str, objective: str
+) -> None:
     """Loads the two given SBMLs using cobrapy, and uses fva_comparison.
 
     Arguments

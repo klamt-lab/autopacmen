@@ -19,15 +19,18 @@ This module contains functions which return a combined kcat database from
 SABIO-RK and BRENDA data.
 """
 
-# IMPORTS
-# Internal modules
-from .helper_general import json_load, json_write
 # External modules
 from typing import Any, Dict, List
 
+# IMPORTS
+# Internal modules
+from .helper_general import json_load, json_write
+
 
 # PUBLIC FUNCTIONS
-def create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_database_path: str, output_path: str) -> None:
+def create_combined_kcat_database(
+    sabio_rk_kcat_database_path: str, brenda_kcat_database_path: str, output_path: str
+) -> None:
     """Creates a combined JSON of the given SABIO-K and BRENDA kcat databases with non-wildcard entries only.
 
     Arguments
@@ -68,16 +71,26 @@ def create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_
         # Get the wildcard status (i.e., found with a * wildcard?) and check if the EC number occurs anywhere...
         # ...for SABIO-RK
         if ec_number_key not in sabio_rk_database.keys():
-            print(f"WARNING: EC number {ec_number_key} could not be found in SABIO-RK, even with wildcards")
-            print("Possible reasons: The EC number format is invalid or there was an SABIO-RK API error")
-            is_sabio_rk_from_wildcard = True  # Let the combined database ignore this entry
+            print(
+                f"WARNING: EC number {ec_number_key} could not be found in SABIO-RK, even with wildcards"
+            )
+            print(
+                "Possible reasons: The EC number format is invalid or there was an SABIO-RK API error"
+            )
+            is_sabio_rk_from_wildcard = (
+                True  # Let the combined database ignore this entry
+            )
         else:
             is_sabio_rk_from_wildcard = sabio_rk_database[ec_number_key]["WILDCARD"]
         # ...and for BRENDA
         if ec_number_key not in brenda_database.keys():
-            print(f"WARNING: EC number {ec_number_key} could not be found in SABIO-RK, even with wildcards")
+            print(
+                f"WARNING: EC number {ec_number_key} could not be found in SABIO-RK, even with wildcards"
+            )
             print("Possible reason: The EC number format is invalid")
-            is_brenda_from_wildcard = True  # Let the combined database ignore this entry
+            is_brenda_from_wildcard = (
+                True  # Let the combined database ignore this entry
+            )
         else:
             is_brenda_from_wildcard = brenda_database[ec_number_key]["WILDCARD"]
 
@@ -93,7 +106,9 @@ def create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_
             # ...by reading their metabolites...
             sabio_rk_metabolite_keys = list(sabio_rk_database[ec_number_key].keys())
             brenda_metabolite_keys = list(brenda_database[ec_number_key].keys())
-            metabolite_keys = list(set(sabio_rk_metabolite_keys + brenda_metabolite_keys))
+            metabolite_keys = list(
+                set(sabio_rk_metabolite_keys + brenda_metabolite_keys)
+            )
             # ...going through them...
             for metabolite_key in metabolite_keys:
                 # ...excluding the WILDCARD key...
@@ -101,11 +116,16 @@ def create_combined_kcat_database(sabio_rk_kcat_database_path: str, brenda_kcat_
                     continue
                 # ...and adding the metabolites according to their presence in the databases :D
                 is_metabolite_in_brenda: bool = metabolite_key in brenda_metabolite_keys
-                is_metabolite_in_sabio_rk: bool = metabolite_key in sabio_rk_metabolite_keys
+                is_metabolite_in_sabio_rk: bool = (
+                    metabolite_key in sabio_rk_metabolite_keys
+                )
                 if is_metabolite_in_brenda and is_metabolite_in_sabio_rk:
                     sabio_rk_entry = sabio_rk_database[ec_number_key][metabolite_key]
                     brenda_entry = brenda_database[ec_number_key][metabolite_key]
-                    combined_database[ec_number_key][metabolite_key] = {**sabio_rk_entry, **brenda_entry}
+                    combined_database[ec_number_key][metabolite_key] = {
+                        **sabio_rk_entry,
+                        **brenda_entry,
+                    }
                 elif is_metabolite_in_brenda:
                     brenda_entry = brenda_database[ec_number_key][metabolite_key]
                     combined_database[ec_number_key][metabolite_key] = brenda_entry

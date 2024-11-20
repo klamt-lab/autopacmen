@@ -18,36 +18,46 @@
 Command-line interface for get_protein_mass_mapping
 """
 
+from typing import Dict, Tuple, Union
+
 # IMPORTS
 # External modules
 import click
 import cobra
-from typing import Dict, Tuple, Union
+
 # Internal modules
 from .submodules.apply_manual_changes import apply_manual_changes
 
 
 # Set-up console arguments using click decorators
 @click.command()
-@click.option("--sbml_path_input",
-              required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True),
-              prompt="Input SBML",
-              help="Full path to the SBML of which the kcats shall be changed manually")
-@click.option("--sbml_path_output",
-              required=True,
-              type=click.Path(exists=True, dir_okay=True),
-              prompt="Output SBML",
-              help="Full path to the newly created SBML with the manual kcat changes")
-@click.option("--kcat_change_factors",
-              required=True,
-              type=str,
-              prompt="Description of the manual kcat changes:",
-              help="Textual description of the manual kcat changes. The format of this description is: . Basic format: basereaction_id,reaction_direction,change_factor;(...) "
-                   "Example: if one wants to lower the kcat of the reverse reaction of ACALD by the factor 10, and to highen the kcat of the irreversible reaction CBD by the factor 5, then the textual description of the changes would be: "
-                   "ACALD,reverse,1/10;CBD,,5")
+@click.option(
+    "--sbml_path_input",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True),
+    prompt="Input SBML",
+    help="Full path to the SBML of which the kcats shall be changed manually",
+)
+@click.option(
+    "--sbml_path_output",
+    required=True,
+    type=click.Path(exists=True, dir_okay=True),
+    prompt="Output SBML",
+    help="Full path to the newly created SBML with the manual kcat changes",
+)
+@click.option(
+    "--kcat_change_factors",
+    required=True,
+    type=str,
+    prompt="Description of the manual kcat changes:",
+    help="Textual description of the manual kcat changes. The format of this description is: . Basic format: basereaction_id,reaction_direction,change_factor;(...) "
+    "Example: if one wants to lower the kcat of the reverse reaction of ACALD by the factor 10, and to highen the kcat of the irreversible reaction CBD by the factor 5, then the textual description of the changes would be: "
+    "ACALD,reverse,1/10;CBD,,5",
+)
 # Actual CLI function
-def apply_manual_changes_cli(sbml_path_input: str, sbml_path_output: str, kcat_change_factors: str) -> None:
+def apply_manual_changes_cli(
+    sbml_path_input: str, sbml_path_output: str, kcat_change_factors: str
+) -> None:
     """Applies manually given kcat changes to the given sMOMENT model.
 
     This application is given by multiplying the stoichiometry of the protein pool pseudo-metabolite in a reaction with the
@@ -77,7 +87,7 @@ def apply_manual_changes_cli(sbml_path_input: str, sbml_path_output: str, kcat_c
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.

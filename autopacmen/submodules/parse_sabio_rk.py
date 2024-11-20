@@ -24,12 +24,19 @@ platform.
 import copy
 import csv
 import io
-import requests
 import time
 from typing import Any, Dict, List
-# Internal libraries
-from .helper_general import ensure_folder_existence, get_files, is_fitting_ec_numbers, json_load, json_write
 
+import requests
+
+# Internal libraries
+from .helper_general import (
+    ensure_folder_existence,
+    get_files,
+    is_fitting_ec_numbers,
+    json_load,
+    json_write,
+)
 
 # SCRIPT-WIDE CONSTANTS
 # URL for SABIO-RK's kcat REST API
@@ -42,8 +49,8 @@ WAIT_TIME = 1.5
 # used all over AutoPACMEN.
 UNIT_MULTIPLIER: Dict[str, float] = {
     "s^(-1)": 1.0,
-    "min^(-1)": 1/60,
-    "h^(-1)": 1/(60*60),
+    "min^(-1)": 1 / 60,
+    "h^(-1)": 1 / (60 * 60),
 }
 
 
@@ -140,7 +147,16 @@ def sabio_rk_query_with_string(query_string: str) -> str:
     # Build-up SABIO-RK query with a dictionary format that can be understood by the
     # requests library (this is also the way to retrieve potential huge amounts of
     # information as shown in SABIO-RK's API documentation).
-    query = {"fields[]": ["ECNumber", "KeggReactionID", "Organism", "Parameter", "Substrate"], "q": query_string}
+    query = {
+        "fields[]": [
+            "ECNumber",
+            "KeggReactionID",
+            "Organism",
+            "Parameter",
+            "Substrate",
+        ],
+        "q": query_string,
+    }
 
     # Send the request to SABIO-RK :D
     request = requests.post(QUERY_URL, params=query)
@@ -208,8 +224,12 @@ def sabio_rk_query_get_csv_lines(query_dicts: List[Any]) -> Any:
         return list(csv.DictReader(io.StringIO(result), delimiter="\t"))
 
 
-def get_id_associated_kcats(searched_ids: List[str], id_type: str,
-                            bigg_id_name_mapping_path: str, batch_size: int = 5) -> Dict[str, Any]:
+def get_id_associated_kcats(
+    searched_ids: List[str],
+    id_type: str,
+    bigg_id_name_mapping_path: str,
+    batch_size: int = 5,
+) -> Dict[str, Any]:
     """Returns a dictionary with SABIO-RK kcat data for the given EC numbers or KEGG IDs.
 
     This function calls the SABIO-RK API.
@@ -275,7 +295,7 @@ def get_id_associated_kcats(searched_ids: List[str], id_type: str,
     # Loop while not all IDs were searched \o/
     while batch_start < len(searched_ids):
         # Get the batch for the search :-)
-        batch = searched_ids[batch_start: batch_start + batch_size]
+        batch = searched_ids[batch_start : batch_start + batch_size]
         # The query dicts contain a list of dictionaries which contain
         # the data for a SABIO-RK search entry
         query_dicts: List[Dict[str, str]] = []
@@ -291,7 +311,13 @@ def get_id_associated_kcats(searched_ids: List[str], id_type: str,
                 print(f"Loading {cache_filename}...")
             # Otherwise, create an actual SABIO-RK API search query
             else:
-                query_dicts.append({id_name: ec_number, "Parametertype": "kcat", "EnzymeType": "wildtype"})
+                query_dicts.append(
+                    {
+                        id_name: ec_number,
+                        "Parametertype": "kcat",
+                        "EnzymeType": "wildtype",
+                    }
+                )
         # If not all of the searched IDs are present in the cache...
         if len(query_dicts) > 0:
             # ...use SABIO-RK's API :D
@@ -321,7 +347,9 @@ def get_id_associated_kcats(searched_ids: List[str], id_type: str,
             ec_number = row[id_name]
             # Generate a lowercarse and semicolon seperated list of substrates
             substrates_names = row["Substrate"]
-            substrates_list = [x.lower() for x in substrates_names.replace("+", "").split(";")]
+            substrates_list = [
+                x.lower() for x in substrates_names.replace("+", "").split(";")
+            ]
             substrates_list = sorted(substrates_list)
             # Convert the substrates name list into a BIGG ID list (only works
             # if there is a name<->BIGG ID mapping present for each substrate)
@@ -370,14 +398,20 @@ def get_id_associated_kcats(searched_ids: List[str], id_type: str,
         # which fit into the wildcard (i.e 1.1.1.123 in 1.1.1.*) :D
         for wildcarded_ec_number in wildcarded_searched_ec_numbers:
             # Ste the cache name for the wildcarded EC number
-            cache_filename = wildcarded_ec_number.replace(".", "_").replace("*", "W") + ".json"
+            cache_filename = (
+                wildcarded_ec_number.replace(".", "_").replace("*", "W") + ".json"
+            )
             # If the wildcarded EC number cannot be found in the cache, search for
             # fitting EC numbers, and combine their entries into a huge entry for the
             # wildcarded EC number
             if cache_filename not in cache_files:
                 fitting_ec_numbers = []
                 for found_ec_number in temp_ec_numbers_found_in_search:
-                    if is_fitting_ec_numbers(wildcarded_ec_number, found_ec_number, wildcarded_ec_number.count("*")):
+                    if is_fitting_ec_numbers(
+                        wildcarded_ec_number,
+                        found_ec_number,
+                        wildcarded_ec_number.count("*"),
+                    ):
                         fitting_ec_numbers.append(found_ec_number)
 
                 # Combine the EC number entries of fitting EC numbers :D
@@ -386,24 +420,54 @@ def get_id_associated_kcats(searched_ids: List[str], id_type: str,
                     fitting_ec_number_result = output[fitting_ec_number]
                     for metabolite_key in fitting_ec_number_result.keys():
                         if metabolite_key not in wildcarded_ec_number_dict.keys():
-                            wildcarded_ec_number_dict[metabolite_key] = fitting_ec_number_result[metabolite_key]
+                            wildcarded_ec_number_dict[metabolite_key] = (
+                                fitting_ec_number_result[metabolite_key]
+                            )
                         else:
-                            for organism_key in fitting_ec_number_result[metabolite_key].keys():
-                                if organism_key not in wildcarded_ec_number_dict[metabolite_key].keys():
-                                    wildcarded_ec_number_dict[metabolite_key][organism_key] =\
-                                        copy.deepcopy(fitting_ec_number_result[metabolite_key][organism_key])
+                            for organism_key in fitting_ec_number_result[
+                                metabolite_key
+                            ].keys():
+                                if (
+                                    organism_key
+                                    not in wildcarded_ec_number_dict[
+                                        metabolite_key
+                                    ].keys()
+                                ):
+                                    wildcarded_ec_number_dict[metabolite_key][
+                                        organism_key
+                                    ] = copy.deepcopy(
+                                        fitting_ec_number_result[metabolite_key][
+                                            organism_key
+                                        ]
+                                    )
                                 else:
-                                    wildcarded_ec_number_dict[metabolite_key][organism_key] +=\
-                                        copy.deepcopy(fitting_ec_number_result[metabolite_key][organism_key])
-                                wildcarded_ec_number_dict[metabolite_key][organism_key] =\
-                                    list(set(wildcarded_ec_number_dict[metabolite_key][organism_key]))
+                                    wildcarded_ec_number_dict[metabolite_key][
+                                        organism_key
+                                    ] += copy.deepcopy(
+                                        fitting_ec_number_result[metabolite_key][
+                                            organism_key
+                                        ]
+                                    )
+                                wildcarded_ec_number_dict[metabolite_key][
+                                    organism_key
+                                ] = list(
+                                    set(
+                                        wildcarded_ec_number_dict[metabolite_key][
+                                            organism_key
+                                        ]
+                                    )
+                                )
                 # Create cache files for the searched wildcarded EC numbers \o/
                 if wildcarded_ec_number_dict != {}:
-                    json_write(cache_basepath + cache_filename, wildcarded_ec_number_dict)
+                    json_write(
+                        cache_basepath + cache_filename, wildcarded_ec_number_dict
+                    )
                     wildcard_output[wildcarded_ec_number] = wildcarded_ec_number_dict
             # If the wildcarded EC number is in the cache, load the cache file :D
             else:
-                wildcard_output[wildcarded_ec_number] = json_load(cache_basepath + cache_filename)
+                wildcard_output[wildcarded_ec_number] = json_load(
+                    cache_basepath + cache_filename
+                )
                 print(f"Loading {cache_filename}...")
 
         # Continue with the next searched ID batch :D
@@ -416,9 +480,9 @@ def get_id_associated_kcats(searched_ids: List[str], id_type: str,
     return output
 
 
-def get_ec_number_kcats_wildcard_search(ec_numbers: List[str],
-                                        bigg_id_name_mapping_path: str,
-                                        batch_size: int = 5) -> Dict[str, Any]:
+def get_ec_number_kcats_wildcard_search(
+    ec_numbers: List[str], bigg_id_name_mapping_path: str, batch_size: int = 5
+) -> Dict[str, Any]:
     """Returns EC number-dependent kcats using an incremental wildcard level until kcarts were found for all ECs.
 
     Arguments
@@ -472,9 +536,13 @@ def get_ec_number_kcats_wildcard_search(ec_numbers: List[str],
     for wildcard_level in range(5):
         # Get the list of all EC numbers which we want to search, i.e. all EC numbers which
         # are not already found.
-        ec_numbers_to_analyze = list(set(ec_numbers) ^ set(all_found_ec_numbers))  # Difference
+        ec_numbers_to_analyze = list(
+            set(ec_numbers) ^ set(all_found_ec_numbers)
+        )  # Difference
         # Add the current wildcard level to the searched EC numbers
-        searched_ec_numbers = [_add_wildcard_to_ec_number(x, wildcard_level) for x in ec_numbers_to_analyze]
+        searched_ec_numbers = [
+            _add_wildcard_to_ec_number(x, wildcard_level) for x in ec_numbers_to_analyze
+        ]
         # If no searched EC numbers are left with the current wildcard level, quit the for loop since we
         # are done :D
         if searched_ec_numbers == []:
@@ -485,14 +553,15 @@ def get_ec_number_kcats_wildcard_search(ec_numbers: List[str],
         if wildcard_level < 3:
             # With a low wildcard level, the default batch size of 5 is acceptable and
             # helps to search quicker
-            resulting_ec_number_kcat_mapping = get_id_associated_kcats(searched_ec_numbers, "EC",
-                                                                       bigg_id_name_mapping_path)
+            resulting_ec_number_kcat_mapping = get_id_associated_kcats(
+                searched_ec_numbers, "EC", bigg_id_name_mapping_path
+            )
         else:
             # With a high wildcard level, no batching of searched EC numbers should be done since
             # the high number of results would make the search much slower D:
-            resulting_ec_number_kcat_mapping = get_id_associated_kcats(searched_ec_numbers, "EC",
-                                                                       bigg_id_name_mapping_path,
-                                                                       batch_size=1)
+            resulting_ec_number_kcat_mapping = get_id_associated_kcats(
+                searched_ec_numbers, "EC", bigg_id_name_mapping_path, batch_size=1
+            )
 
         # In the following loops, the resulting dictionaries for wildcarded EC numbers are mapped to
         # the searched EC numbers, e.g. the if 1.1.1.1233 and 1.1.1.2143 are searched and no results
@@ -504,14 +573,19 @@ def get_ec_number_kcats_wildcard_search(ec_numbers: List[str],
             if ec_number in all_found_ec_numbers:
                 continue
             for found_ec_number in resulting_found_ec_numbers:
-                if not is_fitting_ec_numbers(ec_number, found_ec_number, wildcard_level):
+                if not is_fitting_ec_numbers(
+                    ec_number, found_ec_number, wildcard_level
+                ):
                     continue
                 kcat = resulting_ec_number_kcat_mapping[found_ec_number]
                 if ec_number not in list(ec_number_kcat_mapping.keys()):
                     ec_number_kcat_mapping[ec_number] = kcat
                     temp_all_found_ec_numbers += [ec_number]
                 else:
-                    ec_number_kcat_mapping[ec_number] = {**ec_number_kcat_mapping[ec_number], **kcat}
+                    ec_number_kcat_mapping[ec_number] = {
+                        **ec_number_kcat_mapping[ec_number],
+                        **kcat,
+                    }
                 if wildcard_level == 0:
                     ec_number_kcat_mapping[ec_number]["WILDCARD"] = False
                 else:

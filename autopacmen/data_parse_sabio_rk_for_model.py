@@ -23,29 +23,39 @@ machine-readable JSON.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.parse_sabio_rk_for_model import parse_sabio_rk_for_model_with_sbml
 
+
 # Set-up command-line parameters using click decorators
 @click.command()
-@click.option("--sbml_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
-              prompt="SBML path",
-              help="The path to the metabolic model SBML from which the EC numbers will be "
-                   "read out in order to search them in SABIO-RK.")
-@click.option("--json_output_path",
-              required=True,
-              type=click.Path(dir_okay=True),
-              prompt="JSON output path",
-              help="The path to the newly generated JSON that will include the kcat data from SABIO-RK.")
-@click.option("--bigg_id_name_mapping_path",
-              required=True,
-              type=click.Path(dir_okay=True),
-              prompt="BIGG ID<->Name mapping JSON path",
-              help="The path to the JSON ")
+@click.option(
+    "--sbml_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="SBML path",
+    help="The path to the metabolic model SBML from which the EC numbers will be "
+    "read out in order to search them in SABIO-RK.",
+)
+@click.option(
+    "--json_output_path",
+    required=True,
+    type=click.Path(dir_okay=True),
+    prompt="JSON output path",
+    help="The path to the newly generated JSON that will include the kcat data from SABIO-RK.",
+)
+@click.option(
+    "--bigg_id_name_mapping_path",
+    required=True,
+    type=click.Path(dir_okay=True),
+    prompt="BIGG ID<->Name mapping JSON path",
+    help="The path to the JSON ",
+)
 # Command-line interface function
-def parse_sabio_rk_for_model_with_sbml_cli(sbml_path: str, json_output_path: str, bigg_id_name_mapping_path: str) -> None:
+def parse_sabio_rk_for_model_with_sbml_cli(
+    sbml_path: str, json_output_path: str, bigg_id_name_mapping_path: str
+) -> None:
     """Using the given model, its EC numbers are used for a search in the SABIO-RK database. The kcat results are stored as a JSON :D
 
     SABIO-RK is called using its API, so that a woking internet connection is needed in order to run this script.
@@ -63,11 +73,13 @@ def parse_sabio_rk_for_model_with_sbml_cli(sbml_path: str, json_output_path: str
     python data_parse_sabio_rk_for_model.py --sbml_path C:\\folder\\model.xml --json_output_path C:\\folder\\sabio_rk.json --bigg_id_name_mapping_path C:\\folder\\bigg_ids.json
     </pre>
     """
-    parse_sabio_rk_for_model_with_sbml(sbml_path, json_output_path, bigg_id_name_mapping_path)
+    parse_sabio_rk_for_model_with_sbml(
+        sbml_path, json_output_path, bigg_id_name_mapping_path
+    )
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.

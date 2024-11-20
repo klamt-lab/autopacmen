@@ -21,14 +21,20 @@ Functions for the generation of reaction flux controls for given scenarios.
 # IMPORTS
 # External modules
 import cobra
+
 # Internal modules
 from .helper_create_model import apply_scenario_on_model
 from .helper_general import standardize_folder
 
 
 # PRIVATE FUNCTIONS
-def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name: str,
-                           scenario_key: str, objective: str):
+def _reaction_flux_control(
+    model: cobra.Model,
+    output_folder: str,
+    project_name: str,
+    scenario_key: str,
+    objective: str,
+):
     """Calculate the reaction flux control for the given model.
 
     Arguments
@@ -52,9 +58,11 @@ def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name:
     base_solution = model.optimize()
 
     separator = "\t"
-    output = f"Reaction ID{separator}"\
-             f"Reaction name{separator}"\
-             f"Relative objective flux change\n"
+    output = (
+        f"Reaction ID{separator}"
+        f"Reaction name{separator}"
+        f"Relative objective flux change\n"
+    )
 
     # Go through each reaction and calculate the influence of the deletion of the enzyme constraint:D
     fractions = {}
@@ -65,8 +73,7 @@ def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name:
             continue
 
         # Proceed only if the raction has a protein constraint
-        is_with_protein_pool = "prot_pool" in [
-            x.id for x in reaction.metabolites]
+        is_with_protein_pool = "prot_pool" in [x.id for x in reaction.metabolites]
         if not is_with_protein_pool:
             continue
 
@@ -76,7 +83,8 @@ def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name:
         with model:
             prot_pool_stoichiometry = reaction.metabolites[prot_pool_metabolite]
             reaction.subtract_metabolites(
-                {prot_pool_metabolite: prot_pool_stoichiometry})
+                {prot_pool_metabolite: prot_pool_stoichiometry}
+            )
             solution = model.optimize()
             base_solution_flux = base_solution.fluxes[objective]
             changed_solution_flux = solution.fluxes[objective]
@@ -92,12 +100,16 @@ def _reaction_flux_control(model: cobra.Model, output_folder: str, project_name:
             output += "\n"
 
     # Write the file using the project name and the scenario name
-    with open(output_folder+f"{project_name}_reaction_flux_control_{scenario_key}.txt", "w") as f:
+    with open(
+        output_folder + f"{project_name}_reaction_flux_control_{scenario_key}.txt", "w"
+    ) as f:
         f.write(output)
 
 
 # PUBLIC FUNCTIONS
-def reaction_flux_control_by_scenario(model: cobra.Model, output_folder: str, project_name: str, scenarios):
+def reaction_flux_control_by_scenario(
+    model: cobra.Model, output_folder: str, project_name: str, scenarios
+):
     """Creates reaction flux control files for the given model in the given folder, and depending on the given scenarios.
 
     Definition of 'reaction flux control file':
@@ -125,8 +137,9 @@ def reaction_flux_control_by_scenario(model: cobra.Model, output_folder: str, pr
         objective = scenario["target"]["reaction"]
         with model:
             model = apply_scenario_on_model(model, scenario)
-            _reaction_flux_control(model, output_folder,
-                                   project_name, scenario_key, objective)
+            _reaction_flux_control(
+                model, output_folder, project_name, scenario_key, objective
+            )
 
 
 """

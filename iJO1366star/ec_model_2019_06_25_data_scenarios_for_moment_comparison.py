@@ -21,6 +21,8 @@ Source:
  e1002575), Supplementary Table 3
 """
 
+import z_add_path
+
 exchange_reactions_by_c_source = {
     "Acetate": "EX_ac_e",
     "N-acetylglucosamine": "EX_acgam_e",

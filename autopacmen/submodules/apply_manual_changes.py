@@ -18,14 +18,17 @@
 Includes the function for the application of a manual kcat change
 of a sMOMENT-enhanced model.
 """
+from typing import Dict, Tuple, Union
+
 # IMPORTS
 # External modules
 import cobra
-from typing import Dict, Tuple, Union
 
 
 # PUBLIC FUNCTIONS
-def apply_manual_changes(model: cobra.Model, kcat_change_factors: Dict[str, Tuple[str, Union[float, int]]]) -> cobra.Model:
+def apply_manual_changes(
+    model: cobra.Model, kcat_change_factors: Dict[str, Tuple[str, Union[float, int]]]
+) -> cobra.Model:
     """Applies the given kcat value changes.
 
     Arguments
@@ -81,7 +84,9 @@ def apply_manual_changes(model: cobra.Model, kcat_change_factors: Dict[str, Tupl
         reaction.add_metabolites(change_dict)
 
         # Display the changes
-        print(f"Manual change of {searched_reaction_id}'s kcat, change factor {kcat_change_factor}")
+        print(
+            f"Manual change of {searched_reaction_id}'s kcat, change factor {kcat_change_factor}"
+        )
 
     # Return the changed model :-)
     return model

@@ -21,12 +21,12 @@ This module contains functions which can access NCBI TAXONOMY.
 # IMPORTS
 # External modules
 import time
-from Bio import Entrez
 from typing import Dict, List
 
+from Bio import Entrez
 
 # SCRIPT-WIDE CONSTANTS
-WAIT_TIME = .5  # Time to wait for each API call
+WAIT_TIME = 0.5  # Time to wait for each API call
 NCBI_BATCH_SIZE = 20
 
 
@@ -55,7 +55,7 @@ def get_entrez_id_from_organism_full_name(organism_full_name):
     organism_ncbi_id = record["IdList"][0]
     # txid+NUMBER+[ORGN] is the form that is used for NCBI BLASTP searches to restrict a search
     # to an organism using the Entrez query constraint input.
-    organism_ncbi_id = "txid"+organism_ncbi_id+"[ORGN]"
+    organism_ncbi_id = "txid" + organism_ncbi_id + "[ORGN]"
     # Return the retrieved ID :D
     return organism_ncbi_id
 
@@ -79,7 +79,9 @@ def get_taxonomy_from_organism_ncbi_id(organism_ncbi_id):
     return taxonomy
 
 
-def get_entrez_id_from_organism_full_name_batch(organism_full_names: List[str]) -> List[str]:
+def get_entrez_id_from_organism_full_name_batch(
+    organism_full_names: List[str],
+) -> List[str]:
     """Retrieves the Entrez numeric ID of the given organisms.
 
     This numeric identifier is neccessary for BLAST and NCBI TAXONOMY
@@ -95,7 +97,9 @@ def get_entrez_id_from_organism_full_name_batch(organism_full_names: List[str]) 
     organism_ncbi_ids_result: List[str] = []
     # Go through each organism :D
     while batch_start < len(organism_full_names):
-        organism_full_names_slice = organism_full_names[batch_start:batch_start+NCBI_BATCH_SIZE]
+        organism_full_names_slice = organism_full_names[
+            batch_start : batch_start + NCBI_BATCH_SIZE
+        ]
         query_names = " OR ".join(organism_full_names_slice)
         # An e-mail has to be set, you may change it to yours if you want to
         # be notified if any problems occur.
@@ -109,8 +113,7 @@ def get_entrez_id_from_organism_full_name_batch(organism_full_names: List[str]) 
         organism_ncbi_ids = record["IdList"][::-1]
         # txid+NUMBER+[ORGN] is the form that is used for NCBI BLASTP searches to restrict a search
         # to an organism using the Entrez query constraint input.
-        organism_ncbi_ids_result += ["txid"+x +
-                                     "[ORGN]" for x in organism_ncbi_ids]
+        organism_ncbi_ids_result += ["txid" + x + "[ORGN]" for x in organism_ncbi_ids]
 
         batch_start += NCBI_BATCH_SIZE
         time.sleep(WAIT_TIME)
@@ -118,7 +121,9 @@ def get_entrez_id_from_organism_full_name_batch(organism_full_names: List[str]) 
     return organism_ncbi_ids_result
 
 
-def get_taxonomy_from_organism_ncbi_id_batch(organism_ncbi_ids: List[str]) -> Dict[str, List[str]]:
+def get_taxonomy_from_organism_ncbi_id_batch(
+    organism_ncbi_ids: List[str],
+) -> Dict[str, List[str]]:
     """Get the taxonomy from NCBI Taxonomy of the given organisms using Biopython functions.
 
     The taxonomy is returned as Dictionary (Dict[str, List[str]) for each organism,
@@ -133,7 +138,9 @@ def get_taxonomy_from_organism_ncbi_id_batch(organism_ncbi_ids: List[str]) -> Di
     taxonomies: Dict[str, List[str]] = {}
     batch_start = 0
     while batch_start < len(organism_ncbi_ids):
-        organism_ncbi_ids_slice = organism_ncbi_ids[batch_start:batch_start+NCBI_BATCH_SIZE]
+        organism_ncbi_ids_slice = organism_ncbi_ids[
+            batch_start : batch_start + NCBI_BATCH_SIZE
+        ]
         query_ids = " OR ".join(organism_ncbi_ids_slice)
         Entrez.email = "x@x.x"
         handle = Entrez.efetch(db="Taxonomy", id=query_ids, retmode="xml")
@@ -146,7 +153,9 @@ def get_taxonomy_from_organism_ncbi_id_batch(organism_ncbi_ids: List[str]) -> Di
     return taxonomies
 
 
-def most_taxonomic_similar(base_species: str, taxonomy_dict: Dict[str, List[str]]) -> Dict[str, int]:
+def most_taxonomic_similar(
+    base_species: str, taxonomy_dict: Dict[str, List[str]]
+) -> Dict[str, int]:
     """Returns a dictionary with a score of taxonomic distance from the given organism.
 
     e.g. if base_species is "Escherichia coli" and taxonomy_dict is

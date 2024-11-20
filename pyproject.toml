@@ -1,0 +1,32 @@
+[project]
+name = "autopacmen-Paulocracy"
+version = "0.6.3"
+authors = [
+  { name="Pavlos Stephanos Bekiaris" },
+]
+description = "The AutoPACMEN package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "biopython",
+    "cobra",
+    "click",
+    "openpyxl",
+    "pebble",
+    "requests",
+    "xlsxwriter",
+]
+
+[project.scripts]
+cnapy = "cnapy.__main__:main_cnapy"
+[project.urls]
+Homepage = "https://github.com/klamt-lab/autopacmen"
+Issues = "https://github.com/klamt-lab/autopacmen/issues"
+
+[tool.isort]
+profile = "black"

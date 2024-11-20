@@ -25,7 +25,9 @@ from .helper_general import json_write, standardize_folder
 
 
 # PUBLIC FUNCTIONS SECTIONS
-def parse_bigg_metabolites_file(bigg_metabolites_file_path: str, json_output_folder: str) -> None:
+def parse_bigg_metabolites_file(
+    bigg_metabolites_file_path: str, json_output_folder: str
+) -> None:
     """Parses a BIGG metabolites text file and returns a dictionary for this file.
 
     As of 29/04/2019, a BIGG metabolites list of all BIGG-included metabolites
@@ -78,5 +80,4 @@ def parse_bigg_metabolites_file(bigg_metabolites_file_path: str, json_output_fol
         bigg_id_name_mapping[bigg_id] = bigg_id
 
     # Write the JSON in the given folder :D
-    json_write(json_output_folder+"bigg_id_name_mapping.json",
-               bigg_id_name_mapping)
+    json_write(json_output_folder + "bigg_id_name_mapping.json", bigg_id_name_mapping)

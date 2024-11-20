@@ -24,31 +24,38 @@ It uses cobrapy's FVA functions.
 # IMPORTS
 # External module for command-line interfaces
 import click
+
 # Internal module, contains the actual FBA comparison function
 from .submodules.fva_comparison import fva_comparison_with_sbml
 
 
 # Set-up command-line parameters using click decorators
 @click.command()
-@click.option("--sbml_original_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True,
-                              dir_okay=True, readable=True),
-              prompt="Original SBML path",
-              help="Full SBML path of original model without protein allocation constraints")
-@click.option("--sbml_protein_constrained_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True,
-                              dir_okay=True, readable=True),
-              prompt="SBML path of sMOMENT-enhanced model",
-              help="Full SBML path of sMOMENT-enhanced model.")
-@click.option("--objective",
-              required=True,
-              type=str,
-              prompt="Objective",
-              help="Objective of the comparative FVA.")
+@click.option(
+    "--sbml_original_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="Original SBML path",
+    help="Full SBML path of original model without protein allocation constraints",
+)
+@click.option(
+    "--sbml_protein_constrained_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="SBML path of sMOMENT-enhanced model",
+    help="Full SBML path of sMOMENT-enhanced model.",
+)
+@click.option(
+    "--objective",
+    required=True,
+    type=str,
+    prompt="Objective",
+    help="Objective of the comparative FVA.",
+)
 # Command-line interface function
-def fba_comparison_cli(sbml_original_path: str, sbml_protein_constrained_path: str, objective: str) -> None:
+def fba_comparison_cli(
+    sbml_original_path: str, sbml_protein_constrained_path: str, objective: str
+) -> None:
     """FVA (Flux Variability Analysis) comparison with the given arguments, e.g. in order to check the validity of the sMOMENTed model.
 
     An FVA result summary is shown for the original SBML model as
@@ -58,11 +65,12 @@ def fba_comparison_cli(sbml_original_path: str, sbml_protein_constrained_path: s
     python analysis_fva_comparison.py --sbml_original_path C:\\original.xml --sbml_protein_constrained_path C:\\pac.xml --objective ACALD
     """
     fva_comparison_with_sbml(
-        sbml_original_path, sbml_protein_constrained_path, objective)
+        sbml_original_path, sbml_protein_constrained_path, objective
+    )
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.

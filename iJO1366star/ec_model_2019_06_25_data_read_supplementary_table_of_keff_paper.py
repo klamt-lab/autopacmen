@@ -19,14 +19,19 @@ Converts the data from the keff paper into a more machine-readable JSON.
 """
 
 import copy
+from typing import Any, Dict, List
+
 import cobra
 import openpyxl
-from typing import Any, Dict, List
+import z_add_path
 
 from autopacmen.submodules.helper_general import json_write
 
 # Get kcats
-workbook = openpyxl.load_workbook("./iJO1366star/ec_model_2019_06_25_input_keff_paper/c3mb70119k-1.xlsx", read_only=True)
+workbook = openpyxl.load_workbook(
+    "./iJO1366star/ec_model_2019_06_25_input_keff_paper/c3mb70119k-1.xlsx",
+    read_only=True,
+)
 worksheet = workbook["Table S2"]
 
 gene_id_data_mapping: Dict[str, Dict[str, Any]] = {}
@@ -88,4 +93,7 @@ for reaction in model.reactions:
         gene_id_data_mapping[gene_name]["direction"][reaction.id] = direction
 
 # Write JSON :D
-json_write("./iJO1366star/ec_model_2019_06_25_input_keff_paper/gene_id_data_mapping.json", gene_id_data_mapping)
+json_write(
+    "./iJO1366star/ec_model_2019_06_25_input_keff_paper/gene_id_data_mapping.json",
+    gene_id_data_mapping,
+)

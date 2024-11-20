@@ -19,17 +19,21 @@ The function of this module returns SABIO-RK kcat entries for each reaction in t
 given metabolic model.
 """
 
+from typing import List
+
 # IMPORTS
 # External modules
 import cobra
-from typing import List
+
 # Internal modules
-from .parse_sabio_rk import get_ec_number_kcats_wildcard_search
 from .helper_general import json_write
+from .parse_sabio_rk import get_ec_number_kcats_wildcard_search
 
 
 # PUBLIC FUNCTIONS SECTION
-def parse_sabio_rk_for_model(model: cobra.Model, json_output_path: str, bigg_id_name_mapping_path: str) -> None:
+def parse_sabio_rk_for_model(
+    model: cobra.Model, json_output_path: str, bigg_id_name_mapping_path: str
+) -> None:
     """Retrieves kcats from SABIO-RK for the given model and stores it in a JSON for the given model in the given path.
 
     Algorithm
@@ -83,12 +87,15 @@ def parse_sabio_rk_for_model(model: cobra.Model, json_output_path: str, bigg_id_
 
     # GET KCATS FOR EC NUMBERS
     ec_number_kcat_mapping = get_ec_number_kcats_wildcard_search(
-        ec_numbers_list, bigg_id_name_mapping_path)
+        ec_numbers_list, bigg_id_name_mapping_path
+    )
 
     json_write(json_output_path, ec_number_kcat_mapping)
 
 
-def parse_sabio_rk_for_model_with_sbml(sbml_path: str, json_output_path: str, bigg_id_name_mapping_path: str) -> None:
+def parse_sabio_rk_for_model_with_sbml(
+    sbml_path: str, json_output_path: str, bigg_id_name_mapping_path: str
+) -> None:
     """See this module's parse_sabio_rk_for_model() documentation. This function uses an SBML path.
 
     Arguments
@@ -98,5 +105,4 @@ def parse_sabio_rk_for_model_with_sbml(sbml_path: str, json_output_path: str, bi
     """
     # LOAD SBML MODEL
     model: cobra.Model = cobra.io.read_sbml_model(sbml_path)
-    parse_sabio_rk_for_model(model, json_output_path,
-                             bigg_id_name_mapping_path)
+    parse_sabio_rk_for_model(model, json_output_path, bigg_id_name_mapping_path)

@@ -27,6 +27,8 @@ Sources:
  e1002575), Supplementary Table 3
 """
 
+import z_add_path
+
 ec_model_scenarios_for_optimization = {
     # Glucose as C source (aerobic) from Monk 2016 paper, target is growth
     "Glucose_Aerobic_Growth": {
@@ -40,7 +42,7 @@ ec_model_scenarios_for_optimization = {
             "value": 0.73,
         },
         "weight": 3,
-        "substitution_name": "Glucose (aerobic and anaerobic)"
+        "substitution_name": "Glucose (aerobic and anaerobic)",
     },
     # Glucose as C source (aerobic) from Monk 2016 paper, target is growth
     "Glucose_Anaerobic_Growth": {
@@ -52,24 +54,16 @@ ec_model_scenarios_for_optimization = {
                 "lower_bound": 0,
                 "upper_bound": 0,
             },
-            "EX_succ_e": {
-                "upper_bound": 1000
-            },
-            "EX_for_e": {
-                "upper_bound": 1000
-            },
-            "EX_glyclt_e": {
-                "upper_bound": 1000
-            },
-            "EX_lac__D_e": {
-                "upper_bound": 1000
-            },
+            "EX_succ_e": {"upper_bound": 1000},
+            "EX_for_e": {"upper_bound": 1000},
+            "EX_glyclt_e": {"upper_bound": 1000},
+            "EX_lac__D_e": {"upper_bound": 1000},
         },
         "target": {
             "reaction": "BIOMASS_Ec_iJO1366_core_53p95M",
             "value": 0.46,
         },
-        "substitution_name": "Glucose (aerobic and anaerobic)"
+        "substitution_name": "Glucose (aerobic and anaerobic)",
     },
     # Acetate as C source (aerobic) from Adadi 2012 paper
     "Acetate": {
@@ -360,18 +354,10 @@ ec_model_scenarios_for_optimization_uptake = {
                 "lower_bound": 0,
                 "upper_bound": 0,
             },
-            "EX_succ_e": {
-                "upper_bound": 1000
-            },
-            "EX_for_e": {
-                "upper_bound": 1000
-            },
-            "EX_glyclt_e": {
-                "upper_bound": 1000
-            },
-            "EX_lac__D_e": {
-                "upper_bound": 1000
-            },
+            "EX_succ_e": {"upper_bound": 1000},
+            "EX_for_e": {"upper_bound": 1000},
+            "EX_glyclt_e": {"upper_bound": 1000},
+            "EX_lac__D_e": {"upper_bound": 1000},
         },
         "target": {
             "reaction": "EX_glc__D_e",
@@ -402,7 +388,6 @@ ec_model_scenarios_for_optimization_uptake = {
             "value": 3.49,
         },
     },
-
     "Glucose_Anaerobic_Acetate_Secretion": {
         "setup": {
             "EX_glc__D_e": {
@@ -412,18 +397,10 @@ ec_model_scenarios_for_optimization_uptake = {
                 "lower_bound": 0,
                 "upper_bound": 0,
             },
-            "EX_succ_e": {
-                "upper_bound": 1000
-            },
-            "EX_for_e": {
-                "upper_bound": 1000
-            },
-            "EX_glyclt_e": {
-                "upper_bound": 1000
-            },
-            "EX_lac__D_e": {
-                "upper_bound": 1000
-            },
+            "EX_succ_e": {"upper_bound": 1000},
+            "EX_for_e": {"upper_bound": 1000},
+            "EX_glyclt_e": {"upper_bound": 1000},
+            "EX_lac__D_e": {"upper_bound": 1000},
         },
         "target": {
             "reaction": "EX_ac_e",

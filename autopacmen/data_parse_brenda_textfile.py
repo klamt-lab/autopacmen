@@ -22,34 +22,42 @@ a machine-readable JSON.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.parse_brenda_textfile import parse_brenda_textfile
 
 
 # Set-up command-line parameters using click decorators
 @click.command()
-@click.option("--brenda_textfile_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
-              prompt="Brenda textfile path",
-              help="Full path to the BRENDA database text file.")
-@click.option("--bigg_metabolites_json_folder",
-              required=True,
-              type=click.Path(exists=True, dir_okay=True),
-              prompt="BIGG metabolites JSON folder",
-              help="The folder of the BIGG metabolites JSON (created using "
-                   "data_parse_bigg_metabolites_file.py). The name of the JSON "
-                   "must not have been changed.")
-@click.option("--json_output_path",
-              required=True,
-              type=click.Path(file_okay=True, dir_okay=True, writable=True),
-              prompt="JSON output path",
-              help="The full path for the more machine-readable JSON file of the"
-                   " BRENDA database text file shall be placed. The resulting JSON "
-                   "will have the name. This JSON will be created with this script.")
+@click.option(
+    "--brenda_textfile_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True, readable=True),
+    prompt="Brenda textfile path",
+    help="Full path to the BRENDA database text file.",
+)
+@click.option(
+    "--bigg_metabolites_json_folder",
+    required=True,
+    type=click.Path(exists=True, dir_okay=True),
+    prompt="BIGG metabolites JSON folder",
+    help="The folder of the BIGG metabolites JSON (created using "
+    "data_parse_bigg_metabolites_file.py). The name of the JSON "
+    "must not have been changed.",
+)
+@click.option(
+    "--json_output_path",
+    required=True,
+    type=click.Path(file_okay=True, dir_okay=True, writable=True),
+    prompt="JSON output path",
+    help="The full path for the more machine-readable JSON file of the"
+    " BRENDA database text file shall be placed. The resulting JSON "
+    "will have the name. This JSON will be created with this script.",
+)
 # Command-line interface function
-def parse_brenda_textfile_cli(brenda_textfile_path: str, bigg_metabolites_json_folder: str,
-                              json_output_path: str) -> None:
+def parse_brenda_textfile_cli(
+    brenda_textfile_path: str, bigg_metabolites_json_folder: str, json_output_path: str
+) -> None:
     """Converts the given BRENDA text file into a more machine-readable JSON file.
 
     The BRENDA database can be downloaded as text file from https://www.brenda-enzymes.org/download_brenda_without_registration.php
@@ -69,11 +77,13 @@ def parse_brenda_textfile_cli(brenda_textfile_path: str, bigg_metabolites_json_f
     python data_parse_brenda_textfile.py --brenda_textfile_path C:\\folder\\download.txt --bigg_metabolites_json_folder C:\\bigg\\ --json_output_path C:\\folder\\brenda.json
     </pre>
     """
-    parse_brenda_textfile(brenda_textfile_path, bigg_metabolites_json_folder, json_output_path)
+    parse_brenda_textfile(
+        brenda_textfile_path, bigg_metabolites_json_folder, json_output_path
+    )
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.

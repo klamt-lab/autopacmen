@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="autopacmen-Paulocracy",
-    version="0.6.2",
+    version="0.6.3",
     author="Paulocracy",
     author_email="bekiaris@mpi-magdeburg.mpg.de",
     description="The AutoPACMEN package",
@@ -18,7 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.7',
+    python_requires=">=3.7",
     install_requires=[
         "biopython",
         "cobra",

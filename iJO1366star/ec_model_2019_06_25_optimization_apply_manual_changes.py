@@ -16,16 +16,22 @@
 """./iJO1366star/ec_model_2019_06_25_optimization_apply_manual_changes.py"""
 
 import cobra
-from autopacmen.submodules.apply_manual_changes import apply_manual_changes
+import z_add_path
 
+from autopacmen.submodules.apply_manual_changes import apply_manual_changes
 
 KCAT_CHANGE_FACTORS = {
     "PFL": ("", 10),
     "ACALD": ("reverse", 5),
-    "ALCD2x": ("reverse", 1/10),
-    "LDH_D": ("reverse", 1/10),
+    "ALCD2x": ("reverse", 1 / 10),
+    "LDH_D": ("reverse", 1 / 10),
 }
 
-model: cobra.Model = cobra.io.read_sbml_model("./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO.xml")
+model: cobra.Model = cobra.io.read_sbml_model(
+    "./iJO1366star/ec_model_2019_06_25_output/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO.xml"
+)
 model = apply_manual_changes(model, KCAT_CHANGE_FACTORS)
-cobra.io.write_sbml_model(model, "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml")
+cobra.io.write_sbml_model(
+    model,
+    "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366_sMOMENT_2019_06_25_STANDARD_EXCHANGE_SCENARIO_MANUAL_CHANGES.xml",
+)

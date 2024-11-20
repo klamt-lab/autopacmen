@@ -19,26 +19,38 @@ Includes the central function which allows to create a proteome-constraint-enhan
 stoichiometric model :D
 """
 
-# IMPORTS
-# External modules
-import cobra
 import math
 import random
 import statistics
 import sys
 from typing import Dict, List
+
+# IMPORTS
+# External modules
+import cobra
+
+from .helper_create_model import (
+    add_prot_pool_reaction,
+    get_irreversible_model,
+    get_model_with_separated_measured_enzyme_reactions,
+    get_p_measured,
+    read_enzyme_stoichiometries_xlsx,
+    read_protein_data_xlsx,
+)
+
 # Internal modules
 from .helper_general import json_load, standardize_folder
-from .helper_create_model import add_prot_pool_reaction, get_irreversible_model, get_p_measured, \
-    read_enzyme_stoichiometries_xlsx, read_protein_data_xlsx, \
-    get_model_with_separated_measured_enzyme_reactions
 
 
 # PUBLIC FUNCTIONS
-def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str,
-                                       project_folder: str, project_name: str,
-                                       excluded_reactions: List[str],
-                                       type_of_default_kcat_selection: str = "median") -> None:
+def create_smoment_model_reaction_wise(
+    model: cobra.Model,
+    output_sbml_name: str,
+    project_folder: str,
+    project_name: str,
+    excluded_reactions: List[str],
+    type_of_default_kcat_selection: str = "median",
+) -> None:
     """Adds proteomic constraints according to sMOMENT to the given stoichiometric model and stores it as SBML.
 
     Arguments
@@ -73,45 +85,66 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
 
     # READ REACTIONS<->KEGG ID XLSX
     protein_id_mass_mapping: Dict[str, float] = json_load(
-        basepath + "_protein_id_mass_mapping.json")
+        basepath + "_protein_id_mass_mapping.json"
+    )
 
     # Load protein data XLSX
-    protein_id_concentration_mapping, p_total, unmeasured_protein_fraction, mean_saturation = \
-        read_protein_data_xlsx(basepath)
+    (
+        protein_id_concentration_mapping,
+        p_total,
+        unmeasured_protein_fraction,
+        mean_saturation,
+    ) = read_protein_data_xlsx(basepath)
 
     # Read enzyme stoichiometries xlsx
-    reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
-        read_enzyme_stoichiometries_xlsx(basepath)
+    (
+        reaction_id_gene_rules_mapping,
+        reaction_id_gene_rules_protein_stoichiometry_mapping,
+    ) = read_enzyme_stoichiometries_xlsx(basepath)
 
     # Calculate p_measured
     p_measured = get_p_measured(
-        protein_id_concentration_mapping, protein_id_mass_mapping)
+        protein_id_concentration_mapping, protein_id_mass_mapping
+    )
 
     # Split reactions with measured enzymes
-    model, reaction_id_gene_rules_mapping, reaction_id_gene_rules_protein_stoichiometry_mapping = \
-        get_model_with_separated_measured_enzyme_reactions(model,
-                                                           protein_id_concentration_mapping,
-                                                           reaction_id_gene_rules_mapping,
-                                                           reaction_id_gene_rules_protein_stoichiometry_mapping,
-                                                           excluded_reactions,
-                                                           protein_id_mass_mapping)
+    (
+        model,
+        reaction_id_gene_rules_mapping,
+        reaction_id_gene_rules_protein_stoichiometry_mapping,
+    ) = get_model_with_separated_measured_enzyme_reactions(
+        model,
+        protein_id_concentration_mapping,
+        reaction_id_gene_rules_mapping,
+        reaction_id_gene_rules_protein_stoichiometry_mapping,
+        excluded_reactions,
+        protein_id_mass_mapping,
+    )
 
     # Make model irreversible, separating all reversible reactions to which a gene rule is given
     # in order to save some reactions.
     model = get_irreversible_model(model, id_addition)
 
     # Add prot_pool reaction according to the given protein pool values
-    model, prot_pool_metabolite = add_prot_pool_reaction(model, id_addition, p_total, p_measured,
-                                                         unmeasured_protein_fraction, mean_saturation)
+    model, prot_pool_metabolite = add_prot_pool_reaction(
+        model,
+        id_addition,
+        p_total,
+        p_measured,
+        unmeasured_protein_fraction,
+        mean_saturation,
+    )
 
     # Read reaction <-> kcat mapping :-)
     reactions_kcat_mapping_database = json_load(
-        basepath + "_reactions_kcat_mapping_combined.json")
+        basepath + "_reactions_kcat_mapping_combined.json"
+    )
 
     # sMOMENT :D
     # Get all kcats which are not math.nan and calculate the median of them, which will be used as default kcat
-    all_kcats = [x["forward"] for x in reactions_kcat_mapping_database.values()] + \
-                [x["reverse"] for x in reactions_kcat_mapping_database.values()]
+    all_kcats = [x["forward"] for x in reactions_kcat_mapping_database.values()] + [
+        x["reverse"] for x in reactions_kcat_mapping_database.values()
+    ]
     all_kcats = [x for x in all_kcats if not math.isnan(x)]
 
     if type_of_default_kcat_selection == "median":
@@ -121,7 +154,9 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
     elif type_of_default_kcat_selection == "random":
         default_kcat = random.choice(all_kcats)
     else:
-        print('ERROR: Argument type_of_default_kcat_selection must be either "median", "mean" or "random".')
+        print(
+            'ERROR: Argument type_of_default_kcat_selection must be either "median", "mean" or "random".'
+        )
         sys.exit(-1)
 
     print(f"Default kcat is: {default_kcat}")
@@ -131,14 +166,18 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
 
     # Add measured enzyme pseudo-metabolites and pseudo-reactions
     for protein_id in protein_id_concentration_mapping.keys():
-        new_metabolite = cobra.Metabolite(id="ENZYME_"+protein_id,
-                                          name="Pseudo-metabolite of protein "+protein_id,
-                                          compartment="sMOMENT")
+        new_metabolite = cobra.Metabolite(
+            id="ENZYME_" + protein_id,
+            name="Pseudo-metabolite of protein " + protein_id,
+            compartment="sMOMENT",
+        )
         max_protein_concentration = protein_id_concentration_mapping[protein_id]
-        new_reaction = cobra.Reaction(id="ENZYME_DELIVERY_"+protein_id,
-                                      name="Delivery reaction of pseudo-metabolite "+protein_id,
-                                      lower_bound=0,
-                                      upper_bound=max_protein_concentration)
+        new_reaction = cobra.Reaction(
+            id="ENZYME_DELIVERY_" + protein_id,
+            name="Delivery reaction of pseudo-metabolite " + protein_id,
+            lower_bound=0,
+            upper_bound=max_protein_concentration,
+        )
         new_reaction.add_metabolites({new_metabolite: 1})
         model.add_reactions([new_reaction])
 
@@ -227,30 +266,35 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
 
                 # ...get the number of units for this protein...
                 number_units = reaction_id_gene_rules_protein_stoichiometry_mapping[
-                    reaction_id][isozyme_id][isozyme_id]
+                    reaction_id
+                ][isozyme_id][isozyme_id]
                 stoichiometry = number_units
                 # ...and determine the protein pool stoichiometry by
                 # 1) Multiplying the number of units for this protein with its mass (converted from kDa to mDa, since the reaction
                 #    flux is defined for mmol/(gDW*h) and not mol/(gDW*h))
-                stoichiometry *= (protein_id_mass_mapping[isozyme_id] / 1000)
+                stoichiometry *= protein_id_mass_mapping[isozyme_id] / 1000
                 # 2) Dividing it with the reaction's kcat (converted from 1/s to 1/h)
-                stoichiometry /= (reaction_kcat * 3600)
+                stoichiometry /= reaction_kcat * 3600
                 # 3) Setting the right direction (educt)
                 stoichiometry *= -1
                 stoichiometries.append(stoichiometry)
                 stoichiometry_enzyme_name_list.append(
-                    isozyme_id + ";" + str(number_units))
+                    isozyme_id + ";" + str(number_units)
+                )
 
                 # Add proteomics constraints
                 if isozyme_id in protein_id_concentration_mapping.keys():
                     enzyme_pseudo_metabolite = model.metabolites.get_by_id(
-                        "ENZYME_"+isozyme_id)
-                    stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
-                        reaction_id][isozyme_id][isozyme_id]
+                        "ENZYME_" + isozyme_id
+                    )
+                    stoichiometry = (
+                        reaction_id_gene_rules_protein_stoichiometry_mapping[
+                            reaction_id
+                        ][isozyme_id][isozyme_id]
+                    )
                     stoichiometry *= 1 / (reaction_kcat * 3600)
                     stoichiometry *= -1
-                    reaction.add_metabolites(
-                        {enzyme_pseudo_metabolite: stoichiometry})
+                    reaction.add_metabolites({enzyme_pseudo_metabolite: stoichiometry})
             # If it is a complex :O...
             else:
                 # ...convert the complex IDs to a hashable tuple (used for the stoichiometry selection)...
@@ -265,22 +309,25 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
 
                     # ...get the number of units for this protein...
                     number_units = reaction_id_gene_rules_protein_stoichiometry_mapping[
-                        reaction_id][isozyme_id][single_id]
+                        reaction_id
+                    ][isozyme_id][single_id]
                     single_stoichiometry = number_units
                     # ...and determine the protein pool stoichiometry addition by
                     # 1) Multiplying the number of units for this protein with its mass (converted from kDa to Da)
-                    single_stoichiometry *= (
-                        protein_id_mass_mapping[single_id] / 1000)
+                    single_stoichiometry *= protein_id_mass_mapping[single_id] / 1000
                     # 2) Dividing it with the reaction's kcat (converted from 1/s to 1/h)
-                    single_stoichiometry /= (reaction_kcat * 3600)
+                    single_stoichiometry /= reaction_kcat * 3600
                     # 3) Setting the right direction (educt)
                     single_stoichiometry *= -1
                     # 4) and add it to the complex's stoichiometry
                     stoichiometry += single_stoichiometry
                     # Add name of current single ID
-                    stoichiometry_enzyme_name_list[-1] += single_id + \
-                        ";" + str(number_units) + " "
-                stoichiometry_enzyme_name_list[-1] = stoichiometry_enzyme_name_list[-1].rstrip()
+                    stoichiometry_enzyme_name_list[-1] += (
+                        single_id + ";" + str(number_units) + " "
+                    )
+                stoichiometry_enzyme_name_list[-1] = stoichiometry_enzyme_name_list[
+                    -1
+                ].rstrip()
                 # Add to list of stoichiometries
                 stoichiometries.append(stoichiometry)
 
@@ -288,13 +335,18 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
                 for single_id in isozyme_id:
                     if single_id in protein_id_concentration_mapping.keys():
                         enzyme_pseudo_metabolite = model.metabolites.get_by_id(
-                            "ENZYME_"+single_id)
-                        stoichiometry = reaction_id_gene_rules_protein_stoichiometry_mapping[
-                            reaction_id][isozyme_id][single_id]
+                            "ENZYME_" + single_id
+                        )
+                        stoichiometry = (
+                            reaction_id_gene_rules_protein_stoichiometry_mapping[
+                                reaction_id
+                            ][isozyme_id][single_id]
+                        )
                         stoichiometry *= 1 / (reaction_kcat * 3600)
                         stoichiometry *= -1
                         reaction.add_metabolites(
-                            {enzyme_pseudo_metabolite: stoichiometry})
+                            {enzyme_pseudo_metabolite: stoichiometry}
+                        )
 
         # Take the maximal stoichiometry (i.e., the one with the least cost since this one will usually be prefered
         # anyway in an FBA).
@@ -302,20 +354,20 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
         max_stoichiometry = max(stoichiometries)
         metabolites[prot_pool_metabolite] = max_stoichiometry
         reaction.add_metabolites(metabolites)
-        selected_enzyme = stoichiometry_enzyme_name_list[stoichiometries.index(
-            max_stoichiometry)]
+        selected_enzyme = stoichiometry_enzyme_name_list[
+            stoichiometries.index(max_stoichiometry)
+        ]
 
         # Print report of selected kcat and molecular weight for this reaction
         print("Reaction: ", model_reaction_id)
         print("Selected kcat: ", reaction_kcat)
         print("Selected molecular weight (kDa): ", end="")
         if " " in selected_enzyme:  # Multiple enzymes
-            mass_sum = .0
+            mass_sum = 0.0
             for single_enzyme in selected_enzyme.split(" "):
                 enzyme_name = single_enzyme.split(";")[0]
                 enzyme_unit_number = float(single_enzyme.split(";")[1])
-                mass_sum += protein_id_mass_mapping[enzyme_name] * \
-                    enzyme_unit_number
+                mass_sum += protein_id_mass_mapping[enzyme_name] * enzyme_unit_number
             print(mass_sum)
         else:  # Single enzyme
             enzyme_name = selected_enzyme.split(";")[0]
@@ -326,15 +378,23 @@ def create_smoment_model_reaction_wise(model: cobra.Model, output_sbml_name: str
     cobra.io.write_sbml_model(model, project_folder + output_sbml_name)
 
 
-def create_smoment_model_reaction_wise_with_sbml(input_sbml_path: str, output_sbml_name: str,
-                                                 project_folder: str, project_name: str,
-                                                 excluded_reactions: List[str],
-                                                 type_of_default_kcat_selection: str = "median") -> None:
+def create_smoment_model_reaction_wise_with_sbml(
+    input_sbml_path: str,
+    output_sbml_name: str,
+    project_folder: str,
+    project_name: str,
+    excluded_reactions: List[str],
+    type_of_default_kcat_selection: str = "median",
+) -> None:
     """See this module's create_smoment_model_reaction_wise()"""
     # Load SBML model
     model: cobra.Model = cobra.io.read_sbml_model(input_sbml_path)
     # Call gecko model creation function :D
-    create_smoment_model_reaction_wise(model, output_sbml_name,
-                                       project_folder, project_name,
-                                       excluded_reactions,
-                                       type_of_default_kcat_selection)
+    create_smoment_model_reaction_wise(
+        model,
+        output_sbml_name,
+        project_folder,
+        project_name,
+        excluded_reactions,
+        type_of_default_kcat_selection,
+    )

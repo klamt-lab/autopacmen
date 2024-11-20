@@ -19,26 +19,35 @@ Command-line interface for AutoPACMEN's initial spreadsheets function
 """
 
 import click
+
 from .submodules.get_initial_spreadsheets import get_initial_spreadsheets_with_sbml
 
 
 @click.command()
-@click.option("--sbml_path",
-              required=True,
-              type=click.Path(exists=True, file_okay=True, dir_okay=True),
-              prompt="Analyzed SBML",
-              help="Path to SBML.")
-@click.option("--project_folder",
-              required=True,
-              type=click.Path(exists=True, dir_okay=True),
-              prompt="Project folder",
-              help="Path to project.")
-@click.option("--project_name",
-              required=True,
-              type=str,
-              prompt="Project name",
-              help="Name of project.")
-def get_initial_spreadsheets_cli(sbml_path: str, project_folder: str, project_name: str) -> None:
+@click.option(
+    "--sbml_path",
+    required=True,
+    type=click.Path(exists=True, file_okay=True, dir_okay=True),
+    prompt="Analyzed SBML",
+    help="Path to SBML.",
+)
+@click.option(
+    "--project_folder",
+    required=True,
+    type=click.Path(exists=True, dir_okay=True),
+    prompt="Project folder",
+    help="Path to project.",
+)
+@click.option(
+    "--project_name",
+    required=True,
+    type=str,
+    prompt="Project name",
+    help="Name of project.",
+)
+def get_initial_spreadsheets_cli(
+    sbml_path: str, project_folder: str, project_name: str
+) -> None:
     """Creates initial AutoPACMEN XLSX spreadsheets in which additional information can be entered by the use.
 
     For the application of sMOMENT, the following spreadsheets are relevant (§ stands for the given project name):
@@ -59,7 +68,7 @@ def get_initial_spreadsheets_cli(sbml_path: str, project_folder: str, project_na
 
 
 # Start-up routine if script is called
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Thanks to the click decorators, the command-line interface
     # function does not need to be called directly. The given
     # console arguments are added automatically.
