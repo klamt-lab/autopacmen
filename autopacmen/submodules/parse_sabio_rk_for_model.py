@@ -19,13 +19,15 @@ The function of this module returns SABIO-RK kcat entries for each reaction in t
 given metabolic model.
 """
 
+from typing import List
+
 # IMPORTS
 # External modules
 import cobra
-from typing import List
+
 # Internal modules
-from .parse_sabio_rk import get_ec_number_kcats_wildcard_search
 from .helper_general import json_write
+from .parse_sabio_rk import get_ec_number_kcats_wildcard_search
 
 
 # PUBLIC FUNCTIONS SECTION

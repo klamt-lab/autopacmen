@@ -19,10 +19,12 @@ Command-line interface for the running of a Flux Variability Analysis
 (FVA) with given protein bounds on a sMOMENT-enhanced model.
 """
 
+from typing import List
+
 # IMPORTS
 # External modules
 import click
-from typing import List
+
 # Internal modules
 from .submodules.fva_prot_pool import fva_prot_pool_with_sbml
 

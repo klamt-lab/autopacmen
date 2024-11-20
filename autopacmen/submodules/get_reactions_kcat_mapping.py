@@ -19,17 +19,32 @@ This module contains functions which, in total, return a mapping of
 reactions to forward and reverse reaction direction kcats.
 """
 
+import math
+import random
+import statistics
+import sys
+from typing import Any, Dict, List
+
 # IMPORTS
 # External modules
 import cobra
-import math
-import random
-import sys
-import statistics
-from typing import Any, Dict, List
+
+from .helper_general import (
+    ensure_folder_existence,
+    get_files,
+    json_load,
+    json_write,
+    pickle_load,
+    pickle_write,
+    standardize_folder,
+)
+
 # Internal modules
-from .ncbi_taxonomy import get_entrez_id_from_organism_full_name_batch, get_taxonomy_from_organism_ncbi_id_batch, most_taxonomic_similar
-from .helper_general import ensure_folder_existence, get_files, json_load, json_write, pickle_load, pickle_write, standardize_folder
+from .ncbi_taxonomy import (
+    get_entrez_id_from_organism_full_name_batch,
+    get_taxonomy_from_organism_ncbi_id_batch,
+    most_taxonomic_similar,
+)
 
 
 # PRIVATE FUNCTIONS

@@ -19,19 +19,27 @@ Includes the central function which allows to create a proteome-constraint-enhan
 stoichiometric model :D
 """
 
-# IMPORTS
-# External modules
-import cobra
 import math
 import random
 import statistics
 import sys
 from typing import Dict, List
+
+# IMPORTS
+# External modules
+import cobra
+
+from .helper_create_model import (
+    add_prot_pool_reaction,
+    get_irreversible_model,
+    get_model_with_separated_measured_enzyme_reactions,
+    get_p_measured,
+    read_enzyme_stoichiometries_xlsx,
+    read_protein_data_xlsx,
+)
+
 # Internal modules
 from .helper_general import json_load, standardize_folder
-from .helper_create_model import add_prot_pool_reaction, get_irreversible_model, get_p_measured, \
-    read_enzyme_stoichiometries_xlsx, read_protein_data_xlsx, \
-    get_model_with_separated_measured_enzyme_reactions
 
 
 # PUBLIC FUNCTIONS

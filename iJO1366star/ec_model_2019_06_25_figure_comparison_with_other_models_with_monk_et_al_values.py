@@ -19,14 +19,20 @@ This is the script for the generation of the figure and the calculation of the c
 statistical data for the comparison of measured growth rates and predicted growth rates of iJO1366*.
 """
 
-import cobra
 import copy
+
+import cobra
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.stats import linregress, pearsonr, spearmanr
-from ec_model_2019_06_25_data_scenarios_for_moment_comparison import exchange_reactions_by_c_source
-from ec_model_2019_06_25_data_standard_exchange_scenario import ec_model_shut_down_reactions
+import z_add_path
+from ec_model_2019_06_25_data_scenarios_for_moment_comparison import (
+    exchange_reactions_by_c_source,
+)
 from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
+from ec_model_2019_06_25_data_standard_exchange_scenario import (
+    ec_model_shut_down_reactions,
+)
+from scipy.stats import linregress, pearsonr, spearmanr
 
 with open("./iJO1366star/ec_model_2019_06_25_input/c_sources_S3_Adadi_2012_with_monk_values.txt", "r") as f:
     lines = f.readlines()

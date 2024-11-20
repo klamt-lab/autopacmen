@@ -18,14 +18,23 @@
 Functions for the generation of a model's mapping of its proteins and their masses.
 """
 
+import time
+from typing import Dict, List
+
 # IMPORTS
 # External modules
 import cobra
 import requests
-import time
-from typing import Dict, List
+
 # Internal modules
-from .helper_general import ensure_folder_existence, get_files, json_write, pickle_write, pickle_load, standardize_folder
+from .helper_general import (
+    ensure_folder_existence,
+    get_files,
+    json_write,
+    pickle_load,
+    pickle_write,
+    standardize_folder,
+)
 
 
 # PUBLIC FUNCTIONS SECTION

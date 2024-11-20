@@ -22,14 +22,17 @@ This is typically the first script that is used in the course of a AutoPACMEN
 workflow, after the wanted SBML model was selected and generated.
 """
 
+from typing import Any, Dict, List
+
 # IMPORTS
 # External modules
 import cobra
 import xlsxwriter
-from typing import Any, Dict, List
+
+from .helper_general import standardize_folder
+
 # Internal modules
 from .kegg import kegg_rest_get_batch
-from .helper_general import standardize_folder
 
 
 # INTERNAL FUNCTIONS SECTION

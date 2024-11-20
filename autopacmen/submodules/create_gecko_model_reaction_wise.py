@@ -16,17 +16,25 @@
 """modeling_create_gecko_model.py
 """
 
-# IMPORTS
-# External modules
-import cobra
 import copy
 import math
 import statistics
-from typing import List, Dict
+from typing import Dict, List
+
+# IMPORTS
+# External modules
+import cobra
+
+from .helper_create_model import (
+    add_prot_pool_reaction,
+    get_irreversible_model,
+    get_p_measured,
+    read_enzyme_stoichiometries_xlsx,
+    read_protein_data_xlsx,
+)
+
 # Internal modules
 from .helper_general import json_load, standardize_folder
-from .helper_create_model import add_prot_pool_reaction, get_irreversible_model, get_p_measured, \
-    read_enzyme_stoichiometries_xlsx, read_protein_data_xlsx
 
 
 # PUBLIC FUNCTIONS

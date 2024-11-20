@@ -19,11 +19,12 @@ This module contains functions which return a combined kcat database from
 SABIO-RK and BRENDA data.
 """
 
+# External modules
+from typing import Any, Dict, List
+
 # IMPORTS
 # Internal modules
 from .helper_general import json_load, json_write
-# External modules
-from typing import Any, Dict, List
 
 
 # PUBLIC FUNCTIONS

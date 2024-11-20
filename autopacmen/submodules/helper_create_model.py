@@ -19,12 +19,14 @@ This module contains functions which are useful for a multitide of scripts
 which generate AutoPACMEN models.
 """
 
+import copy
+from typing import Any, Dict, List
+
 # IMPORTS
 # External modules
 import cobra
-import copy
 import openpyxl
-from typing import Any, Dict, List
+
 # Internal modules
 from .helper_general import get_float_cell_value
 

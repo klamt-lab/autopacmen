@@ -24,12 +24,19 @@ platform.
 import copy
 import csv
 import io
-import requests
 import time
 from typing import Any, Dict, List
-# Internal libraries
-from .helper_general import ensure_folder_existence, get_files, is_fitting_ec_numbers, json_load, json_write
 
+import requests
+
+# Internal libraries
+from .helper_general import (
+    ensure_folder_existence,
+    get_files,
+    is_fitting_ec_numbers,
+    json_load,
+    json_write,
+)
 
 # SCRIPT-WIDE CONSTANTS
 # URL for SABIO-RK's kcat REST API

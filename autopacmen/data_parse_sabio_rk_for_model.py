@@ -23,8 +23,10 @@ machine-readable JSON.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.parse_sabio_rk_for_model import parse_sabio_rk_for_model_with_sbml
+
 
 # Set-up command-line parameters using click decorators
 @click.command()

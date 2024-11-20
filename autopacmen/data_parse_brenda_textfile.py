@@ -22,6 +22,7 @@ a machine-readable JSON.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.parse_brenda_textfile import parse_brenda_textfile
 

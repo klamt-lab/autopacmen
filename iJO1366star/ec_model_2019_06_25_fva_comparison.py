@@ -18,6 +18,8 @@
 
 """
 
+import z_add_path
+
 from autopacmen.submodules.fva_comparison import fva_comparison_with_sbml
 
 SBML_ORIGINAL: str = "./iJO1366star/ec_model_2019_06_25_input/iJO1366_saved_by_cobrapy_and_separated_reversible_reactions.xml"

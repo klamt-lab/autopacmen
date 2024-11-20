@@ -21,6 +21,7 @@ Command-line interface for the retrieval of a protein<->kcat mapping of a model.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
 

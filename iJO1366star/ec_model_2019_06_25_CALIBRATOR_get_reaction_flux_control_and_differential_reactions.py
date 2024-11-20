@@ -21,13 +21,19 @@ Python functions as described in AutoPACMEN's manual.
 
 # External modules
 import cobra
+import z_add_path
+
 # Internal modules
-from ec_model_2019_06_25_data_scenarios_for_optimization import ec_model_scenarios_for_optimization
+from ec_model_2019_06_25_data_scenarios_for_optimization import (
+    ec_model_scenarios_for_optimization,
+)
 from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
-from autopacmen.submodules.reaction_flux_control_by_scenario import reaction_flux_control_by_scenario
+
 from autopacmen.submodules.get_differential_reactions import get_differential_reactions
 from autopacmen.submodules.helper_general import json_write
-
+from autopacmen.submodules.reaction_flux_control_by_scenario import (
+    reaction_flux_control_by_scenario,
+)
 
 # Set-up of project
 flux_control_folder = "iJO1366star/ec_model_2019_06_25_output_optimization/flux_control_data_2019_06_25_manual_changes/"

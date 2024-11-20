@@ -19,13 +19,15 @@ Contains functions which allow to vreate a model-specific and BRENDA-depending
 kcat database.
 """
 
+import copy
+from typing import Any, Dict, List
+
 # IMPORTS
 # External modules
 import cobra
-import copy
+
 # Internal modules
 from .helper_general import is_fitting_ec_numbers, json_load, json_write
-from typing import Any, Dict, List
 
 
 # PRIVATE FUNCTIONS

@@ -23,8 +23,9 @@ KEGG database.
 # External modules
 import copy
 import time
-from Bio.KEGG import REST
 from typing import List
+
+from Bio.KEGG import REST
 
 
 def get_full_organism_name_from_kegg_id(organism_kegg_id):

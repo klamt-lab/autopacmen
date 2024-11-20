@@ -22,6 +22,7 @@ BRENDA database JSON.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.parse_brenda_json_for_model import parse_brenda_json_for_model
 

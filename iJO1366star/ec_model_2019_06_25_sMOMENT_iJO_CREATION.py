@@ -21,18 +21,34 @@ The single steps are explained in the supplementary file 1 of sMOMENT's publicat
 # IMPORTS
 # External modules
 import cobra
+import z_add_path
+
 # Internal modules
 from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
-from autopacmen.submodules.create_combined_kcat_database import create_combined_kcat_database
-from autopacmen.submodules.create_smoment_model_reaction_wise import create_smoment_model_reaction_wise_with_sbml
-from autopacmen.submodules.get_initial_spreadsheets import get_initial_spreadsheets_with_sbml
-from autopacmen.submodules.get_protein_mass_mapping import get_protein_mass_mapping_with_sbml
-from autopacmen.submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
-from autopacmen.submodules.parse_bigg_metabolites_file import parse_bigg_metabolites_file
-from autopacmen.submodules.parse_brenda_textfile import parse_brenda_textfile
-from autopacmen.submodules.parse_brenda_json_for_model import parse_brenda_json_for_model
-from autopacmen.submodules.parse_sabio_rk_for_model import parse_sabio_rk_for_model_with_sbml
 
+from autopacmen.submodules.create_combined_kcat_database import (
+    create_combined_kcat_database,
+)
+from autopacmen.submodules.create_smoment_model_reaction_wise import (
+    create_smoment_model_reaction_wise_with_sbml,
+)
+from autopacmen.submodules.get_initial_spreadsheets import (
+    get_initial_spreadsheets_with_sbml,
+)
+from autopacmen.submodules.get_protein_mass_mapping import (
+    get_protein_mass_mapping_with_sbml,
+)
+from autopacmen.submodules.get_reactions_kcat_mapping import get_reactions_kcat_mapping
+from autopacmen.submodules.parse_bigg_metabolites_file import (
+    parse_bigg_metabolites_file,
+)
+from autopacmen.submodules.parse_brenda_json_for_model import (
+    parse_brenda_json_for_model,
+)
+from autopacmen.submodules.parse_brenda_textfile import parse_brenda_textfile
+from autopacmen.submodules.parse_sabio_rk_for_model import (
+    parse_sabio_rk_for_model_with_sbml,
+)
 
 # Step 1
 bigg_metabolites_file_path = "./iJO1366star/ec_model_2019_06_25_input/bigg_models_metabolites.txt"

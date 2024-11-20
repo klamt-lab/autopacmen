@@ -27,6 +27,8 @@ Sources:
  e1002575), Supplementary Table 3
 """
 
+import z_add_path
+
 ec_model_scenarios_for_optimization = {
     # Glucose as C source (aerobic) from Monk 2016 paper, target is growth
     "Glucose_Aerobic_Growth": {

@@ -19,7 +19,11 @@ This script generates the GECKOed model version of iJO1366. The GECKO
 method was followed as described in Sánchez et al., 2017.
 """
 
-from autopacmen.submodules.create_gecko_model_reaction_wise import create_gecko_model_reaction_wise_with_sbml
+import z_add_path
+
+from autopacmen.submodules.create_gecko_model_reaction_wise import (
+    create_gecko_model_reaction_wise_with_sbml,
+)
 
 INPUT_SBML: str = "./iJO1366star/ec_model_2019_06_25_input/iJO1366.xml"
 OUTPUT_SBML: str = "iJO1366_2019_06_25_GECKO.xml"

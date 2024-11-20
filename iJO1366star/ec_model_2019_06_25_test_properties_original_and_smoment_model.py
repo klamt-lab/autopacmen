@@ -1,4 +1,5 @@
 import cobra
+import z_add_path
 
 model_original = cobra.io.read_sbml_model(
     "./iJO1366star/ec_model_2019_06_25_input/iJO1366.xml")

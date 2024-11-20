@@ -19,10 +19,11 @@ This module contains functions which allow to perform an FVA of a given
 protein-constraint-enhanced model with a given protein pool.
 """
 
+from typing import List
+
 # IMPORTS
 # External modules
 import cobra
-from typing import List
 
 
 # PUBLIC FUNCTIONS
@@ -48,7 +49,7 @@ def fva_prot_pool(model: cobra.Model, pp_upper_bounds: List[float], objective: s
                 "ER_pool_TG_").upper_bound = pp_upper_bound
             solution = model.optimize()
             print(
-                f"\sMOMENT-enhanced model, FVA solution for prot_pool upper bound of {pp_upper_bound}:")
+                f"sMOMENT-enhanced model, FVA solution for prot_pool upper bound of {pp_upper_bound}:")
             model.summary(fva=1.0)
             print(abs(solution.fluxes.EX_glc__D_e) /
                   abs(solution.fluxes.EX_ac_e))

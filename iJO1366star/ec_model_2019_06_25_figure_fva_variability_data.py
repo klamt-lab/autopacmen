@@ -21,12 +21,13 @@ rate. The box-form in the legends was edited later to lines for aesthetic reason
 actual data was changed :-).
 """
 
-import cobra
 import copy
 import statistics
-import xlsxwriter
 
+import cobra
 import matplotlib.pyplot as plt
+import xlsxwriter
+import z_add_path
 
 
 def _get_fva_statistics(model):

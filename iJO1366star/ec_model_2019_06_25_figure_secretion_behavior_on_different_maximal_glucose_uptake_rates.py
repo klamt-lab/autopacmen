@@ -22,6 +22,7 @@ spreadsheet program in order to generate the associated figures.
 
 import cobra
 import numpy as np
+import z_add_path
 from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
 
 

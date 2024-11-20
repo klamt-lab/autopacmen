@@ -18,8 +18,10 @@
 
 """
 
-from autopacmen.submodules.fva_prot_pool import fva_prot_pool
+import z_add_path
 from ec_model_2019_06_25_data_set_up_model import set_up_ec_model_with_sbml
+
+from autopacmen.submodules.fva_prot_pool import fva_prot_pool
 
 model = set_up_ec_model_with_sbml(
     "./iJO1366star/ec_model_2019_06_25_output_optimization/iJO1366star.xml", .225)

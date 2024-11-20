@@ -16,8 +16,9 @@
 """./iJO1366star/ec_model_2019_06_25_optimization_apply_manual_changes.py"""
 
 import cobra
-from autopacmen.submodules.apply_manual_changes import apply_manual_changes
+import z_add_path
 
+from autopacmen.submodules.apply_manual_changes import apply_manual_changes
 
 KCAT_CHANGE_FACTORS = {
     "PFL": ("", 10),

@@ -27,3 +27,6 @@ cnapy = "cnapy.__main__:main_cnapy"
 [project.urls]
 Homepage = "https://github.com/klamt-lab/autopacmen"
 Issues = "https://github.com/klamt-lab/autopacmen/issues"
+
+[tool.isort]
+profile = "black"

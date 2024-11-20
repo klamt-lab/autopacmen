@@ -24,6 +24,7 @@ It uses cobrapy's FVA functions.
 # IMPORTS
 # External module for command-line interfaces
 import click
+
 # Internal module, contains the actual FBA comparison function
 from .submodules.fva_comparison import fva_comparison_with_sbml
 

@@ -1,4 +1,5 @@
 import cobra
+import z_add_path
 
 biomass_reaction_id = "BIOMASS_Ec_iJO1366_core_53p95M"
 substrate_reaction_id = "EX_glc__D_e"

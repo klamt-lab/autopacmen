@@ -15,6 +15,7 @@
 # limitations under the License.
 
 import cobra
+import z_add_path
 
 gecko = cobra.io.read_sbml_model(
     "./iJO1366star/ec_model_2019_06_25_output/iJO1366_2019_06_25_GECKO.xml")

@@ -21,9 +21,9 @@ This module contains functions which can access NCBI TAXONOMY.
 # IMPORTS
 # External modules
 import time
-from Bio import Entrez
 from typing import Dict, List
 
+from Bio import Entrez
 
 # SCRIPT-WIDE CONSTANTS
 WAIT_TIME = .5  # Time to wait for each API call

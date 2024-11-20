@@ -21,8 +21,9 @@ Includes a function which converts a BRENDA textfile into a machine-readable JSO
 # IMPORTS
 # External modules
 from typing import Any, Dict, List
+
 # Internal modules
-from .helper_general import json_write, json_load, standardize_folder
+from .helper_general import json_load, json_write, standardize_folder
 
 
 # PUBLIC FUNCTIONS SECTION

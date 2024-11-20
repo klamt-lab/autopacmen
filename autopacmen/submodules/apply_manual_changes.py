@@ -18,10 +18,11 @@
 Includes the function for the application of a manual kcat change
 of a sMOMENT-enhanced model.
 """
+from typing import Dict, Tuple, Union
+
 # IMPORTS
 # External modules
 import cobra
-from typing import Dict, Tuple, Union
 
 
 # PUBLIC FUNCTIONS

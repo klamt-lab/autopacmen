@@ -22,15 +22,15 @@ and which are hard to be categorized.
 # IMPORTS
 # External modules
 import json
-import openpyxl
 import os
 import pickle
-import requests
 import sys
 import time
-from pebble import concurrent
 from typing import Any, Dict, List
 
+import openpyxl
+import requests
+from pebble import concurrent
 
 # CONSTANT SECTION
 # As no useful UniProt API access libraries were found, the programs use the UniProt URL API directly.

@@ -22,6 +22,7 @@ machine-readable JSON.
 # IMPORTS
 # External modules
 import click
+
 # Internal modules
 from .submodules.parse_bigg_metabolites_file import parse_bigg_metabolites_file
 

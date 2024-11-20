@@ -19,9 +19,11 @@ Converts the data from the keff paper into a more machine-readable JSON.
 """
 
 import copy
+from typing import Any, Dict, List
+
 import cobra
 import openpyxl
-from typing import Any, Dict, List
+import z_add_path
 
 from autopacmen.submodules.helper_general import json_write
 

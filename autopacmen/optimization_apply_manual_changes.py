@@ -18,11 +18,13 @@
 Command-line interface for get_protein_mass_mapping
 """
 
+from typing import Dict, Tuple, Union
+
 # IMPORTS
 # External modules
 import click
 import cobra
-from typing import Dict, Tuple, Union
+
 # Internal modules
 from .submodules.apply_manual_changes import apply_manual_changes
 

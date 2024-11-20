@@ -20,6 +20,8 @@ Acetate and succinate exchanges are not set as shut down since their secretion r
 occurs biologically in the course of the Crabtree effect :D
 """
 
+import z_add_path
+
 ec_model_shut_down_reactions = [
  # "EX_ac_e",
  "DM_aacald_c",
